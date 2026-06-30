@@ -1,15 +1,9 @@
 """
-kappa.py -- Tinh Cohen's Kappa cho pilot (raw vs improved)
-Chay: python scripts/kappa.py  (tu DG_deliverables/, sau generate_pilot.py)
+kappa_pilot.py -- Tinh Cohen's Kappa cho pilot (raw vs improved)
+Chay: python scripts/kappa_pilot.py  (tu DG_deliverables/, sau generate_pilot.py)
 Output: result/kappa_scores_raw.csv
         result/kappa_scores_improved.csv
 
-NOTE: Ket qua kappa cua raw va improved se luon giong nhau vi annotation
-(Author 1 / Author 2) duoc thuc hien mot lan tren bug report goc, khong
-phu thuoc vao viec bug report duoc trinh bay o dang raw hay improved.
-Kappa o day do muc do dong thuan giua 2 author (human-human agreement).
-Su khac biet raw vs improved chi xuat hien khi so sanh diem cua LLM
-voi ground truth o buoc tiep theo.
 """
 
 import csv
