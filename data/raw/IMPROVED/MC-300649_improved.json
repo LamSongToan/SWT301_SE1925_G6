@@ -1,0 +1,166 @@
+{
+  "key": "MC-300649",
+  "created_date": "2025-08-04T13:14:57.217-0700",
+  "updated_date": "2025-08-05T06:24:53.738-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-05T06:24:53.650-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Resource pack overlays not working on Linux macOS",
+  "environment_raw": null,
+  "description": "Steps to reproduce the issue: n n1. Create a resource pack with overlays n n n2. Activate the resource pack n n n n Expected result: Resource pack overlays also getting applied on Linux macOS n n Actual result: Resource pack overlays not getting applied. n n",
+  "Steps to Reproduce": "1. Create a new folder on your desktop and name it \"Test_Resource_Pack\".\n2. Inside the \"Test_Resource_Pack\" folder, create a file named \"pack.mcmeta\" with the following content:\n   {\n     \"pack\": {\n       \"pack_format\": 6,\n       \"description\": \"Test Resource Pack\"\n     }\n   }\n3. Create a subfolder inside \"Test_Resource_Pack\" named \"assets\".\n4. Inside the \"assets\" folder, create another folder named \"minecraft\".\n5. Inside the \"minecraft\" folder, create a folder named \"textures\".\n6. Within the \"textures\" folder, create a subfolder named \"blocks\".\n7. Add a texture file (e.g., \"test_block.png\") to the \"blocks\" folder.\n8. Create an overlay texture file (e.g., \"test_block_overlay.png\") and place it in the \"blocks\" folder as well.\n9. Ensure that the overlay texture is correctly referenced in the \"test_block.png\" file using the appropriate JSON model.\n10. Compress the \"Test_Resource_Pack\" folder into a .zip file.\n11. Open Minecraft on your Linux or macOS system.\n12. From the main menu, click on \"Options\", then select \"Resource Packs\".\n13. Click on \"Open Resource Pack Folder\" to access the resource packs directory.\n14. Paste the .zip file of your resource pack into the opened resource pack directory.\n15. Return to Minecraft, and in the \"Resource Packs\" menu, find your resource pack in the list on the left and click the arrow to move it to the \"Active\" list.\n16. Click \"Done\" to apply the resource pack.\n17. Create a new Creative world or open an existing one.\n18. Place a block that corresponds to the texture you created (e.g., \"test_block\").\n19. Observe whether the overlay texture (e.g., \"test_block_overlay\") is applied to the block as expected.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "When a resource pack containing overlays is created and activated on Linux or macOS, the overlays do not apply as expected. Specifically, the following issues have been observed:\n\n1. **Overlay Visibility**: The expected visual changes from the overlays are absent in-game. For example, if the resource pack includes a custom overlay for blocks or items, these overlays remain unchanged, displaying the default textures instead.\n\n2. **Pack Structure Verification**: The resource pack structure adheres to the required format, including the `pack.mcmeta` file and the appropriate asset folders. The overlays are correctly placed within the `assets/minecraft/textures/` directory, and the relevant JSON files are correctly configured to reference these textures.\n\n3. **Resource Pack Loading**: The resource pack is successfully loaded and appears in the resource pack menu. Players can activate it without any error messages, yet the overlays still do not render during gameplay.\n\n4. **Testing with Different Packs**: Multiple resource packs with overlays have been tested, and the issue persists across different packs, indicating a potential systemic issue with how overlays are processed on Linux and macOS systems.\n\n5. **Console Errors**: No relevant error messages or warnings are displayed in the console logs when the resource pack is activated, suggesting that the game does not recognize any problem with the resource pack itself.\n\nThis behavior contradicts the expected functionality, where overlays should be applied consistently across all platforms, including Linux and macOS.",
+  "Expected Behavior": "When a resource pack with overlays is created and activated on Linux or macOS, the overlays should be applied correctly to the respective blocks or items as intended by the resource pack design. The game should seamlessly render the overlays on top of the base textures, allowing players to see the visual enhancements without any issues. This behavior aligns with Minecraft's established functionality, where resource packs are designed to modify textures and provide a customized visual experience. The overlays should appear consistently across all relevant game elements, ensuring that players can enjoy the full aesthetic benefits of their resource pack on these operating systems.",
+  "comments": [
+    {
+      "id": "2080629",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "24x24": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "16x16": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "32x32": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png"
+        },
+        "displayName": "[MCQA] jKakub",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-05T06:24:48.555-0700",
+      "updated": "2025-08-05T06:24:48.555-0700",
+      "body_text": "Hi there!**Thank you for your report**, however, this issue has been temporarily closed as\u202f**Awaiting Response**.\\n\\nCould you please provide more details or/and media files. As such we have no repro of this issue.\\n\\n* Could you attach a resource pack affected by this issue?\\n\\n\\n\\n* Can you record and upload a video or screenshot of this issue?\u00a0\\n\\n\\n\\nThis ticket will automatically reopen when you reply.\u00a0Thanks!\\n\\n",
+      "body_length": 422,
+      "rendered_body": "<p>Hi there!<br>\n<b>Thank you for your report</b>, however, this issue has been temporarily closed as\u202f<font color=\"#ff991f\"><b>Awaiting Response</b></font>.</p>\n\n<p>Could you please provide more details or/and media files. As such we have no repro of this issue.</p>\n\n<ul>\n\t<li>Could you attach a resource pack affected by this issue?</li>\n</ul>\n\n\n<ul>\n\t<li>Can you record and upload a video or screenshot of this issue?&nbsp;</li>\n</ul>\n\n\n<p>This ticket will automatically reopen when you reply.&nbsp;Thanks!</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hi there!"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Thank you for your report",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ", however, this issue has been temporarily closed as\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Awaiting Response",
+                "marks": [
+                  {
+                    "type": "strong"
+                  },
+                  {
+                    "type": "textColor",
+                    "attrs": {
+                      "color": "#ff991f"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Could you please provide more details or/and media files. As such we have no repro of this issue."
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Could you attach a resource pack affected by this issue?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Can you record and upload a video or screenshot of this issue?\u00a0"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will automatically reopen when you reply.\u00a0Thanks!"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300649"
+  }
+}

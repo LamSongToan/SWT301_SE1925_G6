@@ -1,0 +1,72 @@
+{
+  "key": "MC-301135",
+  "summary": "Iron Golems sometimes plant flowers",
+  "description": "Blank description \\n\\n",
+  "created_date": "2025-08-16T03:32:13.685-0700",
+  "updated_date": "2025-08-17T12:38:30.461-0700",
+  "status": "Resolved",
+  "resolution": "Incomplete",
+  "resolution_date": "2025-08-17T12:38:28.602-0700",
+  "affected_versions": [
+    "1.21.8",
+    "25w33a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 3,
+  "summary_length": 5,
+  "fetch_timestamp": "2025-08-20T03:09:57.051941",
+  "comments": [
+    {
+      "id": "2084254",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/32"
+        },
+        "displayName": "[Mod] Jingy",
+        "active": true,
+        "timeZone": "America/Chicago",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-17T12:38:30.461-0700",
+      "updated": "2025-08-17T12:38:30.461-0700",
+      "body_text": "This issue is Incomplete. Please do not report issues with only a title, as this is not helpful or descriptive enough to understand the reported problem.\\n\\n",
+      "body_length": 157,
+      "rendered_body": "<p>This issue is Incomplete. Please do not report issues with only a title, as this is not helpful or descriptive enough to understand the reported problem.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This issue is Incomplete. Please do not report issues with only a title, as this is not helpful or descriptive enough to understand the reported problem."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 1
+}

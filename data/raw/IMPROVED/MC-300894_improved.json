@@ -1,0 +1,278 @@
+{
+  "key": "MC-300894",
+  "created_date": "2025-08-09T20:04:53.271-0700",
+  "updated_date": "2025-08-11T07:54:46.376-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8",
+    "25w32a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-11T07:54:46.289-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Baby Happy Ghast does not scale harness layer correctly",
+  "environment_raw": null,
+  "description": "When equipping harness for adult Happy Ghast, then using command to set their age to -24000. n nAfter that the harness layer disappeared and cannot be seen from the outside. But when looking inside the Baby Happy Ghast there is a harness layer rendered but incorrect scale. n nI have attached fix code to make it render properly. Just simply remove baby argument and remove apply part with the BABY_TRANSFORMER in the HappyGhastHarnessModel class. n n n n",
+  "Steps to Reproduce": "1. Create a new Creative world with default settings.\n2. Obtain a Happy Ghast Harness from the Creative inventory.\n3. Summon an adult Happy Ghast using the command `/summon happy_ghast ~ ~ ~`.\n4. Equip the Happy Ghast with the harness by right-clicking on it while holding the harness.\n5. Use the command `/data merge entity @e[type=happy_ghast,limit=1] {Age:-24000}` to set the Happy Ghast's age to -24000.\n6. Observe that the harness layer disappears from the outside view of the Happy Ghast.\n7. Enter the interior of the Baby Happy Ghast by right-clicking on it to see the harness layer rendered incorrectly inside.",
+  "Environment": "Minecraft Java Edition Versions: 1.21.8, 25w32a (includes snapshots)",
+  "Observed Behavior": "When equipping an adult Happy Ghast with a harness and subsequently using the command to set its age to -24000, the following issues occur:\n\n1. **Harness Layer Disappearance**: The harness layer that is visible on the adult Happy Ghast disappears entirely from the external view, making it appear as if the harness is not equipped.\n\n2. **Internal Rendering**: Upon inspecting the Baby Happy Ghast from the inside, it becomes evident that the harness layer is still rendered; however, it is not scaled correctly. The harness appears disproportionately sized relative to the Baby Happy Ghast's model.\n\n3. **Incorrect Scaling**: The harness layer, when viewed from within the Baby Happy Ghast, does not conform to the expected dimensions for a baby entity, which indicates a scaling issue in the rendering logic for the harness when applied to an entity that has been transformed from adult to baby.\n\n4. **Fix Implementation**: To resolve this issue, it is recommended to modify the `HappyGhastHarnessModel` class. Specifically, the following changes should be made:\n   - Remove the 'baby' argument from the rendering method.\n   - Eliminate the application of the `BABY_TRANSFORMER` to ensure that the harness renders correctly for all age states of the Happy Ghast.\n\nThese points highlight the critical aspects of the bug, emphasizing the visual discrepancies and the necessary adjustments to the code to achieve the desired rendering behavior.",
+  "Expected Behavior": "When an adult Happy Ghast is equipped with a harness and its age is set to -24000, the expected behavior is that the harness layer should remain visible and properly scaled when viewed from outside the Baby Happy Ghast. The harness should adapt to the size of the Baby Happy Ghast, maintaining its intended appearance and functionality. Specifically, the harness should not disappear and should be rendered correctly, allowing players to see the harness layer as they would expect based on the model's design. Additionally, the Baby Happy Ghast should exhibit the same visual characteristics as the adult version, ensuring consistency in appearance regardless of age transformation.",
+  "comments": [
+    {
+      "id": "2082224",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "SteveKunG",
+        "active": true,
+        "timeZone": "Asia/Bangkok",
+        "accountType": "customer"
+      },
+      "created": "2025-08-09T20:04:54.090-0700",
+      "updated": "2025-08-09T20:04:54.090-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.",
+      "body_length": 162,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "ce17ae54-7e07-423e-9036-c0e2170dd955",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "7dbd9388-72df-4719-b325-a9936d5c4558",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2082630",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "24x24": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "16x16": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "32x32": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png"
+        },
+        "displayName": "[MCQA] jKakub",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-11T07:54:41.470-0700",
+      "updated": "2025-08-11T07:54:41.470-0700",
+      "body_text": "Hi!Could you please answer a few questions regarding this issue?\u00a0\\n\\n* Could you provide reproduction steps for this issue?\\n\\n\\n* Can you record and upload a video showcasing the reproduction steps of this issue?\u00a0\\n\\n\\n\\nThis ticket will automatically reopen when you reply.\u00a0Thanks!\\n\\n**Quick Links**:\u00a0\ud83d\udcd3\u202fIssue Guidelines\u202f\u2013 \ud83d\udcac\u202fMojang Support\u202f\u2013 \ud83d\udce7\u202fSuggestions\u202f\u2013 \ud83d\udcd6\u202fMinecraft Wiki\u00a0\\n\\n",
+      "body_length": 381,
+      "rendered_body": "<p>Hi!<br>\nCould you please answer a few questions regarding this issue?&nbsp;</p>\n\n<ul>\n\t<li>Could you provide reproduction steps for this issue?</li>\n\t<li>Can you record and upload a video showcasing the reproduction steps of this issue?&nbsp;</li>\n</ul>\n\n\n<p>This ticket will automatically reopen when you reply.&nbsp;Thanks!</p>\n\n<p><b>Quick Links</b>:&nbsp;<br>\n\ud83d\udcd3\u202f<a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Issue Guidelines</ins></a>\u202f\u2013 \ud83d\udcac\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fhelp.minecraft.net.mcas.ms%2Fhc%2Fen-us%2Frequests%2Fnew%3FMcasTsid%3D15600&amp;McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Mojang Support</ins></a>\u202f\u2013 \ud83d\udce7\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Ffeedback.minecraft.net.mcas.ms%2F%3FMcasTsid%3D15600&amp;McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Suggestions</ins></a>\u202f\u2013 \ud83d\udcd6\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fminecraft.wiki.mcas.ms%2F%3FMcasTsid%3D15600&amp;McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Minecraft Wiki</ins></a>&nbsp;</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hi!"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Could you please answer a few questions regarding this issue?\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Could you provide reproduction steps for this issue?"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Can you record and upload a video showcasing the reproduction steps of this issue?\u00a0"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will automatically reopen when you reply.\u00a0Thanks!"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":\u00a0"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Issue Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udcac\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fhelp.minecraft.net.mcas.ms%2Fhc%2Fen-us%2Frequests%2Fnew%3FMcasTsid%3D15600&McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udce7\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Ffeedback.minecraft.net.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udcd6\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Minecraft Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fminecraft.wiki.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300894"
+  }
+}

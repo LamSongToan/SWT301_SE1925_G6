@@ -1,0 +1,213 @@
+{
+  "key": "MC-300903",
+  "created_date": "2025-08-10T00:54:46.255-0700",
+  "updated_date": "2025-08-12T03:57:10.891-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "25w32a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-12T03:57:10.763-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Item sorting broken with Copper golem in underground warehouse setup.",
+  "environment_raw": null,
+  "description": "In Snapshot 25w32a, I encountered a consistent issue with the Copper Golem s item sorting behavior. The golem fails to deposit items into chests that already contain the same item, even when those chests are not full. n nFor example, I placed diamonds into a regular chest. Later, I added more diamonds into a Copper Chest. Instead of depositing them into the original chest (which still had space and already contained diamonds), the golem chose a different chest sometimes even one containing unrelated items like copper. n nMy storage system includes two separate underground warehouses, each with 10 chests (5 on the left, 5 on the right). Each warehouse has its own Copper Golem, so there s no overload. All chests are on the same level, with plenty of space above them. The only visual indicator I used was a single item frame on one chest, but the golem ignored it. n nThe issue occurs every time I attempt to sort items. The golem seems to forget which chests it has already used and does not consistently check all 10 available chests. This behavior makes the sorting system unreliable and breaks the intended functionality. n nPlease investigate this bug it significantly affects gameplay and automation. n n",
+  "Steps to Reproduce": "1. Create a new world in Minecraft using Snapshot 25w32a in Creative mode.\n2. Build two separate underground warehouses, each consisting of 10 chests (5 on the left and 5 on the right) placed on the same level.\n3. Ensure that each warehouse has its own Copper Golem by crafting and placing a Copper Golem in each warehouse.\n4. Fill one regular chest in the first warehouse with diamonds, ensuring that it has available space.\n5. Place a Copper Chest in the second warehouse and add more diamonds to it.\n6. Observe the Copper Golem's behavior as it attempts to sort the diamonds from the Copper Chest.\n7. Note which chest the Copper Golem chooses to deposit the diamonds into and whether it correctly deposits them into the original chest containing diamonds.\n8. Repeat the process by adding different items (e.g., copper) to the Copper Chest and observe if the Copper Golem still fails to utilize the original chest with existing items.\n9. Make sure to check that the chests remain in the same position and that there are no obstructions above them.\n10. Document the instances when the Copper Golem chooses a chest with unrelated items instead of the one that already contains the same item.",
+  "Environment": "Minecraft Java Edition Version 25w32a (snapshot)",
+  "Observed Behavior": "In Snapshot 25w32a, the Copper Golem exhibits inconsistent item sorting behavior when interacting with chests in an underground warehouse setup. Specifically, when the Copper Golem attempts to deposit items, it fails to place them into chests that already contain the same item type, despite those chests having available space. \n\nFor instance, if I have placed diamonds in one chest and then add more diamonds into a different chest, the Copper Golem may choose to deposit the additional diamonds into a completely unrelated chest, sometimes even one that contains items like copper instead of the intended chest that already holds diamonds.\n\nThe storage system consists of two underground warehouses, each containing 10 chests organized into two rows (5 chests on the left and 5 on the right). Each warehouse is operated by its own Copper Golem, ensuring there is no overload on any single golem. All chests are positioned at the same vertical level, with ample space above them for the golems to operate without obstruction. The only visual sorting aid used is a single item frame on one of the chests, which the Copper Golem appears to ignore entirely.\n\nThis issue occurs consistently every time I attempt to sort items. It seems that the Copper Golem does not retain knowledge of which chests it has previously utilized, leading to an unreliable sorting process where it fails to check all available chests effectively. This erratic behavior disrupts the intended functionality of the item sorting system, making it unreliable for inventory management and automation purposes. \n\nPlease investigate this bug, as it significantly impacts gameplay and the efficiency of automated sorting systems in Minecraft.",
+  "Expected Behavior": "When a Copper Golem is tasked with sorting items in a storage system, it should deposit items into the appropriate chests that already contain the same item type, provided those chests have available space. For instance, if the player places diamonds into one chest and later adds more diamonds into another, the Copper Golem should recognize that the first chest already has diamonds and deposit the new diamonds there, instead of choosing a different chest, even if it contains unrelated items. The Golem should consistently check all available chests in the sorting system, ensuring that it utilizes the most efficient storage options based on item type and existing inventory. This behavior aligns with the intended functionality of automated sorting systems in Minecraft, which are designed to streamline inventory management and enhance gameplay efficiency.",
+  "comments": [
+    {
+      "id": "2082887",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "24x24": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "16x16": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "32x32": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png"
+        },
+        "displayName": "[MCQA] jKakub",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-12T03:57:04.152-0700",
+      "updated": "2025-08-12T03:57:04.152-0700",
+      "body_text": "Hi!Could you please answer a few questions regarding this issue?\u00a0\\n\\n* Are there any specific items that are affected?\\n\\n\\n* Can you record and upload a video showcasing this issue?\u00a0\\n\\n\\n\\nThis ticket will automatically reopen when you reply.\u00a0Thanks!\\n\\n**Quick Links**:\u00a0\ud83d\udcd3\u202fIssue Guidelines\u202f\u2013 \ud83d\udcac\u202fMojang Support\u202f\u2013 \ud83d\udce7\u202fSuggestions\u202f\u2013 \ud83d\udcd6\u202fMinecraft Wiki\u00a0\\n\\n",
+      "body_length": 350,
+      "rendered_body": "<p>Hi!<br>\nCould you please answer a few questions regarding this issue?&nbsp;</p>\n\n<ul>\n\t<li>Are there any specific items that are affected?</li>\n\t<li>Can you record and upload a video showcasing this issue?&nbsp;</li>\n</ul>\n\n\n<p>This ticket will automatically reopen when you reply.&nbsp;Thanks!</p>\n\n<p><b>Quick Links</b>:&nbsp;<br>\n\ud83d\udcd3\u202f<a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\">Issue Guidelines</a>\u202f\u2013 \ud83d\udcac\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fhelp.minecraft.net.mcas.ms%2Fhc%2Fen-us%2Frequests%2Fnew%3FMcasTsid%3D15600&amp;McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b\" class=\"external-link\" rel=\"nofollow noreferrer\">Mojang Support</a>\u202f\u2013 \ud83d\udce7\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Ffeedback.minecraft.net.mcas.ms%2F%3FMcasTsid%3D15600&amp;McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b\" class=\"external-link\" rel=\"nofollow noreferrer\">Suggestions</a>\u202f\u2013 \ud83d\udcd6\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fminecraft.wiki.mcas.ms%2F%3FMcasTsid%3D15600&amp;McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b\" class=\"external-link\" rel=\"nofollow noreferrer\">Minecraft Wiki</a>&nbsp;</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hi!"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Could you please answer a few questions regarding this issue?\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Are there any specific items that are affected?"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Can you record and upload a video showcasing this issue?\u00a0"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will automatically reopen when you reply.\u00a0Thanks!"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":\u00a0"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Issue Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udcac\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fhelp.minecraft.net.mcas.ms%2Fhc%2Fen-us%2Frequests%2Fnew%3FMcasTsid%3D15600&McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udce7\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Ffeedback.minecraft.net.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udcd6\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Minecraft Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fminecraft.wiki.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300903"
+  }
+}

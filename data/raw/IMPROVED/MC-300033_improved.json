@@ -1,0 +1,75 @@
+{
+  "key": "MC-300033",
+  "created_date": "2025-07-28T13:19:28.651-0700",
+  "updated_date": "2025-08-04T07:19:47.924-0700",
+  "status": "Resolved",
+  "resolution": "Cannot Reproduce",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-04T07:19:47.818-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Item duplication with item modify command",
+  "environment_raw": null,
+  "description": "Steps to reproduce the issue: n n-place a repeating command block with this command: n nitem modify entity a weapon.mainhand {\"function\":\"minecraft:set_damage\",\"damage\": -0.001,\"add\": true} n n-hold an item with more than 1000 max durability in your hand and it s durability should start decreasing n n-open the inventory and hover the cursor on the slot with the item n n-repeatedly press the key to move the item to another slot and bring it back n n n nExpected result: n nthe item does not duplicate n n n nActual result: n neventually the item will duplicate n n",
+  "Steps to Reproduce": "1. Create a new Creative world with default settings.\n2. Place a repeating command block on the ground.\n3. Enter the command `/item modify entity @a weapon.mainhand {\"function\":\"minecraft:set_damage\",\"damage\":-0.001,\"add\":true}` in the command block.\n4. Activate the command block using a Redstone signal (e.g., place a Redstone Torch next to it).\n5. Hold an item in your main hand that has a maximum durability greater than 1000 (e.g., a diamond pickaxe).\n6. Observe that the durability of the item starts to decrease as the command block continuously modifies it.\n7. Open your inventory and navigate to the slot containing the item you are holding.\n8. Hover your cursor over the item in the inventory slot.\n9. Rapidly press the key to move the item to a different slot and then back to its original slot multiple times (at least 10 times).\n10. Monitor the item in your inventory to see if it duplicates during this process.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "When the player follows the steps outlined to reproduce the bug, the item in the main hand begins to lose durability as expected. However, after repeatedly moving the item to another slot in the inventory and then bringing it back, the item will eventually duplicate within the player's inventory. This duplication occurs despite the expected behavior that the item should not duplicate. \n\nSpecifically, the duplication can be observed as follows:\n\n1. The player holds an item with a durability greater than 1000, such as a diamond tool or armor piece.\n2. As the durability decreases from the item modify command, the player can manipulate the item by moving it between inventory slots.\n3. After several attempts of moving the item back and forth, the original item remains, and a new instance of the item appears in the player's inventory.\n\nThis results in the player having two identical items, which contradicts the expected outcome where the item should remain singular and only lose durability. The issue seems to stem from how the game processes the item modify command in conjunction with inventory management, leading to unintended duplication. The duplication can lead to potential exploits, especially in survival gameplay, where players can gain an unfair advantage by duplicating high-durability items.",
+  "Expected Behavior": "When using the item modify command with a repeating command block to adjust the durability of an item in the player's main hand, the expected behavior is that the item's durability should decrease as intended without creating a duplicate item. Specifically, when the player follows the steps to modify the item and attempts to move it between inventory slots, the item should remain singular, maintaining its integrity and not allowing for duplication. The game should accurately reflect the item's durability change without generating additional copies, thereby adhering to the intended mechanics of item management in Minecraft.",
+  "comments": [
+    {
+      "id": "2078686",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "p1cc1",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-07-30T02:39:44.060-0700",
+      "updated": "2025-07-30T02:39:44.060-0700",
+      "body_text": "I was wrong, this is not a bug as it only happens in creative mode\\n\\n",
+      "body_length": 70,
+      "rendered_body": "<p>I was wrong, this is not a bug as it only happens in creative mode</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "I was wrong, this is not a bug as it only happens in creative mode"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300033"
+  }
+}

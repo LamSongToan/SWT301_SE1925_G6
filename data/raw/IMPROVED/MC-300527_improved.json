@@ -1,0 +1,115 @@
+{
+  "key": "MC-300527",
+  "created_date": "2025-08-01T10:25:52.751-0700",
+  "updated_date": "2025-08-01T13:45:32.819-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8",
+    "25w31a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-01T10:25:58.023-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "There is a bug where 4 moon phases are over the sun and 4 moons below the sun",
+  "environment_raw": null,
+  "description": "This has happened since some 1.21.6 snapshots and the official 1.21.6 update n n",
+  "Steps to Reproduce": "1. Create a new Creative world with default settings.\n2. Set the game time to night by entering the command '/time set night'.\n3. Use the command '/time set 14000' to set the moon to the full moon phase.\n4. Observe the sky and note the position of the moon relative to the sun.\n5. Use the command '/time add 24000' to advance the time by one full day.\n6. Observe the sky again to confirm that there are now 4 moon phases appearing above the sun and 4 moons appearing below the sun.\n7. Repeat steps 5 and 6 multiple times to verify that the issue persists across multiple day cycles.",
+  "Environment": "Minecraft Java Edition Versions: 1.21.8, 25w31a (includes snapshots)",
+  "Observed Behavior": "In the current version of Minecraft, specifically since some of the 1.21.6 snapshots and the official 1.21.6 update, an unusual rendering bug occurs where multiple moon phases are visible simultaneously. This results in a visual anomaly where four distinct moon phases are displayed above the sun and four additional phases are rendered below it. \n\n1. **Moon Phases Displayed**: Each of the eight lunar phases\u2014New Moon, Waxing Crescent, First Quarter, Waxing Gibbous, Full Moon, Waning Gibbous, Last Quarter, and Waning Crescent\u2014appears incorrectly in the sky. This creates a cluttered visual effect that does not align with the expected behavior of the moon being opposite the sun.\n\n2. **Visibility Conditions**: The bug manifests regardless of the time of day or weather conditions, consistently showing all eight phases at once in the sky.\n\n3. **Game Mechanics Impact**: While this bug does not appear to affect gameplay mechanics directly, it disrupts the visual aesthetics of the game and could potentially confuse players regarding the current moon phase, which is relevant for certain gameplay elements such as mob spawning.\n\n4. **Reproducibility**: The issue has been reproducible across multiple worlds and does not seem to be tied to any specific world settings or configurations.\n\nThis bug has persisted through various snapshots leading up to the official release of version 1.21.6, indicating a possible rendering or graphical issue introduced in this update.",
+  "Expected Behavior": "The expected behavior is that the moon should consistently be positioned opposite the sun in the sky, following the established mechanics of the game's celestial bodies. This means that at any given time, if the sun is visible in the sky, the moon should not be present, and vice versa. The moon should also progress through its eight distinct phases in a predictable manner, transitioning smoothly at the end of each in-game day. Therefore, it is not possible for multiple moon phases to appear simultaneously above and below the sun, as this contradicts the fundamental design of the game's celestial mechanics.",
+  "comments": [
+    {
+      "id": "2079594",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Samuel Ross Kirk",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-01T10:25:53.460-0700",
+      "updated": "2025-08-01T10:25:53.460-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.",
+      "body_length": 80,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "34508448-86e6-4f91-849d-53bb2bfc5fb2",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2079595",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "24x24": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "16x16": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "32x32": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png"
+        },
+        "displayName": "Automation for Jira",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "app"
+      },
+      "created": "2025-08-01T10:25:55.995-0700",
+      "updated": "2025-08-01T10:25:55.995-0700",
+      "body_text": "Please edit your report to change the Affected Version to the version shown on the Minecraft title screen\\n\\n",
+      "body_length": 109,
+      "rendered_body": "<p>Please edit your report to change the Affected Version to the version shown on the Minecraft title screen</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please edit your report to change the Affected Version to the version shown on the Minecraft title screen"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300527"
+  }
+}

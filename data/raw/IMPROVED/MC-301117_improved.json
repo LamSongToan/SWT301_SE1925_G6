@@ -1,0 +1,180 @@
+{
+  "key": "MC-301117",
+  "created_date": "2025-08-15T15:02:49.631-0700",
+  "updated_date": "2025-08-17T12:55:34.139-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "25w33a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-17T12:55:34.094-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Some items placed on a copper golems head are glitched",
+  "environment_raw": null,
+  "description": "Lastly when i was messing with commands, i discovered that some of the new items doesnt apply correctly on Copper Golems n n n nHere s a list woth test subjects n n List of the items Mobs n n Copper Golem n n Skeleton n n Zombie n nOak Shelf (or any type) n nApply upwards the head n nApply at the back of the head n nApply at the back of the head n nLightning rod (any type) n nApply updwards the head n nEaster Egg applied n nEaster Egg applied n n",
+  "Steps to Reproduce": "1. Create a new Creative world with default settings.\n2. Locate or summon a Copper Golem in the world.\n3. Obtain an Oak Shelf (any type) from the Creative inventory.\n4. Position the Oak Shelf directly above the Copper Golem's head and place it.\n5. Observe the placement of the Oak Shelf and note any visual glitches.\n6. Remove the Oak Shelf and obtain a Lightning Rod (any type) from the Creative inventory.\n7. Position the Lightning Rod directly above the Copper Golem's head and place it.\n8. Observe the placement of the Lightning Rod and note any visual glitches.\n9. Remove the Lightning Rod and obtain an Easter Egg from the Creative inventory.\n10. Position the Easter Egg directly above the Copper Golem's head and place it.\n11. Observe the placement of the Easter Egg and note any visual glitches.\n12. Repeat steps 4 to 11, but this time place the items at the back of the Copper Golem's head instead of above it.",
+  "Environment": "Minecraft Java Edition Version 25w33a (snapshot)",
+  "Observed Behavior": "When attempting to place certain items on the head of a Copper Golem, the items do not apply correctly, resulting in visual glitches. The following items have been tested, and the results are as follows:\n\n1. **Oak Shelf (any type)**\n   - Attempting to place on the head: **Item does not appear correctly.**\n   - Attempting to place at the back of the head: **Item does not appear correctly.**\n\n2. **Lightning Rod (any type)**\n   - Attempting to place on the head: **Item does not appear correctly.**\n   - Attempting to place at the back of the head: **Item does not appear correctly.**\n\n3. **Easter Egg**\n   - Attempting to place on the head: **Item does not appear correctly.**\n   - Attempting to place at the back of the head: **Item does not appear correctly.**\n\nIn all cases, the items fail to render properly on the Copper Golem, leading to a visual inconsistency that does not occur when placing items on other mobs, such as Skeletons or Zombies. This issue appears to be specific to the Copper Golem's model and may require adjustments to how item placement is handled for this entity.",
+  "Expected Behavior": "When items such as the Oak Shelf or Lightning Rod are placed on the Copper Golem's head, they should be visually displayed correctly without any graphical glitches. Specifically, when applying items directly upward or to the back of the Copper Golem's head, the items should appear as intended, maintaining their proper orientation and visibility. Additionally, Easter Eggs should be correctly applied to the Copper Golem without any distortion or unexpected behavior. The game should function normally without any crashes or visual errors, adhering to the established mechanics for item placement on entities as outlined in Minecraft's design documentation.",
+  "comments": [
+    {
+      "id": "2083898",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Yoshibest58_2",
+        "active": true,
+        "timeZone": "Europe/Paris",
+        "accountType": "customer"
+      },
+      "created": "2025-08-15T15:02:50.167-0700",
+      "updated": "2025-08-15T15:02:50.167-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.",
+      "body_length": 162,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "1dc239c0-064f-4656-b669-c23639833cb9",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "fd35e1b8-445e-4b28-8249-39c2b2da73e3",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2084264",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/32"
+        },
+        "displayName": "[Mod] Jingy",
+        "active": true,
+        "timeZone": "America/Chicago",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-17T12:55:11.273-0700",
+      "updated": "2025-08-17T12:55:11.273-0700",
+      "body_text": "Per this comment by a Mojang employee on MC-301003, cases of blocks on copper golems head should be tracked in their own reports.Quote: \u201cAre these five cases the only issues present? If so - could you please split the report into each of the cases?\u201dCopper chests are already tracked in .Please create a new report for either the wooden shelf or lightning rod, and leave the other case in this report. Comment on this report you have done so (which will reopen this).\\n\\n",
+      "body_length": 470,
+      "rendered_body": "<p>Per this comment by a Mojang employee on <a href=\"https://mojira.atlassian.net/browse/MC-301003\" class=\"external-link\" rel=\"nofollow noreferrer\">MC-301003</a>, cases of blocks on copper golems head should be tracked in their own reports.<br>\nQuote: \u201cAre these five cases the only issues present? If so - could you please split the report into each of the cases?\u201d</p>\n\n<p>Copper chests are already tracked in <a href=\"https://mojira.atlassian.net/browse/MC-301003\" title=\"smart-link\" class=\"external-link\" rel=\"nofollow noreferrer\">https://mojira.atlassian.net/browse/MC-301003</a>.</p>\n\n<p>Please create a new report for either the wooden shelf or lightning rod, and leave the other case in this report. Comment on this report you have done so (which will reopen this).</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Per this comment by a Mojang employee on "
+              },
+              {
+                "type": "text",
+                "text": "MC-301003",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mojira.atlassian.net/browse/MC-301003"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ", cases of blocks on copper golems head should be tracked in their own reports."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Quote: \u201cAre these five cases the only issues present? If so - could you please split the report into each of the cases?\u201d"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Copper chests are already tracked in "
+              },
+              {
+                "type": "inlineCard",
+                "attrs": {
+                  "url": "https://mojira.atlassian.net/browse/MC-301003"
+                }
+              },
+              {
+                "type": "text",
+                "text": "."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Please create a new report for either the wooden shelf or lightning rod, and leave the other case in this report. Comment on this report you have done so (which will reopen this)."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-301117"
+  }
+}

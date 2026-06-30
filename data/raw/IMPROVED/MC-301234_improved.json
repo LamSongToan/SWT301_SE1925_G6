@@ -1,0 +1,219 @@
+{
+  "key": "MC-301234",
+  "created_date": "2025-08-19T07:47:55.108-0700",
+  "updated_date": "2025-08-19T08:07:22.760-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "25w34a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-19T08:07:22.666-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "rotate multiplies momentum motion, for example making a player glide 6000 blocks in one second just by tapping \"w\"",
+  "environment_raw": null,
+  "description": "25w32a , not fixed yet . when an entity executes the rotate its momentum motion is multiplied by absurd amounts, more noticable with a ticking command where it doesn t stop, making you move insanely fast for ever while not applying any movement input. n n",
+  "Steps to Reproduce": "1. Create a new Creative world with default settings.\n2. Place a Command Block on the ground.\n3. Enter the command '/execute as @p run tp @p ^ ^ ^1' in the Command Block.\n4. Set the Command Block to \"Repeat\" and \"Always Active.\"\n5. Move away from the Command Block to ensure it continues executing without interruption.\n6. Tap the \"W\" key to move forward.\n7. Observe the player's movement speed and note the excessive gliding distance achieved.",
+  "Environment": "Minecraft Java Edition Version 25w34a (snapshot)",
+  "Observed Behavior": "When an entity, particularly a player, executes a rotation command (such as through the `/execute` command with rotation parameters), the player's momentum is unintentionally amplified to extreme levels. This issue becomes especially pronounced when the rotation is executed continuously via a command block or a similar mechanism that ticks every game tick. \n\nAs a result, the player can achieve speeds of up to 6000 blocks per second simply by pressing the forward movement key (default \"W\") briefly. This excessive velocity persists indefinitely, even when no further movement input is given. The player continues to glide at this hyper-accelerated speed without any additional commands or inputs required, leading to an unrealistic and game-breaking experience.\n\nThe problem arises from the way the game's physics engine calculates movement and momentum. Upon executing a rotation, the player's velocity appears to be multiplied by an exaggerated factor, which does not align with expected gameplay mechanics. This behavior can be replicated consistently in version 25w32a and has not yet been addressed in subsequent updates. \n\nTo summarize, the core of the issue is:\n- **Rotation Execution**: Any rotation command executed causes the player's momentum to increase dramatically.\n- **Continuous Speed**: The player can glide at speeds that far exceed normal gameplay limits without any further input.\n- **Unintended Consequences**: This creates a situation where players can traverse large distances instantly, undermining the intended mechanics of movement within the game. \n\nThis bug needs to be resolved to restore normal movement physics and ensure a balanced gameplay experience.",
+  "Expected Behavior": "When an entity rotates, its momentum should not be excessively amplified to the point of achieving unrealistic speeds. Instead, the player's movement should remain consistent with the game's intended mechanics, where the player's velocity is influenced by the friction of the blocks they are on and their input commands. Specifically, when executing a rotation command, the player's speed should be regulated by the standard acceleration and friction values defined in the game, ensuring that they do not exceed the maximum movement speeds established for walking, sprinting, or flying, which are approximately 4.317 meters per second for walking and 5.612 meters per second for sprinting. The expected behavior is that the player would maintain controlled movement without experiencing infinite speed or unintended momentum accumulation, allowing for a balanced and fair gameplay experience.",
+  "comments": [
+    {
+      "id": "2084733",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Maximiliano Petrini",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-19T07:47:55.777-0700",
+      "updated": "2025-08-19T07:47:55.777-0700",
+      "body_text": "This comment contained multiple media attachments (2), please login to view the attachments.",
+      "body_length": 92,
+      "rendered_body": "<p></p><div><p>This comment contained multiple media attachments (2), please login to view the attachments.</p></div><p></p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "ab434a4a-fc26-46be-8d37-7b77dfb7e0bd",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2084747",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "24x24": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "16x16": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "32x32": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png"
+        },
+        "displayName": "[MCQA] jKakub",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-19T08:07:16.716-0700",
+      "updated": "2025-08-19T08:07:16.716-0700",
+      "body_text": "Hi!Can you record and upload a new video showcasing this issue on the latest snapshot?\u00a0\\n\\nThis ticket will automatically reopen when you reply.\u00a0Thanks!\\n\\n**Quick Links**:\u00a0\ud83d\udcd3\u202fIssue Guidelines\u202f\u2013 \ud83d\udcac\u202fMojang Support\u202f\u2013 \ud83d\udce7\u202fSuggestions\u202f\u2013 \ud83d\udcd6\u202fMinecraft Wiki\u00a0\\n\\n",
+      "body_length": 250,
+      "rendered_body": "<p>Hi!<br>\nCan you record and upload a new video showcasing this issue on the latest snapshot?&nbsp;</p>\n\n<p>This ticket will automatically reopen when you reply.&nbsp;Thanks!</p>\n\n<p><b>Quick Links</b>:&nbsp;<br>\n\ud83d\udcd3\u202f<a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\">Issue Guidelines</a>\u202f\u2013 \ud83d\udcac\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fhelp.minecraft.net.mcas.ms%2Fhc%2Fen-us%2Frequests%2Fnew%3FMcasTsid%3D15600&amp;McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b\" class=\"external-link\" rel=\"nofollow noreferrer\">Mojang Support</a>\u202f\u2013 \ud83d\udce7\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Ffeedback.minecraft.net.mcas.ms%2F%3FMcasTsid%3D15600&amp;McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b\" class=\"external-link\" rel=\"nofollow noreferrer\">Suggestions</a>\u202f\u2013 \ud83d\udcd6\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fminecraft.wiki.mcas.ms%2F%3FMcasTsid%3D15600&amp;McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b\" class=\"external-link\" rel=\"nofollow noreferrer\">Minecraft Wiki</a>&nbsp;</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hi!"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Can you record and upload a new video showcasing this issue on the latest snapshot?\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will automatically reopen when you reply.\u00a0Thanks!"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":\u00a0"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Issue Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udcac\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fhelp.minecraft.net.mcas.ms%2Fhc%2Fen-us%2Frequests%2Fnew%3FMcasTsid%3D15600&McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udce7\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Ffeedback.minecraft.net.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udcd6\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Minecraft Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fminecraft.wiki.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-301234"
+  }
+}

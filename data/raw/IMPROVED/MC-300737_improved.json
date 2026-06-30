@@ -1,0 +1,114 @@
+{
+  "key": "MC-300737",
+  "created_date": "2025-08-05T16:17:13.784-0700",
+  "updated_date": "2025-08-05T16:18:52.151-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-05T16:17:18.370-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Game randomly crashes in Singleplayer because of HashMap ConcurrentModificationException",
+  "environment_raw": null,
+  "description": "When attempting to play the game in singleplayer, there s a random chance the game might crash. Most of the time, it s HashMap computeIfAbsent throwing ConcurrentModificationException.This issue happens because the hash map is the same object in both client and server in singleplayer. This creates a problem where the game can crash because when client thread runs computeIfAbsent on the map, server might add or remove entry from the map and vice versa. n nThis issue happens pretty sparsely and rarely because in the key is same in both threads most of the time which the exception isn t thrown if an existing value gets changed when computeIfAbsent is running. This leaves pretty small time gap which makes it hard to reproduce. Though you can create a random string array, use them as keys and put them to HashMap, clear and redo it every tick in a method that runs in both threads to recreate it more easily. n nAs specified in JDK-8071667, this only happens if you use compute, computeIfAbsent, computeIfPresent or merge methods. It is specific to HashMap and other HashMap types. n nIn attachments there s a method that recreates the crash which runs every player tick in both threads. strings is an array of 1000 random strings, map is String to String HashMap. n n",
+  "Steps to Reproduce": "1. Create a new Singleplayer world with default settings.\n2. In the game, create a method that runs every tick, which will be executed in both client and server threads.\n3. Inside this method, generate an array of 1000 random strings to use as keys.\n4. Initialize a HashMap<String, String> to store the random strings as keys and assign them random values.\n5. Use the computeIfAbsent method on the HashMap to attempt to add new entries using the random strings as keys.\n6. Simultaneously, clear the HashMap and reinitialize it every tick to ensure that both threads are accessing and modifying the same HashMap instance.\n7. Continue running the game and observe if a ConcurrentModificationException occurs, leading to a crash.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "In singleplayer mode, the game experiences intermittent crashes due to a `ConcurrentModificationException` arising from the use of the `HashMap`'s `computeIfAbsent` method. This issue occurs because both the client and server share the same instance of the `HashMap`, leading to a race condition. When the client thread attempts to execute `computeIfAbsent` on the map, the server may simultaneously modify the map by adding or removing entries, which results in the `ConcurrentModificationException`.\n\nThis behavior is not consistently reproducible due to the nature of the key usage in both threads; most of the time, the same key is being accessed, which allows the operation to complete without throwing an exception. However, the narrow window of time during which the client and server may modify the map concurrently creates sporadic crashes.\n\nTo facilitate reproduction of the crash, developers can implement a testing method that runs every tick for both threads. This method should utilize an array of 1000 random strings as keys, continuously clearing and repopulating the `HashMap` each tick. This approach increases the likelihood of triggering the `ConcurrentModificationException` during the `computeIfAbsent` call.\n\nAs highlighted in JDK-8071667, this issue is specifically tied to the use of `compute`, `computeIfAbsent`, `computeIfPresent`, or `merge` methods on `HashMap` instances. The problem is unique to `HashMap` and its variants, and it is critical for developers to be aware of this when troubleshooting crashes associated with these data structures. \n\nIn the attached code, a method is provided that demonstrates how to replicate the crash, which runs every player tick on both the client and server threads, using the aforementioned random string array and `HashMap<String, String>`.",
+  "Expected Behavior": "When the game is functioning correctly in singleplayer mode, it should allow players to interact with the world without experiencing any crashes. Specifically, when using HashMap methods such as computeIfAbsent, the game should safely handle concurrent modifications without throwing a ConcurrentModificationException. This means that the game should maintain data integrity and synchronization between the client and server threads, ensuring that modifications to the HashMap do not interfere with each other. As a result, players should be able to perform actions that involve adding or retrieving entries from the HashMap without encountering unexpected crashes, allowing for a smooth and stable gameplay experience.",
+  "comments": [
+    {
+      "id": "2080872",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Abisenalcakkopek",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-05T16:17:14.572-0700",
+      "updated": "2025-08-05T16:17:14.572-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.",
+      "body_length": 80,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "17d71ad7-33c5-45f0-a7c9-2bc5fa755f1c",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2080873",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "24x24": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "16x16": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "32x32": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png"
+        },
+        "displayName": "Automation for Jira",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "app"
+      },
+      "created": "2025-08-05T16:17:16.762-0700",
+      "updated": "2025-08-05T16:17:16.762-0700",
+      "body_text": "Please edit your report to change the Affected Version to the version shown on the Minecraft title screen\\n\\n",
+      "body_length": 109,
+      "rendered_body": "<p>Please edit your report to change the Affected Version to the version shown on the Minecraft title screen</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please edit your report to change the Affected Version to the version shown on the Minecraft title screen"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300737"
+  }
+}

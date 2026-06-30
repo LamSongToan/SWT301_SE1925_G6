@@ -1,0 +1,274 @@
+{
+  "key": "MC-300894",
+  "summary": "Baby Happy Ghast does not scale harness layer correctly",
+  "description": "When equipping harness for adult Happy Ghast, then using command to set their age to -24000.\\n\\nAfter that the harness layer disappeared and cannot be seen from the outside. But when looking inside the Baby Happy Ghast there is a harness layer rendered but incorrect scale.\\n\\nI have attached fix code to make it render properly. Just simply remove `baby` argument and remove `apply` part with the `BABY_TRANSFORMER` in the `HappyGhastHarnessModel` class.\\n\\n\\n\\n",
+  "created_date": "2025-08-09T20:04:53.271-0700",
+  "updated_date": "2025-08-11T07:54:46.376-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "resolution_date": "2025-08-11T07:54:46.289-0700",
+  "affected_versions": [
+    "1.21.8",
+    "25w32a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 70,
+  "summary_length": 9,
+  "fetch_timestamp": "2025-08-20T03:10:23.860935",
+  "comments": [
+    {
+      "id": "2082224",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "SteveKunG",
+        "active": true,
+        "timeZone": "Asia/Bangkok",
+        "accountType": "customer"
+      },
+      "created": "2025-08-09T20:04:54.090-0700",
+      "updated": "2025-08-09T20:04:54.090-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.",
+      "body_length": 162,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "ce17ae54-7e07-423e-9036-c0e2170dd955",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "7dbd9388-72df-4719-b325-a9936d5c4558",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2082630",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "24x24": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "16x16": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "32x32": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png"
+        },
+        "displayName": "[MCQA] jKakub",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-11T07:54:41.470-0700",
+      "updated": "2025-08-11T07:54:41.470-0700",
+      "body_text": "Hi!Could you please answer a few questions regarding this issue? \\n\\n* Could you provide reproduction steps for this issue?\\n\\n\\n* Can you record and upload a video showcasing the reproduction steps of this issue? \\n\\n\\n\\nThis ticket will automatically reopen when you reply. Thanks!\\n\\n**Quick Links**: 📓 Issue Guidelines – 💬 Mojang Support – 📧 Suggestions – 📖 Minecraft Wiki \\n\\n",
+      "body_length": 381,
+      "rendered_body": "<p>Hi!<br>\nCould you please answer a few questions regarding this issue?&nbsp;</p>\n\n<ul>\n\t<li>Could you provide reproduction steps for this issue?</li>\n\t<li>Can you record and upload a video showcasing the reproduction steps of this issue?&nbsp;</li>\n</ul>\n\n\n<p>This ticket will automatically reopen when you reply.&nbsp;Thanks!</p>\n\n<p><b>Quick Links</b>:&nbsp;<br>\n📓 <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Issue Guidelines</ins></a> – 💬 <a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fhelp.minecraft.net.mcas.ms%2Fhc%2Fen-us%2Frequests%2Fnew%3FMcasTsid%3D15600&amp;McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Mojang Support</ins></a> – 📧 <a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Ffeedback.minecraft.net.mcas.ms%2F%3FMcasTsid%3D15600&amp;McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Suggestions</ins></a> – 📖 <a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fminecraft.wiki.mcas.ms%2F%3FMcasTsid%3D15600&amp;McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Minecraft Wiki</ins></a>&nbsp;</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hi!"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Could you please answer a few questions regarding this issue? "
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Could you provide reproduction steps for this issue?"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Can you record and upload a video showcasing the reproduction steps of this issue? "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will automatically reopen when you reply. Thanks!"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ": "
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "📓 "
+              },
+              {
+                "type": "text",
+                "text": "Issue Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – 💬 "
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fhelp.minecraft.net.mcas.ms%2Fhc%2Fen-us%2Frequests%2Fnew%3FMcasTsid%3D15600&McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – 📧 "
+              },
+              {
+                "type": "text",
+                "text": "Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Ffeedback.minecraft.net.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – 📖 "
+              },
+              {
+                "type": "text",
+                "text": "Minecraft Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fminecraft.wiki.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " "
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 2
+}

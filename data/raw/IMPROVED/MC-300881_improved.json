@@ -1,0 +1,243 @@
+{
+  "key": "MC-300881",
+  "created_date": "2025-08-09T09:51:13.304-0700",
+  "updated_date": "2025-08-09T11:30:13.032-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "25w32a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-09T11:30:12.988-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Report Player Skin: Skin Preview no longer interactive",
+  "environment_raw": null,
+  "description": "When trying to report a player skin the widget on the left side is no longer interactive. n nPreviously (in 1.21.8) it was possible to drag the mouse which moved the player entity accordingly. n n",
+  "Steps to Reproduce": "1. Launch Minecraft and log into your account.\n2. Enter a game mode that allows you to access the player reporting feature, such as a multiplayer server or a Realms world.\n3. Once in the game, locate a player whose skin you wish to report.\n4. Open the reporting interface by selecting the player and clicking on the appropriate option to report them.\n5. Observe the left side of the reporting interface where the skin preview widget is located.\n6. Attempt to interact with the skin preview widget by dragging the mouse cursor across it.\n7. Note that the player entity does not move as it did in version 1.21.8, indicating that the widget is no longer interactive.",
+  "Environment": "Minecraft Java Edition Version 25w32a (snapshot)",
+  "Observed Behavior": "In the current version, when attempting to report a player skin using the skin reporting feature, the skin preview widget located on the left side of the screen is non-functional. Users are unable to interact with this widget, which means they cannot drag their mouse to rotate or adjust the view of the player entity displaying the skin. \n\nThis issue contrasts with the functionality present in version 1.21.8, where players could click and drag the mouse over the skin preview to manipulate the orientation of the player model. This interaction allowed for a more comprehensive view of the skin from different angles, aiding players in making informed decisions when reporting inappropriate skins.\n\n**Steps to Reproduce:**\n1. Enter the game and navigate to the player reporting interface.\n2. Select a player whose skin you wish to report.\n3. Observe the skin preview widget on the left side of the screen.\n4. Attempt to click and drag the mouse over the widget.\n\n**Expected Behavior:**\nThe skin preview widget should allow players to click and drag the mouse, enabling them to rotate the player model and view the skin from various angles, similar to the functionality in version 1.21.8.",
+  "Expected Behavior": "When attempting to report a player skin, the skin preview widget on the left side should be fully interactive, allowing the player to click and drag the mouse to rotate and view the player entity from different angles. This interaction should provide a smooth and responsive experience, similar to the functionality present in version 1.21.8, where users could easily manipulate the view of the player model to assess the skin being reported. The expected behavior includes the player entity smoothly following the mouse movement, allowing for a clear and accurate inspection of the skin in question.",
+  "comments": [
+    {
+      "id": "2082090",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "litetex",
+        "active": true,
+        "timeZone": "Europe/Berlin",
+        "accountType": "customer"
+      },
+      "created": "2025-08-09T09:51:14.186-0700",
+      "updated": "2025-08-09T10:09:58.988-0700",
+      "body_text": "This comment contained multiple media attachments (2), please login to view the attachments.",
+      "body_length": 92,
+      "rendered_body": "<p></p><div><p>This comment contained multiple media attachments (2), please login to view the attachments.</p></div><p></p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaSingle",
+            "attrs": {
+              "layout": "align-start"
+            },
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "4ba470a0-35bc-4944-80bf-193afdc956e2",
+                  "alt": "demo.mp4",
+                  "collection": "",
+                  "height": 500,
+                  "width": 846
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2082100",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "litetex",
+        "active": true,
+        "timeZone": "Europe/Berlin",
+        "accountType": "customer"
+      },
+      "created": "2025-08-09T10:14:00.972-0700",
+      "updated": "2025-08-09T10:14:00.972-0700",
+      "body_text": "Code Analysis:\\n\\nIt looks like `net.minecraft.client.gui.components.AbstractWidget#isMouseOver` now checks if the element `isNarratable`???\\n\\nThis makes absolutely no sense, as the mouse can also be hovered over elements that are not narratable.\\n\\n",
+      "body_length": 251,
+      "rendered_body": "<p>Code Analysis:</p>\n\n<p>It looks like <tt>net.minecraft.client.gui.components.AbstractWidget#isMouseOver</tt> now checks if the element <tt>isNarratable</tt>???</p>\n\n<p>This makes absolutely no sense, as the mouse can also be hovered over elements that are not narratable.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Code Analysis:"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "It looks like "
+              },
+              {
+                "type": "text",
+                "text": "net.minecraft.client.gui.components.AbstractWidget#isMouseOver",
+                "marks": [
+                  {
+                    "type": "code"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " now checks if the element "
+              },
+              {
+                "type": "text",
+                "text": "isNarratable",
+                "marks": [
+                  {
+                    "type": "code"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "???"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This makes absolutely no sense, as the mouse can also be hovered over elements that are not narratable."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2082102",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "litetex",
+        "active": true,
+        "timeZone": "Europe/Berlin",
+        "accountType": "customer"
+      },
+      "created": "2025-08-09T10:19:44.449-0700",
+      "updated": "2025-08-09T10:19:44.449-0700",
+      "body_text": "@Greymagic27\\n\\nThe problem is also present in non modified versions of the game. Could you reopen the issue.\\n\\n",
+      "body_length": 113,
+      "rendered_body": "<p>@Greymagic27</p>\n\n<p>The problem is also present in non modified versions of the game. Could you reopen the issue.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "@Greymagic27"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "The problem is also present in non modified versions of the game. Could you reopen the issue."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2082104",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/32"
+        },
+        "displayName": "[MOD] Greymagic27",
+        "active": true,
+        "timeZone": "Europe/London",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-09T10:27:10.464-0700",
+      "updated": "2025-08-09T10:27:10.464-0700",
+      "body_text": "Please record a video of it occuring in a vanilla instance of the game\\n\\n",
+      "body_length": 74,
+      "rendered_body": "<p>Please record a video of it occuring in a vanilla instance of the game</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please record a video of it occuring in a vanilla instance of the game"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300881"
+  }
+}

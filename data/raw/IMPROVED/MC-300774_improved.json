@@ -1,0 +1,346 @@
+{
+  "key": "MC-300774",
+  "created_date": "2025-08-06T08:30:20.540-0700",
+  "updated_date": "2025-08-06T09:50:30.790-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-06T09:50:30.373-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Cant steam in discord, Error code -1073740791",
+  "environment_raw": null,
+  "description": "While playing java edition in multiplayer, trying to steam the game in discord only menu bar is showing. only few time game is getting steam on that time its too laggy n n",
+  "Steps to Reproduce": "1. Launch Minecraft Java Edition and select the multiplayer option.\n2. Connect to a multiplayer server with at least one other player online.\n3. Once in the game, ensure that you are in a location where you can see the game environment (not in a menu).\n4. Open Discord and navigate to the voice channel where you want to stream the game.\n5. Click on the \"Screen\" option in Discord to begin streaming.\n6. Select the Minecraft window from the list of available applications to stream.\n7. Observe the streaming window in Discord; note if only the menu bar of Minecraft is visible and the game is not displaying correctly.\n8. Try switching back to Minecraft and interact with the game (move, jump, etc.) to see if the stream becomes responsive or if you encounter lag.\n9. If the issue persists, attempt to close and reopen Discord, then repeat steps 4 to 8 to verify if the problem continues.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "While attempting to stream Minecraft Java Edition in Discord during multiplayer sessions, users encounter an issue where only the menu bar of the game is visible on the streaming interface. This results in a failure to display the actual gameplay, significantly impacting the streaming experience. The error code -1073740791 is generated, indicating a potential problem with the game's graphics rendering or compatibility with Discord's streaming functionality. \n\nIn some instances, the game does manage to stream correctly, but this occurs infrequently and is accompanied by substantial lag, making it difficult to maintain a smooth viewing experience for those watching the stream. The issue persists regardless of whether the game is running in fullscreen or windowed mode, and it does not appear to be linked to specific server conditions or game settings. This problem affects players who wish to share their gameplay with others through Discord, limiting the ability to effectively stream Minecraft sessions.",
+  "Expected Behavior": "When attempting to stream Minecraft Java Edition in Discord while playing in multiplayer, the game should correctly display the gameplay window, allowing viewers to see the full game interface, including the environment, player actions, and any interactions with blocks or entities. The streaming should not be limited to just the menu bar, and the performance should remain smooth without significant lag. The game should utilize the system's resources efficiently to maintain a stable frame rate during streaming, following the requirements outlined in the official Minecraft documentation for optimal performance in multiplayer scenarios. If any errors occur, they should be handled gracefully without crashing the game or the streaming application.",
+  "comments": [
+    {
+      "id": "2081164",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "kumarjitmaity@hotmail.com",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-06T08:30:21.182-0700",
+      "updated": "2025-08-06T08:30:21.182-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.",
+      "body_length": 80,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "8975edc2-e54f-4e1e-9d88-71fbbe52b7ff",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2081192",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/32"
+        },
+        "displayName": "[MOD] Greymagic27",
+        "active": true,
+        "timeZone": "Europe/London",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-06T09:50:30.437-0700",
+      "updated": "2025-08-06T09:50:30.437-0700",
+      "body_text": "*We do not have enough information to find the cause of this issue.*\\n\\nPlease **attach the crash report** found in minecraft/crash-reports/crash-<DATE>-client.txt here.If you cannot find a crash report, please attach the **full launcher log** found in minecraft/launcher_log.txt.\\n\\nThis issue is being temporarily resolved as **Awaiting Response**. Once the requested information has been delivered, the report will be reopened automatically.*Quick Links*:\ud83d\udcd3 Bug Tracker Guidelines -- \ud83d\udcac Community Support -- \ud83d\udce7 Mojang Support (Technical Issues) -- \ud83d\udce7 Microsoft Support (Account Issues) -- \ud83d\udcd3 Project Summary -- \u270d\ufe0f Feedback and Suggestions -- \ud83d\udcd6 Game Wiki\\n\\n",
+      "body_length": 655,
+      "rendered_body": "<p><em>We do not have enough information to find the cause of this issue.</em></p>\n\n<p>Please <b>attach the crash report</b> found in <a href=\"https://minecrafthopper.net/help/finding-minecraft-data-folder/\" class=\"external-link\" rel=\"nofollow noreferrer\">minecraft/crash-reports/crash-&lt;DATE&gt;-client.txt</a> here.<br>\nIf you cannot find a crash report, please attach the <b>full launcher log</b> found in <a href=\"https://minecrafthopper.net/help/finding-minecraft-data-folder/\" class=\"external-link\" rel=\"nofollow noreferrer\">minecraft/launcher_log.txt</a>.</p>\n\n<p>This issue is being temporarily resolved as <b>Awaiting Response</b>. Once the requested information has been delivered, the report will be reopened automatically.<br>\n<em>Quick Links</em>:<br>\n\ud83d\udcd3 <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\">Bug Tracker Guidelines</a> \u2013 \ud83d\udcac <a href=\"https://discord.com/invite/minecraft\" class=\"external-link\" rel=\"nofollow noreferrer\">Community Support</a> \u2013 \ud83d\udce7 <a href=\"https://aka.ms/Minecraft-Support\" class=\"external-link\" rel=\"nofollow noreferrer\">Mojang Support (Technical Issues)</a> \u2013 \ud83d\udce7 <a href=\"https://support.xbox.com/contact-us/\" class=\"external-link\" rel=\"nofollow noreferrer\">Microsoft Support (Account Issues)</a> \u2013 \ud83d\udcd3 <a href=\"https://report.bugs.mojang.com/servicedesk/customer/portal/2\" class=\"external-link\" rel=\"nofollow noreferrer\">Project Summary</a> \u2013 \u270d\ufe0f <a href=\"https://aka.ms/MinecraftFeedbackDiscord\" class=\"external-link\" rel=\"nofollow noreferrer\">Feedback and Suggestions</a> \u2013 \ud83d\udcd6 <a href=\"https://minecraft.wiki/\" class=\"external-link\" rel=\"nofollow noreferrer\">Game Wiki</a></p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "We do not have enough information to find the cause of this issue.",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please "
+              },
+              {
+                "type": "text",
+                "text": "attach the crash report",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " found in "
+              },
+              {
+                "type": "text",
+                "text": "minecraft/crash-reports/crash-<DATE>-client.txt",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecrafthopper.net/help/finding-minecraft-data-folder/"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " here."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "If you cannot find a crash report, please attach the "
+              },
+              {
+                "type": "text",
+                "text": "full launcher log",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " found in "
+              },
+              {
+                "type": "text",
+                "text": "minecraft/launcher_log.txt",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecrafthopper.net/help/finding-minecraft-data-folder/"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This issue is being temporarily resolved as "
+              },
+              {
+                "type": "text",
+                "text": "Awaiting Response",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ". Once the requested information has been delivered, the report will be reopened automatically."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3 "
+              },
+              {
+                "type": "text",
+                "text": "Bug Tracker Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udcac "
+              },
+              {
+                "type": "text",
+                "text": "Community Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://discord.com/invite/minecraft"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udce7 "
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support (Technical Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/Minecraft-Support"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udce7 "
+              },
+              {
+                "type": "text",
+                "text": "Microsoft Support (Account Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://support.xbox.com/contact-us/"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udcd3 "
+              },
+              {
+                "type": "text",
+                "text": "Project Summary",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://report.bugs.mojang.com/servicedesk/customer/portal/2"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \u270d\ufe0f "
+              },
+              {
+                "type": "text",
+                "text": "Feedback and Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MinecraftFeedbackDiscord"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udcd6 "
+              },
+              {
+                "type": "text",
+                "text": "Game Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecraft.wiki/"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300774"
+  }
+}

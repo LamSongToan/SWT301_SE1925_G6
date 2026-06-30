@@ -1,0 +1,116 @@
+{
+  "key": "MC-300860",
+  "summary": "Enchantments for everything",
+  "description": "Me and my friends were just playing around on a test server and i just started holding scroll wheel and i sent up stuff like sharpness on a chestplate and scroled and it was lowerd and i got a sharpness netherite chestplate so me and my friends just started and looking over it whit diffrent items and we made a cheastplate thats nearly impossible to get and my friends was like its just lag but the lag machine on off them made was made after that and then we started lloking at the wiki and twitter and we found nothing\\n\\n",
+  "created_date": "2025-08-08T17:46:57.123-0700",
+  "updated_date": "2025-08-09T10:34:39.861-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "resolution_date": "2025-08-09T10:34:37.098-0700",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 100,
+  "summary_length": 3,
+  "fetch_timestamp": "2025-08-20T03:10:29.383218",
+  "comments": [
+    {
+      "id": "2081970",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Sivert Nikolai Mo",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-08T17:47:55.078-0700",
+      "updated": "2025-08-08T17:47:55.078-0700",
+      "body_text": "Its the weirdest thing ive encountered and tommorow ill get 3 of them to find out how we did it\\n\\n",
+      "body_length": 99,
+      "rendered_body": "<p>Its the weirdest thing ive encountered and tommorow ill get 3 of them to find out how we did it</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Its the weirdest thing ive encountered and tommorow ill get 3 of them to find out how we did it"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2082022",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "ampau (bolshi)",
+        "active": true,
+        "timeZone": "Europe/Andorra",
+        "accountType": "customer"
+      },
+      "created": "2025-08-09T02:40:02.540-0700",
+      "updated": "2025-08-09T02:40:02.540-0700",
+      "body_text": "I’m not really sure whether I understand the issue you’re encountering. If what you are trying to say is that in creative mode you can apply any enchantment to any item with an anvil, this ticket would be a duplicate of  .\\n\\n",
+      "body_length": 226,
+      "rendered_body": "<p>I’m not really sure whether I understand the issue you’re encountering. If what you are trying to say is that in creative mode you can apply any enchantment to any item with an anvil, this ticket would be a duplicate of <a href=\"https://report.bugs.mojang.com/browse/MC-95555\" title=\"smart-link\" class=\"external-link\" rel=\"nofollow noreferrer\">https://report.bugs.mojang.com/browse/MC-95555</a> .</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "I’m not really sure whether I understand the issue you’re encountering. If what you are trying to say is that in creative mode you can apply any enchantment to any item with an anvil, this ticket would be a duplicate of "
+              },
+              {
+                "type": "inlineCard",
+                "attrs": {
+                  "url": "https://report.bugs.mojang.com/browse/MC-95555"
+                }
+              },
+              {
+                "type": "text",
+                "text": " ."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 2
+}

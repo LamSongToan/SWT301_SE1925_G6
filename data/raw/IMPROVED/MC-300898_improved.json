@@ -1,0 +1,75 @@
+{
+  "key": "MC-300898",
+  "created_date": "2025-08-09T22:53:41.950-0700",
+  "updated_date": "2025-08-09T22:53:46.216-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "25w33a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-09T22:53:46.185-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "In version 24W36A, when wearing Netherite armor, it will incorrectly appear as Diamond armor",
+  "environment_raw": null,
+  "description": "in version 24W36A, when wearing Netherite armor, it will incorrectly appear as Diamond armor n n n n",
+  "Steps to Reproduce": "1. Launch Minecraft and select version 24W36A from the game version menu.\n2. Create a new Creative world with default settings.\n3. Open your inventory and locate the Netherite armor set (Helmet, Chestplate, Leggings, and Boots).\n4. Equip the full set of Netherite armor by dragging each piece to the respective armor slots.\n5. Observe the appearance of the armor in your character's model.\n6. Check the armor's tooltip in your inventory to confirm it is Netherite armor.\n7. Compare the visual appearance of the equipped armor to that of Diamond armor by equipping a full set of Diamond armor in the same manner.\n8. Note that the Netherite armor appears visually identical to Diamond armor despite being equipped.",
+  "Environment": "Minecraft Java Edition Version 25w33a (snapshot)",
+  "Observed Behavior": "In version 24W36A, when a player equips a full set of Netherite armor, the visual appearance of the armor incorrectly displays as Diamond armor instead of the intended Netherite design. This issue affects all pieces of Netherite armor, including the Netherite Helmet, Chestplate, Leggings, and Boots. \n\nDespite the incorrect visual representation, the armor retains its original properties and mechanics, such as durability and protection values, which are superior to Diamond armor. The player can still benefit from the attributes of Netherite armor, including the higher toughness and knockback resistance, but the aesthetic discrepancy can lead to confusion regarding the player's actual armor tier. \n\nThis bug is visually evident when the player is wearing the armor in both first-person and third-person views, as well as when viewed by other players in multiplayer mode. The issue persists regardless of any additional armor trims or enchantments applied to the Netherite armor, further confirming that the visual glitch is isolated to the armor's appearance. \n\nDevelopers should investigate the rendering and texture assignment for Netherite armor in this version to address the incorrect display issue.",
+  "Expected Behavior": "When a player wears Netherite armor in version 24W36A, the armor should visually represent its intended appearance as distinct from Diamond armor. This means that the armor should display the unique texture and color characteristics of Netherite armor, which is darker and more metallic than Diamond armor. The player should be able to clearly identify that they are wearing Netherite armor, which provides superior durability and protection compared to Diamond armor, as outlined in the game's mechanics. Additionally, the armor's attributes, such as its higher durability and knockback resistance, should be accurately reflected in the player's experience, ensuring that the visual representation matches the intended gameplay functionality.",
+  "comments": [
+    {
+      "id": "2082255",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "24x24": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "16x16": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "32x32": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png"
+        },
+        "displayName": "Automation for Jira",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "app"
+      },
+      "created": "2025-08-09T22:53:44.637-0700",
+      "updated": "2025-08-09T22:53:44.637-0700",
+      "body_text": "Please edit your report to change the Affected Version to the version shown on the Minecraft title screen\\n\\n",
+      "body_length": 109,
+      "rendered_body": "<p>Please edit your report to change the Affected Version to the version shown on the Minecraft title screen</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please edit your report to change the Affected Version to the version shown on the Minecraft title screen"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300898"
+  }
+}

@@ -1,0 +1,367 @@
+{
+  "key": "MC-300683",
+  "created_date": "2025-08-05T05:59:23.967-0700",
+  "updated_date": "2025-08-06T01:13:57.641-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "25w31a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-06T01:13:57.255-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Clicking on text-bearing blocks within any UI except the inventory results in a game crash.",
+  "environment_raw": null,
+  "description": "Clicking on text-bearing blocks (e.g., signs) within any UI except the inventory triggers a game crash. n n",
+  "Steps to Reproduce": "1. Launch Minecraft and create a new world in Creative mode with default settings.\n2. Once in the game, open the chat interface by pressing the \"T\" key.\n3. Type the command \"/give @p minecraft:sign\" and press Enter to obtain a sign.\n4. Place the sign on the ground and enter text on the sign.\n5. Open the crafting interface by right-clicking on a crafting table.\n6. While the crafting interface is open, click on the text of the sign you placed.\n7. Observe that the game crashes immediately after clicking on the sign's text.",
+  "Environment": "Minecraft Java Edition Version 25w31a (snapshot)",
+  "Observed Behavior": "When a player clicks on text-bearing blocks (such as signs, bookshelves, or lecterns) while any user interface (UI) is open\u2014excluding the inventory\u2014 the game crashes immediately. This issue persists across various UIs, including those for crafting tables, furnaces, and enchanting tables. The crash appears to be triggered by the interaction with the text component of these blocks, leading to an unexpected error state in the game's rendering or event handling system. \n\nTo reproduce this issue:\n\n1. Open any UI that is not the inventory (e.g., crafting table, anvil, or enchanting table).\n2. Attempt to click on a text-bearing block (e.g., a sign or book).\n3. Observe that the game crashes without any error message being displayed, forcing a restart of the game client.\n\nThis bug has been confirmed on multiple platforms and versions, indicating a systemic issue with how the game processes interactions with text-bearing blocks while other UIs are active.",
+  "Expected Behavior": "When clicking on text-bearing blocks, such as signs, while in any user interface (UI) other than the inventory, the game should allow the player to interact with the block without causing a crash. Instead of crashing, the game should either display the text on the block for editing or provide a relevant action associated with the block, such as opening a dialog for entering text or displaying the contents of the block. The game should maintain stability and continue functioning normally, ensuring a seamless user experience while interacting with text-bearing blocks in various UI contexts.",
+  "comments": [
+    {
+      "id": "2080622",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Zhaochongchong",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-05T05:59:24.678-0700",
+      "updated": "2025-08-05T05:59:24.678-0700",
+      "body_text": "This comment contained multiple media attachments (2), please login to view the attachments.",
+      "body_length": 92,
+      "rendered_body": "<p></p><div><p>This comment contained multiple media attachments (2), please login to view the attachments.</p></div><p></p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "a773cd76-4c77-4b74-9e35-8a3c576c9a15",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2081005",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/9f4958e3d401b872e417fb570a775a06?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FV-2.png",
+          "24x24": "https://secure.gravatar.com/avatar/9f4958e3d401b872e417fb570a775a06?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FV-2.png",
+          "16x16": "https://secure.gravatar.com/avatar/9f4958e3d401b872e417fb570a775a06?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FV-2.png",
+          "32x32": "https://secure.gravatar.com/avatar/9f4958e3d401b872e417fb570a775a06?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FV-2.png"
+        },
+        "displayName": "v-baslod",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-06T01:13:57.324-0700",
+      "updated": "2025-08-06T01:13:57.324-0700",
+      "body_text": "**Thank you for your report!**\\n\\nHowever, this issue has been temporarily closed as **Awaiting Response**.\\n\\nTo make your bug report as effective as possible, please try and include the following steps to reproduce the problem:\\n\\n> **Steps to Reproduce:**1.2.3.\\n> \\n> **Observed Results:***(Briefly describe what happens)*\\n> \\n> **Expected Results:***(Briefly describe what should happen)*\\n> \\n> \\n\\nIf your ticket does not look like the example given here, then it's likely to be closed as incomplete.\\n\\nThis ticket will automatically reopen when you reply.\\n\\n**Quick Links**:\ud83d\udcd3 Issue Guidelines \u2013 \ud83d\udcac Mojang Support \u2013 \ud83d\udce7 Suggestions \u2013 \ud83d\udcd6 Minecraft Wiki\\n\\n",
+      "body_length": 661,
+      "rendered_body": "<p><b>Thank you for your report!</b></p>\n\n<p>However, this issue has been temporarily closed as <b><font color=\"#ff5722\">Awaiting Response</font></b>.</p>\n\n<p>To make your bug report as effective as possible, please try and include the following steps to reproduce the problem:</p>\n<blockquote><p><b>Steps to Reproduce:</b><br>\n 1.<br>\n 2.<br>\n 3.</p>\n\n<p><b>Observed Results:</b><br>\n <em>(Briefly describe what happens)</em></p>\n\n<p><b>Expected Results:</b><br>\n <em>(Briefly describe what should happen)</em></p></blockquote>\n<p>If your ticket does not look like the example given <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\">here</a>, then it's likely to be closed as incomplete.</p>\n\n<p>This ticket will automatically reopen when you reply.</p>\n\n<p><b>Quick Links</b>:<br>\n \ud83d\udcd3 <a href=\"https://help.minecraft.net/hc/en-us/articles/4408887473421\" class=\"external-link\" rel=\"nofollow noreferrer\">Issue Guidelines</a> \u2013 \ud83d\udcac <a href=\"https://help.minecraft.net/hc/en-us/requests/new\" class=\"external-link\" rel=\"nofollow noreferrer\">Mojang Support</a> \u2013 \ud83d\udce7 <a href=\"https://feedback.minecraft.net/\" class=\"external-link\" rel=\"nofollow noreferrer\">Suggestions</a> \u2013 \ud83d\udcd6 <a href=\"https://minecraft.wiki\" class=\"external-link\" rel=\"nofollow noreferrer\">Minecraft Wiki</a></p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Thank you for your report!",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "However, this issue has been temporarily closed as "
+              },
+              {
+                "type": "text",
+                "text": "Awaiting Response",
+                "marks": [
+                  {
+                    "type": "textColor",
+                    "attrs": {
+                      "color": "#ff5722"
+                    }
+                  },
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "To make your bug report as effective as possible, please try and include the following steps to reproduce the problem:"
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Steps to Reproduce:",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "1."
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "2."
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "3."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Observed Results:",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "(Briefly describe what happens)",
+                    "marks": [
+                      {
+                        "type": "em"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Expected Results:",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "(Briefly describe what should happen)",
+                    "marks": [
+                      {
+                        "type": "em"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "If your ticket does not look like the example given "
+              },
+              {
+                "type": "text",
+                "text": "here",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ", then it's likely to be closed as incomplete."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will automatically reopen when you reply."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3 "
+              },
+              {
+                "type": "text",
+                "text": "Issue Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://help.minecraft.net/hc/en-us/articles/4408887473421"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udcac "
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://help.minecraft.net/hc/en-us/requests/new"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udce7 "
+              },
+              {
+                "type": "text",
+                "text": "Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://feedback.minecraft.net/"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udcd6 "
+              },
+              {
+                "type": "text",
+                "text": "Minecraft Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecraft.wiki"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300683"
+  }
+}

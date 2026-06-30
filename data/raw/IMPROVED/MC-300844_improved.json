@@ -1,0 +1,82 @@
+{
+  "key": "MC-300844",
+  "created_date": "2025-08-08T04:53:58.382-0700",
+  "updated_date": "2025-08-08T12:52:14.582-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "25w32a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-08T12:52:00.757-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Skeleton bug",
+  "environment_raw": null,
+  "description": "Skeleton s bow is floating under its hand,not in hand n n",
+  "Steps to Reproduce": "1. Create a new Creative world with default settings.\n2. Locate or create a flat area to spawn a skeleton.\n3. Use the command '/summon minecraft:skeleton ~ ~ ~ {HandItems:[{id:\"minecraft:bow\",Count:1}]}' to spawn a skeleton holding a bow.\n4. Observe the skeleton's position and orientation to ensure it is standing upright and facing the player.\n5. Move the player character close enough to the skeleton to trigger its targeting behavior.\n6. Observe the skeleton's animation as it draws the bow and prepares to shoot.\n7. Confirm whether the bow appears to be floating under the skeleton's hand rather than being held properly.",
+  "Environment": "Minecraft Java Edition Version 25w32a (snapshot)",
+  "Observed Behavior": "When a skeleton is spawned or generated in the game, its bow appears to be floating beneath its right hand instead of being held correctly in hand. This visual glitch affects the appearance of the skeleton, as the bow does not align with the skeleton's hand position. \n\n- **Reproduction Steps:**\n  1. Spawn a skeleton in the game, either naturally or using commands (e.g., `/summon skeleton`).\n  2. Observe the positioning of the bow relative to the skeleton's hand.\n\n- **Expected Behavior:**\n  The bow should be visibly held in the skeleton's hand, with the grip of the bow aligned with the hand's position, allowing for a realistic representation of the skeleton preparing to shoot arrows.\n\n- **Platform:** The issue has been observed in both Java and Bedrock editions.\n\n- **Additional Notes:**\n  This bug does not affect the skeleton's functionality or behavior, as it can still shoot arrows correctly. The issue is purely cosmetic, impacting the visual representation of the skeleton's weapon handling.",
+  "Expected Behavior": "When a skeleton is equipped with a bow, it should hold the bow properly in its hand, displaying the correct animation as it prepares to shoot. The bow should be visibly aligned with the skeleton's hand, rather than floating beneath it. This behavior is consistent with the game's design, where skeletons are intended to animate their bows while attacking, drawing them back and aiming accurately at their targets. The expected behavior is that players should see the bow in the correct position, enhancing the visual representation of the skeleton's ranged attack capability.",
+  "comments": [
+    {
+      "id": "2081789",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "ampau (bolshi)",
+        "active": true,
+        "timeZone": "Europe/Andorra",
+        "accountType": "customer"
+      },
+      "created": "2025-08-08T06:00:26.917-0700",
+      "updated": "2025-08-08T06:00:26.917-0700",
+      "body_text": "Can not reproduce. Could you attach a video/screenshot of the issue with your F3 debug screen enabled or steps to reproduce?Are you certain you are on the latest snapshot, 25w32a, and not 25w31a?\\n\\n",
+      "body_length": 199,
+      "rendered_body": "<p>Can not reproduce. Could you attach a video/screenshot of the issue with your F3 debug screen enabled or steps to reproduce?<br>\nAre you certain you are on the latest snapshot, 25w32a, and not 25w31a?</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Can not reproduce. Could you attach a video/screenshot of the issue with your F3 debug screen enabled or steps to reproduce?"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Are you certain you are on the latest snapshot, 25w32a, and not 25w31a?"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300844"
+  }
+}

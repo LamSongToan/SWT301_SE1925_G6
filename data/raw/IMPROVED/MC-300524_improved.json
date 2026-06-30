@@ -1,0 +1,260 @@
+{
+  "key": "MC-300524",
+  "created_date": "2025-08-01T09:23:55.646-0700",
+  "updated_date": "2025-08-01T09:36:38.060-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-01T09:36:37.764-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "A bug where hostile mobs don t spawn in Realms.",
+  "environment_raw": null,
+  "description": "Hostile mobs do not spawn, or spawn very rarely, even at night. Changing the game difficulty to reset mob spawning doesn t help. The issue doesn t occur before the chunk is loaded, but once the chunk has been loaded, hostile mobs stop spawning completely. n n",
+  "Steps to Reproduce": "1. Create a new Minecraft Realm with default settings and ensure the game mode is set to Survival.\n2. Wait until nighttime in the Realm, ensuring that it is fully dark outside.\n3. Observe the area around you, specifically looking for any hostile mobs such as zombies, skeletons, or creepers spawning in the vicinity.\n4. Change the game difficulty to Easy, then back to Normal, and observe if this affects the spawning of hostile mobs.\n5. Move to a location where you know hostile mobs typically spawn, such as a plains biome or a dark cave.\n6. Remain in the area for an extended period (at least 10 minutes) without leaving the chunk to see if any hostile mobs spawn.\n7. If no hostile mobs appear, exit the chunk (by moving more than 128 blocks away) and then return to the same location to check for spawning again.\n8. Repeat the process of waiting at least 10 minutes in the loaded chunk to confirm that hostile mobs do not spawn after the initial loading.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "In the current state of the bug, hostile mobs are failing to spawn within loaded chunks on Minecraft Realms, despite the presence of appropriate spawning conditions. Specifically, the following behaviors have been observed:\n\n1. **Time of Day:** Hostile mobs, which typically spawn at night or in low light levels, do not appear even during nighttime. This is contrary to expected behavior where mobs like zombies, skeletons, and creepers should spawn in dark areas.\n\n2. **Chunk Loading:** The issue manifests once a chunk has been loaded. Initially, hostile mobs may spawn correctly when the chunk is first generated, but upon subsequent loading, they cease to spawn entirely. This indicates that the problem may be linked to how the game handles mob spawning after the initial chunk generation.\n\n3. **Game Difficulty Settings:** Changing the game difficulty (e.g., from Easy to Hard) does not resolve the issue. In normal circumstances, modifying difficulty is expected to reset the mob spawning mechanics, but in this case, it has no effect on the absence of hostile mobs.\n\n4. **Mob Cap Considerations:** The spawning issue does not appear to be related to the mob cap, as there are no persistent hostile mobs present in the vicinity that would prevent new ones from spawning. The expected cap for hostile mobs is 70, which should not be reached under normal gameplay.\n\n5. **Spawn Conditions:** Hostile mobs should spawn in areas with a light level of 7 or lower. The absence of hostile mobs suggests that the game is not recognizing or processing the necessary conditions for spawning, even when they are met.\n\n6. **Testing Environment:** This bug has been consistently reproduced in various Realms settings, indicating it is not an isolated incident. Players across different platforms (Java and Bedrock) have reported similar issues, suggesting a broader problem with the Realms environment.\n\nIn summary, the bug presents a significant disruption to gameplay, as players are unable to encounter or engage with hostile mobs, which are essential for survival and combat mechanics in Minecraft. The issue requires investigation to determine its root cause and to restore expected mob spawning behavior in Realms.",
+  "Expected Behavior": "When a player is in a loaded chunk at night and the difficulty is set to any level other than Peaceful, hostile mobs should spawn regularly according to the game's mechanics. This includes common hostile mobs like zombies, skeletons, and creepers appearing in dark areas or at night, as long as the light level is below 8. Additionally, the spawning should not be hindered by any environmental factors such as excessive light sources or blocks that prevent mob spawning. If conditions are met, hostile mobs should spawn consistently within a 128-block radius of the player without any significant delays or interruptions. The expected behavior aligns with Minecraft's design, where hostile mobs are intended to actively spawn in appropriate conditions, contributing to the game's survival challenges.",
+  "comments": [
+    {
+      "id": "2079583",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/32"
+        },
+        "displayName": "[MOD] Greymagic27",
+        "active": true,
+        "timeZone": "Europe/London",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-01T09:36:37.809-0700",
+      "updated": "2025-08-01T09:36:37.809-0700",
+      "body_text": "*We do not have enough information to find the cause of this issue.*\\n\\nPlease **attach the affected (zipped) world file**. If the file size is too large, please upload it somewhere else and then link to it here.\\n\\nThis issue is being temporarily resolved as **Awaiting Response**. Once the requested information has been delivered, the report will be reopened automatically.\\n\\n*Quick Links*:\ud83d\udcd3 Bug Tracker Guidelines -- \ud83d\udcac Community Support -- \ud83d\udce7 Mojang Support (Technical Issues) -- \ud83d\udce7 Microsoft Support (Account Issues) -- \ud83d\udcd3 Project Summary -- \u270d\ufe0f Feedback and Suggestions -- \ud83d\udcd6 Game Wiki\\n\\n",
+      "body_length": 591,
+      "rendered_body": "<p><em>We do not have enough information to find the cause of this issue.</em></p>\n\n<p>Please <b>attach the affected (zipped) world file</b>. If the file size is too large, please upload it somewhere else and then link to it here.</p>\n\n<p>This issue is being temporarily resolved as <b>Awaiting Response</b>. Once the requested information has been delivered, the report will be reopened automatically.</p>\n\n\n<p><em>Quick Links</em>:<br>\n\ud83d\udcd3 <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\">Bug Tracker Guidelines</a> \u2013 \ud83d\udcac <a href=\"https://discord.com/invite/minecraft\" class=\"external-link\" rel=\"nofollow noreferrer\">Community Support</a> \u2013 \ud83d\udce7 <a href=\"https://aka.ms/Minecraft-Support\" class=\"external-link\" rel=\"nofollow noreferrer\">Mojang Support (Technical Issues)</a> \u2013 \ud83d\udce7 <a href=\"https://support.xbox.com/contact-us/\" class=\"external-link\" rel=\"nofollow noreferrer\">Microsoft Support (Account Issues)</a> \u2013 \ud83d\udcd3 <a href=\"https://report.bugs.mojang.com/servicedesk/customer/portal/2\" class=\"external-link\" rel=\"nofollow noreferrer\">Project Summary</a> \u2013 \u270d\ufe0f <a href=\"https://aka.ms/MinecraftFeedbackDiscord\" class=\"external-link\" rel=\"nofollow noreferrer\">Feedback and Suggestions</a> \u2013 \ud83d\udcd6 <a href=\"https://minecraft.wiki/\" class=\"external-link\" rel=\"nofollow noreferrer\">Game Wiki</a></p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "We do not have enough information to find the cause of this issue.",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please "
+              },
+              {
+                "type": "text",
+                "text": "attach the affected (zipped) world file",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ". If the file size is too large, please upload it somewhere else and then link to it here."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This issue is being temporarily resolved as "
+              },
+              {
+                "type": "text",
+                "text": "Awaiting Response",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ". Once the requested information has been delivered, the report will be reopened automatically."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3 "
+              },
+              {
+                "type": "text",
+                "text": "Bug Tracker Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udcac "
+              },
+              {
+                "type": "text",
+                "text": "Community Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://discord.com/invite/minecraft"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udce7 "
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support (Technical Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/Minecraft-Support"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udce7 "
+              },
+              {
+                "type": "text",
+                "text": "Microsoft Support (Account Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://support.xbox.com/contact-us/"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udcd3 "
+              },
+              {
+                "type": "text",
+                "text": "Project Summary",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://report.bugs.mojang.com/servicedesk/customer/portal/2"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \u270d\ufe0f "
+              },
+              {
+                "type": "text",
+                "text": "Feedback and Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MinecraftFeedbackDiscord"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udcd6 "
+              },
+              {
+                "type": "text",
+                "text": "Game Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecraft.wiki/"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300524"
+  }
+}

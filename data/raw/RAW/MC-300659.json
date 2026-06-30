@@ -1,0 +1,123 @@
+{
+  "key": "MC-300659",
+  "summary": "Perder la compra de Minecraft: Java & Bedrock Edition for PC",
+  "description": "Ya no puedo descargar el iniciador \\n\\n",
+  "created_date": "2025-08-04T23:07:38.645-0700",
+  "updated_date": "2025-08-04T23:07:44.961-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "resolution_date": "2025-08-04T23:07:44.890-0700",
+  "affected_versions": [
+    "25w32a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 7,
+  "summary_length": 11,
+  "fetch_timestamp": "2025-08-20T03:10:51.314969",
+  "comments": [
+    {
+      "id": "2080538",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Cyborg nator",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-04T23:07:39.937-0700",
+      "updated": "2025-08-04T23:07:39.937-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.",
+      "body_length": 162,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "8abcc918-0bb9-4565-a11c-39b3f6ba1c1d",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "fd69faff-694c-451e-b61d-57962d1e1f0b",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2080539",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "24x24": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "16x16": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "32x32": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png"
+        },
+        "displayName": "Automation for Jira",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "app"
+      },
+      "created": "2025-08-04T23:07:42.916-0700",
+      "updated": "2025-08-04T23:07:42.916-0700",
+      "body_text": "Please edit your report to change the Affected Version to the version shown on the Minecraft title screen\\n\\n",
+      "body_length": 109,
+      "rendered_body": "<p>Please edit your report to change the Affected Version to the version shown on the Minecraft title screen</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please edit your report to change the Affected Version to the version shown on the Minecraft title screen"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 2
+}

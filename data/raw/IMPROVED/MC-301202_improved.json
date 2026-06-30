@@ -1,0 +1,400 @@
+{
+  "key": "MC-301202",
+  "created_date": "2025-08-18T12:11:24.960-0700",
+  "updated_date": "2025-08-19T03:07:37.939-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "25w33a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-19T03:07:37.842-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Copper Golem Froze My game",
+  "environment_raw": null,
+  "description": "All the villager function are currently stopped since my copper golem froze on an item. n n n nWhen I say stopped, they are moving, sleeping, going on their work block, but i m talking about secondary function, they don t breed and iron golem doesn t spawn anymore. n n n nI killed the copper golem, it didn t change. I restarted all the farm, nothing changed. n n n nCopper golem froze on sugar cane, it was already in a chest, golem wasn t checking other chest and freezing on it. n n n n n n",
+  "Steps to Reproduce": "1. Create a new Survival world with default settings.\n2. Locate or create a village with at least 10 villagers and sufficient beds to meet spawning requirements.\n3. Ensure there are at least 3 villagers actively working at their respective workstations.\n4. Place a Copper Golem in the village vicinity.\n5. Drop a Sugar Cane item on the ground near the Copper Golem.\n6. Observe the Copper Golem as it interacts with the Sugar Cane and becomes \"frozen\" on it.\n7. Wait for a few in-game days to see if the villagers stop their secondary functions, such as breeding and iron golem spawning.\n8. Kill the Copper Golem and monitor if there are any changes in the villagers' behavior.\n9. Restart any farms associated with the villagers and check if the issues persist.",
+  "Environment": "Minecraft Java Edition Version 25w33a (snapshot)",
+  "Observed Behavior": "The game exhibits a significant issue where all villager functions are halted due to a copper golem getting \"frozen\" on an item, specifically a sugar cane that was already stored in a chest. Although the villagers continue to move, sleep, and approach their designated workstations, their secondary functions are entirely non-functional. This includes the inability to breed, which prevents new villagers from being created, and the failure of iron golems to spawn within the village, despite the necessary conditions being met for their summoning.\n\nAttempts to resolve the issue by killing the copper golem have had no effect; the villagers remain stuck in their current state. Restarting the entire farm setup also yielded no changes in behavior. The copper golem appears to be locked onto the sugar cane item, not checking other chests or items in the vicinity, which is causing the disruption in villager mechanics.\n\nKey details include:\n- The copper golem is \"frozen\" on an item (sugar cane) that was already in a chest.\n- Villagers are unable to breed or summon iron golems, despite their movements.\n- Killing the copper golem does not restore normal villager functions.\n- Restarting the farm setup does not resolve the issue.\n- The problem persists even after ensuring all requirements for villager breeding and iron golem spawning are satisfied. \n\nThis bug seems to affect the overall functionality of the village and its mechanics, leading to a critical gameplay disruption.",
+  "Expected Behavior": "When a copper golem interacts with an item, it should perform its intended function without causing game freezes or halting the secondary functions of villagers. Specifically, villagers should continue to breed and spawn iron golems as long as the necessary conditions are met: there must be enough villagers, beds, and valid spawn conditions for iron golems. If a copper golem is frozen on an item, it should not disrupt the normal operations of the village, including the villagers' ability to gossip and summon iron golems. Additionally, the copper golem should be able to check other chests for items instead of becoming stuck on a single item, allowing for smooth gameplay and proper functioning of village mechanics.",
+  "comments": [
+    {
+      "id": "2084638",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "24x24": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "16x16": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "32x32": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png"
+        },
+        "displayName": "[MCQA] jKakub",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-19T03:07:32.285-0700",
+      "updated": "2025-08-19T03:07:32.285-0700",
+      "body_text": "Hi!**Thank you for your report!**\u00a0\\n\\nHowever, this issue has been temporarily closed as\u202f**Awaiting Response**.\\n\\nCould you please provide more details or/and media files. As such we have no repro of this issue.\u00a0\\n\\nAlso, just a reminder, to make your bug report as effective as possible, please try and include the following steps to reproduce the problem:\u00a0\\n\\n**Steps to Reproduce:**\u00a0\\n\\n1. \\n\\n\\n\\n1. \\n\\n\\n\\n1. \\n\\n\\n\\n**Observed Results:**\u00a0\\n\\n*(Briefly describe what happens)*\u00a0\\n\\n**Expected Results:**\u00a0\\n\\n*(Briefly describe what should happen)*\u00a0\\n\\nIf your ticket does not look like the this example, then it's likely to be closed as incomplete.\u00a0\\n\\nThis ticket will automatically reopen when you reply.\u00a0Thanks!\\n\\n**Quick Links**:\u00a0\ud83d\udcd3\u202fIssue Guidelines\u202f\u2013 \ud83d\udcac\u202fMojang Support\u202f\u2013 \ud83d\udce7\u202fSuggestions\u202f\u2013 \ud83d\udcd6\u202fMinecraft Wiki\u00a0\\n\\n",
+      "body_length": 818,
+      "rendered_body": "<p>Hi!<br>\n<b>Thank you for your report!</b>&nbsp;</p>\n\n<p>However, this issue has been temporarily closed as\u202f<font color=\"#ff991f\"><b>Awaiting Response</b></font>.</p>\n\n<p>Could you please provide more details or/and media files. As such we have no repro of this issue.&nbsp;</p>\n\n<p>Also, just a reminder, to make your bug report as effective as possible, please try and include the following steps to reproduce the problem:&nbsp;</p>\n\n<p><b>Steps to Reproduce:</b>&nbsp;</p>\n\n<ol>\n\t<li>&nbsp;</li>\n</ol>\n\n\n<ol>\n\t<li>&nbsp;</li>\n</ol>\n\n\n<ol>\n\t<li>&nbsp;</li>\n</ol>\n\n\n<p><b>Observed Results:</b>&nbsp;</p>\n\n<p><em>(Briefly describe what happens)</em>&nbsp;</p>\n\n<p><b>Expected Results:</b>&nbsp;</p>\n\n<p><em>(Briefly describe what should happen)</em>&nbsp;</p>\n\n<p>If your ticket does not look like the this example, then it's likely to be closed as incomplete.&nbsp;</p>\n\n<p>This ticket will automatically reopen when you reply.&nbsp;Thanks!</p>\n\n<p><b>Quick Links</b>:&nbsp;<br>\n\ud83d\udcd3\u202f<a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\">Issue Guidelines</a>\u202f\u2013 \ud83d\udcac\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fhelp.minecraft.net.mcas.ms%2Fhc%2Fen-us%2Frequests%2Fnew%3FMcasTsid%3D15600&amp;McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b\" class=\"external-link\" rel=\"nofollow noreferrer\">Mojang Support</a>\u202f\u2013 \ud83d\udce7\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Ffeedback.minecraft.net.mcas.ms%2F%3FMcasTsid%3D15600&amp;McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b\" class=\"external-link\" rel=\"nofollow noreferrer\">Suggestions</a>\u202f\u2013 \ud83d\udcd6\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fminecraft.wiki.mcas.ms%2F%3FMcasTsid%3D15600&amp;McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b\" class=\"external-link\" rel=\"nofollow noreferrer\">Minecraft Wiki</a>&nbsp;</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hi!"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Thank you for your report!",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "However, this issue has been temporarily closed as\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Awaiting Response",
+                "marks": [
+                  {
+                    "type": "strong"
+                  },
+                  {
+                    "type": "textColor",
+                    "attrs": {
+                      "color": "#ff991f"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Could you please provide more details or/and media files. As such we have no repro of this issue.\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Also, just a reminder, to make your bug report as effective as possible, please try and include the following steps to reproduce the problem:\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Steps to Reproduce:",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "orderedList",
+            "attrs": {
+              "order": 1
+            },
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "\u00a0"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "orderedList",
+            "attrs": {
+              "order": 2
+            },
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "\u00a0"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "orderedList",
+            "attrs": {
+              "order": 3
+            },
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "\u00a0"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Observed Results:",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "(Briefly describe what happens)",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Expected Results:",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "(Briefly describe what should happen)",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "If your ticket does not look like the this example, then it's likely to be closed as incomplete.\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will automatically reopen when you reply.\u00a0Thanks!"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":\u00a0"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Issue Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udcac\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fhelp.minecraft.net.mcas.ms%2Fhc%2Fen-us%2Frequests%2Fnew%3FMcasTsid%3D15600&McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udce7\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Ffeedback.minecraft.net.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udcd6\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Minecraft Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fminecraft.wiki.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-301202"
+  }
+}

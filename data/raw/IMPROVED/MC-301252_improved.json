@@ -1,0 +1,131 @@
+{
+  "key": "MC-301252",
+  "created_date": "2025-08-19T10:01:00.711-0700",
+  "updated_date": "2025-08-19T10:12:38.445-0700",
+  "status": "Resolved",
+  "resolution": "Cannot Reproduce",
+  "affected_versions": [
+    "1.21.8",
+    "25w34b"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 0,
+  "labels": [],
+  "resolution_date": "2025-08-19T10:12:38.350-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Enchanted items doesnt show the purple outline",
+  "environment_raw": null,
+  "description": "Some enchanted items doesnt show the purple outling they used to n n",
+  "Steps to Reproduce": "1. Create a new Creative world with default settings.\n2. Give yourself an enchanted item using the command '/give @p minecraft:diamond_sword{Enchantments:[{id:\"minecraft:sharpness\",lvl:5}]}'\n3. Hold the enchanted diamond sword in your hand.\n4. Observe the item in your hand to confirm the enchanted glint is visible.\n5. Place a Block of Diamond in the world.\n6. Right-click the Block of Diamond to display the enchanted diamond sword on it.\n7. Observe the displayed enchanted diamond sword to check if the purple outline (enchanted glint) is visible.\n8. Repeat steps 2-7 with other enchanted items, such as an Enchanted Golden Apple or Enchanted Book, to verify the issue consistently occurs.",
+  "Environment": "Minecraft Java Edition Versions: 1.21.8, 25w34b (includes snapshots)",
+  "Observed Behavior": "Some enchanted items, when held by the player or displayed in item frames, do not exhibit the expected purple enchanted glint effect. This issue leads to certain enchanted items appearing visually identical to their unenchanted counterparts. For example, an enchanted golden apple does not show the characteristic purple outline, making it look like a regular golden apple. This behavior is inconsistent across different enchanted items and can affect player perception and gameplay, particularly in situations where distinguishing between enchanted and non-enchanted items is crucial. The absence of the enchanted glint may also impact the aesthetic experience for players who rely on visual cues to identify enchanted items. The bug occurs in various versions of the game, including both Java and Bedrock editions, and has been reported across multiple platforms.",
+  "Expected Behavior": "When an enchanted item is held or displayed in the game, it should consistently show a distinct purple outline, commonly referred to as the enchanted glint. This visual effect is intended to signify that the item has been enchanted, providing a clear indication of its enhanced properties. The glint should be visible regardless of the item's location in the player's inventory, hotbar, or when displayed on blocks. This behavior is part of Minecraft's design to help players easily identify enchanted items, ensuring that they stand out from non-enchanted items.",
+  "comments": [
+    {
+      "id": "2084812",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "VixKeb",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-19T10:01:01.348-0700",
+      "updated": "2025-08-19T10:01:01.348-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.",
+      "body_length": 162,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "316fa146-fead-4b57-8f35-aa2845857157",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "f18f1e0c-89bd-42f6-894b-ef2b6fe4d622",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2084817",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "VixKeb",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-19T10:04:58.221-0700",
+      "updated": "2025-08-19T10:04:58.221-0700",
+      "body_text": "Sorry guys it was because of a texture pack that removes fog\\n\\n\\n\\n",
+      "body_length": 68,
+      "rendered_body": "<p>Sorry guys it was because of a texture pack that removes fog</p>\n",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Sorry guys it was because of a texture pack that removes fog"
+              }
+            ]
+          },
+          {
+            "type": "paragraph"
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-301252"
+  }
+}

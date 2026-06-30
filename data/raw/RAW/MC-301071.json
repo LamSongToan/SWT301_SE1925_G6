@@ -1,0 +1,78 @@
+{
+  "key": "MC-301071",
+  "summary": "Fence Gates make Stone sounds on placement",
+  "description": "When any Fence Gate is placed/broken it makes a Stone based sound instead of Wood sounds\\n\\n",
+  "created_date": "2025-08-14T03:01:23.535-0700",
+  "updated_date": "2025-08-14T04:10:21.145-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "resolution_date": "2025-08-14T04:10:11.372-0700",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 16,
+  "summary_length": 7,
+  "fetch_timestamp": "2025-08-20T03:10:06.024517",
+  "comments": [
+    {
+      "id": "2083512",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/32"
+        },
+        "displayName": "[MCQA] Blawik",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-14T04:10:11.436-0700",
+      "updated": "2025-08-14T04:10:11.436-0700",
+      "body_text": "Hi Could you upload a video showing this issue?\\n\\n",
+      "body_length": 51,
+      "rendered_body": "<p>Hi <br>\nCould you upload a video showing this issue?</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hi "
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Could you upload a video showing this issue?"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 1
+}

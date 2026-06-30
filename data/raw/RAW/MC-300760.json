@@ -1,0 +1,110 @@
+{
+  "key": "MC-300760",
+  "summary": "Realms list isn't sorted",
+  "description": "The bug with the Realms list is completely messed up, before I had active Realms on top, and inactive ones on the bottom, I don’t know why exactly this happened, but I want to say that it happened after me removed from one Realms and after returned Honey Missile Wars, Bleps: Nocked and Loaded, Duel TNT, and Biome Run Remix\\n\\n",
+  "created_date": "2025-07-27T04:24:14.499-0700",
+  "updated_date": "2025-08-08T04:21:44.436-0700",
+  "status": "Resolved",
+  "resolution": "Cannot Reproduce",
+  "resolution_date": "2025-08-08T04:19:19.846-0700",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Plausible",
+  "category": "UI",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 60,
+  "summary_length": 4,
+  "fetch_timestamp": "2025-08-20T03:12:04.781587",
+  "comments": [
+    {
+      "id": "2077549",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "4953makcim",
+        "active": true,
+        "timeZone": "Europe/Kyiv",
+        "accountType": "customer"
+      },
+      "created": "2025-07-27T04:24:15.513-0700",
+      "updated": "2025-07-27T04:24:15.513-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.",
+      "body_length": 80,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "76268f2d-6670-414f-a14d-e78901efcd6a",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2081757",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/42d97e23ee0c6e7cb05f90a7889b501b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FE-6.png",
+          "24x24": "https://secure.gravatar.com/avatar/42d97e23ee0c6e7cb05f90a7889b501b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FE-6.png",
+          "16x16": "https://secure.gravatar.com/avatar/42d97e23ee0c6e7cb05f90a7889b501b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FE-6.png",
+          "32x32": "https://secure.gravatar.com/avatar/42d97e23ee0c6e7cb05f90a7889b501b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FE-6.png"
+        },
+        "displayName": "etanaratsastaja",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-08T04:19:19.913-0700",
+      "updated": "2025-08-08T04:19:19.913-0700",
+      "body_text": "Unable to reproduce the issue, feel free to leave a comment if you have more concrete steps to get the issue to show up again.\\n\\n",
+      "body_length": 130,
+      "rendered_body": "<p>Unable to reproduce the issue, feel free to leave a comment if you have more concrete steps to get the issue to show up again.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Unable to reproduce the issue, feel free to leave a comment if you have more concrete steps to get the issue to show up again."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 2
+}

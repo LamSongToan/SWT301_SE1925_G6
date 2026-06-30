@@ -1,0 +1,75 @@
+{
+  "key": "MC-301073",
+  "created_date": "2025-08-14T05:33:28.717-0700",
+  "updated_date": "2025-08-17T13:12:21.461-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-17T13:12:19.952-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Iron Golem Rage when using a lead on a bot with villager leaded to an happy ghast",
+  "environment_raw": null,
+  "description": "If you have a boat with 1 2 villagers and you use the lead on the boat, the boat will fall on the ground and even if the villagers won t get any damage, if there is an iron golem nearby he will be triggered and will charge you n n",
+  "Steps to Reproduce": "1. Create a new Survival world with default settings.\n2. Locate or create a village that has at least one Iron Golem present.\n3. Acquire two Villagers by either breeding them or using a Villager spawn egg.\n4. Place both Villagers in a boat.\n5. Use a lead on the boat to attempt to pull it.\n6. Observe the boat fall to the ground.\n7. Ensure that the Iron Golem is within 16 blocks of the boat when it falls.\n8. Stand nearby and watch the Iron Golem's behavior after the boat falls. \n9. Note if the Iron Golem becomes aggressive and charges at the player despite the Villagers not taking any damage.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "When a player attaches a lead to a boat containing 1 or 2 villagers and subsequently uses the lead, the boat will detach and fall to the ground. Although the villagers inside the boat do not sustain any damage from this action, any nearby iron golems will perceive this as a threat. The iron golem will enter a hostile state and charge at the player, regardless of the player's actions towards the villagers or the boat. This behavior occurs even though the villagers remain unharmed and the player has not provoked the iron golem directly. The triggering of the iron golem's aggression appears to be an unintended consequence of the interaction between the lead, the boat, and the villagers, leading to unexpected and potentially dangerous encounters for the player.",
+  "Expected Behavior": "When a player uses a lead on a boat containing villagers, the expected behavior is that the boat should remain stable and not fall to the ground. The villagers inside the boat should not be harmed, and the iron golem nearby should not become agitated or hostile. Iron golems are designed to react to players attacking villagers or being provoked in certain ways, but using a lead on a boat should not trigger any aggressive behavior from the iron golem. Instead, the iron golem should continue its passive patrol behavior, ensuring that it only becomes hostile if a player directly attacks a villager or the golem itself. This aligns with the intended mechanics of iron golems as guardians of villages, where they react to player actions that threaten the villagers, rather than incidental interactions like using a lead on a boat.",
+  "comments": [
+    {
+      "id": "2084273",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/32"
+        },
+        "displayName": "[Mod] Jingy",
+        "active": true,
+        "timeZone": "America/Chicago",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-17T13:12:21.135-0700",
+      "updated": "2025-08-17T13:12:21.135-0700",
+      "body_text": "Can you reliably reproduce this in any world consistently? Iron golems have a mechanic to track anger towards a player, which could be interfering. Please provide a video of the issue occurring in a totally new world.\\n\\n",
+      "body_length": 221,
+      "rendered_body": "<p>Can you reliably reproduce this in any world consistently? Iron golems have a mechanic to track anger towards a player, which could be interfering. Please provide a video of the issue occurring in a totally new world.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Can you reliably reproduce this in any world consistently? Iron golems have a mechanic to track anger towards a player, which could be interfering. Please provide a video of the issue occurring in a totally new world."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-301073"
+  }
+}

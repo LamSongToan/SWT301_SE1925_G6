@@ -1,0 +1,39 @@
+{
+  "key": "MC-300031",
+  "created_date": "2025-07-28T12:12:51.043-0700",
+  "updated_date": "2025-08-01T19:44:37.707-0700",
+  "status": "Resolved",
+  "resolution": "Cannot Reproduce",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 0,
+  "labels": [],
+  "resolution_date": "2025-08-01T19:44:37.618-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "vindicators not spawning on a raid",
+  "environment_raw": null,
+  "description": "vindicators not spawning on raids for some reason, meaning no totems n nedit: this bug does not exist i just thought wrong n n",
+  "Steps to Reproduce": "1. Create a new Survival world with default settings.\n2. Ensure that the world difficulty is set to Normal or Hard.\n3. Find or create a village where raids can occur.\n4. Obtain the Bad Omen effect by defeating a raid captain or pillager patrol.\n5. Wait for the raid to trigger in the village.\n6. Observe the waves of illagers that spawn during the raid.\n7. Specifically look for vindicators during the raid waves, noting their absence.\n8. Repeat the process multiple times to confirm the issue persists across different raids.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "During a raid, vindicators are expected to spawn as part of the illager mob composition. Specifically, they should appear in waves, starting from the second wave onwards, with their frequency increasing in later waves and at higher difficulties. On Hard difficulty, vindicators can spawn riding ravagers, forming a vindicator ravager jockey. However, in the reported scenario, vindicators do not spawn at all during the raid, which prevents players from acquiring totems of undying, as these items are dropped exclusively by evokers, who also spawn in later waves of the raid.\n\nThe absence of vindicators affects the overall challenge and dynamics of the raid, as they play a crucial role in the mob composition. In Java Edition, the expected behavior is that a certain number of vindicators should spawn in each wave, contributing to the raid's difficulty. If this behavior is not occurring, it may indicate a bug in the raid spawning mechanics or an issue with the specific game version being played.\n\nTo summarize, the expected behavior is:\n- Vindicators should spawn during raids starting from the second wave.\n- Their appearance increases in frequency with each subsequent wave and at higher difficulties.\n- The absence of vindicators prevents players from obtaining totems of undying dropped by evokers in later waves.\n\nThis issue should be investigated to ensure proper spawning mechanics are functioning as intended.",
+  "Expected Behavior": "When a raid is initiated, vindicators should spawn as part of the raider mobs, appearing more frequently during later waves and at higher difficulties. Specifically, they can spawn in waves 3 and above on Easy difficulty, and from wave 5 onward on Normal and Hard difficulties. Vindicators may also spawn riding ravagers, creating a vindicator ravager jockey, particularly in the later waves. The expected behavior is that players should encounter vindicators as hostile entities during these raids, allowing them the opportunity to obtain totems of undying from evokers, which also spawn during the raid. If the conditions for a raid are met, vindicators should consistently appear according to the game's mechanics, ensuring players can engage with them as intended during raid events.",
+  "comments": [],
+  "improvement_metadata": {
+    "original_key": "MC-300031"
+  }
+}

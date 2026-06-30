@@ -1,0 +1,222 @@
+{
+  "key": "MC-300927",
+  "created_date": "2025-08-10T18:46:15.188-0700",
+  "updated_date": "2025-08-11T02:22:38.855-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "25w32a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 0,
+  "labels": [],
+  "resolution_date": "2025-08-11T02:22:34.075-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "After opening to the local area network, unable to interact with items, unable to switch modes, getting stuck on the save screen when exiting the game.",
+  "environment_raw": null,
+  "description": "After opening to the local area network, unable to interact with items, unable to switch modes, getting stuck on the save screen when exiting the game. n n",
+  "Steps to Reproduce": "1. Launch Minecraft Bedrock Edition and create a new world in Survival mode with default settings.\n2. Once the world is loaded, pause the game and select \"Open to LAN.\"\n3. Choose the desired game mode and enable or disable cheats as preferred, then click \"Start LAN World.\"\n4. Wait for the confirmation message indicating that the local game is hosted.\n5. Attempt to interact with any item in the world, such as opening a chest or using a crafting table.\n6. Try switching between game modes (e.g., from Survival to Creative) via the pause menu.\n7. After testing the interactions, exit the game by selecting \"Save & Quit.\"\n8. Observe if the game gets stuck on the saving screen and does not return to the main menu.",
+  "Environment": "Minecraft Java Edition Version 25w32a (snapshot)",
+  "Observed Behavior": "After opening a single-player world to the Local Area Network (LAN), the following issues occur:\n\n1. **Inability to Interact with Items**: Players are unable to interact with any items in the game, including blocks, crafting tables, chests, and other interactive elements. This issue persists regardless of the input method used (touch, controller, or keyboard).\n\n2. **Switching Modes**: Players cannot switch between game modes (e.g., Survival, Creative) or access their inventory. Attempts to open the inventory or change game modes result in no response from the game.\n\n3. **Stuck on Save Screen**: When attempting to exit the game, players experience a freeze on the \"Saving World\" screen. The game does not progress beyond this point, requiring a force quit to close the application.\n\n4. **Multiplayer Context**: This issue seems to be related to the multiplayer environment created by opening the world to LAN. Players who join the LAN game experience the same inability to interact and switch modes.\n\n5. **Reproduction Steps**: \n   - Launch Minecraft and enter a single-player world.\n   - Open the pause menu and select \"Open to LAN.\"\n   - Confirm any settings changes and start the LAN world.\n   - Attempt to interact with items or switch game modes.\n   - Exit the game and observe the freeze on the saving screen.\n\nThese behaviors suggest a potential issue with the game's handling of interaction and saving mechanics when transitioning to a LAN environment.",
+  "Expected Behavior": "When a player opens their single-player world to a local area network (LAN), they should be able to interact with items, switch game modes, and exit the game without encountering any issues. Specifically, players should be able to access their inventory and utilize items as intended, toggle between game modes (such as Survival and Creative), and when choosing to save and exit, the game should smoothly transition to the exit screen without freezing or getting stuck. The expected behavior aligns with the standard functionality described in the game's documentation, ensuring that all multiplayer features operate seamlessly without causing unresponsiveness or interruptions in gameplay.",
+  "comments": [
+    {
+      "id": "2082529",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:d1be6aee-f21d-4cd4-a053-b3ea48f80790/9c7bf845-7adc-4850-866e-dd33a8c45fb9/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:d1be6aee-f21d-4cd4-a053-b3ea48f80790/9c7bf845-7adc-4850-866e-dd33a8c45fb9/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:d1be6aee-f21d-4cd4-a053-b3ea48f80790/9c7bf845-7adc-4850-866e-dd33a8c45fb9/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:d1be6aee-f21d-4cd4-a053-b3ea48f80790/9c7bf845-7adc-4850-866e-dd33a8c45fb9/32"
+        },
+        "displayName": "[Mojang] Mega_Spud (Jay)",
+        "active": true,
+        "timeZone": "Europe/London",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-11T02:22:26.338-0700",
+      "updated": "2025-08-11T02:22:26.338-0700",
+      "body_text": "This ticket has been temporarily resolved as **Awaiting Response**.\\n\\nTo make your bug report as effective as possible, please try and include the following steps to reproduce the problem:\\n\\n> **Steps to Reproduce:**\\n> \\n> 1. \\n> \\n> \\n> 2. \\n> \\n> \\n> 3. \\n> \\n> \\n> \\n> **Observed Results:***(Briefly describe what happens)*\\n> \\n> **Expected Results:***(Briefly describe what should happen)* \\n> \\n> \\n\\nOtherwise we may need to resolve the ticket as Cannot Reproduce.\\n\\nThis ticket will reopen when you reply. \\n\\n",
+      "body_length": 522,
+      "rendered_body": "<p>This ticket has been temporarily resolved as <b>Awaiting Response</b>.</p>\n\n<p>To make your bug report as effective as possible, please try and include the following steps to reproduce the problem:</p>\n\n<blockquote><p><b>Steps to Reproduce:</b></p>\n\n<ol>\n\t<li></li>\n\t<li></li>\n\t<li></li>\n</ol>\n\n\n<p><b>Observed Results:</b><br>\n<em>(Briefly describe what happens)</em></p>\n\n<p><b>Expected Results:</b><br>\n<em>(Briefly describe what should happen)</em> </p></blockquote>\n\n<p>Otherwise we may need to resolve the ticket as Cannot Reproduce.</p>\n\n<p>This ticket will reopen when you reply. </p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket has been temporarily resolved as "
+              },
+              {
+                "type": "text",
+                "text": "Awaiting Response",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "To make your bug report as effective as possible, please try and include the following steps to reproduce the problem:"
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Steps to Reproduce:",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "orderedList",
+                "attrs": {
+                  "order": 1
+                },
+                "content": [
+                  {
+                    "type": "listItem",
+                    "content": [
+                      {
+                        "type": "paragraph"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "listItem",
+                    "content": [
+                      {
+                        "type": "paragraph"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "listItem",
+                    "content": [
+                      {
+                        "type": "paragraph"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Observed Results:",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "(Briefly describe what happens)",
+                    "marks": [
+                      {
+                        "type": "em"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Expected Results:",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "(Briefly describe what should happen)",
+                    "marks": [
+                      {
+                        "type": "em"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": " "
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Otherwise we may need to resolve the ticket as Cannot Reproduce."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will reopen when you reply. "
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300927"
+  }
+}

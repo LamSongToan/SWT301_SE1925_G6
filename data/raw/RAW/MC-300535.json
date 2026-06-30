@@ -1,0 +1,414 @@
+{
+  "key": "MC-300535",
+  "summary": "Some entities freeze upon entering this chunk",
+  "description": "When some entities touch this chunk, they freeze instantly and stop receiving damage from effects like fire. Despite this, these entities can be damaged by the player, but just one first time; after that, they stop taking damage.\\n\\nProjectiles and thrown items are affected too. Tamed horses don’t freeze just if you are on them, but you can’t dismount them while being in the chunk.\\n\\nIf a mob is killed by explosions from another chunk, the body remains on the floor, not ending the death animation, but turning the mob red and throwing the mob drop. This was tested with a creeper explosion.\\n\\nSpecific cases are, for example:\\n\\n* A zombie burning down doesn’t die, and it doesn’t start burning if it entered at night.\\n\\n\\n* A witch keeps the potion effect that was taking when entering the chunk.\\n\\n\\n* Endermen can’t teleport; in those cases, the particles are still moving.\\n\\n\\n* Arrows don’t do damage to the player.\\n\\n\\n* A tamed horse stops freezing if it’s mounted.\\n\\n\\n* Items can’t be taken and start popping/falling infinitely.\\n\\n\\n* Shulkers can’t move or open, but their projectiles still move in a straight line and despair at a range.\\n\\n\\n* TNT makes the explosion animation but just disappears without making any damage.\\n\\n\\n\\nWe were playing on a server. The seed where we found it was `-9101802231045030160`, at XYZ: `166`/`100`/`-270`. When all players exit the world, the bug disappears, making all effects play together.\\n\\n",
+  "created_date": "2025-08-01T16:59:41.100-0700",
+  "updated_date": "2025-08-01T17:56:10.221-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "resolution_date": "2025-08-01T17:56:09.849-0700",
+  "affected_versions": [
+    "25w31a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 229,
+  "summary_length": 7,
+  "fetch_timestamp": "2025-08-20T03:11:02.699829",
+  "comments": [
+    {
+      "id": "2079665",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Plua",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-01T16:59:41.922-0700",
+      "updated": "2025-08-01T16:59:41.922-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.",
+      "body_length": 654,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "12df60dc-6d00-4006-99ac-887722b7407f",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "8e729223-5efb-46c5-a68f-0c36b0e11dd6",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "240e257d-df22-4456-88a4-1c98a3562c5f",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "41b488e6-183e-418d-a417-8bb71ccbec2b",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "e92db6c7-0d94-48ad-b428-da7000ba1d33",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "4ca57ecd-0dd3-4040-bc23-5b056db05a89",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "992c3eb6-760b-49d4-a173-c6110ec62b99",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "1b639f99-ac7d-48e8-bedf-19723463af73",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2079674",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/711bc6ceab872fff2998dc31bae06bec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FM-3.png",
+          "24x24": "https://secure.gravatar.com/avatar/711bc6ceab872fff2998dc31bae06bec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FM-3.png",
+          "16x16": "https://secure.gravatar.com/avatar/711bc6ceab872fff2998dc31bae06bec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FM-3.png",
+          "32x32": "https://secure.gravatar.com/avatar/711bc6ceab872fff2998dc31bae06bec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FM-3.png"
+        },
+        "displayName": "MrMuskle",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-01T17:56:09.918-0700",
+      "updated": "2025-08-01T17:56:09.918-0700",
+      "body_text": "The Environment field is supposed to only contain PC details.\\n\\n*We do not have enough information to find the cause of this issue.*\\n\\nPlease attach the affected world folder, compressed to a ZIP file. If the file size is too large, please upload it somewhere else and then link to it here.\\n\\nThis ticket is being temporarily resolved as **Awaiting Response**. Once the requested information has been delivered, the ticket will be reopened automatically.\\n\\n**Quick Links:**📓 Bug Tracker Guidelines – 💬 Community Support – 📧 Mojang Support (Technical Issues) – 📧 Microsoft Support (Account Issues)📓 Project Summary – ✍️ Feedback and Suggestions – 📖 Game Wiki\\n\\n",
+      "body_length": 665,
+      "rendered_body": "<div class=\"panel\" style=\"background-color: #fffae6;border-width: 1px;\"><div class=\"panelContent\" style=\"background-color: #fffae6;\">\n<p>The Environment field is supposed to only contain PC details.</p>\n</div></div>\n<p><em>We do not have enough information to find the cause of this issue.</em></p>\n\n<p>Please attach the affected world folder, compressed to a ZIP file. If the file size is too large, please upload it somewhere else and then link to it here.</p>\n\n<p><sub>This ticket is being temporarily resolved as <font color=\"#d04437\"><b>Awaiting Response</b></font>. Once the requested information has been delivered, the ticket will be reopened automatically.</sub></p>\n\n<p><b>Quick Links:</b><br>\n📓 <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\">Bug Tracker Guidelines</a> – 💬 <a href=\"https://discord.com/invite/58Sxm23\" class=\"external-link\" rel=\"nofollow noreferrer\">Community Support</a> – 📧 <a href=\"https://aka.ms/Minecraft-Support\" class=\"external-link\" rel=\"nofollow noreferrer\">Mojang Support (Technical Issues)</a> – 📧 <a href=\"https://support.xbox.com/contact-us/\" class=\"external-link\" rel=\"nofollow noreferrer\">Microsoft Support (Account Issues)</a><br>\n📓 <a href=\"https://report.bugs.mojang.com/servicedesk/customer/portal/2\" class=\"external-link\" rel=\"nofollow noreferrer\">Project Summary</a> – ✍️ <a href=\"https://aka.ms/MinecraftFeedbackDiscord\" class=\"external-link\" rel=\"nofollow noreferrer\">Feedback and Suggestions</a> – 📖 <a href=\"https://minecraft.wiki\" class=\"external-link\" rel=\"nofollow noreferrer\">Game Wiki</a></p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "panel",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "The Environment field is supposed to only contain PC details."
+                  }
+                ]
+              }
+            ],
+            "attrs": {
+              "panelType": "warning"
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "We do not have enough information to find the cause of this issue.",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please attach the affected world folder, compressed to a ZIP file. If the file size is too large, please upload it somewhere else and then link to it here."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket is being temporarily resolved as ",
+                "marks": [
+                  {
+                    "attrs": {
+                      "type": "sub"
+                    },
+                    "type": "subsup"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "Awaiting Response",
+                "marks": [
+                  {
+                    "type": "strong"
+                  },
+                  {
+                    "type": "textColor",
+                    "attrs": {
+                      "color": "#d04437"
+                    }
+                  },
+                  {
+                    "attrs": {
+                      "type": "sub"
+                    },
+                    "type": "subsup"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ". Once the requested information has been delivered, the ticket will be reopened automatically.",
+                "marks": [
+                  {
+                    "attrs": {
+                      "type": "sub"
+                    },
+                    "type": "subsup"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links:",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "📓 "
+              },
+              {
+                "type": "text",
+                "text": "Bug Tracker Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – 💬 "
+              },
+              {
+                "type": "text",
+                "text": "Community Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://discord.com/invite/58Sxm23"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – 📧 "
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support (Technical Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/Minecraft-Support"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – 📧 "
+              },
+              {
+                "type": "text",
+                "text": "Microsoft Support (Account Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://support.xbox.com/contact-us/"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "📓 "
+              },
+              {
+                "type": "text",
+                "text": "Project Summary",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://report.bugs.mojang.com/servicedesk/customer/portal/2"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – ✍️ "
+              },
+              {
+                "type": "text",
+                "text": "Feedback and Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MinecraftFeedbackDiscord"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – 📖 "
+              },
+              {
+                "type": "text",
+                "text": "Game Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecraft.wiki"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 2
+}

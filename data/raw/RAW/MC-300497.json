@@ -1,0 +1,311 @@
+{
+  "key": "MC-300497",
+  "summary": "Ican not play the game if I use the Intel Driver",
+  "description": "Ican not play the game if I use the Intel Driver\\n\\n",
+  "created_date": "2025-07-31T19:53:36.974-0700",
+  "updated_date": "2025-08-01T05:18:31.556-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "resolution_date": "2025-08-01T05:18:31.494-0700",
+  "affected_versions": [
+    "1.21.8",
+    "25w31a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 11,
+  "summary_length": 11,
+  "fetch_timestamp": "2025-08-20T03:11:08.186873",
+  "comments": [
+    {
+      "id": "2079413",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "sheldongood",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-07-31T19:53:37.660-0700",
+      "updated": "2025-07-31T19:53:37.660-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.",
+      "body_length": 162,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "ea9d666c-818f-466c-8f22-3d73c9653fac",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "be7938f6-581c-4c48-aa6d-2829533a8874",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2079416",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/711bc6ceab872fff2998dc31bae06bec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FM-3.png",
+          "24x24": "https://secure.gravatar.com/avatar/711bc6ceab872fff2998dc31bae06bec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FM-3.png",
+          "16x16": "https://secure.gravatar.com/avatar/711bc6ceab872fff2998dc31bae06bec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FM-3.png",
+          "32x32": "https://secure.gravatar.com/avatar/711bc6ceab872fff2998dc31bae06bec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FM-3.png"
+        },
+        "displayName": "MrMuskle",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-07-31T20:15:34.222-0700",
+      "updated": "2025-07-31T20:15:34.222-0700",
+      "body_text": "*We do not have enough information to find the cause of this issue.*\\n\\nPlease attach the full launcher log from when this issue occurred. You can find it in the `.minecraft` directory, named `launcher_log.txt`.\\n\\nAlso, please provide us with your system specifications. To do so, launch a version of the game unaffected by this issue, take a screenshot of your debug screen (enabled by pressing the F3 key) and attach it to this report.\\n\\n**Quick Links:**📓 Bug Tracker Guidelines – 💬 Community Support – 📧 Mojang Support (Technical Issues) – 📧 Microsoft Support (Account Issues)📓 Project Summary – ✍️ Feedback and Suggestions – 📖 Game Wiki\\n\\n",
+      "body_length": 646,
+      "rendered_body": "<p><em>We do not have enough information to find the cause of this issue.</em></p>\n\n<p>Please attach the full launcher log from when this issue occurred. You can find it in the <a href=\"https://minecrafthopper.net/help/finding-minecraft-data-folder/\" class=\"external-link\" rel=\"nofollow noreferrer\"><tt>.minecraft</tt></a> directory, named <tt>launcher_log.txt</tt>.</p>\n\n<p>Also, please provide us with your system specifications. To do so, launch a version of the game unaffected by this issue, take a screenshot of your debug screen (enabled by pressing the F3 key) and attach it to this report.</p>\n\n<p><b>Quick Links:</b><br>\n📓 <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\">Bug Tracker Guidelines</a> – 💬 <a href=\"https://discord.com/invite/58Sxm23\" class=\"external-link\" rel=\"nofollow noreferrer\">Community Support</a> – 📧 <a href=\"https://aka.ms/Minecraft-Support\" class=\"external-link\" rel=\"nofollow noreferrer\">Mojang Support (Technical Issues)</a> – 📧 <a href=\"https://support.xbox.com/contact-us/\" class=\"external-link\" rel=\"nofollow noreferrer\">Microsoft Support (Account Issues)</a><br>\n📓 <a href=\"https://report.bugs.mojang.com/servicedesk/customer/portal/2\" class=\"external-link\" rel=\"nofollow noreferrer\">Project Summary</a> – ✍️ <a href=\"https://aka.ms/MinecraftFeedbackDiscord\" class=\"external-link\" rel=\"nofollow noreferrer\">Feedback and Suggestions</a> – 📖 <a href=\"https://minecraft.wiki\" class=\"external-link\" rel=\"nofollow noreferrer\">Game Wiki</a></p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "We do not have enough information to find the cause of this issue.",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please attach the full launcher log from when this issue occurred. You can find it in the "
+              },
+              {
+                "type": "text",
+                "text": ".minecraft",
+                "marks": [
+                  {
+                    "type": "code"
+                  },
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecrafthopper.net/help/finding-minecraft-data-folder/"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " directory, named "
+              },
+              {
+                "type": "text",
+                "text": "launcher_log.txt",
+                "marks": [
+                  {
+                    "type": "code"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Also, please provide us with your system specifications. To do so, launch a version of the game unaffected by this issue, take a screenshot of your debug screen (enabled by pressing the F3 key) and attach it to this report."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links:",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "📓 "
+              },
+              {
+                "type": "text",
+                "text": "Bug Tracker Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – 💬 "
+              },
+              {
+                "type": "text",
+                "text": "Community Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://discord.com/invite/58Sxm23"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – 📧 "
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support (Technical Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/Minecraft-Support"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – 📧 "
+              },
+              {
+                "type": "text",
+                "text": "Microsoft Support (Account Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://support.xbox.com/contact-us/"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "📓 "
+              },
+              {
+                "type": "text",
+                "text": "Project Summary",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://report.bugs.mojang.com/servicedesk/customer/portal/2"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – ✍️ "
+              },
+              {
+                "type": "text",
+                "text": "Feedback and Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MinecraftFeedbackDiscord"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – 📖 "
+              },
+              {
+                "type": "text",
+                "text": "Game Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecraft.wiki"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 2
+}

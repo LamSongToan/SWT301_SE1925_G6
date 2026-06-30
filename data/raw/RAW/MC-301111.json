@@ -1,0 +1,162 @@
+{
+  "key": "MC-301111",
+  "summary": "End Portal Frame not being broken ",
+  "description": "when you break an end portal the portal doesnt get destroyed, how it normally would be like. This too effects the trick where you break the frames using a red mushroom\\n\\n",
+  "created_date": "2025-08-15T11:22:32.376-0700",
+  "updated_date": "2025-08-17T12:58:04.518-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "resolution_date": "2025-08-17T12:58:04.473-0700",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 31,
+  "summary_length": 6,
+  "fetch_timestamp": "2025-08-20T03:09:59.266564",
+  "comments": [
+    {
+      "id": "2083870",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Kjell Gödde",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-15T11:22:33.605-0700",
+      "updated": "2025-08-15T11:22:33.605-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.",
+      "body_length": 326,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "f781a7f7-8bd5-42a4-a04f-2ba7ad65b42b",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "b4a7a8b7-aa7e-4759-8516-d1757a02ee84",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "423fc6fa-23ac-4fee-9211-263169bd6a9b",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "f3a7f859-45d0-4547-bfd1-ea1f352862a7",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2084265",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/32"
+        },
+        "displayName": "[Mod] Jingy",
+        "active": true,
+        "timeZone": "America/Chicago",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-17T12:57:58.197-0700",
+      "updated": "2025-08-17T12:57:58.197-0700",
+      "body_text": "Please provide clear and exact steps to reproduce this issue. Additionally, I would appreciate you better distinguishing between end portal *frames* and end portals in the first part of your report.\\n\\n",
+      "body_length": 202,
+      "rendered_body": "<p>Please provide clear and exact steps to reproduce this issue. Additionally, I would appreciate you better distinguishing between end portal <em>frames</em> and end portals in the first part of your report.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please provide clear and exact steps to reproduce this issue. Additionally, I would appreciate you better distinguishing between end portal "
+              },
+              {
+                "type": "text",
+                "text": "frames",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " and end portals in the first part of your report."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 2
+}

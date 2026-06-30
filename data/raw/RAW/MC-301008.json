@@ -1,0 +1,71 @@
+{
+  "key": "MC-301008",
+  "summary": "Possible regression: GuiGraphics#submitOutline doesn't respect matrix transformations",
+  "description": "GuiGraphics#renderOutline has been removed in 25w33a in favor of GuiGraphics#submitOutline.\\n\\nAny transformations which have been applied to the Matrix3x2fStack (such as translations) are not respected anymore.\\n\\n\\n\\nPrevious example which used to work:\\n\\n```java\\nguiGraphics.pose().translate(10, 10);\nguiGraphics.renderOutline(0, 0, 5, 5, 0xFFFFFFFF);\\n```\\n\\nThe above would render a white outline at `10, 10` with width and height each being 5 in white color.\\n\\n\\n\\nCurrent state which doesn’t work:\\n\\n```java\\nguiGraphics.pose().translate(10, 10);\nguiGraphics.submitOutline(0, 0, 5, 5, 0xFFFFFFFF);\\n```\\n\\nThis outline now doesn’t render at `10, 10` but at `0, 0`.\\n\\n\\n\\nExpected behavior would probably be for it to render at `10, 10` as was previously the case. The fill command also respects applied transformations, so it would be weird for `submitOutline` not to.\\n\\n",
+  "created_date": "2025-08-12T15:50:20.187-0700",
+  "updated_date": "2025-08-14T16:56:31.643-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "resolution_date": "2025-08-14T16:56:31.552-0700",
+  "affected_versions": [
+    "25w33a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 108,
+  "summary_length": 7,
+  "fetch_timestamp": "2025-08-20T03:10:11.533514",
+  "comments": [
+    {
+      "id": "2083636",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/2bf89af0fdd92ce25290c17873c786fe?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FA-4.png",
+          "24x24": "https://secure.gravatar.com/avatar/2bf89af0fdd92ce25290c17873c786fe?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FA-4.png",
+          "16x16": "https://secure.gravatar.com/avatar/2bf89af0fdd92ce25290c17873c786fe?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FA-4.png",
+          "32x32": "https://secure.gravatar.com/avatar/2bf89af0fdd92ce25290c17873c786fe?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FA-4.png"
+        },
+        "displayName": "ampolive",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-14T11:37:40.093-0700",
+      "updated": "2025-08-14T11:37:40.093-0700",
+      "body_text": "Does this have any impact on vanilla gameplay?\\n\\n",
+      "body_length": 50,
+      "rendered_body": "<p>Does this have any impact on vanilla gameplay?</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Does this have any impact on vanilla gameplay?"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 1
+}

@@ -1,0 +1,141 @@
+{
+  "key": "MC-300396",
+  "created_date": "2025-07-30T17:38:37.110-0700",
+  "updated_date": "2025-08-10T11:20:54.745-0700",
+  "status": "Resolved",
+  "resolution": "Cannot Reproduce",
+  "affected_versions": [
+    "25w31a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-10T11:20:54.539-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "status effects duration continues to decrement while on pause screen in single player",
+  "environment_raw": null,
+  "description": "To reproduce, create a world, give yourself a status effect of a set duration, and pause the game for that duration. Once the duration has elapsed, unpause the game and check if the status effect is still applied. n nIt would be expected that the timer is paused when the game is paused. For example, drinking a potion and pausing the game should not consume the duration of that potion. n nCurrently, status effects duration continue to decrement while on the pause screen in single player. n n",
+  "Steps to Reproduce": "1. Create a new Single Player world in Creative mode with default settings.\n2. Open the inventory and locate a potion that grants a status effect, such as a Potion of Swiftness.\n3. Drink the potion to apply the status effect, noting the duration displayed in seconds.\n4. Immediately pause the game by pressing the 'Esc' key.\n5. Wait for the duration of the status effect to elapse while the game is paused.\n6. After the duration has elapsed, unpause the game by pressing the 'Esc' key again.\n7. Check the status effect icon in the effects menu to see if the effect is still active and for how long it remains.",
+  "Environment": "Minecraft Java Edition Version 25w31a (snapshot)",
+  "Observed Behavior": "When a player applies a status effect with a defined duration (e.g., by consuming a potion or being affected by a mob), the countdown for that effect continues to decrease even when the game is paused. The expected behavior is that the timer for the status effect should halt while the game is in the pause state, meaning that the duration should not elapse during this time.\n\nTo demonstrate this issue, a player can create a single-player world, apply a status effect (such as Speed or Strength) with a specific duration, and then pause the game immediately after. Upon resuming the game after the duration of the effect has passed, the player will find that the status effect is no longer active, despite having been paused for the entire duration. \n\nFor example, if a player drinks a Potion of Swiftness, which grants Speed for 3 minutes (360 seconds), and then pauses the game for the entire duration of that effect, they should still have the Speed effect upon unpausing. However, the current behavior results in the effect being lost because the timer continues to decrement while the game is paused.\n\nThis issue can lead to confusion among players, as it contradicts the intuitive understanding that pausing the game should also pause all ongoing effects and timers.",
+  "Expected Behavior": "When a player is on the pause screen in single player mode, the duration of any active status effects should not decrease. Specifically, if a player consumes a potion that grants a status effect with a defined duration, the timer for that effect should pause while the game is paused. Upon resuming gameplay, the remaining duration of the status effect should reflect the time that was left when the game was paused, ensuring that the player experiences the full intended effect duration. This behavior aligns with the expected mechanics of status effects in Minecraft, where effects are designed to be active only during gameplay and should not diminish while the game is not actively running.",
+  "comments": [
+    {
+      "id": "2079351",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Luke",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-07-31T13:32:08.240-0700",
+      "updated": "2025-07-31T13:32:08.240-0700",
+      "body_text": "I believe this may have been resolved, see \\n\\n1. .\\n\\n\\n\\n\\n\\n",
+      "body_length": 63,
+      "rendered_body": "<p>I believe this may have been resolved, see </p>\n\n<ol>\n\t<li><a href=\"https://report.bugs.mojang.com/browse/MC-300105\" title=\"smart-link\" class=\"external-link\" rel=\"nofollow noreferrer\">https://report.bugs.mojang.com/browse/MC-300105</a>.</li>\n</ol>\n\n",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "I believe this may have been resolved, see "
+              }
+            ]
+          },
+          {
+            "type": "orderedList",
+            "attrs": {
+              "order": 1
+            },
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "inlineCard",
+                        "attrs": {
+                          "url": "https://report.bugs.mojang.com/browse/MC-300105"
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": "."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2082402",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/32"
+        },
+        "displayName": "[MOD] Greymagic27",
+        "active": true,
+        "timeZone": "Europe/London",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-10T11:20:54.663-0700",
+      "updated": "2025-08-10T11:20:54.663-0700",
+      "body_text": "Yes. It appears this is no longer an issue in 25w32a due to that fix\\n\\n",
+      "body_length": 72,
+      "rendered_body": "<p>Yes. It appears this is no longer an issue in 25w32a due to that fix</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Yes. It appears this is no longer an issue in 25w32a due to that fix"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300396"
+  }
+}

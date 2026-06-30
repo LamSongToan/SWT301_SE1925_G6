@@ -1,0 +1,114 @@
+{
+  "key": "MC-300647",
+  "created_date": "2025-08-04T12:25:56.987-0700",
+  "updated_date": "2025-08-05T15:01:03.667-0700",
+  "status": "Resolved",
+  "resolution": "Cannot Reproduce",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-05T15:00:57.342-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Cant do torch anymore",
+  "environment_raw": null,
+  "description": "Cant do torch n n",
+  "Steps to Reproduce": "1. Create a new Survival world with default settings.\n2. Gather materials to craft torches by collecting at least one stick and one piece of coal or charcoal.\n3. Open the crafting table interface.\n4. Place the stick and coal/charcoal in the crafting grid to create four torches.\n5. Select the torches from your inventory.\n6. Attempt to place a torch on a solid block, such as dirt or stone.\n7. Observe if the torch can be placed successfully.\n8. Repeat steps 6 and 7 in different locations, such as on walls, floors, and ceilings, to confirm the inability to place torches.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "The player is unable to place torches in the game. When attempting to place a torch on a solid block, the action does not register, and the torch item remains in the player's inventory. This issue occurs regardless of the type of block the player is trying to place the torch on, including common blocks such as dirt, stone, and wood. \n\nAdditionally, the player has verified that they have the necessary materials to craft torches (sticks and coal/charcoal) and that their inventory is not full. The inability to place torches prevents the player from illuminating dark areas, which is essential for both navigation and monster prevention in Minecraft. \n\nThis bug has been consistently reproducible in various game sessions and affects both single-player and multiplayer modes. The player has confirmed that this issue persists across different worlds and has attempted to restart the game and clear the cache, but the problem remains unresolved. \n\n**Steps to Reproduce:**\n1. Ensure you have torches in your inventory.\n2. Approach a solid block (e.g., dirt, stone, wood).\n3. Attempt to place the torch by right-clicking on the block.\n4. Observe that the torch does not place and remains in the inventory.\n\n**Expected Behavior:**\nThe torch should be successfully placed on the solid block, emitting light and allowing the player to illuminate their surroundings.",
+  "Expected Behavior": "When attempting to place a torch, the player should be able to successfully place it on the top or sides of most solid blocks, provided there is sufficient space and the block type allows for torch placement. The torch should emit light at a level of 14, illuminating the surrounding area to prevent hostile mob spawning and assist with navigation in dark environments. Additionally, if the player has the necessary materials (one stick and one coal or charcoal), they should be able to craft torches at any crafting table or their personal crafting grid. If a torch is placed and subsequently broken, it should drop as an item for the player to pick up and reuse. This behavior aligns with the established mechanics of torches in Minecraft, as detailed in official game resources.",
+  "comments": [
+    {
+      "id": "2080486",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Jani Lindroos",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-04T12:25:57.795-0700",
+      "updated": "2025-08-04T12:25:57.795-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.",
+      "body_length": 80,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "1297269b-c32a-43ed-bd91-0802f901b95c",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2080842",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/32"
+        },
+        "displayName": "[Mod] Jingy",
+        "active": true,
+        "timeZone": "America/Chicago",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-05T15:00:57.424-0700",
+      "updated": "2025-08-05T15:01:03.593-0700",
+      "body_text": "I cannot reproduce this. Please make sure you don\u2019t have any data-packs enabled on your world that may alter recipes.\\n\\n",
+      "body_length": 121,
+      "rendered_body": "<p>I cannot reproduce this. Please make sure you don\u2019t have any data-packs enabled on your world that may alter recipes.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "I cannot reproduce this. Please make sure you don\u2019t have any data-packs enabled on your world that may alter recipes."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300647"
+  }
+}

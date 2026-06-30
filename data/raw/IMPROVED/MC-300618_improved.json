@@ -1,0 +1,418 @@
+{
+  "key": "MC-300618",
+  "created_date": "2025-08-04T01:29:20.215-0700",
+  "updated_date": "2025-08-04T02:00:49.396-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-04T02:00:46.149-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Minecraft has another glitch",
+  "environment_raw": null,
+  "description": "Near Broken, Full Durability Tools n n On 5 8 25 I went into my Hermitcraft season 9 wold And My netherite tools had their Durability bars looking like they were going to break n nwith another use, I m certain that I rarely used them, on my previous play session. I thought The game was just having a moment, so i tried repairing n nthem to full Durability, I checked my old armor and tools that had been used and they had the durability glitch. sorry for bothering you and thank you for n nmaking a game as great Minecraft Congrats and Thank you for taking your time to read this report. n n n n",
+  "Steps to Reproduce": "1. Launch Minecraft and open your Hermitcraft Season 9 world.\n2. Ensure you have at least one netherite tool (e.g., netherite pickaxe, axe, or shovel) in your inventory that has been used minimally.\n3. Check the durability bar of the netherite tool in your inventory to confirm it appears close to breaking, despite low usage.\n4. Attempt to repair the tool by combining it with another netherite item or using an anvil with netherite ingots.\n5. After repairing, check the durability bar again to see if it still shows as near broken.\n6. Repeat steps 2 to 5 with other netherite tools and armor pieces to verify if they also exhibit the same durability glitch.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "On May 8, 2025, while playing in my Hermitcraft Season 9 world, I observed a significant issue with my netherite tools. Despite having rarely used them in the previous session, their durability bars appeared as if they were nearly broken, indicating they would fail after just one more use. This anomaly suggested that the durability display was incorrect, as the tools should have had full durability.\n\nIn an attempt to resolve this, I tried repairing the tools to restore them to full durability using the crafting grid. However, upon checking my other tools and armor, I found that they too exhibited the same durability glitch, showing diminished durability despite having been used sparingly. \n\nThis inconsistency in the durability display could potentially mislead players into thinking their tools are close to breaking when they are not, which could affect gameplay decisions regarding tool usage and repairs. \n\nThank you for your attention to this matter, and I appreciate the continued efforts to improve Minecraft.",
+  "Expected Behavior": "When using netherite tools in Minecraft, the durability bar should accurately reflect the remaining uses based on the number of blocks broken or mobs hit. If a tool has been rarely used, its durability bar should display a high value, indicating that it is in good condition. Upon repairing a tool at an anvil or crafting grid, the durability should restore to its maximum level, and the durability bar should visually represent this change correctly. The expected behavior is that there should be no discrepancies in the durability display, and tools should not appear near breaking unless they have indeed been used extensively. Additionally, all tools should maintain their durability values correctly across different play sessions without displaying glitches or inaccuracies.",
+  "comments": [
+    {
+      "id": "2080176",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "24x24": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "16x16": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "32x32": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png"
+        },
+        "displayName": "[MCQA] jKakub",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-04T02:00:40.697-0700",
+      "updated": "2025-08-04T02:00:40.697-0700",
+      "body_text": "Hi!**Thank you for your report!**\u00a0\\n\\nHowever, this issue has been temporarily closed as\u202f**Awaiting Response**.\\n\\n* Could you please provide more details or/and media files? As such we have no repro of this issue.\u00a0\\n\\n\\n* Were your items' durability bars were not updated after being repaired? Could it be a server\u2019s lag?\\n\\n\\n\\nAlso, just a reminder, to make your bug report as effective as possible, please try and include the following steps to reproduce the problem:\u00a0\\n\\n**Steps to Reproduce:**\u00a0\\n\\n1. \\n\\n\\n\\n1. \\n\\n\\n\\n1. \\n\\n\\n\\n**Observed Results:**\u00a0\\n\\n*(Briefly describe what happens)*\u00a0\\n\\n**Expected Results:**\u00a0\\n\\n*(Briefly describe what should happen)*\u00a0\\n\\nIf your ticket does not look like the this example, then it's likely to be closed as incomplete.\u00a0\\n\\nThis ticket will automatically reopen when you reply.\u00a0\\n\\n**Quick Links**:\u00a0\ud83d\udcd3\u202fIssue Guidelines\u202f\u2013 \ud83d\udcac\u202fMojang Support\u202f\u2013 \ud83d\udce7\u202fSuggestions\u202f\u2013 \ud83d\udcd6\u202fMinecraft Wiki\u00a0\\n\\n",
+      "body_length": 924,
+      "rendered_body": "<p>Hi!<br>\n<b>Thank you for your report!</b>&nbsp;</p>\n\n<p>However, this issue has been temporarily closed as\u202f<font color=\"#ff991f\"><b>Awaiting Response</b></font>.</p>\n\n<ul>\n\t<li>Could you please provide more details or/and media files? As such we have no repro of this issue.&nbsp;</li>\n\t<li>Were your items' durability bars were not updated after being repaired? Could it be a server\u2019s lag?</li>\n</ul>\n\n\n<p>Also, just a reminder, to make your bug report as effective as possible, please try and include the following steps to reproduce the problem:&nbsp;</p>\n\n<p><b>Steps to Reproduce:</b>&nbsp;</p>\n\n<ol>\n\t<li></li>\n</ol>\n\n\n<ol>\n\t<li></li>\n</ol>\n\n\n<ol>\n\t<li></li>\n</ol>\n\n\n<p><b>Observed Results:</b>&nbsp;</p>\n\n<p><em>(Briefly describe what happens)</em>&nbsp;</p>\n\n<p><b>Expected Results:</b>&nbsp;</p>\n\n<p><em>(Briefly describe what should happen)</em>&nbsp;</p>\n\n<p>If your ticket does not look like the this example, then it's likely to be closed as incomplete.&nbsp;</p>\n\n<p>This ticket will automatically reopen when you reply.&nbsp;</p>\n\n<p><b>Quick Links</b>:&nbsp;<br>\n\ud83d\udcd3\u202f<a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Issue Guidelines</ins></a>\u202f\u2013 \ud83d\udcac\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fhelp.minecraft.net.mcas.ms%2Fhc%2Fen-us%2Frequests%2Fnew%3FMcasTsid%3D15600&amp;McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Mojang Support</ins></a>\u202f\u2013 \ud83d\udce7\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Ffeedback.minecraft.net.mcas.ms%2F%3FMcasTsid%3D15600&amp;McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Suggestions</ins></a>\u202f\u2013 \ud83d\udcd6\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fminecraft.wiki.mcas.ms%2F%3FMcasTsid%3D15600&amp;McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Minecraft Wiki</ins></a>&nbsp;</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hi!"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Thank you for your report!",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "However, this issue has been temporarily closed as\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Awaiting Response",
+                "marks": [
+                  {
+                    "type": "strong"
+                  },
+                  {
+                    "type": "textColor",
+                    "attrs": {
+                      "color": "#ff991f"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Could you please provide more details or/and media files? As such we have no repro of this issue.\u00a0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Were your items' durability bars were not updated after being repaired? Could it be a server\u2019s lag?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Also, just a reminder, to make your bug report as effective as possible, please try and include the following steps to reproduce the problem:\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Steps to Reproduce:",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "orderedList",
+            "attrs": {
+              "order": 1
+            },
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "orderedList",
+            "attrs": {
+              "order": 2
+            },
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "orderedList",
+            "attrs": {
+              "order": 3
+            },
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Observed Results:",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "(Briefly describe what happens)",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Expected Results:",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "(Briefly describe what should happen)",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "If your ticket does not look like the this example, then it's likely to be closed as incomplete.\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will automatically reopen when you reply.\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":\u00a0"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Issue Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udcac\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fhelp.minecraft.net.mcas.ms%2Fhc%2Fen-us%2Frequests%2Fnew%3FMcasTsid%3D15600&McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udce7\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Ffeedback.minecraft.net.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udcd6\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Minecraft Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fminecraft.wiki.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300618"
+  }
+}

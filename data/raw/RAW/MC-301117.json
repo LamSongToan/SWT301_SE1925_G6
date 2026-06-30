@@ -1,0 +1,176 @@
+{
+  "key": "MC-301117",
+  "summary": "Some items placed on a copper golems head are glitched",
+  "description": "#### Lastly when i was messing with commands, i discovered that some of the new items doesnt apply correctly on Copper Golems\\n\\n\\n\\nHere’s a list woth test subjects\\n\\n**List of the items/Mobs**\\n\\n**Copper Golem**\\n\\n**Skeleton**\\n\\n**Zombie**\\n\\nOak Shelf (or any type)\\n\\nApply upwards the head\\n\\nApply at the back of the head\\n\\nApply at the back of the head\\n\\nLightning rod (any type)\\n\\nApply updwards the head\\n\\nEaster Egg applied\\n\\nEaster Egg applied\\n\\n",
+  "created_date": "2025-08-15T15:02:49.631-0700",
+  "updated_date": "2025-08-17T12:55:34.139-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "resolution_date": "2025-08-17T12:55:34.094-0700",
+  "affected_versions": [
+    "25w33a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 60,
+  "summary_length": 10,
+  "fetch_timestamp": "2025-08-20T03:09:59.266450",
+  "comments": [
+    {
+      "id": "2083898",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Yoshibest58_2",
+        "active": true,
+        "timeZone": "Europe/Paris",
+        "accountType": "customer"
+      },
+      "created": "2025-08-15T15:02:50.167-0700",
+      "updated": "2025-08-15T15:02:50.167-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.",
+      "body_length": 162,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "1dc239c0-064f-4656-b669-c23639833cb9",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "fd35e1b8-445e-4b28-8249-39c2b2da73e3",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2084264",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/32"
+        },
+        "displayName": "[Mod] Jingy",
+        "active": true,
+        "timeZone": "America/Chicago",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-17T12:55:11.273-0700",
+      "updated": "2025-08-17T12:55:11.273-0700",
+      "body_text": "Per this comment by a Mojang employee on MC-301003, cases of blocks on copper golems head should be tracked in their own reports.Quote: “Are these five cases the only issues present? If so - could you please split the report into each of the cases?”Copper chests are already tracked in .Please create a new report for either the wooden shelf or lightning rod, and leave the other case in this report. Comment on this report you have done so (which will reopen this).\\n\\n",
+      "body_length": 470,
+      "rendered_body": "<p>Per this comment by a Mojang employee on <a href=\"https://mojira.atlassian.net/browse/MC-301003\" class=\"external-link\" rel=\"nofollow noreferrer\">MC-301003</a>, cases of blocks on copper golems head should be tracked in their own reports.<br>\nQuote: “Are these five cases the only issues present? If so - could you please split the report into each of the cases?”</p>\n\n<p>Copper chests are already tracked in <a href=\"https://mojira.atlassian.net/browse/MC-301003\" title=\"smart-link\" class=\"external-link\" rel=\"nofollow noreferrer\">https://mojira.atlassian.net/browse/MC-301003</a>.</p>\n\n<p>Please create a new report for either the wooden shelf or lightning rod, and leave the other case in this report. Comment on this report you have done so (which will reopen this).</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Per this comment by a Mojang employee on "
+              },
+              {
+                "type": "text",
+                "text": "MC-301003",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mojira.atlassian.net/browse/MC-301003"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ", cases of blocks on copper golems head should be tracked in their own reports."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Quote: “Are these five cases the only issues present? If so - could you please split the report into each of the cases?”"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Copper chests are already tracked in "
+              },
+              {
+                "type": "inlineCard",
+                "attrs": {
+                  "url": "https://mojira.atlassian.net/browse/MC-301003"
+                }
+              },
+              {
+                "type": "text",
+                "text": "."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Please create a new report for either the wooden shelf or lightning rod, and leave the other case in this report. Comment on this report you have done so (which will reopen this)."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 2
+}

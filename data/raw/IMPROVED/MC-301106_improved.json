@@ -1,0 +1,426 @@
+{
+  "key": "MC-301106",
+  "created_date": "2025-08-15T07:35:40.991-0700",
+  "updated_date": "2025-08-17T13:04:27.262-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "25w33a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-17T13:04:24.366-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "If the copper golem turns into a statue while leashed by player, the lead will disappear",
+  "environment_raw": null,
+  "description": "If the copper golem turns into a statue while leashed by player, the lead will disappear n n",
+  "Steps to Reproduce": "1. Create a new Creative world with default settings.\n2. Obtain a Copper Golem using the /summon command, entering \"/summon minecraft:copper_golem\" in the chat.\n3. Leash the Copper Golem by right-clicking on it with a Lead in your hand.\n4. Wait for the Copper Golem to fully oxidize and turn into a statue.\n5. Observe the Lead that was attached to the Copper Golem before it turned into a statue.",
+  "Environment": "Minecraft Java Edition Version 25w33a (snapshot)",
+  "Observed Behavior": "When a copper golem is leashed by a player and subsequently transforms into a statue due to full oxidation, the lead (or leash) that was previously attached to it disappears entirely. This behavior is inconsistent with typical interactions involving leashed entities in Minecraft, where leads typically remain attached unless explicitly broken or the entity dies. The lead should logically remain in the player's inventory or drop as an item at the location of the statue, but instead, it vanishes without any trace. This issue can lead to confusion for players who expect the lead to persist, as it does with other mobs that undergo changes in state or form. \n\n**Steps to Reproduce:**\n1. Leash a copper golem using a lead.\n2. Allow the copper golem to reach full oxidation, causing it to turn into a statue.\n3. Observe that the lead disappears from the player's inventory.\n\n**Expected Behavior:**\nThe lead should either remain attached to the statue (if possible) or drop as an item on the ground, allowing the player to retrieve it after the copper golem transforms into a statue.",
+  "Expected Behavior": "When a copper golem is leashed by a player and subsequently transforms into a statue due to full oxidation, the lead should remain attached to the golem. The expected behavior is that the lead does not disappear; instead, it should either stay visibly attached to the statue or convert into a lead knot at the statue's location, allowing the player to retrieve it when the golem is no longer in its statue form. This behavior aligns with the mechanics of leads in Minecraft, where leads typically do not break or disappear under normal circumstances unless specific conditions are met, such as the mob being removed from the world or the player moving too far away.",
+  "comments": [
+    {
+      "id": "2084268",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/32"
+        },
+        "displayName": "[Mod] Jingy",
+        "active": true,
+        "timeZone": "America/Chicago",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-17T13:04:26.908-0700",
+      "updated": "2025-08-17T13:04:26.908-0700",
+      "body_text": "*We do not have enough information to reproduce this issue.*\\n\\nPlease include the following information to help us understand your problem:\\n\\n> **Steps to Reproduce:**1. *(Explain what needs to be done for the issue to happen)*2.3.\\n> \\n> **Observed Results:***(Briefly describe what happens)*\\n> \\n> **Expected Results:***(Briefly describe what should happen)*\\n> \\n> \\n\\nPlease also attach any needed commands, add-ons/behavior packs, data packs, resource packs, screenshots, videos, or worlds needed to help reproduce this issue.\\n\\nRefer to the **Bug Tracker Guidelines** for more information about how to write helpful bug reports. Bug reports with insufficient information may be closed as **Incomplete**.\\n\\nThis issue is being temporarily resolved as **Awaiting Response**. Once the requested information has been delivered, the report will be reopened automatically.\\n\\n**Quick Links**:\ud83d\udcd3 Bug Tracker Guidelines \u2013 \ud83d\udcac Community Support \u2013 \ud83d\udce7 Mojang Support (Technical Issues) \u2013 \ud83d\udce7 Microsoft Support (Account Issues)\ud83d\udcd3 Project Summary \u2013 \u270d\ufe0f Feedback and Suggestions \u2013 \ud83d\udcd6 Game Wiki\\n\\n",
+      "body_length": 1085,
+      "rendered_body": "<p><em>We do not have enough information to reproduce this issue.</em></p>\n\n<p>Please include the following information to help us understand your problem:</p>\n\n<blockquote><p><b>Steps to Reproduce:</b><br>\n1. <em>(Explain what needs to be done for the issue to happen)</em><br>\n2.<br>\n3.</p>\n\n<p><b>Observed Results:</b><br>\n<em>(Briefly describe what happens)</em></p>\n\n<p><b>Expected Results:</b><br>\n<em>(Briefly describe what should happen)</em></p></blockquote>\n\n<p>Please also attach any needed commands, add-ons/behavior packs, data packs, resource packs, screenshots, videos, or worlds needed to help reproduce this issue.</p>\n\n<p>Refer to the <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\"><b>Bug Tracker Guidelines</b></a> for more information about how to write helpful bug reports. Bug reports with insufficient information may be closed as <b>Incomplete</b>.</p>\n\n<p><sub>This issue is being temporarily resolved as</sub> <font color=\"#ff5630\"><sub><b>Awaiting Response</b></sub></font><sub>. Once the requested information has been delivered, the report will be reopened automatically.</sub></p>\n\n<p><b>Quick Links</b>:<br>\n\ud83d\udcd3 <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\">Bug Tracker Guidelines</a> \u2013 \ud83d\udcac <a href=\"https://discord.com/invite/58Sxm23\" class=\"external-link\" rel=\"nofollow noreferrer\">Community Support</a> \u2013 \ud83d\udce7 <a href=\"https://aka.ms/Minecraft-Support\" class=\"external-link\" rel=\"nofollow noreferrer\">Mojang Support (Technical Issues)</a> \u2013 \ud83d\udce7 <a href=\"https://support.xbox.com/contact-us\" class=\"external-link\" rel=\"nofollow noreferrer\">Microsoft Support (Account Issues)</a><br>\n\ud83d\udcd3 <a href=\"https://report.bugs.mojang.com/servicedesk/customer/portal/2\" class=\"external-link\" rel=\"nofollow noreferrer\">Project Summary</a> \u2013 \u270d\ufe0f <a href=\"https://aka.ms/MinecraftFeedbackDiscord\" class=\"external-link\" rel=\"nofollow noreferrer\">Feedback and Suggestions</a> \u2013 \ud83d\udcd6 <a href=\"https://minecraft.wiki\" class=\"external-link\" rel=\"nofollow noreferrer\">Game Wiki</a></p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "We do not have enough information to reproduce this issue.",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please include the following information to help us understand your problem:"
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Steps to Reproduce:",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "1. "
+                  },
+                  {
+                    "type": "text",
+                    "text": "(Explain what needs to be done for the issue to happen)",
+                    "marks": [
+                      {
+                        "type": "em"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "2."
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "3."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Observed Results:",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "(Briefly describe what happens)",
+                    "marks": [
+                      {
+                        "type": "em"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Expected Results:",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "(Briefly describe what should happen)",
+                    "marks": [
+                      {
+                        "type": "em"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please also attach any needed commands, add-ons/behavior packs, data packs, resource packs, screenshots, videos, or worlds needed to help reproduce this issue."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Refer to the "
+              },
+              {
+                "type": "text",
+                "text": "Bug Tracker Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  },
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " for more information about how to write helpful bug reports. Bug reports with insufficient information may be closed as "
+              },
+              {
+                "type": "text",
+                "text": "Incomplete",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This issue is being temporarily resolved as ",
+                "marks": [
+                  {
+                    "attrs": {
+                      "type": "sub"
+                    },
+                    "type": "subsup"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "Awaiting Response",
+                "marks": [
+                  {
+                    "type": "strong"
+                  },
+                  {
+                    "type": "textColor",
+                    "attrs": {
+                      "color": "#ff5630"
+                    }
+                  },
+                  {
+                    "attrs": {
+                      "type": "sub"
+                    },
+                    "type": "subsup"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ". Once the requested information has been delivered, the report will be reopened automatically.",
+                "marks": [
+                  {
+                    "attrs": {
+                      "type": "sub"
+                    },
+                    "type": "subsup"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3 "
+              },
+              {
+                "type": "text",
+                "text": "Bug Tracker Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udcac "
+              },
+              {
+                "type": "text",
+                "text": "Community Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://discord.com/invite/58Sxm23"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udce7 "
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support (Technical Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/Minecraft-Support"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udce7 "
+              },
+              {
+                "type": "text",
+                "text": "Microsoft Support (Account Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://support.xbox.com/contact-us"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3 "
+              },
+              {
+                "type": "text",
+                "text": "Project Summary",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://report.bugs.mojang.com/servicedesk/customer/portal/2"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \u270d\ufe0f "
+              },
+              {
+                "type": "text",
+                "text": "Feedback and Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MinecraftFeedbackDiscord"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udcd6 "
+              },
+              {
+                "type": "text",
+                "text": "Game Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecraft.wiki"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-301106"
+  }
+}

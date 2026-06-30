@@ -1,0 +1,324 @@
+{
+  "key": "MC-300886",
+  "summary": "Can't fly in creative ",
+  "description": "Every time I try to fly in creative all I do is jump, I checked settings and restarted the game and still can't fly in creative, even making a new world didn't work, sorry I don't have a picture to prove. \\n\\n",
+  "created_date": "2025-08-09T14:08:22.025-0700",
+  "updated_date": "2025-08-11T07:34:45.507-0700",
+  "status": "Resolved",
+  "resolution": "Incomplete",
+  "resolution_date": "2025-08-11T07:34:45.404-0700",
+  "affected_versions": [
+    "1.21.8",
+    "25w32a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 42,
+  "summary_length": 4,
+  "fetch_timestamp": "2025-08-20T03:10:27.038120",
+  "comments": [
+    {
+      "id": "2082268",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "ampau (bolshi)",
+        "active": true,
+        "timeZone": "Europe/Andorra",
+        "accountType": "customer"
+      },
+      "created": "2025-08-10T01:08:51.533-0700",
+      "updated": "2025-08-10T01:08:51.533-0700",
+      "body_text": "Can not reproduce. A video of the issue happening with the F3 debug screen enabled would be greatly appreciated.\\n\\n",
+      "body_length": 116,
+      "rendered_body": "<p>Can not reproduce. A video of the issue happening with the F3 debug screen enabled would be greatly appreciated.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Can not reproduce. A video of the issue happening with the F3 debug screen enabled would be greatly appreciated."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2082620",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "24x24": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "16x16": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "32x32": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png"
+        },
+        "displayName": "[MCQA] jKakub",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-11T07:34:40.481-0700",
+      "updated": "2025-08-11T07:34:40.481-0700",
+      "body_text": "Hi!Thank you for your report! \\n\\nHowever, this issue is **Incomplete**.Your report does not contain enough information. As such, we're unable to understand or reproduce the problem.You are welcome to create a new ticket about your issue with more detailed information.However, please review the Bug Tracker Guidelines and be sure to search for existing issues before writing a new bug report.Please note, that mechanics of the game may change between updates.Full Version History – Feature Requests and Suggestions \\n\\nQuick Links: \\n\\n📓 Issue Guidelines – 💬 Mojang Support – 📧 Suggestions – 📖 Minecraft Wiki \\n\\n",
+      "body_length": 614,
+      "rendered_body": "<p>Hi!<br>\nThank you for your report!&nbsp;</p>\n\n<p>However, this issue is <font color=\"#ff991f\"><b>Incomplete</b></font>.<br>\nYour report does not contain enough information. As such, we're unable to understand or reproduce the problem.<br>\nYou are welcome to create a new ticket about your issue with more detailed information.<br>\nHowever, please review the <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Bug Tracker Guidelines</ins></a> and be sure to search for existing issues before writing a new bug report.<br>\nPlease note, that mechanics of the game may change between updates.<br>\n<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fminecraft.fandom.com.mcas.ms%2Fwiki%2FLauncher_version_history%3FMcasTsid%3D15600&amp;McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Full Version History</ins></a> – <a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fwww.reddit.com.mcas.ms%2Fr%2Fminecraftsuggestions%3FMcasTsid%3D15600&amp;McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Feature Requests and Suggestions</ins></a>&nbsp;</p>\n\n<p>Quick Links:&nbsp;</p>\n\n<p>📓 <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Issue Guidelines</ins></a> – 💬 <a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fhelp.minecraft.net.mcas.ms%2Fhc%2Fen-us%2Frequests%2Fnew%3FMcasTsid%3D15600&amp;McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Mojang Support</ins></a> – 📧 <a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Ffeedback.minecraft.net.mcas.ms%2F%3FMcasTsid%3D15600&amp;McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Suggestions</ins></a> – 📖 <a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fminecraft.wiki.mcas.ms%2F%3FMcasTsid%3D15600&amp;McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Minecraft Wiki</ins></a>&nbsp;</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hi!"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Thank you for your report! "
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "However, this issue is "
+              },
+              {
+                "type": "text",
+                "text": "Incomplete",
+                "marks": [
+                  {
+                    "type": "strong"
+                  },
+                  {
+                    "type": "textColor",
+                    "attrs": {
+                      "color": "#ff991f"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Your report does not contain enough information. As such, we're unable to understand or reproduce the problem."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "You are welcome to create a new ticket about your issue with more detailed information."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "However, please review the "
+              },
+              {
+                "type": "text",
+                "text": "Bug Tracker Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " and be sure to search for existing issues before writing a new bug report."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Please note, that mechanics of the game may change between updates."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Full Version History",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fminecraft.fandom.com.mcas.ms%2Fwiki%2FLauncher_version_history%3FMcasTsid%3D15600&McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – "
+              },
+              {
+                "type": "text",
+                "text": "Feature Requests and Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fwww.reddit.com.mcas.ms%2Fr%2Fminecraftsuggestions%3FMcasTsid%3D15600&McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " "
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links: "
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "📓 "
+              },
+              {
+                "type": "text",
+                "text": "Issue Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – 💬 "
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fhelp.minecraft.net.mcas.ms%2Fhc%2Fen-us%2Frequests%2Fnew%3FMcasTsid%3D15600&McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – 📧 "
+              },
+              {
+                "type": "text",
+                "text": "Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Ffeedback.minecraft.net.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – 📖 "
+              },
+              {
+                "type": "text",
+                "text": "Minecraft Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fminecraft.wiki.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " "
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 2
+}

@@ -1,0 +1,110 @@
+{
+  "key": "MC-300786",
+  "created_date": "2025-08-06T13:11:37.636-0700",
+  "updated_date": "2025-08-09T10:10:57.637-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "25w33a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-09T10:10:57.597-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Issue with Arabic Language in Minecraft",
+  "environment_raw": null,
+  "description": "n nDear Mojang Support, n nI would like to report an issue with the Arabic language support in Minecraft. The current implementation has several problems, including incorrect text alignment, broken word formatting, reversed letters, and an unsuitable font that is hard to read. These issues make the game difficult to enjoy for Arabic-speaking players. n nPlease consider improving Arabic localization and using a proper Arabic font to ensure a better experience for all users. n nThank you for your attention. n n",
+  "Steps to Reproduce": "1. Launch Minecraft and navigate to the main menu.\n2. Click on \"Options\" and then select \"Language.\"\n3. From the language list, choose \"Arabic\" to switch the game language.\n4. Start a new game in either Creative or Survival mode.\n5. Open the chat window by pressing the \"T\" key.\n6. Type a message in Arabic and send it.\n7. Observe the text alignment, formatting, and letter orientation in the chat window.\n8. Check the readability of the Arabic font used in the game by examining various UI elements such as menus, item names, and tooltips.\n9. Take note of any instances of reversed letters or broken word formatting while interacting with different game features.",
+  "Environment": "Minecraft Java Edition Version 25w33a (snapshot)",
+  "Observed Behavior": "The Arabic language support in Minecraft currently exhibits several critical issues that hinder readability and overall user experience. The main problems include:\n\n1. **Text Alignment**: Arabic text is typically written from right to left, but in Minecraft, the alignment appears incorrect, causing confusion when reading in-game menus, chat, and other text elements.\n\n2. **Broken Word Formatting**: Many Arabic words are not displayed correctly due to improper handling of letter connections. Arabic script requires letters to connect in specific ways depending on their position within a word (initial, medial, final, or isolated forms). Currently, this connection is often missing or incorrectly rendered.\n\n3. **Reversed Letters**: Some letters appear reversed or inappropriately positioned, making it challenging for players to recognize words and phrases. This issue is particularly pronounced in contexts where multiple words are displayed together, leading to further confusion.\n\n4. **Unsuitable Font**: The default font used for Arabic text lacks the necessary diacritics and stylistic features that are essential for proper readability. The font's design does not accommodate the unique characteristics of Arabic script, resulting in a visually unappealing and hard-to-read experience.\n\nThese issues collectively create a significant barrier for Arabic-speaking players, making gameplay less enjoyable and accessible. Addressing these problems through improved localization practices and the implementation of a proper Arabic font would greatly enhance the gaming experience for this demographic.",
+  "Expected Behavior": "When the Arabic language is selected in Minecraft, the text should be displayed with correct alignment, ensuring that it flows from right to left as is standard for Arabic script. Words should be properly formatted, with letters connected appropriately to reflect their correct forms in the context of the surrounding letters. The font used should be a clear and readable Arabic typeface that enhances the overall readability of the text. This would allow Arabic-speaking players to navigate menus, read in-game text, and enjoy the game without encountering visual distortions or difficulties in understanding the content.",
+  "comments": [
+    {
+      "id": "2081253",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "24x24": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "16x16": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "32x32": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png"
+        },
+        "displayName": "Automation for Jira",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "app"
+      },
+      "created": "2025-08-06T13:11:40.497-0700",
+      "updated": "2025-08-06T13:11:40.497-0700",
+      "body_text": "Please edit your report to change the Affected Version to the version shown on the Minecraft title screen\\n\\n",
+      "body_length": 109,
+      "rendered_body": "<p>Please edit your report to change the Affected Version to the version shown on the Minecraft title screen</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please edit your report to change the Affected Version to the version shown on the Minecraft title screen"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2082098",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Ali saheb",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-09T10:10:43.213-0700",
+      "updated": "2025-08-09T10:10:43.213-0700",
+      "body_text": "The problem has nothing to do with the version. The problem exists in all versions of Minecraft, from the beginning of Arabic language support to the latest version.\\n\\n",
+      "body_length": 169,
+      "rendered_body": "<p>The problem has nothing to do with the version. The problem exists in all versions of Minecraft, from the beginning of Arabic language support to the latest version.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "The problem has nothing to do with the version. The problem exists in all versions of Minecraft, from the beginning of Arabic language support to the latest version."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300786"
+  }
+}

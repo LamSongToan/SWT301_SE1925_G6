@@ -1,0 +1,149 @@
+{
+  "key": "MC-301159",
+  "created_date": "2025-08-17T05:39:32.366-0700",
+  "updated_date": "2025-08-17T05:39:48.462-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "25w34a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-17T05:39:48.407-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Rail junction failed on redstone block",
+  "environment_raw": null,
+  "description": "Rail junction failed if railway is on a redstone block n nActually, I only tested it on 1.21.5 n nI don t know how to describe this, so check the video n n",
+  "Steps to Reproduce": "1. Create a new Creative world in Minecraft version 1.21.5.\n2. Place a Redstone Block at ground level.\n3. On top of the Redstone Block, place a Rail track.\n4. Create a Rail junction by placing additional Rails to form a T-intersection, ensuring one side is straight and the other two sides curve.\n5. Activate the Redstone Block using a Redstone Torch or another power source.\n6. Observe the behavior of the Rail junction when a Minecart approaches from the straight side of the junction.\n7. Note if the Minecart fails to properly navigate the junction due to the Redstone Block's presence.",
+  "Environment": "Minecraft Java Edition Version 25w34a (snapshot)",
+  "Observed Behavior": "When a rail junction is placed directly on top of a redstone block, the junction fails to function correctly. Specifically, the rail does not change its direction as expected when powered by redstone signals. Instead of transitioning to the correct orientation for a T-junction or intersection, the rail remains in its original state or behaves erratically. \n\nThis issue was observed in version 1.21.5 of Minecraft. The junction appears to be updated incorrectly upon receiving power from adjacent redstone components, leading to inconsistent behavior when a minecart approaches the junction. As a result, minecarts may pass through the junction without following the intended path, which disrupts the expected flow of travel along the railway.\n\nFor further clarification, please refer to the accompanying video demonstration that illustrates the problem occurring in real-time.",
+  "Expected Behavior": "When a railway is placed on a redstone block, the rail junction should function correctly as intended, allowing minecarts to pass through or change direction at the intersection without any issues. The redstone block should not interfere with the alignment or behavior of the adjacent rails. Specifically, if the railway is configured as a T-junction, the intersection should update properly to reflect the correct direction of the curved rail when powered by redstone. The minecart should follow the designated path based on the rail configuration, ensuring smooth movement without getting stuck or failing to change direction as expected.",
+  "comments": [
+    {
+      "id": "2084181",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Lithium4141",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-17T05:39:33.158-0700",
+      "updated": "2025-08-17T05:39:33.158-0700",
+      "body_text": "This comment contained multiple media attachments (2), please login to view the attachments.",
+      "body_length": 92,
+      "rendered_body": "<p></p><div><p>This comment contained multiple media attachments (2), please login to view the attachments.</p></div><p></p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "47e9af6a-1e95-4f6a-ba34-47052f6e2a2a",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2084182",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "24x24": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "16x16": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "32x32": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png"
+        },
+        "displayName": "Automation for Jira",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "app"
+      },
+      "created": "2025-08-17T05:39:46.906-0700",
+      "updated": "2025-08-17T05:39:46.906-0700",
+      "body_text": "Please edit your report to change the Affected Version to the version shown on the Minecraft title screen\\n\\n",
+      "body_length": 109,
+      "rendered_body": "<p>Please edit your report to change the Affected Version to the version shown on the Minecraft title screen</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please edit your report to change the Affected Version to the version shown on the Minecraft title screen"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2084183",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "24x24": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "16x16": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "32x32": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png"
+        },
+        "displayName": "Automation for Jira",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "app"
+      },
+      "created": "2025-08-17T05:39:47.007-0700",
+      "updated": "2025-08-17T05:39:47.007-0700",
+      "body_text": "Please edit your report to change the Affected Version to the version shown on the Minecraft title screen\\n\\n",
+      "body_length": 109,
+      "rendered_body": "<p>Please edit your report to change the Affected Version to the version shown on the Minecraft title screen</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please edit your report to change the Affected Version to the version shown on the Minecraft title screen"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-301159"
+  }
+}

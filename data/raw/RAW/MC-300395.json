@@ -1,0 +1,167 @@
+{
+  "key": "MC-300395",
+  "summary": "Corrupted blocks",
+  "description": "My game world has been corrupted, and large blocks have been moved around, disrupting my builds.\\n\\nI already sent a debug request at the beginning of the month, but I haven’t heard back since they asked for debug file, so I enclose again, along with screenshots. I will attach debug folder contents.\\n\\nI would like this resolved, please. It took a long time to build, and it’s seriously damaged. Thank you!\\n\\n",
+  "created_date": "2025-07-30T17:25:12.428-0700",
+  "updated_date": "2025-08-10T11:05:16.908-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "resolution_date": "2025-08-10T11:01:31.695-0700",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 2,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 69,
+  "summary_length": 2,
+  "fetch_timestamp": "2025-08-20T03:11:20.132494",
+  "comments": [
+    {
+      "id": "2079014",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "nuria.bonser",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-07-30T17:25:13.639-0700",
+      "updated": "2025-08-10T11:05:16.856-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.",
+      "body_length": 326,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "e42e7721-d072-40b2-b98b-a27f6d4a7ab9",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaSingle",
+            "attrs": {
+              "layout": "align-start"
+            },
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "18395aa3-e356-4d70-8352-6d2496e28062",
+                  "alt": "Screen Shot 2025-07-22 at 1.00.05 AM.png",
+                  "collection": "",
+                  "height": 1440,
+                  "width": 2560
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaSingle",
+            "attrs": {
+              "layout": "align-start"
+            },
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "45d7308f-32d5-4471-9a4b-3c4212054cf6",
+                  "alt": "Screen Shot 2025-07-22 at 1.00.18 AM.png",
+                  "collection": "",
+                  "height": 1440,
+                  "width": 2560
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaSingle",
+            "attrs": {
+              "layout": "align-start"
+            },
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "90466e95-20fb-4b6a-89ca-8f599bb20d10",
+                  "alt": "Screen Shot 2025-07-22 at 12.59.44 AM.png",
+                  "collection": "",
+                  "height": 1440,
+                  "width": 2560
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2082393",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/32"
+        },
+        "displayName": "[MOD] Greymagic27",
+        "active": true,
+        "timeZone": "Europe/London",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-10T11:01:31.751-0700",
+      "updated": "2025-08-10T11:01:31.751-0700",
+      "body_text": "Please can you attach the affected world? Do you know of any way to reproduce the issue?\\n\\n",
+      "body_length": 92,
+      "rendered_body": "<p>Please can you attach the affected world? Do you know of any way to reproduce the issue?</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please can you attach the affected world? Do you know of any way to reproduce the issue?"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 2
+}

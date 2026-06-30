@@ -1,0 +1,71 @@
+{
+  "key": "MC-301170",
+  "summary": "3 Enderman is attacking me for no reason",
+  "description": "I don’t know it’s a easter egg or not when ı am in the end random 3 enderman is starting to attack me \\n\\nI don’t look their eyes \\n\\n",
+  "created_date": "2025-08-17T10:40:24.827-0700",
+  "updated_date": "2025-08-17T12:13:42.688-0700",
+  "status": "Resolved",
+  "resolution": "Incomplete",
+  "resolution_date": "2025-08-17T12:13:42.635-0700",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 29,
+  "summary_length": 8,
+  "fetch_timestamp": "2025-08-20T03:09:55.620793",
+  "comments": [
+    {
+      "id": "2084239",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/32"
+        },
+        "displayName": "[Mod] Jingy",
+        "active": true,
+        "timeZone": "America/Chicago",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-17T12:13:33.631-0700",
+      "updated": "2025-08-17T12:13:33.631-0700",
+      "body_text": "This is not a valid bug, as it lacks any substance to deduce if this is a genuine bug or an accident.\\n\\n",
+      "body_length": 105,
+      "rendered_body": "<p>This is not a valid bug, as it lacks any substance to deduce if this is a genuine bug or an accident.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This is not a valid bug, as it lacks any substance to deduce if this is a genuine bug or an accident."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 1
+}

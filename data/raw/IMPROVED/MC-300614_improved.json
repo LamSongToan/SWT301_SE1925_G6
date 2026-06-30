@@ -1,0 +1,333 @@
+{
+  "key": "MC-300614",
+  "created_date": "2025-08-03T22:22:50.343-0700",
+  "updated_date": "2025-08-05T15:10:19.172-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8",
+    "25w31a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 2,
+  "labels": [],
+  "resolution_date": "2025-08-05T15:10:19.106-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "not able to eat food in main hand",
+  "environment_raw": null,
+  "description": "When holding food in the main right hand, the eating particles and noises are produced, but the food is not being consumed. The hunger bar doesn t fill, the food is just endlessly being eaten (until stopping the right click), and stack number of the food does not decrease. Relaunching doesn t help. n n",
+  "Steps to Reproduce": "1. Create a new Survival world with default settings.\n2. Ensure your hunger bar is not full (e.g., take damage or run around to deplete hunger).\n3. Obtain a food item (e.g., Cooked Porkchop) and place it in your main hand.\n4. Hold the right mouse button to attempt to eat the food.\n5. Observe that eating particles and sounds are produced, but the food is not consumed, the hunger bar does not fill, and the stack number of the food remains unchanged.\n6. Continue holding the right mouse button until you decide to stop.\n7. Relaunch the game and repeat steps 3 to 5 to confirm the issue persists.",
+  "Environment": "Minecraft Java Edition Versions: 1.21.8, 25w31a (includes snapshots)",
+  "Observed Behavior": "When the player holds a food item in their main hand (right hand), the expected behavior is that the food item will be consumed after a brief eating animation, which takes approximately 1.61 seconds for most food items. However, in this bug scenario, the following issues occur:\n\n1. **Visual and Audio Feedback:** The player experiences the usual visual effects, such as eating particles appearing around the player, and the associated munching sound is played, indicating that the game recognizes the eating action.\n\n2. **No Hunger Restoration:** Despite the visual and audio cues, the hunger bar does not increase. The player remains at the same hunger level, as no hunger points are restored during this process.\n\n3. **Infinite Eating Animation:** The food item appears to be continuously consumed as long as the right mouse button is held down. The player can keep right-clicking without interruption, leading to an endless eating animation.\n\n4. **Stack Count Unchanged:** The quantity of the food item in the player's inventory remains unchanged; the stack count does not decrease, indicating that the food is not actually being consumed or removed from the player's inventory.\n\n5. **No Resolution through Relaunching:** Restarting the game does not resolve the issue. The bug persists even after the player relaunches the game, indicating that it is not a temporary glitch but rather a consistent malfunction.\n\nThis behavior disrupts gameplay by preventing players from regaining hunger, which is essential for survival mechanics in Minecraft.",
+  "Expected Behavior": "When holding food in the main hand and right-clicking to eat, the player should see the correct eating animation and hear the associated munching sound, while the food item should be consumed. The hunger bar should increase according to the food item's nourishment value, and the stack size of the food item should decrease by one. If the player continues to right-click, the eating action should stop once the food is fully consumed, and the player should be able to eat again once the hunger bar is not full. Additionally, the game should not exhibit any glitches, such as the food item being endlessly consumed without effect. This behavior aligns with the intended mechanics of food consumption in Minecraft, where players can restore their hunger and saturation by eating food items from their main hand.",
+  "comments": [
+    {
+      "id": "2080139",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Alexbaron309",
+        "active": true,
+        "timeZone": "Europe/Rome",
+        "accountType": "customer"
+      },
+      "created": "2025-08-03T23:10:20.964-0700",
+      "updated": "2025-08-03T23:10:20.964-0700",
+      "body_text": "You are playing creative?, if so works as intended\\n\\n",
+      "body_length": 54,
+      "rendered_body": "<p>You are playing creative?, if so works as intended</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are playing creative?, if so works as intended"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2080151",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "24x24": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "16x16": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "32x32": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png"
+        },
+        "displayName": "[MCQA] jKakub",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-04T00:57:42.509-0700",
+      "updated": "2025-08-04T00:57:42.509-0700",
+      "body_text": "Hi there!Could you please answer a few questions regarding this issue?\u00a0\\n\\n* Can you record and upload a video of this issue?\u00a0\\n\\n\\n\\nThis ticket will automatically reopen when you reply.\u00a0Thanks!\\n\\n**Quick Links**:\u00a0\ud83d\udcd3\u202fIssue Guidelines\u202f\u2013 \ud83d\udcac\u202fMojang Support\u202f\u2013 \ud83d\udce7\u202fSuggestions\u202f\u2013 \ud83d\udcd6\u202fMinecraft Wiki\u00a0\\n\\n",
+      "body_length": 293,
+      "rendered_body": "<p>Hi there!<br>\nCould you please answer a few questions regarding this issue?&nbsp;</p>\n\n<ul>\n\t<li>Can you record and upload a video of this issue?&nbsp;</li>\n</ul>\n\n\n<p>This ticket will automatically reopen when you reply.&nbsp;Thanks!</p>\n\n<p><b>Quick Links</b>:&nbsp;<br>\n\ud83d\udcd3\u202f<a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Issue Guidelines</ins></a>\u202f\u2013 \ud83d\udcac\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fhelp.minecraft.net.mcas.ms%2Fhc%2Fen-us%2Frequests%2Fnew%3FMcasTsid%3D15600&amp;McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Mojang Support</ins></a>\u202f\u2013 \ud83d\udce7\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Ffeedback.minecraft.net.mcas.ms%2F%3FMcasTsid%3D15600&amp;McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Suggestions</ins></a>\u202f\u2013 \ud83d\udcd6\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fminecraft.wiki.mcas.ms%2F%3FMcasTsid%3D15600&amp;McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Minecraft Wiki</ins></a>&nbsp;</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hi there!"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Could you please answer a few questions regarding this issue?\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Can you record and upload a video of this issue?\u00a0"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will automatically reopen when you reply.\u00a0Thanks!"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":\u00a0"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Issue Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udcac\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fhelp.minecraft.net.mcas.ms%2Fhc%2Fen-us%2Frequests%2Fnew%3FMcasTsid%3D15600&McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udce7\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Ffeedback.minecraft.net.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udcd6\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Minecraft Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fminecraft.wiki.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2080508",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Ariana Welter",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-04T16:45:11.085-0700",
+      "updated": "2025-08-04T16:45:11.085-0700",
+      "body_text": "\\n\\n\\n\\n",
+      "body_length": 8,
+      "rendered_body": "<p></p><div><p>This comment contained multiple media attachments (2), please login to view the attachments.</p></div><p></p>\n",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph"
+          },
+          {
+            "type": "mediaSingle",
+            "attrs": {
+              "layout": "align-start"
+            },
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "b819a3a5-e46c-491d-87f2-98a4896a8e92",
+                  "alt": "Minecraft 1.21.8 - Singleplayer 2025-08-04 19-41-59.mp4",
+                  "collection": "",
+                  "height": 712,
+                  "width": 1376
+                }
+              }
+            ]
+          },
+          {
+            "type": "paragraph"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2080847",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/32"
+        },
+        "displayName": "[Mod] Jingy",
+        "active": true,
+        "timeZone": "America/Chicago",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-05T15:10:14.083-0700",
+      "updated": "2025-08-05T15:10:14.083-0700",
+      "body_text": "Are you playing on a server? This seems to be server lag, based on the fact that the ghast in the background also doesn\u2019t seem to be responding well (it looks jittery).\\n\\n",
+      "body_length": 172,
+      "rendered_body": "<p>Are you playing on a server? This seems to be server lag, based on the fact that the ghast in the background also doesn\u2019t seem to be responding well (it looks jittery).</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Are you playing on a server? This seems to be server lag, based on the fact that the ghast in the background also doesn\u2019t seem to be responding well (it looks jittery)."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300614"
+  }
+}

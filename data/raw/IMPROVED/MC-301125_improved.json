@@ -1,0 +1,75 @@
+{
+  "key": "MC-301125",
+  "created_date": "2025-08-15T19:57:35.766-0700",
+  "updated_date": "2025-08-15T19:57:39.772-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "25w34a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-15T19:57:39.743-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "i got 2 bugs",
+  "environment_raw": null,
+  "description": "so, I own Minecraft because I got through and now, I got to buy it and I can t mine anything or place anything done n n",
+  "Steps to Reproduce": "1. Launch Minecraft and log in with your account credentials.\n2. Create a new world in Survival mode with default settings.\n3. Attempt to mine any block, such as dirt or stone, using your hand or a tool.\n4. Observe that no blocks drop when mined.\n5. Try to place a block, such as dirt or wood, in the world.\n6. Notice that the block does not place and remains in your inventory.\n7. Exit the world and return to the main menu.\n8. Start a new world in Creative mode.\n9. Attempt to place any block in the world.\n10. Confirm that the block placement still does not work and the block remains in your inventory.",
+  "Environment": "Minecraft Java Edition Version 25w34a (snapshot)",
+  "Observed Behavior": "Upon launching Minecraft, the player is unable to mine or place any blocks within the game environment. This issue persists regardless of the game mode selected (Survival, Creative, or Adventure). The player can interact with the game world using the mouse and keyboard, but attempts to break blocks (using the left mouse button) or place blocks (using the right mouse button) do not register. No feedback is provided, such as block destruction animations or placement sounds, indicating that the actions are not being processed by the game. This behavior has been observed in both single-player and multiplayer modes, and restarting the game or the device does not resolve the issue. The player has confirmed that they have the necessary permissions and that their game version is up to date.",
+  "Expected Behavior": "When a player owns Minecraft and has successfully logged into their account, they should be able to mine and place blocks in the game without any restrictions. The player should be able to use tools appropriate for the blocks they are interacting with, such as pickaxes for mining stone or ores, and shovels for digging dirt or sand. Additionally, the game should allow the player to place blocks in the world as long as there is a valid location for placement, adhering to the game's mechanics that dictate where blocks can be placed, such as not overlapping with existing blocks or entities. If the player is in a single-player world or has the necessary permissions in a multiplayer world, all mining and placing actions should function as intended, consistent with the official game mechanics.",
+  "comments": [
+    {
+      "id": "2083922",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "24x24": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "16x16": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "32x32": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png"
+        },
+        "displayName": "Automation for Jira",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "app"
+      },
+      "created": "2025-08-15T19:57:38.203-0700",
+      "updated": "2025-08-15T19:57:38.203-0700",
+      "body_text": "Please edit your report to change the Affected Version to the version shown on the Minecraft title screen\\n\\n",
+      "body_length": 109,
+      "rendered_body": "<p>Please edit your report to change the Affected Version to the version shown on the Minecraft title screen</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please edit your report to change the Affected Version to the version shown on the Minecraft title screen"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-301125"
+  }
+}

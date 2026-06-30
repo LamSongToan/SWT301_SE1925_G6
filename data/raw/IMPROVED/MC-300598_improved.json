@@ -1,0 +1,284 @@
+{
+  "key": "MC-300598",
+  "created_date": "2025-08-03T12:17:37.114-0700",
+  "updated_date": "2025-08-04T07:03:55.440-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-04T07:03:55.328-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "fire animation on mobs",
+  "environment_raw": null,
+  "description": "In a lava flow, when a mob is burning the fire animation appears, only the damage animation n n",
+  "Steps to Reproduce": "1. Create a new Survival world with default settings.\n2. Locate a lava flow in the Overworld.\n3. Spawn a mob by using the command '/summon minecraft:creeper' or any other non-Nether mob.\n4. Move the spawned mob into the lava flow, ensuring it takes damage and begins burning.\n5. Observe the mob as it burns in the lava, noting the absence of the fire animation that should be present on burning entities.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "MISSING**\n\nWhen a mob is burning due to contact with lava, it does not display the expected fire animation. Instead, only the damage animation is visible, which does not adequately represent the burning state of the mob. Normally, burning entities in Minecraft emit visual fire particles and display a fire overlay, indicating that they are on fire. However, in this scenario, while the mob takes damage from the lava, the absence of the fire animation leads to confusion regarding the mob's state. \n\nThis issue is particularly noticeable in scenarios where mobs are caught in a flowing lava stream, as players rely on visual cues to assess the situation. The lack of the fire animation may lead players to believe that the mob is not burning, despite it taking damage from the lava. This inconsistency can affect gameplay, as players may misinterpret the mob's health or behavior due to the missing visual feedback. \n\nTo summarize, when a mob is burning in lava, the expected fire animation is missing, resulting in only the damage animation being displayed. This does not accurately convey the mob's burning state and can lead to player confusion.",
+  "Expected Behavior": "When a mob is burning while in a lava flow, it should display the appropriate fire animation, including the visual effects of flames and smoke, in addition to the damage animation. This animation should be consistent with the behavior of other burning entities in the game, where the mob visibly appears engulfed in flames, emitting fire particles and exhibiting the characteristic burning effects as outlined in the game's mechanics. The mob should continue to take damage from the lava and remain visibly on fire until extinguished by water, rain, or other means, accurately reflecting the expected interaction between mobs and lava in Minecraft.",
+  "comments": [
+    {
+      "id": "2080070",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "zRickxD",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-03T12:17:37.860-0700",
+      "updated": "2025-08-03T12:17:37.860-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.",
+      "body_length": 80,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "3757d340-c891-4957-8284-07a305b327dc",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2080071",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Alexbaron309",
+        "active": true,
+        "timeZone": "Europe/Rome",
+        "accountType": "customer"
+      },
+      "created": "2025-08-03T12:20:09.060-0700",
+      "updated": "2025-08-03T12:20:09.060-0700",
+      "body_text": "In what platform occur this?\\n\\n\\n\\nYou need add this following format, otherwise will put as invalid.\\n\\n\\n\\n**Steps to reproduce this issue**\\n\\n\\n\\n**Expected result:**\\n\\n**Actual result:**\\n\\n\\n\\nIf is reported already this bug will be closed as duplicated, and connected to the main ticket.\\n\\n",
+      "body_length": 300,
+      "rendered_body": "<p>In what platform occur this?</p>\n\n\n\n<p>You need add this following format, otherwise will put as invalid.</p>\n\n\n\n<p><b>Steps to reproduce this issue</b></p>\n\n\n\n<p><b>Expected result:</b></p>\n\n<p><b>Actual result:</b></p>\n\n\n\n<p>If is reported already this bug will be closed as duplicated, and connected to the main ticket.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In what platform occur this?"
+              }
+            ]
+          },
+          {
+            "type": "paragraph"
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "You need add this following format, otherwise will put as invalid."
+              }
+            ]
+          },
+          {
+            "type": "paragraph"
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Steps to reproduce this issue",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph"
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Expected result:",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Actual result:",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph"
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "If is reported already this bug will be closed as duplicated, and connected to the main ticket."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2080333",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "24x24": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "16x16": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "32x32": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png"
+        },
+        "displayName": "[MCQA] jKakub",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-04T07:03:50.069-0700",
+      "updated": "2025-08-04T07:03:50.069-0700",
+      "body_text": "Hi there!Could you please answer a few questions regarding this issue?\u00a0\\n\\n* What video settings are you using? Can you upload a screenshot of them?\\n\\n\\n* What mobs are affected by this issue?\\n\\n\\n* Do you use any resource/data packs?\\n\\n\\n\\nThis ticket will automatically reopen when you reply.\u00a0Thanks!\\n\\n",
+      "body_length": 309,
+      "rendered_body": "<p>Hi there!<br>\nCould you please answer a few questions regarding this issue?&nbsp;</p>\n\n<ul>\n\t<li>What video settings are you using? Can you upload a screenshot of them?</li>\n\t<li>What mobs are affected by this issue?</li>\n\t<li>Do you use any resource/data packs?</li>\n</ul>\n\n\n<p>This ticket will automatically reopen when you reply.&nbsp;Thanks!</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hi there!"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Could you please answer a few questions regarding this issue?\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "What video settings are you using? Can you upload a screenshot of them?"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "What mobs are affected by this issue?"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Do you use any resource/data packs?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will automatically reopen when you reply.\u00a0Thanks!"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300598"
+  }
+}

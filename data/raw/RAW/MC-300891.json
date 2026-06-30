@@ -1,0 +1,71 @@
+{
+  "key": "MC-300891",
+  "summary": "Music disc \"tears\" does not show the juke box's playing state",
+  "description": "the tears music disk does not set the jukeboxes playing blockstate \\n\\n",
+  "created_date": "2025-08-09T18:23:05.258-0700",
+  "updated_date": "2025-08-18T07:47:46.273-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "resolution_date": "2025-08-18T07:47:46.186-0700",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 0,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 12,
+  "summary_length": 11,
+  "fetch_timestamp": "2025-08-20T03:10:23.860963",
+  "comments": [
+    {
+      "id": "2082522",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "ampau (bolshi)",
+        "active": true,
+        "timeZone": "Europe/Andorra",
+        "accountType": "customer"
+      },
+      "created": "2025-08-11T00:54:44.447-0700",
+      "updated": "2025-08-11T00:54:44.447-0700",
+      "body_text": "Can not reproduce. Could you attach a video of the issue happening with the F3 debug screen enabled?\\n\\n",
+      "body_length": 104,
+      "rendered_body": "<p>Can not reproduce. Could you attach a video of the issue happening with the F3 debug screen enabled?</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Can not reproduce. Could you attach a video of the issue happening with the F3 debug screen enabled?"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 1
+}

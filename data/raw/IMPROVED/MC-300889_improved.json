@@ -1,0 +1,75 @@
+{
+  "key": "MC-300889",
+  "created_date": "2025-08-09T15:42:46.217-0700",
+  "updated_date": "2025-08-11T02:30:12.894-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 0,
+  "labels": [],
+  "resolution_date": "2025-08-11T02:30:12.798-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "A pumpkin can be carved with any object.",
+  "environment_raw": null,
+  "description": "My friend and I noticed that a pumpkin can be carved by hand or with any other object, but this was not the case on older versions. I counted it as a bug. n n",
+  "Steps to Reproduce": "1. Create a new Survival world with default settings.\n2. Locate or gather an uncarved pumpkin.\n3. Equip any item, such as your hand, a wooden sword, or a pickaxe.\n4. Approach the uncarved pumpkin and aim at it.\n5. Use the equipped item on the pumpkin to attempt to carve it.\n6. Observe that the pumpkin can be carved regardless of the item used. \n7. Repeat steps 3 to 6 using different items to confirm the behavior.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "In the current version of Minecraft, players can carve pumpkins using any item, including their bare hands. This behavior deviates from previous versions where only shears could be used to carve pumpkins. The expected behavior is that pumpkins should only be carved when interacted with shears, which is consistent with the mechanics of the game prior to this change.\n\nTo reproduce this issue:\n1. Obtain a pumpkin block in the game.\n2. Attempt to carve the pumpkin by right-clicking or tapping on it with various items, including shears, axes, swords, or even by hand.\n3. Observe that the pumpkin can be carved regardless of the item used.\n\nThis change affects gameplay as it simplifies the process of obtaining carved pumpkins, which can be used for crafting jack o'lanterns or worn as helmets to prevent endermen aggression. The inconsistency with earlier versions raises concerns about the intended mechanics for pumpkin carving within the game. \n\n**Version Information:**\n- This bug was first noted in the transition between versions, specifically after the introduction of the update that modified pumpkin interactions. \n\n**Recommendation:**\nIt is recommended to restore the original mechanics where only shears can be used to carve pumpkins, aligning with the established gameplay logic and enhancing the challenge of obtaining carved pumpkins.",
+  "Expected Behavior": "When attempting to carve a pumpkin, only shears should be able to be used to successfully transform an uncarved pumpkin into a carved pumpkin. The expected behavior is that using any other item or method, including the player's hand, should not result in a carved pumpkin. This behavior aligns with the mechanics established in previous versions of the game, where shears were the designated tool for carving pumpkins. The outcome should be that the uncarved pumpkin remains unchanged if any object other than shears is used, maintaining consistency with the crafting and harvesting mechanics that govern other blocks and items in Minecraft.",
+  "comments": [
+    {
+      "id": "2082521",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "ampau (bolshi)",
+        "active": true,
+        "timeZone": "Europe/Andorra",
+        "accountType": "customer"
+      },
+      "created": "2025-08-11T00:51:53.287-0700",
+      "updated": "2025-08-11T00:51:53.287-0700",
+      "body_text": "Can not reproduce. Could you attach a video of the issue happening with the F3 debug screen enabled?\\n\\n",
+      "body_length": 104,
+      "rendered_body": "<p>Can not reproduce. Could you attach a video of the issue happening with the F3 debug screen enabled?</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Can not reproduce. Could you attach a video of the issue happening with the F3 debug screen enabled?"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300889"
+  }
+}

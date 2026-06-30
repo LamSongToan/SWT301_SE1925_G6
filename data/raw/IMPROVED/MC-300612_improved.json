@@ -1,0 +1,395 @@
+{
+  "key": "MC-300612",
+  "created_date": "2025-08-03T22:13:22.373-0700",
+  "updated_date": "2025-08-04T01:08:22.210-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8",
+    "25w31a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-04T01:08:22.106-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "mobs floating instead of walking",
+  "environment_raw": null,
+  "description": "Mobs are floating over blocks instead of jumping and walking. When attacking mobs, they don t jump back, they float backwards, almost glitching across the screen. As if the mobs themselves are lagging in game, but the game isn t lagging. Relaunching game does not help. n n",
+  "Steps to Reproduce": "1. Create a new Survival world with default settings.\n2. Locate an area with multiple mobs, such as a forest or a plains biome.\n3. Ensure that there are no significant lag issues by checking your FPS (frames per second).\n4. Approach a mob, such as a zombie or skeleton, and initiate an attack by hitting it.\n5. Observe the mob's movement after being attacked; note if it floats backwards instead of jumping back or walking.\n6. Repeat the attack on different types of mobs (e.g., creepers, spiders) to confirm the behavior is consistent across various mob types.\n7. Test the behavior in different locations (e.g., on grass, dirt, or stone blocks) to see if the floating behavior persists regardless of the terrain.\n8. Relaunch the game and repeat steps 4-7 to verify that the issue remains unaffected by restarting the game.",
+  "Environment": "Minecraft Java Edition Versions: 1.21.8, 25w31a (includes snapshots)",
+  "Observed Behavior": "Mobs exhibit abnormal movement patterns where they appear to float above the ground instead of walking or jumping as intended. Specifically, when a player interacts with or attacks these mobs, they do not respond with normal knockback behavior\u2014rather than jumping back, they float backward in a manner that resembles a glitch. This floating motion lacks the typical physics associated with mob movement, making it seem as though the mobs are lagging in their animations, despite the overall game performance remaining stable. \n\nThis issue affects various mob types, including both passive and hostile entities, and occurs regardless of the environment or block types present. The floating behavior persists even after restarting the game, indicating that it is not a temporary glitch but a consistent problem across sessions. \n\n**Reproduction Steps:**\n1. Spawn or encounter any mob in the game (e.g., zombie, skeleton, cow).\n2. Approach the mob and initiate an attack.\n3. Observe the mob's movement; it should float backward instead of jumping or walking away.\n\n**Expected Behavior:**\nMobs should properly execute their walking and jumping animations in response to player interactions, maintaining realistic movement physics that reflect their behavior in the game.",
+  "Expected Behavior": "Mobs should exhibit normal movement behavior, walking and jumping over blocks as intended. When a player attacks a mob, the mob should respond by performing a knockback action, which includes jumping back or moving away from the player in a realistic manner. This behavior is consistent with the game's mechanics, where mobs are designed to react to player actions by fleeing or repositioning themselves rather than floating or glitching. Mobs should also maintain their pathfinding abilities, navigating around obstacles and interacting with the environment as expected without any erratic movements. If the game is functioning correctly, no floating or unnatural movement should occur, ensuring a smooth gameplay experience.",
+  "comments": [
+    {
+      "id": "2080155",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "24x24": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "16x16": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "32x32": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png"
+        },
+        "displayName": "[MCQA] jKakub",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-04T01:08:15.776-0700",
+      "updated": "2025-08-04T01:08:15.776-0700",
+      "body_text": "Hi!**Thank you for your report!**\u00a0\\n\\nHowever, this issue has been temporarily closed as\u202f**Awaiting Response**.\\n\\nCould you please provide more details or/and media files. As such we have no repro of this issue.\u00a0\\n\\nAlso, just a reminder, to make your bug report as effective as possible, please try and include the following steps to reproduce the problem:\u00a0\\n\\n**Steps to Reproduce:**\u00a0\\n\\n1. \\n\\n\\n\\n1. \\n\\n\\n\\n1. \\n\\n\\n\\n**Observed Results:**\u00a0\\n\\n*(Briefly describe what happens)*\u00a0\\n\\n**Expected Results:**\u00a0\\n\\n*(Briefly describe what should happen)*\u00a0\\n\\nIf your ticket does not look like the this example, then it's likely to be closed as incomplete.\u00a0\\n\\nThis ticket will automatically reopen when you reply.\u00a0Thanks!\\n\\n**Quick Links**:\u00a0\ud83d\udcd3\u202fIssue Guidelines\u202f\u2013 \ud83d\udcac\u202fMojang Support\u202f\u2013 \ud83d\udce7\u202fSuggestions\u202f\u2013 \ud83d\udcd6\u202fMinecraft Wiki\u00a0\\n\\n",
+      "body_length": 818,
+      "rendered_body": "<p>Hi!<br>\n<b>Thank you for your report!</b>&nbsp;</p>\n\n<p>However, this issue has been temporarily closed as\u202f<font color=\"#ff991f\"><b>Awaiting Response</b></font>.</p>\n\n<p>Could you please provide more details or/and media files. As such we have no repro of this issue.&nbsp;</p>\n\n<p>Also, just a reminder, to make your bug report as effective as possible, please try and include the following steps to reproduce the problem:&nbsp;</p>\n\n<p><b>Steps to Reproduce:</b>&nbsp;</p>\n\n<ol>\n\t<li></li>\n</ol>\n\n\n<ol>\n\t<li></li>\n</ol>\n\n\n<ol>\n\t<li></li>\n</ol>\n\n\n<p><b>Observed Results:</b>&nbsp;</p>\n\n<p><em>(Briefly describe what happens)</em>&nbsp;</p>\n\n<p><b>Expected Results:</b>&nbsp;</p>\n\n<p><em>(Briefly describe what should happen)</em>&nbsp;</p>\n\n<p>If your ticket does not look like the this example, then it's likely to be closed as incomplete.&nbsp;</p>\n\n<p>This ticket will automatically reopen when you reply.&nbsp;Thanks!</p>\n\n<p><b>Quick Links</b>:&nbsp;<br>\n\ud83d\udcd3\u202f<a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Issue Guidelines</ins></a>\u202f\u2013 \ud83d\udcac\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fhelp.minecraft.net.mcas.ms%2Fhc%2Fen-us%2Frequests%2Fnew%3FMcasTsid%3D15600&amp;McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Mojang Support</ins></a>\u202f\u2013 \ud83d\udce7\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Ffeedback.minecraft.net.mcas.ms%2F%3FMcasTsid%3D15600&amp;McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Suggestions</ins></a>\u202f\u2013 \ud83d\udcd6\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fminecraft.wiki.mcas.ms%2F%3FMcasTsid%3D15600&amp;McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Minecraft Wiki</ins></a>&nbsp;</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hi!"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Thank you for your report!",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "However, this issue has been temporarily closed as\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Awaiting Response",
+                "marks": [
+                  {
+                    "type": "strong"
+                  },
+                  {
+                    "type": "textColor",
+                    "attrs": {
+                      "color": "#ff991f"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Could you please provide more details or/and media files. As such we have no repro of this issue.\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Also, just a reminder, to make your bug report as effective as possible, please try and include the following steps to reproduce the problem:\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Steps to Reproduce:",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "orderedList",
+            "attrs": {
+              "order": 1
+            },
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "orderedList",
+            "attrs": {
+              "order": 2
+            },
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "orderedList",
+            "attrs": {
+              "order": 3
+            },
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Observed Results:",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "(Briefly describe what happens)",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Expected Results:",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "(Briefly describe what should happen)",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "If your ticket does not look like the this example, then it's likely to be closed as incomplete.\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will automatically reopen when you reply.\u00a0Thanks!"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":\u00a0"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Issue Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udcac\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fhelp.minecraft.net.mcas.ms%2Fhc%2Fen-us%2Frequests%2Fnew%3FMcasTsid%3D15600&McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udce7\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Ffeedback.minecraft.net.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udcd6\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Minecraft Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fminecraft.wiki.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300612"
+  }
+}

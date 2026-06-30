@@ -1,0 +1,75 @@
+{
+  "key": "MC-300925",
+  "created_date": "2025-08-10T15:11:10.138-0700",
+  "updated_date": "2025-08-15T07:50:34.439-0700",
+  "status": "Resolved",
+  "resolution": "Cannot Reproduce",
+  "affected_versions": [
+    "25w32a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Community Consensus",
+  "category": "Mob behaviour",
+  "os_version": null,
+  "watch_count": 3,
+  "labels": [],
+  "resolution_date": "2025-08-15T07:50:34.316-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Copper golems refuse to open chests being viewed by a player in Spectator mode",
+  "environment_raw": null,
+  "description": "Steps to reproduce: n n1. Set up any environment where a copper golem would open a copper chest. n n n2. Enter spectator mode and click on the copper chest to view it s contents. n n n nExpected Behavior: n n1. In the circumstance that a player is in spectator mode, players should not be able to make any noticable changes to the world. n n n2. The copper golem should be able to interact with the copper chest as if no player is currently opening it. n n n nWhat happens: n n1. The copper golem will refuse to open the copper chest, allowing players in spectator mode to break or interrupt contraptions that use copper golems. n n n nThis bug makes it annoying to debug and analyze the speed of copper golem contraptions when using spectator mode. n n",
+  "Steps to Reproduce": "1. Create a new Creative world with default settings.\n2. Gather the necessary materials to craft a copper golem and a copper chest.\n3. Place the copper chest on the ground in an open area.\n4. Craft and place a copper golem nearby, ensuring it has access to a copper button or redstone signal to trigger its opening action.\n5. Enter Spectator mode by pressing F3 + N (Java Edition).\n6. Fly over to the copper chest and click on it to view its contents.\n7. Observe the behavior of the copper golem as it attempts to open the chest while you are viewing it in Spectator mode.",
+  "Environment": "Minecraft Java Edition Version 25w32a (snapshot)",
+  "Observed Behavior": "1. When a player enters Spectator mode and clicks on a copper chest to view its contents, the copper golem present in the environment does not attempt to open the chest, despite being programmed to do so when a player is not interacting with it.\n   \n2. This results in the copper golem being unable to perform its intended function of interacting with the copper chest, which disrupts any redstone contraptions or automation systems that rely on the copper golem's ability to open and close chests.\n\n3. The presence of the player in Spectator mode effectively halts the copper golem's actions, leading to potential misinterpretations of the golem's behavior and performance during testing or debugging sessions.\n\n4. As a consequence, players who are testing or analyzing the functionality of copper golem contraptions are unable to accurately assess their efficiency or troubleshoot issues, as the golem's inability to interact with the chest skews the expected outcomes of the contraption's operation. \n\n5. This bug highlights a limitation in the interaction mechanics between spectator mode and entity behaviors, specifically regarding automation systems involving copper golems and chests.",
+  "Expected Behavior": "When a player is in spectator mode and views a copper chest, the copper golem should still be able to interact with the chest as if the player were not present. This means that the copper golem should open the chest and perform its intended actions, such as retrieving or placing items, without being hindered by the player's interaction with the chest GUI. The spectator mode is designed to allow players to observe the world without influencing it, so the copper golem's behavior should remain unaffected by the player's presence in this mode. This would ensure that copper golem contraptions function properly and allow players to debug and analyze their mechanisms without interruption.",
+  "comments": [
+    {
+      "id": "2083812",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:d1be6aee-f21d-4cd4-a053-b3ea48f80790/9c7bf845-7adc-4850-866e-dd33a8c45fb9/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:d1be6aee-f21d-4cd4-a053-b3ea48f80790/9c7bf845-7adc-4850-866e-dd33a8c45fb9/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:d1be6aee-f21d-4cd4-a053-b3ea48f80790/9c7bf845-7adc-4850-866e-dd33a8c45fb9/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:d1be6aee-f21d-4cd4-a053-b3ea48f80790/9c7bf845-7adc-4850-866e-dd33a8c45fb9/32"
+        },
+        "displayName": "[Mojang] Mega_Spud (Jay)",
+        "active": true,
+        "timeZone": "Europe/London",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-15T07:50:34.386-0700",
+      "updated": "2025-08-15T07:50:34.386-0700",
+      "body_text": "We were unable to reproduce this issue in the latest version. If you have any more information or specific repro steps that indicate the issue is still occurring, please feel free to let us know.\\n\\n",
+      "body_length": 199,
+      "rendered_body": "<p>We were unable to reproduce this issue in the latest version. If you have any more information or specific repro steps that indicate the issue is still occurring, please feel free to let us know.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "We were unable to reproduce this issue in the latest version. If you have any more information or specific repro steps that indicate the issue is still occurring, please feel free to let us know."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300925"
+  }
+}

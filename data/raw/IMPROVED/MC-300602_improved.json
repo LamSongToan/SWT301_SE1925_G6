@@ -1,0 +1,163 @@
+{
+  "key": "MC-300602",
+  "created_date": "2025-08-03T14:32:43.555-0700",
+  "updated_date": "2025-08-04T01:20:27.719-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "25w31a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-04T01:20:27.611-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Trees growing under water?",
+  "environment_raw": null,
+  "description": "Spotted some trees growing inside of a lake while exploring caves, not much else to really say about it. n n",
+  "Steps to Reproduce": "1. Create a new Survival world with default settings.\n2. Explore until you find a cave system that leads to a lake.\n3. Enter the cave and navigate towards the lake area.\n4. Observe the surroundings carefully for any trees growing directly in or under the water.\n5. Note the type of trees present and their exact positioning in relation to the water surface.",
+  "Environment": "Minecraft Java Edition Version 25w31a (snapshot)",
+  "Observed Behavior": "Trees are generating underwater in a lake biome, which is not typical for standard tree growth in Minecraft. Normally, trees require solid ground blocks to grow, and their roots should not be submerged in water. The observed trees appear to be fully formed, with their trunks and leaves extending above the water surface, despite being positioned in an aquatic environment. \n\nThis issue contradicts the expected behavior of tree generation, as trees like oak, birch, spruce, and acacia naturally require land blocks to grow. While mangrove trees can be found in water, they specifically generate in muddy mangrove swamps and are grown from propagules, which is not the case here. The occurrence of these trees in the lake suggests a potential bug in the biome generation algorithm or tree growth mechanics, allowing for inappropriate placement of tree structures in aquatic environments. \n\n**Steps to Reproduce:**\n1. Explore cave systems that intersect with lake biomes.\n2. Observe the generation of trees within the water body of the lake.\n\n**Expected Behavior:**\nTrees should not generate or grow in water bodies unless they are mangrove trees planted from propagules in appropriate biomes.",
+  "Expected Behavior": "",
+  "comments": [
+    {
+      "id": "2080085",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Color Fulstone",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-03T14:32:44.196-0700",
+      "updated": "2025-08-03T14:32:44.196-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.",
+      "body_length": 80,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "512f7490-7ae2-4045-a761-a04056b97048",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2080159",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "24x24": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "16x16": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "32x32": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png"
+        },
+        "displayName": "[MCQA] jKakub",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-04T01:20:20.990-0700",
+      "updated": "2025-08-04T01:20:20.990-0700",
+      "body_text": "Hi there!Could you please answer a few questions regarding this issue?\u00a0\\n\\n* Can you provide the seed of your world?\\n\\n\\n* Were there any extra world generation options applied? \\n\\n\\n\\nThis ticket will automatically reopen when you reply.\u00a0Thanks!\\n\\n",
+      "body_length": 252,
+      "rendered_body": "<p>Hi there!<br>\nCould you please answer a few questions regarding this issue?&nbsp;</p>\n\n<ul>\n\t<li>Can you provide the seed of your world?</li>\n\t<li>Were there any extra world generation options applied?</li>\n</ul>\n\n\n<p>This ticket will automatically reopen when you reply.&nbsp;Thanks!</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hi there!"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Could you please answer a few questions regarding this issue?\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Can you provide the seed of your world?"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Were there any extra world generation options applied? "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will automatically reopen when you reply.\u00a0Thanks!"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300602"
+  }
+}

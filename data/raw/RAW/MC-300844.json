@@ -1,0 +1,78 @@
+{
+  "key": "MC-300844",
+  "summary": "Skeleton bug",
+  "description": "Skeleton’s bow is floating under its hand,not in hand\\n\\n",
+  "created_date": "2025-08-08T04:53:58.382-0700",
+  "updated_date": "2025-08-08T12:52:14.582-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "resolution_date": "2025-08-08T12:52:00.757-0700",
+  "affected_versions": [
+    "25w32a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 9,
+  "summary_length": 2,
+  "fetch_timestamp": "2025-08-20T03:10:29.383663",
+  "comments": [
+    {
+      "id": "2081789",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "ampau (bolshi)",
+        "active": true,
+        "timeZone": "Europe/Andorra",
+        "accountType": "customer"
+      },
+      "created": "2025-08-08T06:00:26.917-0700",
+      "updated": "2025-08-08T06:00:26.917-0700",
+      "body_text": "Can not reproduce. Could you attach a video/screenshot of the issue with your F3 debug screen enabled or steps to reproduce?Are you certain you are on the latest snapshot, 25w32a, and not 25w31a?\\n\\n",
+      "body_length": 199,
+      "rendered_body": "<p>Can not reproduce. Could you attach a video/screenshot of the issue with your F3 debug screen enabled or steps to reproduce?<br>\nAre you certain you are on the latest snapshot, 25w32a, and not 25w31a?</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Can not reproduce. Could you attach a video/screenshot of the issue with your F3 debug screen enabled or steps to reproduce?"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Are you certain you are on the latest snapshot, 25w32a, and not 25w31a?"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 1
+}

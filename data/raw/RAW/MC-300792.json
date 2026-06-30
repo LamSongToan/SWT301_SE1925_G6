@@ -1,0 +1,286 @@
+{
+  "key": "MC-300792",
+  "summary": "Bug with camera",
+  "description": "Today i hold shift and D keybind and my camera started shocking up down i don’t know what it that but it’s a bug\\n\\n",
+  "created_date": "2025-08-06T15:51:02.626-0700",
+  "updated_date": "2025-08-07T00:20:35.933-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "resolution_date": "2025-08-07T00:20:17.661-0700",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 24,
+  "summary_length": 3,
+  "fetch_timestamp": "2025-08-20T03:10:35.975558",
+  "comments": [
+    {
+      "id": "2081388",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:eba13223-1cec-4815-9909-e4bb32f91869/a987d956-c6cc-4ac8-bd08-a58448906405/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:eba13223-1cec-4815-9909-e4bb32f91869/a987d956-c6cc-4ac8-bd08-a58448906405/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:eba13223-1cec-4815-9909-e4bb32f91869/a987d956-c6cc-4ac8-bd08-a58448906405/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:eba13223-1cec-4815-9909-e4bb32f91869/a987d956-c6cc-4ac8-bd08-a58448906405/32"
+        },
+        "displayName": "[Mod] Asteraoth",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-07T00:20:31.703-0700",
+      "updated": "2025-08-07T00:20:31.703-0700",
+      "body_text": "*We do not have enough information to find the cause of this issue.*\\n\\nPlease *record a video of this happening* and attach it to this report.If you are on Windows, you can use {{Windows}}\\+{{Alt}}\\+{{R}} to open a built-in app for recording game footage.If you are on Mac (Mojave or later), you can use {{Shift}}\\+{{Command}}\\+{{5}} to open a [built-in app|https://support.apple.com/guide/mac-help/take-a-screenshot-or-screen-recording-mh26782/mac] for recording your screen.In case you don't have a program to record videos, we recommend using the free recording software [OBS|https://obsproject.com].In case the resulting video file is too large to be uploaded to the bug tracker directly, please upload it elsewhere (e.g. as unlisted video on YouTube) and link to it here.\\n\\n~This issue is being temporarily resolved as {color:#d04437}*Awaiting Response*{color}. Once the requested information has been delivered, the report will be reopened automatically.~\\n\\n*Quick Links*:📓 [Bug Tracker Guidelines|  -- 💬 [Community Support|  -- 📧 [Mojang Support (Technical Issues)|  -- 📧 [Microsoft Support (Account Issues)| 📓 [Project Summary|https://report.bugs.mojang.com/servicedesk/customer/portal/2] -- ✍️ [Feedback and Suggestions|  -- 📖 [Game Wiki|https://minecraft.wiki]\\n\\n",
+      "body_length": 1277,
+      "rendered_body": "<p><em>We do not have enough information to find the cause of this issue.</em></p>\n\n<p>Please <em>record a video of this happening</em> and attach it to this report.<br>\nIf you are on Windows, you can use <tt>Windows</tt>+<tt>Alt</tt>+<tt>R</tt> to open a built-in app for recording game footage.<br>\nIf you are on Mac (Mojave or later), you can use <tt>Shift</tt>+<tt>Command</tt>+<tt>5</tt> to open a [built-in app|<a href=\"https://support.apple.com/guide/mac-help/take-a-screenshot-or-screen-recording-mh26782/mac\" class=\"external-link\" rel=\"nofollow noreferrer\">https://support.apple.com/guide/mac-help/take-a-screenshot-or-screen-recording-mh26782/mac</a>|https://support.apple.com/guide/mac-help/take-a-screenshot-or-screen-recording-mh26782/mac%5D] for recording your screen.<br>\nIn case you don't have a program to record videos, we recommend using the free recording software [OBS|<a href=\"https://obsproject.com\" class=\"external-link\" rel=\"nofollow noreferrer\">https://obsproject.com</a>.|https://obsproject.com%5D.]<br>\nIn case the resulting video file is too large to be uploaded to the bug tracker directly, please upload it elsewhere (e.g. as unlisted video on YouTube) and link to it here.</p>\n\n<p><sub>This issue is being temporarily resolved as {color:#d04437}<em>Awaiting Response</em>{color}. Once the requested information has been delivered, the report will be reopened automatically.</sub></p>\n\n<p><em>Quick Links</em>:<br>\n📓 [Bug Tracker Guidelines|<a href=\"https://aka.ms/MCBugTrackerHelp%5D\" title=\"smart-link\" class=\"external-link\" rel=\"nofollow noreferrer\">https://aka.ms/MCBugTrackerHelp%5D</a>  – 💬 [Community Support|<a href=\"https://discord.com/invite/58Sxm23%5D\" title=\"smart-link\" class=\"external-link\" rel=\"nofollow noreferrer\">https://discord.com/invite/58Sxm23%5D</a>  – 📧 [Mojang Support (Technical Issues)|<a href=\"https://aka.ms/Minecraft-Support%5D\" title=\"smart-link\" class=\"external-link\" rel=\"nofollow noreferrer\">https://aka.ms/Minecraft-Support%5D</a>  – 📧 [Microsoft Support (Account Issues)|<a href=\"https://support.xbox.com/contact-us%5D\" title=\"smart-link\" class=\"external-link\" rel=\"nofollow noreferrer\">https://support.xbox.com/contact-us%5D</a> <br>\n📓 [Project Summary|<a href=\"https://report.bugs.mojang.com/servicedesk/customer/portal/2\" class=\"external-link\" rel=\"nofollow noreferrer\">https://report.bugs.mojang.com/servicedesk/customer/portal/2</a>|https://report.bugs.mojang.com/servicedesk/customer/portal/2%5D] – ✍️ [Feedback and Suggestions|<a href=\"https://aka.ms/MinecraftFeedbackDiscord%5D\" title=\"smart-link\" class=\"external-link\" rel=\"nofollow noreferrer\">https://aka.ms/MinecraftFeedbackDiscord%5D</a>  – 📖 [Game Wiki|<a href=\"https://minecraft.wiki\" class=\"external-link\" rel=\"nofollow noreferrer\">https://minecraft.wiki</a>|https://minecraft.wiki%5D]</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "We do not have enough information to find the cause of this issue.",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please "
+              },
+              {
+                "type": "text",
+                "text": "record a video of this happening",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " and attach it to this report."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "If you are on Windows, you can use {{Windows}}\\+{{Alt}}\\+{{R}} to open a built-in app for recording game footage."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "If you are on Mac (Mojave or later), you can use {{Shift}}\\+{{Command}}\\+{{5}} to open a [built-in app|"
+              },
+              {
+                "type": "text",
+                "text": "https://support.apple.com/guide/mac-help/take-a-screenshot-or-screen-recording-mh26782/mac]",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://support.apple.com/guide/mac-help/take-a-screenshot-or-screen-recording-mh26782/mac%5D"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " for recording your screen."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "In case you don't have a program to record videos, we recommend using the free recording software [OBS|"
+              },
+              {
+                "type": "text",
+                "text": "https://obsproject.com].",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://obsproject.com%5D."
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "In case the resulting video file is too large to be uploaded to the bug tracker directly, please upload it elsewhere (e.g. as unlisted video on YouTube) and link to it here."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "~This issue is being temporarily resolved as {color:#d04437}"
+              },
+              {
+                "type": "text",
+                "text": "Awaiting Response",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "{color}. Once the requested information has been delivered, the report will be reopened automatically.~"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "📓 [Bug Tracker Guidelines|"
+              },
+              {
+                "type": "inlineCard",
+                "attrs": {
+                  "url": "https://aka.ms/MCBugTrackerHelp%5D"
+                }
+              },
+              {
+                "type": "text",
+                "text": "  -- 💬 [Community Support|"
+              },
+              {
+                "type": "inlineCard",
+                "attrs": {
+                  "url": "https://discord.com/invite/58Sxm23%5D"
+                }
+              },
+              {
+                "type": "text",
+                "text": "  -- 📧 [Mojang Support (Technical Issues)|"
+              },
+              {
+                "type": "inlineCard",
+                "attrs": {
+                  "url": "https://aka.ms/Minecraft-Support%5D"
+                }
+              },
+              {
+                "type": "text",
+                "text": "  -- 📧 [Microsoft Support (Account Issues)|"
+              },
+              {
+                "type": "inlineCard",
+                "attrs": {
+                  "url": "https://support.xbox.com/contact-us%5D"
+                }
+              },
+              {
+                "type": "text",
+                "text": " "
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "📓 [Project Summary|"
+              },
+              {
+                "type": "text",
+                "text": "https://report.bugs.mojang.com/servicedesk/customer/portal/2]",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://report.bugs.mojang.com/servicedesk/customer/portal/2%5D"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- ✍️ [Feedback and Suggestions|"
+              },
+              {
+                "type": "inlineCard",
+                "attrs": {
+                  "url": "https://aka.ms/MinecraftFeedbackDiscord%5D"
+                }
+              },
+              {
+                "type": "text",
+                "text": "  -- 📖 [Game Wiki|"
+              },
+              {
+                "type": "text",
+                "text": "https://minecraft.wiki]",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecraft.wiki%5D"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 1
+}

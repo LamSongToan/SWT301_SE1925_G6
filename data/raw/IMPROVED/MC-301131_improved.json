@@ -1,0 +1,75 @@
+{
+  "key": "MC-301131",
+  "created_date": "2025-08-16T01:38:28.513-0700",
+  "updated_date": "2025-08-16T01:38:33.003-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "25w34a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-16T01:38:32.965-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "spiders float",
+  "environment_raw": null,
+  "description": "spiders float in jungle and planes biomes in java n n",
+  "Steps to Reproduce": "1. Launch Minecraft Java Edition and create a new world in Creative mode.\n2. Set the world type to \"Default\" and ensure that cheats are enabled.\n3. Once in the world, change the game mode to Survival mode using the command `/gamemode survival`.\n4. Locate or travel to a Jungle biome or a Plains biome.\n5. Within the biome, find an area with flat ground and ensure there are no solid blocks directly beneath you.\n6. Use the command `/summon minecraft:spider ~ ~ ~` to spawn a spider at your location.\n7. Observe the spider's behavior as it spawns and moves around the biome.\n8. Note that the spider appears to float above the ground rather than walking on it.",
+  "Environment": "Minecraft Java Edition Version 25w34a (snapshot)",
+  "Observed Behavior": "Spiders exhibit an unintended floating behavior in both jungle and plains biomes in Minecraft Java Edition. When spawned in these biomes, spiders are observed to hover above the ground, rather than maintaining contact with the surface, which is their intended behavior.\n\n- **Floating Height:** The spiders appear to float approximately 0.5 blocks above the ground, making them visually disconnected from the terrain. This floating effect is particularly noticeable when they are on solid blocks, such as grass or dirt.\n\n- **Biomes Affected:** This issue specifically occurs in jungle and plains biomes. Other biomes do not exhibit this floating behavior, and spiders behave as expected by walking on the ground.\n\n- **Spawn Conditions:** The floating behavior occurs regardless of the time of day or the presence of player interaction. Spiders can spawn naturally in these biomes during both day and night, and this phenomenon persists regardless of whether they are spawned from a spawner or naturally generated.\n\n- **Visual Impact:** The floating spiders may disrupt the intended gameplay experience by creating an unnatural appearance in these biomes, potentially affecting player immersion and interaction with the environment.\n\nThis behavior contradicts the expected mechanics of mob movement in Minecraft, where spiders should walk on the ground like other terrestrial mobs. The floating behavior may be linked to the specific biome characteristics or the way spider movement is programmed in these environments.",
+  "Expected Behavior": "Spiders should not float in jungle and plains biomes. Instead, they should remain grounded on the surface, interacting with the terrain as expected. When spawning in these biomes, spiders are intended to walk on solid ground or climb walls, but they should not hover above the ground. Their behavior should align with the established mechanics of entity movement, where spiders are designed to navigate their environment by walking on full blocks and climbing when necessary, rather than floating. This ensures consistent gameplay and adheres to the intended functionality of mob behavior in Minecraft.",
+  "comments": [
+    {
+      "id": "2083945",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "24x24": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "16x16": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "32x32": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png"
+        },
+        "displayName": "Automation for Jira",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "app"
+      },
+      "created": "2025-08-16T01:38:31.430-0700",
+      "updated": "2025-08-16T01:38:31.430-0700",
+      "body_text": "Please edit your report to change the Affected Version to the version shown on the Minecraft title screen\\n\\n",
+      "body_length": 109,
+      "rendered_body": "<p>Please edit your report to change the Affected Version to the version shown on the Minecraft title screen</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please edit your report to change the Affected Version to the version shown on the Minecraft title screen"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-301131"
+  }
+}

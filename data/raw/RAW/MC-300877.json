@@ -1,0 +1,106 @@
+{
+  "key": "MC-300877",
+  "summary": "Experience does not drop out of quartz",
+  "description": "When mining quartz, experience is dropped, but it is not counted towards your level.\\n\\n",
+  "created_date": "2025-08-09T08:14:04.307-0700",
+  "updated_date": "2025-08-11T02:34:16.226-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "resolution_date": "2025-08-11T02:34:06.112-0700",
+  "affected_versions": [
+    "25w32a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 14,
+  "summary_length": 7,
+  "fetch_timestamp": "2025-08-20T03:10:27.038283",
+  "comments": [
+    {
+      "id": "2082142",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Charlotte Eiffel Lilith Buff",
+        "active": true,
+        "timeZone": "Europe/Berlin",
+        "accountType": "customer"
+      },
+      "created": "2025-08-09T11:59:04.641-0700",
+      "updated": "2025-08-09T11:59:04.641-0700",
+      "body_text": "Are you using a tool or wearing any armor enchanted with Mending?\\n\\n",
+      "body_length": 69,
+      "rendered_body": "<p>Are you using a tool or wearing any armor enchanted with Mending?</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Are you using a tool or wearing any armor enchanted with Mending?"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2082537",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:fe0b28a2-a443-4748-adec-94acc213ea9e/5676b346-5dd0-49ca-b3b9-9eadab726d17/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:fe0b28a2-a443-4748-adec-94acc213ea9e/5676b346-5dd0-49ca-b3b9-9eadab726d17/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:fe0b28a2-a443-4748-adec-94acc213ea9e/5676b346-5dd0-49ca-b3b9-9eadab726d17/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:fe0b28a2-a443-4748-adec-94acc213ea9e/5676b346-5dd0-49ca-b3b9-9eadab726d17/32"
+        },
+        "displayName": "Avoma",
+        "active": true,
+        "timeZone": "Europe/London",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-11T02:34:06.177-0700",
+      "updated": "2025-08-11T02:34:16.167-0700",
+      "body_text": "Please also let us know if you're using any data packs which could potentially be causing the issue.\\n\\n",
+      "body_length": 104,
+      "rendered_body": "<p>Please also let us know if you're using any data packs which could potentially be causing the issue.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please also let us know if you're using any data packs which could potentially be causing the issue."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 2
+}

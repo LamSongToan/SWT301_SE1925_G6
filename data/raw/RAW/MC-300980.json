@@ -1,0 +1,35 @@
+{
+  "key": "MC-300980",
+  "summary": "Its a bug in the settings",
+  "description": "I set my game on hold sneak but it toggles\\n\\nalso in the versions 1.21.4 and 1.21.5\\n\\n",
+  "created_date": "2025-08-12T08:11:59.932-0700",
+  "updated_date": "2025-08-12T09:26:57.049-0700",
+  "status": "Resolved",
+  "resolution": "Incomplete",
+  "resolution_date": "2025-08-12T09:26:56.964-0700",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 0,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 16,
+  "summary_length": 6,
+  "fetch_timestamp": "2025-08-20T03:10:14.577667",
+  "comments": [],
+  "comment_count": 0
+}

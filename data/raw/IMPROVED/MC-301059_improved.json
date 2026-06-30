@@ -1,0 +1,98 @@
+{
+  "key": "MC-301059",
+  "created_date": "2025-08-13T12:58:12.632-0700",
+  "updated_date": "2025-08-14T05:23:48.153-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 0,
+  "labels": [],
+  "resolution_date": "2025-08-14T05:23:42.729-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "torches are disappearing in tunnels",
+  "environment_raw": null,
+  "description": "I placed torches in a tunnel leading to a cave but all of them dissapeared meanwhile the one that where placed inside the actual cave didnt. It was vanilla minecraft. I also used stairs in my tunnel. n n n n",
+  "Steps to Reproduce": "1. Create a new Survival world with default settings in Minecraft.\n2. Locate a cave system and identify an entrance to it.\n3. Dig a tunnel leading towards the cave, ensuring the tunnel is at least 5 blocks long and includes stairs.\n4. While in the tunnel, place torches on the right side of the tunnel walls at regular intervals (approximately every 5 blocks).\n5. Continue placing torches until you reach the entrance of the cave.\n6. Observe that the torches in the tunnel disappear after a short period, while any torches placed inside the cave remain intact.\n7. Verify that no external factors (like water or pistons) are affecting the torches in the tunnel.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "When torches are placed along the walls of a tunnel leading to a cave, they disappear after a short period of time. This issue occurs consistently, as all torches placed in the tunnel vanish, while the torches placed within the cave itself remain intact. The tunnel is constructed using stairs, which may or may not contribute to the problem, but it is important to note that the disappearance of torches does not occur in areas where the torches are placed on solid blocks within the cave. This behavior is observed in a vanilla Minecraft environment, without the use of any mods or external modifications. The torches are expected to stay in place and provide light, but instead, they are inexplicably removed from the tunnel walls, leading to dark areas that can cause navigation difficulties and potential mob spawns.",
+  "Expected Behavior": "When torches are placed on the walls of a tunnel in Minecraft, they should remain in place unless the block they are attached to is removed, destroyed, or affected by a game mechanic such as a piston or a flowing liquid. Specifically, torches should not disappear without a clear reason tied to the game's physics or mechanics. In a standard Minecraft environment, torches placed in a tunnel should provide light and remain until the player decides to remove them or the block they are attached to is altered. If torches are placed correctly on solid blocks within a tunnel leading to a cave, they should stay intact while any torches placed inside the cave should also remain, demonstrating the expected behavior of block placement and stability.",
+  "comments": [
+    {
+      "id": "2083532",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/32"
+        },
+        "displayName": "[MCQA] Blawik",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-14T05:23:42.792-0700",
+      "updated": "2025-08-14T05:23:42.792-0700",
+      "body_text": "Hi!Could you upload a video showing this issue?Could you also let us know if your using any Resource packs or Add-ons?\\n\\nThis ticket will automatically reopen when you reply.\\n\\n",
+      "body_length": 179,
+      "rendered_body": "<p>Hi!<br>\nCould you upload a video showing this issue?<br>\nCould you also let us know if your using any Resource packs or Add-ons?</p>\n\n<p>This ticket will automatically reopen when you reply.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hi!"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Could you upload a video showing this issue?"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Could you also let us know if your using any Resource packs or Add-ons?"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will automatically reopen when you reply."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-301059"
+  }
+}

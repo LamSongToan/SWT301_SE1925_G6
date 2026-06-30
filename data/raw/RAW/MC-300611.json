@@ -1,0 +1,324 @@
+{
+  "key": "MC-300611",
+  "summary": "zombie piglin mass spawning around nether portal in the overworld",
+  "description": "Game is constantly spawning large numbers of zombie piglin around  the nether portal in the over world. Not just one every once in a while, but up to 10 and counting within minutes of game play. closing and reloading world and relaunching the game does not change or help.\\n\\n",
+  "created_date": "2025-08-03T22:05:47.422-0700",
+  "updated_date": "2025-08-05T15:12:00.955-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "resolution_date": "2025-08-05T15:12:00.877-0700",
+  "affected_versions": [
+    "1.21.8",
+    "25w31a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 2,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 49,
+  "summary_length": 10,
+  "fetch_timestamp": "2025-08-20T03:10:53.809240",
+  "comments": [
+    {
+      "id": "2080166",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "24x24": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "16x16": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "32x32": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png"
+        },
+        "displayName": "[MCQA] jKakub",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-04T01:33:42.886-0700",
+      "updated": "2025-08-04T01:36:45.449-0700",
+      "body_text": "Hi there!Could you please answer a few questions regarding this issue? \\n\\n* Could you provide the world affected by this issue? \\n\\n\\n* Can you record and upload a video or screenshot of this issue? \\n\\n\\n\\nThis ticket will automatically reopen when you reply. Thanks!\\n\\n**Quick Links**: 📓 Issue Guidelines – 💬 Mojang Support – 📧 Suggestions – 📖 Minecraft Wiki \\n\\n",
+      "body_length": 367,
+      "rendered_body": "<p>Hi there!<br>\nCould you please answer a few questions regarding this issue?&nbsp;</p>\n\n<ul>\n\t<li>Could you provide the world affected by this issue?&nbsp;</li>\n\t<li>Can you record and upload a video or screenshot of this issue?&nbsp;</li>\n</ul>\n\n\n<p>This ticket will automatically reopen when you reply.&nbsp;Thanks!</p>\n\n<p><b>Quick Links</b>:&nbsp;<br>\n📓 <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Issue Guidelines</ins></a> – 💬 <a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fhelp.minecraft.net.mcas.ms%2Fhc%2Fen-us%2Frequests%2Fnew%3FMcasTsid%3D15600&amp;McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Mojang Support</ins></a> – 📧 <a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Ffeedback.minecraft.net.mcas.ms%2F%3FMcasTsid%3D15600&amp;McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Suggestions</ins></a> – 📖 <a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fminecraft.wiki.mcas.ms%2F%3FMcasTsid%3D15600&amp;McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Minecraft Wiki</ins></a>&nbsp;</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hi there!"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Could you please answer a few questions regarding this issue? "
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Could you provide the world affected by this issue? "
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Can you record and upload a video or screenshot of this issue? "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will automatically reopen when you reply. Thanks!"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ": "
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "📓 "
+              },
+              {
+                "type": "text",
+                "text": "Issue Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – 💬 "
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fhelp.minecraft.net.mcas.ms%2Fhc%2Fen-us%2Frequests%2Fnew%3FMcasTsid%3D15600&McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – 📧 "
+              },
+              {
+                "type": "text",
+                "text": "Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Ffeedback.minecraft.net.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – 📖 "
+              },
+              {
+                "type": "text",
+                "text": "Minecraft Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fminecraft.wiki.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " "
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2080512",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Ariana Welter",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-04T16:54:03.136-0700",
+      "updated": "2025-08-04T16:54:03.136-0700",
+      "body_text": "\\n\\nthey all just spawned or came out of the portal once I opened the world. Also in the video you can see how they are not walking properly across blocks, and when hitting them they float away in a glitchy way. the hit time when attacking is also delayed. These are previous bugs that I have reported as well\\n\\n",
+      "body_length": 313,
+      "rendered_body": "<p></p><div><p>This comment contained multiple media attachments (2), please login to view the attachments.</p></div><p></p>\n\n<p>they all just spawned or came out of the portal once I opened the world. Also in the video you can see how they are not walking properly across blocks, and when hitting them they float away in a glitchy way. the hit time when attacking is also delayed. These are previous bugs that I have reported as well</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph"
+          },
+          {
+            "type": "mediaSingle",
+            "attrs": {
+              "layout": "align-start"
+            },
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "0fd0e485-00f1-4774-b941-230b3cf83107",
+                  "alt": "Minecraft 1.21.8 - Singleplayer 2025-08-04 19-48-12.mp4",
+                  "collection": "",
+                  "height": 712,
+                  "width": 1376
+                }
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "they all just spawned or came out of the portal once I opened the world. Also in the video you can see how they are not walking properly across blocks, and when hitting them they float away in a glitchy way. the hit time when attacking is also delayed. These are previous bugs that I have reported as well"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2080848",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/32"
+        },
+        "displayName": "[Mod] Jingy",
+        "active": true,
+        "timeZone": "America/Chicago",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-05T15:11:56.102-0700",
+      "updated": "2025-08-05T15:11:56.102-0700",
+      "body_text": "Please provide a copy of the world. I suspect the mass amount of zombified piglins here are causing your other issues such as .\\n\\n",
+      "body_length": 131,
+      "rendered_body": "<p>Please provide a copy of the world. I suspect the mass amount of zombified piglins here are causing your other issues such as <a href=\"https://mojira.atlassian.net/browse/MC-300614\" title=\"smart-link\" class=\"external-link\" rel=\"nofollow noreferrer\">https://mojira.atlassian.net/browse/MC-300614</a>.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please provide a copy of the world. I suspect the mass amount of zombified piglins here are causing your other issues such as "
+              },
+              {
+                "type": "inlineCard",
+                "attrs": {
+                  "url": "https://mojira.atlassian.net/browse/MC-300614"
+                }
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 3
+}

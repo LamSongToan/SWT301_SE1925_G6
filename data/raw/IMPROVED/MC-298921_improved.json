@@ -1,0 +1,246 @@
+{
+  "key": "MC-298921",
+  "created_date": "2025-06-19T07:03:47.709-0700",
+  "updated_date": "2025-06-19T09:05:10.895-0700",
+  "status": "Resolved",
+  "resolution": "Cannot Reproduce",
+  "affected_versions": [
+    "1.21.6"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-06-19T09:05:10.862-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "ctrl g",
+  "environment_raw": null,
+  "description": "When attempting to hit the G key after the ctrl key is held down, minecraft does nothing with it. G used to be my drop key, but i have since rebound it to something else, and even rebound, if I hold ctrl and then attempt to click the G key, the G key doesn t register. Without ctrl held, the G key works as intended n n",
+  "Steps to Reproduce": "1. Open Minecraft and enter a world in Creative mode or Survival mode.\n2. Go to the Controls settings in the Options menu.\n3. Rebind the \"Drop Item\" action to the G key if it is not already set.\n4. Ensure that the Control key is functioning normally by testing it with other keys (e.g., Ctrl + A).\n5. Hold down the Control key on your keyboard.\n6. While holding the Control key, press the G key.\n7. Observe that the G key does not register any action within the game.\n8. Release the Control key and press the G key again to confirm that it functions normally without the Control key held down.",
+  "Environment": "Minecraft Java Edition Version 1.21.6",
+  "Observed Behavior": "When the Ctrl key is held down, pressing the G key does not register any input within Minecraft, resulting in no action being performed. This issue persists regardless of whether the G key has been rebound to a different action from its default function as the drop key. Without the Ctrl key held down, the G key functions normally, allowing the player to execute its assigned action. This behavior indicates a possible conflict or oversight in the key mapping system when modifier keys (like Ctrl) are used in conjunction with other key inputs. The inability to use the G key while holding Ctrl could hinder players who rely on custom key bindings for efficient gameplay.",
+  "Expected Behavior": "When the Ctrl key is held down, pressing the G key should result in the intended action associated with the G key, as configured in the game's key bindings. This means that if the G key has been rebound to a new function, that function should activate when Ctrl is held and G is pressed. Additionally, the G key should still function normally without any modifier keys held down, allowing players to utilize their custom key bindings effectively. This behavior aligns with the standard input handling in Minecraft, where modifier keys like Ctrl should not interfere with the registration of other keys.",
+  "comments": [
+    {
+      "id": "2066836",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Kyson Plant",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-06-19T07:31:22.981-0700",
+      "updated": "2025-06-19T07:31:22.981-0700",
+      "body_text": "This can be resolved. This issue has been corrected\\n\\n",
+      "body_length": 55,
+      "rendered_body": "<p>This can be resolved. This issue has been corrected</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This can be resolved. This issue has been corrected"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2066875",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/63ff4fa7314f50881381771b/b2e09285-f281-485f-9e8a-8d61d845af80/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/63ff4fa7314f50881381771b/b2e09285-f281-485f-9e8a-8d61d845af80/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/63ff4fa7314f50881381771b/b2e09285-f281-485f-9e8a-8d61d845af80/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/63ff4fa7314f50881381771b/b2e09285-f281-485f-9e8a-8d61d845af80/32"
+        },
+        "displayName": "[Mod] EVGENSYPERPRO",
+        "active": true,
+        "timeZone": "Europe/Moscow",
+        "accountType": "atlassian"
+      },
+      "created": "2025-06-19T09:05:03.558-0700",
+      "updated": "2025-06-19T09:05:03.558-0700",
+      "body_text": "CR according to the reporter\\n\\n**Quick Links**:\ud83d\udcd3 Bug Tracker Guidelines \u2013 \ud83d\udcac Community Support \u2013 \ud83d\udce7 Mojang Support (Technical Issues) \u2013 \ud83d\udce7 Microsoft Support (Account Issues)\ud83d\udcd3 Project Summary \u2013 \u270d\ufe0f Feedback and Suggestions \u2013 \ud83d\udcd6 Game Wiki\\n\\n",
+      "body_length": 236,
+      "rendered_body": "<p>CR according to the reporter</p>\n\n<p><b>Quick Links</b>:<br>\n\ud83d\udcd3 <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\">Bug Tracker Guidelines</a> \u2013 \ud83d\udcac <a href=\"https://discord.com/invite/58Sxm23\" class=\"external-link\" rel=\"nofollow noreferrer\">Community Support</a> \u2013 \ud83d\udce7 <a href=\"https://aka.ms/Minecraft-Support\" class=\"external-link\" rel=\"nofollow noreferrer\">Mojang Support (Technical Issues)</a> \u2013 \ud83d\udce7 <a href=\"https://support.xbox.com/contact-us\" class=\"external-link\" rel=\"nofollow noreferrer\">Microsoft Support (Account Issues)</a><br>\n\ud83d\udcd3 <a href=\"https://report.bugs.mojang.com/servicedesk/customer/portal/2\" class=\"external-link\" rel=\"nofollow noreferrer\">Project Summary</a> \u2013 \u270d\ufe0f <a href=\"https://aka.ms/MinecraftFeedbackDiscord\" class=\"external-link\" rel=\"nofollow noreferrer\">Feedback and Suggestions</a> \u2013 \ud83d\udcd6 <a href=\"https://minecraft.wiki\" class=\"external-link\" rel=\"nofollow noreferrer\">Game Wiki</a></p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "CR according to the reporter"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3 "
+              },
+              {
+                "type": "text",
+                "text": "Bug Tracker Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udcac "
+              },
+              {
+                "type": "text",
+                "text": "Community Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://discord.com/invite/58Sxm23"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udce7 "
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support (Technical Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/Minecraft-Support"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udce7 "
+              },
+              {
+                "type": "text",
+                "text": "Microsoft Support (Account Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://support.xbox.com/contact-us"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3 "
+              },
+              {
+                "type": "text",
+                "text": "Project Summary",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://report.bugs.mojang.com/servicedesk/customer/portal/2"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \u270d\ufe0f "
+              },
+              {
+                "type": "text",
+                "text": "Feedback and Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MinecraftFeedbackDiscord"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udcd6 "
+              },
+              {
+                "type": "text",
+                "text": "Game Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecraft.wiki"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-298921"
+  }
+}

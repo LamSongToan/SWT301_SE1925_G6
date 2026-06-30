@@ -1,0 +1,35 @@
+{
+  "key": "MC-300031",
+  "summary": "vindicators not spawning on a raid",
+  "description": "vindicators not spawning on raids for some reason, meaning no totems\\n\\nedit: this bug does not exist i just thought wrong\\n\\n",
+  "created_date": "2025-07-28T12:12:51.043-0700",
+  "updated_date": "2025-08-01T19:44:37.707-0700",
+  "status": "Resolved",
+  "resolution": "Cannot Reproduce",
+  "resolution_date": "2025-08-01T19:44:37.618-0700",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 0,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 20,
+  "summary_length": 6,
+  "fetch_timestamp": "2025-08-20T03:12:02.206451",
+  "comments": [],
+  "comment_count": 0
+}

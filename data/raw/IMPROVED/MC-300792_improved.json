@@ -1,0 +1,290 @@
+{
+  "key": "MC-300792",
+  "created_date": "2025-08-06T15:51:02.626-0700",
+  "updated_date": "2025-08-07T00:20:35.933-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-07T00:20:17.661-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Bug with camera",
+  "environment_raw": null,
+  "description": "Today i hold shift and D keybind and my camera started shocking up down i don t know what it that but it s a bug n n",
+  "Steps to Reproduce": "1. Launch Minecraft and enter a new or existing world in Creative mode.\n2. Ensure that you are in first-person view.\n3. Hold down the Shift key on your keyboard to activate sneaking.\n4. While holding the Shift key, press and hold the D key to move right.\n5. Observe the camera movement during this action to see if it exhibits a shaking or jerking motion.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "When the player holds down the Shift key (to crouch) and simultaneously presses the D key (to strafe right), the camera begins to oscillate rapidly up and down. This behavior occurs regardless of the player's movement speed or the surrounding environment. The camera's vertical position fluctuates erratically, causing a disorienting visual effect that interferes with gameplay. The issue appears to be triggered specifically by the combination of the Shift and D key inputs, suggesting a potential conflict in the input handling or camera mechanics. This bug does not seem to occur with other key combinations or when using different directional keys, indicating that it may be isolated to this specific input scenario.",
+  "Expected Behavior": "When the player holds the Shift key and the D key simultaneously, the camera should maintain a stable position without any erratic movement. The camera should smoothly follow the player's movement in the intended direction without jolting up or down. This behavior is consistent with the expected camera functionality in Minecraft, where the camera should provide a clear view of the player's surroundings without unexpected shaking or distortion. If the player is sneaking while moving, the camera should also reflect this by adjusting the view appropriately without any glitches.",
+  "comments": [
+    {
+      "id": "2081388",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:eba13223-1cec-4815-9909-e4bb32f91869/a987d956-c6cc-4ac8-bd08-a58448906405/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:eba13223-1cec-4815-9909-e4bb32f91869/a987d956-c6cc-4ac8-bd08-a58448906405/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:eba13223-1cec-4815-9909-e4bb32f91869/a987d956-c6cc-4ac8-bd08-a58448906405/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:eba13223-1cec-4815-9909-e4bb32f91869/a987d956-c6cc-4ac8-bd08-a58448906405/32"
+        },
+        "displayName": "[Mod] Asteraoth",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-07T00:20:31.703-0700",
+      "updated": "2025-08-07T00:20:31.703-0700",
+      "body_text": "*We do not have enough information to find the cause of this issue.*\\n\\nPlease *record a video of this happening* and attach it to this report.If you are on Windows, you can use {{Windows}}\\+{{Alt}}\\+{{R}} to open a built-in app for recording game footage.If you are on Mac (Mojave or later), you can use {{Shift}}\\+{{Command}}\\+{{5}} to open a [built-in app|https://support.apple.com/guide/mac-help/take-a-screenshot-or-screen-recording-mh26782/mac] for recording your screen.In case you don't have a program to record videos, we recommend using the free recording software [OBS|https://obsproject.com].In case the resulting video file is too large to be uploaded to the bug tracker directly, please upload it elsewhere (e.g. as unlisted video on YouTube) and link to it here.\\n\\n~This issue is being temporarily resolved as {color:#d04437}*Awaiting Response*{color}. Once the requested information has been delivered, the report will be reopened automatically.~\\n\\n*Quick Links*:\ud83d\udcd3 [Bug Tracker Guidelines|  -- \ud83d\udcac [Community Support|  -- \ud83d\udce7 [Mojang Support (Technical Issues)|  -- \ud83d\udce7 [Microsoft Support (Account Issues)| \ud83d\udcd3 [Project Summary|https://report.bugs.mojang.com/servicedesk/customer/portal/2] -- \u270d\ufe0f [Feedback and Suggestions|  -- \ud83d\udcd6 [Game Wiki|https://minecraft.wiki]\\n\\n",
+      "body_length": 1277,
+      "rendered_body": "<p><em>We do not have enough information to find the cause of this issue.</em></p>\n\n<p>Please <em>record a video of this happening</em> and attach it to this report.<br>\nIf you are on Windows, you can use <tt>Windows</tt>+<tt>Alt</tt>+<tt>R</tt> to open a built-in app for recording game footage.<br>\nIf you are on Mac (Mojave or later), you can use <tt>Shift</tt>+<tt>Command</tt>+<tt>5</tt> to open a [built-in app|<a href=\"https://support.apple.com/guide/mac-help/take-a-screenshot-or-screen-recording-mh26782/mac\" class=\"external-link\" rel=\"nofollow noreferrer\">https://support.apple.com/guide/mac-help/take-a-screenshot-or-screen-recording-mh26782/mac</a>|https://support.apple.com/guide/mac-help/take-a-screenshot-or-screen-recording-mh26782/mac%5D] for recording your screen.<br>\nIn case you don't have a program to record videos, we recommend using the free recording software [OBS|<a href=\"https://obsproject.com\" class=\"external-link\" rel=\"nofollow noreferrer\">https://obsproject.com</a>.|https://obsproject.com%5D.]<br>\nIn case the resulting video file is too large to be uploaded to the bug tracker directly, please upload it elsewhere (e.g. as unlisted video on YouTube) and link to it here.</p>\n\n<p><sub>This issue is being temporarily resolved as {color:#d04437}<em>Awaiting Response</em>{color}. Once the requested information has been delivered, the report will be reopened automatically.</sub></p>\n\n<p><em>Quick Links</em>:<br>\n\ud83d\udcd3 [Bug Tracker Guidelines|<a href=\"https://aka.ms/MCBugTrackerHelp%5D\" title=\"smart-link\" class=\"external-link\" rel=\"nofollow noreferrer\">https://aka.ms/MCBugTrackerHelp%5D</a>  \u2013 \ud83d\udcac [Community Support|<a href=\"https://discord.com/invite/58Sxm23%5D\" title=\"smart-link\" class=\"external-link\" rel=\"nofollow noreferrer\">https://discord.com/invite/58Sxm23%5D</a>  \u2013 \ud83d\udce7 [Mojang Support (Technical Issues)|<a href=\"https://aka.ms/Minecraft-Support%5D\" title=\"smart-link\" class=\"external-link\" rel=\"nofollow noreferrer\">https://aka.ms/Minecraft-Support%5D</a>  \u2013 \ud83d\udce7 [Microsoft Support (Account Issues)|<a href=\"https://support.xbox.com/contact-us%5D\" title=\"smart-link\" class=\"external-link\" rel=\"nofollow noreferrer\">https://support.xbox.com/contact-us%5D</a> <br>\n\ud83d\udcd3 [Project Summary|<a href=\"https://report.bugs.mojang.com/servicedesk/customer/portal/2\" class=\"external-link\" rel=\"nofollow noreferrer\">https://report.bugs.mojang.com/servicedesk/customer/portal/2</a>|https://report.bugs.mojang.com/servicedesk/customer/portal/2%5D] \u2013 \u270d\ufe0f [Feedback and Suggestions|<a href=\"https://aka.ms/MinecraftFeedbackDiscord%5D\" title=\"smart-link\" class=\"external-link\" rel=\"nofollow noreferrer\">https://aka.ms/MinecraftFeedbackDiscord%5D</a>  \u2013 \ud83d\udcd6 [Game Wiki|<a href=\"https://minecraft.wiki\" class=\"external-link\" rel=\"nofollow noreferrer\">https://minecraft.wiki</a>|https://minecraft.wiki%5D]</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "We do not have enough information to find the cause of this issue.",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please "
+              },
+              {
+                "type": "text",
+                "text": "record a video of this happening",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " and attach it to this report."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "If you are on Windows, you can use {{Windows}}\\+{{Alt}}\\+{{R}} to open a built-in app for recording game footage."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "If you are on Mac (Mojave or later), you can use {{Shift}}\\+{{Command}}\\+{{5}} to open a [built-in app|"
+              },
+              {
+                "type": "text",
+                "text": "https://support.apple.com/guide/mac-help/take-a-screenshot-or-screen-recording-mh26782/mac]",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://support.apple.com/guide/mac-help/take-a-screenshot-or-screen-recording-mh26782/mac%5D"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " for recording your screen."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "In case you don't have a program to record videos, we recommend using the free recording software [OBS|"
+              },
+              {
+                "type": "text",
+                "text": "https://obsproject.com].",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://obsproject.com%5D."
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "In case the resulting video file is too large to be uploaded to the bug tracker directly, please upload it elsewhere (e.g. as unlisted video on YouTube) and link to it here."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "~This issue is being temporarily resolved as {color:#d04437}"
+              },
+              {
+                "type": "text",
+                "text": "Awaiting Response",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "{color}. Once the requested information has been delivered, the report will be reopened automatically.~"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3 [Bug Tracker Guidelines|"
+              },
+              {
+                "type": "inlineCard",
+                "attrs": {
+                  "url": "https://aka.ms/MCBugTrackerHelp%5D"
+                }
+              },
+              {
+                "type": "text",
+                "text": "  -- \ud83d\udcac [Community Support|"
+              },
+              {
+                "type": "inlineCard",
+                "attrs": {
+                  "url": "https://discord.com/invite/58Sxm23%5D"
+                }
+              },
+              {
+                "type": "text",
+                "text": "  -- \ud83d\udce7 [Mojang Support (Technical Issues)|"
+              },
+              {
+                "type": "inlineCard",
+                "attrs": {
+                  "url": "https://aka.ms/Minecraft-Support%5D"
+                }
+              },
+              {
+                "type": "text",
+                "text": "  -- \ud83d\udce7 [Microsoft Support (Account Issues)|"
+              },
+              {
+                "type": "inlineCard",
+                "attrs": {
+                  "url": "https://support.xbox.com/contact-us%5D"
+                }
+              },
+              {
+                "type": "text",
+                "text": " "
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3 [Project Summary|"
+              },
+              {
+                "type": "text",
+                "text": "https://report.bugs.mojang.com/servicedesk/customer/portal/2]",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://report.bugs.mojang.com/servicedesk/customer/portal/2%5D"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \u270d\ufe0f [Feedback and Suggestions|"
+              },
+              {
+                "type": "inlineCard",
+                "attrs": {
+                  "url": "https://aka.ms/MinecraftFeedbackDiscord%5D"
+                }
+              },
+              {
+                "type": "text",
+                "text": "  -- \ud83d\udcd6 [Game Wiki|"
+              },
+              {
+                "type": "text",
+                "text": "https://minecraft.wiki]",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecraft.wiki%5D"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300792"
+  }
+}

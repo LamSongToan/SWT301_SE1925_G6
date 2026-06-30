@@ -1,0 +1,541 @@
+{
+  "key": "MC-300836",
+  "created_date": "2025-08-08T00:04:05.678-0700",
+  "updated_date": "2025-08-11T10:32:01.835-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 2,
+  "labels": [],
+  "resolution_date": "2025-08-09T10:35:23.307-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Bed is Occupied after pc shut off",
+  "environment_raw": null,
+  "description": "I went to sleep in my bed in-game when my power temporarily went out. After regaining power, I re-logged into my world, which saved to right before I slept. When I tried sleeping in the bed, it said the bed was occupied, even though it was a single player world. Breaking the bed did reset it back to its normal state. n n",
+  "Steps to Reproduce": "1. Create a new single-player world in Minecraft with default settings.\n2. Locate or craft a bed and place it in a safe area.\n3. Ensure it is night time in the game (between 12542 and 23459 ticks) or during a thunderstorm.\n4. Right-click on the bed to sleep in it, allowing the screen to fade to black.\n5. Simulate a power outage by shutting down your computer or disconnecting power.\n6. After a few moments, restore power and restart your computer.\n7. Launch Minecraft and re-enter the same single-player world.\n8. Wait for the game to load, which should revert to the state just before you slept.\n9. Approach the bed and attempt to right-click on it to sleep again.\n10. Observe the message indicating the bed is occupied, despite being the only player in the world.\n11. Break the bed and note that it resets to its normal state, allowing you to sleep again.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "After the player sleeps in a bed in a single-player world and experiences a power outage, upon re-logging into the game, the bed is marked as \"occupied.\" This occurs despite the game saving the state prior to the player sleeping, effectively preventing the player from using the bed again. The message displayed when attempting to sleep is \"This bed is occupied.\" The only way to resolve this issue is to break the bed, which resets its state and allows the player to sleep in it again. This behavior does not align with the expected functionality of beds in single-player mode, where a bed should not remain occupied after a player has logged out and back in, especially if the game state was saved before the player went to sleep.",
+  "Expected Behavior": "When a player sleeps in a bed in a single-player world, the game should properly register the sleep state and allow the player to sleep again upon re-logging into the world. If the power goes out and the game saves before the player sleeps, the bed should not be marked as occupied when the player logs back in. Instead, the player should be able to use the bed again without any issues. If the bed is functioning correctly, the player should receive no error messages, and the game should allow them to sleep immediately, advancing the time to dawn. If the bed is broken, it should reset to its normal state, allowing the player to place it again and sleep without encountering the \"bed is occupied\" message.",
+  "comments": [
+    {
+      "id": "2081667",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Brian Phelps",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-08T00:04:06.415-0700",
+      "updated": "2025-08-08T00:04:06.415-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.",
+      "body_length": 80,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "33cdfa74-cd6d-4519-ab9b-252f9c372e16",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2082041",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "C402435",
+        "active": true,
+        "timeZone": "Etc/GMT+12",
+        "accountType": "customer"
+      },
+      "created": "2025-08-09T05:50:05.148-0700",
+      "updated": "2025-08-09T05:50:05.148-0700",
+      "body_text": "confirmed in 25w32a\\n\\n\\n\\n",
+      "body_length": 27,
+      "rendered_body": "<p>confirmed in 25w32a</p>\n\n<p></p><div><p>This comment contained multiple media attachments (2), please login to view the attachments.</p></div><p></p>\n",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "confirmed in 25w32a"
+              }
+            ]
+          },
+          {
+            "type": "mediaSingle",
+            "attrs": {
+              "layout": "align-start"
+            },
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "72e64a6e-e772-4d8c-8a69-7c08339b62fc",
+                  "alt": "\u5c4f\u5e55\u5f55\u5236 2025-08-09 204638.mp4",
+                  "collection": "",
+                  "height": 1358,
+                  "width": 2560
+                }
+              }
+            ]
+          },
+          {
+            "type": "paragraph"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2082107",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/32"
+        },
+        "displayName": "[MOD] Greymagic27",
+        "active": true,
+        "timeZone": "Europe/London",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-09T10:35:23.347-0700",
+      "updated": "2025-08-09T10:35:34.987-0700",
+      "body_text": "*We do not have enough information to reproduce this issue.*\\n\\nPlease include the following information to help us understand your problem:\\n\\n> **Steps to Reproduce:**\\n> \\n> 1. *(Explain what needs to be done for the issue to happen)*\\n> \\n> \\n> 2. \\n> \\n> \\n> 3. \\n> \\n> \\n> \\n> \\n\\n> *Observed Results:**(Briefly describe what happens)*\\n> \\n> \\n\\n> *Expected Results:**(Briefly describe what should happen)*\\n> \\n> \\n\\nPlease also attach any needed commands, add-ons/behavior packs, data packs, resource packs, screenshots, videos, or worlds needed to help reproduce this issue.\\n\\nRefer to the **Bug Tracker Guidelines** for more information about how to write helpful bug reports. Bug reports with insufficient information may be closed as **Incomplete**.\\n\\nThis issue is being temporarily resolved as **Awaiting Response**. Once the requested information has been delivered, the report will be reopened automatically.*Quick Links*:\ud83d\udcd3 Bug Tracker Guidelines -- \ud83d\udcac Community Support -- \ud83d\udce7 Mojang Support (Technical Issues) -- \ud83d\udce7 Microsoft Support (Account Issues) -- \ud83d\udcd3 Project Summary -- \u270d\ufe0f Feedback and Suggestions -- \ud83d\udcd6 Game Wiki\\n\\n",
+      "body_length": 1138,
+      "rendered_body": "<p><a href=\"https://mojira.atlassian.net/secure/ViewProfile.jspa?accountId=qm%3Acb62fd3a-e41d-46b2-be2b-5177bffe32b0%3A67c6370e-3b23-42de-83f1-3351ff770ac7\" class=\"user-hover\" rel=\"qm:cb62fd3a-e41d-46b2-be2b-5177bffe32b0:67c6370e-3b23-42de-83f1-3351ff770ac7\" data-account-id=\"qm:cb62fd3a-e41d-46b2-be2b-5177bffe32b0:67c6370e-3b23-42de-83f1-3351ff770ac7\" accountid=\"qm:cb62fd3a-e41d-46b2-be2b-5177bffe32b0:67c6370e-3b23-42de-83f1-3351ff770ac7\">C402435</a> <a href=\"https://mojira.atlassian.net/secure/ViewProfile.jspa?accountId=qm%3Acb62fd3a-e41d-46b2-be2b-5177bffe32b0%3Ac1b66e0d-5d35-4565-b241-48860f02a8a6\" class=\"user-hover\" rel=\"qm:cb62fd3a-e41d-46b2-be2b-5177bffe32b0:c1b66e0d-5d35-4565-b241-48860f02a8a6\" data-account-id=\"qm:cb62fd3a-e41d-46b2-be2b-5177bffe32b0:c1b66e0d-5d35-4565-b241-48860f02a8a6\" accountid=\"qm:cb62fd3a-e41d-46b2-be2b-5177bffe32b0:c1b66e0d-5d35-4565-b241-48860f02a8a6\">Brian Phelps</a> <br>\n<em>We do not have enough information to reproduce this issue.</em></p>\n\n<p>Please include the following information to help us understand your problem:</p>\n\n<blockquote><p><b>Steps to Reproduce:</b></p>\n\n<ol>\n\t<li><em>(Explain what needs to be done for the issue to happen)</em></li>\n\t<li></li>\n\t<li></li>\n</ol>\n</blockquote>\n\n<blockquote><p><em>Observed Results:</em><br>\n<em>(Briefly describe what happens)</em></p></blockquote>\n\n<blockquote><p><em>Expected Results:</em><br>\n<em>(Briefly describe what should happen)</em></p></blockquote>\n\n<p>Please also attach any needed commands, add-ons/behavior packs, data packs, resource packs, screenshots, videos, or worlds needed to help reproduce this issue.</p>\n\n<p>Refer to the <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\"><b>Bug Tracker Guidelines</b></a> for more information about how to write helpful bug reports. Bug reports with insufficient information may be closed as <b>Incomplete</b>.</p>\n\n<p>This issue is being temporarily resolved as <b>Awaiting Response</b>. Once the requested information has been delivered, the report will be reopened automatically.<br>\n<em>Quick Links</em>:<br>\n\ud83d\udcd3 <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\">Bug Tracker Guidelines</a> \u2013 \ud83d\udcac <a href=\"https://discord.com/invite/minecraft\" class=\"external-link\" rel=\"nofollow noreferrer\">Community Support</a> \u2013 \ud83d\udce7 <a href=\"https://aka.ms/Minecraft-Support\" class=\"external-link\" rel=\"nofollow noreferrer\">Mojang Support (Technical Issues)</a> \u2013 \ud83d\udce7 <a href=\"https://support.xbox.com/contact-us/\" class=\"external-link\" rel=\"nofollow noreferrer\">Microsoft Support (Account Issues)</a> \u2013 \ud83d\udcd3 <a href=\"https://report.bugs.mojang.com/servicedesk/customer/portal/2\" class=\"external-link\" rel=\"nofollow noreferrer\">Project Summary</a> \u2013 \u270d\ufe0f <a href=\"https://aka.ms/MinecraftFeedbackDiscord\" class=\"external-link\" rel=\"nofollow noreferrer\">Feedback and Suggestions</a> \u2013 \ud83d\udcd6 <a href=\"https://minecraft.wiki/\" class=\"external-link\" rel=\"nofollow noreferrer\">Game Wiki</a></p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "mention",
+                "attrs": {
+                  "id": "qm:cb62fd3a-e41d-46b2-be2b-5177bffe32b0:67c6370e-3b23-42de-83f1-3351ff770ac7",
+                  "text": "@C402435",
+                  "accessLevel": "",
+                  "localId": "bf708b29-1d6f-4b5e-ae74-f6999a238e66"
+                }
+              },
+              {
+                "type": "text",
+                "text": " "
+              },
+              {
+                "type": "mention",
+                "attrs": {
+                  "id": "qm:cb62fd3a-e41d-46b2-be2b-5177bffe32b0:c1b66e0d-5d35-4565-b241-48860f02a8a6",
+                  "text": "@Brian Phelps",
+                  "accessLevel": "",
+                  "localId": "5d8df1ff-6de0-467d-afd5-1957b35b71d5"
+                }
+              },
+              {
+                "type": "text",
+                "text": " "
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "We do not have enough information to reproduce this issue.",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please include the following information to help us understand your problem:"
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Steps to Reproduce:",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "orderedList",
+                "attrs": {
+                  "order": 1
+                },
+                "content": [
+                  {
+                    "type": "listItem",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "(Explain what needs to be done for the issue to happen)",
+                            "marks": [
+                              {
+                                "type": "em"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "listItem",
+                    "content": [
+                      {
+                        "type": "paragraph"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "listItem",
+                    "content": [
+                      {
+                        "type": "paragraph"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Observed Results:",
+                    "marks": [
+                      {
+                        "type": "em"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "(Briefly describe what happens)",
+                    "marks": [
+                      {
+                        "type": "em"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Expected Results:",
+                    "marks": [
+                      {
+                        "type": "em"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "(Briefly describe what should happen)",
+                    "marks": [
+                      {
+                        "type": "em"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please also attach any needed commands, add-ons/behavior packs, data packs, resource packs, screenshots, videos, or worlds needed to help reproduce this issue."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Refer to the "
+              },
+              {
+                "type": "text",
+                "text": "Bug Tracker Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  },
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " for more information about how to write helpful bug reports. Bug reports with insufficient information may be closed as "
+              },
+              {
+                "type": "text",
+                "text": "Incomplete",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This issue is being temporarily resolved as "
+              },
+              {
+                "type": "text",
+                "text": "Awaiting Response",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ". Once the requested information has been delivered, the report will be reopened automatically."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3 "
+              },
+              {
+                "type": "text",
+                "text": "Bug Tracker Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udcac "
+              },
+              {
+                "type": "text",
+                "text": "Community Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://discord.com/invite/minecraft"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udce7 "
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support (Technical Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/Minecraft-Support"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udce7 "
+              },
+              {
+                "type": "text",
+                "text": "Microsoft Support (Account Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://support.xbox.com/contact-us/"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udcd3 "
+              },
+              {
+                "type": "text",
+                "text": "Project Summary",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://report.bugs.mojang.com/servicedesk/customer/portal/2"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \u270d\ufe0f "
+              },
+              {
+                "type": "text",
+                "text": "Feedback and Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MinecraftFeedbackDiscord"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udcd6 "
+              },
+              {
+                "type": "text",
+                "text": "Game Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecraft.wiki/"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300836"
+  }
+}

@@ -1,0 +1,333 @@
+{
+  "key": "MC-300935",
+  "summary": "The launcher or thrower detects the redstone torch incorrectly",
+  "description": "Place a redstone torch attached to a block on the side directly above the thrower or launcher, and when the attached block receives a pulse signalThe redstone torch also began to flicker, but the projector or launcher below did not throw the projectile\\n\\n[brick]<- [Redstone Torch]\\n\\n                [transmitter]\\n\\n",
+  "created_date": "2025-08-11T02:33:43.564-0700",
+  "updated_date": "2025-08-12T07:15:17.352-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "resolution_date": "2025-08-12T07:15:17.029-0700",
+  "affected_versions": [
+    "25w32a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 46,
+  "summary_length": 9,
+  "fetch_timestamp": "2025-08-20T03:10:21.348913",
+  "comments": [
+    {
+      "id": "2082966",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/32"
+        },
+        "displayName": "[MCQA] Blawik",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-12T07:15:17.083-0700",
+      "updated": "2025-08-12T07:15:17.083-0700",
+      "body_text": "**Thank you for your report!**\\n\\nHowever, this issue has been temporarily closed as **Awaiting Response**.\\n\\nCould you upload a video showing this issue?\\n\\nJust a reminder, to make your bug report as effective as possible, please try and include the following steps to reproduce the problem:\\n\\n> **Steps to Reproduce:**1.2.3.\\n> \\n> **Observed Results:***(Briefly describe what happens)*\\n> \\n> **Expected Results:***(Briefly describe what should happen)*\\n> \\n> \\n\\nIf your ticket does not look like the example given here, then it's likely to be closed as incomplete.\\n\\nThis ticket will automatically reopen when you reply.\\n\\n**Quick Links**:📓 Issue Guidelines – 💬 Mojang Support – 📧 Suggestions – 📖 Minecraft Wiki\\n\\n",
+      "body_length": 726,
+      "rendered_body": "<p><b>Thank you for your report!</b></p>\n\n<p>However, this issue has been temporarily closed as <b><font color=\"#ff5722\">Awaiting Response</font></b>.</p>\n\n<p>Could you upload a video showing this issue?</p>\n\n<p>Just a reminder, to make your bug report as effective as possible, please try and include the following steps to reproduce the problem:</p>\n<blockquote><p><b>Steps to Reproduce:</b><br>\n1.<br>\n2.<br>\n3.</p>\n\n<p><b>Observed Results:</b><br>\n<em>(Briefly describe what happens)</em></p>\n\n<p><b>Expected Results:</b><br>\n<em>(Briefly describe what should happen)</em></p></blockquote>\n<p>If your ticket does not look like the example given <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\">here</a>, then it's likely to be closed as incomplete.</p>\n\n<p>This ticket will automatically reopen when you reply.</p>\n\n<p><b>Quick Links</b>:<br>\n📓 <a href=\"https://help.minecraft.net/hc/en-us/articles/4408887473421\" class=\"external-link\" rel=\"nofollow noreferrer\">Issue Guidelines</a> – 💬 <a href=\"https://help.minecraft.net/hc/en-us/requests/new\" class=\"external-link\" rel=\"nofollow noreferrer\">Mojang Support</a> – 📧 <a href=\"https://feedback.minecraft.net/\" class=\"external-link\" rel=\"nofollow noreferrer\">Suggestions</a> – 📖 <a href=\"https://minecraft.wiki\" class=\"external-link\" rel=\"nofollow noreferrer\">Minecraft Wiki</a></p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Thank you for your report!",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "However, this issue has been temporarily closed as "
+              },
+              {
+                "type": "text",
+                "text": "Awaiting Response",
+                "marks": [
+                  {
+                    "type": "textColor",
+                    "attrs": {
+                      "color": "#ff5722"
+                    }
+                  },
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Could you upload a video showing this issue?"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Just a reminder, to make your bug report as effective as possible, please try and include the following steps to reproduce the problem:"
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Steps to Reproduce:",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "1."
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "2."
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "3."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Observed Results:",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "(Briefly describe what happens)",
+                    "marks": [
+                      {
+                        "type": "em"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Expected Results:",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "(Briefly describe what should happen)",
+                    "marks": [
+                      {
+                        "type": "em"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "If your ticket does not look like the example given "
+              },
+              {
+                "type": "text",
+                "text": "here",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ", then it's likely to be closed as incomplete."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will automatically reopen when you reply."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "📓 "
+              },
+              {
+                "type": "text",
+                "text": "Issue Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://help.minecraft.net/hc/en-us/articles/4408887473421"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – 💬 "
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://help.minecraft.net/hc/en-us/requests/new"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – 📧 "
+              },
+              {
+                "type": "text",
+                "text": "Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://feedback.minecraft.net/"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – 📖 "
+              },
+              {
+                "type": "text",
+                "text": "Minecraft Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecraft.wiki"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 1
+}

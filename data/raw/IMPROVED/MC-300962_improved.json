@@ -1,0 +1,91 @@
+{
+  "key": "MC-300962",
+  "created_date": "2025-08-12T02:47:28.295-0700",
+  "updated_date": "2025-08-12T03:04:00.994-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-12T03:03:54.301-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Unable to exchange the same items in the backpack normally.",
+  "environment_raw": null,
+  "description": "Take fireworks as an example. When you press the E key to open your inventory and swap the positions of two sets of fireworks, you will find that if the number of fireworks selected with the mouse is less than the number being swapped, the exchange cannot be completed, no matter how many times you left-click. If the number of fireworks selected with the mouse is greater than the number of fireworks being swapped, the two sets of items can be exchanged normally. This issue only occurs with certain blocks, such as fireworks and scaffolding. n n",
+  "Steps to Reproduce": "1. Create a new Survival world with default settings.\n2. Obtain at least two stacks of Firework Rockets in your inventory.\n3. Press the E key to open your inventory.\n4. Click and hold on one stack of Firework Rockets to select it.\n5. Attempt to swap the selected stack with another stack of Firework Rockets by dragging it to the slot of the other stack.\n6. Ensure that the number of Firework Rockets in the selected stack is less than the number in the other stack.\n7. Observe that the swap does not complete, regardless of how many times you left-click.\n8. Now, select a stack of Firework Rockets that has more items than the stack you want to swap with.\n9. Attempt to swap the stacks again by dragging and dropping.\n10. Observe that the swap completes successfully.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "When attempting to swap two stacks of fireworks in the inventory (accessed by pressing the E key), a specific issue arises based on the quantity of items involved in the exchange. If the number of fireworks currently selected with the mouse cursor is less than the number of fireworks in the stack being swapped, the exchange fails to occur, regardless of how many times the player left-clicks. This means that if a player tries to move a larger stack of fireworks into a slot occupied by a smaller stack, the game does not allow the transaction to complete.\n\nIn contrast, if the number of fireworks selected with the mouse is greater than the number of fireworks in the stack being swapped, the exchange proceeds normally without any issues. This behavior is inconsistent and appears to be limited to specific item types, including fireworks and scaffolding. The inability to exchange stacks of the same item under certain conditions can lead to confusion and disrupt the inventory management experience for players. \n\nThe issue has been observed consistently in both single-player and multiplayer environments, and it is not related to the player's inventory being full or other standard inventory mechanics. It is crucial for developers to investigate this behavior to ensure smoother item management and user experience in future updates.",
+  "Expected Behavior": "When attempting to swap two sets of fireworks in the inventory, the expected behavior is that the items should exchange positions regardless of the quantity selected. If a player selects a number of fireworks that is less than the amount being swapped, the game should allow the player to successfully complete the exchange with a left-click. Conversely, if the number of fireworks selected is greater than the number being swapped, the exchange should also proceed without issue. This functionality should apply uniformly to all stackable items in the inventory, ensuring a consistent and intuitive user experience when managing items. The game should not exhibit any restrictions or failures in item swapping for fireworks or similar stackable items, adhering to the established mechanics of inventory management as outlined in official Minecraft documentation.",
+  "comments": [
+    {
+      "id": "2082868",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/32"
+        },
+        "displayName": "[MCQA] Blawik",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-12T03:03:54.373-0700",
+      "updated": "2025-08-12T03:03:54.373-0700",
+      "body_text": "Hi!Could you upload a video showing this issue?\\n\\nThis ticket will automatically reopen when you reply.\\n\\n",
+      "body_length": 108,
+      "rendered_body": "<p>Hi!<br>\nCould you upload a video showing this issue?</p>\n\n<p>This ticket will automatically reopen when you reply.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hi!"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Could you upload a video showing this issue?"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will automatically reopen when you reply."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300962"
+  }
+}

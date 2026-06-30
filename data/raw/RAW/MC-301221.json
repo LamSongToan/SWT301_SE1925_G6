@@ -1,0 +1,149 @@
+{
+  "key": "MC-301221",
+  "summary": "Incorrect Item light rendering 1.21.8",
+  "description": "Some items when on the ground or held in hand arent correctly rendered at night. Commonly affects food and tools from testing. Also affects items held by mobs. So far only tested on 1.21.8 Vanilla ClientExpected result should be that items in main/offhand, held by mobs and items on ground should not ‘glow’ at night. \\n\\n\\n\\n",
+  "created_date": "2025-08-19T05:13:33.841-0700",
+  "updated_date": "2025-08-19T05:55:51.851-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "resolution_date": "2025-08-19T05:55:43.890-0700",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 56,
+  "summary_length": 5,
+  "fetch_timestamp": "2025-08-20T03:09:52.935955",
+  "comments": [
+    {
+      "id": "2084669",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Stephen Armsworth",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-19T05:13:34.581-0700",
+      "updated": "2025-08-19T05:13:34.581-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.",
+      "body_length": 80,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "b43a5715-b001-48c6-8007-58fc7273a940",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2084683",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:55fbbc50-a3ed-42ca-88af-ac87fa100c9a/49c9ac2e-63b3-4fb9-b73d-8075dd93b0bd/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:55fbbc50-a3ed-42ca-88af-ac87fa100c9a/49c9ac2e-63b3-4fb9-b73d-8075dd93b0bd/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:55fbbc50-a3ed-42ca-88af-ac87fa100c9a/49c9ac2e-63b3-4fb9-b73d-8075dd93b0bd/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:55fbbc50-a3ed-42ca-88af-ac87fa100c9a/49c9ac2e-63b3-4fb9-b73d-8075dd93b0bd/32"
+        },
+        "displayName": "[MCQA] Zgajak",
+        "active": true,
+        "timeZone": "Poland",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-19T05:55:25.516-0700",
+      "updated": "2025-08-19T05:55:25.516-0700",
+      "body_text": "<no repro>Hi!\\n\\nDo you use any ad-ons/mods?Can you please record a video of this issue?Does this issue occur on specific world or on specific conditions?\\n\\nThis ticket will automatically reopen when you reply.\\n\\n",
+      "body_length": 215,
+      "rendered_body": "<p>&lt;no repro&gt;<br>\nHi!</p>\n\n<p>Do you use any ad-ons/mods?<br>\nCan you please record a video of this issue?<br>\nDoes this issue occur on specific world or on specific conditions?</p>\n\n<p>This ticket will automatically reopen when you reply.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "<no repro>"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Hi!"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Do you use any ad-ons/mods?"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Can you please record a video of this issue?"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Does this issue occur on specific world or on specific conditions?"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will automatically reopen when you reply."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 2
+}

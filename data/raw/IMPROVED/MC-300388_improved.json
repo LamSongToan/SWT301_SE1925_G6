@@ -1,0 +1,425 @@
+{
+  "key": "MC-300388",
+  "created_date": "2025-07-30T14:54:10.626-0700",
+  "updated_date": "2025-08-10T11:21:28.185-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-10T11:21:28.093-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "mobs in spawners that spawn in water will only spawn in natural water",
+  "environment_raw": null,
+  "description": "make a big box and fill it with water source blocks and put a spawner in the box then place a egg in the spawner that would need water to spawn if in the mob spawner n ni expected the mobs to spawn in the water n nsome of the mobs that need water to spawn from mob spawners will only spawn in naturally generated water but will not spawn in artificial water ex: axolotl, squid, tropical fish, cod but others ex: elder guardian, tadpole when placed in a mob spawner and in the water source box spawned in the artificial water n ni tried this in a superflat default world and a creative world in the lukewarm ocean and ice spikes biome n n",
+  "Steps to Reproduce": "1. Create a new Creative world with default settings.\n2. Build a large box (at least 10x10x5 blocks) using any solid block, ensuring there are no gaps.\n3. Fill the entire box with water source blocks, ensuring the water is at the same level throughout the box.\n4. Place a monster spawner block inside the water-filled box.\n5. Obtain a spawn egg for a water-dependent mob, such as an axolotl, squid, tropical fish, or cod.\n6. Right-click the spawner with the spawn egg to set it to spawn the chosen water mob.\n7. Wait for the spawner to activate and observe the spawning behavior of the mob.\n8. Note that the water mobs do not spawn in the artificial water created in the box, while other mobs like elder guardians or tadpoles spawn correctly if placed in the same spawner. \n9. Repeat steps 1-8 in a Superflat world and in biomes such as the lukewarm ocean and ice spikes to confirm the issue persists across different environments.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "When a mob spawner is placed within an artificial water source block environment, certain aquatic mobs that are designed to spawn in water do not spawn as expected. Specifically, mobs such as axolotls, squids, tropical fish, and cod fail to spawn in artificially created water (e.g., water-filled boxes made from water source blocks). In contrast, other aquatic mobs such as elder guardians and tadpoles successfully spawn in the same artificial water setup.\n\nTo reproduce this behavior, a player can create a large box filled with water source blocks and place a mob spawner inside. After inserting the corresponding spawn eggs for the aquatic mobs that require water to spawn, it is observed that the aforementioned mobs do not appear. This issue persists in various game environments, including a superflat default world and creative mode in biomes such as the lukewarm ocean and ice spikes biome.\n\nKey observations include:\n- Aquatic mobs that require water to spawn (e.g., axolotls, squids, tropical fish, cod) only spawn in naturally generated water bodies.\n- Other aquatic mobs (e.g., elder guardians, tadpoles) can spawn in artificial water created by the player.\n- This behavior has been tested across different worlds and biomes, confirming the inconsistency in spawning mechanics for different aquatic mobs. \n\nThe discrepancy in spawning conditions between natural and artificial water sources for these aquatic mobs needs to be addressed to ensure consistent gameplay mechanics.",
+  "Expected Behavior": "When a mob spawner is placed in an artificial body of water created by the player, it should spawn aquatic mobs that require water, such as axolotls, squids, tropical fish, and cod, regardless of whether the water is natural or artificially created. The expected behavior is that all aquatic mobs compatible with the spawner should appear in the water, as long as the spawning conditions are met, similar to how other mobs spawn in their respective environments. This includes complying with the necessary water block requirements for each specific mob type. Additionally, mobs like elder guardians and tadpoles should also spawn in the artificial water if they are placed in the spawner, reflecting the intended functionality of mob spawners in Minecraft.",
+  "comments": [
+    {
+      "id": "2082403",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/32"
+        },
+        "displayName": "[MOD] Greymagic27",
+        "active": true,
+        "timeZone": "Europe/London",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-10T11:21:28.145-0700",
+      "updated": "2025-08-10T11:21:28.145-0700",
+      "body_text": "*We do not have enough information to reproduce this issue.*\\n\\nPlease include the following information to help us understand your problem:\\n\\nPlease also attach a world that can be used to reproduce this issue\\n\\n> **Steps to Reproduce:**\\n> \\n> 1. *(Explain what needs to be done for the issue to happen)*\\n> \\n> \\n> 2. \\n> \\n> \\n> 3. \\n> \\n> \\n> \\n> \\n\\n> *Observed Results:**(Briefly describe what happens)*\\n> \\n> \\n\\n> *Expected Results:**(Briefly describe what should happen)*\\n> \\n> \\n\\nPlease also attach any needed commands, add-ons/behavior packs, data packs, resource packs, screenshots, videos, or worlds needed to help reproduce this issue.\\n\\nRefer to the **Bug Tracker Guidelines** for more information about how to write helpful bug reports. Bug reports with insufficient information may be closed as **Incomplete**.\\n\\nThis issue is being temporarily resolved as **Awaiting Response**. Once the requested information has been delivered, the report will be reopened automatically.*Quick Links*:\ud83d\udcd3 Bug Tracker Guidelines -- \ud83d\udcac Community Support -- \ud83d\udce7 Mojang Support (Technical Issues) -- \ud83d\udce7 Microsoft Support (Account Issues) -- \ud83d\udcd3 Project Summary -- \u270d\ufe0f Feedback and Suggestions -- \ud83d\udcd6 Game Wiki\\n\\n",
+      "body_length": 1209,
+      "rendered_body": "<p><em>We do not have enough information to reproduce this issue.</em></p>\n\n<p>Please include the following information to help us understand your problem:</p>\n\n<p>Please also attach a world that can be used to reproduce this issue</p>\n\n<blockquote><p><b>Steps to Reproduce:</b></p>\n\n<ol>\n\t<li><em>(Explain what needs to be done for the issue to happen)</em></li>\n\t<li></li>\n\t<li></li>\n</ol>\n</blockquote>\n\n<blockquote><p><em>Observed Results:</em><br>\n<em>(Briefly describe what happens)</em></p></blockquote>\n\n<blockquote><p><em>Expected Results:</em><br>\n<em>(Briefly describe what should happen)</em></p></blockquote>\n\n<p>Please also attach any needed commands, add-ons/behavior packs, data packs, resource packs, screenshots, videos, or worlds needed to help reproduce this issue.</p>\n\n<p>Refer to the <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\"><b>Bug Tracker Guidelines</b></a> for more information about how to write helpful bug reports. Bug reports with insufficient information may be closed as <b>Incomplete</b>.</p>\n\n<p>This issue is being temporarily resolved as <b>Awaiting Response</b>. Once the requested information has been delivered, the report will be reopened automatically.<br>\n<em>Quick Links</em>:<br>\n\ud83d\udcd3 <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\">Bug Tracker Guidelines</a> \u2013 \ud83d\udcac <a href=\"https://discord.com/invite/minecraft\" class=\"external-link\" rel=\"nofollow noreferrer\">Community Support</a> \u2013 \ud83d\udce7 <a href=\"https://aka.ms/Minecraft-Support\" class=\"external-link\" rel=\"nofollow noreferrer\">Mojang Support (Technical Issues)</a> \u2013 \ud83d\udce7 <a href=\"https://support.xbox.com/contact-us/\" class=\"external-link\" rel=\"nofollow noreferrer\">Microsoft Support (Account Issues)</a> \u2013 \ud83d\udcd3 <a href=\"https://report.bugs.mojang.com/servicedesk/customer/portal/2\" class=\"external-link\" rel=\"nofollow noreferrer\">Project Summary</a> \u2013 \u270d\ufe0f <a href=\"https://aka.ms/MinecraftFeedbackDiscord\" class=\"external-link\" rel=\"nofollow noreferrer\">Feedback and Suggestions</a> \u2013 \ud83d\udcd6 <a href=\"https://minecraft.wiki/\" class=\"external-link\" rel=\"nofollow noreferrer\">Game Wiki</a></p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "We do not have enough information to reproduce this issue.",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please include the following information to help us understand your problem:"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please also attach a world that can be used to reproduce this issue"
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Steps to Reproduce:",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "orderedList",
+                "attrs": {
+                  "order": 1
+                },
+                "content": [
+                  {
+                    "type": "listItem",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "(Explain what needs to be done for the issue to happen)",
+                            "marks": [
+                              {
+                                "type": "em"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "listItem",
+                    "content": [
+                      {
+                        "type": "paragraph"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "listItem",
+                    "content": [
+                      {
+                        "type": "paragraph"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Observed Results:",
+                    "marks": [
+                      {
+                        "type": "em"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "(Briefly describe what happens)",
+                    "marks": [
+                      {
+                        "type": "em"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Expected Results:",
+                    "marks": [
+                      {
+                        "type": "em"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "(Briefly describe what should happen)",
+                    "marks": [
+                      {
+                        "type": "em"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please also attach any needed commands, add-ons/behavior packs, data packs, resource packs, screenshots, videos, or worlds needed to help reproduce this issue."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Refer to the "
+              },
+              {
+                "type": "text",
+                "text": "Bug Tracker Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  },
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " for more information about how to write helpful bug reports. Bug reports with insufficient information may be closed as "
+              },
+              {
+                "type": "text",
+                "text": "Incomplete",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This issue is being temporarily resolved as "
+              },
+              {
+                "type": "text",
+                "text": "Awaiting Response",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ". Once the requested information has been delivered, the report will be reopened automatically."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3 "
+              },
+              {
+                "type": "text",
+                "text": "Bug Tracker Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udcac "
+              },
+              {
+                "type": "text",
+                "text": "Community Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://discord.com/invite/minecraft"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udce7 "
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support (Technical Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/Minecraft-Support"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udce7 "
+              },
+              {
+                "type": "text",
+                "text": "Microsoft Support (Account Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://support.xbox.com/contact-us/"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udcd3 "
+              },
+              {
+                "type": "text",
+                "text": "Project Summary",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://report.bugs.mojang.com/servicedesk/customer/portal/2"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \u270d\ufe0f "
+              },
+              {
+                "type": "text",
+                "text": "Feedback and Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MinecraftFeedbackDiscord"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udcd6 "
+              },
+              {
+                "type": "text",
+                "text": "Game Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecraft.wiki/"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300388"
+  }
+}

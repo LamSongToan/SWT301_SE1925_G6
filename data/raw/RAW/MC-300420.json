@@ -1,0 +1,538 @@
+{
+  "key": "MC-300420",
+  "summary": "Sprint Window slider shows useless values",
+  "description": "You cannot sprint by double-tapping W after setting the sprint window option to 1 or 2. It seems that this duration includes both movement start ticks (see attachment), which means that setting the option to 2 would require you to press W once in two consecutive ticks (which just gets interpreted as holding W), and setting it to 1 requires two presses within a single tick (impossible due to how the game registers inputs).\\n\\n",
+  "created_date": "2025-07-31T00:43:14.896-0700",
+  "updated_date": "2025-08-10T11:07:31.814-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "resolution_date": "2025-08-10T11:07:31.680-0700",
+  "affected_versions": [
+    "25w31a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 74,
+  "summary_length": 6,
+  "fetch_timestamp": "2025-08-20T03:11:16.948016",
+  "comments": [
+    {
+      "id": "2079117",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Zpiboo",
+        "active": true,
+        "timeZone": "Europe/Paris",
+        "accountType": "customer"
+      },
+      "created": "2025-07-31T00:43:15.497-0700",
+      "updated": "2025-07-31T00:43:15.497-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.",
+      "body_length": 80,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "1e9bcc2e-3b08-4fe8-87b5-89ea6fa1ec4e",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2079125",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Gustin Kinyada",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-07-31T01:00:04.335-0700",
+      "updated": "2025-07-31T01:00:04.335-0700",
+      "body_text": "> which means that setting the option to 2 would require you to press W once in two consecutive ticks (which just gets interpreted as holding W)\\n> \\n> \\n\\nWouldn’t it be useful though?\\n\\n\\n\\n",
+      "body_length": 193,
+      "rendered_body": "<blockquote><p>which means that setting the option to 2 would require you to press W once in two consecutive ticks (which just gets interpreted as holding W)</p></blockquote>\n\n<p>Wouldn’t it be useful though?</p>\n",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "which means that setting the option to 2 would require you to press W once in two consecutive ticks (which just gets interpreted as holding W)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Wouldn’t it be useful though?"
+              }
+            ]
+          },
+          {
+            "type": "paragraph"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2079126",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Zpiboo",
+        "active": true,
+        "timeZone": "Europe/Paris",
+        "accountType": "customer"
+      },
+      "created": "2025-07-31T01:12:53.024-0700",
+      "updated": "2025-07-31T01:12:53.024-0700",
+      "body_text": "To let the user press a key two distinct times in two consecutive ticks, and have the game not behave like the key was just held? I’m not sure what you mean.\\n\\n",
+      "body_length": 161,
+      "rendered_body": "<p>To let the user press a key two distinct times in two consecutive ticks, and have the game not behave like the key was just held? I’m not sure what you mean.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "To let the user press a key two distinct times in two consecutive ticks, and have the game not behave like the key was just held? I’m not sure what you mean."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2082395",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/32"
+        },
+        "displayName": "[MOD] Greymagic27",
+        "active": true,
+        "timeZone": "Europe/London",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-10T11:07:31.751-0700",
+      "updated": "2025-08-10T11:07:31.751-0700",
+      "body_text": "*We do not have enough information to reproduce this issue.*\\n\\nPlease include the following information to help us understand your problem:\\n\\n> **Steps to Reproduce:**\\n> \\n> 1. *(Explain what needs to be done for the issue to happen)*\\n> \\n> \\n> 2. \\n> \\n> \\n> 3. \\n> \\n> \\n> \\n> \\n\\n> *Observed Results:**(Briefly describe what happens)*\\n> \\n> \\n\\n> *Expected Results:**(Briefly describe what should happen)*\\n> \\n> \\n\\nPlease also attach any needed commands, add-ons/behavior packs, data packs, resource packs, screenshots, videos, or worlds needed to help reproduce this issue.\\n\\nRefer to the **Bug Tracker Guidelines** for more information about how to write helpful bug reports. Bug reports with insufficient information may be closed as **Incomplete**.\\n\\nThis issue is being temporarily resolved as **Awaiting Response**. Once the requested information has been delivered, the report will be reopened automatically.*Quick Links*:📓 Bug Tracker Guidelines -- 💬 Community Support -- 📧 Mojang Support (Technical Issues) -- 📧 Microsoft Support (Account Issues) -- 📓 Project Summary -- ✍️ Feedback and Suggestions -- 📖 Game Wiki\\n\\n",
+      "body_length": 1138,
+      "rendered_body": "<p><em>We do not have enough information to reproduce this issue.</em></p>\n\n<p>Please include the following information to help us understand your problem:</p>\n\n<blockquote><p><b>Steps to Reproduce:</b></p>\n\n<ol>\n\t<li><em>(Explain what needs to be done for the issue to happen)</em></li>\n\t<li></li>\n\t<li></li>\n</ol>\n</blockquote>\n\n<blockquote><p><em>Observed Results:</em><br>\n<em>(Briefly describe what happens)</em></p></blockquote>\n\n<blockquote><p><em>Expected Results:</em><br>\n<em>(Briefly describe what should happen)</em></p></blockquote>\n\n<p>Please also attach any needed commands, add-ons/behavior packs, data packs, resource packs, screenshots, videos, or worlds needed to help reproduce this issue.</p>\n\n<p>Refer to the <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\"><b>Bug Tracker Guidelines</b></a> for more information about how to write helpful bug reports. Bug reports with insufficient information may be closed as <b>Incomplete</b>.</p>\n\n<p>This issue is being temporarily resolved as <b>Awaiting Response</b>. Once the requested information has been delivered, the report will be reopened automatically.<br>\n<em>Quick Links</em>:<br>\n📓 <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\">Bug Tracker Guidelines</a> – 💬 <a href=\"https://discord.com/invite/minecraft\" class=\"external-link\" rel=\"nofollow noreferrer\">Community Support</a> – 📧 <a href=\"https://aka.ms/Minecraft-Support\" class=\"external-link\" rel=\"nofollow noreferrer\">Mojang Support (Technical Issues)</a> – 📧 <a href=\"https://support.xbox.com/contact-us/\" class=\"external-link\" rel=\"nofollow noreferrer\">Microsoft Support (Account Issues)</a> – 📓 <a href=\"https://report.bugs.mojang.com/servicedesk/customer/portal/2\" class=\"external-link\" rel=\"nofollow noreferrer\">Project Summary</a> – ✍️ <a href=\"https://aka.ms/MinecraftFeedbackDiscord\" class=\"external-link\" rel=\"nofollow noreferrer\">Feedback and Suggestions</a> – 📖 <a href=\"https://minecraft.wiki/\" class=\"external-link\" rel=\"nofollow noreferrer\">Game Wiki</a></p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "We do not have enough information to reproduce this issue.",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please include the following information to help us understand your problem:"
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Steps to Reproduce:",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "orderedList",
+                "attrs": {
+                  "order": 1
+                },
+                "content": [
+                  {
+                    "type": "listItem",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "(Explain what needs to be done for the issue to happen)",
+                            "marks": [
+                              {
+                                "type": "em"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "listItem",
+                    "content": [
+                      {
+                        "type": "paragraph"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "listItem",
+                    "content": [
+                      {
+                        "type": "paragraph"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Observed Results:",
+                    "marks": [
+                      {
+                        "type": "em"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "(Briefly describe what happens)",
+                    "marks": [
+                      {
+                        "type": "em"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Expected Results:",
+                    "marks": [
+                      {
+                        "type": "em"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "(Briefly describe what should happen)",
+                    "marks": [
+                      {
+                        "type": "em"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please also attach any needed commands, add-ons/behavior packs, data packs, resource packs, screenshots, videos, or worlds needed to help reproduce this issue."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Refer to the "
+              },
+              {
+                "type": "text",
+                "text": "Bug Tracker Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  },
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " for more information about how to write helpful bug reports. Bug reports with insufficient information may be closed as "
+              },
+              {
+                "type": "text",
+                "text": "Incomplete",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This issue is being temporarily resolved as "
+              },
+              {
+                "type": "text",
+                "text": "Awaiting Response",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ". Once the requested information has been delivered, the report will be reopened automatically."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "📓 "
+              },
+              {
+                "type": "text",
+                "text": "Bug Tracker Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- 💬 "
+              },
+              {
+                "type": "text",
+                "text": "Community Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://discord.com/invite/minecraft"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- 📧 "
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support (Technical Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/Minecraft-Support"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- 📧 "
+              },
+              {
+                "type": "text",
+                "text": "Microsoft Support (Account Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://support.xbox.com/contact-us/"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- 📓 "
+              },
+              {
+                "type": "text",
+                "text": "Project Summary",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://report.bugs.mojang.com/servicedesk/customer/portal/2"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- ✍️ "
+              },
+              {
+                "type": "text",
+                "text": "Feedback and Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MinecraftFeedbackDiscord"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- 📖 "
+              },
+              {
+                "type": "text",
+                "text": "Game Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecraft.wiki/"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 4
+}

@@ -1,0 +1,171 @@
+{
+  "key": "MC-300395",
+  "created_date": "2025-07-30T17:25:12.428-0700",
+  "updated_date": "2025-08-10T11:05:16.908-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 2,
+  "labels": [],
+  "resolution_date": "2025-08-10T11:01:31.695-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Corrupted blocks",
+  "environment_raw": null,
+  "description": "My game world has been corrupted, and large blocks have been moved around, disrupting my builds. n nI already sent a debug request at the beginning of the month, but I haven t heard back since they asked for debug file, so I enclose again, along with screenshots. I will attach debug folder contents. n nI would like this resolved, please. It took a long time to build, and it s seriously damaged. Thank you! n n",
+  "Steps to Reproduce": "1. Launch Minecraft and select the affected world from the single-player menu.\n2. Ensure that you are in Creative mode to easily navigate and observe the corrupted blocks.\n3. Navigate to the area where you have noticed the block corruption, specifically areas with significant builds or structures.\n4. Observe the blocks that appear to be misplaced or corrupted, noting their original locations and the extent of the disruption.\n5. Take screenshots of the corrupted blocks and their surroundings for documentation.\n6. Exit the world and re-enter it to see if the corruption persists after reloading.\n7. If the corruption remains, document any additional changes in block positions or new corrupted areas.\n8. Gather the debug files from the world save folder, ensuring all relevant files are included for analysis.\n9. Submit a bug report with the attached screenshots and debug files, detailing the steps taken and the observations made.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "The game world has experienced significant corruption, resulting in large sections of blocks being displaced from their original positions. This has led to extensive disruption of my builds, including misaligned structures and floating blocks that were once part of solid constructions. The corruption appears to have affected various block types, including but not limited to, stone, wood, and decorative blocks, causing them to shift unexpectedly. \n\nUpon reloading the world, I noticed that these corrupted blocks do not return to their intended locations, and some areas are left with incomplete or missing structures. The overall integrity of my builds has been severely compromised, affecting both aesthetics and functionality. \n\nI have previously submitted a debug request, and I am resending the debug files along with screenshots that illustrate the extent of the corruption. The debug folder contents include logs and error reports that may provide further insight into the issue. \n\nThis situation is critical as it has rendered my hard work nearly unplayable, and I would appreciate any assistance in resolving this corruption issue. Thank you for your attention to this matter.",
+  "Expected Behavior": "When loading a game world, all blocks should remain in their intended positions, and no blocks should be corrupted or displaced. The game should accurately render the player's builds without any graphical glitches or unexpected block behavior. If a world experiences corruption, the game should provide a mechanism to recover the world or revert to the last stable state, ensuring that players do not lose their progress or builds. Players should also be able to revisit corrupted areas to trigger repairs, as per the mechanics outlined in the game documentation. In cases of severe corruption, the game should not crash or freeze, and players should be able to continue playing without significant disruptions to their gameplay experience.",
+  "comments": [
+    {
+      "id": "2079014",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "nuria.bonser",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-07-30T17:25:13.639-0700",
+      "updated": "2025-08-10T11:05:16.856-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.",
+      "body_length": 326,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "e42e7721-d072-40b2-b98b-a27f6d4a7ab9",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaSingle",
+            "attrs": {
+              "layout": "align-start"
+            },
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "18395aa3-e356-4d70-8352-6d2496e28062",
+                  "alt": "Screen Shot 2025-07-22 at 1.00.05 AM.png",
+                  "collection": "",
+                  "height": 1440,
+                  "width": 2560
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaSingle",
+            "attrs": {
+              "layout": "align-start"
+            },
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "45d7308f-32d5-4471-9a4b-3c4212054cf6",
+                  "alt": "Screen Shot 2025-07-22 at 1.00.18 AM.png",
+                  "collection": "",
+                  "height": 1440,
+                  "width": 2560
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaSingle",
+            "attrs": {
+              "layout": "align-start"
+            },
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "90466e95-20fb-4b6a-89ca-8f599bb20d10",
+                  "alt": "Screen Shot 2025-07-22 at 12.59.44 AM.png",
+                  "collection": "",
+                  "height": 1440,
+                  "width": 2560
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2082393",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/32"
+        },
+        "displayName": "[MOD] Greymagic27",
+        "active": true,
+        "timeZone": "Europe/London",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-10T11:01:31.751-0700",
+      "updated": "2025-08-10T11:01:31.751-0700",
+      "body_text": "Please can you attach the affected world? Do you know of any way to reproduce the issue?\\n\\n",
+      "body_length": 92,
+      "rendered_body": "<p>Please can you attach the affected world? Do you know of any way to reproduce the issue?</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please can you attach the affected world? Do you know of any way to reproduce the issue?"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300395"
+  }
+}

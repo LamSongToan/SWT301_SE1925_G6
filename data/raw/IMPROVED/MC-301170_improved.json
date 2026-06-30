@@ -1,0 +1,75 @@
+{
+  "key": "MC-301170",
+  "created_date": "2025-08-17T10:40:24.827-0700",
+  "updated_date": "2025-08-17T12:13:42.688-0700",
+  "status": "Resolved",
+  "resolution": "Incomplete",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-17T12:13:42.635-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "3 Enderman is attacking me for no reason",
+  "environment_raw": null,
+  "description": "I don t know it s a easter egg or not when \u0131 am in the end random 3 enderman is starting to attack me n nI don t look their eyes n n",
+  "Steps to Reproduce": "1. Create a new Survival world and enter The End dimension.\n2. Ensure that you are not wearing a carved pumpkin or any other item that prevents Enderman from becoming hostile.\n3. Stand still in an open area within The End, avoiding looking directly at any Enderman.\n4. Remain in this position for at least 10 seconds without making any sudden movements.\n5. Observe the behavior of the nearby Endermen, specifically noting if any of them begin to attack you without you looking at their eyes. \n6. Take note of the number of Endermen attacking you and any specific details about their behavior, such as whether they teleport or attack directly.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "When in the End dimension, three Endermen will randomly become aggressive towards the player without any apparent provocation. The player does not make eye contact with any of the Endermen, as they are careful to avoid looking directly at them, which typically triggers their hostility. Despite this, the Endermen initiate an attack, behaving as if they are provoked, even though the player is following the normal rules of engagement regarding Endermen interactions. This unexpected aggression occurs consistently, leading to confusion about whether it is an intended game mechanic or a bug. \n\nAdditional observations include:\n- The player is unable to determine a specific trigger for the aggression, as it happens randomly.\n- The Endermen pursue the player aggressively, teleporting frequently, which is typical behavior for Endermen when they are agitated.\n- The player has not engaged in any combat or actions that would normally provoke the Endermen, such as attacking them or being within 64 blocks while looking at them.\n- This phenomenon raises questions about potential unintentional game mechanics or hidden Easter eggs related to Endermen behavior in the End dimension.",
+  "Expected Behavior": "When the player is in the End dimension and does not look at any Endermen, they should remain neutral and not attack the player. Endermen are programmed to become aggressive only when a player looks directly at them for a brief moment or if they are attacked. If the player is not provoking them, the expected behavior is that the Endermen will not initiate an attack, allowing the player to move freely without fear of being targeted. If there is an unexpected attack from multiple Endermen without any provocation, this behavior should be considered a bug, as it does not align with the established mechanics of Endermen in the game.",
+  "comments": [
+    {
+      "id": "2084239",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/32"
+        },
+        "displayName": "[Mod] Jingy",
+        "active": true,
+        "timeZone": "America/Chicago",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-17T12:13:33.631-0700",
+      "updated": "2025-08-17T12:13:33.631-0700",
+      "body_text": "This is not a valid bug, as it lacks any substance to deduce if this is a genuine bug or an accident.\\n\\n",
+      "body_length": 105,
+      "rendered_body": "<p>This is not a valid bug, as it lacks any substance to deduce if this is a genuine bug or an accident.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This is not a valid bug, as it lacks any substance to deduce if this is a genuine bug or an accident."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-301170"
+  }
+}

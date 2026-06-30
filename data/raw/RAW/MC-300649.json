@@ -1,0 +1,162 @@
+{
+  "key": "MC-300649",
+  "summary": "Resource pack overlays not working on Linux / macOS",
+  "description": "**Steps to reproduce the issue:**\\n\\n1. Create a resource pack with overlays\\n\\n\\n2. Activate the resource pack\\n\\n\\n\\n**Expected result:**Resource pack overlays also getting applied on Linux / macOS\\n\\n**Actual result:**Resource pack overlays not getting applied.\\n\\n",
+  "created_date": "2025-08-04T13:14:57.217-0700",
+  "updated_date": "2025-08-05T06:24:53.738-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "resolution_date": "2025-08-05T06:24:53.650-0700",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 31,
+  "summary_length": 9,
+  "fetch_timestamp": "2025-08-20T03:10:51.315172",
+  "comments": [
+    {
+      "id": "2080629",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "24x24": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "16x16": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "32x32": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png"
+        },
+        "displayName": "[MCQA] jKakub",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-05T06:24:48.555-0700",
+      "updated": "2025-08-05T06:24:48.555-0700",
+      "body_text": "Hi there!**Thank you for your report**, however, this issue has been temporarily closed as **Awaiting Response**.\\n\\nCould you please provide more details or/and media files. As such we have no repro of this issue.\\n\\n* Could you attach a resource pack affected by this issue?\\n\\n\\n\\n* Can you record and upload a video or screenshot of this issue? \\n\\n\\n\\nThis ticket will automatically reopen when you reply. Thanks!\\n\\n",
+      "body_length": 422,
+      "rendered_body": "<p>Hi there!<br>\n<b>Thank you for your report</b>, however, this issue has been temporarily closed as <font color=\"#ff991f\"><b>Awaiting Response</b></font>.</p>\n\n<p>Could you please provide more details or/and media files. As such we have no repro of this issue.</p>\n\n<ul>\n\t<li>Could you attach a resource pack affected by this issue?</li>\n</ul>\n\n\n<ul>\n\t<li>Can you record and upload a video or screenshot of this issue?&nbsp;</li>\n</ul>\n\n\n<p>This ticket will automatically reopen when you reply.&nbsp;Thanks!</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hi there!"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Thank you for your report",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ", however, this issue has been temporarily closed as "
+              },
+              {
+                "type": "text",
+                "text": "Awaiting Response",
+                "marks": [
+                  {
+                    "type": "strong"
+                  },
+                  {
+                    "type": "textColor",
+                    "attrs": {
+                      "color": "#ff991f"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Could you please provide more details or/and media files. As such we have no repro of this issue."
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Could you attach a resource pack affected by this issue?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Can you record and upload a video or screenshot of this issue? "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will automatically reopen when you reply. Thanks!"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 1
+}

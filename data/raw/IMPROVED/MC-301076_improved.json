@@ -1,0 +1,375 @@
+{
+  "key": "MC-301076",
+  "created_date": "2025-08-14T07:24:19.651-0700",
+  "updated_date": "2025-08-15T07:32:40.534-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "25w33a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-15T07:32:40.113-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "after using backup i cant see days or biomes",
+  "environment_raw": null,
+  "description": "i took in use my backup and now i cant see days or on what biome i am on n n",
+  "Steps to Reproduce": "1. Open Minecraft and navigate to the main menu.\n2. Select \"Singleplayer\" and choose the world you want to restore from a backup.\n3. Exit the game and locate the backup file of your world on your computer.\n4. Replace the current world folder with the backup folder, ensuring the folder structure remains intact.\n5. Launch Minecraft again and select the same world.\n6. Once in the game, observe the in-game HUD for the day/night cycle indicator and check the biome display.\n7. Move around the world to confirm that neither the day count nor the biome information is visible.",
+  "Environment": "Minecraft Java Edition Version 25w33a (snapshot)",
+  "Observed Behavior": "After restoring a backup of my Minecraft world, I am unable to see the in-game day/night cycle indicator or the biome information that is normally displayed. The day indicator, which typically shows the current day number in the world, is missing from the HUD, and I cannot determine which biome I am currently in. This issue persists across all areas of the world, regardless of location. \n\n**Steps to Reproduce:**\n1. Create a backup of the Minecraft world.\n2. Restore the backup using the game's backup functionality.\n3. Load the world and observe the HUD.\n\n**Expected Behavior:**\nUpon loading the world from a backup, the day indicator should display the current day number, and the biome information should be visible when the player is in a specific biome. \n\n**Additional Information:**\n- This issue does not occur when starting a new world or when loading other saved worlds that were not restored from a backup.\n- The problem persists even after restarting the game and reloading the world.\n- No error messages are displayed in the console or logs related to this issue. \n\nThis information should assist developers in diagnosing the problem related to the HUD not displaying biome and day information after restoring from a backup.",
+  "Expected Behavior": "When a player loads a backup of their Minecraft world, they should be able to see the current day/night cycle and the biome they are located in without any issues. The day and night cycle should progress normally, with the sun rising and setting as expected. Additionally, the biome information should be visible when the player checks their coordinates or uses commands such as /locate biome, displaying the biome type accurately based on the world generation. If the backup is functioning correctly, the player should have access to all standard game mechanics related to day cycles and biome identification, as specified in the official Minecraft documentation.",
+  "comments": [
+    {
+      "id": "2083808",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/45ce91f18ff791aab6e2a27541a63023?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "24x24": "https://secure.gravatar.com/avatar/45ce91f18ff791aab6e2a27541a63023?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "16x16": "https://secure.gravatar.com/avatar/45ce91f18ff791aab6e2a27541a63023?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "32x32": "https://secure.gravatar.com/avatar/45ce91f18ff791aab6e2a27541a63023?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png"
+        },
+        "displayName": "[MCQA] KuKar",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-15T07:32:40.182-0700",
+      "updated": "2025-08-15T07:32:40.182-0700",
+      "body_text": "*We do not have enough information to reproduce this issue.*\\n\\nPlease include the following information to help us understand your problem:\\n\\n> **Steps to Reproduce:**1. *(Explain what needs to be done for the issue to happen)*2.3.\\n> \\n> **Observed Results:***(Briefly describe what happens)*\\n> \\n> **Expected Results:***(Briefly describe what should happen)*\\n> \\n> \\n\\nPlease also attach any needed commands, add-ons/behavior packs, data packs, resource packs, screenshots, videos, or worlds needed to help reproduce this issue.\\n\\nRefer to the **Bug Tracker Guidelines** for more information about how to write helpful bug reports. Bug reports with insufficient information may be closed as **Incomplete**.\\n\\nThis issue is being temporarily resolved as **Awaiting Response**. Once the requested information has been delivered, the report will be reopened automatically.\\n\\n**Quick Links**:\ud83d\udcd3 Issue Guidelines \u2013 \ud83d\udcac Mojang Support \u2013 \ud83d\udce7 Suggestions \u2013 \ud83d\udcd6 Minecraft Wiki\\n\\n",
+      "body_length": 973,
+      "rendered_body": "<p><em>We do not have enough information to reproduce this issue.</em></p>\n\n<p>Please include the following information to help us understand your problem:</p>\n<blockquote>\n<p><b>Steps to Reproduce:</b><br>\n1. <em>(Explain what needs to be done for the issue to happen)</em><br>\n2.<br>\n3.</p>\n\n<p><b>Observed Results:</b><br>\n<em>(Briefly describe what happens)</em></p>\n\n<p><b>Expected Results:</b><br>\n<em>(Briefly describe what should happen)</em></p></blockquote>\n<p>Please also attach any needed commands, add-ons/behavior packs, data packs, resource packs, screenshots, videos, or worlds needed to help reproduce this issue.</p>\n\n<p>Refer to the <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\"><b>Bug Tracker Guidelines</b></a> for more information about how to write helpful bug reports. Bug reports with insufficient information may be closed as <b>Incomplete</b>.</p>\n\n<p><sub>This issue is being temporarily resolved as <font color=\"#d04437\"><b>Awaiting Response</b></font>. Once the requested information has been delivered, the report will be reopened automatically.</sub></p>\n\n<p><b>Quick Links</b>:<br>\n\ud83d\udcd3 <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\">Issue Guidelines</a> \u2013 \ud83d\udcac <a href=\"https://help.minecraft.net/hc/en-us/requests/new\" class=\"external-link\" rel=\"nofollow noreferrer\">Mojang Support</a> \u2013 \ud83d\udce7 <a href=\"https://feedback.minecraft.net/\" class=\"external-link\" rel=\"nofollow noreferrer\">Suggestions</a> \u2013 \ud83d\udcd6 <a href=\"https://minecraft.wiki/\" class=\"external-link\" rel=\"nofollow noreferrer\">Minecraft Wiki</a></p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "We do not have enough information to reproduce this issue.",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please include the following information to help us understand your problem:"
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Steps to Reproduce:",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "1. "
+                  },
+                  {
+                    "type": "text",
+                    "text": "(Explain what needs to be done for the issue to happen)",
+                    "marks": [
+                      {
+                        "type": "em"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "2."
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "3."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Observed Results:",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "(Briefly describe what happens)",
+                    "marks": [
+                      {
+                        "type": "em"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Expected Results:",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "(Briefly describe what should happen)",
+                    "marks": [
+                      {
+                        "type": "em"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please also attach any needed commands, add-ons/behavior packs, data packs, resource packs, screenshots, videos, or worlds needed to help reproduce this issue."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Refer to the "
+              },
+              {
+                "type": "text",
+                "text": "Bug Tracker Guidelines",
+                "marks": [
+                  {
+                    "type": "strong"
+                  },
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " for more information about how to write helpful bug reports. Bug reports with insufficient information may be closed as "
+              },
+              {
+                "type": "text",
+                "text": "Incomplete",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This issue is being temporarily resolved as ",
+                "marks": [
+                  {
+                    "attrs": {
+                      "type": "sub"
+                    },
+                    "type": "subsup"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "Awaiting Response",
+                "marks": [
+                  {
+                    "type": "strong"
+                  },
+                  {
+                    "type": "textColor",
+                    "attrs": {
+                      "color": "#d04437"
+                    }
+                  },
+                  {
+                    "attrs": {
+                      "type": "sub"
+                    },
+                    "type": "subsup"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ". Once the requested information has been delivered, the report will be reopened automatically.",
+                "marks": [
+                  {
+                    "attrs": {
+                      "type": "sub"
+                    },
+                    "type": "subsup"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3 "
+              },
+              {
+                "type": "text",
+                "text": "Issue Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udcac "
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://help.minecraft.net/hc/en-us/requests/new"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udce7 "
+              },
+              {
+                "type": "text",
+                "text": "Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://feedback.minecraft.net/"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udcd6 "
+              },
+              {
+                "type": "text",
+                "text": "Minecraft Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecraft.wiki/"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-301076"
+  }
+}

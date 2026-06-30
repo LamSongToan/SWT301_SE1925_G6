@@ -1,0 +1,261 @@
+{
+  "key": "MC-300643",
+  "created_date": "2025-08-04T10:06:29.629-0700",
+  "updated_date": "2025-08-04T10:26:21.254-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8",
+    "25w31a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-04T10:26:20.902-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "1.21.8 not launching on some AMD graphics cards",
+  "environment_raw": null,
+  "description": "Hello, I have been unable to launch the latest version of Minecraft (1.21.8) and the latest snapshot using my AMD rx 7600 xt 16gb. The game will run in the background according to task manager and Minecraft launcher says it is running as well, but no game window appears. With my old nvidia GTX 1050 pc the game WILL open. The AMD card CAN play 1.21.0 and 1.20. Other users on the server i play report similar issues with their AMD graphics cards. I reinstalled the game 3 times with the same result each time. AMD driver version: 32.0.21013.1000, date 5 26 2025. Reproduce the issue: Use an amd rx 7600 xt 16gb or other graphics cards the community cannot launch the game on. Specifications of the AMD pc: 7600 xt 16gb, 32gb ddr5, r7 9800x3d, b650 mobo, 2tb m.2 pcie gen 4. Nvidia pc that COULD run the game: gtx 1050 2GB, r5 4500, 16gb ddr4, 256gb 1tb sata SSDS (2), b450 n n n n",
+  "Steps to Reproduce": "1. Ensure that your PC is equipped with an AMD RX 7600 XT graphics card and has the latest driver version (32.0.21013.1000, dated 5/26/2025) installed.\n2. Open the Minecraft Launcher and log in with your Minecraft account.\n3. Select the latest version of Minecraft (1.21.8) or the latest snapshot from the version selection dropdown.\n4. Click the \"Play\" button to start the game.\n5. Monitor the Task Manager to confirm that the Minecraft process is running in the background.\n6. Check for any error messages or logs in the launcher or in the game's installation directory that may indicate a failure to launch.\n7. Repeat the process after uninstalling and reinstalling the game three times to ensure that the issue persists.\n8. If possible, test launching the game on a different PC with an NVIDIA GTX 1050 graphics card to compare the behavior.",
+  "Environment": "Minecraft Java Edition Versions: 1.21.8, 25w31a (includes snapshots)",
+  "Observed Behavior": "When attempting to launch Minecraft version 1.21.8 using an AMD RX 7600 XT 16GB graphics card, the game does not display a window, despite the Minecraft Launcher indicating that it is running. The Task Manager shows the Minecraft process as active, but no graphical interface appears. This issue does not occur with older versions of the game, such as 1.21.0 and 1.20, which run without problems on the same hardware. \n\nAdditionally, other players using various AMD graphics cards have reported similar launch failures, suggesting a potential compatibility issue with the latest update. The game has been reinstalled three times, and the problem persists across all installations. \n\n**Steps to Reproduce:**\n1. Install Minecraft version 1.21.8 on a system equipped with an AMD RX 7600 XT 16GB graphics card.\n2. Launch the game via the Minecraft Launcher.\n3. Observe that the game process appears in Task Manager, but no game window is displayed.\n\n**System Specifications:**\n- **AMD PC:**\n  - GPU: AMD RX 7600 XT 16GB\n  - CPU: AMD Ryzen 7 9800X3D\n  - RAM: 32GB DDR5\n  - Motherboard: B650\n  - Storage: 2TB M.2 PCIe Gen 4 SSD\n  - AMD Driver Version: 32.0.21013.1000 (Date: 05/26/2025)\n\n- **Nvidia PC (for comparison):**\n  - GPU: Nvidia GTX 1050 2GB\n  - CPU: AMD Ryzen 5 4500\n  - RAM: 16GB DDR4\n  - Storage: 256GB SATA SSD and 1TB SATA SSD (2)\n  - Motherboard: B450\n\nThis detailed account should aid developers in diagnosing the issue affecting AMD graphics cards with the latest version of Minecraft.",
+  "Expected Behavior": "When launching Minecraft version 1.21.8 with an AMD RX 7600 XT 16GB graphics card, the game should open a game window displaying the main menu after the launcher indicates that the game is running. The game should utilize the graphics capabilities of the AMD card without any issues, allowing the player to access all features and functionalities as intended. If the game fails to launch, the player should not see the game running in the background without a visible window. Proper functionality would include smooth loading of the game interface, the ability to join servers, and access to single-player modes without crashes or freezes. Additionally, the game should maintain compatibility with the current AMD drivers, ensuring that users with AMD graphics cards can enjoy the latest updates and features introduced in version 1.21.8.",
+  "comments": [
+    {
+      "id": "2080395",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Renn650",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-04T10:06:30.757-0700",
+      "updated": "2025-08-04T10:06:30.757-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.",
+      "body_length": 162,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "36249ab6-c856-496d-9566-8d396f5b8e86",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "fd47179c-f2cf-4097-ad84-30ed24139202",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2080402",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/32"
+        },
+        "displayName": "[MOD] Greymagic27",
+        "active": true,
+        "timeZone": "Europe/London",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-04T10:26:20.960-0700",
+      "updated": "2025-08-04T10:26:20.960-0700",
+      "body_text": "Please see if community support can help resolve your issue. Please link to this bug report when asking for help with your issue.\\n\\n*Quick Links*:\ud83d\udcd3 Bug Tracker Guidelines -- \ud83d\udcac Community Support -- \ud83d\udce7 Mojang Support (Technical Issues) -- \ud83d\udce7 Microsoft Support (Account Issues) -- \ud83d\udcd3 Project Summary -- \u270d\ufe0f Feedback and Suggestions -- \ud83d\udcd6 Game Wiki\\n\\n",
+      "body_length": 344,
+      "rendered_body": "<p>Please see if community support can help resolve your issue. Please link to this bug report when asking for help with your issue.</p>\n\n<p><em>Quick Links</em>:<br>\n\ud83d\udcd3 <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\">Bug Tracker Guidelines</a> \u2013 \ud83d\udcac <a href=\"https://discord.com/invite/minecraft\" class=\"external-link\" rel=\"nofollow noreferrer\">Community Support</a> \u2013 \ud83d\udce7 <a href=\"https://aka.ms/Minecraft-Support\" class=\"external-link\" rel=\"nofollow noreferrer\">Mojang Support (Technical Issues)</a> \u2013 \ud83d\udce7 <a href=\"https://support.xbox.com/contact-us/\" class=\"external-link\" rel=\"nofollow noreferrer\">Microsoft Support (Account Issues)</a> \u2013 \ud83d\udcd3 <a href=\"https://report.bugs.mojang.com/servicedesk/customer/portal/2\" class=\"external-link\" rel=\"nofollow noreferrer\">Project Summary</a> \u2013 \u270d\ufe0f <a href=\"https://aka.ms/MinecraftFeedbackDiscord\" class=\"external-link\" rel=\"nofollow noreferrer\">Feedback and Suggestions</a> \u2013 \ud83d\udcd6 <a href=\"https://minecraft.wiki/\" class=\"external-link\" rel=\"nofollow noreferrer\">Game Wiki</a></p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please see if community support can help resolve your issue. Please link to this bug report when asking for help with your issue."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3 "
+              },
+              {
+                "type": "text",
+                "text": "Bug Tracker Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udcac "
+              },
+              {
+                "type": "text",
+                "text": "Community Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://discord.com/invite/minecraft"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udce7 "
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support (Technical Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/Minecraft-Support"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udce7 "
+              },
+              {
+                "type": "text",
+                "text": "Microsoft Support (Account Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://support.xbox.com/contact-us/"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udcd3 "
+              },
+              {
+                "type": "text",
+                "text": "Project Summary",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://report.bugs.mojang.com/servicedesk/customer/portal/2"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \u270d\ufe0f "
+              },
+              {
+                "type": "text",
+                "text": "Feedback and Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MinecraftFeedbackDiscord"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udcd6 "
+              },
+              {
+                "type": "text",
+                "text": "Game Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecraft.wiki/"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300643"
+  }
+}

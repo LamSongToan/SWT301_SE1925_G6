@@ -1,0 +1,153 @@
+{
+  "key": "MC-301122",
+  "created_date": "2025-08-15T18:25:25.234-0700",
+  "updated_date": "2025-08-17T12:42:45.968-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "25w33a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-17T12:42:33.750-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Green player dot still shows up on maps put in a item frame",
+  "environment_raw": null,
+  "description": "It works with both item frames and glow item frames, it even stacks if put on multiple item frames and looks very ugly on maps both hold by the player or the item frames n n",
+  "Steps to Reproduce": "1. Create a new Creative world with default settings.\n2. Obtain a map item from the inventory.\n3. Place the map in an item frame by right-clicking on the frame while holding the map.\n4. Observe the green player dot that appears on the map, indicating the location of the item frame.\n5. Remove the map from the item frame and hold it in your hand.\n6. Notice that the green player dot still appears on the map while you are holding it.\n7. Place the map back into the item frame and observe the green dot again.\n8. Repeat steps 3 to 7 with a glow item frame instead of a regular item frame.\n9. Place multiple item frames with the same map in close proximity to each other.\n10. Observe the stacking of green player dots on the maps displayed in the item frames, noting the visual clutter created.",
+  "Environment": "Minecraft Java Edition Version 25w33a (snapshot)",
+  "Observed Behavior": "When a map is placed in either a regular item frame or a glow item frame, a green player marker appears on the map, indicating the location of the item frame itself. This green marker is intended to help players identify their position relative to the map's contents. However, the marker persists even when the map is viewed by a player holding a clone of the original map, leading to multiple overlapping green markers if the map is placed in several item frames. This stacking of markers can create visual clutter, making it difficult for players to discern the actual map information. \n\nAdditionally, the green marker remains fixed in the direction the item frame is facing, regardless of the player's position or orientation. This can result in confusion, as the marker does not accurately represent the player's location when they are viewing the map from a distance or when the player is not directly in line with the item frame. The issue is present in both Java and Bedrock editions, affecting the visual clarity and usability of the maps when displayed in item frames.",
+  "Expected Behavior": "When a map is placed in an item frame, it should display the map correctly without showing a green player dot unless the player is actively holding the map. The item frame should indicate the location of the map with a green pointer only when the player is viewing the map in that specific item frame, and this pointer should not persist or stack when multiple item frames are used. The expected behavior is that the green pointer should accurately reflect the player\u2019s position only when they are holding the map, ensuring that the visual representation remains clear and uncluttered. Each map should maintain its own distinct display without overlapping indicators from other item frames, allowing for a clean and organized presentation of maps in item frames.",
+  "comments": [
+    {
+      "id": "2083915",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Jules",
+        "active": true,
+        "timeZone": "America/Vancouver",
+        "accountType": "customer"
+      },
+      "created": "2025-08-15T18:25:26.144-0700",
+      "updated": "2025-08-15T18:25:26.144-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.",
+      "body_length": 326,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "3107bb83-c09a-4cef-9368-b2c9301866d4",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "56d66928-a140-4ad5-bc76-b76f8e1917a2",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "b39d7159-221c-4096-ad30-82a7b197258d",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "86d6d345-d445-4c3c-8241-00e02b94f85b",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2084258",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/32"
+        },
+        "displayName": "[Mod] Jingy",
+        "active": true,
+        "timeZone": "America/Chicago",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-17T12:42:35.170-0700",
+      "updated": "2025-08-17T12:42:35.170-0700",
+      "body_text": "Please add clear and exact steps to reproduce this issue.\\n\\n",
+      "body_length": 61,
+      "rendered_body": "<p>Please add clear and exact steps to reproduce this issue.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please add clear and exact steps to reproduce this issue."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-301122"
+  }
+}

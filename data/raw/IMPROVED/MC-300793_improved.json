@@ -1,0 +1,91 @@
+{
+  "key": "MC-300793",
+  "created_date": "2025-08-06T17:14:44.045-0700",
+  "updated_date": "2025-08-07T01:00:05.062-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-07T01:00:04.674-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Stopped gaining expeirience",
+  "environment_raw": null,
+  "description": "I died exploring an end city after defeating the ender dragon and havent leveled up since. ive killed plenty of mobs idk whats going on n n n n",
+  "Steps to Reproduce": "1. Create a new Survival world with default settings.\n2. Defeat the Ender Dragon in the End dimension.\n3. Collect the experience orbs that drop after the Ender Dragon is defeated, ensuring you gain levels.\n4. Use the End Gateway that appears after the dragon's defeat to teleport to the outer islands of the End.\n5. Explore the outer islands and locate an End City.\n6. Engage and kill Shulkers or other mobs in the End City to gain experience points.\n7. After dying in the End City, respawn and continue to kill mobs in the End to attempt to gain experience.\n8. Observe that experience points are not being accumulated despite killing multiple mobs.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "After defeating the Ender Dragon, the player successfully accessed an End City and subsequently died during exploration. Since respawning, the player has not gained any experience points, despite killing multiple mobs in the Overworld. \n\n- **Experience Points Not Gaining:** The player has consistently engaged in combat, defeating various mobs such as zombies, skeletons, and creepers, yet the experience bar remains stagnant. \n- **Level Progression:** The player has not advanced in levels since the death, which is unusual as defeating mobs typically yields experience orbs that contribute to leveling up.\n- **Recent Gameplay Context:** This issue began immediately after the player\u2019s death in the End and has persisted through various gameplay sessions, indicating a potential bug related to experience gain after dying in the End dimension.\n- **Game Version:** The player is using the latest version of Minecraft as of October 2023.\n\nThis behavior diverges from expected mechanics, where players should continue to gain experience points from defeating mobs, regardless of prior deaths. Developers should investigate this issue to determine if it is a result of a bug affecting experience gain after dying in the End dimension.",
+  "Expected Behavior": "When a player defeats the Ender Dragon, they should receive a significant amount of experience points, typically between 60 to 78 levels, which are collected as experience orbs that rain down from the sky. After defeating the dragon, the player can explore the End cities and defeat shulkers, which should also grant additional experience points upon their defeat. The player should continue to gain experience as they kill mobs in the End or elsewhere, allowing them to level up as expected. If a player is not gaining experience despite engaging in combat and defeating mobs, this behavior deviates from Minecraft's designed mechanics, where experience accumulation should occur consistently as long as the player is actively participating in combat.",
+  "comments": [
+    {
+      "id": "2081407",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/32"
+        },
+        "displayName": "[MCQA] Blawik",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-07T01:00:04.740-0700",
+      "updated": "2025-08-07T01:00:04.740-0700",
+      "body_text": "Hi!Could you upload a copy of your world? (If it's to big to be uploaded here you can upload it to a One Drive and post a link to it here)\\n\\nThis ticket will automatically reopen when you reply.\\n\\n",
+      "body_length": 199,
+      "rendered_body": "<p>Hi!<br>\nCould you upload a copy of your world? (If it's to big to be uploaded here you can upload it to a One Drive and post a link to it here)</p>\n\n<p>This ticket will automatically reopen when you reply.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hi!"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Could you upload a copy of your world? (If it's to big to be uploaded here you can upload it to a One Drive and post a link to it here)"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will automatically reopen when you reply."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300793"
+  }
+}
