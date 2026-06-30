@@ -1,0 +1,977 @@
+﻿"Issue Key","Summary","Type","Affects Version/s","Labels","Confirmation Status","Category","Resolution","Fix Version/s","Description","Steps to Reproduce","Observed Behavior","Expected Behavior","Environment"
+"MC-300962","Unable to exchange the same items in the backpack normally.","Bug","1.21.8","None","Unconfirmed","(Unassigned)","Awaiting Response","None","Take fireworks as an example. When you press the E key to open your inventory and swap the positions of two sets of fireworks, you will find that if the number of fireworks selected with the mouse is less than the number being swapped, the exchange cannot be completed, no matter how many times you left-click. If the number of fireworks selected with the mouse is greater than the number of fireworks being swapped, the two sets of items can be exchanged normally. This issue only occurs with certain blocks, such as fireworks and scaffolding. n n
+
+[Steps to Reproduce]
+1. Create a new Survival world with default settings.
+2. Obtain at least two stacks of Firework Rockets in your inventory.
+3. Press the E key to open your inventory.
+4. Click and hold on one stack of Firework Rockets to select it.
+5. Attempt to swap the selected stack with another stack of Firework Rockets by dragging it to the slot of the other stack.
+6. Ensure that the number of Firework Rockets in the selected stack is less than the number in the other stack.
+7. Observe that the swap does not complete, regardless of how many times you left-click.
+8. Now, select a stack of Firework Rockets that has more items than the stack you want to swap with.
+9. Attempt to swap the stacks again by dragging and dropping.
+10. Observe that the swap completes successfully.
+
+[Observed Behavior]
+When attempting to swap two stacks of fireworks in the inventory (accessed by pressing the E key), a specific issue arises based on the quantity of items involved in the exchange. If the number of fireworks currently selected with the mouse cursor is less than the number of fireworks in the stack being swapped, the exchange fails to occur, regardless of how many times the player left-clicks. This means that if a player tries to move a larger stack of fireworks into a slot occupied by a smaller stack, the game does not allow the transaction to complete.
+
+In contrast, if the number of fireworks selected with the mouse is greater than the number of fireworks in the stack being swapped, the exchange proceeds normally without any issues. This behavior is inconsistent and appears to be limited to specific item types, including fireworks and scaffolding. The inability to exchange stacks of the same item under certain conditions can lead to confusion and disrupt the inventory management experience for players. 
+
+The issue has been observed consistently in both single-player and multiplayer environments, and it is not related to the player's inventory being full or other standard inventory mechanics. It is crucial for developers to investigate this behavior to ensure smoother item management and user experience in future updates.
+
+[Expected Behavior]
+When attempting to swap two sets of fireworks in the inventory, the expected behavior is that the items should exchange positions regardless of the quantity selected. If a player selects a number of fireworks that is less than the amount being swapped, the game should allow the player to successfully complete the exchange with a left-click. Conversely, if the number of fireworks selected is greater than the number being swapped, the exchange should also proceed without issue. This functionality should apply uniformly to all stackable items in the inventory, ensuring a consistent and intuitive user experience when managing items. The game should not exhibit any restrictions or failures in item swapping for fireworks or similar stackable items, adhering to the established mechanics of inventory management as outlined in official Minecraft documentation.
+
+[Environment]
+Minecraft Java Edition Version 1.21.8","1. Create a new Survival world with default settings.
+2. Obtain at least two stacks of Firework Rockets in your inventory.
+3. Press the E key to open your inventory.
+4. Click and hold on one stack of Firework Rockets to select it.
+5. Attempt to swap the selected stack with another stack of Firework Rockets by dragging it to the slot of the other stack.
+6. Ensure that the number of Firework Rockets in the selected stack is less than the number in the other stack.
+7. Observe that the swap does not complete, regardless of how many times you left-click.
+8. Now, select a stack of Firework Rockets that has more items than the stack you want to swap with.
+9. Attempt to swap the stacks again by dragging and dropping.
+10. Observe that the swap completes successfully.","When attempting to swap two stacks of fireworks in the inventory (accessed by pressing the E key), a specific issue arises based on the quantity of items involved in the exchange. If the number of fireworks currently selected with the mouse cursor is less than the number of fireworks in the stack being swapped, the exchange fails to occur, regardless of how many times the player left-clicks. This means that if a player tries to move a larger stack of fireworks into a slot occupied by a smaller stack, the game does not allow the transaction to complete.
+
+In contrast, if the number of fireworks selected with the mouse is greater than the number of fireworks in the stack being swapped, the exchange proceeds normally without any issues. This behavior is inconsistent and appears to be limited to specific item types, including fireworks and scaffolding. The inability to exchange stacks of the same item under certain conditions can lead to confusion and disrupt the inventory management experience for players. 
+
+The issue has been observed consistently in both single-player and multiplayer environments, and it is not related to the player's inventory being full or other standard inventory mechanics. It is crucial for developers to investigate this behavior to ensure smoother item management and user experience in future updates.","When attempting to swap two sets of fireworks in the inventory, the expected behavior is that the items should exchange positions regardless of the quantity selected. If a player selects a number of fireworks that is less than the amount being swapped, the game should allow the player to successfully complete the exchange with a left-click. Conversely, if the number of fireworks selected is greater than the number being swapped, the exchange should also proceed without issue. This functionality should apply uniformly to all stackable items in the inventory, ensuring a consistent and intuitive user experience when managing items. The game should not exhibit any restrictions or failures in item swapping for fireworks or similar stackable items, adhering to the established mechanics of inventory management as outlined in official Minecraft documentation.","Minecraft Java Edition Version 1.21.8"
+"MC-299218","full screen bug","Bug","1.21.6; 1.21.7 Release Candidate 2","None","Unconfirmed","(Unassigned)","Cannot Reproduce","None","When turning the full screen on or off, the game freezes for a while, about five seconds, and then the jukebox goes silent, and I don t notice anything else. n n
+
+[Steps to Reproduce]
+1. Launch Minecraft and enter the main menu.
+2. Select ""Options"" from the menu.
+3. Click on ""Video Settings.""
+4. Toggle the ""Fullscreen"" option to turn it on or off.
+5. Observe the game for approximately five seconds as it freezes.
+6. After the freeze, check the jukebox to see if it has gone silent.
+
+[Observed Behavior]
+When toggling fullscreen mode on or off in Minecraft, the game experiences a noticeable freeze lasting approximately five seconds. During this period, the graphical interface becomes unresponsive, and player input is ignored. After the freeze, the audio from the jukebox ceases, resulting in a silent environment. The game does not display any additional errors or visual anomalies following the transition. This behavior occurs consistently, regardless of the system specifications or settings, indicating a potential issue with how the game handles fullscreen transitions. No other gameplay elements appear to be affected during or after this process.
+
+[Expected Behavior]
+When toggling fullscreen mode on or off, the game should smoothly transition without freezing or causing significant delays. The audio from the jukebox should continue playing without interruption, allowing for a seamless user experience. The game should maintain its normal performance levels, ensuring that there are no freezes or stutters during the transition. Players should be able to interact with the game immediately after the transition, with all visual and audio elements functioning as intended, in accordance with Minecraft's designed behavior for fullscreen mode.
+
+[Environment]
+Minecraft Java Edition Versions: 1.21.6, 1.21.7 Release Candidate 2","1. Launch Minecraft and enter the main menu.
+2. Select ""Options"" from the menu.
+3. Click on ""Video Settings.""
+4. Toggle the ""Fullscreen"" option to turn it on or off.
+5. Observe the game for approximately five seconds as it freezes.
+6. After the freeze, check the jukebox to see if it has gone silent.","When toggling fullscreen mode on or off in Minecraft, the game experiences a noticeable freeze lasting approximately five seconds. During this period, the graphical interface becomes unresponsive, and player input is ignored. After the freeze, the audio from the jukebox ceases, resulting in a silent environment. The game does not display any additional errors or visual anomalies following the transition. This behavior occurs consistently, regardless of the system specifications or settings, indicating a potential issue with how the game handles fullscreen transitions. No other gameplay elements appear to be affected during or after this process.","When toggling fullscreen mode on or off, the game should smoothly transition without freezing or causing significant delays. The audio from the jukebox should continue playing without interruption, allowing for a seamless user experience. The game should maintain its normal performance levels, ensuring that there are no freezes or stutters during the transition. Players should be able to interact with the game immediately after the transition, with all visual and audio elements functioning as intended, in accordance with Minecraft's designed behavior for fullscreen mode.","Minecraft Java Edition Versions: 1.21.6, 1.21.7 Release Candidate 2"
+"MC-301018","Pausing the game does only pause the game Igt","Bug","25w33a","None","Unconfirmed","(Unassigned)","Incomplete","None","Pausing the game does only pause the game Igt n n
+
+[Steps to Reproduce]
+1. Launch Minecraft and enter a singleplayer world in either Creative or Survival mode.
+2. Begin gameplay by moving around and interacting with the environment.
+3. Press the Esc key to open the pause menu.
+4. Observe that the game pauses as intended, preventing player movement and interactions.
+5. While in the pause menu, wait for a few moments and note that the in-game time continues to progress in the background.
+6. Exit the pause menu by pressing the Esc key again.
+7. Confirm that the game resumes normally and that the in-game time reflects the progression that occurred while the game was paused.
+
+[Observed Behavior]
+When the player pauses the game using the default key (Esc), the game enters a pause state where all in-game actions are halted. However, this pause functionality only affects the local player's gameplay experience. In Java Edition, the game effectively freezes, preventing any movement from entities, including mobs, and halting environmental changes such as weather effects or block interactions. 
+
+In Bedrock Edition, the pause functionality behaves differently. While the game does pause for the individual player, it does not pause the game world for other players in a multiplayer environment. This means that if a player accesses the pause menu, other players can continue to interact with the world, including moving, mining, and engaging with mobs. 
+
+Furthermore, in Bedrock Edition, certain game mechanics that should cease during a pause (like fire spread or mob movement) continue to function normally. This discrepancy in pause behavior between the two editions can lead to confusion, especially in multiplayer scenarios, as the paused player remains unaware of ongoing actions occurring around them. 
+
+Overall, the pause function does not universally stop all game mechanics for all players, particularly in Bedrock Edition, where the game continues to operate in the background even when one player is paused.
+
+[Expected Behavior]
+When the game is paused by pressing the Esc key, all in-game actions should cease, allowing the player to access the pause menu without any time progression. This includes stopping the movement of mobs, preventing the spread of fire, and halting any environmental changes such as weather effects. The game should remain in a completely frozen state until the player chooses to resume gameplay, ensuring that no unintended actions occur during this time. This behavior aligns with the intended functionality of the pause feature as described in official Minecraft documentation.
+
+[Environment]
+Minecraft Java Edition Version 25w33a (snapshot)","1. Launch Minecraft and enter a singleplayer world in either Creative or Survival mode.
+2. Begin gameplay by moving around and interacting with the environment.
+3. Press the Esc key to open the pause menu.
+4. Observe that the game pauses as intended, preventing player movement and interactions.
+5. While in the pause menu, wait for a few moments and note that the in-game time continues to progress in the background.
+6. Exit the pause menu by pressing the Esc key again.
+7. Confirm that the game resumes normally and that the in-game time reflects the progression that occurred while the game was paused.","When the player pauses the game using the default key (Esc), the game enters a pause state where all in-game actions are halted. However, this pause functionality only affects the local player's gameplay experience. In Java Edition, the game effectively freezes, preventing any movement from entities, including mobs, and halting environmental changes such as weather effects or block interactions. 
+
+In Bedrock Edition, the pause functionality behaves differently. While the game does pause for the individual player, it does not pause the game world for other players in a multiplayer environment. This means that if a player accesses the pause menu, other players can continue to interact with the world, including moving, mining, and engaging with mobs. 
+
+Furthermore, in Bedrock Edition, certain game mechanics that should cease during a pause (like fire spread or mob movement) continue to function normally. This discrepancy in pause behavior between the two editions can lead to confusion, especially in multiplayer scenarios, as the paused player remains unaware of ongoing actions occurring around them. 
+
+Overall, the pause function does not universally stop all game mechanics for all players, particularly in Bedrock Edition, where the game continues to operate in the background even when one player is paused.","When the game is paused by pressing the Esc key, all in-game actions should cease, allowing the player to access the pause menu without any time progression. This includes stopping the movement of mobs, preventing the spread of fire, and halting any environmental changes such as weather effects. The game should remain in a completely frozen state until the player chooses to resume gameplay, ensuring that no unintended actions occur during this time. This behavior aligns with the intended functionality of the pause feature as described in official Minecraft documentation.","Minecraft Java Edition Version 25w33a (snapshot)"
+"MC-300634","It some time lag aur hang for some mili seconds near trapdoor or while climbing on stairs","Bug","25w32a","None","Unconfirmed","(Unassigned)","Awaiting Response","None","It some time lag aur hang for some mili seconds near trapdoor or while climbing on stairs . My device is samsung m31 . It happens in my device and as well as with my friends also. n n
+
+[Steps to Reproduce]
+1. Launch Minecraft on a Samsung M31 device.
+2. Create a new Survival world with default settings.
+3. Locate or build a structure that includes a trapdoor and a staircase.
+4. Position yourself near the trapdoor and open it.
+5. Walk back and forth while standing close to the open trapdoor for approximately 10 seconds.
+6. Climb up and down the staircase while moving in a straight line.
+7. Repeat steps 4 to 6 multiple times to observe the lag or hang for a few milliseconds during the interactions. 
+8. Note if the lag occurs consistently with other players on similar devices.
+
+[Observed Behavior]
+Players experience intermittent lag or stuttering for a few milliseconds when interacting with trapdoors or while climbing stairs. This issue occurs on a Samsung M31 device and has been reported by multiple users, indicating that it may not be an isolated incident. The lag manifests as a noticeable delay in movement or responsiveness, particularly when the player is near a trapdoor or ascending/descending stairs. This behavior affects the smoothness of gameplay, making it difficult to navigate these blocks effectively. The problem persists across different game sessions and appears to be consistent among friends using similar devices. Further investigation is needed to determine if this is related to device performance, game optimization, or specific interactions with these blocks.
+
+[Expected Behavior]
+When approaching a trapdoor or climbing stairs, the player should experience smooth and continuous movement without any noticeable lag or interruptions. The game should accurately register the player's input, allowing for seamless transitions as they interact with trapdoors or ascend/descend stairs. Specifically, when a player interacts with a trapdoor, it should open or close instantly without causing any delay, and while climbing stairs, the player's movement should remain fluid, maintaining the expected climbing speed without any stuttering or hanging. This behavior aligns with Minecraft's design principles, ensuring that the game runs efficiently and provides a consistent user experience across all devices.
+
+[Environment]
+Minecraft Java Edition Version 25w32a (snapshot)","1. Launch Minecraft on a Samsung M31 device.
+2. Create a new Survival world with default settings.
+3. Locate or build a structure that includes a trapdoor and a staircase.
+4. Position yourself near the trapdoor and open it.
+5. Walk back and forth while standing close to the open trapdoor for approximately 10 seconds.
+6. Climb up and down the staircase while moving in a straight line.
+7. Repeat steps 4 to 6 multiple times to observe the lag or hang for a few milliseconds during the interactions. 
+8. Note if the lag occurs consistently with other players on similar devices.","Players experience intermittent lag or stuttering for a few milliseconds when interacting with trapdoors or while climbing stairs. This issue occurs on a Samsung M31 device and has been reported by multiple users, indicating that it may not be an isolated incident. The lag manifests as a noticeable delay in movement or responsiveness, particularly when the player is near a trapdoor or ascending/descending stairs. This behavior affects the smoothness of gameplay, making it difficult to navigate these blocks effectively. The problem persists across different game sessions and appears to be consistent among friends using similar devices. Further investigation is needed to determine if this is related to device performance, game optimization, or specific interactions with these blocks.","When approaching a trapdoor or climbing stairs, the player should experience smooth and continuous movement without any noticeable lag or interruptions. The game should accurately register the player's input, allowing for seamless transitions as they interact with trapdoors or ascend/descend stairs. Specifically, when a player interacts with a trapdoor, it should open or close instantly without causing any delay, and while climbing stairs, the player's movement should remain fluid, maintaining the expected climbing speed without any stuttering or hanging. This behavior aligns with Minecraft's design principles, ensuring that the game runs efficiently and provides a consistent user experience across all devices.","Minecraft Java Edition Version 25w32a (snapshot)"
+"MC-299909","Failed to load texture for profile","Bug","1.21.8","None","Unconfirmed","(Unassigned)","Cannot Reproduce","None","Cant load skin texture. Use vanilla. Skin selected in browser launcher. After start play in singleplayer multiplayer, after some time i got an error in console n n java.util.concurrent.CompletionException: java.io.UncheckedIOException: java.net.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond n n n nhttp - protocol not work for downloading, replace it with httpsWhen try to download skin from java application with http - connection time out always, with https downloading process is done n n
+
+[Steps to Reproduce]
+1. Open the Minecraft Launcher and log in with your account.
+2. Navigate to the ""Skins"" section of the launcher.
+3. Select a skin from the available options or upload a custom skin that is 64x64 pixels in size.
+4. Set the selected skin as your active skin.
+5. Start a new Singleplayer world or join an existing Multiplayer server.
+6. Wait for a few minutes while playing in the world or on the server.
+7. Open the console by pressing F3 + T to monitor for any error messages.
+8. Observe the console for the error message: ""java.util.concurrent.CompletionException: java.io.UncheckedIOException: java.net.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.""
+9. Attempt to download the skin again using an HTTP connection and note that it fails due to a timeout.
+10. Change the download URL to use HTTPS instead of HTTP and verify that the skin downloads successfully.
+
+[Observed Behavior]
+When attempting to load a player skin in Minecraft Java Edition, the game fails to retrieve the skin texture, resulting in an error message in the console: ""Failed to load texture for profile."" This issue occurs after selecting a skin through the browser launcher and starting a singleplayer or multiplayer game. After some time, a `java.util.concurrent.CompletionException` is thrown, indicating a failure to establish a connection due to a `java.io.UncheckedIOException` caused by a `java.net.SocketException`. The specific error message states: ""A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.""
+
+The underlying issue appears to be related to the use of the HTTP protocol for downloading skin textures, which consistently results in connection timeouts. In contrast, when attempting to download the skin using HTTPS, the process completes successfully without errors. This suggests that the game's current implementation for fetching skin textures over HTTP is unreliable, leading to frequent failures in loading player skins. It is recommended that the game replace HTTP connections with HTTPS to ensure successful downloads and improve overall reliability in loading player skins.
+
+[Expected Behavior]
+When launching Minecraft and selecting a skin through the browser launcher, the game should successfully load the chosen skin without any errors or timeouts. The skin should be displayed correctly in both singleplayer and multiplayer modes, reflecting the selected texture as specified in the player's profile. If the game encounters issues with loading the skin due to network protocols, it should automatically attempt to use a secure HTTPS connection instead of HTTP, ensuring that the skin downloads without interruption. The console should not display any errors related to connection timeouts or socket exceptions, and gameplay should continue smoothly without affecting the player's experience or access to their custom skin.
+
+[Environment]
+Minecraft Java Edition Version 1.21.8","1. Open the Minecraft Launcher and log in with your account.
+2. Navigate to the ""Skins"" section of the launcher.
+3. Select a skin from the available options or upload a custom skin that is 64x64 pixels in size.
+4. Set the selected skin as your active skin.
+5. Start a new Singleplayer world or join an existing Multiplayer server.
+6. Wait for a few minutes while playing in the world or on the server.
+7. Open the console by pressing F3 + T to monitor for any error messages.
+8. Observe the console for the error message: ""java.util.concurrent.CompletionException: java.io.UncheckedIOException: java.net.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.""
+9. Attempt to download the skin again using an HTTP connection and note that it fails due to a timeout.
+10. Change the download URL to use HTTPS instead of HTTP and verify that the skin downloads successfully.","When attempting to load a player skin in Minecraft Java Edition, the game fails to retrieve the skin texture, resulting in an error message in the console: ""Failed to load texture for profile."" This issue occurs after selecting a skin through the browser launcher and starting a singleplayer or multiplayer game. After some time, a `java.util.concurrent.CompletionException` is thrown, indicating a failure to establish a connection due to a `java.io.UncheckedIOException` caused by a `java.net.SocketException`. The specific error message states: ""A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.""
+
+The underlying issue appears to be related to the use of the HTTP protocol for downloading skin textures, which consistently results in connection timeouts. In contrast, when attempting to download the skin using HTTPS, the process completes successfully without errors. This suggests that the game's current implementation for fetching skin textures over HTTP is unreliable, leading to frequent failures in loading player skins. It is recommended that the game replace HTTP connections with HTTPS to ensure successful downloads and improve overall reliability in loading player skins.","When launching Minecraft and selecting a skin through the browser launcher, the game should successfully load the chosen skin without any errors or timeouts. The skin should be displayed correctly in both singleplayer and multiplayer modes, reflecting the selected texture as specified in the player's profile. If the game encounters issues with loading the skin due to network protocols, it should automatically attempt to use a secure HTTPS connection instead of HTTP, ensuring that the skin downloads without interruption. The console should not display any errors related to connection timeouts or socket exceptions, and gameplay should continue smoothly without affecting the player's experience or access to their custom skin.","Minecraft Java Edition Version 1.21.8"
+"MC-300861","Infinite blocks","Bug","25w32a","None","Unconfirmed","(Unassigned)","Awaiting Response","None","Blocks that are pushed by a piston when placed in creative mode will cause them to respawn after destruction and will not fall n n
+
+[Steps to Reproduce]
+1. Create a new Creative world with default settings.
+2. Enable cheats if necessary to access all blocks.
+3. Select a piston from the inventory.
+4. Place the piston facing any direction on the ground.
+5. Select a block that can be pushed by a piston (e.g., dirt, stone, or any non-indestructible block).
+6. Place the selected block directly in front of the piston.
+7. Activate the piston using a Redstone signal (e.g., place a Redstone Torch next to the piston).
+8. Observe the block being pushed by the piston.
+9. While the block is pushed, break the block with any tool or by hand.
+10. Wait for the block to respawn in the same position after it has been destroyed.
+11. Confirm that the block does not fall or behave as expected when destroyed.
+
+[Observed Behavior]
+When a block that is capable of being pushed by a piston is placed in Creative mode and subsequently destroyed, it will immediately respawn at its original location instead of dropping as an item. This behavior occurs regardless of the block type, as long as it is one that can be pushed by a piston (e.g., regular blocks like dirt, stone, etc.). 
+
+Additionally, these blocks do not exhibit gravity mechanics; they will not fall if the block beneath them is removed. Instead, they appear to be anchored in place, effectively creating an infinite supply of that block type. This issue can be replicated by performing the following steps:
+
+1. Enter Creative mode in a Minecraft world.
+2. Place a block that can be pushed by a piston (e.g., dirt).
+3. Use a piston to push the block.
+4. Destroy the block while it is being pushed.
+
+Upon destruction, the block will reappear at its original position instead of being removed from the game, leading to an infinite loop of block generation. This unintended behavior can disrupt gameplay and mechanics that rely on block destruction and gravity, such as redstone contraptions and building structures.
+
+[Expected Behavior]
+When a block is pushed by a piston in Creative mode, it should be destroyed and not respawn upon destruction. The block should behave according to standard game mechanics, where it is removed from the game world without reappearing. Additionally, if the block is a gravity-affected block (like sand or gravel), it should fall down to the block below it if there is no solid block supporting it. The intended behavior is that players can manipulate blocks freely in Creative mode without experiencing unintended respawning or falling issues.
+
+[Environment]
+Minecraft Java Edition Version 25w32a (snapshot)","1. Create a new Creative world with default settings.
+2. Enable cheats if necessary to access all blocks.
+3. Select a piston from the inventory.
+4. Place the piston facing any direction on the ground.
+5. Select a block that can be pushed by a piston (e.g., dirt, stone, or any non-indestructible block).
+6. Place the selected block directly in front of the piston.
+7. Activate the piston using a Redstone signal (e.g., place a Redstone Torch next to the piston).
+8. Observe the block being pushed by the piston.
+9. While the block is pushed, break the block with any tool or by hand.
+10. Wait for the block to respawn in the same position after it has been destroyed.
+11. Confirm that the block does not fall or behave as expected when destroyed.","When a block that is capable of being pushed by a piston is placed in Creative mode and subsequently destroyed, it will immediately respawn at its original location instead of dropping as an item. This behavior occurs regardless of the block type, as long as it is one that can be pushed by a piston (e.g., regular blocks like dirt, stone, etc.). 
+
+Additionally, these blocks do not exhibit gravity mechanics; they will not fall if the block beneath them is removed. Instead, they appear to be anchored in place, effectively creating an infinite supply of that block type. This issue can be replicated by performing the following steps:
+
+1. Enter Creative mode in a Minecraft world.
+2. Place a block that can be pushed by a piston (e.g., dirt).
+3. Use a piston to push the block.
+4. Destroy the block while it is being pushed.
+
+Upon destruction, the block will reappear at its original position instead of being removed from the game, leading to an infinite loop of block generation. This unintended behavior can disrupt gameplay and mechanics that rely on block destruction and gravity, such as redstone contraptions and building structures.","When a block is pushed by a piston in Creative mode, it should be destroyed and not respawn upon destruction. The block should behave according to standard game mechanics, where it is removed from the game world without reappearing. Additionally, if the block is a gravity-affected block (like sand or gravel), it should fall down to the block below it if there is no solid block supporting it. The intended behavior is that players can manipulate blocks freely in Creative mode without experiencing unintended respawning or falling issues.","Minecraft Java Edition Version 25w32a (snapshot)"
+"MC-300776","Players do not gain immediate acceleration when flying downwards using an elytra with fireworks as a result of gravity.","Bug","1.21.8; 25w32a","None","Unconfirmed","(Unassigned)","Awaiting Response","None","Currently, when flying downward with fireworks using an elytra, the player does not gain immediate acceleration like they would with a Riptide trident. Instead, they must wait for the firework boost to expire before gravity takes full effect. It would improve control and consistency if downward boosts provided immediate acceleration, similar to Riptide tridents. Not sure if this is intended behavior or an oversight. n n n n(This probably affects all versions with elytra but i don t know how to choose all versions in the affects versions section above) n n
+
+[Steps to Reproduce]
+1. Create a new Creative world with default settings.
+2. Equip an Elytra in the chestplate slot.
+3. Obtain Firework Rockets from the Creative inventory.
+4. Ascend to a height of at least 50 blocks above the ground.
+5. Activate the Elytra by double-tapping the jump key while falling.
+6. While gliding, use a Firework Rocket by right-clicking it in the air to propel yourself downwards.
+7. Observe the acceleration and speed gained as you descend with the Firework Rocket.
+8. Note the delay in acceleration compared to the immediate acceleration experienced when using a Riptide trident in a similar downward motion.
+
+[Observed Behavior]
+When a player is flying downwards using an elytra and activates a firework rocket, they do not experience immediate acceleration as expected. Instead, the player must wait for the duration of the firework rocket's boost to expire before gravity begins to take full effect on their descent. This behavior contrasts with the mechanics of a Riptide trident, which grants immediate acceleration upon activation, allowing for more responsive control during flight. 
+
+The current mechanics result in a delay in acceleration, making it challenging for players to navigate effectively while descending. This can lead to unintended crashes or difficulties in controlling the flight path, particularly in scenarios requiring precision, such as landing or avoiding obstacles. 
+
+The expected behavior would allow players to gain immediate downward acceleration upon using a firework rocket while gliding, similar to the instant speed boost provided by a Riptide trident. This would enhance the overall control and consistency of elytra flight mechanics, making it easier for players to maneuver during downward flights. 
+
+This issue likely affects all versions of Minecraft that include elytra and firework rockets, as the core mechanics of these items remain consistent across platforms.
+
+[Expected Behavior]
+When using an elytra and activating a firework rocket while flying downwards, the player should experience immediate acceleration in their descent, similar to the effect provided by a Riptide trident. This means that as soon as the firework is activated, the player should feel a boost in speed due to gravity, allowing for better control and responsiveness during flight. The elytra's mechanics should enable the player to seamlessly integrate the firework boost into their flight path without the delay currently experienced, enhancing the overall flight experience. This behavior aligns with the intended functionality of fireworks as a means to augment movement while using elytra, allowing players to maneuver effectively and maintain a consistent speed during downward flights.
+
+[Environment]
+Minecraft Java Edition Versions: 1.21.8, 25w32a (includes snapshots)","1. Create a new Creative world with default settings.
+2. Equip an Elytra in the chestplate slot.
+3. Obtain Firework Rockets from the Creative inventory.
+4. Ascend to a height of at least 50 blocks above the ground.
+5. Activate the Elytra by double-tapping the jump key while falling.
+6. While gliding, use a Firework Rocket by right-clicking it in the air to propel yourself downwards.
+7. Observe the acceleration and speed gained as you descend with the Firework Rocket.
+8. Note the delay in acceleration compared to the immediate acceleration experienced when using a Riptide trident in a similar downward motion.","When a player is flying downwards using an elytra and activates a firework rocket, they do not experience immediate acceleration as expected. Instead, the player must wait for the duration of the firework rocket's boost to expire before gravity begins to take full effect on their descent. This behavior contrasts with the mechanics of a Riptide trident, which grants immediate acceleration upon activation, allowing for more responsive control during flight. 
+
+The current mechanics result in a delay in acceleration, making it challenging for players to navigate effectively while descending. This can lead to unintended crashes or difficulties in controlling the flight path, particularly in scenarios requiring precision, such as landing or avoiding obstacles. 
+
+The expected behavior would allow players to gain immediate downward acceleration upon using a firework rocket while gliding, similar to the instant speed boost provided by a Riptide trident. This would enhance the overall control and consistency of elytra flight mechanics, making it easier for players to maneuver during downward flights. 
+
+This issue likely affects all versions of Minecraft that include elytra and firework rockets, as the core mechanics of these items remain consistent across platforms.","When using an elytra and activating a firework rocket while flying downwards, the player should experience immediate acceleration in their descent, similar to the effect provided by a Riptide trident. This means that as soon as the firework is activated, the player should feel a boost in speed due to gravity, allowing for better control and responsiveness during flight. The elytra's mechanics should enable the player to seamlessly integrate the firework boost into their flight path without the delay currently experienced, enhancing the overall flight experience. This behavior aligns with the intended functionality of fireworks as a means to augment movement while using elytra, allowing players to maneuver effectively and maintain a consistent speed during downward flights.","Minecraft Java Edition Versions: 1.21.8, 25w32a (includes snapshots)"
+"MC-300107","Oxidised Copper Golem doesn t turn into Oxidised Copper Golem Statue","Bug","25w31a","None","Unconfirmed","(Unassigned)","Cannot Reproduce","None","Description: Oxidised Copper Golem doesn t turn into Oxidised Copper Golem Statue n n Ways to Reproduce: Create a new creative world, and use the Oxidised Copper Block and Carved Pumpking items to create multiple Copper Golems n nAdditionally you can do tick rate 400 or something like that (note: changing the randomtickspeed doesn t affect Copper Golems and it is already reported as a bug) n n Expected Result: The Oxidised Copper Golems would become Oxidised Copper Golem Statues n n Observed Result: They don t n n
+
+[Steps to Reproduce]
+1. Create a new Creative world with default settings.
+2. In your inventory, locate and select the Oxidized Copper Block and Carved Pumpkin items.
+3. Place the Oxidized Copper Block on the ground.
+4. Use the Carved Pumpkin on top of the Oxidized Copper Block to create a Copper Golem.
+5. Repeat steps 3 and 4 to create multiple Copper Golems in the world.
+6. Wait for a period of time to allow the Copper Golems to oxidize naturally.
+7. Observe the Copper Golems to see if they transform into Oxidized Copper Golem Statues.
+8. Note that changing the random tick speed (e.g., setting it to 400) does not affect the transformation of the Copper Golems into statues.
+
+[Observed Behavior]
+The Oxidised Copper Golem does not transition into the Oxidised Copper Golem Statue as expected. Upon creating multiple Copper Golems using Oxidised Copper Blocks and Carved Pumpkins in a new creative world, the golems remain in their animated form indefinitely. Despite waiting for a significant duration and even attempting to increase the tick rate to 400 (noting that changing the random tick speed does not influence the behavior of Copper Golems), the transformation does not occur. 
+
+This behavior contradicts the expected result, where the Oxidised Copper Golem should eventually become a stationary Oxidised Copper Golem Statue after a certain period of time or specific conditions being met. The lack of transformation indicates a potential issue with the mechanics governing the lifecycle of the Copper Golem, specifically regarding its oxidation and subsequent conversion into a statue form. 
+
+The inability for the Copper Golem to transition into its statue form may hinder gameplay experiences that rely on the aesthetic and functional aspects of the Oxidised Copper Golem Statue. Further investigation into the triggering conditions for this transformation is necessary to resolve this bug.
+
+[Expected Behavior]
+When multiple Copper Golems are created using Oxidised Copper Blocks and Carved Pumpkins, the expected behavior is that these Copper Golems should gradually oxidize over time and eventually transform into Oxidised Copper Golem Statues. This transformation should occur according to the game's mechanics, where the Copper Golem enters a state of oxidation, leading to its conversion into the statue form. The process should be visually represented with appropriate animations and effects, reflecting the intended functionality as outlined in Minecraft's design for Copper Golems and their interactions with oxidation.
+
+[Environment]
+Minecraft Java Edition Version 25w31a (snapshot)","1. Create a new Creative world with default settings.
+2. In your inventory, locate and select the Oxidized Copper Block and Carved Pumpkin items.
+3. Place the Oxidized Copper Block on the ground.
+4. Use the Carved Pumpkin on top of the Oxidized Copper Block to create a Copper Golem.
+5. Repeat steps 3 and 4 to create multiple Copper Golems in the world.
+6. Wait for a period of time to allow the Copper Golems to oxidize naturally.
+7. Observe the Copper Golems to see if they transform into Oxidized Copper Golem Statues.
+8. Note that changing the random tick speed (e.g., setting it to 400) does not affect the transformation of the Copper Golems into statues.","The Oxidised Copper Golem does not transition into the Oxidised Copper Golem Statue as expected. Upon creating multiple Copper Golems using Oxidised Copper Blocks and Carved Pumpkins in a new creative world, the golems remain in their animated form indefinitely. Despite waiting for a significant duration and even attempting to increase the tick rate to 400 (noting that changing the random tick speed does not influence the behavior of Copper Golems), the transformation does not occur. 
+
+This behavior contradicts the expected result, where the Oxidised Copper Golem should eventually become a stationary Oxidised Copper Golem Statue after a certain period of time or specific conditions being met. The lack of transformation indicates a potential issue with the mechanics governing the lifecycle of the Copper Golem, specifically regarding its oxidation and subsequent conversion into a statue form. 
+
+The inability for the Copper Golem to transition into its statue form may hinder gameplay experiences that rely on the aesthetic and functional aspects of the Oxidised Copper Golem Statue. Further investigation into the triggering conditions for this transformation is necessary to resolve this bug.","When multiple Copper Golems are created using Oxidised Copper Blocks and Carved Pumpkins, the expected behavior is that these Copper Golems should gradually oxidize over time and eventually transform into Oxidised Copper Golem Statues. This transformation should occur according to the game's mechanics, where the Copper Golem enters a state of oxidation, leading to its conversion into the statue form. The process should be visually represented with appropriate animations and effects, reflecting the intended functionality as outlined in Minecraft's design for Copper Golems and their interactions with oxidation.","Minecraft Java Edition Version 25w31a (snapshot)"
+"MC-300598","fire animation on mobs","Bug","1.21.8","None","Unconfirmed","(Unassigned)","Awaiting Response","None","In a lava flow, when a mob is burning the fire animation appears, only the damage animation n n
+
+[Steps to Reproduce]
+1. Create a new Survival world with default settings.
+2. Locate a lava flow in the Overworld.
+3. Spawn a mob by using the command '/summon minecraft:creeper' or any other non-Nether mob.
+4. Move the spawned mob into the lava flow, ensuring it takes damage and begins burning.
+5. Observe the mob as it burns in the lava, noting the absence of the fire animation that should be present on burning entities.
+
+[Observed Behavior]
+MISSING**
+
+When a mob is burning due to contact with lava, it does not display the expected fire animation. Instead, only the damage animation is visible, which does not adequately represent the burning state of the mob. Normally, burning entities in Minecraft emit visual fire particles and display a fire overlay, indicating that they are on fire. However, in this scenario, while the mob takes damage from the lava, the absence of the fire animation leads to confusion regarding the mob's state. 
+
+This issue is particularly noticeable in scenarios where mobs are caught in a flowing lava stream, as players rely on visual cues to assess the situation. The lack of the fire animation may lead players to believe that the mob is not burning, despite it taking damage from the lava. This inconsistency can affect gameplay, as players may misinterpret the mob's health or behavior due to the missing visual feedback. 
+
+To summarize, when a mob is burning in lava, the expected fire animation is missing, resulting in only the damage animation being displayed. This does not accurately convey the mob's burning state and can lead to player confusion.
+
+[Expected Behavior]
+When a mob is burning while in a lava flow, it should display the appropriate fire animation, including the visual effects of flames and smoke, in addition to the damage animation. This animation should be consistent with the behavior of other burning entities in the game, where the mob visibly appears engulfed in flames, emitting fire particles and exhibiting the characteristic burning effects as outlined in the game's mechanics. The mob should continue to take damage from the lava and remain visibly on fire until extinguished by water, rain, or other means, accurately reflecting the expected interaction between mobs and lava in Minecraft.
+
+[Environment]
+Minecraft Java Edition Version 1.21.8","1. Create a new Survival world with default settings.
+2. Locate a lava flow in the Overworld.
+3. Spawn a mob by using the command '/summon minecraft:creeper' or any other non-Nether mob.
+4. Move the spawned mob into the lava flow, ensuring it takes damage and begins burning.
+5. Observe the mob as it burns in the lava, noting the absence of the fire animation that should be present on burning entities.","MISSING**
+
+When a mob is burning due to contact with lava, it does not display the expected fire animation. Instead, only the damage animation is visible, which does not adequately represent the burning state of the mob. Normally, burning entities in Minecraft emit visual fire particles and display a fire overlay, indicating that they are on fire. However, in this scenario, while the mob takes damage from the lava, the absence of the fire animation leads to confusion regarding the mob's state. 
+
+This issue is particularly noticeable in scenarios where mobs are caught in a flowing lava stream, as players rely on visual cues to assess the situation. The lack of the fire animation may lead players to believe that the mob is not burning, despite it taking damage from the lava. This inconsistency can affect gameplay, as players may misinterpret the mob's health or behavior due to the missing visual feedback. 
+
+To summarize, when a mob is burning in lava, the expected fire animation is missing, resulting in only the damage animation being displayed. This does not accurately convey the mob's burning state and can lead to player confusion.","When a mob is burning while in a lava flow, it should display the appropriate fire animation, including the visual effects of flames and smoke, in addition to the damage animation. This animation should be consistent with the behavior of other burning entities in the game, where the mob visibly appears engulfed in flames, emitting fire particles and exhibiting the characteristic burning effects as outlined in the game's mechanics. The mob should continue to take damage from the lava and remain visibly on fire until extinguished by water, rain, or other means, accurately reflecting the expected interaction between mobs and lava in Minecraft.","Minecraft Java Edition Version 1.21.8"
+"MC-300539","Phantoms spawn during the first night on a world.","Bug","25w31a","None","Unconfirmed","(Unassigned)","Awaiting Response","None","Phantoms will spawn in the overworld night sky regardless of the amount of time passed in the world. n nSteps to reproduce: n n1. Create a world n n2. Wait for the game to turn to night n n n nExpected result: Phantoms spawn at night if the player has not slept for three in-game days. n nActual result: Phantoms spawn on the first night if the player hasn t slept once. n n n n n n
+
+[Steps to Reproduce]
+1. Create a new Survival world with default settings.
+2. Do not sleep in a bed during the first day.
+3. Collect basic resources and prepare for the night (e.g., gather wood, build a shelter).
+4. Wait for the game to transition from day to night (approximately 8 minutes and 20 seconds after the world is created).
+5. Remain outside or in an open area with sky access during the night.
+6. Observe the night sky for the appearance of Phantoms after the night begins. 
+
+Expected result: Phantoms should spawn at night if the player has not slept for three in-game days. 
+
+Actual result: Phantoms spawn on the first night even if the player has not slept once.
+
+[Observed Behavior]
+Actual Result:**
+Phantoms unexpectedly spawn on the first night after creating a new world, even if the player has not slept at all. This behavior contradicts the intended mechanics, where phantoms should only begin to spawn after the player has gone three consecutive in-game days without sleeping. Upon entering the first night, phantoms appear in the overworld night sky regardless of the player's sleep status, leading to immediate and unanticipated encounters with these hostile mobs. The spawning occurs despite the fact that the player has not yet accumulated the required time of three in-game days without sleep. This results in players being unprepared for the sudden attack of phantoms, which can cause significant damage and disrupt gameplay.
+
+[Expected Behavior]
+Phantoms should only begin to spawn in the overworld night sky after the player has not slept for three consecutive in-game days. This means that once the player has entered a bed at least once, the ""Time Since Last Rest"" statistic resets, preventing phantoms from spawning until the player has gone without sleep for the required duration. The intended behavior is that on the first night, if the player has not slept, no phantoms should appear, allowing players to experience the initial night without the threat of these hostile mobs. After three in-game days without sleep, phantoms will spawn in increasing numbers, following the established mechanics of their spawning conditions.
+
+[Environment]
+Minecraft Java Edition Version 25w31a (snapshot)","1. Create a new Survival world with default settings.
+2. Do not sleep in a bed during the first day.
+3. Collect basic resources and prepare for the night (e.g., gather wood, build a shelter).
+4. Wait for the game to transition from day to night (approximately 8 minutes and 20 seconds after the world is created).
+5. Remain outside or in an open area with sky access during the night.
+6. Observe the night sky for the appearance of Phantoms after the night begins. 
+
+Expected result: Phantoms should spawn at night if the player has not slept for three in-game days. 
+
+Actual result: Phantoms spawn on the first night even if the player has not slept once.","Actual Result:**
+Phantoms unexpectedly spawn on the first night after creating a new world, even if the player has not slept at all. This behavior contradicts the intended mechanics, where phantoms should only begin to spawn after the player has gone three consecutive in-game days without sleeping. Upon entering the first night, phantoms appear in the overworld night sky regardless of the player's sleep status, leading to immediate and unanticipated encounters with these hostile mobs. The spawning occurs despite the fact that the player has not yet accumulated the required time of three in-game days without sleep. This results in players being unprepared for the sudden attack of phantoms, which can cause significant damage and disrupt gameplay.","Phantoms should only begin to spawn in the overworld night sky after the player has not slept for three consecutive in-game days. This means that once the player has entered a bed at least once, the ""Time Since Last Rest"" statistic resets, preventing phantoms from spawning until the player has gone without sleep for the required duration. The intended behavior is that on the first night, if the player has not slept, no phantoms should appear, allowing players to experience the initial night without the threat of these hostile mobs. After three in-game days without sleep, phantoms will spawn in increasing numbers, following the established mechanics of their spawning conditions.","Minecraft Java Edition Version 25w31a (snapshot)"
+"MC-301151","Game freezes graphically after 20 seconds","Bug","1.21.8","None","Unconfirmed","(Unassigned)","Awaiting Response","None","This bug has affected multiple versions, since around April. n nLaunching the game ends in the window freezing after 20 30 seconds without fail, regardless of whether it s in the main menu or being played. The freeze is only graphical, though. The game can still technically be played {presumably; movement sounds play when pressing the movement keys, and the mouse cursor appears when pressing the pause or inventory keys} despite the view being frozen. n nThis was tested on multiple clients (including the official Launcher,) before and after both a Java Runtime and graphics driver update, and before and after deleting the .minecraft folder. n n
+
+[Steps to Reproduce]
+1. Ensure your computer meets the minimum system requirements to run Minecraft.
+2. Install the latest version of the official Minecraft Launcher from the Minecraft website.
+3. Launch the Minecraft Launcher and log in with your Minecraft account.
+4. Select the latest version of Minecraft Java Edition from the version dropdown menu.
+5. Click the ""Play"" button to start the game.
+6. Wait for approximately 20 to 30 seconds after the main menu appears, or after entering a world.
+7. Observe the game window; it should freeze graphically, while audio cues (such as movement sounds) continue to play when interacting with the game.
+8. Attempt to navigate using the keyboard or mouse; note that the graphical display remains frozen despite the game being technically responsive.
+
+[Observed Behavior]
+The game experiences a graphical freeze approximately 20 to 30 seconds after launching, regardless of the game state (main menu or in-game). During this freeze, the visual output on the screen becomes unresponsive, displaying a static image or frozen frame. However, the game continues to function in the background; players can still execute actions as evidenced by the following:
+
+- Movement sounds are audible when pressing the movement keys (W, A, S, D).
+- The mouse cursor is visible and can interact with the game’s UI, such as pausing the game or accessing the inventory.
+- The game does not crash; it remains technically playable despite the frozen visuals.
+
+This issue has been persistent across multiple Minecraft versions since around April and has been consistently reproducible on various clients, including the official Minecraft Launcher. Troubleshooting efforts included updating the Java Runtime Environment and graphics drivers, as well as deleting the .minecraft folder entirely, but none of these actions resolved the graphical freeze. The problem persists in both single-player and multiplayer modes, indicating it is not limited to specific game modes or environments.
+
+[Expected Behavior]
+When launching the game, it should run smoothly without any graphical freezes for an indefinite period of time, allowing players to navigate the main menu or play in-game seamlessly. The visuals should update continuously, displaying the current game state accurately. Players should be able to interact with the game normally, with all graphical elements rendering correctly, and any actions taken (such as moving, opening the inventory, or pausing the game) should be visually reflected in real-time. If a freeze occurs, it should not affect gameplay mechanics, and the game should remain responsive to inputs, allowing players to exit or perform actions without the visual display being stuck.
+
+[Environment]
+Minecraft Java Edition Version 1.21.8","1. Ensure your computer meets the minimum system requirements to run Minecraft.
+2. Install the latest version of the official Minecraft Launcher from the Minecraft website.
+3. Launch the Minecraft Launcher and log in with your Minecraft account.
+4. Select the latest version of Minecraft Java Edition from the version dropdown menu.
+5. Click the ""Play"" button to start the game.
+6. Wait for approximately 20 to 30 seconds after the main menu appears, or after entering a world.
+7. Observe the game window; it should freeze graphically, while audio cues (such as movement sounds) continue to play when interacting with the game.
+8. Attempt to navigate using the keyboard or mouse; note that the graphical display remains frozen despite the game being technically responsive.","The game experiences a graphical freeze approximately 20 to 30 seconds after launching, regardless of the game state (main menu or in-game). During this freeze, the visual output on the screen becomes unresponsive, displaying a static image or frozen frame. However, the game continues to function in the background; players can still execute actions as evidenced by the following:
+
+- Movement sounds are audible when pressing the movement keys (W, A, S, D).
+- The mouse cursor is visible and can interact with the game’s UI, such as pausing the game or accessing the inventory.
+- The game does not crash; it remains technically playable despite the frozen visuals.
+
+This issue has been persistent across multiple Minecraft versions since around April and has been consistently reproducible on various clients, including the official Minecraft Launcher. Troubleshooting efforts included updating the Java Runtime Environment and graphics drivers, as well as deleting the .minecraft folder entirely, but none of these actions resolved the graphical freeze. The problem persists in both single-player and multiplayer modes, indicating it is not limited to specific game modes or environments.","When launching the game, it should run smoothly without any graphical freezes for an indefinite period of time, allowing players to navigate the main menu or play in-game seamlessly. The visuals should update continuously, displaying the current game state accurately. Players should be able to interact with the game normally, with all graphical elements rendering correctly, and any actions taken (such as moving, opening the inventory, or pausing the game) should be visually reflected in real-time. If a freeze occurs, it should not affect gameplay mechanics, and the game should remain responsive to inputs, allowing players to exit or perform actions without the visual display being stuck.","Minecraft Java Edition Version 1.21.8"
+"MC-300562","Ender Dragon bring about unusual acceleration","Bug","1.21.8","None","Unconfirmed","(Unassigned)","Awaiting Response","None","When the Ender Dragon is lingering over the return portal, it has no hitbox except for its head. This allows the player to be positioned inside the dragon s center. At the moment when the Ender Dragon tries to take off again, its hitbox reappears, and the player gets launched away. If the player shoots an arrow at that precise moment, the resulting arrow velocity becomes extremely high not because the actual knockback on the Ender Dragon is particularly strong, but possibly because knockback is still being calculated internally (server-side?). Since arrow velocity is apparently calculated based on the internal values, the closer the player is to the dragon s center, the more abnormal the resulting arrow speed becomes. This is what is being claimed. n nExpected result: Arrow velocity should correspond to the actual knockback experienced by the player.Actual result: Either the internal knockback calculation on the Ender Dragon is absurdly exaggerated, or arrow velocity is being calculated based on internal values at least one of these must be true, resulting in extremely high arrow speeds. n nWhile it s questionable whether knockback behavior should follow a purely exponential function especially considering the changing hitbox it remains unclear how much of this behavior is intentional. n nI don t have the equipment or specs to record a video myself, so I can t demonstrate the behavior in the latest version. However, there is an older version video that explains a bug caused by the same underlying factors, which I believe serves as a helpful reference. It should be reproducible using the same steps. n n
+
+[Steps to Reproduce]
+1. Create a new Creative world in Minecraft and switch to Survival mode.
+2. Locate the End dimension by entering an End Portal or using the command '/execute in the_end run tp @p 0 100 0'.
+3. Wait for the Ender Dragon to spawn, which occurs 20 game ticks (1 second) after entering the End.
+4. Position yourself directly above the End Portal at coordinates (0, 64, 0) while ensuring the Ender Dragon is hovering above the portal.
+5. Move into the center of the Ender Dragon's body, ensuring you are within its hitbox, which is only active for the head at this point.
+6. Wait for the Ender Dragon to attempt to take off again, watching for the moment its hitbox reappears.
+7. At the exact moment the hitbox reappears, shoot an arrow at the Ender Dragon.
+8. Observe the resulting arrow velocity and note any abnormal speeds compared to typical arrow velocities when hitting other entities.
+
+[Observed Behavior]
+When the Ender Dragon is positioned above the return portal, it exhibits a peculiar interaction with player projectiles and hitbox mechanics. In this state, the dragon's hitbox is only active at its head, allowing players to enter its center without collision. Upon the dragon's attempt to take off, its full hitbox reactivates, resulting in the player being forcefully ejected from the center. 
+
+If the player releases an arrow at the exact moment the dragon's hitbox reappears, the arrow's velocity is significantly amplified. This phenomenon does not stem from an increase in the actual knockback applied to the dragon, but rather indicates that the internal knockback calculations may still be in effect on the server side. The mechanics behind arrow velocity appear to be influenced by the proximity of the player to the dragon's center; as the player gets closer, the resulting arrow speed becomes disproportionately high.
+
+This behavior leads to two potential conclusions: either the internal knockback calculations for the Ender Dragon are excessively exaggerated, or the arrow velocity is calculated based on these internal values rather than the actual knockback experienced by the player. As a result, the arrow speeds can reach levels that are not consistent with expected gameplay mechanics.
+
+In summary, the expected behavior is that arrow velocity should reflect the actual knockback experienced by the player when interacting with the Ender Dragon. However, the observed behavior suggests a discrepancy in the calculations, leading to unnaturally high arrow speeds when the player is positioned at the dragon's center during its takeoff. This interaction raises questions about the intended design of knockback mechanics, particularly in relation to the changing hitbox of the Ender Dragon.
+
+[Expected Behavior]
+When the Ender Dragon is positioned over the return portal, it should maintain a consistent hitbox for the entirety of its hovering behavior, allowing players to interact with it as intended. When the dragon takes off, the hitbox should reappear in a manner that does not cause unexpected player displacement. If a player shoots an arrow at the moment the dragon takes off, the arrow's velocity should be calculated based on the actual knockback experienced by the player from the dragon's movement, rather than any exaggerated internal values. The arrow should not exceed the standard projectile speed limits set by the game's mechanics, ensuring that its behavior aligns with expected physics and gameplay dynamics. This would preserve the integrity of combat interactions with the Ender Dragon, allowing for a fair and consistent player experience.
+
+[Environment]
+Minecraft Java Edition Version 1.21.8","1. Create a new Creative world in Minecraft and switch to Survival mode.
+2. Locate the End dimension by entering an End Portal or using the command '/execute in the_end run tp @p 0 100 0'.
+3. Wait for the Ender Dragon to spawn, which occurs 20 game ticks (1 second) after entering the End.
+4. Position yourself directly above the End Portal at coordinates (0, 64, 0) while ensuring the Ender Dragon is hovering above the portal.
+5. Move into the center of the Ender Dragon's body, ensuring you are within its hitbox, which is only active for the head at this point.
+6. Wait for the Ender Dragon to attempt to take off again, watching for the moment its hitbox reappears.
+7. At the exact moment the hitbox reappears, shoot an arrow at the Ender Dragon.
+8. Observe the resulting arrow velocity and note any abnormal speeds compared to typical arrow velocities when hitting other entities.","When the Ender Dragon is positioned above the return portal, it exhibits a peculiar interaction with player projectiles and hitbox mechanics. In this state, the dragon's hitbox is only active at its head, allowing players to enter its center without collision. Upon the dragon's attempt to take off, its full hitbox reactivates, resulting in the player being forcefully ejected from the center. 
+
+If the player releases an arrow at the exact moment the dragon's hitbox reappears, the arrow's velocity is significantly amplified. This phenomenon does not stem from an increase in the actual knockback applied to the dragon, but rather indicates that the internal knockback calculations may still be in effect on the server side. The mechanics behind arrow velocity appear to be influenced by the proximity of the player to the dragon's center; as the player gets closer, the resulting arrow speed becomes disproportionately high.
+
+This behavior leads to two potential conclusions: either the internal knockback calculations for the Ender Dragon are excessively exaggerated, or the arrow velocity is calculated based on these internal values rather than the actual knockback experienced by the player. As a result, the arrow speeds can reach levels that are not consistent with expected gameplay mechanics.
+
+In summary, the expected behavior is that arrow velocity should reflect the actual knockback experienced by the player when interacting with the Ender Dragon. However, the observed behavior suggests a discrepancy in the calculations, leading to unnaturally high arrow speeds when the player is positioned at the dragon's center during its takeoff. This interaction raises questions about the intended design of knockback mechanics, particularly in relation to the changing hitbox of the Ender Dragon.","When the Ender Dragon is positioned over the return portal, it should maintain a consistent hitbox for the entirety of its hovering behavior, allowing players to interact with it as intended. When the dragon takes off, the hitbox should reappear in a manner that does not cause unexpected player displacement. If a player shoots an arrow at the moment the dragon takes off, the arrow's velocity should be calculated based on the actual knockback experienced by the player from the dragon's movement, rather than any exaggerated internal values. The arrow should not exceed the standard projectile speed limits set by the game's mechanics, ensuring that its behavior aligns with expected physics and gameplay dynamics. This would preserve the integrity of combat interactions with the Ender Dragon, allowing for a fair and consistent player experience.","Minecraft Java Edition Version 1.21.8"
+"MC-300836","Bed is Occupied after pc shut off","Bug","1.21.8","None","Unconfirmed","(Unassigned)","Awaiting Response","None","I went to sleep in my bed in-game when my power temporarily went out. After regaining power, I re-logged into my world, which saved to right before I slept. When I tried sleeping in the bed, it said the bed was occupied, even though it was a single player world. Breaking the bed did reset it back to its normal state. n n
+
+[Steps to Reproduce]
+1. Create a new single-player world in Minecraft with default settings.
+2. Locate or craft a bed and place it in a safe area.
+3. Ensure it is night time in the game (between 12542 and 23459 ticks) or during a thunderstorm.
+4. Right-click on the bed to sleep in it, allowing the screen to fade to black.
+5. Simulate a power outage by shutting down your computer or disconnecting power.
+6. After a few moments, restore power and restart your computer.
+7. Launch Minecraft and re-enter the same single-player world.
+8. Wait for the game to load, which should revert to the state just before you slept.
+9. Approach the bed and attempt to right-click on it to sleep again.
+10. Observe the message indicating the bed is occupied, despite being the only player in the world.
+11. Break the bed and note that it resets to its normal state, allowing you to sleep again.
+
+[Observed Behavior]
+After the player sleeps in a bed in a single-player world and experiences a power outage, upon re-logging into the game, the bed is marked as ""occupied."" This occurs despite the game saving the state prior to the player sleeping, effectively preventing the player from using the bed again. The message displayed when attempting to sleep is ""This bed is occupied."" The only way to resolve this issue is to break the bed, which resets its state and allows the player to sleep in it again. This behavior does not align with the expected functionality of beds in single-player mode, where a bed should not remain occupied after a player has logged out and back in, especially if the game state was saved before the player went to sleep.
+
+[Expected Behavior]
+When a player sleeps in a bed in a single-player world, the game should properly register the sleep state and allow the player to sleep again upon re-logging into the world. If the power goes out and the game saves before the player sleeps, the bed should not be marked as occupied when the player logs back in. Instead, the player should be able to use the bed again without any issues. If the bed is functioning correctly, the player should receive no error messages, and the game should allow them to sleep immediately, advancing the time to dawn. If the bed is broken, it should reset to its normal state, allowing the player to place it again and sleep without encountering the ""bed is occupied"" message.
+
+[Environment]
+Minecraft Java Edition Version 1.21.8","1. Create a new single-player world in Minecraft with default settings.
+2. Locate or craft a bed and place it in a safe area.
+3. Ensure it is night time in the game (between 12542 and 23459 ticks) or during a thunderstorm.
+4. Right-click on the bed to sleep in it, allowing the screen to fade to black.
+5. Simulate a power outage by shutting down your computer or disconnecting power.
+6. After a few moments, restore power and restart your computer.
+7. Launch Minecraft and re-enter the same single-player world.
+8. Wait for the game to load, which should revert to the state just before you slept.
+9. Approach the bed and attempt to right-click on it to sleep again.
+10. Observe the message indicating the bed is occupied, despite being the only player in the world.
+11. Break the bed and note that it resets to its normal state, allowing you to sleep again.","After the player sleeps in a bed in a single-player world and experiences a power outage, upon re-logging into the game, the bed is marked as ""occupied."" This occurs despite the game saving the state prior to the player sleeping, effectively preventing the player from using the bed again. The message displayed when attempting to sleep is ""This bed is occupied."" The only way to resolve this issue is to break the bed, which resets its state and allows the player to sleep in it again. This behavior does not align with the expected functionality of beds in single-player mode, where a bed should not remain occupied after a player has logged out and back in, especially if the game state was saved before the player went to sleep.","When a player sleeps in a bed in a single-player world, the game should properly register the sleep state and allow the player to sleep again upon re-logging into the world. If the power goes out and the game saves before the player sleeps, the bed should not be marked as occupied when the player logs back in. Instead, the player should be able to use the bed again without any issues. If the bed is functioning correctly, the player should receive no error messages, and the game should allow them to sleep immediately, advancing the time to dawn. If the bed is broken, it should reset to its normal state, allowing the player to place it again and sleep without encountering the ""bed is occupied"" message.","Minecraft Java Edition Version 1.21.8"
+"MC-300033","Item duplication with item modify command","Bug","1.21.8","None","Unconfirmed","(Unassigned)","Cannot Reproduce","None","Steps to reproduce the issue: n n-place a repeating command block with this command: n nitem modify entity a weapon.mainhand {""function"":""minecraft:set_damage"",""damage"": -0.001,""add"": true} n n-hold an item with more than 1000 max durability in your hand and it s durability should start decreasing n n-open the inventory and hover the cursor on the slot with the item n n-repeatedly press the key to move the item to another slot and bring it back n n n nExpected result: n nthe item does not duplicate n n n nActual result: n neventually the item will duplicate n n
+
+[Steps to Reproduce]
+1. Create a new Creative world with default settings.
+2. Place a repeating command block on the ground.
+3. Enter the command `/item modify entity @a weapon.mainhand {""function"":""minecraft:set_damage"",""damage"":-0.001,""add"":true}` in the command block.
+4. Activate the command block using a Redstone signal (e.g., place a Redstone Torch next to it).
+5. Hold an item in your main hand that has a maximum durability greater than 1000 (e.g., a diamond pickaxe).
+6. Observe that the durability of the item starts to decrease as the command block continuously modifies it.
+7. Open your inventory and navigate to the slot containing the item you are holding.
+8. Hover your cursor over the item in the inventory slot.
+9. Rapidly press the key to move the item to a different slot and then back to its original slot multiple times (at least 10 times).
+10. Monitor the item in your inventory to see if it duplicates during this process.
+
+[Observed Behavior]
+When the player follows the steps outlined to reproduce the bug, the item in the main hand begins to lose durability as expected. However, after repeatedly moving the item to another slot in the inventory and then bringing it back, the item will eventually duplicate within the player's inventory. This duplication occurs despite the expected behavior that the item should not duplicate. 
+
+Specifically, the duplication can be observed as follows:
+
+1. The player holds an item with a durability greater than 1000, such as a diamond tool or armor piece.
+2. As the durability decreases from the item modify command, the player can manipulate the item by moving it between inventory slots.
+3. After several attempts of moving the item back and forth, the original item remains, and a new instance of the item appears in the player's inventory.
+
+This results in the player having two identical items, which contradicts the expected outcome where the item should remain singular and only lose durability. The issue seems to stem from how the game processes the item modify command in conjunction with inventory management, leading to unintended duplication. The duplication can lead to potential exploits, especially in survival gameplay, where players can gain an unfair advantage by duplicating high-durability items.
+
+[Expected Behavior]
+When using the item modify command with a repeating command block to adjust the durability of an item in the player's main hand, the expected behavior is that the item's durability should decrease as intended without creating a duplicate item. Specifically, when the player follows the steps to modify the item and attempts to move it between inventory slots, the item should remain singular, maintaining its integrity and not allowing for duplication. The game should accurately reflect the item's durability change without generating additional copies, thereby adhering to the intended mechanics of item management in Minecraft.
+
+[Environment]
+Minecraft Java Edition Version 1.21.8","1. Create a new Creative world with default settings.
+2. Place a repeating command block on the ground.
+3. Enter the command `/item modify entity @a weapon.mainhand {""function"":""minecraft:set_damage"",""damage"":-0.001,""add"":true}` in the command block.
+4. Activate the command block using a Redstone signal (e.g., place a Redstone Torch next to it).
+5. Hold an item in your main hand that has a maximum durability greater than 1000 (e.g., a diamond pickaxe).
+6. Observe that the durability of the item starts to decrease as the command block continuously modifies it.
+7. Open your inventory and navigate to the slot containing the item you are holding.
+8. Hover your cursor over the item in the inventory slot.
+9. Rapidly press the key to move the item to a different slot and then back to its original slot multiple times (at least 10 times).
+10. Monitor the item in your inventory to see if it duplicates during this process.","When the player follows the steps outlined to reproduce the bug, the item in the main hand begins to lose durability as expected. However, after repeatedly moving the item to another slot in the inventory and then bringing it back, the item will eventually duplicate within the player's inventory. This duplication occurs despite the expected behavior that the item should not duplicate. 
+
+Specifically, the duplication can be observed as follows:
+
+1. The player holds an item with a durability greater than 1000, such as a diamond tool or armor piece.
+2. As the durability decreases from the item modify command, the player can manipulate the item by moving it between inventory slots.
+3. After several attempts of moving the item back and forth, the original item remains, and a new instance of the item appears in the player's inventory.
+
+This results in the player having two identical items, which contradicts the expected outcome where the item should remain singular and only lose durability. The issue seems to stem from how the game processes the item modify command in conjunction with inventory management, leading to unintended duplication. The duplication can lead to potential exploits, especially in survival gameplay, where players can gain an unfair advantage by duplicating high-durability items.","When using the item modify command with a repeating command block to adjust the durability of an item in the player's main hand, the expected behavior is that the item's durability should decrease as intended without creating a duplicate item. Specifically, when the player follows the steps to modify the item and attempts to move it between inventory slots, the item should remain singular, maintaining its integrity and not allowing for duplication. The game should accurately reflect the item's durability change without generating additional copies, thereby adhering to the intended mechanics of item management in Minecraft.","Minecraft Java Edition Version 1.21.8"
+"MC-300774","Cant steam in discord, Error code -1073740791","Bug","1.21.8","None","Unconfirmed","(Unassigned)","Awaiting Response","None","While playing java edition in multiplayer, trying to steam the game in discord only menu bar is showing. only few time game is getting steam on that time its too laggy n n
+
+[Steps to Reproduce]
+1. Launch Minecraft Java Edition and select the multiplayer option.
+2. Connect to a multiplayer server with at least one other player online.
+3. Once in the game, ensure that you are in a location where you can see the game environment (not in a menu).
+4. Open Discord and navigate to the voice channel where you want to stream the game.
+5. Click on the ""Screen"" option in Discord to begin streaming.
+6. Select the Minecraft window from the list of available applications to stream.
+7. Observe the streaming window in Discord; note if only the menu bar of Minecraft is visible and the game is not displaying correctly.
+8. Try switching back to Minecraft and interact with the game (move, jump, etc.) to see if the stream becomes responsive or if you encounter lag.
+9. If the issue persists, attempt to close and reopen Discord, then repeat steps 4 to 8 to verify if the problem continues.
+
+[Observed Behavior]
+While attempting to stream Minecraft Java Edition in Discord during multiplayer sessions, users encounter an issue where only the menu bar of the game is visible on the streaming interface. This results in a failure to display the actual gameplay, significantly impacting the streaming experience. The error code -1073740791 is generated, indicating a potential problem with the game's graphics rendering or compatibility with Discord's streaming functionality. 
+
+In some instances, the game does manage to stream correctly, but this occurs infrequently and is accompanied by substantial lag, making it difficult to maintain a smooth viewing experience for those watching the stream. The issue persists regardless of whether the game is running in fullscreen or windowed mode, and it does not appear to be linked to specific server conditions or game settings. This problem affects players who wish to share their gameplay with others through Discord, limiting the ability to effectively stream Minecraft sessions.
+
+[Expected Behavior]
+When attempting to stream Minecraft Java Edition in Discord while playing in multiplayer, the game should correctly display the gameplay window, allowing viewers to see the full game interface, including the environment, player actions, and any interactions with blocks or entities. The streaming should not be limited to just the menu bar, and the performance should remain smooth without significant lag. The game should utilize the system's resources efficiently to maintain a stable frame rate during streaming, following the requirements outlined in the official Minecraft documentation for optimal performance in multiplayer scenarios. If any errors occur, they should be handled gracefully without crashing the game or the streaming application.
+
+[Environment]
+Minecraft Java Edition Version 1.21.8","1. Launch Minecraft Java Edition and select the multiplayer option.
+2. Connect to a multiplayer server with at least one other player online.
+3. Once in the game, ensure that you are in a location where you can see the game environment (not in a menu).
+4. Open Discord and navigate to the voice channel where you want to stream the game.
+5. Click on the ""Screen"" option in Discord to begin streaming.
+6. Select the Minecraft window from the list of available applications to stream.
+7. Observe the streaming window in Discord; note if only the menu bar of Minecraft is visible and the game is not displaying correctly.
+8. Try switching back to Minecraft and interact with the game (move, jump, etc.) to see if the stream becomes responsive or if you encounter lag.
+9. If the issue persists, attempt to close and reopen Discord, then repeat steps 4 to 8 to verify if the problem continues.","While attempting to stream Minecraft Java Edition in Discord during multiplayer sessions, users encounter an issue where only the menu bar of the game is visible on the streaming interface. This results in a failure to display the actual gameplay, significantly impacting the streaming experience. The error code -1073740791 is generated, indicating a potential problem with the game's graphics rendering or compatibility with Discord's streaming functionality. 
+
+In some instances, the game does manage to stream correctly, but this occurs infrequently and is accompanied by substantial lag, making it difficult to maintain a smooth viewing experience for those watching the stream. The issue persists regardless of whether the game is running in fullscreen or windowed mode, and it does not appear to be linked to specific server conditions or game settings. This problem affects players who wish to share their gameplay with others through Discord, limiting the ability to effectively stream Minecraft sessions.","When attempting to stream Minecraft Java Edition in Discord while playing in multiplayer, the game should correctly display the gameplay window, allowing viewers to see the full game interface, including the environment, player actions, and any interactions with blocks or entities. The streaming should not be limited to just the menu bar, and the performance should remain smooth without significant lag. The game should utilize the system's resources efficiently to maintain a stable frame rate during streaming, following the requirements outlined in the official Minecraft documentation for optimal performance in multiplayer scenarios. If any errors occur, they should be handled gracefully without crashing the game or the streaming application.","Minecraft Java Edition Version 1.21.8"
+"MC-300409","Piglin can rarely drop command block","Bug","25w31a","None","Unconfirmed","(Unassigned)","Awaiting Response","None","When I working of Zombified Piglin farm with auto Piglin and Copper Golem sort system, tp e[type piglin] to magma block and wait it to die, then it dropped command block (this don t contain any code) n nI don t have any picture now, cuz this happend when piglin don t have anything to trade with (maybe?) n n
+
+[Steps to Reproduce]
+1. Create a new Survival world in Minecraft Java Edition.
+2. Locate or build a Zombified Piglin farm using magma blocks as the spawning platform.
+3. Ensure that the farm is designed to teleport Piglins to a magma block where they will take damage and eventually die.
+4. Set up a system that automatically teleports Piglins to the designated magma block using the command `/tp @e[type=piglin] <coordinates of magma block>`.
+5. Wait for the Piglins to die from the magma block damage.
+6. Observe the drops that are produced when the Piglins die, specifically looking for any instances where a command block is dropped.
+7. Ensure that no Piglins have any items to trade with prior to their death to see if this affects the drop rate.
+
+[Observed Behavior]
+While constructing a Zombified Piglin farm utilizing an automatic Piglin and Copper Golem sorting system, I encountered an unusual behavior where a Zombified Piglin dropped a command block upon death. The process involved teleporting entities of type Piglin to a magma block, where they would take damage and subsequently die. In this instance, the Zombified Piglin dropped a command block instead of the expected loot, which typically includes rotten flesh, gold nuggets, or golden swords. 
+
+This occurrence seems to happen sporadically, potentially linked to the condition that the Piglin had no items to trade with at the time of its demise. It should be noted that this behavior does not appear to be consistent, as command blocks are not standard drops for Zombified Piglins. Currently, I do not have any visual evidence of this incident, as it occurred unexpectedly during the farming process. Further investigation is needed to determine the exact conditions under which this command block drop occurs.
+
+[Expected Behavior]
+When a zombified piglin is killed, it should drop items consistent with its intended loot table, which typically includes rotten flesh, gold nuggets, and occasionally gold ingots or its golden sword. Command blocks are not part of the loot table for zombified piglins, and therefore should not be dropped under any circumstances. The expected behavior is that when a zombified piglin dies, it will drop only the items specified in the official game documentation, without any occurrence of command blocks or any other unintended items appearing in the drop loot.
+
+[Environment]
+Minecraft Java Edition Version 25w31a (snapshot)","1. Create a new Survival world in Minecraft Java Edition.
+2. Locate or build a Zombified Piglin farm using magma blocks as the spawning platform.
+3. Ensure that the farm is designed to teleport Piglins to a magma block where they will take damage and eventually die.
+4. Set up a system that automatically teleports Piglins to the designated magma block using the command `/tp @e[type=piglin] <coordinates of magma block>`.
+5. Wait for the Piglins to die from the magma block damage.
+6. Observe the drops that are produced when the Piglins die, specifically looking for any instances where a command block is dropped.
+7. Ensure that no Piglins have any items to trade with prior to their death to see if this affects the drop rate.","While constructing a Zombified Piglin farm utilizing an automatic Piglin and Copper Golem sorting system, I encountered an unusual behavior where a Zombified Piglin dropped a command block upon death. The process involved teleporting entities of type Piglin to a magma block, where they would take damage and subsequently die. In this instance, the Zombified Piglin dropped a command block instead of the expected loot, which typically includes rotten flesh, gold nuggets, or golden swords. 
+
+This occurrence seems to happen sporadically, potentially linked to the condition that the Piglin had no items to trade with at the time of its demise. It should be noted that this behavior does not appear to be consistent, as command blocks are not standard drops for Zombified Piglins. Currently, I do not have any visual evidence of this incident, as it occurred unexpectedly during the farming process. Further investigation is needed to determine the exact conditions under which this command block drop occurs.","When a zombified piglin is killed, it should drop items consistent with its intended loot table, which typically includes rotten flesh, gold nuggets, and occasionally gold ingots or its golden sword. Command blocks are not part of the loot table for zombified piglins, and therefore should not be dropped under any circumstances. The expected behavior is that when a zombified piglin dies, it will drop only the items specified in the official game documentation, without any occurrence of command blocks or any other unintended items appearing in the drop loot.","Minecraft Java Edition Version 25w31a (snapshot)"
+"MC-300891","Music disc ""tears"" does not show the juke box s playing state","Bug","1.21.8","None","Unconfirmed","(Unassigned)","Awaiting Response","None","the tears music disk does not set the jukeboxes playing blockstate n n
+
+[Steps to Reproduce]
+1. Create a new Creative world with default settings.
+2. Obtain the music disc ""Tears"" by either summoning a ghast and defeating it or by using the /give command to give yourself the disc.
+3. Place a Jukebox on the ground.
+4. Right-click on the Jukebox while holding the ""Tears"" music disc to insert it.
+5. Observe the Jukebox as it plays the music disc.
+6. Check the blockstate of the Jukebox to confirm that it does not change to the ""playing"" state, despite the music playing.
+
+[Observed Behavior]
+When the ""Tears"" music disc is inserted into a jukebox, the jukebox does not change its block state to indicate that it is playing music. Specifically, the expected behavior of the jukebox is to emit note particles and change its block state to ""playing"" when a music disc is active. However, with the ""Tears"" disc, the jukebox remains in its default state, and no note particles are emitted, which visually indicates that music is playing. This behavior differs from other music discs, which correctly trigger the jukebox to show that it is in a playing state. Additionally, the jukebox does not emit a redstone signal, which is typically expected when a music disc is being played. This issue persists regardless of the environment or conditions under which the jukebox is placed or used.
+
+[Expected Behavior]
+When the music disc ""Tears"" is inserted into a jukebox, the jukebox should properly reflect its playing state by changing its blockstate to indicate that it is actively playing music. This includes emitting note particles from the top of the jukebox, and if a redstone comparator is placed adjacent to the jukebox, it should output a redstone signal corresponding to the disc being played. Additionally, the jukebox should disable any adjacent hoppers while the disc is playing, as is the intended behavior for all music discs in the game. The visual and mechanical feedback should align with the functionality described in the Minecraft wiki, ensuring that players can clearly see and utilize the jukebox's features when the ""Tears"" disc is in use.
+
+[Environment]
+Minecraft Java Edition Version 1.21.8","1. Create a new Creative world with default settings.
+2. Obtain the music disc ""Tears"" by either summoning a ghast and defeating it or by using the /give command to give yourself the disc.
+3. Place a Jukebox on the ground.
+4. Right-click on the Jukebox while holding the ""Tears"" music disc to insert it.
+5. Observe the Jukebox as it plays the music disc.
+6. Check the blockstate of the Jukebox to confirm that it does not change to the ""playing"" state, despite the music playing.","When the ""Tears"" music disc is inserted into a jukebox, the jukebox does not change its block state to indicate that it is playing music. Specifically, the expected behavior of the jukebox is to emit note particles and change its block state to ""playing"" when a music disc is active. However, with the ""Tears"" disc, the jukebox remains in its default state, and no note particles are emitted, which visually indicates that music is playing. This behavior differs from other music discs, which correctly trigger the jukebox to show that it is in a playing state. Additionally, the jukebox does not emit a redstone signal, which is typically expected when a music disc is being played. This issue persists regardless of the environment or conditions under which the jukebox is placed or used.","When the music disc ""Tears"" is inserted into a jukebox, the jukebox should properly reflect its playing state by changing its blockstate to indicate that it is actively playing music. This includes emitting note particles from the top of the jukebox, and if a redstone comparator is placed adjacent to the jukebox, it should output a redstone signal corresponding to the disc being played. Additionally, the jukebox should disable any adjacent hoppers while the disc is playing, as is the intended behavior for all music discs in the game. The visual and mechanical feedback should align with the functionality described in the Minecraft wiki, ensuring that players can clearly see and utilize the jukebox's features when the ""Tears"" disc is in use.","Minecraft Java Edition Version 1.21.8"
+"MC-300737","Game randomly crashes in Singleplayer because of HashMap ConcurrentModificationException","Bug","1.21.8","None","Unconfirmed","(Unassigned)","Awaiting Response","None","When attempting to play the game in singleplayer, there s a random chance the game might crash. Most of the time, it s HashMap computeIfAbsent throwing ConcurrentModificationException.This issue happens because the hash map is the same object in both client and server in singleplayer. This creates a problem where the game can crash because when client thread runs computeIfAbsent on the map, server might add or remove entry from the map and vice versa. n nThis issue happens pretty sparsely and rarely because in the key is same in both threads most of the time which the exception isn t thrown if an existing value gets changed when computeIfAbsent is running. This leaves pretty small time gap which makes it hard to reproduce. Though you can create a random string array, use them as keys and put them to HashMap, clear and redo it every tick in a method that runs in both threads to recreate it more easily. n nAs specified in JDK-8071667, this only happens if you use compute, computeIfAbsent, computeIfPresent or merge methods. It is specific to HashMap and other HashMap types. n nIn attachments there s a method that recreates the crash which runs every player tick in both threads. strings is an array of 1000 random strings, map is String to String HashMap. n n
+
+[Steps to Reproduce]
+1. Create a new Singleplayer world with default settings.
+2. In the game, create a method that runs every tick, which will be executed in both client and server threads.
+3. Inside this method, generate an array of 1000 random strings to use as keys.
+4. Initialize a HashMap<String, String> to store the random strings as keys and assign them random values.
+5. Use the computeIfAbsent method on the HashMap to attempt to add new entries using the random strings as keys.
+6. Simultaneously, clear the HashMap and reinitialize it every tick to ensure that both threads are accessing and modifying the same HashMap instance.
+7. Continue running the game and observe if a ConcurrentModificationException occurs, leading to a crash.
+
+[Observed Behavior]
+In singleplayer mode, the game experiences intermittent crashes due to a `ConcurrentModificationException` arising from the use of the `HashMap`'s `computeIfAbsent` method. This issue occurs because both the client and server share the same instance of the `HashMap`, leading to a race condition. When the client thread attempts to execute `computeIfAbsent` on the map, the server may simultaneously modify the map by adding or removing entries, which results in the `ConcurrentModificationException`.
+
+This behavior is not consistently reproducible due to the nature of the key usage in both threads; most of the time, the same key is being accessed, which allows the operation to complete without throwing an exception. However, the narrow window of time during which the client and server may modify the map concurrently creates sporadic crashes.
+
+To facilitate reproduction of the crash, developers can implement a testing method that runs every tick for both threads. This method should utilize an array of 1000 random strings as keys, continuously clearing and repopulating the `HashMap` each tick. This approach increases the likelihood of triggering the `ConcurrentModificationException` during the `computeIfAbsent` call.
+
+As highlighted in JDK-8071667, this issue is specifically tied to the use of `compute`, `computeIfAbsent`, `computeIfPresent`, or `merge` methods on `HashMap` instances. The problem is unique to `HashMap` and its variants, and it is critical for developers to be aware of this when troubleshooting crashes associated with these data structures. 
+
+In the attached code, a method is provided that demonstrates how to replicate the crash, which runs every player tick on both the client and server threads, using the aforementioned random string array and `HashMap<String, String>`.
+
+[Expected Behavior]
+When the game is functioning correctly in singleplayer mode, it should allow players to interact with the world without experiencing any crashes. Specifically, when using HashMap methods such as computeIfAbsent, the game should safely handle concurrent modifications without throwing a ConcurrentModificationException. This means that the game should maintain data integrity and synchronization between the client and server threads, ensuring that modifications to the HashMap do not interfere with each other. As a result, players should be able to perform actions that involve adding or retrieving entries from the HashMap without encountering unexpected crashes, allowing for a smooth and stable gameplay experience.
+
+[Environment]
+Minecraft Java Edition Version 1.21.8","1. Create a new Singleplayer world with default settings.
+2. In the game, create a method that runs every tick, which will be executed in both client and server threads.
+3. Inside this method, generate an array of 1000 random strings to use as keys.
+4. Initialize a HashMap<String, String> to store the random strings as keys and assign them random values.
+5. Use the computeIfAbsent method on the HashMap to attempt to add new entries using the random strings as keys.
+6. Simultaneously, clear the HashMap and reinitialize it every tick to ensure that both threads are accessing and modifying the same HashMap instance.
+7. Continue running the game and observe if a ConcurrentModificationException occurs, leading to a crash.","In singleplayer mode, the game experiences intermittent crashes due to a `ConcurrentModificationException` arising from the use of the `HashMap`'s `computeIfAbsent` method. This issue occurs because both the client and server share the same instance of the `HashMap`, leading to a race condition. When the client thread attempts to execute `computeIfAbsent` on the map, the server may simultaneously modify the map by adding or removing entries, which results in the `ConcurrentModificationException`.
+
+This behavior is not consistently reproducible due to the nature of the key usage in both threads; most of the time, the same key is being accessed, which allows the operation to complete without throwing an exception. However, the narrow window of time during which the client and server may modify the map concurrently creates sporadic crashes.
+
+To facilitate reproduction of the crash, developers can implement a testing method that runs every tick for both threads. This method should utilize an array of 1000 random strings as keys, continuously clearing and repopulating the `HashMap` each tick. This approach increases the likelihood of triggering the `ConcurrentModificationException` during the `computeIfAbsent` call.
+
+As highlighted in JDK-8071667, this issue is specifically tied to the use of `compute`, `computeIfAbsent`, `computeIfPresent`, or `merge` methods on `HashMap` instances. The problem is unique to `HashMap` and its variants, and it is critical for developers to be aware of this when troubleshooting crashes associated with these data structures. 
+
+In the attached code, a method is provided that demonstrates how to replicate the crash, which runs every player tick on both the client and server threads, using the aforementioned random string array and `HashMap<String, String>`.","When the game is functioning correctly in singleplayer mode, it should allow players to interact with the world without experiencing any crashes. Specifically, when using HashMap methods such as computeIfAbsent, the game should safely handle concurrent modifications without throwing a ConcurrentModificationException. This means that the game should maintain data integrity and synchronization between the client and server threads, ensuring that modifications to the HashMap do not interfere with each other. As a result, players should be able to perform actions that involve adding or retrieving entries from the HashMap without encountering unexpected crashes, allowing for a smooth and stable gameplay experience.","Minecraft Java Edition Version 1.21.8"
+"MC-301132","I don t receive items after a certain height","Bug","1.21.8","None","Unconfirmed","(Unassigned)","Awaiting Response","None","I was on a Minecraft server and a valuable item dropped. The item was 2 blocks above the other one. However, the first block was oak wood and the second block was on the stair. The item was on the open side of the stair and I couldn t get it. It s normal and it happens on every server. n n
+
+[Steps to Reproduce]
+1. Join a Minecraft server in Survival mode.
+2. Ensure you have a valuable item in your inventory (e.g., diamond, gold ingot).
+3. Drop the valuable item from a height of at least 2 blocks above ground level.
+4. Place an oak wood block directly below the point where the item will drop.
+5. Place a stair block adjacent to the oak wood block, ensuring the open side of the stair faces the dropped item.
+6. Drop the valuable item so that it lands on the open side of the stair, directly above the oak wood block.
+7. Attempt to collect the dropped item while standing on the ground next to the stair.
+8. Observe that the item is not collectible due to its position relative to the stair and the oak wood block.
+
+[Observed Behavior]
+When a valuable item is dropped in Minecraft, it can become inaccessible if it lands at a height that is not reachable by the player. In this specific case, the item dropped was located two blocks above the ground. The first block was an oak wood block, and the second block was a stair block. The item landed on the open side of the stair, creating a situation where the player could not retrieve it. This issue appears to occur consistently across all servers and affects gameplay by making it difficult to collect dropped items that are positioned at certain heights, particularly when they rest on stairs or other non-solid blocks. 
+
+Key points to note:
+- The item was positioned two blocks above the ground, with one block being solid (oak wood) and the other being a stair block.
+- The item was on the open side of the stair, preventing the player from reaching it.
+- This behavior has been observed on multiple servers, suggesting it is a widespread issue rather than an isolated incident. 
+- The inability to retrieve items in such scenarios can lead to frustration and loss of valuable resources. 
+
+Developers may need to investigate the mechanics of item placement and retrieval in relation to block heights and types to address this issue effectively.
+
+[Expected Behavior]
+When an item is dropped in Minecraft, it should be accessible to players regardless of the block type it lands on, as long as the item is within the player's reach. Specifically, items should remain pickable if they land on any solid block, including stairs, provided there is no obstruction that prevents the player from collecting them. Players should be able to retrieve items that are positioned directly above or adjacent to blocks, including those on the open side of stairs. If an item is dropped and becomes unreachable due to its position relative to other blocks, it indicates a deviation from the expected behavior of item collection mechanics as outlined in the game documentation.
+
+[Environment]
+Minecraft Java Edition Version 1.21.8","1. Join a Minecraft server in Survival mode.
+2. Ensure you have a valuable item in your inventory (e.g., diamond, gold ingot).
+3. Drop the valuable item from a height of at least 2 blocks above ground level.
+4. Place an oak wood block directly below the point where the item will drop.
+5. Place a stair block adjacent to the oak wood block, ensuring the open side of the stair faces the dropped item.
+6. Drop the valuable item so that it lands on the open side of the stair, directly above the oak wood block.
+7. Attempt to collect the dropped item while standing on the ground next to the stair.
+8. Observe that the item is not collectible due to its position relative to the stair and the oak wood block.","When a valuable item is dropped in Minecraft, it can become inaccessible if it lands at a height that is not reachable by the player. In this specific case, the item dropped was located two blocks above the ground. The first block was an oak wood block, and the second block was a stair block. The item landed on the open side of the stair, creating a situation where the player could not retrieve it. This issue appears to occur consistently across all servers and affects gameplay by making it difficult to collect dropped items that are positioned at certain heights, particularly when they rest on stairs or other non-solid blocks. 
+
+Key points to note:
+- The item was positioned two blocks above the ground, with one block being solid (oak wood) and the other being a stair block.
+- The item was on the open side of the stair, preventing the player from reaching it.
+- This behavior has been observed on multiple servers, suggesting it is a widespread issue rather than an isolated incident. 
+- The inability to retrieve items in such scenarios can lead to frustration and loss of valuable resources. 
+
+Developers may need to investigate the mechanics of item placement and retrieval in relation to block heights and types to address this issue effectively.","When an item is dropped in Minecraft, it should be accessible to players regardless of the block type it lands on, as long as the item is within the player's reach. Specifically, items should remain pickable if they land on any solid block, including stairs, provided there is no obstruction that prevents the player from collecting them. Players should be able to retrieve items that are positioned directly above or adjacent to blocks, including those on the open side of stairs. If an item is dropped and becomes unreachable due to its position relative to other blocks, it indicates a deviation from the expected behavior of item collection mechanics as outlined in the game documentation.","Minecraft Java Edition Version 1.21.8"
+"MC-300420","Sprint Window slider shows useless values","Bug","25w31a","None","Unconfirmed","(Unassigned)","Awaiting Response","None","You cannot sprint by double-tapping W after setting the sprint window option to 1 or 2. It seems that this duration includes both movement start ticks (see attachment), which means that setting the option to 2 would require you to press W once in two consecutive ticks (which just gets interpreted as holding W), and setting it to 1 requires two presses within a single tick (impossible due to how the game registers inputs). n n
+
+[Steps to Reproduce]
+1. Create a new Minecraft world in Creative mode with default settings.
+2. Open the game settings and navigate to the ""Controls"" section.
+3. Locate the ""Sprint Window"" option and set it to ""1"" or ""2"".
+4. Exit the settings menu to return to the game.
+5. Press the ""W"" key to start moving forward.
+6. Attempt to double-tap the ""W"" key to initiate sprinting.
+7. Observe that the character does not sprint and remains at walking speed.
+8. Repeat steps 5-7 while varying the timing of the double-tap to confirm that sprinting is not activated.
+
+[Observed Behavior]
+When the sprint window option is set to 1 or 2, the player is unable to sprint by double-tapping the forward key (W). The sprint window setting determines the number of game ticks that must pass between each double-tap for the sprint to activate. However, the current implementation includes both the initial movement start ticks and the double-tap requirement, leading to unintended behavior:
+
+1. **Sprint Window Setting of 2:** 
+   - The player must press W once during two consecutive ticks. This effectively translates to the game interpreting the input as holding the W key rather than recognizing it as a double-tap, thus preventing sprinting.
+
+2. **Sprint Window Setting of 1:** 
+   - The player is required to press W twice within a single tick. Given the input registration mechanics of the game, this is impossible to achieve, as the game cannot register two distinct key presses within the same tick.
+
+This results in the sprint window settings of 1 and 2 being effectively useless, as neither allows the player to initiate sprinting through the intended double-tap mechanic. The expected behavior of activating sprinting through double-tapping W is not achievable under these settings, leading to confusion and frustration for players who adjust their sprint settings in hopes of improving their gameplay experience.
+
+[Expected Behavior]
+When the sprint window option is set to 1 or 2, the player should be able to initiate sprinting by double-tapping the forward movement key (W) as intended. Specifically, if the sprint window is set to 2, the player should be able to double-tap W within two consecutive ticks to start sprinting, and if it is set to 1, the player should be able to double-tap W within a single tick. This behavior aligns with the official mechanics of sprinting in Minecraft, where players can sprint by either double-tapping the forward key or holding the sprint key while moving. The game should accurately register these inputs without requiring impossible timing, allowing players to effectively utilize the sprinting mechanic as documented in the game guides.
+
+[Environment]
+Minecraft Java Edition Version 25w31a (snapshot)","1. Create a new Minecraft world in Creative mode with default settings.
+2. Open the game settings and navigate to the ""Controls"" section.
+3. Locate the ""Sprint Window"" option and set it to ""1"" or ""2"".
+4. Exit the settings menu to return to the game.
+5. Press the ""W"" key to start moving forward.
+6. Attempt to double-tap the ""W"" key to initiate sprinting.
+7. Observe that the character does not sprint and remains at walking speed.
+8. Repeat steps 5-7 while varying the timing of the double-tap to confirm that sprinting is not activated.","When the sprint window option is set to 1 or 2, the player is unable to sprint by double-tapping the forward key (W). The sprint window setting determines the number of game ticks that must pass between each double-tap for the sprint to activate. However, the current implementation includes both the initial movement start ticks and the double-tap requirement, leading to unintended behavior:
+
+1. **Sprint Window Setting of 2:** 
+   - The player must press W once during two consecutive ticks. This effectively translates to the game interpreting the input as holding the W key rather than recognizing it as a double-tap, thus preventing sprinting.
+
+2. **Sprint Window Setting of 1:** 
+   - The player is required to press W twice within a single tick. Given the input registration mechanics of the game, this is impossible to achieve, as the game cannot register two distinct key presses within the same tick.
+
+This results in the sprint window settings of 1 and 2 being effectively useless, as neither allows the player to initiate sprinting through the intended double-tap mechanic. The expected behavior of activating sprinting through double-tapping W is not achievable under these settings, leading to confusion and frustration for players who adjust their sprint settings in hopes of improving their gameplay experience.","When the sprint window option is set to 1 or 2, the player should be able to initiate sprinting by double-tapping the forward movement key (W) as intended. Specifically, if the sprint window is set to 2, the player should be able to double-tap W within two consecutive ticks to start sprinting, and if it is set to 1, the player should be able to double-tap W within a single tick. This behavior aligns with the official mechanics of sprinting in Minecraft, where players can sprint by either double-tapping the forward key or holding the sprint key while moving. The game should accurately register these inputs without requiring impossible timing, allowing players to effectively utilize the sprinting mechanic as documented in the game guides.","Minecraft Java Edition Version 25w31a (snapshot)"
+"MC-301221","Incorrect Item light rendering 1.21.8","Bug","1.21.8","None","Unconfirmed","(Unassigned)","Awaiting Response","None","Some items when on the ground or held in hand arent correctly rendered at night. Commonly affects food and tools from testing. Also affects items held by mobs. So far only tested on 1.21.8 Vanilla ClientExpected result should be that items in main offhand, held by mobs and items on ground should not glow at night. n n n n
+
+[Steps to Reproduce]
+1. Create a new Survival world with default settings in Minecraft version 1.21.8.
+2. Set the time to night using the command '/time set night'.
+3. Drop various items on the ground, including at least one food item (e.g., Cooked Porkchop) and one tool (e.g., Iron Pickaxe).
+4. Observe the items on the ground to check if they emit a glow.
+5. Equip a food item in your main hand and a tool in your offhand.
+6. Observe the items in your hands to check if they emit a glow while standing in darkness.
+7. Summon a hostile mob, such as a Zombie, using the command '/summon minecraft:zombie'.
+8. Ensure the Zombie is holding an item (e.g., a wooden sword).
+9. Observe the Zombie to check if the item it is holding emits a glow at night.
+10. Repeat steps 4-9 in different locations (e.g., plains, forests) to confirm the issue is consistent across various environments.
+
+[Observed Behavior]
+In Minecraft version 1.21.8, certain items—including food and tools—exhibit incorrect light rendering when placed on the ground or held by players and mobs during nighttime. Specifically, these items emit a glow, which is inconsistent with the expected behavior. 
+
+- **Items Affected:** The issue primarily impacts food items (such as apples, bread, and cooked meats) and various tools (including pickaxes, axes, and swords). 
+- **Mobs Affected:** Items held by mobs, such as villagers or hostile entities, also display this incorrect glowing effect.
+- **Conditions:** The problem has been observed under standard gameplay conditions in the vanilla client without any modifications or resource packs applied.
+- **Visual Impact:** The glow effect creates confusion for players, as it leads to the false impression that these items possess special properties or enchantments, which is not the case.
+
+**Expected Behavior:**
+
+Items in the main hand, offhand, and those lying on the ground should not emit any glow at night. Instead, they should render consistently with their appearance in daylight, maintaining a standard visual representation without any unintended illumination effects. This behavior aligns with the established graphical standards of item rendering in previous versions of Minecraft.
+
+[Expected Behavior]
+When items such as food and tools are on the ground or held in the player's hand or by mobs, they should not emit any light or glow at night. The expected behavior is that these items remain visually consistent with their appearance during the day, ensuring they do not exhibit any unintended illumination effects when the surrounding environment is dark. This includes items in the main hand, the offhand, and those held by entities, which should all render without any glow, aligning with the standard rendering mechanics of Minecraft.
+
+[Environment]
+Minecraft Java Edition Version 1.21.8","1. Create a new Survival world with default settings in Minecraft version 1.21.8.
+2. Set the time to night using the command '/time set night'.
+3. Drop various items on the ground, including at least one food item (e.g., Cooked Porkchop) and one tool (e.g., Iron Pickaxe).
+4. Observe the items on the ground to check if they emit a glow.
+5. Equip a food item in your main hand and a tool in your offhand.
+6. Observe the items in your hands to check if they emit a glow while standing in darkness.
+7. Summon a hostile mob, such as a Zombie, using the command '/summon minecraft:zombie'.
+8. Ensure the Zombie is holding an item (e.g., a wooden sword).
+9. Observe the Zombie to check if the item it is holding emits a glow at night.
+10. Repeat steps 4-9 in different locations (e.g., plains, forests) to confirm the issue is consistent across various environments.","In Minecraft version 1.21.8, certain items—including food and tools—exhibit incorrect light rendering when placed on the ground or held by players and mobs during nighttime. Specifically, these items emit a glow, which is inconsistent with the expected behavior. 
+
+- **Items Affected:** The issue primarily impacts food items (such as apples, bread, and cooked meats) and various tools (including pickaxes, axes, and swords). 
+- **Mobs Affected:** Items held by mobs, such as villagers or hostile entities, also display this incorrect glowing effect.
+- **Conditions:** The problem has been observed under standard gameplay conditions in the vanilla client without any modifications or resource packs applied.
+- **Visual Impact:** The glow effect creates confusion for players, as it leads to the false impression that these items possess special properties or enchantments, which is not the case.
+
+**Expected Behavior:**
+
+Items in the main hand, offhand, and those lying on the ground should not emit any glow at night. Instead, they should render consistently with their appearance in daylight, maintaining a standard visual representation without any unintended illumination effects. This behavior aligns with the established graphical standards of item rendering in previous versions of Minecraft.","When items such as food and tools are on the ground or held in the player's hand or by mobs, they should not emit any light or glow at night. The expected behavior is that these items remain visually consistent with their appearance during the day, ensuring they do not exhibit any unintended illumination effects when the surrounding environment is dark. This includes items in the main hand, the offhand, and those held by entities, which should all render without any glow, aligning with the standard rendering mechanics of Minecraft.","Minecraft Java Edition Version 1.21.8"
+"MC-300973","Bug about - copper golems isn t oxidised","Bug","25w33a","None","Unconfirmed","(Unassigned)","Incomplete","None","I tried the command tick sprint 3d to watch the copper golem oxidize, but it s not working. Mojang, please fix this. n n
+
+[Steps to Reproduce]
+1. Create a new Creative world with default settings.
+2. Give yourself a Copper Golem using the command '/summon minecraft:copper_golem'.
+3. Ensure that the Copper Golem is placed on a flat surface with at least 4 blocks of space around it.
+4. Enter the command '/gamerule randomTickSpeed 1000' to increase the tick speed for faster block updates.
+5. Activate the 'tick sprint 3d' command to observe the Copper Golem.
+6. Wait for at least 10 minutes while observing the Copper Golem for any signs of oxidation.
+7. Check the Copper Golem to confirm that it has not changed to a more oxidized state.
+
+[Observed Behavior]
+The copper golem is currently not exhibiting any oxidation behavior as expected. When using the command `/tick sprint 3d`, which typically allows players to observe the random tick updates in real-time, the copper golem remains in its initial state without progressing through the oxidation stages. 
+
+In Minecraft, the oxidation process for copper blocks, including those that would hypothetically be used for the copper golem, involves four stages: normal, exposed, weathered, and oxidized. Under normal gameplay conditions, non-waxed copper blocks oxidize over time due to random ticks. However, in this case, the copper golem does not show any signs of oxidation despite the command being executed. 
+
+This lack of oxidation is inconsistent with the intended functionality of copper-based entities, as it was previously indicated that the copper golem would oxidize and eventually turn into a statue upon reaching full oxidation. The absence of this behavior suggests a potential bug in the game’s mechanics regarding the copper golem's interaction with the oxidation system. 
+
+**Summary of Expected Behavior:**
+- Copper golems should oxidize over time, transitioning through the stages of oxidation.
+- The command `/tick sprint 3d` should allow players to witness this oxidation process in real-time.
+- At full oxidation, the copper golem is expected to transform into a statue.
+
+This issue needs to be addressed to ensure the copper golem behaves as intended within the game’s mechanics.
+
+[Expected Behavior]
+When a copper golem is placed in the game, it should undergo a visible oxidation process over time, transitioning through its stages: normal, exposed, weathered, and oxidized. This process should occur as it receives random ticks, similar to other copper blocks. Specifically, when the command ""tick sprint 3d"" is executed, players should observe the copper golem gradually changing its appearance to reflect these oxidation stages. The copper golem should also be affected by environmental factors such as being struck by lightning, which would revert it to its non-oxidized state. Additionally, using an axe on the golem should allow players to remove oxidation at any stage, restoring it to its previous state. This behavior aligns with the mechanics established for copper blocks and the intended functionality of the copper golem as outlined in Minecraft's design.
+
+[Environment]
+Minecraft Java Edition Version 25w33a (snapshot)","1. Create a new Creative world with default settings.
+2. Give yourself a Copper Golem using the command '/summon minecraft:copper_golem'.
+3. Ensure that the Copper Golem is placed on a flat surface with at least 4 blocks of space around it.
+4. Enter the command '/gamerule randomTickSpeed 1000' to increase the tick speed for faster block updates.
+5. Activate the 'tick sprint 3d' command to observe the Copper Golem.
+6. Wait for at least 10 minutes while observing the Copper Golem for any signs of oxidation.
+7. Check the Copper Golem to confirm that it has not changed to a more oxidized state.","The copper golem is currently not exhibiting any oxidation behavior as expected. When using the command `/tick sprint 3d`, which typically allows players to observe the random tick updates in real-time, the copper golem remains in its initial state without progressing through the oxidation stages. 
+
+In Minecraft, the oxidation process for copper blocks, including those that would hypothetically be used for the copper golem, involves four stages: normal, exposed, weathered, and oxidized. Under normal gameplay conditions, non-waxed copper blocks oxidize over time due to random ticks. However, in this case, the copper golem does not show any signs of oxidation despite the command being executed. 
+
+This lack of oxidation is inconsistent with the intended functionality of copper-based entities, as it was previously indicated that the copper golem would oxidize and eventually turn into a statue upon reaching full oxidation. The absence of this behavior suggests a potential bug in the game’s mechanics regarding the copper golem's interaction with the oxidation system. 
+
+**Summary of Expected Behavior:**
+- Copper golems should oxidize over time, transitioning through the stages of oxidation.
+- The command `/tick sprint 3d` should allow players to witness this oxidation process in real-time.
+- At full oxidation, the copper golem is expected to transform into a statue.
+
+This issue needs to be addressed to ensure the copper golem behaves as intended within the game’s mechanics.","When a copper golem is placed in the game, it should undergo a visible oxidation process over time, transitioning through its stages: normal, exposed, weathered, and oxidized. This process should occur as it receives random ticks, similar to other copper blocks. Specifically, when the command ""tick sprint 3d"" is executed, players should observe the copper golem gradually changing its appearance to reflect these oxidation stages. The copper golem should also be affected by environmental factors such as being struck by lightning, which would revert it to its non-oxidized state. Additionally, using an axe on the golem should allow players to remove oxidation at any stage, restoring it to its previous state. This behavior aligns with the mechanics established for copper blocks and the intended functionality of the copper golem as outlined in Minecraft's design.","Minecraft Java Edition Version 25w33a (snapshot)"
+"MC-301125","i got 2 bugs","Bug","25w34a","None","Unconfirmed","(Unassigned)","Awaiting Response","None","so, I own Minecraft because I got through and now, I got to buy it and I can t mine anything or place anything done n n
+
+[Steps to Reproduce]
+1. Launch Minecraft and log in with your account credentials.
+2. Create a new world in Survival mode with default settings.
+3. Attempt to mine any block, such as dirt or stone, using your hand or a tool.
+4. Observe that no blocks drop when mined.
+5. Try to place a block, such as dirt or wood, in the world.
+6. Notice that the block does not place and remains in your inventory.
+7. Exit the world and return to the main menu.
+8. Start a new world in Creative mode.
+9. Attempt to place any block in the world.
+10. Confirm that the block placement still does not work and the block remains in your inventory.
+
+[Observed Behavior]
+Upon launching Minecraft, the player is unable to mine or place any blocks within the game environment. This issue persists regardless of the game mode selected (Survival, Creative, or Adventure). The player can interact with the game world using the mouse and keyboard, but attempts to break blocks (using the left mouse button) or place blocks (using the right mouse button) do not register. No feedback is provided, such as block destruction animations or placement sounds, indicating that the actions are not being processed by the game. This behavior has been observed in both single-player and multiplayer modes, and restarting the game or the device does not resolve the issue. The player has confirmed that they have the necessary permissions and that their game version is up to date.
+
+[Expected Behavior]
+When a player owns Minecraft and has successfully logged into their account, they should be able to mine and place blocks in the game without any restrictions. The player should be able to use tools appropriate for the blocks they are interacting with, such as pickaxes for mining stone or ores, and shovels for digging dirt or sand. Additionally, the game should allow the player to place blocks in the world as long as there is a valid location for placement, adhering to the game's mechanics that dictate where blocks can be placed, such as not overlapping with existing blocks or entities. If the player is in a single-player world or has the necessary permissions in a multiplayer world, all mining and placing actions should function as intended, consistent with the official game mechanics.
+
+[Environment]
+Minecraft Java Edition Version 25w34a (snapshot)","1. Launch Minecraft and log in with your account credentials.
+2. Create a new world in Survival mode with default settings.
+3. Attempt to mine any block, such as dirt or stone, using your hand or a tool.
+4. Observe that no blocks drop when mined.
+5. Try to place a block, such as dirt or wood, in the world.
+6. Notice that the block does not place and remains in your inventory.
+7. Exit the world and return to the main menu.
+8. Start a new world in Creative mode.
+9. Attempt to place any block in the world.
+10. Confirm that the block placement still does not work and the block remains in your inventory.","Upon launching Minecraft, the player is unable to mine or place any blocks within the game environment. This issue persists regardless of the game mode selected (Survival, Creative, or Adventure). The player can interact with the game world using the mouse and keyboard, but attempts to break blocks (using the left mouse button) or place blocks (using the right mouse button) do not register. No feedback is provided, such as block destruction animations or placement sounds, indicating that the actions are not being processed by the game. This behavior has been observed in both single-player and multiplayer modes, and restarting the game or the device does not resolve the issue. The player has confirmed that they have the necessary permissions and that their game version is up to date.","When a player owns Minecraft and has successfully logged into their account, they should be able to mine and place blocks in the game without any restrictions. The player should be able to use tools appropriate for the blocks they are interacting with, such as pickaxes for mining stone or ores, and shovels for digging dirt or sand. Additionally, the game should allow the player to place blocks in the world as long as there is a valid location for placement, adhering to the game's mechanics that dictate where blocks can be placed, such as not overlapping with existing blocks or entities. If the player is in a single-player world or has the necessary permissions in a multiplayer world, all mining and placing actions should function as intended, consistent with the official game mechanics.","Minecraft Java Edition Version 25w34a (snapshot)"
+"MC-301203","I cant see my capes and my skin in game","Bug","1.21.8","None","Unconfirmed","(Unassigned)","Awaiting Response","None","i have a problem, I change my laptop, i join my minecraft acount and i change my skin but when i start in a new world my skin is Steve, and i dont have capes in my menu but i colect 7 capes n n
+
+[Steps to Reproduce]
+1. Change your laptop and ensure that Minecraft is installed.
+2. Open the Minecraft Launcher and log in to your Minecraft account.
+3. Navigate to the ""Skins"" section in the Launcher.
+4. Upload a new skin by selecting a valid PNG file (64x64 pixels).
+5. Click ""Use"" to apply the new skin.
+6. Launch the game and create a new Survival world with default settings.
+7. Once in the game, check your character's appearance to see if it displays as Steve.
+8. Open the menu to check for the cape option and verify that no capes are listed despite having collected 7 capes previously.
+9. Restart the game and create another new world to confirm if the skin and cape issues persist.
+
+[Observed Behavior]
+Upon launching Minecraft after switching laptops and logging into my account, I am unable to see my custom skin in-game. Instead, my character defaults to the default Steve skin when I enter a new world. Additionally, I do not have access to any capes in the cape menu, despite having collected a total of seven capes in the past. This issue persists regardless of the skin I select in the Minecraft Launcher, and it seems that the game is not recognizing my skin changes or cape collection. 
+
+**Steps to Reproduce:**
+1. Change to a new laptop.
+2. Log into the Minecraft account.
+3. Change the skin in the Minecraft Launcher.
+4. Start a new world.
+5. Observe that the character appears as Steve and that capes are not available in the menu.
+
+**Expected Behavior:**
+I expect to see my selected custom skin in-game and access to my previously collected capes.
+
+[Expected Behavior]
+When a player logs into their Minecraft account on a new device and successfully changes their skin, the game should reflect the updated skin in all gameplay instances, including newly created worlds. The player should see their selected skin instead of the default Steve skin. Additionally, if the player has collected capes, these should be accessible in the cape menu, allowing them to equip or view their capes as intended. The game should synchronize the player's skins and capes across devices, ensuring that any changes made in the Minecraft Launcher or account settings are accurately represented in-game. If the skin and cape functionalities are operating correctly, the player should not experience any issues with their appearance or access to previously collected items.
+
+[Environment]
+Minecraft Java Edition Version 1.21.8","1. Change your laptop and ensure that Minecraft is installed.
+2. Open the Minecraft Launcher and log in to your Minecraft account.
+3. Navigate to the ""Skins"" section in the Launcher.
+4. Upload a new skin by selecting a valid PNG file (64x64 pixels).
+5. Click ""Use"" to apply the new skin.
+6. Launch the game and create a new Survival world with default settings.
+7. Once in the game, check your character's appearance to see if it displays as Steve.
+8. Open the menu to check for the cape option and verify that no capes are listed despite having collected 7 capes previously.
+9. Restart the game and create another new world to confirm if the skin and cape issues persist.","Upon launching Minecraft after switching laptops and logging into my account, I am unable to see my custom skin in-game. Instead, my character defaults to the default Steve skin when I enter a new world. Additionally, I do not have access to any capes in the cape menu, despite having collected a total of seven capes in the past. This issue persists regardless of the skin I select in the Minecraft Launcher, and it seems that the game is not recognizing my skin changes or cape collection. 
+
+**Steps to Reproduce:**
+1. Change to a new laptop.
+2. Log into the Minecraft account.
+3. Change the skin in the Minecraft Launcher.
+4. Start a new world.
+5. Observe that the character appears as Steve and that capes are not available in the menu.
+
+**Expected Behavior:**
+I expect to see my selected custom skin in-game and access to my previously collected capes.","When a player logs into their Minecraft account on a new device and successfully changes their skin, the game should reflect the updated skin in all gameplay instances, including newly created worlds. The player should see their selected skin instead of the default Steve skin. Additionally, if the player has collected capes, these should be accessible in the cape menu, allowing them to equip or view their capes as intended. The game should synchronize the player's skins and capes across devices, ensuring that any changes made in the Minecraft Launcher or account settings are accurately represented in-game. If the skin and cape functionalities are operating correctly, the player should not experience any issues with their appearance or access to previously collected items.","Minecraft Java Edition Version 1.21.8"
+"MC-300031","vindicators not spawning on a raid","Bug","1.21.8","None","Unconfirmed","(Unassigned)","Cannot Reproduce","None","vindicators not spawning on raids for some reason, meaning no totems n nedit: this bug does not exist i just thought wrong n n
+
+[Steps to Reproduce]
+1. Create a new Survival world with default settings.
+2. Ensure that the world difficulty is set to Normal or Hard.
+3. Find or create a village where raids can occur.
+4. Obtain the Bad Omen effect by defeating a raid captain or pillager patrol.
+5. Wait for the raid to trigger in the village.
+6. Observe the waves of illagers that spawn during the raid.
+7. Specifically look for vindicators during the raid waves, noting their absence.
+8. Repeat the process multiple times to confirm the issue persists across different raids.
+
+[Observed Behavior]
+During a raid, vindicators are expected to spawn as part of the illager mob composition. Specifically, they should appear in waves, starting from the second wave onwards, with their frequency increasing in later waves and at higher difficulties. On Hard difficulty, vindicators can spawn riding ravagers, forming a vindicator ravager jockey. However, in the reported scenario, vindicators do not spawn at all during the raid, which prevents players from acquiring totems of undying, as these items are dropped exclusively by evokers, who also spawn in later waves of the raid.
+
+The absence of vindicators affects the overall challenge and dynamics of the raid, as they play a crucial role in the mob composition. In Java Edition, the expected behavior is that a certain number of vindicators should spawn in each wave, contributing to the raid's difficulty. If this behavior is not occurring, it may indicate a bug in the raid spawning mechanics or an issue with the specific game version being played.
+
+To summarize, the expected behavior is:
+- Vindicators should spawn during raids starting from the second wave.
+- Their appearance increases in frequency with each subsequent wave and at higher difficulties.
+- The absence of vindicators prevents players from obtaining totems of undying dropped by evokers in later waves.
+
+This issue should be investigated to ensure proper spawning mechanics are functioning as intended.
+
+[Expected Behavior]
+When a raid is initiated, vindicators should spawn as part of the raider mobs, appearing more frequently during later waves and at higher difficulties. Specifically, they can spawn in waves 3 and above on Easy difficulty, and from wave 5 onward on Normal and Hard difficulties. Vindicators may also spawn riding ravagers, creating a vindicator ravager jockey, particularly in the later waves. The expected behavior is that players should encounter vindicators as hostile entities during these raids, allowing them the opportunity to obtain totems of undying from evokers, which also spawn during the raid. If the conditions for a raid are met, vindicators should consistently appear according to the game's mechanics, ensuring players can engage with them as intended during raid events.
+
+[Environment]
+Minecraft Java Edition Version 1.21.8","1. Create a new Survival world with default settings.
+2. Ensure that the world difficulty is set to Normal or Hard.
+3. Find or create a village where raids can occur.
+4. Obtain the Bad Omen effect by defeating a raid captain or pillager patrol.
+5. Wait for the raid to trigger in the village.
+6. Observe the waves of illagers that spawn during the raid.
+7. Specifically look for vindicators during the raid waves, noting their absence.
+8. Repeat the process multiple times to confirm the issue persists across different raids.","During a raid, vindicators are expected to spawn as part of the illager mob composition. Specifically, they should appear in waves, starting from the second wave onwards, with their frequency increasing in later waves and at higher difficulties. On Hard difficulty, vindicators can spawn riding ravagers, forming a vindicator ravager jockey. However, in the reported scenario, vindicators do not spawn at all during the raid, which prevents players from acquiring totems of undying, as these items are dropped exclusively by evokers, who also spawn in later waves of the raid.
+
+The absence of vindicators affects the overall challenge and dynamics of the raid, as they play a crucial role in the mob composition. In Java Edition, the expected behavior is that a certain number of vindicators should spawn in each wave, contributing to the raid's difficulty. If this behavior is not occurring, it may indicate a bug in the raid spawning mechanics or an issue with the specific game version being played.
+
+To summarize, the expected behavior is:
+- Vindicators should spawn during raids starting from the second wave.
+- Their appearance increases in frequency with each subsequent wave and at higher difficulties.
+- The absence of vindicators prevents players from obtaining totems of undying dropped by evokers in later waves.
+
+This issue should be investigated to ensure proper spawning mechanics are functioning as intended.","When a raid is initiated, vindicators should spawn as part of the raider mobs, appearing more frequently during later waves and at higher difficulties. Specifically, they can spawn in waves 3 and above on Easy difficulty, and from wave 5 onward on Normal and Hard difficulties. Vindicators may also spawn riding ravagers, creating a vindicator ravager jockey, particularly in the later waves. The expected behavior is that players should encounter vindicators as hostile entities during these raids, allowing them the opportunity to obtain totems of undying from evokers, which also spawn during the raid. If the conditions for a raid are met, vindicators should consistently appear according to the game's mechanics, ensuring players can engage with them as intended during raid events.","Minecraft Java Edition Version 1.21.8"
+"MC-301159","Rail junction failed on redstone block","Bug","25w34a","None","Unconfirmed","(Unassigned)","Awaiting Response","None","Rail junction failed if railway is on a redstone block n nActually, I only tested it on 1.21.5 n nI don t know how to describe this, so check the video n n
+
+[Steps to Reproduce]
+1. Create a new Creative world in Minecraft version 1.21.5.
+2. Place a Redstone Block at ground level.
+3. On top of the Redstone Block, place a Rail track.
+4. Create a Rail junction by placing additional Rails to form a T-intersection, ensuring one side is straight and the other two sides curve.
+5. Activate the Redstone Block using a Redstone Torch or another power source.
+6. Observe the behavior of the Rail junction when a Minecart approaches from the straight side of the junction.
+7. Note if the Minecart fails to properly navigate the junction due to the Redstone Block's presence.
+
+[Observed Behavior]
+When a rail junction is placed directly on top of a redstone block, the junction fails to function correctly. Specifically, the rail does not change its direction as expected when powered by redstone signals. Instead of transitioning to the correct orientation for a T-junction or intersection, the rail remains in its original state or behaves erratically. 
+
+This issue was observed in version 1.21.5 of Minecraft. The junction appears to be updated incorrectly upon receiving power from adjacent redstone components, leading to inconsistent behavior when a minecart approaches the junction. As a result, minecarts may pass through the junction without following the intended path, which disrupts the expected flow of travel along the railway.
+
+For further clarification, please refer to the accompanying video demonstration that illustrates the problem occurring in real-time.
+
+[Expected Behavior]
+When a railway is placed on a redstone block, the rail junction should function correctly as intended, allowing minecarts to pass through or change direction at the intersection without any issues. The redstone block should not interfere with the alignment or behavior of the adjacent rails. Specifically, if the railway is configured as a T-junction, the intersection should update properly to reflect the correct direction of the curved rail when powered by redstone. The minecart should follow the designated path based on the rail configuration, ensuring smooth movement without getting stuck or failing to change direction as expected.
+
+[Environment]
+Minecraft Java Edition Version 25w34a (snapshot)","1. Create a new Creative world in Minecraft version 1.21.5.
+2. Place a Redstone Block at ground level.
+3. On top of the Redstone Block, place a Rail track.
+4. Create a Rail junction by placing additional Rails to form a T-intersection, ensuring one side is straight and the other two sides curve.
+5. Activate the Redstone Block using a Redstone Torch or another power source.
+6. Observe the behavior of the Rail junction when a Minecart approaches from the straight side of the junction.
+7. Note if the Minecart fails to properly navigate the junction due to the Redstone Block's presence.","When a rail junction is placed directly on top of a redstone block, the junction fails to function correctly. Specifically, the rail does not change its direction as expected when powered by redstone signals. Instead of transitioning to the correct orientation for a T-junction or intersection, the rail remains in its original state or behaves erratically. 
+
+This issue was observed in version 1.21.5 of Minecraft. The junction appears to be updated incorrectly upon receiving power from adjacent redstone components, leading to inconsistent behavior when a minecart approaches the junction. As a result, minecarts may pass through the junction without following the intended path, which disrupts the expected flow of travel along the railway.
+
+For further clarification, please refer to the accompanying video demonstration that illustrates the problem occurring in real-time.","When a railway is placed on a redstone block, the rail junction should function correctly as intended, allowing minecarts to pass through or change direction at the intersection without any issues. The redstone block should not interfere with the alignment or behavior of the adjacent rails. Specifically, if the railway is configured as a T-junction, the intersection should update properly to reflect the correct direction of the curved rail when powered by redstone. The minecart should follow the designated path based on the rail configuration, ensuring smooth movement without getting stuck or failing to change direction as expected.","Minecraft Java Edition Version 25w34a (snapshot)"
