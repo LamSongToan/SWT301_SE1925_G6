@@ -1,0 +1,353 @@
+{
+  "key": "MC-300473",
+  "summary": "when an invisible item frame is given to the player using commands, then the game gets updated to a newer version, the game crashes.",
+  "description": "i made a invisible item frame using commands. it was in my inventory and when placed, seemed invisible. The item frame worked like a normal item frame. for some reason though, when i updated to the new snapshot (25w31a) clicking the item frame to put in my inventory crashed my game. i tried using a hotbar indicator, which worked. I could not fix the chest problem though.(this works in shulkers as well. \\n\\n\\n\\n",
+  "created_date": "2025-07-31T11:17:51.777-0700",
+  "updated_date": "2025-07-31T11:28:29.593-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "resolution_date": "2025-07-31T11:28:29.498-0700",
+  "affected_versions": [
+    "25w31a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 73,
+  "summary_length": 24,
+  "fetch_timestamp": "2025-08-20T03:11:11.216958",
+  "comments": [
+    {
+      "id": "2079322",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5ec8dd4db199aa0c1306447c/7698f7c4-2508-4ce5-a207-0b2918018f22/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5ec8dd4db199aa0c1306447c/7698f7c4-2508-4ce5-a207-0b2918018f22/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5ec8dd4db199aa0c1306447c/7698f7c4-2508-4ce5-a207-0b2918018f22/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5ec8dd4db199aa0c1306447c/7698f7c4-2508-4ce5-a207-0b2918018f22/32"
+        },
+        "displayName": "[Mod] ManosSef",
+        "active": true,
+        "timeZone": "Europe/Athens",
+        "accountType": "atlassian"
+      },
+      "created": "2025-07-31T11:28:20.624-0700",
+      "updated": "2025-07-31T11:28:20.624-0700",
+      "body_text": "*We do not have enough information to find the cause of this issue.*\\n\\nPlease **attach the crash report** found in `minecraft/crash-reports/crash-<DATE>-client.txt` here.If you cannot find a crash report, please attach the **full launcher log** found in `minecraft/launcher_log.txt`.To learn more about how to find the above files, see this page.\\n\\nThis issue is being temporarily resolved as **Awaiting Response**. Once the requested information has been delivered, the report will be reopened automatically.\\n\\n**Quick Links**:📓 Bug Tracker Guidelines – 💬 Community Support – 📧 Mojang Support (Technical Issues) – 📧 Microsoft Support (Account Issues)📓 Project Summary – ✍️ Feedback and Suggestions – 📖 Game Wiki\\n\\n",
+      "body_length": 719,
+      "rendered_body": "<p><em>We do not have enough information to find the cause of this issue.</em></p>\n\n<p>Please <b>attach the crash report</b> found in <tt>minecraft/crash-reports/crash-&lt;DATE&gt;-client.txt</tt> here.<br>\nIf you cannot find a crash report, please attach the <b>full launcher log</b> found in <tt>minecraft/launcher_log.txt</tt>.<br>\nTo learn more about how to find the above files, see <a href=\"https://minecrafthopper.net/help/finding-minecraft-data-folder/\" class=\"external-link\" rel=\"nofollow noreferrer\">this page</a>.</p>\n\n<p><sub>This issue is being temporarily resolved as</sub> <font color=\"#ff5630\"><sub><b>Awaiting Response</b></sub></font><sub>. Once the requested information has been delivered, the report will be reopened automatically.</sub></p>\n\n<p><b>Quick Links</b>:<br>\n📓 <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\">Bug Tracker Guidelines</a> – 💬 <a href=\"https://discord.com/invite/58Sxm23\" class=\"external-link\" rel=\"nofollow noreferrer\">Community Support</a> – 📧 <a href=\"https://aka.ms/Minecraft-Support\" class=\"external-link\" rel=\"nofollow noreferrer\">Mojang Support (Technical Issues)</a> – 📧 <a href=\"https://support.xbox.com/contact-us/\" class=\"external-link\" rel=\"nofollow noreferrer\">Microsoft Support (Account Issues)</a><br>\n📓 <a href=\"https://report.bugs.mojang.com/servicedesk/customer/portal/2\" class=\"external-link\" rel=\"nofollow noreferrer\">Project Summary</a> – ✍️ <a href=\"https://aka.ms/MinecraftFeedbackDiscord\" class=\"external-link\" rel=\"nofollow noreferrer\">Feedback and Suggestions</a> – 📖 <a href=\"https://minecraft.wiki\" class=\"external-link\" rel=\"nofollow noreferrer\">Game Wiki</a></p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "We do not have enough information to find the cause of this issue.",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please "
+              },
+              {
+                "type": "text",
+                "text": "attach the crash report",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " found in "
+              },
+              {
+                "type": "text",
+                "text": "minecraft/crash-reports/crash-<DATE>-client.txt",
+                "marks": [
+                  {
+                    "type": "code"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " here."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "If you cannot find a crash report, please attach the "
+              },
+              {
+                "type": "text",
+                "text": "full launcher log",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " found in "
+              },
+              {
+                "type": "text",
+                "text": "minecraft/launcher_log.txt",
+                "marks": [
+                  {
+                    "type": "code"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "To learn more about how to find the above files, see "
+              },
+              {
+                "type": "text",
+                "text": "this page",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecrafthopper.net/help/finding-minecraft-data-folder/"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This issue is being temporarily resolved as ",
+                "marks": [
+                  {
+                    "attrs": {
+                      "type": "sub"
+                    },
+                    "type": "subsup"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "Awaiting Response",
+                "marks": [
+                  {
+                    "type": "strong"
+                  },
+                  {
+                    "type": "textColor",
+                    "attrs": {
+                      "color": "#ff5630"
+                    }
+                  },
+                  {
+                    "attrs": {
+                      "type": "sub"
+                    },
+                    "type": "subsup"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ". Once the requested information has been delivered, the report will be reopened automatically.",
+                "marks": [
+                  {
+                    "attrs": {
+                      "type": "sub"
+                    },
+                    "type": "subsup"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "📓 "
+              },
+              {
+                "type": "text",
+                "text": "Bug Tracker Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – 💬 "
+              },
+              {
+                "type": "text",
+                "text": "Community Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://discord.com/invite/58Sxm23"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – 📧 "
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support (Technical Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/Minecraft-Support"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – 📧 "
+              },
+              {
+                "type": "text",
+                "text": "Microsoft Support (Account Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://support.xbox.com/contact-us/"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "📓 "
+              },
+              {
+                "type": "text",
+                "text": "Project Summary",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://report.bugs.mojang.com/servicedesk/customer/portal/2"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – ✍️ "
+              },
+              {
+                "type": "text",
+                "text": "Feedback and Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MinecraftFeedbackDiscord"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – 📖 "
+              },
+              {
+                "type": "text",
+                "text": "Game Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecraft.wiki"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 1
+}

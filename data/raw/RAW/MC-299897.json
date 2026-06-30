@@ -1,0 +1,71 @@
+{
+  "key": "MC-299897",
+  "summary": "XP not increasing when using two Mending items – one in main hand, one in offhand",
+  "description": "When holding two items with the Mending enchantment — one in the main hand (e.g. sword) and another in the offhand (e.g. pickaxe or shield) — XP stops increasing completely.\\n\\n\\n\\nEven if both items are at full durability and should not receive XP, the game seems to still prioritize XP repair logic and \"gets stuck\".\\n\\n\\n\\nThe XP does not go to the Mending items (because they’re full) nor to the player’s XP bar. It seems the game assigns the XP to both tools and never lets go.\\n\\n\\n\\n⚠️ Important notes:\\n\\n- The bug only triggers if the item used to **attack (like a sword)** has Mending.\\n\\n- After this, even removing the items doesn’t fix XP gain — it stays broken until you remove **all Mending items** from both hands and inventory.\\n\\n\\n\\n🎯 Reproduction Steps:\\n\\n1. Get two tools with Mending (e.g. sword and pickaxe).\\n\\n2. Hold sword in main hand and pickaxe in offhand.\\n\\n3. Kill mobs or collect XP orbs.\\n\\n4. XP does not go to player’s XP bar.\\n\\n5. Remove tools — XP still bugged unless all Mending items are gone.\\n\\n\\n\\n🧠 Theory:\\n\\nThe game prioritizes XP to both items. If both are full, it locks XP in a repair loop and blocks player progression.\\n\\n\\n\\nThis was tested in:\\n\\n- Minecraft Java Edition 1.21\\n\\n- Vanilla (no mods)\\n\\n- Survival and Creative\\n\\n- New and old worlds\\n\\n\\n\\nPlease fix this — XP is a vital mechanic and this bug can make worlds feel broken or corrupted.\\n\\n",
+  "created_date": "2025-07-20T21:26:24.214-0700",
+  "updated_date": "2025-07-22T10:24:55.368-0700",
+  "status": "Resolved",
+  "resolution": "Cannot Reproduce",
+  "resolution_date": "2025-07-22T10:24:34.517-0700",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": null,
+  "os_version": null,
+  "watch_count": 3,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 230,
+  "summary_length": 16,
+  "fetch_timestamp": "2025-08-20T03:12:20.327872",
+  "comments": [
+    {
+      "id": "2076186",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/32"
+        },
+        "displayName": "[Mod] Jingy",
+        "active": true,
+        "timeZone": "America/Chicago",
+        "accountType": "atlassian"
+      },
+      "created": "2025-07-22T10:24:34.582-0700",
+      "updated": "2025-07-22T10:24:40.241-0700",
+      "body_text": "I cannot reproduce this issue. After holding two items with mending at full durability, my experience went up as expected.\\n\\n",
+      "body_length": 126,
+      "rendered_body": "<p>I cannot reproduce this issue. After holding two items with mending at full durability, my experience went up as expected.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "I cannot reproduce this issue. After holding two items with mending at full durability, my experience went up as expected."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 1
+}

@@ -1,0 +1,364 @@
+{
+  "key": "MC-300745",
+  "created_date": "2025-08-05T19:26:49.759-0700",
+  "updated_date": "2025-08-13T01:43:59.145-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "25w32a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Confirmed",
+  "category": "Mob behaviour",
+  "os_version": null,
+  "watch_count": 2,
+  "labels": [],
+  "resolution_date": "2025-08-13T01:43:58.779-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "copper golem path finding error",
+  "environment_raw": null,
+  "description": "In vanilla minecraft, when the copper golem is at the edge of a long tube besides a platform, the copper golem will jump off the platform on their own, this can be replicated in a vanilla client using the official launcher n n",
+  "Steps to Reproduce": "1. Launch the official Minecraft client and create a new Creative world with default settings.\n2. In the world, build a long tube structure using solid blocks, ensuring it is at least 5 blocks high and 1 block wide.\n3. At one end of the tube, create a platform that is 2 blocks wide and positioned adjacent to the tube.\n4. Summon a copper golem by using the command '/summon minecraft:copper_golem' and place it at the edge of the tube, facing the platform.\n5. Observe the copper golem's behavior as it moves to the edge of the tube.\n6. Wait for the copper golem to reach the edge of the tube and observe if it jumps off the platform on its own.",
+  "Environment": "Minecraft Java Edition Version 25w32a (snapshot)",
+  "Observed Behavior": "In Minecraft, when a copper golem is positioned at the edge of a long vertical tube (such as a drop shaft) adjacent to a platform, it exhibits unintended behavior by jumping off the platform without any external influence. This occurs regardless of the player's actions or commands. The copper golem appears to miscalculate its pathfinding logic, leading it to leap off the edge of the platform into the void below. \n\nThis behavior can be consistently replicated in a vanilla Minecraft client using the official launcher. To reproduce the issue, follow these steps:\n\n1. Create a long vertical tube (at least 2 blocks high) adjacent to a solid platform.\n2. Spawn a copper golem at the top edge of the tube.\n3. Observe the copper golem's movements as it approaches the edge of the platform.\n\nExpected behavior would be for the copper golem to navigate along the edge of the platform without jumping off. Instead, it jumps off the platform, which can lead to its demise if the tube is deep enough. This issue raises concerns regarding the copper golem's pathfinding algorithms, particularly in scenarios involving vertical drop-offs.",
+  "Expected Behavior": "When a copper golem is positioned at the edge of a long tube next to a platform, it should navigate the environment intelligently and avoid jumping off the platform unless there is a valid path or target below it. The expected behavior is that the copper golem will assess its surroundings and remain on the platform, utilizing its pathfinding abilities to find a safe route to the ground or to any nearby blocks. It should only jump off if there is a clear path leading downwards or if it is prompted by player interaction. This behavior aligns with the general pathfinding mechanics seen in other golem entities, which prioritize safe movement and avoid unnecessary falls.",
+  "comments": [
+    {
+      "id": "2080903",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "\u539f\u8272",
+        "active": true,
+        "timeZone": "Asia/Urumqi",
+        "accountType": "customer"
+      },
+      "created": "2025-08-05T19:26:50.308-0700",
+      "updated": "2025-08-05T19:26:50.308-0700",
+      "body_text": "This comment contained multiple media attachments (2), please login to view the attachments.",
+      "body_length": 92,
+      "rendered_body": "<p></p><div><p>This comment contained multiple media attachments (2), please login to view the attachments.</p></div><p></p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "63fbf222-e212-4348-b084-edae07ee22dc",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2081110",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/32"
+        },
+        "displayName": "[MCQA] Blawik",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-06T05:53:05.716-0700",
+      "updated": "2025-08-06T05:53:05.716-0700",
+      "body_text": "Hi!Could you let us know if this issue occurs in a newly created world?Could you also let us know if your using any add-ons or Resource Packs?\\n\\nThis ticket will automatically reopen when you reply.\\n\\n",
+      "body_length": 203,
+      "rendered_body": "<p>Hi!<br>\nCould you let us know if this issue occurs in a newly created world?<br>\nCould you also let us know if your using any add-ons or Resource Packs?</p>\n\n<p>This ticket will automatically reopen when you reply.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hi!"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Could you let us know if this issue occurs in a newly created world?"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Could you also let us know if your using any add-ons or Resource Packs?"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will automatically reopen when you reply."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2081324",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "\u539f\u8272",
+        "active": true,
+        "timeZone": "Asia/Urumqi",
+        "accountType": "customer"
+      },
+      "created": "2025-08-06T17:36:51.294-0700",
+      "updated": "2025-08-06T17:36:51.294-0700",
+      "body_text": "Yes indeed, this is a newly created world without any mods or texture packs added.\\n\\n",
+      "body_length": 86,
+      "rendered_body": "<p><a href=\"https://mojira.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A61b2fcea-47fc-43b8-8be9-6bf815674529\" class=\"user-hover\" rel=\"712020:61b2fcea-47fc-43b8-8be9-6bf815674529\" data-account-id=\"712020:61b2fcea-47fc-43b8-8be9-6bf815674529\" accountid=\"712020:61b2fcea-47fc-43b8-8be9-6bf815674529\">[MCQA] Blawik</a> Yes indeed, this is a newly created world without any mods or texture packs added.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "mention",
+                "attrs": {
+                  "id": "712020:61b2fcea-47fc-43b8-8be9-6bf815674529",
+                  "text": "@[MCQA] Blawik",
+                  "accessLevel": "",
+                  "localId": "0dce007a-d2e9-489c-905d-fbc165fc284a"
+                }
+              },
+              {
+                "type": "text",
+                "text": " Yes indeed, this is a newly created world without any mods or texture packs added."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2083222",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:b4c0bee2-6cf4-461e-99bb-ec84d2e3b14e/952cf8de-b0c4-4c73-91b9-064cba9c1bf9/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:b4c0bee2-6cf4-461e-99bb-ec84d2e3b14e/952cf8de-b0c4-4c73-91b9-064cba9c1bf9/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:b4c0bee2-6cf4-461e-99bb-ec84d2e3b14e/952cf8de-b0c4-4c73-91b9-064cba9c1bf9/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:b4c0bee2-6cf4-461e-99bb-ec84d2e3b14e/952cf8de-b0c4-4c73-91b9-064cba9c1bf9/32"
+        },
+        "displayName": "[MCQA] Macka",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-13T01:43:58.852-0700",
+      "updated": "2025-08-13T01:43:58.852-0700",
+      "body_text": "**Thank you for your report!**\\n\\nHowever, we could not reproduce this issue, thus it has been temporarily closed as **Awaiting Response**.\\n\\nCould you please let us know if this issue persists after the latest update? If so, please provide clear steps to reproduce the issue and upload a world copy in which this issue occurs.\\n\\n**This ticket will automatically reopen when you reply.****Quick Links**\ud83d\udcd3 Issue Guidelines \u2013 \ud83d\udcac Mojang Support \u2013 \ud83d\udce7 Suggestions \u2013 \ud83d\udcd6 Minecraft Wiki\\n\\n",
+      "body_length": 480,
+      "rendered_body": "<p><b>Thank you for your report!</b></p>\n\n<p>However, we could not reproduce this issue, thus it has been temporarily closed as <font color=\"#f79232\"><b>Awaiting Response</b></font>.</p>\n\n<p>Could you please let us know if this issue persists after the latest update? <br>\nIf so, please provide clear steps to reproduce the issue and upload a world copy in which this issue occurs.</p>\n\n<p><font color=\"#8eb021\"><b>This ticket will automatically reopen when you reply.</b></font><br>\n<b>Quick Links</b><br>\n\ud83d\udcd3 <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\">Issue Guidelines</a> \u2013 \ud83d\udcac <a href=\"https://help.minecraft.net/hc/en-us/requests/new\" class=\"external-link\" rel=\"nofollow noreferrer\">Mojang Support</a> \u2013 \ud83d\udce7 <a href=\"https://feedback.minecraft.net/\" class=\"external-link\" rel=\"nofollow noreferrer\">Suggestions</a> \u2013 \ud83d\udcd6 <a href=\"https://minecraft.wiki/\" class=\"external-link\" rel=\"nofollow noreferrer\">Minecraft Wiki</a></p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Thank you for your report!",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "However, we could not reproduce this issue, thus it has been temporarily closed as "
+              },
+              {
+                "type": "text",
+                "text": "Awaiting Response",
+                "marks": [
+                  {
+                    "type": "strong"
+                  },
+                  {
+                    "type": "textColor",
+                    "attrs": {
+                      "color": "#f79232"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Could you please let us know if this issue persists after the latest update? "
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "If so, please provide clear steps to reproduce the issue and upload a world copy in which this issue occurs."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will automatically reopen when you reply.",
+                "marks": [
+                  {
+                    "type": "strong"
+                  },
+                  {
+                    "type": "textColor",
+                    "attrs": {
+                      "color": "#8eb021"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3 "
+              },
+              {
+                "type": "text",
+                "text": "Issue Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udcac "
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://help.minecraft.net/hc/en-us/requests/new"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udce7 "
+              },
+              {
+                "type": "text",
+                "text": "Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://feedback.minecraft.net/"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udcd6 "
+              },
+              {
+                "type": "text",
+                "text": "Minecraft Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecraft.wiki/"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300745"
+  }
+}

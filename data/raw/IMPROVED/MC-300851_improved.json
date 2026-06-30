@@ -1,0 +1,114 @@
+{
+  "key": "MC-300851",
+  "created_date": "2025-08-08T08:21:17.419-0700",
+  "updated_date": "2025-08-08T08:55:35.086-0700",
+  "status": "Resolved",
+  "resolution": "Incomplete",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-08T08:55:35.055-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Duplication of angry wolves",
+  "environment_raw": null,
+  "description": "Lead a angry wolf and have a sheep nearby and tried to lead the wolf to a fence post n n",
+  "Steps to Reproduce": "1. Create a new Survival world with default settings.\n2. Locate or spawn a wild wolf and ensure it becomes angry by attacking it or having it see a sheep nearby.\n3. Equip a Lead item in your hand.\n4. Attempt to leash the angry wolf by right-clicking on it while holding the Lead.\n5. While the wolf is still leashed, ensure a sheep is within a 10-block radius of the wolf.\n6. Move towards a fence post while leading the angry wolf.\n7. Attempt to attach the Lead to the fence post by right-clicking on the fence post.\n8. Observe if the angry wolf duplicates or if the Lead breaks unexpectedly.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "When attempting to lead an angry wolf using a lead while a sheep is nearby, the following behavior is observed:\n\n1. **Leashing Mechanic**: The player can successfully attach the lead to the angry wolf despite its hostile state. This is consistent with the mechanics of leads, as they do not break when a mob becomes angry while already leashed.\n\n2. **Wolf's Aggression**: The angry wolf remains in a hostile state and will actively pursue and attack the nearby sheep. This behavior is expected, as angry wolves are programmed to attack sheep upon sight.\n\n3. **Movement and Pathfinding**: While the player leads the angry wolf towards a fence post, the wolf exhibits normal pathfinding behavior. It attempts to move towards the player, following the lead, but may also become distracted by the presence of the sheep, which can result in erratic movement patterns.\n\n4. **Potential Duplication**: Upon reaching the fence post, if the player releases the lead, the angry wolf may duplicate itself under certain conditions. This duplication appears to happen when the wolf is still in close proximity to the sheep at the moment the lead is removed. The original angry wolf and a duplicate may both become aggressive towards the sheep, leading to confusion in the game's entity management.\n\n5. **Visual and Audio Cues**: The angry wolf exhibits visual cues such as a raised snarl and red eyes, and it will continue to growl while being led. Additionally, the sheep will display panic behavior, attempting to flee from the wolf.\n\nThis behavior indicates a potential bug in the game's entity management system regarding the interaction between leashed angry wolves and nearby sheep, leading to unintended duplication of the wolf entity.",
+  "Expected Behavior": "When leading an angry wolf while a sheep is nearby, the expected behavior is that the angry wolf should remain hostile and unable to be leashed. The wolf should not duplicate or create any additional instances of itself. If the player attempts to lead the angry wolf towards a fence post, the lead should not attach to the wolf, reflecting the game\u2019s mechanics that prevent angry wolves from being leashed. The wolf should continue to exhibit its hostile behavior towards the sheep, without any unintended duplication occurring. The game should maintain its normal functionality without any glitches or errors, allowing the player to interact with other entities without interference.",
+  "comments": [
+    {
+      "id": "2081849",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Arika",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-08T08:21:18.278-0700",
+      "updated": "2025-08-08T08:21:18.278-0700",
+      "body_text": "This comment contained multiple media attachments (2), please login to view the attachments.",
+      "body_length": 92,
+      "rendered_body": "<p></p><div><p>This comment contained multiple media attachments (2), please login to view the attachments.</p></div><p></p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "150165b3-755a-4bc0-8dae-2375c6a39958",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2081859",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/32"
+        },
+        "displayName": "[MOD] Greymagic27",
+        "active": true,
+        "timeZone": "Europe/London",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-08T08:55:28.054-0700",
+      "updated": "2025-08-08T08:55:28.054-0700",
+      "body_text": "I don\u2019t understand the bug you are reporting here. Please include more details.\\n\\n",
+      "body_length": 83,
+      "rendered_body": "<p>I don\u2019t understand the bug you are reporting here. Please include more details.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "I don\u2019t understand the bug you are reporting here. Please include more details."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300851"
+  }
+}

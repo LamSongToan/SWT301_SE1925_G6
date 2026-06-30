@@ -1,0 +1,114 @@
+{
+  "key": "MC-300760",
+  "created_date": "2025-07-27T04:24:14.499-0700",
+  "updated_date": "2025-08-08T04:21:44.436-0700",
+  "status": "Resolved",
+  "resolution": "Cannot Reproduce",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Plausible",
+  "category": "UI",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-08T04:19:19.846-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Realms list isn t sorted",
+  "environment_raw": null,
+  "description": "The bug with the Realms list is completely messed up, before I had active Realms on top, and inactive ones on the bottom, I don t know why exactly this happened, but I want to say that it happened after me removed from one Realms and after returned Honey Missile Wars, Bleps: Nocked and Loaded, Duel TNT, and Biome Run Remix n n",
+  "Steps to Reproduce": "1. Launch Minecraft and log into your account.\n2. Navigate to the Realms menu by selecting the \"Minecraft Realms\" button from the main menu.\n3. Observe the list of Realms displayed on the screen.\n4. Take note of the order of the Realms, specifically the positioning of active and inactive Realms.\n5. Remove yourself from one of the active Realms (for example, any Realm you own or are a member of).\n6. Rejoin the Realms that you previously participated in, such as \"Honey Missile Wars,\" \"Bleps: Nocked and Loaded,\" \"Duel TNT,\" and \"Biome Run Remix.\"\n7. Once you have rejoined these Realms, check the Realms list again.\n8. Observe any changes in the order of the Realms, specifically noting whether active Realms are still listed at the top and inactive ones at the bottom.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "The Realms list is currently not sorted as expected. Previously, active Realms would appear at the top of the list, while inactive Realms were positioned at the bottom. However, after removing myself from one Realm and subsequently rejoining several others, including \"Honey Missile Wars,\" \"Bleps: Nocked and Loaded,\" \"Duel TNT,\" and \"Biome Run Remix,\" the sorting order became disorganized. The list now displays Realms in an inconsistent manner, without prioritizing active Realms over inactive ones. This issue disrupts the user experience, making it difficult to quickly identify which Realms are currently active. The expected behavior is that the Realms list should automatically sort active Realms at the top, ensuring users can easily access their most frequently played worlds.",
+  "Expected Behavior": "The Realms list should display active Realms at the top, followed by inactive ones at the bottom, maintaining a clear and organized order. This sorting should occur consistently regardless of any changes made to the Realms, such as joining or leaving a Realm. When a player removes themselves from a Realm or rejoins a different Realm, the list should automatically refresh to reflect the current status of each Realm accurately. This behavior aligns with the intended functionality of the Realms interface, ensuring users can easily identify which Realms are currently active and which are not, facilitating better management of their gameplay experience.",
+  "comments": [
+    {
+      "id": "2077549",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "4953makcim",
+        "active": true,
+        "timeZone": "Europe/Kyiv",
+        "accountType": "customer"
+      },
+      "created": "2025-07-27T04:24:15.513-0700",
+      "updated": "2025-07-27T04:24:15.513-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.",
+      "body_length": 80,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "76268f2d-6670-414f-a14d-e78901efcd6a",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2081757",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/42d97e23ee0c6e7cb05f90a7889b501b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FE-6.png",
+          "24x24": "https://secure.gravatar.com/avatar/42d97e23ee0c6e7cb05f90a7889b501b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FE-6.png",
+          "16x16": "https://secure.gravatar.com/avatar/42d97e23ee0c6e7cb05f90a7889b501b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FE-6.png",
+          "32x32": "https://secure.gravatar.com/avatar/42d97e23ee0c6e7cb05f90a7889b501b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FE-6.png"
+        },
+        "displayName": "etanaratsastaja",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-08T04:19:19.913-0700",
+      "updated": "2025-08-08T04:19:19.913-0700",
+      "body_text": "Unable to reproduce the issue, feel free to leave a comment if you have more concrete steps to get the issue to show up again.\\n\\n",
+      "body_length": 130,
+      "rendered_body": "<p>Unable to reproduce the issue, feel free to leave a comment if you have more concrete steps to get the issue to show up again.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Unable to reproduce the issue, feel free to leave a comment if you have more concrete steps to get the issue to show up again."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300760"
+  }
+}

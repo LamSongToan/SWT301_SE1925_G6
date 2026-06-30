@@ -1,0 +1,366 @@
+{
+  "key": "MC-300515",
+  "created_date": "2025-08-01T06:48:37.085-0700",
+  "updated_date": "2025-08-01T09:45:02.510-0700",
+  "status": "Resolved",
+  "resolution": "Incomplete",
+  "affected_versions": [
+    "25w31a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-01T09:45:02.118-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "endermans try teleporting when in boats",
+  "environment_raw": null,
+  "description": "endermans try to and make sounds of teleporting when in boats n n",
+  "Steps to Reproduce": "1. Create a new Creative world with default settings.\n2. Obtain a boat from your inventory.\n3. Spawn an Enderman using the command '/summon minecraft:enderman' in the chat.\n4. Place the boat on the ground near the Enderman.\n5. Wait for the Enderman to enter the boat.\n6. Observe the Enderman while it is in the boat and listen for teleportation sounds.\n7. Note any attempts the Enderman makes to teleport while still inside the boat.",
+  "Environment": "Minecraft Java Edition Version 25w31a (snapshot)",
+  "Observed Behavior": "When an Enderman is placed in a boat in Minecraft, it exhibits an unusual behavior where it attempts to teleport while still confined within the boat. This behavior is characterized by the Enderman making the distinct teleportation sound effect, even though it does not successfully teleport out of the boat. \n\n1. **Sound Emission**: The Enderman produces the teleportation sound effect repeatedly, indicating that it is attempting to teleport despite being unable to do so due to the constraints of the boat.\n   \n2. **Teleportation Attempts**: While in the boat, the Enderman seems to make multiple attempts to teleport, as evidenced by the sound cues. However, it does not change its position or escape the confines of the boat.\n\n3. **Behavior Consistency**: This teleportation sound occurs consistently whenever the Enderman is in a boat, regardless of external factors such as player proximity or environmental conditions.\n\n4. **Game Versions**: This behavior has been observed in Java Edition, where Endermen are known to have specific teleportation mechanics. It is unclear if this behavior occurs in Bedrock Edition, as the mechanics may differ.\n\n5. **Impact on Gameplay**: This bug can lead to confusion for players who may expect an Enderman to teleport away when attacked or damaged while in a boat, as it does not follow the typical teleportation behavior seen when not confined.\n\nThis issue highlights a discrepancy in the expected behavior of Endermen when they are placed in boats, as they should not be able to teleport while in that state according to the game's mechanics.",
+  "Expected Behavior": "When an enderman is placed in a boat, it should not attempt to teleport or make teleportation sounds. The intended behavior is that endermen remain contained within the boat without trying to escape, as they cannot teleport while in a minecart or boat according to the game's mechanics. Instead, they should remain passive and unable to take any teleportation actions until they are removed from the boat. This aligns with the established behavior of endermen in Java Edition, where they cannot teleport while in vehicles.",
+  "comments": [
+    {
+      "id": "2079586",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/711bc6ceab872fff2998dc31bae06bec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FM-3.png",
+          "24x24": "https://secure.gravatar.com/avatar/711bc6ceab872fff2998dc31bae06bec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FM-3.png",
+          "16x16": "https://secure.gravatar.com/avatar/711bc6ceab872fff2998dc31bae06bec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FM-3.png",
+          "32x32": "https://secure.gravatar.com/avatar/711bc6ceab872fff2998dc31bae06bec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FM-3.png"
+        },
+        "displayName": "MrMuskle",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-01T09:45:02.209-0700",
+      "updated": "2025-08-01T09:45:02.209-0700",
+      "body_text": "**Thank you for your report!**However, this issue is **Incomplete**.\\n\\nYour report does not contain enough information; as such, we are unable to understand or reproduce the issue. You are welcome to create a new ticket about your issue with more detailed information.\\n\\nHowever, please review the Bug Tracker Guidelines before writing a new bug report, and make use of the search feature, as it\u2019s likely that someone else already reported the issue before. In particular, your issue might already have been reported in one of the following tickets:\\n\\n* \\n\\n\\n* \\n\\n\\n* \\n\\n\\n* \\n\\n\\n\\nIf you find an existing ticket about the issue, you can add a vote and any new information to it instead of reporting it yourself.\\n\\n**Quick Links:**\ud83d\udcd3 Bug Tracker Guidelines \u2013 \ud83d\udcac Community Support \u2013 \ud83d\udce7 Mojang Support (Technical Issues) \u2013 \ud83d\udce7 Microsoft Support (Account Issues)\ud83d\udcd3 Project Summary \u2013 \u270d\ufe0f Feedback and Suggestions \u2013 \ud83d\udcd6 Game Wiki\\n\\n",
+      "body_length": 927,
+      "rendered_body": "<p><b>Thank you for your report!</b><br>\nHowever, this issue is <font color=\"#FF5722\"><b>Incomplete</b></font>.</p>\n\n<p>Your report does not contain enough information; as such, we are unable to understand or reproduce the issue. You are welcome to create a new ticket about your issue with more detailed information.</p>\n\n<p>However, please review the <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\">Bug Tracker Guidelines</a> before writing a new bug report, and make use of the <a href=\"https://bugs.mojang.com/browse/MC\" class=\"external-link\" rel=\"nofollow noreferrer\">search feature</a>, as it\u2019s likely that someone else already reported the issue before. In particular, your issue might already have been reported in one of the following tickets:</p>\n<div><p>This comment contained multiple image attachments (4), please login to view the attachments.</p></div>\n\n\n<p>If you find an existing ticket about the issue, you can add a vote and any new information to it instead of reporting it yourself.</p>\n\n<p><b>Quick Links:</b><br>\n\ud83d\udcd3 <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\">Bug Tracker Guidelines</a> \u2013 \ud83d\udcac <a href=\"https://discord.com/invite/58Sxm23\" class=\"external-link\" rel=\"nofollow noreferrer\">Community Support</a> \u2013 \ud83d\udce7 <a href=\"https://aka.ms/Minecraft-Support\" class=\"external-link\" rel=\"nofollow noreferrer\">Mojang Support (Technical Issues)</a> \u2013 \ud83d\udce7 <a href=\"https://support.xbox.com/contact-us/\" class=\"external-link\" rel=\"nofollow noreferrer\">Microsoft Support (Account Issues)</a><br>\n\ud83d\udcd3 <a href=\"https://report.bugs.mojang.com/servicedesk/customer/portal/2\" class=\"external-link\" rel=\"nofollow noreferrer\">Project Summary</a> \u2013 \u270d\ufe0f <a href=\"https://aka.ms/MinecraftFeedbackDiscord\" class=\"external-link\" rel=\"nofollow noreferrer\">Feedback and Suggestions</a> \u2013 \ud83d\udcd6 <a href=\"https://minecraft.wiki\" class=\"external-link\" rel=\"nofollow noreferrer\">Game Wiki</a></p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Thank you for your report!",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "However, this issue is "
+              },
+              {
+                "type": "text",
+                "text": "Incomplete",
+                "marks": [
+                  {
+                    "type": "strong"
+                  },
+                  {
+                    "type": "textColor",
+                    "attrs": {
+                      "color": "#ff5722"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Your report does not contain enough information; as such, we are unable to understand or reproduce the issue. You are welcome to create a new ticket about your issue with more detailed information."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "However, please review the "
+              },
+              {
+                "type": "text",
+                "text": "Bug Tracker Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " before writing a new bug report, and make use of the "
+              },
+              {
+                "type": "text",
+                "text": "search feature",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://bugs.mojang.com/browse/MC"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ", as it\u2019s likely that someone else already reported the issue before. In particular, your issue might already have been reported in one of the following tickets:"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "inlineCard",
+                        "attrs": {
+                          "url": "https://mojira.atlassian.net/browse/MC-183446#icft=MC-183446"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "inlineCard",
+                        "attrs": {
+                          "url": "https://mojira.atlassian.net/browse/MC-227008#icft=MC-227008"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "inlineCard",
+                        "attrs": {
+                          "url": "https://mojira.atlassian.net/browse/MC-273708#icft=MC-273708"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "inlineCard",
+                        "attrs": {
+                          "url": "https://mojira.atlassian.net/browse/MC-274924#icft=MC-274924"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "If you find an existing ticket about the issue, you can add a vote and any new information to it instead of reporting it yourself."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links:",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3 "
+              },
+              {
+                "type": "text",
+                "text": "Bug Tracker Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udcac "
+              },
+              {
+                "type": "text",
+                "text": "Community Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://discord.com/invite/58Sxm23"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udce7 "
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support (Technical Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/Minecraft-Support"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udce7 "
+              },
+              {
+                "type": "text",
+                "text": "Microsoft Support (Account Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://support.xbox.com/contact-us/"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3 "
+              },
+              {
+                "type": "text",
+                "text": "Project Summary",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://report.bugs.mojang.com/servicedesk/customer/portal/2"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \u270d\ufe0f "
+              },
+              {
+                "type": "text",
+                "text": "Feedback and Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MinecraftFeedbackDiscord"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udcd6 "
+              },
+              {
+                "type": "text",
+                "text": "Game Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecraft.wiki"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300515"
+  }
+}

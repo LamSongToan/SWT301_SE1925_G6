@@ -1,0 +1,366 @@
+{
+  "key": "MC-299909",
+  "summary": " Failed to load texture for profile",
+  "description": "Cant load skin texture. Use vanilla. Skin selected in browser/launcher. After start play in singleplayer/multiplayer, after some time i got an error in console\\n\\n> `java.util.concurrent.CompletionException: java.io.UncheckedIOException: java.net.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond`\\n> \\n> \\n\\nhttp - protocol not work for downloading, replace it with httpsWhen try to download skin from java application with http - connection time out always, with https downloading process is done\\n\\n",
+  "created_date": "2025-07-22T05:08:13.447-0700",
+  "updated_date": "2025-08-19T08:31:59.402-0700",
+  "status": "Resolved",
+  "resolution": "Cannot Reproduce",
+  "resolution_date": "2025-08-19T08:31:59.336-0700",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 2,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 87,
+  "summary_length": 6,
+  "fetch_timestamp": "2025-08-20T03:12:17.091512",
+  "comments": [
+    {
+      "id": "2076103",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "W3EHunter",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-07-22T05:08:14.265-0700",
+      "updated": "2025-07-22T05:08:14.265-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.",
+      "body_length": 162,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "37813fbb-6f62-4d8b-b9ee-687f461679bb",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "abdc957b-fc63-4b5a-b885-dd485b0147c2",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2076112",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Toucka",
+        "active": true,
+        "timeZone": "Europe/Berlin",
+        "accountType": "customer"
+      },
+      "created": "2025-07-22T05:43:43.987-0700",
+      "updated": "2025-07-22T05:43:43.987-0700",
+      "body_text": "First of: Thanks for Reporting this Bug but i think that this isnt a Bug.\\n\\nYou see when you press ESC ingame and then Go to the Skin Options you can disable the outer layer and i think your skin is ONLY outer layert so turn that on.\\n\\n-Toucka\\n\\n",
+      "body_length": 249,
+      "rendered_body": "<p>First of: Thanks for Reporting this Bug but i think that this isnt a Bug.</p>\n\n<p>You see when you press ESC ingame and then Go to the Skin Options you can disable the outer layer and i think your skin is ONLY outer layert so turn that on.</p>\n\n<p>-Toucka</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "First of: Thanks for Reporting this Bug but i think that this isnt a Bug."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "You see when you press ESC ingame and then Go to the Skin Options you can disable the outer layer and i think your skin is ONLY outer layert so turn that on."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "-Toucka"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2076133",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "W3EHunter",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-07-22T06:21:11.678-0700",
+      "updated": "2025-07-22T06:21:11.678-0700",
+      "body_text": "You see when you join the server and always see steve model, its look like an bug. I record it. From launch the game to reach exception. My skin is too different with default Steve skin. I have ALL layers. Do u check log file? Do u check exception in topic?\\n\\n> `java.net.SocketException`\\n> \\n> \\n\\n\\n\\n",
+      "body_length": 305,
+      "rendered_body": "<p>You see when you join the server and always see steve model, its look like an bug. I record it. From launch the game to reach exception. My skin is too different with default Steve skin. I have ALL layers. Do u check log file? Do u check exception in topic?</p>\n\n<blockquote><p><tt>java.net.SocketException</tt></p></blockquote>\n\n<p></p><div><p>This comment contained multiple media attachments (2), please login to view the attachments.</p></div><p></p>\n",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "You see when you join the server and always see steve model, its look like an bug. I record it. From launch the game to reach exception. My skin is too different with default Steve skin. I have ALL layers. Do u check log file? Do u check exception in topic?"
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "java.net.SocketException",
+                    "marks": [
+                      {
+                        "type": "code"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "mediaSingle",
+            "attrs": {
+              "layout": "align-start"
+            },
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "5ad54e3b-db72-4be7-818e-1be2aedcb9cd",
+                  "alt": "Timeline 1.mov",
+                  "collection": "",
+                  "height": 1080,
+                  "width": 1920
+                }
+              }
+            ]
+          },
+          {
+            "type": "paragraph"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2076380",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "24x24": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "16x16": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "32x32": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png"
+        },
+        "displayName": "Automation for Jira",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "app"
+      },
+      "created": "2025-07-23T03:52:16.792-0700",
+      "updated": "2025-07-23T03:52:16.792-0700",
+      "body_text": "Please edit your report to change the Affected Version to the version shown on the Minecraft title screen\\n\\n",
+      "body_length": 109,
+      "rendered_body": "<p>Please edit your report to change the Affected Version to the version shown on the Minecraft title screen</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please edit your report to change the Affected Version to the version shown on the Minecraft title screen"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2084360",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "kaito",
+        "active": true,
+        "timeZone": "Europe/Dublin",
+        "accountType": "customer"
+      },
+      "created": "2025-08-18T03:00:45.115-0700",
+      "updated": "2025-08-18T03:00:45.115-0700",
+      "body_text": "The same thing happens to us, I can't find a way to solve it.\\n\\n",
+      "body_length": 65,
+      "rendered_body": "<p>The same thing happens to us, I can't find a way to solve it.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "The same thing happens to us, I can't find a way to solve it."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2084520",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/32"
+        },
+        "displayName": "[MOD] Greymagic27",
+        "active": true,
+        "timeZone": "Europe/London",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-18T12:23:01.854-0700",
+      "updated": "2025-08-18T12:23:17.957-0700",
+      "body_text": "What is your ISP? Internet service provider\\n\\nIf this is still occuring please can you attach a new latest.log showcasing the error.\\n\\n",
+      "body_length": 137,
+      "rendered_body": "<p>What is your ISP? Internet service provider</p>\n\n<p>If this is still occuring please can you attach a new latest.log showcasing the error.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "What is your ISP? Internet service provider"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "If this is still occuring please can you attach a new latest.log showcasing the error."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2084647",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "W3EHunter",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-19T03:42:17.725-0700",
+      "updated": "2025-08-19T03:42:17.725-0700",
+      "body_text": "Now cant reproduce its. Looks like fixed\\n\\n",
+      "body_length": 44,
+      "rendered_body": "<p>Now cant reproduce its. Looks like fixed</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Now cant reproduce its. Looks like fixed"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 7
+}

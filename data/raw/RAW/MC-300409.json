@@ -1,0 +1,71 @@
+{
+  "key": "MC-300409",
+  "summary": "Piglin can rarely drop command block",
+  "description": "When I working of Zombified Piglin farm with auto Piglin and Copper Golem sort system, /tp @e[type=piglin] ~ ~ ~ to magma block and wait it to die, then it dropped command block (this don’t contain any code)\\n\\nI don’t have any picture now, cuz this happend when piglin don’t have anything to trade with (maybe?)\\n\\n",
+  "created_date": "2025-07-30T20:38:22.618-0700",
+  "updated_date": "2025-08-01T20:51:42.148-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "resolution_date": "2025-08-01T20:51:41.831-0700",
+  "affected_versions": [
+    "25w31a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 55,
+  "summary_length": 6,
+  "fetch_timestamp": "2025-08-20T03:11:16.948225",
+  "comments": [
+    {
+      "id": "2079709",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:eba13223-1cec-4815-9909-e4bb32f91869/a987d956-c6cc-4ac8-bd08-a58448906405/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:eba13223-1cec-4815-9909-e4bb32f91869/a987d956-c6cc-4ac8-bd08-a58448906405/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:eba13223-1cec-4815-9909-e4bb32f91869/a987d956-c6cc-4ac8-bd08-a58448906405/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:eba13223-1cec-4815-9909-e4bb32f91869/a987d956-c6cc-4ac8-bd08-a58448906405/32"
+        },
+        "displayName": "[Mod] Asteraoth",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-01T20:51:41.879-0700",
+      "updated": "2025-08-01T20:51:41.879-0700",
+      "body_text": "Do you have any data packs enabled?\\n\\n",
+      "body_length": 39,
+      "rendered_body": "<p>Do you have any data packs enabled?</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Do you have any data packs enabled?"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 1
+}

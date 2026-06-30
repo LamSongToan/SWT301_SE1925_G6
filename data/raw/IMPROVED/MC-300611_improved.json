@@ -1,0 +1,328 @@
+{
+  "key": "MC-300611",
+  "created_date": "2025-08-03T22:05:47.422-0700",
+  "updated_date": "2025-08-05T15:12:00.955-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8",
+    "25w31a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 2,
+  "labels": [],
+  "resolution_date": "2025-08-05T15:12:00.877-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "zombie piglin mass spawning around nether portal in the overworld",
+  "environment_raw": null,
+  "description": "Game is constantly spawning large numbers of zombie piglin around the nether portal in the over world. Not just one every once in a while, but up to 10 and counting within minutes of game play. closing and reloading world and relaunching the game does not change or help. n n",
+  "Steps to Reproduce": "1. Create a new Survival world with default settings.\n2. Locate or build a Nether portal in the Overworld.\n3. Light the Nether portal using flint and steel.\n4. Stand near the Nether portal for at least 5 minutes without leaving the area.\n5. Observe the area around the Nether portal for the spawning of zombified piglins.\n6. Note the number of zombified piglins that spawn in a short time period (within 5 minutes).\n7. Close and reload the world, then relaunch the game.\n8. Repeat steps 2-6 to confirm that the issue persists after reloading the world.",
+  "Environment": "Minecraft Java Edition Versions: 1.21.8, 25w31a (includes snapshots)",
+  "Observed Behavior": "The game is exhibiting an abnormal spawning rate of zombified piglins around the nether portal located in the Overworld. Instead of the expected low frequency of 1 zombified piglin every few minutes, players are observing the spawning of multiple zombified piglins\u2014up to 10 or more\u2014within just a few minutes of gameplay. This behavior persists regardless of player actions, such as closing and reloading the world or relaunching the game, indicating that it is not a transient issue but rather a consistent bug. \n\nZombified piglins are spawning directly adjacent to the nether portal, which contradicts the typical spawning mechanics where they should appear at a much lower rate. According to the standard spawning rules, zombified piglins should only spawn at a rate of 1 in 2000 (0.05%) on Easy, 1 in 1000 (0.1%) on Normal, and 3 in 2000 (0.15%) on Hard difficulty when a nether portal receives a random tick. This excessive spawning frequency suggests that there may be a malfunction in the spawning algorithm or an unintended interaction with the nether portal mechanics, leading to the abnormal behavior observed by players.\n\nAdditionally, it is important to note that this issue occurs independently of the mob cap, similar to the spawning behavior of phantoms, meaning that the presence of other hostile mobs does not influence the spawning of zombified piglins. This unexpected behavior may have implications for gameplay balance, as it can lead to unmanageable numbers of zombified piglins in the Overworld, potentially overwhelming players and affecting their experience.",
+  "Expected Behavior": "When a player activates a Nether portal in the Overworld, it should only spawn zombified piglins at a very low rate, specifically a chance of 1 in 2000 on Easy, 1 in 1000 on Normal, and 3 in 2000 on Hard. This means that players should expect to see a maximum of one zombified piglin occasionally appearing near the portal, rather than the large numbers currently observed. The game should ensure that the spawning of zombified piglins adheres to the established mechanics, which dictate that they should not spawn en masse and should respect the game's mob cap. Additionally, the spawned zombified piglins should have a 15-second cooldown before they can enter the Nether again, preventing excessive spawning from the same portal. Overall, the expected behavior is that players should only see sporadic and controlled appearances of zombified piglins around Nether portals in the Overworld.",
+  "comments": [
+    {
+      "id": "2080166",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "24x24": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "16x16": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "32x32": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png"
+        },
+        "displayName": "[MCQA] jKakub",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-04T01:33:42.886-0700",
+      "updated": "2025-08-04T01:36:45.449-0700",
+      "body_text": "Hi there!Could you please answer a few questions regarding this issue?\u00a0\\n\\n* Could you provide the world affected by this issue?\u00a0\\n\\n\\n* Can you record and upload a video or screenshot of this issue?\u00a0\\n\\n\\n\\nThis ticket will automatically reopen when you reply.\u00a0Thanks!\\n\\n**Quick Links**:\u00a0\ud83d\udcd3\u202fIssue Guidelines\u202f\u2013 \ud83d\udcac\u202fMojang Support\u202f\u2013 \ud83d\udce7\u202fSuggestions\u202f\u2013 \ud83d\udcd6\u202fMinecraft Wiki\u00a0\\n\\n",
+      "body_length": 367,
+      "rendered_body": "<p>Hi there!<br>\nCould you please answer a few questions regarding this issue?&nbsp;</p>\n\n<ul>\n\t<li>Could you provide the world affected by this issue?&nbsp;</li>\n\t<li>Can you record and upload a video or screenshot of this issue?&nbsp;</li>\n</ul>\n\n\n<p>This ticket will automatically reopen when you reply.&nbsp;Thanks!</p>\n\n<p><b>Quick Links</b>:&nbsp;<br>\n\ud83d\udcd3\u202f<a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Issue Guidelines</ins></a>\u202f\u2013 \ud83d\udcac\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fhelp.minecraft.net.mcas.ms%2Fhc%2Fen-us%2Frequests%2Fnew%3FMcasTsid%3D15600&amp;McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Mojang Support</ins></a>\u202f\u2013 \ud83d\udce7\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Ffeedback.minecraft.net.mcas.ms%2F%3FMcasTsid%3D15600&amp;McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Suggestions</ins></a>\u202f\u2013 \ud83d\udcd6\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fminecraft.wiki.mcas.ms%2F%3FMcasTsid%3D15600&amp;McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Minecraft Wiki</ins></a>&nbsp;</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hi there!"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Could you please answer a few questions regarding this issue?\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Could you provide the world affected by this issue?\u00a0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Can you record and upload a video or screenshot of this issue?\u00a0"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will automatically reopen when you reply.\u00a0Thanks!"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":\u00a0"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Issue Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udcac\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fhelp.minecraft.net.mcas.ms%2Fhc%2Fen-us%2Frequests%2Fnew%3FMcasTsid%3D15600&McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udce7\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Ffeedback.minecraft.net.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udcd6\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Minecraft Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fminecraft.wiki.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2080512",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Ariana Welter",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-04T16:54:03.136-0700",
+      "updated": "2025-08-04T16:54:03.136-0700",
+      "body_text": "\\n\\nthey all just spawned or came out of the portal once I opened the world. Also in the video you can see how they are not walking properly across blocks, and when hitting them they float away in a glitchy way. the hit time when attacking is also delayed. These are previous bugs that I have reported as well\\n\\n",
+      "body_length": 313,
+      "rendered_body": "<p></p><div><p>This comment contained multiple media attachments (2), please login to view the attachments.</p></div><p></p>\n\n<p>they all just spawned or came out of the portal once I opened the world. Also in the video you can see how they are not walking properly across blocks, and when hitting them they float away in a glitchy way. the hit time when attacking is also delayed. These are previous bugs that I have reported as well</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph"
+          },
+          {
+            "type": "mediaSingle",
+            "attrs": {
+              "layout": "align-start"
+            },
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "0fd0e485-00f1-4774-b941-230b3cf83107",
+                  "alt": "Minecraft 1.21.8 - Singleplayer 2025-08-04 19-48-12.mp4",
+                  "collection": "",
+                  "height": 712,
+                  "width": 1376
+                }
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "they all just spawned or came out of the portal once I opened the world. Also in the video you can see how they are not walking properly across blocks, and when hitting them they float away in a glitchy way. the hit time when attacking is also delayed. These are previous bugs that I have reported as well"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2080848",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/32"
+        },
+        "displayName": "[Mod] Jingy",
+        "active": true,
+        "timeZone": "America/Chicago",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-05T15:11:56.102-0700",
+      "updated": "2025-08-05T15:11:56.102-0700",
+      "body_text": "Please provide a copy of the world. I suspect the mass amount of zombified piglins here are causing your other issues such as .\\n\\n",
+      "body_length": 131,
+      "rendered_body": "<p>Please provide a copy of the world. I suspect the mass amount of zombified piglins here are causing your other issues such as <a href=\"https://mojira.atlassian.net/browse/MC-300614\" title=\"smart-link\" class=\"external-link\" rel=\"nofollow noreferrer\">https://mojira.atlassian.net/browse/MC-300614</a>.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please provide a copy of the world. I suspect the mass amount of zombified piglins here are causing your other issues such as "
+              },
+              {
+                "type": "inlineCard",
+                "attrs": {
+                  "url": "https://mojira.atlassian.net/browse/MC-300614"
+                }
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300611"
+  }
+}

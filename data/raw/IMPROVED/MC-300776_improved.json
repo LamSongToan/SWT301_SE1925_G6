@@ -1,0 +1,111 @@
+{
+  "key": "MC-300776",
+  "created_date": "2025-08-06T09:04:17.215-0700",
+  "updated_date": "2025-08-06T09:24:38.591-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8",
+    "25w32a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-06T09:04:21.841-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Players do not gain immediate acceleration when flying downwards using an elytra with fireworks as a result of gravity.",
+  "environment_raw": null,
+  "description": "Currently, when flying downward with fireworks using an elytra, the player does not gain immediate acceleration like they would with a Riptide trident. Instead, they must wait for the firework boost to expire before gravity takes full effect. It would improve control and consistency if downward boosts provided immediate acceleration, similar to Riptide tridents. Not sure if this is intended behavior or an oversight. n n n n(This probably affects all versions with elytra but i don t know how to choose all versions in the affects versions section above) n n",
+  "Steps to Reproduce": "1. Create a new Creative world with default settings.\n2. Equip an Elytra in the chestplate slot.\n3. Obtain Firework Rockets from the Creative inventory.\n4. Ascend to a height of at least 50 blocks above the ground.\n5. Activate the Elytra by double-tapping the jump key while falling.\n6. While gliding, use a Firework Rocket by right-clicking it in the air to propel yourself downwards.\n7. Observe the acceleration and speed gained as you descend with the Firework Rocket.\n8. Note the delay in acceleration compared to the immediate acceleration experienced when using a Riptide trident in a similar downward motion.",
+  "Environment": "Minecraft Java Edition Versions: 1.21.8, 25w32a (includes snapshots)",
+  "Observed Behavior": "When a player is flying downwards using an elytra and activates a firework rocket, they do not experience immediate acceleration as expected. Instead, the player must wait for the duration of the firework rocket's boost to expire before gravity begins to take full effect on their descent. This behavior contrasts with the mechanics of a Riptide trident, which grants immediate acceleration upon activation, allowing for more responsive control during flight. \n\nThe current mechanics result in a delay in acceleration, making it challenging for players to navigate effectively while descending. This can lead to unintended crashes or difficulties in controlling the flight path, particularly in scenarios requiring precision, such as landing or avoiding obstacles. \n\nThe expected behavior would allow players to gain immediate downward acceleration upon using a firework rocket while gliding, similar to the instant speed boost provided by a Riptide trident. This would enhance the overall control and consistency of elytra flight mechanics, making it easier for players to maneuver during downward flights. \n\nThis issue likely affects all versions of Minecraft that include elytra and firework rockets, as the core mechanics of these items remain consistent across platforms.",
+  "Expected Behavior": "When using an elytra and activating a firework rocket while flying downwards, the player should experience immediate acceleration in their descent, similar to the effect provided by a Riptide trident. This means that as soon as the firework is activated, the player should feel a boost in speed due to gravity, allowing for better control and responsiveness during flight. The elytra's mechanics should enable the player to seamlessly integrate the firework boost into their flight path without the delay currently experienced, enhancing the overall flight experience. This behavior aligns with the intended functionality of fireworks as a means to augment movement while using elytra, allowing players to maneuver effectively and maintain a consistent speed during downward flights.",
+  "comments": [
+    {
+      "id": "2081173",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "24x24": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "16x16": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "32x32": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png"
+        },
+        "displayName": "Automation for Jira",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "app"
+      },
+      "created": "2025-08-06T09:04:20.121-0700",
+      "updated": "2025-08-06T09:04:20.121-0700",
+      "body_text": "Please edit your report to change the Affected Version to the version shown on the Minecraft title screen\\n\\n",
+      "body_length": 109,
+      "rendered_body": "<p>Please edit your report to change the Affected Version to the version shown on the Minecraft title screen</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please edit your report to change the Affected Version to the version shown on the Minecraft title screen"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2081175",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Omar Mohamed Zakaria",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-06T09:07:28.675-0700",
+      "updated": "2025-08-06T09:07:28.675-0700",
+      "body_text": "alright done\\n\\n",
+      "body_length": 16,
+      "rendered_body": "<p>alright done</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "alright done"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300776"
+  }
+}

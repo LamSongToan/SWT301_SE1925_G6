@@ -1,0 +1,110 @@
+{
+  "key": "MC-301045",
+  "summary": "Intel core related bugs still occur on servers with resource/texture packs enabled.",
+  "description": "**Bugs -**  and probably MC-296908 still occur on 1.21.8 if server has resource packs enabled. \\n\\nSometimes textures flicker with black lines or their animations are interrupted. This is easily noticed on magma blocks, lava, and water.\\n\\nGame screen freezing and crashes also occur as before.\\n\\n## How to get\\n\\nJoin java multiplayer server with resource/texture pack enabled on device with intel core graphic, wait a while and you should notice glitches. Sometimes, spotting them can be less frequent and seems to depend on the server.\\n\\n## Note:\\n\\nThese bugs didn't seem to exist on version 1.21.8 for a while, but they've been around for a few days or weeks (I can't quite pinpoint it). They don't seem to occur on servers without resource/texture packs enabled or in singleplayer worlds.Also the bugs seem to be much weaker than on versions before intel core graphic fixes\\n\\n",
+  "created_date": "2025-08-13T07:52:49.903-0700",
+  "updated_date": "2025-08-13T10:31:32.322-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "resolution_date": "2025-08-13T10:31:31.950-0700",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 139,
+  "summary_length": 12,
+  "fetch_timestamp": "2025-08-20T03:10:08.715166",
+  "comments": [
+    {
+      "id": "2083319",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Eric Sobierajski",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-13T07:52:50.987-0700",
+      "updated": "2025-08-13T07:52:50.987-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.",
+      "body_length": 80,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "51717cc8-2712-4c17-bbaa-517c11be7182",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2083369",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/32"
+        },
+        "displayName": "[MOD] Greymagic27",
+        "active": true,
+        "timeZone": "Europe/London",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-13T10:31:32.000-0700",
+      "updated": "2025-08-13T10:31:32.000-0700",
+      "body_text": "Can this be reproduced on a vanilla server? Please attach a video showcasing these graphical glitches\\n\\n",
+      "body_length": 105,
+      "rendered_body": "<p>Can this be reproduced on a vanilla server? Please attach a video showcasing these graphical glitches</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Can this be reproduced on a vanilla server? Please attach a video showcasing these graphical glitches"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 2
+}

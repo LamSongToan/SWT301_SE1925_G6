@@ -1,0 +1,137 @@
+{
+  "key": "MC-300396",
+  "summary": "status effects' duration continues to decrement while on pause screen in single player",
+  "description": "To reproduce, create a world, give yourself a status effect of a set duration, and pause the game for that duration. Once the duration has elapsed, unpause the game and check if the status effect is still applied.\\n\\nIt would be expected that the timer is paused when the game is paused. For example, drinking a potion and pausing the game should not consume the duration of that potion.\\n\\nCurrently, status effects' duration continue to decrement while on the pause screen in single player.\\n\\n",
+  "created_date": "2025-07-30T17:38:37.110-0700",
+  "updated_date": "2025-08-10T11:20:54.745-0700",
+  "status": "Resolved",
+  "resolution": "Cannot Reproduce",
+  "resolution_date": "2025-08-10T11:20:54.539-0700",
+  "affected_versions": [
+    "25w31a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 82,
+  "summary_length": 13,
+  "fetch_timestamp": "2025-08-20T03:11:20.132467",
+  "comments": [
+    {
+      "id": "2079351",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Luke",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-07-31T13:32:08.240-0700",
+      "updated": "2025-07-31T13:32:08.240-0700",
+      "body_text": "I believe this may have been resolved, see \\n\\n1. .\\n\\n\\n\\n\\n\\n",
+      "body_length": 63,
+      "rendered_body": "<p>I believe this may have been resolved, see </p>\n\n<ol>\n\t<li><a href=\"https://report.bugs.mojang.com/browse/MC-300105\" title=\"smart-link\" class=\"external-link\" rel=\"nofollow noreferrer\">https://report.bugs.mojang.com/browse/MC-300105</a>.</li>\n</ol>\n\n",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "I believe this may have been resolved, see "
+              }
+            ]
+          },
+          {
+            "type": "orderedList",
+            "attrs": {
+              "order": 1
+            },
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "inlineCard",
+                        "attrs": {
+                          "url": "https://report.bugs.mojang.com/browse/MC-300105"
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": "."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2082402",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/32"
+        },
+        "displayName": "[MOD] Greymagic27",
+        "active": true,
+        "timeZone": "Europe/London",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-10T11:20:54.663-0700",
+      "updated": "2025-08-10T11:20:54.663-0700",
+      "body_text": "Yes. It appears this is no longer an issue in 25w32a due to that fix\\n\\n",
+      "body_length": 72,
+      "rendered_body": "<p>Yes. It appears this is no longer an issue in 25w32a due to that fix</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Yes. It appears this is no longer an issue in 25w32a due to that fix"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 2
+}

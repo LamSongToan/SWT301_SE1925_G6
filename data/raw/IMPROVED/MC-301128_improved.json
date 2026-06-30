@@ -1,0 +1,75 @@
+{
+  "key": "MC-301128",
+  "created_date": "2025-08-16T00:38:19.280-0700",
+  "updated_date": "2025-08-16T00:42:07.878-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-16T00:38:23.841-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "The mouse cannot click the menu",
+  "environment_raw": null,
+  "description": "I died mid-game, and my mouse stopped responding to menu clicks. Even after restarting my computer, changing my mouse, and restarting the world, the mouse still doesn t work. How can I fix this? I can t play the game anymore. n n",
+  "Steps to Reproduce": "1. Launch Minecraft and enter an existing Survival world where you have previously died.\n2. Upon entering the world, observe that the game loads normally with the current state.\n3. Attempt to open the menu by pressing the Esc key or clicking on the menu button if applicable.\n4. Attempt to click on various menu options using the mouse to confirm that it is unresponsive.\n5. Restart the Minecraft application without closing the game.\n6. Once the game restarts, repeat steps 3 and 4 to check if the mouse is still unresponsive.\n7. Change the physical mouse to a different one, ensuring it is properly connected.\n8. Launch Minecraft again and enter the same Survival world.\n9. Repeat steps 3 and 4 to verify if the mouse now responds to menu clicks.\n10. If the issue persists, restart your computer completely and relaunch Minecraft.\n11. Enter the same world again and attempt to access the menu using the mouse to see if the problem remains.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "After dying in-game, the mouse cursor becomes unresponsive when attempting to interact with the menu screens, including the pause menu and the main menu. Despite multiple attempts to click menu options, no actions are registered, rendering the player unable to navigate the game interface. \n\nSteps taken to troubleshoot the issue include:\n1. Restarting the computer, which did not resolve the problem.\n2. Replacing the mouse with a different one, ensuring that the issue is not related to hardware failure.\n3. Restarting the Minecraft world, hoping to reset any temporary glitches affecting the input system.\n\nThe issue persists across all menu screens, including the options and inventory menus, indicating a potential bug related to mouse input following player death. This malfunction prevents any further gameplay, as the player cannot access essential game functions. \n\n**Additional Notes:**\n- The issue occurs specifically after the player dies, suggesting a possible correlation with the death screen or respawn mechanics.\n- This bug affects both single-player and multiplayer modes, as it has been tested in both scenarios without success.\n- The player is currently unable to progress or play the game until a fix is implemented.",
+  "Expected Behavior": "When a player dies mid-game, the mouse should continue to function normally, allowing the player to interact with the game menus without any issues. Specifically, the player should be able to click on menu options such as \"Respawn,\" \"Quit to Title,\" or any other available options in the pause menu. If the mouse becomes unresponsive, the game should not freeze or prevent interaction, and the player should be able to use their mouse to navigate through the menus seamlessly, as outlined in the official Minecraft controls documentation. Additionally, restarting the game or the computer should restore normal mouse functionality, enabling the player to resume gameplay without interruption.",
+  "comments": [
+    {
+      "id": "2083939",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "24x24": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "16x16": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "32x32": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png"
+        },
+        "displayName": "Automation for Jira",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "app"
+      },
+      "created": "2025-08-16T00:38:22.257-0700",
+      "updated": "2025-08-16T00:38:22.257-0700",
+      "body_text": "Please edit your report to change the Affected Version to the version shown on the Minecraft title screen\\n\\n",
+      "body_length": 109,
+      "rendered_body": "<p>Please edit your report to change the Affected Version to the version shown on the Minecraft title screen</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please edit your report to change the Affected Version to the version shown on the Minecraft title screen"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-301128"
+  }
+}

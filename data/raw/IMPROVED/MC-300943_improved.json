@@ -1,0 +1,190 @@
+{
+  "key": "MC-300943",
+  "created_date": "2025-08-11T11:17:12.104-0700",
+  "updated_date": "2025-08-12T03:04:34.061-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "25w32a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-12T03:04:33.977-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "I can t switch \"Redused Debug Info\" off",
+  "environment_raw": null,
+  "description": "When I Turn \"Redused Debug Info\" off, Debug Info is still Reduced and I can t switch it off n n",
+  "Steps to Reproduce": "1. Launch Minecraft Java Edition and create or load a single-player world in Creative mode.\n2. Press the Escape key to open the game menu.\n3. Click on \"Options\" to access the settings menu.\n4. Select \"Video Settings\" from the options.\n5. Locate the \"Reduced Debug Info\" toggle in the Video Settings menu.\n6. Click on the \"Reduced Debug Info\" toggle to switch it to the \"Off\" position.\n7. Press F3 to open the debug screen and observe the information displayed.\n8. Note that the debug information is still reduced despite the toggle being set to \"Off.\"\n9. Attempt to toggle the \"Reduced Debug Info\" option again by clicking it once more to ensure it is set to \"Off.\"\n10. Check the debug screen again to confirm that the debug info remains reduced.",
+  "Environment": "Minecraft Java Edition Version 25w32a (snapshot)",
+  "Observed Behavior": "When attempting to disable the \"Reduced Debug Info\" option in the settings, the debug information displayed on the F3 debug screen remains in a reduced state. Specifically, even after toggling the option off, the debug screen continues to show only a limited set of information, which is characteristic of the reduced debug mode. This behavior persists across multiple game sessions and does not change regardless of whether the game is restarted or the settings are reconfigured. \n\nAdditionally, the expected full debug information, which includes detailed metrics such as memory usage, chunk cache, and player coordinates, is not displayed. This issue affects both single-player and multiplayer modes, indicating a broader problem with the setting not functioning as intended. The inability to switch off the reduced debug info hinders the player's ability to access comprehensive performance metrics and game information that are crucial for troubleshooting and gameplay analysis.",
+  "Expected Behavior": "When the \"Reduced Debug Info\" option is turned off in the settings, the debug screen should display the full range of debug information as intended. This includes all standard parameters such as chunk cache, memory usage, player coordinates, and performance graphs without any reduction in information. The toggle should effectively enable or disable this feature, allowing players to see the complete debug details when pressing F3, ensuring that the functionality aligns with the official game mechanics as outlined in the game documentation.",
+  "comments": [
+    {
+      "id": "2082699",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/32"
+        },
+        "displayName": "[MOD] Greymagic27",
+        "active": true,
+        "timeZone": "Europe/London",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-11T11:19:13.457-0700",
+      "updated": "2025-08-11T11:19:13.457-0700",
+      "body_text": "Please read the debug features here: https://www.minecraft.net/en-us/article/minecraft-snapshot-25w31a that were recently added and see if you have the information toggled off that you are expecting to see.\\n\\n",
+      "body_length": 210,
+      "rendered_body": "<p>Please read the debug features here: <a href=\"https://www.minecraft.net/en-us/article/minecraft-snapshot-25w31a\" class=\"external-link\" rel=\"nofollow noreferrer\">https://www.minecraft.net/en-us/article/minecraft-snapshot-25w31a</a> that were recently added and see if you have the information toggled off that you are expecting to see.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please read the debug features here: "
+              },
+              {
+                "type": "text",
+                "text": "https://www.minecraft.net/en-us/article/minecraft-snapshot-25w31a",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://www.minecraft.net/en-us/article/minecraft-snapshot-25w31a"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " that were recently added and see if you have the information toggled off that you are expecting to see."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2082733",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Qelpekaj",
+        "active": true,
+        "timeZone": "Europe/Warsaw",
+        "accountType": "customer"
+      },
+      "created": "2025-08-11T13:12:46.146-0700",
+      "updated": "2025-08-11T13:12:46.146-0700",
+      "body_text": "In Settings I have \u201cReduced Debug Info\u201d toggled \u201coff\u201c but in debug options when I want to toggle options like \u201cbiome\u201d or \u201cheightmap\u201c, it says that thoose options are not visible when debug info is reduced.\\n\\n\\n\\n",
+      "body_length": 213,
+      "rendered_body": "<p>In Settings I have \u201cReduced Debug Info\u201d toggled \u201coff\u201c but in debug options when I want to toggle options like \u201cbiome\u201d or \u201cheightmap\u201c, it says that thoose options are not visible when debug info is reduced.</p>\n",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In Settings I have \u201cReduced Debug Info\u201d toggled \u201coff\u201c but in debug options when I want to toggle options like \u201cbiome\u201d or \u201cheightmap\u201c, it says that thoose options are not visible when debug info is reduced."
+              }
+            ]
+          },
+          {
+            "type": "paragraph"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2082747",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "flow_santohyj123",
+        "active": true,
+        "timeZone": "Asia/Seoul",
+        "accountType": "customer"
+      },
+      "created": "2025-08-11T15:11:09.419-0700",
+      "updated": "2025-08-11T15:11:09.419-0700",
+      "body_text": "There are two \u201cReduced Debug Info\u201d options in the game, one is located in chat settings and one is a game rule called `reducedDebugInfo`. Make sure both are turned off (set to `false`).\\n\\n",
+      "body_length": 189,
+      "rendered_body": "<p>There are two \u201cReduced Debug Info\u201d options in the game, one is located in chat settings and one is a game rule called <tt>reducedDebugInfo</tt>. Make sure both are turned off (set to <tt>false</tt>).</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "There are two \u201cReduced Debug Info\u201d options in the game, one is located in chat settings and one is a game rule called "
+              },
+              {
+                "type": "text",
+                "text": "reducedDebugInfo",
+                "marks": [
+                  {
+                    "type": "code"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ". Make sure both are turned off (set to "
+              },
+              {
+                "type": "text",
+                "text": "false",
+                "marks": [
+                  {
+                    "type": "code"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ")."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300943"
+  }
+}

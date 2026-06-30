@@ -1,0 +1,75 @@
+{
+  "key": "MC-299897",
+  "created_date": "2025-07-20T21:26:24.214-0700",
+  "updated_date": "2025-07-22T10:24:55.368-0700",
+  "status": "Resolved",
+  "resolution": "Cannot Reproduce",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": null,
+  "os_version": null,
+  "watch_count": 3,
+  "labels": [],
+  "resolution_date": "2025-07-22T10:24:34.517-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "XP not increasing when using two Mending items one in main hand, one in offhand",
+  "environment_raw": null,
+  "description": "When holding two items with the Mending enchantment one in the main hand (e.g. sword) and another in the offhand (e.g. pickaxe or shield) XP stops increasing completely. n n n nEven if both items are at full durability and should not receive XP, the game seems to still prioritize XP repair logic and \"gets stuck\". n n n nThe XP does not go to the Mending items (because they re full) nor to the player s XP bar. It seems the game assigns the XP to both tools and never lets go. n n n n Important notes: n n- The bug only triggers if the item used to attack (like a sword) has Mending. n n- After this, even removing the items doesn t fix XP gain it stays broken until you remove all Mending items from both hands and inventory. n n n n Reproduction Steps: n n1. Get two tools with Mending (e.g. sword and pickaxe). n n2. Hold sword in main hand and pickaxe in offhand. n n3. Kill mobs or collect XP orbs. n n4. XP does not go to player s XP bar. n n5. Remove tools XP still bugged unless all Mending items are gone. n n n n Theory: n nThe game prioritizes XP to both items. If both are full, it locks XP in a repair loop and blocks player progression. n n n nThis was tested in: n n- Minecraft Java Edition 1.21 n n- Vanilla (no mods) n n- Survival and Creative n n- New and old worlds n n n nPlease fix this XP is a vital mechanic and this bug can make worlds feel broken or corrupted. n n",
+  "Steps to Reproduce": "1. Create a new Survival world with default settings.\n2. Obtain two items with the Mending enchantment, such as a diamond sword and a diamond pickaxe.\n3. Equip the diamond sword in your main hand and the diamond pickaxe in your offhand.\n4. Engage in combat by attacking mobs, or collect XP orbs from any source (e.g., killing mobs, mining ores).\n5. Observe that the experience points do not increase in the player's XP bar.\n6. Remove both the diamond sword and diamond pickaxe from your hands.\n7. Check the XP bar again; note that it still does not increase unless all items with Mending in your inventory are removed.\n8. Confirm that the bug persists regardless of the player's actions or the environment, until all Mending items are completely removed from both hands and the inventory.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "When holding two items with the Mending enchantment\u2014one in the main hand (e.g., a sword) and one in the offhand (e.g., a pickaxe or shield)\u2014the experience points (XP) collected from defeating mobs or picking up XP orbs do not increase the player\u2019s XP bar at all. Instead, the XP appears to be \"locked\" in a repair loop, as the game prioritizes the Mending mechanics for both items simultaneously. \n\nSpecifically:\n- If both items are at full durability, they should not receive any XP for repairs, yet the XP collected during gameplay does not go to the player\u2019s XP bar or to either Mending item. \n- The game seems to allocate the XP to both Mending items, but since they are already full, it effectively results in a deadlock where no XP is processed or added to the player\u2019s experience.\n- This issue persists even after removing the Mending items from the main hand and offhand; the XP gain remains broken until all Mending items are cleared from both hands and the player\u2019s inventory.\n\nThis behavior is specific to scenarios where the item in the main hand has the Mending enchantment. If the Mending item is removed, XP collection resumes normally. The issue can be replicated in both Survival and Creative modes, across new and existing worlds, indicating it is a consistent bug within the game mechanics related to Mending. \n\nThis bug disrupts the core gameplay experience by preventing players from progressing through XP accumulation, which is essential for enchanting and repairing items.",
+  "Expected Behavior": "When holding two items with the Mending enchantment, one in the main hand and one in the offhand, the expected behavior is that experience orbs collected should first repair the items as intended, but once both items are at full durability, any additional experience should be added to the player's XP bar. The game should not enter a state where XP collection is halted; instead, it should allow the player to continue gaining experience normally. If the main hand item is used to attack or collect XP, it should prioritize repairing that item first until it is at full durability, at which point the experience should transfer to the player\u2019s XP bar. Additionally, removing the Mending items should restore normal XP gain functionality immediately, allowing the player to progress without needing to clear all Mending items from their inventory. This behavior aligns with the mechanics of the Mending enchantment, which is designed to utilize experience for item repair without hindering player progression.",
+  "comments": [
+    {
+      "id": "2076186",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/32"
+        },
+        "displayName": "[Mod] Jingy",
+        "active": true,
+        "timeZone": "America/Chicago",
+        "accountType": "atlassian"
+      },
+      "created": "2025-07-22T10:24:34.582-0700",
+      "updated": "2025-07-22T10:24:40.241-0700",
+      "body_text": "I cannot reproduce this issue. After holding two items with mending at full durability, my experience went up as expected.\\n\\n",
+      "body_length": 126,
+      "rendered_body": "<p>I cannot reproduce this issue. After holding two items with mending at full durability, my experience went up as expected.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "I cannot reproduce this issue. After holding two items with mending at full durability, my experience went up as expected."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-299897"
+  }
+}

@@ -1,0 +1,371 @@
+{
+  "key": "MC-301173",
+  "summary": "If You Break a block above you and Press Q it'll dupe the item your holding",
+  "description": "If you break a block above you, Press Q and drop the item your holding at a certain time frame it’ll drop your item while a duped one stays in your hand and if you switch to an empty hot bar slot you can pick it up (if you pick it up with the duped item in your hand it’ll disappear) I'm not sure about the timing for pressing Q but after a while something caused my duped Netherite pickaxe to disappear \\n\\n\\n\\n",
+  "created_date": "2025-08-17T13:24:33.698-0700",
+  "updated_date": "2025-08-18T02:46:49.681-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "resolution_date": "2025-08-18T02:46:49.301-0700",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 83,
+  "summary_length": 16,
+  "fetch_timestamp": "2025-08-20T03:09:55.620712",
+  "comments": [
+    {
+      "id": "2084356",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/45ce91f18ff791aab6e2a27541a63023?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "24x24": "https://secure.gravatar.com/avatar/45ce91f18ff791aab6e2a27541a63023?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "16x16": "https://secure.gravatar.com/avatar/45ce91f18ff791aab6e2a27541a63023?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "32x32": "https://secure.gravatar.com/avatar/45ce91f18ff791aab6e2a27541a63023?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png"
+        },
+        "displayName": "[MCQA] KuKar",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-18T02:46:49.369-0700",
+      "updated": "2025-08-18T02:46:49.369-0700",
+      "body_text": "*We do not have enough information to find the cause of this issue.*\\n\\nPlease **record a video of this happening** and attach it to this report.If you are on Windows, you can use `Windows`+`Alt`+`R` to open a built-in app for recording game footage.If you are on Mac (Mojave or later), you can use `Shift`+`Command`+`5` to open a built-in app for recording your screen.In case you don't have a program to record videos, we recommend using the free recording software OBS.In case the resulting video file is too large to be uploaded to the bug tracker directly, please upload it elsewhere (e.g. as unlisted video on YouTube) and link to it here.\\n\\nThis issue is being temporarily resolved as **Awaiting Response**. Once the requested information has been delivered, the report will be reopened automatically.\\n\\n**Quick Links**:📓 Issue Guidelines – 💬 Mojang Support – 📧 Suggestions – 📖 Minecraft Wiki\\n\\n",
+      "body_length": 905,
+      "rendered_body": "<p><em>We do not have enough information to find the cause of this issue.</em></p>\n\n<p>Please <b>record a video of this happening</b> and attach it to this report.<br>\nIf you are on Windows, you can use <tt>Windows</tt>+<tt>Alt</tt>+<tt>R</tt> to open a built-in app for recording game footage.<br>\nIf you are on Mac (Mojave or later), you can use <tt>Shift</tt>+<tt>Command</tt>+<tt>5</tt> to open a <a href=\"https://support.apple.com/guide/mac-help/take-a-screenshot-or-screen-recording-mh26782/mac\" class=\"external-link\" rel=\"nofollow noreferrer\">built-in app</a> for recording your screen.<br>\nIn case you don't have a program to record videos, we recommend using the free recording software <a href=\"https://obsproject.com\" class=\"external-link\" rel=\"nofollow noreferrer\">OBS</a>.<br>\nIn case the resulting video file is too large to be uploaded to the bug tracker directly, please upload it elsewhere (e.g. as unlisted video on YouTube) and link to it here.</p>\n\n<p><sub>This issue is being temporarily resolved as <font color=\"#d04437\"><b>Awaiting Response</b></font>. Once the requested information has been delivered, the report will be reopened automatically.</sub></p>\n\n<p><b>Quick Links</b>:<br>\n📓 <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\">Issue Guidelines</a> – 💬 <a href=\"https://help.minecraft.net/hc/en-us/requests/new\" class=\"external-link\" rel=\"nofollow noreferrer\">Mojang Support</a> – 📧 <a href=\"https://feedback.minecraft.net/\" class=\"external-link\" rel=\"nofollow noreferrer\">Suggestions</a> – 📖 <a href=\"https://minecraft.wiki/\" class=\"external-link\" rel=\"nofollow noreferrer\">Minecraft Wiki</a></p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "We do not have enough information to find the cause of this issue.",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please "
+              },
+              {
+                "type": "text",
+                "text": "record a video of this happening",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " and attach it to this report."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "If you are on Windows, you can use "
+              },
+              {
+                "type": "text",
+                "text": "Windows",
+                "marks": [
+                  {
+                    "type": "code"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "+"
+              },
+              {
+                "type": "text",
+                "text": "Alt",
+                "marks": [
+                  {
+                    "type": "code"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "+"
+              },
+              {
+                "type": "text",
+                "text": "R",
+                "marks": [
+                  {
+                    "type": "code"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " to open a built-in app for recording game footage."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "If you are on Mac (Mojave or later), you can use "
+              },
+              {
+                "type": "text",
+                "text": "Shift",
+                "marks": [
+                  {
+                    "type": "code"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "+"
+              },
+              {
+                "type": "text",
+                "text": "Command",
+                "marks": [
+                  {
+                    "type": "code"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "+"
+              },
+              {
+                "type": "text",
+                "text": "5",
+                "marks": [
+                  {
+                    "type": "code"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " to open a "
+              },
+              {
+                "type": "text",
+                "text": "built-in app",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://support.apple.com/guide/mac-help/take-a-screenshot-or-screen-recording-mh26782/mac"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " for recording your screen."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "In case you don't have a program to record videos, we recommend using the free recording software "
+              },
+              {
+                "type": "text",
+                "text": "OBS",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://obsproject.com"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "In case the resulting video file is too large to be uploaded to the bug tracker directly, please upload it elsewhere (e.g. as unlisted video on YouTube) and link to it here."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This issue is being temporarily resolved as ",
+                "marks": [
+                  {
+                    "type": "subsup",
+                    "attrs": {
+                      "type": "sub"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "Awaiting Response",
+                "marks": [
+                  {
+                    "type": "strong"
+                  },
+                  {
+                    "type": "textColor",
+                    "attrs": {
+                      "color": "#d04437"
+                    }
+                  },
+                  {
+                    "type": "subsup",
+                    "attrs": {
+                      "type": "sub"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ". Once the requested information has been delivered, the report will be reopened automatically.",
+                "marks": [
+                  {
+                    "type": "subsup",
+                    "attrs": {
+                      "type": "sub"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "📓 "
+              },
+              {
+                "type": "text",
+                "text": "Issue Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – 💬 "
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://help.minecraft.net/hc/en-us/requests/new"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – 📧 "
+              },
+              {
+                "type": "text",
+                "text": "Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://feedback.minecraft.net/"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " – 📖 "
+              },
+              {
+                "type": "text",
+                "text": "Minecraft Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecraft.wiki/"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 1
+}

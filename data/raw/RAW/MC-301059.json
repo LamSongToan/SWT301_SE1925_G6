@@ -1,0 +1,94 @@
+{
+  "key": "MC-301059",
+  "summary": "torches are disappearing in tunnels",
+  "description": "I placed torches in a tunnel leading to a cave but all of them dissapeared meanwhile the one that where placed inside the actual cave didnt. It was vanilla minecraft. I also used stairs in my tunnel. \\n\\n\\n\\n",
+  "created_date": "2025-08-13T12:58:12.632-0700",
+  "updated_date": "2025-08-14T05:23:48.153-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "resolution_date": "2025-08-14T05:23:42.729-0700",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 0,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 38,
+  "summary_length": 5,
+  "fetch_timestamp": "2025-08-20T03:10:06.024674",
+  "comments": [
+    {
+      "id": "2083532",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/32"
+        },
+        "displayName": "[MCQA] Blawik",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-14T05:23:42.792-0700",
+      "updated": "2025-08-14T05:23:42.792-0700",
+      "body_text": "Hi!Could you upload a video showing this issue?Could you also let us know if your using any Resource packs or Add-ons?\\n\\nThis ticket will automatically reopen when you reply.\\n\\n",
+      "body_length": 179,
+      "rendered_body": "<p>Hi!<br>\nCould you upload a video showing this issue?<br>\nCould you also let us know if your using any Resource packs or Add-ons?</p>\n\n<p>This ticket will automatically reopen when you reply.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hi!"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Could you upload a video showing this issue?"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Could you also let us know if your using any Resource packs or Add-ons?"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will automatically reopen when you reply."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 1
+}

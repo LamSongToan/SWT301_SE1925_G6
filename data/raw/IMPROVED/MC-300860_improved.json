@@ -1,0 +1,120 @@
+{
+  "key": "MC-300860",
+  "created_date": "2025-08-08T17:46:57.123-0700",
+  "updated_date": "2025-08-09T10:34:39.861-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-09T10:34:37.098-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Enchantments for everything",
+  "environment_raw": null,
+  "description": "Me and my friends were just playing around on a test server and i just started holding scroll wheel and i sent up stuff like sharpness on a chestplate and scroled and it was lowerd and i got a sharpness netherite chestplate so me and my friends just started and looking over it whit diffrent items and we made a cheastplate thats nearly impossible to get and my friends was like its just lag but the lag machine on off them made was made after that and then we started lloking at the wiki and twitter and we found nothing n n",
+  "Steps to Reproduce": "1. Create a new Creative world or join an existing test server.\n2. Ensure you have access to a Netherite Chestplate in your inventory.\n3. Open your inventory and select the Netherite Chestplate.\n4. Hold down the scroll wheel on your mouse to scroll through the enchantments available for the chestplate.\n5. Observe the enchantments being applied as you scroll, including the addition of Sharpness.\n6. Continue scrolling to see if you can apply other enchantments that are normally not applicable to armor.\n7. Check the enchantments on the chestplate after scrolling to confirm the presence of unusual enchantments.\n8. Repeat the process with different types of armor and weapons to see if the same behavior occurs.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "While playing on a test server, players discovered that rapidly scrolling through their inventory while holding an item can lead to unintended enchantment applications on armor pieces. Specifically, one player reported that they were able to apply the Sharpness enchantment to a Netherite chestplate by continuously scrolling the mouse wheel. This resulted in the creation of a chestplate that should not normally be enchantable with Sharpness, as it is typically reserved for weapons. \n\nThe players experimented further with different items and were able to replicate this behavior, resulting in multiple instances of armor receiving incompatible enchantments. Initially, some players attributed the phenomenon to server lag, but it was later confirmed that the enchantments were indeed being applied through the scrolling action, rather than being a mere visual glitch or a result of lag.\n\nThis behavior raises concerns about the integrity of the enchanting system, as it allows for the creation of items with enchantments that should not be possible under normal gameplay conditions. The players did not find any documentation or reference to this behavior in the official Minecraft wiki or on social media platforms, indicating that this may be an undocumented bug that requires further investigation. \n\n**Steps to Reproduce:**\n1. Enter a test server in Minecraft.\n2. Open your inventory and select an item (preferably armor).\n3. Continuously scroll the mouse wheel while holding the item.\n4. Observe as incompatible enchantments, such as Sharpness, are applied to the armor piece.\n\n**Expected Behavior:**\nArmor pieces should not be able to receive weapon-specific enchantments like Sharpness through normal gameplay mechanics, ensuring that the enchanting system functions as intended.",
+  "Expected Behavior": "When using the scroll wheel while holding an item in Minecraft, it should not allow players to apply enchantments that are not intended for that specific item. For example, a chestplate should not be able to receive the Sharpness enchantment, as this enchantment is exclusive to weapons. The enchanting system is designed to restrict enchantments based on the type of item being enchanted, ensuring that players can only apply valid enchantments as outlined in the game\u2019s mechanics. If a player attempts to enchant an item that cannot normally receive the enchantment, the game should either prevent the enchantment from being applied or revert the item to its unenchanted state without any experience cost. Additionally, the game should maintain stability and performance, avoiding any unintended lag or crashes that could arise from exploiting this behavior.",
+  "comments": [
+    {
+      "id": "2081970",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Sivert Nikolai Mo",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-08T17:47:55.078-0700",
+      "updated": "2025-08-08T17:47:55.078-0700",
+      "body_text": "Its the weirdest thing ive encountered and tommorow ill get 3 of them to find out how we did it\\n\\n",
+      "body_length": 99,
+      "rendered_body": "<p>Its the weirdest thing ive encountered and tommorow ill get 3 of them to find out how we did it</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Its the weirdest thing ive encountered and tommorow ill get 3 of them to find out how we did it"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2082022",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "ampau (bolshi)",
+        "active": true,
+        "timeZone": "Europe/Andorra",
+        "accountType": "customer"
+      },
+      "created": "2025-08-09T02:40:02.540-0700",
+      "updated": "2025-08-09T02:40:02.540-0700",
+      "body_text": "I\u2019m not really sure whether I understand the issue you\u2019re encountering. If what you are trying to say is that in creative mode you can apply any enchantment to any item with an anvil, this ticket would be a duplicate of  .\\n\\n",
+      "body_length": 226,
+      "rendered_body": "<p>I\u2019m not really sure whether I understand the issue you\u2019re encountering. If what you are trying to say is that in creative mode you can apply any enchantment to any item with an anvil, this ticket would be a duplicate of <a href=\"https://report.bugs.mojang.com/browse/MC-95555\" title=\"smart-link\" class=\"external-link\" rel=\"nofollow noreferrer\">https://report.bugs.mojang.com/browse/MC-95555</a> .</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "I\u2019m not really sure whether I understand the issue you\u2019re encountering. If what you are trying to say is that in creative mode you can apply any enchantment to any item with an anvil, this ticket would be a duplicate of "
+              },
+              {
+                "type": "inlineCard",
+                "attrs": {
+                  "url": "https://report.bugs.mojang.com/browse/MC-95555"
+                }
+              },
+              {
+                "type": "text",
+                "text": " ."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300860"
+  }
+}

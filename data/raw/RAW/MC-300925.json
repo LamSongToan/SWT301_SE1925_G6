@@ -1,0 +1,71 @@
+{
+  "key": "MC-300925",
+  "summary": "Copper golems refuse to open chests being viewed by a player in Spectator mode",
+  "description": "Steps to reproduce:\\n\\n1. Set up any environment where a copper golem would open a copper chest.\\n\\n\\n2. Enter spectator mode and click on the copper chest to view it’s contents.\\n\\n\\n\\nExpected Behavior:\\n\\n1. In the circumstance that a player is in spectator mode, players should not be able to make any noticable changes to the world.\\n\\n\\n2. The copper golem should be able to interact with the copper chest as if no player is currently opening it.\\n\\n\\n\\nWhat happens:\\n\\n1. The copper golem will refuse to open the copper chest, allowing players in spectator mode to break or interrupt contraptions that use copper golems.\\n\\n\\n\\nThis bug makes it annoying to debug and analyze the speed of copper golem contraptions when using spectator mode.\\n\\n",
+  "created_date": "2025-08-10T15:11:10.138-0700",
+  "updated_date": "2025-08-15T07:50:34.439-0700",
+  "status": "Resolved",
+  "resolution": "Cannot Reproduce",
+  "resolution_date": "2025-08-15T07:50:34.316-0700",
+  "affected_versions": [
+    "25w32a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Community Consensus",
+  "category": "Mob behaviour",
+  "os_version": null,
+  "watch_count": 3,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 116,
+  "summary_length": 14,
+  "fetch_timestamp": "2025-08-20T03:10:21.349193",
+  "comments": [
+    {
+      "id": "2083812",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:d1be6aee-f21d-4cd4-a053-b3ea48f80790/9c7bf845-7adc-4850-866e-dd33a8c45fb9/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:d1be6aee-f21d-4cd4-a053-b3ea48f80790/9c7bf845-7adc-4850-866e-dd33a8c45fb9/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:d1be6aee-f21d-4cd4-a053-b3ea48f80790/9c7bf845-7adc-4850-866e-dd33a8c45fb9/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:d1be6aee-f21d-4cd4-a053-b3ea48f80790/9c7bf845-7adc-4850-866e-dd33a8c45fb9/32"
+        },
+        "displayName": "[Mojang] Mega_Spud (Jay)",
+        "active": true,
+        "timeZone": "Europe/London",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-15T07:50:34.386-0700",
+      "updated": "2025-08-15T07:50:34.386-0700",
+      "body_text": "We were unable to reproduce this issue in the latest version. If you have any more information or specific repro steps that indicate the issue is still occurring, please feel free to let us know.\\n\\n",
+      "body_length": 199,
+      "rendered_body": "<p>We were unable to reproduce this issue in the latest version. If you have any more information or specific repro steps that indicate the issue is still occurring, please feel free to let us know.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "We were unable to reproduce this issue in the latest version. If you have any more information or specific repro steps that indicate the issue is still occurring, please feel free to let us know."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 1
+}

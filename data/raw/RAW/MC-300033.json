@@ -1,0 +1,71 @@
+{
+  "key": "MC-300033",
+  "summary": "Item duplication with /item modify command",
+  "description": "Steps to reproduce the issue:\\n\\n-place a repeating command block with this command:\\n\\nitem modify entity @a weapon.mainhand {\"function\":\"minecraft:set_damage\",\"damage\": -0.001,\"add\": true}\\n\\n-hold an item with more than 1000 max durability in your hand and it’s durability should start decreasing\\n\\n-open the inventory and hover the cursor on the slot with the item\\n\\n-repeatedly press the key to move the item to another slot and bring it back\\n\\n\\n\\nExpected result:\\n\\nthe item does not duplicate\\n\\n\\n\\nActual result:\\n\\neventually the item will duplicate\\n\\n",
+  "created_date": "2025-07-28T13:19:28.651-0700",
+  "updated_date": "2025-08-04T07:19:47.924-0700",
+  "status": "Resolved",
+  "resolution": "Cannot Reproduce",
+  "resolution_date": "2025-08-04T07:19:47.818-0700",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 72,
+  "summary_length": 6,
+  "fetch_timestamp": "2025-08-20T03:12:02.206417",
+  "comments": [
+    {
+      "id": "2078686",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "p1cc1",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-07-30T02:39:44.060-0700",
+      "updated": "2025-07-30T02:39:44.060-0700",
+      "body_text": "I was wrong, this is not a bug as it only happens in creative mode\\n\\n",
+      "body_length": 70,
+      "rendered_body": "<p>I was wrong, this is not a bug as it only happens in creative mode</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "I was wrong, this is not a bug as it only happens in creative mode"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 1
+}

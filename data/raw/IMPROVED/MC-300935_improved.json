@@ -1,0 +1,337 @@
+{
+  "key": "MC-300935",
+  "created_date": "2025-08-11T02:33:43.564-0700",
+  "updated_date": "2025-08-12T07:15:17.352-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "25w32a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-12T07:15:17.029-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "The launcher or thrower detects the redstone torch incorrectly",
+  "environment_raw": null,
+  "description": "Place a redstone torch attached to a block on the side directly above the thrower or launcher, and when the attached block receives a pulse signalThe redstone torch also began to flicker, but the projector or launcher below did not throw the projectile n n[brick] - [Redstone Torch] n n [transmitter] n n",
+  "Steps to Reproduce": "1. Create a new Creative world with default settings.\n2. Obtain a Redstone Torch, a Dispenser or a Dropper, and a block of your choice (e.g., Stone).\n3. Place the block on the ground.\n4. Attach the Redstone Torch to the side of the block, ensuring it is placed vertically.\n5. Directly above the block with the Redstone Torch, place the Dispenser or Dropper.\n6. Create a Redstone signal by placing a Redstone Transmitter (e.g., a Button or Lever) adjacent to the block with the Redstone Torch.\n7. Activate the Redstone Transmitter to send a pulse signal to the block.\n8. Observe the behavior of the Redstone Torch and the Dispenser or Dropper below it. Note that the Redstone Torch flickers while the Dispenser or Dropper does not release any projectiles.",
+  "Environment": "Minecraft Java Edition Version 25w32a (snapshot)",
+  "Observed Behavior": "When a redstone torch is placed on the side of a block directly above a launcher or thrower, it is expected that the launcher or thrower will activate and launch a projectile when the block receives a pulse signal. However, the observed behavior is that while the redstone torch flickers as intended when the block receives a pulse, the launcher or thrower below does not activate and fails to launch the projectile.\n\n**Steps to Reproduce:**\n1. Place a solid block (e.g., brick) directly above a launcher or thrower.\n2. Attach a redstone torch to the side of the block that is directly above the launcher or thrower.\n3. Use a redstone signal (e.g., from a redstone transmitter) to power the block above the redstone torch.\n4. Observe the flickering of the redstone torch as the block receives the pulse signal.\n5. Note that the launcher or thrower does not launch any projectile despite the redstone torch flickering.\n\n**Expected Behavior:**\nThe launcher or thrower should activate and launch a projectile when the block it is attached to receives a pulse signal, in accordance with standard redstone mechanics. The flickering of the redstone torch indicates that it is properly receiving and responding to the pulse signal, but this should also trigger the action of the launcher or thrower below.",
+  "Expected Behavior": "When a redstone torch is placed on the side of a block directly above a launcher or thrower, and the block receives a pulse signal, the redstone torch should deactivate and stop flickering. Consequently, this should trigger the launcher or thrower below to properly detect the redstone signal and launch the projectile as intended. The expected behavior is that the redstone torch acts as a signal inverter, turning off when the block it is attached to receives power, allowing the launcher or thrower to operate correctly without any flickering or failure to launch the projectile. This behavior aligns with the mechanics of redstone components, where the activation of a block should directly influence the operation of adjacent mechanisms.",
+  "comments": [
+    {
+      "id": "2082966",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/32"
+        },
+        "displayName": "[MCQA] Blawik",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-12T07:15:17.083-0700",
+      "updated": "2025-08-12T07:15:17.083-0700",
+      "body_text": "**Thank you for your report!**\\n\\nHowever, this issue has been temporarily closed as **Awaiting Response**.\\n\\nCould you upload a video showing this issue?\\n\\nJust a reminder, to make your bug report as effective as possible, please try and include the following steps to reproduce the problem:\\n\\n> **Steps to Reproduce:**1.2.3.\\n> \\n> **Observed Results:***(Briefly describe what happens)*\\n> \\n> **Expected Results:***(Briefly describe what should happen)*\\n> \\n> \\n\\nIf your ticket does not look like the example given here, then it's likely to be closed as incomplete.\\n\\nThis ticket will automatically reopen when you reply.\\n\\n**Quick Links**:\ud83d\udcd3 Issue Guidelines \u2013 \ud83d\udcac Mojang Support \u2013 \ud83d\udce7 Suggestions \u2013 \ud83d\udcd6 Minecraft Wiki\\n\\n",
+      "body_length": 726,
+      "rendered_body": "<p><b>Thank you for your report!</b></p>\n\n<p>However, this issue has been temporarily closed as <b><font color=\"#ff5722\">Awaiting Response</font></b>.</p>\n\n<p>Could you upload a video showing this issue?</p>\n\n<p>Just a reminder, to make your bug report as effective as possible, please try and include the following steps to reproduce the problem:</p>\n<blockquote><p><b>Steps to Reproduce:</b><br>\n1.<br>\n2.<br>\n3.</p>\n\n<p><b>Observed Results:</b><br>\n<em>(Briefly describe what happens)</em></p>\n\n<p><b>Expected Results:</b><br>\n<em>(Briefly describe what should happen)</em></p></blockquote>\n<p>If your ticket does not look like the example given <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\">here</a>, then it's likely to be closed as incomplete.</p>\n\n<p>This ticket will automatically reopen when you reply.</p>\n\n<p><b>Quick Links</b>:<br>\n\ud83d\udcd3 <a href=\"https://help.minecraft.net/hc/en-us/articles/4408887473421\" class=\"external-link\" rel=\"nofollow noreferrer\">Issue Guidelines</a> \u2013 \ud83d\udcac <a href=\"https://help.minecraft.net/hc/en-us/requests/new\" class=\"external-link\" rel=\"nofollow noreferrer\">Mojang Support</a> \u2013 \ud83d\udce7 <a href=\"https://feedback.minecraft.net/\" class=\"external-link\" rel=\"nofollow noreferrer\">Suggestions</a> \u2013 \ud83d\udcd6 <a href=\"https://minecraft.wiki\" class=\"external-link\" rel=\"nofollow noreferrer\">Minecraft Wiki</a></p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Thank you for your report!",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "However, this issue has been temporarily closed as "
+              },
+              {
+                "type": "text",
+                "text": "Awaiting Response",
+                "marks": [
+                  {
+                    "type": "textColor",
+                    "attrs": {
+                      "color": "#ff5722"
+                    }
+                  },
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Could you upload a video showing this issue?"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Just a reminder, to make your bug report as effective as possible, please try and include the following steps to reproduce the problem:"
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Steps to Reproduce:",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "1."
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "2."
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "3."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Observed Results:",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "(Briefly describe what happens)",
+                    "marks": [
+                      {
+                        "type": "em"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Expected Results:",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "(Briefly describe what should happen)",
+                    "marks": [
+                      {
+                        "type": "em"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "If your ticket does not look like the example given "
+              },
+              {
+                "type": "text",
+                "text": "here",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ", then it's likely to be closed as incomplete."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will automatically reopen when you reply."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3 "
+              },
+              {
+                "type": "text",
+                "text": "Issue Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://help.minecraft.net/hc/en-us/articles/4408887473421"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udcac "
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://help.minecraft.net/hc/en-us/requests/new"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udce7 "
+              },
+              {
+                "type": "text",
+                "text": "Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://feedback.minecraft.net/"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udcd6 "
+              },
+              {
+                "type": "text",
+                "text": "Minecraft Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecraft.wiki"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300935"
+  }
+}

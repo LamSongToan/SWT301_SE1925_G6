@@ -1,0 +1,132 @@
+{
+  "key": "MC-299966",
+  "created_date": "2025-07-25T05:01:39.115-0700",
+  "updated_date": "2025-07-26T11:52:29.287-0700",
+  "status": "Resolved",
+  "resolution": "Cannot Reproduce",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-07-26T11:52:27.752-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Dinnerbone doesn t affect happy ghasts",
+  "environment_raw": null,
+  "description": "I cant dinnerbone my happy ghast n n",
+  "Steps to Reproduce": "1. Create a new Creative world with default settings.\n2. Obtain a name tag from the inventory.\n3. Name the name tag \"Dinnerbone\".\n4. Summon a Happy Ghast using the command `/summon happy_ghast ~ ~ ~`.\n5. Attempt to use the name tag on the summoned Happy Ghast to apply the Dinnerbone effect.\n6. Observe the behavior of the Happy Ghast to confirm it does not flip upside down.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "When a player names a Happy Ghast using a name tag with \"Dinnerbone,\" the expected behavior of the mob flipping upside down does not occur. Instead, the Happy Ghast remains in its normal orientation, flying right-side up. This issue persists regardless of whether the Happy Ghast is equipped with a Harness or not. \n\n**Steps to Reproduce:**\n1. Obtain a name tag and rename it to \"Dinnerbone.\"\n2. Approach a Happy Ghast and use the name tag on it.\n3. Observe that the Happy Ghast does not flip upside down as other mobs do when named \"Dinnerbone.\"\n\n**Expected Behavior:**\nUpon naming the Happy Ghast \"Dinnerbone,\" it should flip upside down, similar to other mobs in the game, maintaining its original flying behavior while being displayed in an inverted position. \n\nThis bug affects the visual representation of the Happy Ghast, as players expect all mobs to respond consistently to the \"Dinnerbone\" name tag mechanic.",
+  "Expected Behavior": "When a player names a Happy Ghast using a name tag with the name \"Dinnerbone,\" the Happy Ghast should flip upside down, similar to how other mobs behave when named with this tag. This behavior is consistent with the mechanics established in Minecraft, where naming any mob \"Dinnerbone\" or \"Grumm\" results in the mob rendering upside down without altering its functionality or interactions. The Happy Ghast should maintain its ability to carry players and fly normally while being displayed in this inverted position.",
+  "comments": [
+    {
+      "id": "2077299",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "flow_santohyj123",
+        "active": true,
+        "timeZone": "Asia/Seoul",
+        "accountType": "customer"
+      },
+      "created": "2025-07-26T00:32:12.773-0700",
+      "updated": "2025-07-26T00:32:12.773-0700",
+      "body_text": "Cannot reproduce:\\n\\n\\n\\n",
+      "body_length": 25,
+      "rendered_body": "<p>Cannot reproduce:</p>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Cannot reproduce:"
+              }
+            ]
+          },
+          {
+            "type": "mediaSingle",
+            "attrs": {
+              "layout": "align-start"
+            },
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "c1909bf8-b303-4790-a873-7073083306bd",
+                  "alt": "2025-07-26_16.30.09.png",
+                  "collection": "",
+                  "height": 690,
+                  "width": 644
+                }
+              }
+            ]
+          },
+          {
+            "type": "paragraph"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2077304",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "ampau (bolshi)",
+        "active": true,
+        "timeZone": "Europe/Andorra",
+        "accountType": "customer"
+      },
+      "created": "2025-07-26T00:58:53.027-0700",
+      "updated": "2025-07-26T00:58:53.027-0700",
+      "body_text": "Can\u2019t reproduce either\\n\\n",
+      "body_length": 26,
+      "rendered_body": "<p>Can\u2019t reproduce either</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Can\u2019t reproduce either"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-299966"
+  }
+}

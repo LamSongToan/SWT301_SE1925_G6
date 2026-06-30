@@ -1,0 +1,196 @@
+{
+  "key": "MC-300778",
+  "summary": "killing an item by using command could not trigger a 7 level signal input calibrated sculk sensor",
+  "description": "i used /kill to kill an item but it did not trigger the calibrated sculk sensor\\n\\ntested in 25w32a\\n\\n",
+  "created_date": "2025-08-06T10:07:10.091-0700",
+  "updated_date": "2025-08-06T21:10:09.334-0700",
+  "status": "Resolved",
+  "resolution": "Cannot Reproduce",
+  "resolution_date": "2025-08-06T13:20:35.395-0700",
+  "affected_versions": [
+    "1.21.8",
+    "25w32a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 18,
+  "summary_length": 17,
+  "fetch_timestamp": "2025-08-20T03:10:39.926591",
+  "comments": [
+    {
+      "id": "2081201",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Kong ZRC",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-06T10:07:11.140-0700",
+      "updated": "2025-08-06T10:07:11.140-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.",
+      "body_length": 80,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "99bcaacd-f672-4df0-aa6d-b5da356d8aef",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2081260",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/32"
+        },
+        "displayName": "[Mod] Jingy",
+        "active": true,
+        "timeZone": "America/Chicago",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-06T13:20:36.468-0700",
+      "updated": "2025-08-06T13:20:36.468-0700",
+      "body_text": "Cannot reproduce:\\n\\n",
+      "body_length": 21,
+      "rendered_body": "<p>Cannot reproduce:</p>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Cannot reproduce:"
+              }
+            ]
+          },
+          {
+            "type": "mediaSingle",
+            "attrs": {
+              "layout": "align-start"
+            },
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "cc2742c5-fbe4-415f-a803-aed82b1a5513",
+                  "alt": "2025-08-06_15.20.02.png",
+                  "collection": "",
+                  "height": 1369,
+                  "width": 2560
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2081354",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Kong ZRC",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-06T21:10:09.334-0700",
+      "updated": "2025-08-06T21:10:09.334-0700",
+      "body_text": "i think you wrongly placed the calibrated sculk sensor 🤔\\n\\ni recorded the gameplay @Jingy\\n\\n\\n\\n",
+      "body_length": 98,
+      "rendered_body": "<p>i think you wrongly placed the calibrated sculk sensor 🤔</p>\n\n<p>i recorded the gameplay @Jingy</p>\n\n<p></p><div><p>This comment contained multiple media attachments (2), please login to view the attachments.</p></div><p></p>\n",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "i think you wrongly placed the calibrated sculk sensor 🤔"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "i recorded the gameplay @Jingy"
+              }
+            ]
+          },
+          {
+            "type": "mediaSingle",
+            "attrs": {
+              "layout": "align-start"
+            },
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "20f5881a-7d29-4be5-8efa-f92ebb413c2d",
+                  "alt": "1.mp4",
+                  "collection": "",
+                  "height": 1726,
+                  "width": 2736
+                }
+              }
+            ]
+          },
+          {
+            "type": "paragraph"
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 3
+}

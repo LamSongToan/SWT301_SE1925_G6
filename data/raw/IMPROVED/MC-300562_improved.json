@@ -1,0 +1,82 @@
+{
+  "key": "MC-300562",
+  "created_date": "2025-08-02T08:25:30.794-0700",
+  "updated_date": "2025-08-06T14:11:13.822-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 2,
+  "labels": [],
+  "resolution_date": "2025-08-06T14:11:13.775-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Ender Dragon bring about unusual acceleration",
+  "environment_raw": null,
+  "description": "When the Ender Dragon is lingering over the return portal, it has no hitbox except for its head. This allows the player to be positioned inside the dragon s center. At the moment when the Ender Dragon tries to take off again, its hitbox reappears, and the player gets launched away. If the player shoots an arrow at that precise moment, the resulting arrow velocity becomes extremely high not because the actual knockback on the Ender Dragon is particularly strong, but possibly because knockback is still being calculated internally (server-side?). Since arrow velocity is apparently calculated based on the internal values, the closer the player is to the dragon s center, the more abnormal the resulting arrow speed becomes. This is what is being claimed. n nExpected result: Arrow velocity should correspond to the actual knockback experienced by the player.Actual result: Either the internal knockback calculation on the Ender Dragon is absurdly exaggerated, or arrow velocity is being calculated based on internal values at least one of these must be true, resulting in extremely high arrow speeds. n nWhile it s questionable whether knockback behavior should follow a purely exponential function especially considering the changing hitbox it remains unclear how much of this behavior is intentional. n nI don t have the equipment or specs to record a video myself, so I can t demonstrate the behavior in the latest version. However, there is an older version video that explains a bug caused by the same underlying factors, which I believe serves as a helpful reference. It should be reproducible using the same steps. n n",
+  "Steps to Reproduce": "1. Create a new Creative world in Minecraft and switch to Survival mode.\n2. Locate the End dimension by entering an End Portal or using the command '/execute in the_end run tp @p 0 100 0'.\n3. Wait for the Ender Dragon to spawn, which occurs 20 game ticks (1 second) after entering the End.\n4. Position yourself directly above the End Portal at coordinates (0, 64, 0) while ensuring the Ender Dragon is hovering above the portal.\n5. Move into the center of the Ender Dragon's body, ensuring you are within its hitbox, which is only active for the head at this point.\n6. Wait for the Ender Dragon to attempt to take off again, watching for the moment its hitbox reappears.\n7. At the exact moment the hitbox reappears, shoot an arrow at the Ender Dragon.\n8. Observe the resulting arrow velocity and note any abnormal speeds compared to typical arrow velocities when hitting other entities.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "When the Ender Dragon is positioned above the return portal, it exhibits a peculiar interaction with player projectiles and hitbox mechanics. In this state, the dragon's hitbox is only active at its head, allowing players to enter its center without collision. Upon the dragon's attempt to take off, its full hitbox reactivates, resulting in the player being forcefully ejected from the center. \n\nIf the player releases an arrow at the exact moment the dragon's hitbox reappears, the arrow's velocity is significantly amplified. This phenomenon does not stem from an increase in the actual knockback applied to the dragon, but rather indicates that the internal knockback calculations may still be in effect on the server side. The mechanics behind arrow velocity appear to be influenced by the proximity of the player to the dragon's center; as the player gets closer, the resulting arrow speed becomes disproportionately high.\n\nThis behavior leads to two potential conclusions: either the internal knockback calculations for the Ender Dragon are excessively exaggerated, or the arrow velocity is calculated based on these internal values rather than the actual knockback experienced by the player. As a result, the arrow speeds can reach levels that are not consistent with expected gameplay mechanics.\n\nIn summary, the expected behavior is that arrow velocity should reflect the actual knockback experienced by the player when interacting with the Ender Dragon. However, the observed behavior suggests a discrepancy in the calculations, leading to unnaturally high arrow speeds when the player is positioned at the dragon's center during its takeoff. This interaction raises questions about the intended design of knockback mechanics, particularly in relation to the changing hitbox of the Ender Dragon.",
+  "Expected Behavior": "When the Ender Dragon is positioned over the return portal, it should maintain a consistent hitbox for the entirety of its hovering behavior, allowing players to interact with it as intended. When the dragon takes off, the hitbox should reappear in a manner that does not cause unexpected player displacement. If a player shoots an arrow at the moment the dragon takes off, the arrow's velocity should be calculated based on the actual knockback experienced by the player from the dragon's movement, rather than any exaggerated internal values. The arrow should not exceed the standard projectile speed limits set by the game's mechanics, ensuring that its behavior aligns with expected physics and gameplay dynamics. This would preserve the integrity of combat interactions with the Ender Dragon, allowing for a fair and consistent player experience.",
+  "comments": [
+    {
+      "id": "2081303",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/32"
+        },
+        "displayName": "[Mod] Jingy",
+        "active": true,
+        "timeZone": "America/Chicago",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-06T14:11:06.972-0700",
+      "updated": "2025-08-06T14:11:06.972-0700",
+      "body_text": "The video in the report is 24 minutes long, and cannot serve as a substitute for clear reproduction steps for the report.Please test this bug yourself, and give us a reliable way to observe the issue ourselves, without needing to refer to an external video.\\n\\n",
+      "body_length": 261,
+      "rendered_body": "<p>The video in the report is 24 minutes long, and cannot serve as a substitute for clear reproduction steps for the report.<br>\nPlease test this bug yourself, and give us a reliable way to observe the issue ourselves, without needing to refer to an external video.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "The video in the report is 24 minutes long, and cannot serve as a substitute for clear reproduction steps for the report."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Please test this bug yourself, and give us a reliable way to observe the issue ourselves, without needing to refer to an external video."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300562"
+  }
+}

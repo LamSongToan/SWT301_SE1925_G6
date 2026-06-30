@@ -1,0 +1,75 @@
+{
+  "key": "MC-301008",
+  "created_date": "2025-08-12T15:50:20.187-0700",
+  "updated_date": "2025-08-14T16:56:31.643-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "25w33a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-14T16:56:31.552-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Possible regression: GuiGraphics submitOutline doesn t respect matrix transformations",
+  "environment_raw": null,
+  "description": "GuiGraphics renderOutline has been removed in 25w33a in favor of GuiGraphics submitOutline. n nAny transformations which have been applied to the Matrix3x2fStack (such as translations) are not respected anymore. n n n nPrevious example which used to work: n n java nguiGraphics.pose().translate(10, 10); guiGraphics.renderOutline(0, 0, 5, 5, 0xFFFFFFFF); n n nThe above would render a white outline at 10, 10 with width and height each being 5 in white color. n n n nCurrent state which doesn t work: n n java nguiGraphics.pose().translate(10, 10); guiGraphics.submitOutline(0, 0, 5, 5, 0xFFFFFFFF); n n nThis outline now doesn t render at 10, 10 but at 0, 0 . n n n nExpected behavior would probably be for it to render at 10, 10 as was previously the case. The fill command also respects applied transformations, so it would be weird for submitOutline not to. n n",
+  "Steps to Reproduce": "1. Create a new Creative world in Minecraft version 25w33a.\n2. Open the code editor or modding environment where you can access the GuiGraphics class.\n3. In the appropriate rendering method, initialize a GuiGraphics object.\n4. Call the method `guiGraphics.pose().translate(10, 10);` to apply a translation transformation to the rendering context.\n5. Replace any instance of `guiGraphics.renderOutline(0, 0, 5, 5, 0xFFFFFFFF);` with `guiGraphics.submitOutline(0, 0, 5, 5, 0xFFFFFFFF);`.\n6. Render the outline using the submitOutline method.\n7. Observe the position of the rendered outline on the screen.\n8. Note that the outline appears at the coordinates (0, 0) instead of the expected (10, 10).",
+  "Environment": "Minecraft Java Edition Version 25w33a (snapshot)",
+  "Observed Behavior": "In the current implementation of the `GuiGraphics.submitOutline` method, any transformations applied to the `Matrix3x2fStack`, such as translations, are not taken into account when rendering outlines. Specifically, when the following code is executed:\n\n```java\nguiGraphics.pose().translate(10, 10);\nguiGraphics.submitOutline(0, 0, 5, 5, 0xFFFFFFFF);\n```\n\nThe expected behavior would be for the outline to render at the coordinates (10, 10) with a width and height of 5 pixels, resulting in a white outline positioned correctly relative to the applied translation. However, the actual outcome is that the outline is rendered at the original coordinates (0, 0), completely ignoring the translation that was intended.\n\nThis regression contrasts with the previous behavior of the `GuiGraphics.renderOutline` method, which correctly respected the matrix transformations. It is notable that other rendering methods, such as the fill command, still adhere to the transformations applied to the `Matrix3x2fStack`, leading to inconsistencies in rendering behavior. Consequently, this inconsistency raises concerns about the expected functionality of `submitOutline`, as it does not align with the behavior of other rendering commands within the `GuiGraphics` class.",
+  "Expected Behavior": "When using the GuiGraphics class to submit an outline after applying transformations with the Matrix3x2fStack, the expected behavior is for the outline to render at the transformed coordinates. Specifically, when the code includes a translation, such as `guiGraphics.pose().translate(10, 10);` followed by `guiGraphics.submitOutline(0, 0, 5, 5, 0xFFFFFFFF);`, the outline should appear at the position (10, 10) with the specified width and height of 5, and in white color (0xFFFFFFFF). This behavior aligns with the functionality of other rendering commands, such as fill, which correctly respects the transformations applied to the matrix. Therefore, it is expected that submitOutline will also adhere to the current matrix state, ensuring consistent rendering behavior across different drawing commands.",
+  "comments": [
+    {
+      "id": "2083636",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/2bf89af0fdd92ce25290c17873c786fe?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FA-4.png",
+          "24x24": "https://secure.gravatar.com/avatar/2bf89af0fdd92ce25290c17873c786fe?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FA-4.png",
+          "16x16": "https://secure.gravatar.com/avatar/2bf89af0fdd92ce25290c17873c786fe?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FA-4.png",
+          "32x32": "https://secure.gravatar.com/avatar/2bf89af0fdd92ce25290c17873c786fe?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FA-4.png"
+        },
+        "displayName": "ampolive",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-14T11:37:40.093-0700",
+      "updated": "2025-08-14T11:37:40.093-0700",
+      "body_text": "Does this have any impact on vanilla gameplay?\\n\\n",
+      "body_length": 50,
+      "rendered_body": "<p>Does this have any impact on vanilla gameplay?</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Does this have any impact on vanilla gameplay?"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-301008"
+  }
+}

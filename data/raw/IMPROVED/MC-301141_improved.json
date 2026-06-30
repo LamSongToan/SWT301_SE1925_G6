@@ -1,0 +1,75 @@
+{
+  "key": "MC-301141",
+  "created_date": "2025-08-16T05:12:42.818-0700",
+  "updated_date": "2025-08-17T12:36:53.409-0700",
+  "status": "Resolved",
+  "resolution": "Incomplete",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-17T12:36:51.294-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Carpet does not stay with the transparent wall circuit!",
+  "environment_raw": null,
+  "description": "The error that the carpet does not stay on the ground, with the transparent wall circuit, does not occur everywhere! Some circuits work, only the following ones have the error! n n",
+  "Steps to Reproduce": "1. Create a new Creative world with default settings.\n2. Build a transparent wall circuit using blocks such as glass or glowstone, ensuring at least one block is a transparent block that supports redstone dust.\n3. Place redstone dust on top of the transparent block.\n4. Connect the redstone dust to a redstone signal source, such as a lever or button.\n5. Place a carpet block directly on top of the transparent block beneath the redstone dust.\n6. Activate the redstone signal to power the circuit.\n7. Observe the behavior of the carpet; it should not remain on the ground if it is part of the designated circuits that have the error.\n8. Repeat the process with different transparent block circuits to confirm that the issue is specific to the identified circuits.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "When placing carpet on top of certain transparent wall circuits, the carpet fails to remain on the surface and instead falls to the ground. This issue is not universal; it only occurs with specific types of transparent blocks that are used in the circuit. The transparent blocks that are known to cause this problem include:\n\n1. **Glass Blocks**: When carpet is placed on glass, it behaves as expected in most cases; however, in specific configurations with redstone circuits, the carpet can detach.\n2. **Glowstone**: Similar to glass, glowstone can support carpet under normal circumstances, but certain redstone configurations lead to the carpet dropping unexpectedly.\n3. **Upside-down Slabs**: When used in circuits, these slabs may cause the carpet to fall if the circuit is activated, indicating a failure in maintaining the carpet's position.\n4. **Other Transparent Blocks**: Other blocks that are classified as transparent may also exhibit this issue, but the specific conditions under which this occurs are not fully documented.\n\nThe carpet should remain on top of these transparent blocks as it does under normal circumstances when placed on solid blocks. The failure for the carpet to stay in place disrupts the expected behavior of redstone circuits, particularly in designs that rely on the carpet for aesthetics or functionality. This bug does not affect all transparent wall circuits, and further investigation is needed to determine the exact conditions that lead to the carpet's detachment.",
+  "Expected Behavior": "When a carpet is placed on a transparent wall circuit, it should remain in place without falling off. The carpet should adhere to the block beneath it, regardless of the transparency of the wall circuit. This behavior is consistent with Minecraft's mechanics, where carpets are designed to stay on any solid or opaque block, and transparent blocks should not affect the stability of the carpet. Additionally, the carpet should not pop off when placed on specific transparent blocks that are known to support redstone dust, such as upside-down slabs or glowstone, as these blocks are intended to allow for the placement of other blocks without causing them to fall. The expected behavior is that the carpet behaves consistently across all circuits, maintaining its position unless specifically interacted with or removed by the player.",
+  "comments": [
+    {
+      "id": "2084253",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/32"
+        },
+        "displayName": "[Mod] Jingy",
+        "active": true,
+        "timeZone": "America/Chicago",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-17T12:36:53.115-0700",
+      "updated": "2025-08-17T12:36:53.115-0700",
+      "body_text": "This report is Incomplete, as it cannot be reasonably understood, and lacks any clear description for reproducing the problem.\\n\\n",
+      "body_length": 130,
+      "rendered_body": "<p>This report is Incomplete, as it cannot be reasonably understood, and lacks any clear description for reproducing the problem.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This report is Incomplete, as it cannot be reasonably understood, and lacks any clear description for reproducing the problem."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-301141"
+  }
+}

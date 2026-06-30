@@ -1,0 +1,348 @@
+{
+  "key": "MC-300607",
+  "created_date": "2025-08-03T18:43:51.130-0700",
+  "updated_date": "2025-08-04T01:46:28.561-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-04T01:45:52.810-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Hostile mobs spawning during day and not burning Worlds seem to be dark as if it is inside a cave",
+  "environment_raw": null,
+  "description": "Mobs are actively spawning in as if it is night, and the world seems to be very dark as if there is a giant cover of blocks over it. This is occurring inside of any world I open. Additionally, when placing blocks light seems to be created out of nowhere. Sleeping is not possible during day and sleeping during night does not change the state of the bug. Interestingly enough, whilst fooling around on a superflat testing world, no slimes were spawning in. The only hostile mobs spawning in were zombies, skeletons, creepers, spiders, and enderman. No slimes as per usual on a superflat. Also this is happening ONLY to my existing worlds no newly created worlds have this bug, even when leaving the world and rejoining. ALSO it only seems to be happening within certain chunks. Overall this is just an extremely strange bug which I have not seen anyone talk about. I presume this is an issue with past mods I installed and uninstalled BUT I want to make sure this isn t an actual bug which I can fix. (I know this probably isn t important, but I want to be as thorough as possible, so I will say that there are no visible bugs on multiplayer worlds servers). n n n n",
+  "Steps to Reproduce": "1. Open an existing Minecraft world where the bug has been observed.\n2. Ensure the game is set to Survival mode.\n3. Wait until daytime in the game, verifying that the sun is visible in the sky.\n4. Observe the environment for unusual darkness, as if it is nighttime or inside a cave.\n5. Monitor the spawning of hostile mobs, specifically zombies, skeletons, creepers, spiders, and endermen, while noting the absence of slimes.\n6. Place various blocks (e.g., dirt, wood) in different locations and observe if light appears unexpectedly around the placed blocks.\n7. Attempt to sleep in a bed during the day and note whether the option is available or not.\n8. Sleep during the night and check if the state of the world changes, particularly regarding mob spawning and light levels.\n9. Move to different chunks within the world to confirm that the bug only occurs in certain areas.\n10. Repeat steps 1-9 in newly created worlds to verify that the bug does not occur there.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "Hostile mobs are spawning in daylight conditions, specifically in my existing worlds, where they should not normally spawn. The world appears unnaturally dark, resembling the interior of a cave, despite being outside during the day. This darkness suggests that the sky light level is insufficient for hostile mobs to be affected by sunlight, allowing them to spawn as if it were nighttime. \n\nIn addition, when I place blocks, there is an unusual increase in light levels that seems to appear instantaneously, which does not align with typical block placement behavior. The ability to sleep is also disrupted; I am unable to sleep during the daytime, and attempts to sleep at night do not revert the world to normal lighting or mob spawning behavior.\n\nWhile testing in a superflat world, I noticed that slimes, which typically spawn in designated slime chunks, are absent. The only hostile mobs present in this environment are zombies, skeletons, creepers, spiders, and endermen, with no slimes spawning, which is consistent with their expected behavior in superflat worlds.\n\nThis issue is isolated to my existing worlds, as newly created worlds do not exhibit these symptoms, even after reloading. Furthermore, the problem seems to be localized to specific chunks within these worlds, indicating that certain areas are more affected than others. I suspect this may be related to previous modifications made to the game through mods that I have since uninstalled. However, I want to confirm whether this is a bug within the game itself or if it can be resolved through other means. Notably, this issue does not occur on multiplayer servers, suggesting it may be limited to single-player environments.",
+  "Expected Behavior": "When in a standard Minecraft world, hostile mobs should not spawn during the day if the light level is above 8, as they are designed to only spawn in low light conditions or at night. Additionally, hostile mobs such as skeletons and zombies should burn upon exposure to direct sunlight after entering an illuminated area. The world should appear bright during the day, with proper lighting mechanics functioning as intended, meaning that placing blocks should not create light unexpectedly. Players should be able to sleep at night, and doing so should reset the day/night cycle without any issues. In superflat worlds, slimes should spawn in their designated chunks if they meet the biome and light level requirements. The expected behavior is that all existing worlds should exhibit normal light levels and mob spawning mechanics consistent with the game's design, without any unusual darkness or spawning of hostile mobs during daylight hours.",
+  "comments": [
+    {
+      "id": "2080107",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "TheLoneHotdog",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-03T18:43:51.772-0700",
+      "updated": "2025-08-03T18:43:51.772-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.",
+      "body_length": 162,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "c4e9b13d-9155-4b8c-9125-f5138bf221cc",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "146e3a42-b412-48ec-97fa-ebe53e6334c6",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2080108",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "TheLoneHotdog",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-03T18:53:50.394-0700",
+      "updated": "2025-08-03T18:53:50.394-0700",
+      "body_text": "Update: seems to be random patches of darkness after the initial large patch \\n\\n\\n\\n",
+      "body_length": 85,
+      "rendered_body": "<p>Update: seems to be random patches of darkness after the initial large patch </p>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Update: seems to be random patches of darkness after the initial large patch "
+              }
+            ]
+          },
+          {
+            "type": "mediaSingle",
+            "attrs": {
+              "layout": "align-start"
+            },
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "dfcfee94-e440-4d53-ac0d-df521c66d880",
+                  "alt": "Screenshot 2025-08-03 205240.png",
+                  "collection": "",
+                  "height": 809,
+                  "width": 1439
+                }
+              }
+            ]
+          },
+          {
+            "type": "paragraph"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2080172",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "24x24": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "16x16": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "32x32": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png"
+        },
+        "displayName": "[MCQA] jKakub",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-04T01:45:46.756-0700",
+      "updated": "2025-08-04T01:45:46.756-0700",
+      "body_text": "Hi there!Could you please answer a few questions regarding this issue?\u00a0\\n\\n* Is this issue only present on worlds that had any mods installed?\\n\\n\\n* If not, can you provide reproduction steps for this issue?\\n\\n\\n* Could you provide a world affected by this issue?\\n\\n\\n\\nThis ticket will automatically reopen when you reply.\u00a0Thanks!\\n\\n**Quick Links**:\u00a0\ud83d\udcd3\u202fIssue Guidelines\u202f\u2013 \ud83d\udcac\u202fMojang Support\u202f\u2013 \ud83d\udce7\u202fSuggestions\u202f\u2013 \ud83d\udcd6\u202fMinecraft Wiki\u00a0\\n\\n",
+      "body_length": 432,
+      "rendered_body": "<p>Hi there!<br>\nCould you please answer a few questions regarding this issue?&nbsp;</p>\n\n<ul>\n\t<li>Is this issue only present on worlds that had any mods installed?</li>\n\t<li>If not, can you provide reproduction steps for this issue?</li>\n\t<li>Could you provide a world affected by this issue?</li>\n</ul>\n\n\n<p>This ticket will automatically reopen when you reply.&nbsp;Thanks!</p>\n\n<p><b>Quick Links</b>:&nbsp;<br>\n\ud83d\udcd3\u202f<a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Issue Guidelines</ins></a>\u202f\u2013 \ud83d\udcac\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fhelp.minecraft.net.mcas.ms%2Fhc%2Fen-us%2Frequests%2Fnew%3FMcasTsid%3D15600&amp;McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Mojang Support</ins></a>\u202f\u2013 \ud83d\udce7\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Ffeedback.minecraft.net.mcas.ms%2F%3FMcasTsid%3D15600&amp;McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Suggestions</ins></a>\u202f\u2013 \ud83d\udcd6\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fminecraft.wiki.mcas.ms%2F%3FMcasTsid%3D15600&amp;McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Minecraft Wiki</ins></a>&nbsp;</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hi there!"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Could you please answer a few questions regarding this issue?\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Is this issue only present on worlds that had any mods installed?"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "If not, can you provide reproduction steps for this issue?"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Could you provide a world affected by this issue?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will automatically reopen when you reply.\u00a0Thanks!"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":\u00a0"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Issue Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udcac\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fhelp.minecraft.net.mcas.ms%2Fhc%2Fen-us%2Frequests%2Fnew%3FMcasTsid%3D15600&McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udce7\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Ffeedback.minecraft.net.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udcd6\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Minecraft Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fminecraft.wiki.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=a2e4ff6b7bd7b841f95d7812587a797801cea1e0a1875c88c98f7498da6a935a"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300607"
+  }
+}

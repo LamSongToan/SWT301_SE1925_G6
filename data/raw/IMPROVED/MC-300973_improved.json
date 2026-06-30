@@ -1,0 +1,324 @@
+{
+  "key": "MC-300973",
+  "created_date": "2025-08-12T07:35:18.000-0700",
+  "updated_date": "2025-08-12T07:50:50.741-0700",
+  "status": "Resolved",
+  "resolution": "Incomplete",
+  "affected_versions": [
+    "25w33a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-12T07:40:04.421-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Bug about - copper golems isn t oxidised",
+  "environment_raw": null,
+  "description": "I tried the command tick sprint 3d to watch the copper golem oxidize, but it s not working. Mojang, please fix this. n n",
+  "Steps to Reproduce": "1. Create a new Creative world with default settings.\n2. Give yourself a Copper Golem using the command '/summon minecraft:copper_golem'.\n3. Ensure that the Copper Golem is placed on a flat surface with at least 4 blocks of space around it.\n4. Enter the command '/gamerule randomTickSpeed 1000' to increase the tick speed for faster block updates.\n5. Activate the 'tick sprint 3d' command to observe the Copper Golem.\n6. Wait for at least 10 minutes while observing the Copper Golem for any signs of oxidation.\n7. Check the Copper Golem to confirm that it has not changed to a more oxidized state.",
+  "Environment": "Minecraft Java Edition Version 25w33a (snapshot)",
+  "Observed Behavior": "The copper golem is currently not exhibiting any oxidation behavior as expected. When using the command `/tick sprint 3d`, which typically allows players to observe the random tick updates in real-time, the copper golem remains in its initial state without progressing through the oxidation stages. \n\nIn Minecraft, the oxidation process for copper blocks, including those that would hypothetically be used for the copper golem, involves four stages: normal, exposed, weathered, and oxidized. Under normal gameplay conditions, non-waxed copper blocks oxidize over time due to random ticks. However, in this case, the copper golem does not show any signs of oxidation despite the command being executed. \n\nThis lack of oxidation is inconsistent with the intended functionality of copper-based entities, as it was previously indicated that the copper golem would oxidize and eventually turn into a statue upon reaching full oxidation. The absence of this behavior suggests a potential bug in the game\u2019s mechanics regarding the copper golem's interaction with the oxidation system. \n\n**Summary of Expected Behavior:**\n- Copper golems should oxidize over time, transitioning through the stages of oxidation.\n- The command `/tick sprint 3d` should allow players to witness this oxidation process in real-time.\n- At full oxidation, the copper golem is expected to transform into a statue.\n\nThis issue needs to be addressed to ensure the copper golem behaves as intended within the game\u2019s mechanics.",
+  "Expected Behavior": "When a copper golem is placed in the game, it should undergo a visible oxidation process over time, transitioning through its stages: normal, exposed, weathered, and oxidized. This process should occur as it receives random ticks, similar to other copper blocks. Specifically, when the command \"tick sprint 3d\" is executed, players should observe the copper golem gradually changing its appearance to reflect these oxidation stages. The copper golem should also be affected by environmental factors such as being struck by lightning, which would revert it to its non-oxidized state. Additionally, using an axe on the golem should allow players to remove oxidation at any stage, restoring it to its previous state. This behavior aligns with the mechanics established for copper blocks and the intended functionality of the copper golem as outlined in Minecraft's design.",
+  "comments": [
+    {
+      "id": "2082987",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/32"
+        },
+        "displayName": "[MOD] Greymagic27",
+        "active": true,
+        "timeZone": "Europe/London",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-12T07:40:04.484-0700",
+      "updated": "2025-08-12T07:40:04.484-0700",
+      "body_text": "**Thank you for your report!**However, this issue is **Incomplete**\\n\\nYour report does not contain enough information. As such, we're unable to understand or reproduce the problem.\\n\\nYou are welcome to create a new ticket about your issue with more detailed information. In case of a game crash, be sure to attach the crash report from minecraft/crash-reports/crash-<DATE>-client.txt.However, please review the **Bug Tracker Guidelines** before creating new reports. Be sure to search for an existing issue as it is likely to have already been reported.\\n\\n*Quick Links*:\ud83d\udcd3 Bug Tracker Guidelines -- \ud83d\udcac Community Support -- \ud83d\udce7 Mojang Support (Technical Issues) -- \ud83d\udce7 Microsoft Support (Account Issues) -- \ud83d\udcd3 Project Summary -- \u270d\ufe0f Feedback and Suggestions -- \ud83d\udcd6 Game Wiki\\n\\n",
+      "body_length": 770,
+      "rendered_body": "<p><b>Thank you for your report!</b><br>\nHowever, this issue is <b>Incomplete</b></p>\n\n<p>Your report does not contain enough information. As such, we're unable to understand or reproduce the problem.</p>\n\n<p>You are welcome to create a new ticket about your issue with more detailed information. In case of a game crash, be sure to attach the crash report from <a href=\"https://minecrafthopper.net/help/finding-minecraft-data-folder/\" class=\"external-link\" rel=\"nofollow noreferrer\">minecraft/crash-reports/crash-&lt;DATE&gt;-client.txt</a>.<br>\nHowever, please review the <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\"><b>Bug Tracker Guidelines</b></a> before creating new reports. Be sure to search for an existing issue as it is likely to have already been reported.</p>\n\n<p><em>Quick Links</em>:<br>\n\ud83d\udcd3 <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\">Bug Tracker Guidelines</a> \u2013 \ud83d\udcac <a href=\"https://discord.com/invite/minecraft\" class=\"external-link\" rel=\"nofollow noreferrer\">Community Support</a> \u2013 \ud83d\udce7 <a href=\"https://aka.ms/Minecraft-Support\" class=\"external-link\" rel=\"nofollow noreferrer\">Mojang Support (Technical Issues)</a> \u2013 \ud83d\udce7 <a href=\"https://support.xbox.com/contact-us/\" class=\"external-link\" rel=\"nofollow noreferrer\">Microsoft Support (Account Issues)</a> \u2013 \ud83d\udcd3 <a href=\"https://report.bugs.mojang.com/servicedesk/customer/portal/2\" class=\"external-link\" rel=\"nofollow noreferrer\">Project Summary</a> \u2013 \u270d\ufe0f <a href=\"https://aka.ms/MinecraftFeedbackDiscord\" class=\"external-link\" rel=\"nofollow noreferrer\">Feedback and Suggestions</a> \u2013 \ud83d\udcd6 <a href=\"https://minecraft.wiki/\" class=\"external-link\" rel=\"nofollow noreferrer\">Game Wiki</a></p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Thank you for your report!",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "However, this issue is "
+              },
+              {
+                "type": "text",
+                "text": "Incomplete",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Your report does not contain enough information. As such, we're unable to understand or reproduce the problem."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are welcome to create a new ticket about your issue with more detailed information. In case of a game crash, be sure to attach the crash report from "
+              },
+              {
+                "type": "text",
+                "text": "minecraft/crash-reports/crash-<DATE>-client.txt",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecrafthopper.net/help/finding-minecraft-data-folder/"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "However, please review the "
+              },
+              {
+                "type": "text",
+                "text": "Bug Tracker Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  },
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " before creating new reports. Be sure to search for an existing issue as it is likely to have already been reported."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3 "
+              },
+              {
+                "type": "text",
+                "text": "Bug Tracker Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udcac "
+              },
+              {
+                "type": "text",
+                "text": "Community Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://discord.com/invite/minecraft"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udce7 "
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support (Technical Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/Minecraft-Support"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udce7 "
+              },
+              {
+                "type": "text",
+                "text": "Microsoft Support (Account Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://support.xbox.com/contact-us/"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udcd3 "
+              },
+              {
+                "type": "text",
+                "text": "Project Summary",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://report.bugs.mojang.com/servicedesk/customer/portal/2"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \u270d\ufe0f "
+              },
+              {
+                "type": "text",
+                "text": "Feedback and Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MinecraftFeedbackDiscord"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udcd6 "
+              },
+              {
+                "type": "text",
+                "text": "Game Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecraft.wiki/"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2082994",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "kripsash",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-12T07:50:50.741-0700",
+      "updated": "2025-08-12T07:50:50.741-0700",
+      "body_text": "I tried the command \u201ctick sprint 3d\u201d to watch the copper golem oxidize, but it\u2019s not working. Mojang, please fix this. \ud83d\ude4f\\n\\n",
+      "body_length": 124,
+      "rendered_body": "<p>I tried the command \u201ctick sprint 3d\u201d to watch the copper golem oxidize, but it\u2019s not working. Mojang, please fix this. \ud83d\ude4f</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "I tried the command \u201ctick sprint 3d\u201d to watch the copper golem oxidize, but it\u2019s not working. Mojang, please fix this. \ud83d\ude4f"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300973"
+  }
+}

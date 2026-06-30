@@ -1,0 +1,128 @@
+{
+  "key": "MC-299966",
+  "summary": "Dinnerbone doesn't affect happy ghasts",
+  "description": "I cant dinnerbone my happy ghast\\n\\n",
+  "created_date": "2025-07-25T05:01:39.115-0700",
+  "updated_date": "2025-07-26T11:52:29.287-0700",
+  "status": "Resolved",
+  "resolution": "Cannot Reproduce",
+  "resolution_date": "2025-07-26T11:52:27.752-0700",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 6,
+  "summary_length": 5,
+  "fetch_timestamp": "2025-08-20T03:12:10.507319",
+  "comments": [
+    {
+      "id": "2077299",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "flow_santohyj123",
+        "active": true,
+        "timeZone": "Asia/Seoul",
+        "accountType": "customer"
+      },
+      "created": "2025-07-26T00:32:12.773-0700",
+      "updated": "2025-07-26T00:32:12.773-0700",
+      "body_text": "Cannot reproduce:\\n\\n\\n\\n",
+      "body_length": 25,
+      "rendered_body": "<p>Cannot reproduce:</p>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Cannot reproduce:"
+              }
+            ]
+          },
+          {
+            "type": "mediaSingle",
+            "attrs": {
+              "layout": "align-start"
+            },
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "c1909bf8-b303-4790-a873-7073083306bd",
+                  "alt": "2025-07-26_16.30.09.png",
+                  "collection": "",
+                  "height": 690,
+                  "width": 644
+                }
+              }
+            ]
+          },
+          {
+            "type": "paragraph"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2077304",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "ampau (bolshi)",
+        "active": true,
+        "timeZone": "Europe/Andorra",
+        "accountType": "customer"
+      },
+      "created": "2025-07-26T00:58:53.027-0700",
+      "updated": "2025-07-26T00:58:53.027-0700",
+      "body_text": "Can’t reproduce either\\n\\n",
+      "body_length": 26,
+      "rendered_body": "<p>Can’t reproduce either</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Can’t reproduce either"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 2
+}

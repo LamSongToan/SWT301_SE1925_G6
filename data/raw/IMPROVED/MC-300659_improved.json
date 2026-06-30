@@ -1,0 +1,127 @@
+{
+  "key": "MC-300659",
+  "created_date": "2025-08-04T23:07:38.645-0700",
+  "updated_date": "2025-08-04T23:07:44.961-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "25w32a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-04T23:07:44.890-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Perder la compra de Minecraft: Java Bedrock Edition for PC",
+  "environment_raw": null,
+  "description": "Ya no puedo descargar el iniciador n n",
+  "Steps to Reproduce": "1. Ensure you have a valid Microsoft account that previously purchased Minecraft: Java & Bedrock Edition for PC.\n2. Open the Minecraft Launcher on your PC.\n3. Attempt to log in using your Microsoft account credentials.\n4. Once logged in, check the \"Games\" tab to see if Minecraft: Java & Bedrock Edition is listed under your owned games.\n5. If not listed, navigate to the \"Store\" tab within the launcher.\n6. Search for \"Minecraft: Java & Bedrock Edition\" in the store.\n7. Attempt to download the game from the store; note if you receive any error messages or if the download fails.\n8. If the game is not available for download, try accessing the Microsoft Store directly and searching for \"Minecraft: Java & Bedrock Edition\" there.\n9. Check your purchase history in your Microsoft account settings to confirm the purchase of the game.\n10. If the game is still inaccessible, attempt to reinstall the Minecraft Launcher and repeat the previous steps.",
+  "Environment": "Minecraft Java Edition Version 25w32a (snapshot)",
+  "Observed Behavior": "After purchasing Minecraft: Java & Bedrock Edition for PC, users are unable to download the Minecraft Launcher. When attempting to launch the game, the following issues occur:\n\n1. **Missing Launcher:** The user is unable to locate or download the Minecraft Launcher from the official website or Microsoft Store, despite having an active purchase associated with their Microsoft account.\n\n2. **Error Messages:** Upon attempting to access the game, the user receives an error message indicating that the game is not available for download. This may include prompts such as \"Game Not Found\" or \"You do not own this game.\"\n\n3. **Account Issues:** The user has verified that they are logged into the correct Microsoft account that holds the purchase, yet the launcher still fails to recognize the ownership of the game.\n\n4. **Inability to Access Content:** Without the launcher, the user cannot access any content related to Minecraft, including single-player worlds, multiplayer servers, or updates, effectively locking them out of their purchased game.\n\n5. **No Previous Installation:** The user confirms that there was no prior installation of the launcher on their device, which rules out issues related to corrupted files or outdated versions of the launcher.\n\nThis behavior is critical as it prevents legitimate players from accessing the game they have purchased, leading to frustration and dissatisfaction with the service.",
+  "Expected Behavior": "When a user has purchased Minecraft: Java & Bedrock Edition for PC, they should be able to download and install the Minecraft Launcher without any issues. Upon launching the Minecraft Launcher, the user should see the option to play the game associated with their account, allowing them to access both the Java and Bedrock editions. If the user encounters any problems, the launcher should provide clear instructions on how to troubleshoot the issue, including steps to verify their purchase and account status. In the event of a missing launcher, the user should be able to re-download it from the official Minecraft website or the Microsoft Store, ensuring they can access their purchased content seamlessly.",
+  "comments": [
+    {
+      "id": "2080538",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Cyborg nator",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-04T23:07:39.937-0700",
+      "updated": "2025-08-04T23:07:39.937-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.",
+      "body_length": 162,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "8abcc918-0bb9-4565-a11c-39b3f6ba1c1d",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "fd69faff-694c-451e-b61d-57962d1e1f0b",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2080539",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "24x24": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "16x16": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "32x32": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png"
+        },
+        "displayName": "Automation for Jira",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "app"
+      },
+      "created": "2025-08-04T23:07:42.916-0700",
+      "updated": "2025-08-04T23:07:42.916-0700",
+      "body_text": "Please edit your report to change the Affected Version to the version shown on the Minecraft title screen\\n\\n",
+      "body_length": 109,
+      "rendered_body": "<p>Please edit your report to change the Affected Version to the version shown on the Minecraft title screen</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please edit your report to change the Affected Version to the version shown on the Minecraft title screen"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300659"
+  }
+}

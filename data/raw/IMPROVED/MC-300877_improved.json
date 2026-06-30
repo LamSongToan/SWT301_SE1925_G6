@@ -1,0 +1,110 @@
+{
+  "key": "MC-300877",
+  "created_date": "2025-08-09T08:14:04.307-0700",
+  "updated_date": "2025-08-11T02:34:16.226-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "25w32a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-11T02:34:06.112-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Experience does not drop out of quartz",
+  "environment_raw": null,
+  "description": "When mining quartz, experience is dropped, but it is not counted towards your level. n n",
+  "Steps to Reproduce": "1. Create a new Survival world with default settings.\n2. Switch to the Nether dimension by using a Nether Portal.\n3. Locate a Nether Quartz Ore block in the Nether.\n4. Equip a pickaxe (any type, including one with or without the Silk Touch enchantment).\n5. Mine the Nether Quartz Ore block.\n6. Observe the experience orbs that drop upon mining the block.\n7. Check your experience level displayed on the screen to confirm that the experience from mining the quartz is not being counted towards your level.",
+  "Environment": "Minecraft Java Edition Version 25w32a (snapshot)",
+  "Observed Behavior": "When a player mines Nether Quartz Ore, the expected behavior is that experience orbs are generated and counted towards the player's experience level. However, in this bug, while the player does receive experience orbs visually when breaking the quartz ore, these orbs do not contribute to the player's experience level progression. \n\nSpecifically:\n\n- **Experience Generation**: Mining one block of Nether Quartz Ore should yield approximately 3.5 experience points. This is consistent with the mechanics of other ore types in Minecraft, where breaking the block produces both the item and experience.\n  \n- **Level Impact**: Despite the visual appearance of experience orbs, the player's experience bar does not increase, and no points are added to the player's experience level. This discrepancy can lead to confusion, as players may believe they are gaining experience when they are not.\n\n- **Reproducibility**: This issue has been observed consistently across different game versions (Java and Bedrock) and does not appear to be influenced by the player's actions or the use of specific tools (e.g., pickaxes with or without Silk Touch).\n\n- **Expected vs. Actual**: The expected behavior would be that upon mining Nether Quartz Ore, the player would see an increase in their experience level corresponding to the amount of experience orbs received. Instead, players experience no increase in their level, effectively rendering the mining of quartz ore a futile activity for gaining experience.\n\nThis bug affects gameplay mechanics related to experience accumulation, particularly for players who rely on mining quartz as a primary source of experience in the early to mid-game stages.",
+  "Expected Behavior": "When mining Nether quartz ore, the player should receive experience orbs that contribute to their experience level. Specifically, breaking one block of Nether quartz ore should yield an average of 3.5 experience points, which should be added to the player's total experience count. This experience should be visible in the player's experience bar, allowing them to see their progress towards the next level. If the player uses a pickaxe enchanted with Silk Touch, the experience should not drop immediately but should still be obtainable when the block is later mined normally. The experience gained from mining quartz should function consistently with the mechanics outlined in the official Minecraft documentation, ensuring that players can effectively level up through quartz mining as intended.",
+  "comments": [
+    {
+      "id": "2082142",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Charlotte Eiffel Lilith Buff",
+        "active": true,
+        "timeZone": "Europe/Berlin",
+        "accountType": "customer"
+      },
+      "created": "2025-08-09T11:59:04.641-0700",
+      "updated": "2025-08-09T11:59:04.641-0700",
+      "body_text": "Are you using a tool or wearing any armor enchanted with Mending?\\n\\n",
+      "body_length": 69,
+      "rendered_body": "<p>Are you using a tool or wearing any armor enchanted with Mending?</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Are you using a tool or wearing any armor enchanted with Mending?"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2082537",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:fe0b28a2-a443-4748-adec-94acc213ea9e/5676b346-5dd0-49ca-b3b9-9eadab726d17/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:fe0b28a2-a443-4748-adec-94acc213ea9e/5676b346-5dd0-49ca-b3b9-9eadab726d17/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:fe0b28a2-a443-4748-adec-94acc213ea9e/5676b346-5dd0-49ca-b3b9-9eadab726d17/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:fe0b28a2-a443-4748-adec-94acc213ea9e/5676b346-5dd0-49ca-b3b9-9eadab726d17/32"
+        },
+        "displayName": "Avoma",
+        "active": true,
+        "timeZone": "Europe/London",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-11T02:34:06.177-0700",
+      "updated": "2025-08-11T02:34:16.167-0700",
+      "body_text": "Please also let us know if you're using any data packs which could potentially be causing the issue.\\n\\n",
+      "body_length": 104,
+      "rendered_body": "<p>Please also let us know if you're using any data packs which could potentially be causing the issue.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please also let us know if you're using any data packs which could potentially be causing the issue."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300877"
+  }
+}

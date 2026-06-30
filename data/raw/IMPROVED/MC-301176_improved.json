@@ -1,0 +1,180 @@
+{
+  "key": "MC-301176",
+  "created_date": "2025-08-17T15:01:14.190-0700",
+  "updated_date": "2025-08-18T07:59:31.585-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-18T07:40:26.239-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "My skin dont work but my friends can see it",
+  "environment_raw": null,
+  "description": "Hello, my skin dont show but im stuck in the zuri skin, i cant even change with the default skins. n nMy friends can see my skin but i cant. n nI dont have any problems and i dont have any antivirus installed n n",
+  "Steps to Reproduce": "1. Launch Minecraft and log into your account.\n2. Navigate to the \"Skins\" section in the Minecraft Launcher.\n3. Ensure you are on the \"My Skins\" tab and check if your current skin is set to Zuri.\n4. Attempt to change your skin by selecting a different skin from the available options, including default skins.\n5. Launch a single-player or multiplayer world to test if the skin change takes effect.\n6. Ask a friend who is also playing in the same world to confirm if they can see your selected skin.\n7. If your skin still appears as Zuri, check the \"Skins\" section again to see if the selected skin is still applied.\n8. Restart the game and repeat the steps above to see if the issue persists.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "The player's custom skin does not display on their own client, and they are stuck using the default Zuri skin. Despite this, other players in the game can see the player's custom skin correctly. The player has attempted to change their skin to one of the default skins available in the Minecraft Launcher, but these changes do not reflect on their own screen. The issue persists regardless of the player's internet connection and there are no antivirus programs interfering with the game. Additionally, the player has confirmed that they have not made any recent changes to their account settings or skin files that could affect skin visibility. The problem occurs across different game sessions, indicating it is not a temporary glitch. This behavior suggests a potential issue with how the game client is rendering the player's skin locally, while still allowing other players to view it correctly in multiplayer.",
+  "Expected Behavior": "When a player changes their skin in Minecraft, they should be able to see their chosen skin applied to their character model in-game. If a player has successfully uploaded and selected a custom skin, they should not be stuck with the default Zuri skin and should be able to see their selected skin while playing. Additionally, the player should have the ability to switch to any of the default skins available within the game. This behavior aligns with the game's design, where players have control over their character's appearance, and the selected skin should be visible to the player as well as to others in the game. If the skin is not displaying correctly for the player, it indicates a potential issue with the game client or skin loading process that needs to be addressed.",
+  "comments": [
+    {
+      "id": "2084358",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "kaito",
+        "active": true,
+        "timeZone": "Europe/Dublin",
+        "accountType": "customer"
+      },
+      "created": "2025-08-18T02:55:10.816-0700",
+      "updated": "2025-08-18T02:55:10.816-0700",
+      "body_text": "Do you see multiplayer skins?\\n\\n",
+      "body_length": 33,
+      "rendered_body": "<p>Do you see multiplayer skins?</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Do you see multiplayer skins?"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2084409",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Marc",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-18T05:26:06.550-0700",
+      "updated": "2025-08-18T05:26:06.550-0700",
+      "body_text": "I have the same problem. We are 5 friends playing and the 2 who entered the game previously do not have the error and can see the online skins, me (that I downloaded the game yesterday) and other two friends that purchased the game yesterday can\u2019t see online skins. Its not a problem with the link between the skin and the account, because we can see it the game launcher. Basically the game can\u2019t get online skins from the Minecraft servers. And no software, firewall or antivirus are in the middle.\\n\\n",
+      "body_length": 504,
+      "rendered_body": "<p>I have the same problem. We are 5 friends playing and the 2 who entered the game previously do not have the error and can see the online skins, me (that I downloaded the game yesterday) and other two friends that purchased the game yesterday can\u2019t see online skins. Its not a problem with the link between the skin and the account, because we can see it the game launcher. Basically the game can\u2019t get online skins from the Minecraft servers. And no software, firewall or antivirus are in the middle.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "I have the same problem. We are 5 friends playing and the 2 who entered the game previously do not have the error and can see the online skins, me (that I downloaded the game yesterday) and other two friends that purchased the game yesterday can\u2019t see online skins. Its not a problem with the link between the skin and the account, because we can see it the game launcher. Basically the game can\u2019t get online skins from the Minecraft servers. And no software, firewall or antivirus are in the middle."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2084432",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Marcos",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-18T06:53:29.776-0700",
+      "updated": "2025-08-18T06:53:29.776-0700",
+      "body_text": "Nope i cant see them, but my friends can see mine. Its so annoying @kaito\\n\\n",
+      "body_length": 77,
+      "rendered_body": "<p>Nope i cant see them, but my friends can see mine. Its so annoying @kaito</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Nope i cant see them, but my friends can see mine. Its so annoying @kaito"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2084443",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/32"
+        },
+        "displayName": "[MOD] Greymagic27",
+        "active": true,
+        "timeZone": "Europe/London",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-18T07:40:26.308-0700",
+      "updated": "2025-08-18T07:40:26.308-0700",
+      "body_text": "Who is your ISP? Internet service provider\\n\\n",
+      "body_length": 46,
+      "rendered_body": "<p>Who is your ISP? Internet service provider</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Who is your ISP? Internet service provider"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-301176"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "key": "MC-301222",
+  "summary": "Weird Blue spot on GUI",
+  "description": "I was trying the latest java snapshot when I noticed a weird blue patch on my UI, it seems to disappear when I press F1 but it seems to appear even on third person view.\\n\\n",
+  "created_date": "2025-08-19T05:28:56.031-0700",
+  "updated_date": "2025-08-19T06:07:51.156-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "resolution_date": "2025-08-19T06:07:51.060-0700",
+  "affected_versions": [
+    "25w33a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 35,
+  "summary_length": 5,
+  "fetch_timestamp": "2025-08-20T03:09:52.935935",
+  "comments": [
+    {
+      "id": "2084672",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "AquaticVillager",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-19T05:28:56.792-0700",
+      "updated": "2025-08-19T05:28:56.792-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.",
+      "body_length": 80,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "73ae9020-78e7-47e9-9032-319c1012759a",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2084689",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:55fbbc50-a3ed-42ca-88af-ac87fa100c9a/49c9ac2e-63b3-4fb9-b73d-8075dd93b0bd/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:55fbbc50-a3ed-42ca-88af-ac87fa100c9a/49c9ac2e-63b3-4fb9-b73d-8075dd93b0bd/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:55fbbc50-a3ed-42ca-88af-ac87fa100c9a/49c9ac2e-63b3-4fb9-b73d-8075dd93b0bd/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:55fbbc50-a3ed-42ca-88af-ac87fa100c9a/49c9ac2e-63b3-4fb9-b73d-8075dd93b0bd/32"
+        },
+        "displayName": "[MCQA] Zgajak",
+        "active": true,
+        "timeZone": "Poland",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-19T06:07:31.349-0700",
+      "updated": "2025-08-19T06:07:31.349-0700",
+      "body_text": "Hi!\\n\\nCan you please record a vide oof this issue?It’s hard to see on this screenshot.\\n\\n",
+      "body_length": 91,
+      "rendered_body": "<p>Hi!</p>\n\n<p>Can you please record a vide oof this issue?<br>\nIt’s hard to see on this screenshot.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hi!"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Can you please record a vide oof this issue?"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "It’s hard to see on this screenshot."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 2
+}

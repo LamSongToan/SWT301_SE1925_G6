@@ -1,0 +1,76 @@
+{
+  "key": "MC-301135",
+  "created_date": "2025-08-16T03:32:13.685-0700",
+  "updated_date": "2025-08-17T12:38:30.461-0700",
+  "status": "Resolved",
+  "resolution": "Incomplete",
+  "affected_versions": [
+    "1.21.8",
+    "25w33a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-17T12:38:28.602-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Iron Golems sometimes plant flowers",
+  "environment_raw": null,
+  "description": "Blank description n n",
+  "Steps to Reproduce": "1. Create a new Survival world with default settings.\n2. Locate or create a village with at least 10 villagers and 20 beds.\n3. Ensure the villagers are linked to their respective beds.\n4. Wait for at least 30 seconds to allow for iron golem spawning.\n5. Observe the iron golems as they patrol the village.\n6. Stand within the village vicinity to keep the simulation active.\n7. Watch for an iron golem to approach a villager.\n8. Note if the iron golem holds a poppy in its hand and attempts to offer it to the villager.\n9. Repeat the observation multiple times to confirm the occurrence of iron golems planting flowers in the village.",
+  "Environment": "Minecraft Java Edition Versions: 1.21.8, 25w33a (includes snapshots)",
+  "Observed Behavior": "Iron Golems exhibit unintended behavior by occasionally planting flowers, specifically poppies, in the world. This occurs when an Iron Golem, which typically holds a poppy in its hand to offer to villagers, inadvertently places the flower on the ground instead of retaining it. This behavior can happen during their normal patrolling routines within villages or when they are interacting with villagers. \n\nWhen an Iron Golem is near a villager, it may attempt to offer the poppy. However, in some cases, instead of holding the poppy out for the villager to take, the Golem will drop the flower on the ground. This results in the flower being placed in the world, which is not the intended mechanic, as Iron Golems are designed to hold poppies and present them to baby villagers. \n\nThis behavior is inconsistent and does not occur every time an Iron Golem is near a villager but can lead to confusion regarding the Golem's function as a protective entity and its relationship with villagers. The occurrence of this bug may impact gameplay, especially in scenarios involving player interactions with villagers and Iron Golems in a village setting. Developers may want to investigate the conditions under which the Golem drops the poppy rather than offering it, as this could be linked to specific pathfinding or interaction algorithms within the game.",
+  "Expected Behavior": "When an iron golem is present in a village, it should exhibit its intended behavior of holding a poppy in its hand and offering it to nearby villagers, particularly baby villagers, who will approach and take the flower. This interaction symbolizes the friendly relationship between iron golems and villagers. Iron golems should not randomly plant flowers in the environment, as they are designed to only spawn poppies in their hands when in proximity to villagers. The expected behavior is for the iron golem to wander around the village, engaging with villagers by offering poppies, without any unintended actions such as planting them in the ground.",
+  "comments": [
+    {
+      "id": "2084254",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/32"
+        },
+        "displayName": "[Mod] Jingy",
+        "active": true,
+        "timeZone": "America/Chicago",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-17T12:38:30.461-0700",
+      "updated": "2025-08-17T12:38:30.461-0700",
+      "body_text": "This issue is Incomplete. Please do not report issues with only a title, as this is not helpful or descriptive enough to understand the reported problem.\\n\\n",
+      "body_length": 157,
+      "rendered_body": "<p>This issue is Incomplete. Please do not report issues with only a title, as this is not helpful or descriptive enough to understand the reported problem.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This issue is Incomplete. Please do not report issues with only a title, as this is not helpful or descriptive enough to understand the reported problem."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-301135"
+  }
+}

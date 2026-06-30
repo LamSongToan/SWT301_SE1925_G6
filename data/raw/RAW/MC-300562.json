@@ -1,0 +1,78 @@
+{
+  "key": "MC-300562",
+  "summary": "Ender Dragon bring about unusual acceleration",
+  "description": "When the Ender Dragon is lingering over the return portal, it has no hitbox except for its head. This allows the player to be positioned inside the dragon's center. At the moment when the Ender Dragon tries to take off again, its hitbox reappears, and the player gets launched away. If the player shoots an arrow at that precise moment, the resulting arrow velocity becomes extremely high—not because the actual knockback on the Ender Dragon is particularly strong, but possibly because knockback is still being calculated internally (server-side?). Since arrow velocity is apparently calculated based on the internal values, the closer the player is to the dragon's center, the more abnormal the resulting arrow speed becomes. This is what is being claimed.\\n\\nExpected result: Arrow velocity should correspond to the actual knockback experienced by the player.Actual result: Either the internal knockback calculation on the Ender Dragon is absurdly exaggerated, or arrow velocity is being calculated based on internal values—at least one of these must be true, resulting in extremely high arrow speeds.\\n\\nWhile it's questionable whether knockback behavior should follow a purely exponential function—especially considering the changing hitbox—it remains unclear how much of this behavior is intentional.\\n\\nI don't have the equipment or specs to record a video myself, so I can't demonstrate the behavior in the latest version. However, there is an older version video that explains a bug caused by the same underlying factors, which I believe serves as a helpful reference. It should be reproducible using the same steps.  \\n\\n",
+  "created_date": "2025-08-02T08:25:30.794-0700",
+  "updated_date": "2025-08-06T14:11:13.822-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "resolution_date": "2025-08-06T14:11:13.775-0700",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 2,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 250,
+  "summary_length": 6,
+  "fetch_timestamp": "2025-08-20T03:10:59.842502",
+  "comments": [
+    {
+      "id": "2081303",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/32"
+        },
+        "displayName": "[Mod] Jingy",
+        "active": true,
+        "timeZone": "America/Chicago",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-06T14:11:06.972-0700",
+      "updated": "2025-08-06T14:11:06.972-0700",
+      "body_text": "The video in the report is 24 minutes long, and cannot serve as a substitute for clear reproduction steps for the report.Please test this bug yourself, and give us a reliable way to observe the issue ourselves, without needing to refer to an external video.\\n\\n",
+      "body_length": 261,
+      "rendered_body": "<p>The video in the report is 24 minutes long, and cannot serve as a substitute for clear reproduction steps for the report.<br>\nPlease test this bug yourself, and give us a reliable way to observe the issue ourselves, without needing to refer to an external video.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "The video in the report is 24 minutes long, and cannot serve as a substitute for clear reproduction steps for the report."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Please test this bug yourself, and give us a reliable way to observe the issue ourselves, without needing to refer to an external video."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 1
+}

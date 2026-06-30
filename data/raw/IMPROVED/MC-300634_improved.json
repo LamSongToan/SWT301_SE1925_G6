@@ -1,0 +1,75 @@
+{
+  "key": "MC-300634",
+  "created_date": "2025-08-04T06:00:23.812-0700",
+  "updated_date": "2025-08-04T06:00:43.267-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "25w32a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-04T06:00:28.719-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "It some time lag aur hang for some mili seconds near trapdoor or while climbing on stairs",
+  "environment_raw": null,
+  "description": "It some time lag aur hang for some mili seconds near trapdoor or while climbing on stairs . My device is samsung m31 . It happens in my device and as well as with my friends also. n n",
+  "Steps to Reproduce": "1. Launch Minecraft on a Samsung M31 device.\n2. Create a new Survival world with default settings.\n3. Locate or build a structure that includes a trapdoor and a staircase.\n4. Position yourself near the trapdoor and open it.\n5. Walk back and forth while standing close to the open trapdoor for approximately 10 seconds.\n6. Climb up and down the staircase while moving in a straight line.\n7. Repeat steps 4 to 6 multiple times to observe the lag or hang for a few milliseconds during the interactions. \n8. Note if the lag occurs consistently with other players on similar devices.",
+  "Environment": "Minecraft Java Edition Version 25w32a (snapshot)",
+  "Observed Behavior": "Players experience intermittent lag or stuttering for a few milliseconds when interacting with trapdoors or while climbing stairs. This issue occurs on a Samsung M31 device and has been reported by multiple users, indicating that it may not be an isolated incident. The lag manifests as a noticeable delay in movement or responsiveness, particularly when the player is near a trapdoor or ascending/descending stairs. This behavior affects the smoothness of gameplay, making it difficult to navigate these blocks effectively. The problem persists across different game sessions and appears to be consistent among friends using similar devices. Further investigation is needed to determine if this is related to device performance, game optimization, or specific interactions with these blocks.",
+  "Expected Behavior": "When approaching a trapdoor or climbing stairs, the player should experience smooth and continuous movement without any noticeable lag or interruptions. The game should accurately register the player's input, allowing for seamless transitions as they interact with trapdoors or ascend/descend stairs. Specifically, when a player interacts with a trapdoor, it should open or close instantly without causing any delay, and while climbing stairs, the player's movement should remain fluid, maintaining the expected climbing speed without any stuttering or hanging. This behavior aligns with Minecraft's design principles, ensuring that the game runs efficiently and provides a consistent user experience across all devices.",
+  "comments": [
+    {
+      "id": "2080303",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "24x24": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "16x16": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "32x32": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png"
+        },
+        "displayName": "Automation for Jira",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "app"
+      },
+      "created": "2025-08-04T06:00:26.746-0700",
+      "updated": "2025-08-04T06:00:26.746-0700",
+      "body_text": "Please edit your report to change the Affected Version to the version shown on the Minecraft title screen\\n\\n",
+      "body_length": 109,
+      "rendered_body": "<p>Please edit your report to change the Affected Version to the version shown on the Minecraft title screen</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please edit your report to change the Affected Version to the version shown on the Minecraft title screen"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300634"
+  }
+}

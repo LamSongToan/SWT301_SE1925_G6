@@ -1,0 +1,145 @@
+{
+  "key": "MC-299342",
+  "summary": "hyper potions lava chicken music doesn't play",
+  "description": "i played the “lava chicken” music disc on a jukebox, it plays but there is no audio, all of the volumes in the “Music & Sounds“ tab is all set to 100%, although, this ever happened with Amos Roddy - Tears but it got fixed in the 1.21.6 release, but this time, it didn’t get fixed in the 1.21.7 release\\n\\n",
+  "created_date": "2025-07-01T22:51:54.953-0700",
+  "updated_date": "2025-07-02T00:38:50.896-0700",
+  "status": "Resolved",
+  "resolution": "Cannot Reproduce",
+  "resolution_date": "2025-07-02T00:38:50.856-0700",
+  "affected_versions": [
+    "1.21.7"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 0,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 60,
+  "summary_length": 7,
+  "fetch_timestamp": "2025-08-20T03:13:16.654841",
+  "comments": [
+    {
+      "id": "2070723",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "username65735",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-07-01T22:51:56.058-0700",
+      "updated": "2025-07-01T22:51:56.058-0700",
+      "body_text": "This comment contained multiple media attachments (2), please login to view the attachments.",
+      "body_length": 92,
+      "rendered_body": "<p></p><div><p>This comment contained multiple media attachments (2), please login to view the attachments.</p></div><p></p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "0366b781-2ddc-4478-89ed-5fbf1944d97b",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2070724",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "username65735",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-07-01T22:56:35.138-0700",
+      "updated": "2025-07-01T22:56:35.138-0700",
+      "body_text": "nvm just got to reinstall the game’s files, it works now\\n\\n",
+      "body_length": 60,
+      "rendered_body": "<p>nvm just got to reinstall the game’s files, it works now</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "nvm just got to reinstall the game’s files, it works now"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2070736",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Victor Spanoae",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-07-01T23:32:53.398-0700",
+      "updated": "2025-07-01T23:32:53.398-0700",
+      "body_text": "In my case, depending on the launcher, sometimes the new objects (assets) don't install. When checking the release candidate of 1.21.7 (rc2), that beeing the only file that was missing (as checking of the log) \\n\\n",
+      "body_length": 214,
+      "rendered_body": "<p>In my case, depending on the launcher, sometimes the new objects (assets) don't install. When checking the release candidate of 1.21.7 (rc2), that beeing the only file that was missing (as checking of the log) </p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In my case, depending on the launcher, sometimes the new objects (assets) don't install. When checking the release candidate of 1.21.7 (rc2), that beeing the only file that was missing (as checking of the log) "
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 3
+}

@@ -1,0 +1,280 @@
+{
+  "key": "MC-300516",
+  "created_date": "2025-08-01T06:49:15.842-0700",
+  "updated_date": "2025-08-05T15:19:40.699-0700",
+  "status": "Resolved",
+  "resolution": "Incomplete",
+  "affected_versions": [
+    "25w31a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 2,
+  "labels": [],
+  "resolution_date": "2025-08-05T15:19:35.679-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "pillager patrols spawn without a capitain",
+  "environment_raw": null,
+  "description": "no banner pillager is present in patrols n n",
+  "Steps to Reproduce": "1. Create a new Survival world with default settings.\n2. Set the game difficulty to Hard.\n3. Wait for at least 5 in-game days (approximately 100 minutes of world time) to allow for patrol spawning.\n4. Move around the world and ensure you are at least 24 blocks away from any village to prevent patrols from being blocked from spawning.\n5. Stand in an open area with a block light level of 7 or lower, such as a plains biome during the night or in a shaded area during the day.\n6. Observe the surroundings for any pillager patrols that spawn within 24 to 48 blocks from your location.\n7. Check if any of the spawned pillagers are missing the patrol captain, meaning no pillager with an ominous banner is present in the group.",
+  "Environment": "Minecraft Java Edition Version 25w31a (snapshot)",
+  "Observed Behavior": "Pillager patrols are spawning without the presence of a patrol captain, which is characterized by the absence of a pillager wearing an ominous banner on its head. In Java Edition, patrols typically consist of 1 to 5 pillagers, with one of them designated as the patrol captain. However, in this reported bug, patrols are generated with no captain at all, resulting in a group of pillagers that lack the leadership typically indicated by the captain's banner. \n\nThis behavior contradicts the expected mechanics where every patrol should include a captain, as established in the game\u2019s spawning rules. Patrols are supposed to spawn after 5.5 in-game days, at a distance of 24 to 48 blocks from the player, and under specific light level conditions (less than 9 for Java Edition). The absence of a captain may affect gameplay elements that rely on the captain's presence, such as the ability to trigger the Bad Omen effect when the captain is killed.\n\nThis issue has been observed across various biomes where patrols are expected to spawn, and it occurs independently of player actions or nearby structures. The lack of a patrol captain in these instances needs to be addressed to restore proper patrol functionality and ensure the intended gameplay experience.",
+  "Expected Behavior": "Pillager patrols should spawn with a patrol captain, which is a pillager wearing an ominous banner on its head. In Java Edition, each patrol consists of 1 to 5 pillagers, with one guaranteed to be the captain. In Bedrock Edition, patrols should spawn with 2 to 5 pillagers, including one designated as the captain. Patrols are expected to spawn naturally after 5.5 in-game days, appearing 24 to 48 blocks away from a player at a block light level of 7 or lower on Easy difficulty, or any light level on Normal and Hard difficulty. The absence of a captain in these patrols is inconsistent with the intended game mechanics, which dictate that a patrol captain is an integral part of any pillager patrol.",
+  "comments": [
+    {
+      "id": "2080852",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/32"
+        },
+        "displayName": "[Mod] Jingy",
+        "active": true,
+        "timeZone": "America/Chicago",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-05T15:19:35.753-0700",
+      "updated": "2025-08-05T15:19:40.640-0700",
+      "body_text": "**Thank you for your report!**However, this issue is **Incomplete**.\\n\\nYour report does not contain enough information. As such, we're unable to understand or reproduce the problem.Please review the **Bug Tracker Guidelines** before creating new reports. Be sure to search for an existing issue as it is likely to have already been reported.\\n\\n**Quick Links**:\ud83d\udcd3 Bug Tracker Guidelines \u2013 \ud83d\udcac Community Support \u2013 \ud83d\udce7 Mojang Support (Technical Issues) \u2013 \ud83d\udce7 Microsoft Support (Account Issues)\ud83d\udcd3 Project Summary \u2013 \u270d\ufe0f Feedback and Suggestions \u2013 \ud83d\udcd6 Game Wiki\\n\\n",
+      "body_length": 550,
+      "rendered_body": "<p><b>Thank you for your report!</b><br>\nHowever, this issue is <font color=\"#ff5630\"><b>Incomplete</b></font>.</p>\n\n<p>Your report does not contain enough information. As such, we're unable to understand or reproduce the problem.</p>\n\n<p>Please review the <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\"><b>Bug Tracker Guidelines</b></a> before creating new reports. Be sure to search for an existing issue as it is likely to have already been reported.</p>\n\n<p><b>Quick Links</b>:<br>\n\ud83d\udcd3 <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\">Bug Tracker Guidelines</a> \u2013 \ud83d\udcac <a href=\"https://discord.com/invite/58Sxm23\" class=\"external-link\" rel=\"nofollow noreferrer\">Community Support</a> \u2013 \ud83d\udce7 <a href=\"https://aka.ms/Minecraft-Support\" class=\"external-link\" rel=\"nofollow noreferrer\">Mojang Support (Technical Issues)</a> \u2013 \ud83d\udce7 <a href=\"https://support.xbox.com/contact-us\" class=\"external-link\" rel=\"nofollow noreferrer\">Microsoft Support (Account Issues)</a><br>\n\ud83d\udcd3 <a href=\"https://report.bugs.mojang.com/servicedesk/customer/portal/2\" class=\"external-link\" rel=\"nofollow noreferrer\">Project Summary</a> \u2013 \u270d\ufe0f <a href=\"https://aka.ms/MinecraftFeedbackDiscord\" class=\"external-link\" rel=\"nofollow noreferrer\">Feedback and Suggestions</a> \u2013 \ud83d\udcd6 <a href=\"https://minecraft.wiki\" class=\"external-link\" rel=\"nofollow noreferrer\">Game Wiki</a></p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Thank you for your report!",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "However, this issue is "
+              },
+              {
+                "type": "text",
+                "text": "Incomplete",
+                "marks": [
+                  {
+                    "type": "strong"
+                  },
+                  {
+                    "type": "textColor",
+                    "attrs": {
+                      "color": "#ff5630"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Your report does not contain enough information. As such, we're unable to understand or reproduce the problem."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Please review the "
+              },
+              {
+                "type": "text",
+                "text": "Bug Tracker Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  },
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " before creating new reports. Be sure to search for an existing issue as it is likely to have already been reported."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3 "
+              },
+              {
+                "type": "text",
+                "text": "Bug Tracker Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udcac "
+              },
+              {
+                "type": "text",
+                "text": "Community Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://discord.com/invite/58Sxm23"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udce7 "
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support (Technical Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/Minecraft-Support"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udce7 "
+              },
+              {
+                "type": "text",
+                "text": "Microsoft Support (Account Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://support.xbox.com/contact-us"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3 "
+              },
+              {
+                "type": "text",
+                "text": "Project Summary",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://report.bugs.mojang.com/servicedesk/customer/portal/2"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \u270d\ufe0f "
+              },
+              {
+                "type": "text",
+                "text": "Feedback and Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MinecraftFeedbackDiscord"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udcd6 "
+              },
+              {
+                "type": "text",
+                "text": "Game Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecraft.wiki"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300516"
+  }
+}

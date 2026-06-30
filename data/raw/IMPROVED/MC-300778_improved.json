@@ -1,0 +1,200 @@
+{
+  "key": "MC-300778",
+  "created_date": "2025-08-06T10:07:10.091-0700",
+  "updated_date": "2025-08-06T21:10:09.334-0700",
+  "status": "Resolved",
+  "resolution": "Cannot Reproduce",
+  "affected_versions": [
+    "1.21.8",
+    "25w32a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-06T13:20:35.395-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "killing an item by using command could not trigger a 7 level signal input calibrated sculk sensor",
+  "environment_raw": null,
+  "description": "i used kill to kill an item but it did not trigger the calibrated sculk sensor n ntested in 25w32a n n",
+  "Steps to Reproduce": "1. Create a new Creative world in Minecraft version 25w32a.\n2. Place a Calibrated Sculk Sensor on the ground.\n3. Set the input side of the Calibrated Sculk Sensor to receive a Redstone signal with a strength of 7 by placing a Redstone Block adjacent to it.\n4. Open the chat window and enter the command '/summon minecraft:item ~ ~ ~ {Item:{id:\"minecraft:stone\",Count:1b}}' to summon a stone item at your current location.\n5. Use the command '/kill @e[type=minecraft:item]' to kill the summoned item.\n6. Observe the Calibrated Sculk Sensor to see if it triggers a Redstone signal.",
+  "Environment": "Minecraft Java Edition Versions: 1.21.8, 25w32a (includes snapshots)",
+  "Observed Behavior": "When executing the `/kill` command to eliminate an item in the vicinity of a calibrated sculk sensor, the expected behavior of the sensor to emit a redstone signal corresponding to the configured frequency does not occur. Specifically, the calibrated sculk sensor, which is set to respond to a 7-level signal input, fails to activate despite the item being killed, which should typically generate a vibration detectable by the sensor. \n\nThis issue was tested in the Minecraft version 25w32a, and it was observed that no signal was emitted from the calibrated sculk sensor when the item was killed using the command, indicating that the sensor did not register the action as a vibration. This behavior is inconsistent with the expected functionality of calibrated sculk sensors, which are designed to detect various vibrations, including those caused by entities being damaged or killed. \n\nTo summarize:\n- **Command Used:** `/kill` to eliminate an item.\n- **Sensor Configuration:** Calibrated to respond to a 7-level signal input.\n- **Expected Result:** The calibrated sculk sensor should emit a redstone signal upon the item\u2019s death.\n- **Actual Result:** No signal emitted, indicating the sensor did not detect the event. \n\nThis discrepancy suggests a potential bug in the interaction between the `/kill` command and the vibration detection capabilities of calibrated sculk sensors.",
+  "Expected Behavior": "When an item is killed using the command, the calibrated sculk sensor should detect the associated vibration and trigger a redstone signal output according to its calibration settings. Specifically, if the calibrated sculk sensor is set to respond to the vibration frequency caused by an item being killed, it should emit a 7-level redstone signal, reflecting the intended behavior of detecting player actions that cause vibrations. This interaction is consistent with the mechanics outlined in the official documentation, where vibrations from actions such as item usage or destruction are expected to activate the sensor within its detection range.",
+  "comments": [
+    {
+      "id": "2081201",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Kong ZRC",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-06T10:07:11.140-0700",
+      "updated": "2025-08-06T10:07:11.140-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.",
+      "body_length": 80,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "99bcaacd-f672-4df0-aa6d-b5da356d8aef",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2081260",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/32"
+        },
+        "displayName": "[Mod] Jingy",
+        "active": true,
+        "timeZone": "America/Chicago",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-06T13:20:36.468-0700",
+      "updated": "2025-08-06T13:20:36.468-0700",
+      "body_text": "Cannot reproduce:\\n\\n",
+      "body_length": 21,
+      "rendered_body": "<p>Cannot reproduce:</p>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Cannot reproduce:"
+              }
+            ]
+          },
+          {
+            "type": "mediaSingle",
+            "attrs": {
+              "layout": "align-start"
+            },
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "cc2742c5-fbe4-415f-a803-aed82b1a5513",
+                  "alt": "2025-08-06_15.20.02.png",
+                  "collection": "",
+                  "height": 1369,
+                  "width": 2560
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2081354",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Kong ZRC",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-06T21:10:09.334-0700",
+      "updated": "2025-08-06T21:10:09.334-0700",
+      "body_text": "i think you wrongly placed the calibrated sculk sensor \ud83e\udd14\\n\\ni recorded the gameplay @Jingy\\n\\n\\n\\n",
+      "body_length": 98,
+      "rendered_body": "<p>i think you wrongly placed the calibrated sculk sensor \ud83e\udd14</p>\n\n<p>i recorded the gameplay @Jingy</p>\n\n<p></p><div><p>This comment contained multiple media attachments (2), please login to view the attachments.</p></div><p></p>\n",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "i think you wrongly placed the calibrated sculk sensor \ud83e\udd14"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "i recorded the gameplay @Jingy"
+              }
+            ]
+          },
+          {
+            "type": "mediaSingle",
+            "attrs": {
+              "layout": "align-start"
+            },
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "20f5881a-7d29-4be5-8efa-f92ebb413c2d",
+                  "alt": "1.mp4",
+                  "collection": "",
+                  "height": 1726,
+                  "width": 2736
+                }
+              }
+            ]
+          },
+          {
+            "type": "paragraph"
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300778"
+  }
+}

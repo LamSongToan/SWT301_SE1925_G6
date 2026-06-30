@@ -1,0 +1,323 @@
+{
+  "key": "MC-300736",
+  "created_date": "2025-08-05T15:37:58.490-0700",
+  "updated_date": "2025-08-05T16:38:18.493-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "25w32a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-05T16:38:18.118-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Skeleton Bow Visual Glitch",
+  "environment_raw": null,
+  "description": "Skeleton bow isnt upright it stays down even while shooting n n",
+  "Steps to Reproduce": "1. Create a new Survival world with default settings.\n2. Locate or summon a Skeleton using the command '/summon minecraft:skeleton' in an open area.\n3. Ensure that the Skeleton has a clear line of sight to the player and is within 15 blocks.\n4. Observe the Skeleton as it prepares to shoot an arrow at the player.\n5. Note the position of the Skeleton's bow; it should be held upright but instead remains pointed downward.\n6. Move around to see if the visual glitch persists while the Skeleton shoots multiple arrows.\n7. Repeat the observation from different angles to confirm that the bow remains in the same downward position during the shooting animation.",
+  "Environment": "Minecraft Java Edition Version 25w32a (snapshot)",
+  "Observed Behavior": "When a skeleton is in the process of shooting its bow, the visual representation of the bow remains pointed downward instead of being raised to a proper angle. This occurs regardless of the skeleton's movement or the position of its target. As the skeleton shoots arrows, the bow does not animate in a way that reflects the action of aiming and firing; instead, it appears as if the skeleton is holding the bow at a constant low angle. This visual glitch is particularly noticeable during combat, as it disrupts the expected animation of a skeleton preparing to shoot, leading to a disjointed visual experience for players. The arrows are still fired correctly and travel towards the target, but the lack of appropriate bow positioning may cause confusion regarding the skeleton's aiming direction. This issue affects both Java and Bedrock Editions of the game, and it occurs consistently whenever skeletons engage in ranged attacks.",
+  "Expected Behavior": "When a skeleton prepares to shoot an arrow, its bow should be held upright, aligned correctly with its line of sight. As the skeleton fires an arrow, the bow should animate smoothly, reflecting the action of drawing and releasing the bowstring. This animation should occur regardless of the skeleton's position or movement. The arrow should originate from the bow, maintaining the expected trajectory and accuracy based on the skeleton's distance to the target. Additionally, the skeleton should exhibit the appropriate idle and attack animations, ensuring that it visually represents its actions in a way that is consistent with the game's design and mechanics.",
+  "comments": [
+    {
+      "id": "2080861",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Tyler",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-05T15:37:59.215-0700",
+      "updated": "2025-08-05T15:37:59.215-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.",
+      "body_length": 162,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "51d34772-9d10-4c27-87fb-054d543295a2",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "c313e663-b506-425f-b865-8d42fab50c7e",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2080877",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/711bc6ceab872fff2998dc31bae06bec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FM-3.png",
+          "24x24": "https://secure.gravatar.com/avatar/711bc6ceab872fff2998dc31bae06bec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FM-3.png",
+          "16x16": "https://secure.gravatar.com/avatar/711bc6ceab872fff2998dc31bae06bec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FM-3.png",
+          "32x32": "https://secure.gravatar.com/avatar/711bc6ceab872fff2998dc31bae06bec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FM-3.png"
+        },
+        "displayName": "MrMuskle",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-05T16:38:18.178-0700",
+      "updated": "2025-08-05T16:38:18.178-0700",
+      "body_text": "*We do not have enough information to find the cause of this issue.*\\n\\nPlease take a screenshot of this issue occurring while your F3 debug screen is enabled and attach it to this report.\\n\\nThis ticket is being temporarily resolved as **Awaiting Response**. Once the requested information has been delivered, the ticket will be reopened automatically.\\n\\n**Quick Links:**\ud83d\udcd3 Bug Tracker Guidelines \u2013 \ud83d\udcac Community Support \u2013 \ud83d\udce7 Mojang Support (Technical Issues) \u2013 \ud83d\udce7 Microsoft Support (Account Issues)\ud83d\udcd3 Project Summary \u2013 \u270d\ufe0f Feedback and Suggestions \u2013 \ud83d\udcd6 Game Wiki\\n\\n",
+      "body_length": 561,
+      "rendered_body": "<p><em>We do not have enough information to find the cause of this issue.</em></p>\n\n<p>Please take a screenshot of this issue occurring while your F3 debug screen is enabled and attach it to this report.</p>\n\n<p><sub>This ticket is being temporarily resolved as <font color=\"#d04437\"><b>Awaiting Response</b></font>. Once the requested information has been delivered, the ticket will be reopened automatically.</sub></p>\n\n<p><b>Quick Links:</b><br>\n\ud83d\udcd3 <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\">Bug Tracker Guidelines</a> \u2013 \ud83d\udcac <a href=\"https://discord.com/invite/58Sxm23\" class=\"external-link\" rel=\"nofollow noreferrer\">Community Support</a> \u2013 \ud83d\udce7 <a href=\"https://aka.ms/Minecraft-Support\" class=\"external-link\" rel=\"nofollow noreferrer\">Mojang Support (Technical Issues)</a> \u2013 \ud83d\udce7 <a href=\"https://support.xbox.com/contact-us/\" class=\"external-link\" rel=\"nofollow noreferrer\">Microsoft Support (Account Issues)</a><br>\n\ud83d\udcd3 <a href=\"https://report.bugs.mojang.com/servicedesk/customer/portal/2\" class=\"external-link\" rel=\"nofollow noreferrer\">Project Summary</a> \u2013 \u270d\ufe0f <a href=\"https://aka.ms/MinecraftFeedbackDiscord\" class=\"external-link\" rel=\"nofollow noreferrer\">Feedback and Suggestions</a> \u2013 \ud83d\udcd6 <a href=\"https://minecraft.wiki\" class=\"external-link\" rel=\"nofollow noreferrer\">Game Wiki</a></p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "We do not have enough information to find the cause of this issue.",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please take a screenshot of this issue occurring while your F3 debug screen is enabled and attach it to this report."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket is being temporarily resolved as ",
+                "marks": [
+                  {
+                    "type": "subsup",
+                    "attrs": {
+                      "type": "sub"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "Awaiting Response",
+                "marks": [
+                  {
+                    "type": "strong"
+                  },
+                  {
+                    "type": "textColor",
+                    "attrs": {
+                      "color": "#d04437"
+                    }
+                  },
+                  {
+                    "type": "subsup",
+                    "attrs": {
+                      "type": "sub"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ". Once the requested information has been delivered, the ticket will be reopened automatically.",
+                "marks": [
+                  {
+                    "type": "subsup",
+                    "attrs": {
+                      "type": "sub"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links:",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3 "
+              },
+              {
+                "type": "text",
+                "text": "Bug Tracker Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udcac "
+              },
+              {
+                "type": "text",
+                "text": "Community Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://discord.com/invite/58Sxm23"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udce7 "
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support (Technical Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/Minecraft-Support"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udce7 "
+              },
+              {
+                "type": "text",
+                "text": "Microsoft Support (Account Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://support.xbox.com/contact-us/"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3 "
+              },
+              {
+                "type": "text",
+                "text": "Project Summary",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://report.bugs.mojang.com/servicedesk/customer/portal/2"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \u270d\ufe0f "
+              },
+              {
+                "type": "text",
+                "text": "Feedback and Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MinecraftFeedbackDiscord"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udcd6 "
+              },
+              {
+                "type": "text",
+                "text": "Game Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecraft.wiki"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300736"
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "key": "MC-301183",
+  "created_date": "2025-08-18T00:14:59.209-0700",
+  "updated_date": "2025-08-18T01:47:40.540-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-18T01:47:40.453-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Happy Ghasts won t stay on leads",
+  "environment_raw": null,
+  "description": "Every time I put my Happy Ghasts on leads they break free, or if I tie them to a post they ll break free of the lead that way n n",
+  "Steps to Reproduce": "1. Create a new Creative world with default settings.\n2. Obtain a Happy Ghast Spawn Egg from the Creative inventory.\n3. Use the Happy Ghast Spawn Egg to spawn a Happy Ghast in the Nether.\n4. Equip a Lead from your inventory.\n5. Approach the Happy Ghast and right-click (or use the appropriate control) to attach the Lead to it.\n6. Move at least 10 blocks away from the Happy Ghast while it is still on the Lead.\n7. Observe the Happy Ghast and note that it breaks free from the Lead.\n8. Find a fence post and right-click on it with the Lead while standing near the Happy Ghast.\n9. Tie the Happy Ghast to the fence post and wait for a few moments.\n10. Observe that the Happy Ghast breaks free from the fence post as well.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "When attempting to leash a Happy Ghast, the lead consistently breaks, resulting in the mob becoming unrestrained. This occurs in two specific scenarios:\n\n1. **Direct Leashing**: When a player uses a lead on a Happy Ghast, the lead does not maintain its connection. Instead, the lead seems to break immediately upon attaching, causing the Happy Ghast to wander freely without any restraint.\n\n2. **Tying to a Post**: If the Happy Ghast is tied to a fence post, the lead detaches after a brief moment. This behavior is consistent regardless of the distance between the Happy Ghast and the post, and it does not appear to be influenced by environmental factors or the presence of other mobs.\n\nThis issue persists whether the Happy Ghast is wearing a Harness or not, indicating that the problem is not related to the equipment or the player's interaction method. The Happy Ghast behaves similarly to other leashed mobs in terms of movement, but the lead functionality is not operational as intended. \n\n1. Equip a lead in hand.\n2. Approach a Happy Ghast and right-click (or tap) to attach the lead.\n3. Observe that the lead breaks immediately, allowing the Happy Ghast to roam freely.\n4. Alternatively, tie the Happy Ghast to a fence post and observe that the lead detaches shortly after.\n\nThe lead should remain attached to the Happy Ghast, allowing it to be restrained and preventing it from moving beyond a certain distance from the player or the tied post, similar to how leads function with other mobs in the game.",
+  "Expected Behavior": "When a player attaches a Happy Ghast to a lead, the Happy Ghast should remain connected to the lead without breaking free. The lead should function as intended, allowing the Happy Ghast to be tied to a fence post or other suitable anchor point without detaching. If a player tries to move away, the Happy Ghast should follow within the lead's maximum stretch distance of 10 blocks, and should not exhibit any unexpected behavior that causes it to break free. Additionally, the Happy Ghast should not be able to break the lead connection through normal movement or interactions, maintaining the intended mechanics of leads as described in Minecraft's official documentation.",
+  "comments": [
+    {
+      "id": "2084341",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "24x24": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "16x16": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "32x32": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png"
+        },
+        "displayName": "[MCQA] jKakub",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-18T01:47:33.887-0700",
+      "updated": "2025-08-18T01:47:33.887-0700",
+      "body_text": "Hi!Could you please answer a few questions regarding this issue?\u00a0\\n\\n* Does this issue corresponds to your report ?\\n\\n\\n* If not, can you record and upload a video showcasing this issue?\u00a0\\n\\n\\n\\nThis ticket will automatically reopen when you reply.\u00a0Thanks!\\n\\n**Quick Links**:\u00a0\ud83d\udcd3\u202fIssue Guidelines\u202f\u2013 \ud83d\udcac\u202fMojang Support\u202f\u2013 \ud83d\udce7\u202fSuggestions\u202f\u2013 \ud83d\udcd6\u202fMinecraft Wiki\u00a0\\n\\n",
+      "body_length": 355,
+      "rendered_body": "<p>Hi!<br>\nCould you please answer a few questions regarding this issue?&nbsp;</p>\n\n<ul>\n\t<li>Does this issue corresponds to your report <a href=\"https://mojira.atlassian.net/browse/MC-300654\" title=\"smart-link\" class=\"external-link\" rel=\"nofollow noreferrer\">https://mojira.atlassian.net/browse/MC-300654</a>?</li>\n\t<li>If not, can you record and upload a video showcasing this issue?&nbsp;</li>\n</ul>\n\n\n<p>This ticket will automatically reopen when you reply.&nbsp;Thanks!</p>\n\n<p><b>Quick Links</b>:&nbsp;<br>\n\ud83d\udcd3\u202f<a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\">Issue Guidelines</a>\u202f\u2013 \ud83d\udcac\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fhelp.minecraft.net.mcas.ms%2Fhc%2Fen-us%2Frequests%2Fnew%3FMcasTsid%3D15600&amp;McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b\" class=\"external-link\" rel=\"nofollow noreferrer\">Mojang Support</a>\u202f\u2013 \ud83d\udce7\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Ffeedback.minecraft.net.mcas.ms%2F%3FMcasTsid%3D15600&amp;McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b\" class=\"external-link\" rel=\"nofollow noreferrer\">Suggestions</a>\u202f\u2013 \ud83d\udcd6\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fminecraft.wiki.mcas.ms%2F%3FMcasTsid%3D15600&amp;McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b\" class=\"external-link\" rel=\"nofollow noreferrer\">Minecraft Wiki</a>&nbsp;</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hi!"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Could you please answer a few questions regarding this issue?\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Does this issue corresponds to your report "
+                      },
+                      {
+                        "type": "inlineCard",
+                        "attrs": {
+                          "url": "https://mojira.atlassian.net/browse/MC-300654"
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "text": "?"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "If not, can you record and upload a video showcasing this issue?\u00a0"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will automatically reopen when you reply.\u00a0Thanks!"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":\u00a0"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Issue Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udcac\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fhelp.minecraft.net.mcas.ms%2Fhc%2Fen-us%2Frequests%2Fnew%3FMcasTsid%3D15600&McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udce7\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Ffeedback.minecraft.net.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udcd6\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Minecraft Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fminecraft.wiki.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-301183"
+  }
+}

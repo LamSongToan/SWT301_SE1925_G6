@@ -1,0 +1,323 @@
+{
+  "key": "MC-299632",
+  "summary": "NBT \"ArmorItems\" and \"HandItems\"(maybe there are some other NBT) can't be used normally.",
+  "description": "Sorry,I wrong.\\n\\n",
+  "created_date": "2025-07-11T03:22:06.766-0700",
+  "updated_date": "2025-07-14T03:47:38.730-0700",
+  "status": "Resolved",
+  "resolution": "Cannot Reproduce",
+  "resolution_date": "2025-07-14T03:47:38.680-0700",
+  "affected_versions": [
+    "1.21.7"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 0,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 2,
+  "summary_length": 13,
+  "fetch_timestamp": "2025-08-20T03:12:45.934680",
+  "comments": [
+    {
+      "id": "2073309",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "EFTGFF",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-07-11T03:22:08.360-0700",
+      "updated": "2025-07-11T03:22:08.360-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.",
+      "body_length": 162,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "48941599-b966-4d2c-baf6-43c12a9f95e5",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "9ce13617-c607-459c-bb37-036bd92d67db",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2073311",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "EFTGFF",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-07-11T03:27:02.962-0700",
+      "updated": "2025-07-11T03:27:02.962-0700",
+      "body_text": "I misspelled the first sentence \"NBT \"ArmorItems\" and \"HandItems\"(maybe there are some other NBT) can't be used normally.I try a command ,but in version 1.21 and version 1.27, two different results were produced.\" in the Description.\\n\\nIt should be changed to \"NBT \"ArmorItems\" and \"HandItems\"(maybe there are some other NBT) can't be used normally.I try a command ,but in version 1.21 and version 1.21.7, two different results were produced.\"\\n\\n",
+      "body_length": 448,
+      "rendered_body": "<p>I misspelled the first sentence \"NBT \"ArmorItems\" and \"HandItems\"(maybe there are some other NBT) can't be used normally.I try a command ,but in version 1.21 and version 1.27, two different results were produced.\" in the Description.</p>\n\n<p>It should be changed to \"NBT \"ArmorItems\" and \"HandItems\"(maybe there are some other NBT) can't be used normally.I try a command ,but in version 1.21 and version 1.21.7, two different results were produced.\"</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "I misspelled the first sentence \"NBT \"ArmorItems\" and \"HandItems\"(maybe there are some other NBT) can't be used normally.I try a command ,but in version 1.21 and version 1.27, two different results were produced.\" in the Description."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "It should be changed to \"NBT \"ArmorItems\" and \"HandItems\"(maybe there are some other NBT) can't be used normally.I try a command ,but in version 1.21 and version 1.21.7, two different results were produced.\""
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2073314",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "EFTGFF",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-07-11T03:29:26.966-0700",
+      "updated": "2025-07-11T03:29:26.966-0700",
+      "body_text": "Revision report completed.\\n\\n",
+      "body_length": 30,
+      "rendered_body": "<p>Revision report completed.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Revision report completed."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2073323",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Charlotte Eiffel Lilith Buff",
+        "active": true,
+        "timeZone": "Europe/Berlin",
+        "accountType": "customer"
+      },
+      "created": "2025-07-11T04:38:52.961-0700",
+      "updated": "2025-07-11T04:38:52.961-0700",
+      "body_text": "Not a bug. These NBT tags no longer exist. They’re all part of the `equipment` map now.\\n\\n",
+      "body_length": 91,
+      "rendered_body": "<p>Not a bug. These NBT tags no longer exist. They’re all part of the <tt>equipment</tt> map now.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Not a bug. These NBT tags no longer exist. They’re all part of the "
+              },
+              {
+                "type": "text",
+                "text": "equipment",
+                "marks": [
+                  {
+                    "type": "code"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " map now."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2073363",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "EFTGFF",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-07-11T07:22:07.458-0700",
+      "updated": "2025-07-11T07:22:07.458-0700",
+      "body_text": "@Charlotte Eiffel Lilith Buff Really?But the update of 1.21.7 didn't say this change, and 1.21 can also be used, and it was definitely not changed by 24w09a. Thank you for your reply. I'll check it online.\\n\\n",
+      "body_length": 209,
+      "rendered_body": "<p>@Charlotte Eiffel Lilith Buff Really?But the update of 1.21.7 didn't say this change, and 1.21 can also be used, and it was definitely not changed by 24w09a. Thank you for your reply. I'll check it online.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "@Charlotte Eiffel Lilith Buff Really?But the update of 1.21.7 didn't say this change, and 1.21 can also be used, and it was definitely not changed by 24w09a. Thank you for your reply. I'll check it online."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2073470",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "flow_santohyj123",
+        "active": true,
+        "timeZone": "Asia/Seoul",
+        "accountType": "customer"
+      },
+      "created": "2025-07-11T16:50:03.808-0700",
+      "updated": "2025-07-11T16:50:03.808-0700",
+      "body_text": "You can check the equipment data changes in the 1.21.5 changelog.\\n\\n",
+      "body_length": 69,
+      "rendered_body": "<p>You can check the equipment data changes in the 1.21.5 changelog.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "You can check the equipment data changes in the 1.21.5 changelog."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2073497",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "EFTGFF",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-07-11T21:14:16.634-0700",
+      "updated": "2025-07-11T21:14:16.634-0700",
+      "body_text": "@flow_santohyj123 Thank you. I checked. I was wrong.\\n\\n\\n\\n",
+      "body_length": 60,
+      "rendered_body": "<p>@flow_santohyj123 Thank you. I checked. I was wrong.</p>\n",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "@flow_santohyj123 Thank you. I checked. I was wrong."
+              }
+            ]
+          },
+          {
+            "type": "paragraph"
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 7
+}

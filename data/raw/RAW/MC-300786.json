@@ -1,0 +1,106 @@
+{
+  "key": "MC-300786",
+  "summary": "Issue with Arabic Language in Minecraft",
+  "description": "\\n\\nDear Mojang Support,\\n\\nI would like to report an issue with the Arabic language support in Minecraft. The current implementation has several problems, including incorrect text alignment, broken word formatting, reversed letters, and an unsuitable font that is hard to read. These issues make the game difficult to enjoy for Arabic-speaking players.\\n\\nPlease consider improving Arabic localization and using a proper Arabic font to ensure a better experience for all users.\\n\\nThank you for your attention.\\n\\n",
+  "created_date": "2025-08-06T13:11:37.636-0700",
+  "updated_date": "2025-08-09T10:10:57.637-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "resolution_date": "2025-08-09T10:10:57.597-0700",
+  "affected_versions": [
+    "25w33a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 73,
+  "summary_length": 6,
+  "fetch_timestamp": "2025-08-20T03:10:35.975654",
+  "comments": [
+    {
+      "id": "2081253",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "24x24": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "16x16": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+          "32x32": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png"
+        },
+        "displayName": "Automation for Jira",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "app"
+      },
+      "created": "2025-08-06T13:11:40.497-0700",
+      "updated": "2025-08-06T13:11:40.497-0700",
+      "body_text": "Please edit your report to change the Affected Version to the version shown on the Minecraft title screen\\n\\n",
+      "body_length": 109,
+      "rendered_body": "<p>Please edit your report to change the Affected Version to the version shown on the Minecraft title screen</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please edit your report to change the Affected Version to the version shown on the Minecraft title screen"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2082098",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Ali saheb",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-09T10:10:43.213-0700",
+      "updated": "2025-08-09T10:10:43.213-0700",
+      "body_text": "The problem has nothing to do with the version. The problem exists in all versions of Minecraft, from the beginning of Arabic language support to the latest version.\\n\\n",
+      "body_length": 169,
+      "rendered_body": "<p>The problem has nothing to do with the version. The problem exists in all versions of Minecraft, from the beginning of Arabic language support to the latest version.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "The problem has nothing to do with the version. The problem exists in all versions of Minecraft, from the beginning of Arabic language support to the latest version."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 2
+}

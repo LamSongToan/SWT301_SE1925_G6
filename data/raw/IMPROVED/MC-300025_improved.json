@@ -1,0 +1,547 @@
+{
+  "key": "MC-300025",
+  "created_date": "2025-07-28T08:16:12.921-0700",
+  "updated_date": "2025-07-28T12:33:04.903-0700",
+  "status": "Resolved",
+  "resolution": "Cannot Reproduce",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-07-28T12:33:04.841-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Interactions can t be interacted",
+  "environment_raw": null,
+  "description": "1. summon interaction n n n2. Right click to this interaction n n n3. data get entity e[type interaction, limit 1, sort nearest] n n n4. There is not a NBT interaction n n n n n n",
+  "Steps to Reproduce": "1. Create a new Creative world with default settings.\n2. Open the chat and enter the command `/summon interaction ~ ~ ~` to summon an interaction entity at your current location.\n3. Position your character close to the interaction entity.\n4. Right-click on the interaction entity to attempt to interact with it.\n5. Open the chat again and enter the command `/data get entity @e[type=interaction,limit=1,sort=nearest]` to retrieve the NBT data of the nearest interaction entity.\n6. Observe that the NBT data does not contain any interaction-related information.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "When an interaction entity is summoned using the command `/summon interaction <x> <y> <z>`, it is expected to register player interactions (both left-click and right-click) and store the UUID of the last player to interact with it. However, the following issues occur:\n\n1. **No Interaction Recognition**: Right-clicking the interaction entity does not trigger any expected behavior, such as playing a sound or registering the interaction. The entity does not respond to player interactions at all, effectively making it non-functional.\n\n2. **Data Retrieval Failure**: When attempting to retrieve data from the interaction entity using the command `data get entity e[type=interaction, limit=1, sort=nearest]`, the expected NBT data (specifically the UUID of the last player to interact and the timestamp of the interaction) is not present. This indicates that the entity is not recording any interaction data.\n\n3. **Absence of NBT Tags**: The interaction entity lacks the necessary NBT tags that should normally be present after a player interacts with it. Specifically, the `player` and `timestamp` fields are missing, which are crucial for tracking interactions.\n\nThis behavior suggests a bug in the interaction entity's functionality, as it fails to behave as documented and expected within the game mechanics.",
+  "Expected Behavior": "When an interaction entity is summoned using the command, it should be interactable by players. Specifically, when a player right-clicks on the interaction entity, the UUID of the player who interacted with it should be recorded, along with a timestamp of the interaction. Additionally, executing the command to retrieve the entity's data should return the expected NBT data, including the player's UUID and the timestamp, confirming that the interaction has been properly logged. If the interaction entity has the response property set to true, a punching sound should play upon left-clicking, and the player's arm should swing when right-clicking, indicating that the interaction is functioning as intended.",
+  "comments": [
+    {
+      "id": "2077821",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Akayosshii",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-07-28T08:16:13.554-0700",
+      "updated": "2025-07-28T08:16:13.554-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.",
+      "body_length": 80,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "a6cc609f-97a2-4211-a0f7-cce59979ecbd",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2077830",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "flow_santohyj123",
+        "active": true,
+        "timeZone": "Asia/Seoul",
+        "accountType": "customer"
+      },
+      "created": "2025-07-28T09:12:06.906-0700",
+      "updated": "2025-07-28T09:12:06.906-0700",
+      "body_text": "Cannot reproduce.\\n\\n\\n\\n",
+      "body_length": 25,
+      "rendered_body": "<p>Cannot reproduce.</p>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Cannot reproduce."
+              }
+            ]
+          },
+          {
+            "type": "mediaSingle",
+            "attrs": {
+              "layout": "align-start"
+            },
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "c80d83d3-b6ad-4a94-a427-1940039c2362",
+                  "alt": "2025-07-29_01.10.36.png",
+                  "collection": "",
+                  "height": 2146,
+                  "width": 3420
+                }
+              }
+            ]
+          },
+          {
+            "type": "paragraph"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2077833",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/32"
+        },
+        "displayName": "[MOD] Greymagic27",
+        "active": true,
+        "timeZone": "Europe/London",
+        "accountType": "atlassian"
+      },
+      "created": "2025-07-28T09:14:11.074-0700",
+      "updated": "2025-07-28T09:14:11.074-0700",
+      "body_text": "*We do not have enough information to find the cause of this issue.*\\n\\nPlease **record a video of this happening** and attach it to this report.If you are on Windows, you can use `Windows`+`Alt`+`R` to open a built-in app for recording game footage.If you are on Mac (Mojave or later), you can use `Shift`+`Command`+`5` to open a built-in app for recording your screen.In case you don't have a program to record videos, we recommend using the free recording software OBS.In case the resulting video file is too large to be uploaded to the bug tracker directly, please upload it elsewhere (e.g. as unlisted video on YouTube) and link to it here.\\n\\nThis issue is being temporarily resolved as **Awaiting Response**. Once the requested information has been delivered, the report will be reopened automatically.*Quick Links*:\ud83d\udcd3 Bug Tracker Guidelines -- \ud83d\udcac Community Support -- \ud83d\udce7 Mojang Support (Technical Issues) -- \ud83d\udce7 Microsoft Support (Account Issues) -- \ud83d\udcd3 Project Summary -- \u270d\ufe0f Feedback and Suggestions -- \ud83d\udcd6 Game Wiki\\n\\n",
+      "body_length": 1020,
+      "rendered_body": "<p><em>We do not have enough information to find the cause of this issue.</em></p>\n\n<p>Please <b>record a video of this happening</b> and attach it to this report.<br>\nIf you are on Windows, you can use <tt>Windows</tt><ins><tt>Alt</tt></ins><tt>R</tt> to open a built-in app for recording game footage.<br>\nIf you are on Mac (Mojave or later), you can use <tt>Shift</tt><ins><tt>Command</tt></ins><tt>5</tt> to open a <a href=\"https://support.apple.com/guide/mac-help/take-a-screenshot-or-screen-recording-mh26782/mac\" class=\"external-link\" rel=\"nofollow noreferrer\">built-in app</a> for recording your screen.<br>\nIn case you don't have a program to record videos, we recommend using the free recording software <a href=\"https://obsproject.com/\" class=\"external-link\" rel=\"nofollow noreferrer\">OBS</a>.<br>\nIn case the resulting video file is too large to be uploaded to the bug tracker directly, please upload it elsewhere (e.g. as unlisted video on YouTube) and link to it here.</p>\n\n<p>This issue is being temporarily resolved as <b>Awaiting Response</b>. Once the requested information has been delivered, the report will be reopened automatically.<br>\n<em>Quick Links</em>:<br>\n\ud83d\udcd3 <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\">Bug Tracker Guidelines</a> \u2013 \ud83d\udcac <a href=\"https://discord.com/invite/minecraft\" class=\"external-link\" rel=\"nofollow noreferrer\">Community Support</a> \u2013 \ud83d\udce7 <a href=\"https://aka.ms/Minecraft-Support\" class=\"external-link\" rel=\"nofollow noreferrer\">Mojang Support (Technical Issues)</a> \u2013 \ud83d\udce7 <a href=\"https://support.xbox.com/contact-us/\" class=\"external-link\" rel=\"nofollow noreferrer\">Microsoft Support (Account Issues)</a> \u2013 \ud83d\udcd3 <a href=\"https://report.bugs.mojang.com/servicedesk/customer/portal/2\" class=\"external-link\" rel=\"nofollow noreferrer\">Project Summary</a> \u2013 \u270d\ufe0f <a href=\"https://aka.ms/MinecraftFeedbackDiscord\" class=\"external-link\" rel=\"nofollow noreferrer\">Feedback and Suggestions</a> \u2013 \ud83d\udcd6 <a href=\"https://minecraft.wiki/\" class=\"external-link\" rel=\"nofollow noreferrer\">Game Wiki</a></p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "We do not have enough information to find the cause of this issue.",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please "
+              },
+              {
+                "type": "text",
+                "text": "record a video of this happening",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " and attach it to this report."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "If you are on Windows, you can use "
+              },
+              {
+                "type": "text",
+                "text": "Windows",
+                "marks": [
+                  {
+                    "type": "code"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "+"
+              },
+              {
+                "type": "text",
+                "text": "Alt",
+                "marks": [
+                  {
+                    "type": "code"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "+"
+              },
+              {
+                "type": "text",
+                "text": "R",
+                "marks": [
+                  {
+                    "type": "code"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " to open a built-in app for recording game footage."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "If you are on Mac (Mojave or later), you can use "
+              },
+              {
+                "type": "text",
+                "text": "Shift",
+                "marks": [
+                  {
+                    "type": "code"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "+"
+              },
+              {
+                "type": "text",
+                "text": "Command",
+                "marks": [
+                  {
+                    "type": "code"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "+"
+              },
+              {
+                "type": "text",
+                "text": "5",
+                "marks": [
+                  {
+                    "type": "code"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " to open a "
+              },
+              {
+                "type": "text",
+                "text": "built-in app",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://support.apple.com/guide/mac-help/take-a-screenshot-or-screen-recording-mh26782/mac"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " for recording your screen."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "In case you don't have a program to record videos, we recommend using the free recording software "
+              },
+              {
+                "type": "text",
+                "text": "OBS",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://obsproject.com/"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "In case the resulting video file is too large to be uploaded to the bug tracker directly, please upload it elsewhere (e.g. as unlisted video on YouTube) and link to it here."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This issue is being temporarily resolved as "
+              },
+              {
+                "type": "text",
+                "text": "Awaiting Response",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ". Once the requested information has been delivered, the report will be reopened automatically."
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3 "
+              },
+              {
+                "type": "text",
+                "text": "Bug Tracker Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udcac "
+              },
+              {
+                "type": "text",
+                "text": "Community Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://discord.com/invite/minecraft"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udce7 "
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support (Technical Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/Minecraft-Support"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udce7 "
+              },
+              {
+                "type": "text",
+                "text": "Microsoft Support (Account Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://support.xbox.com/contact-us/"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udcd3 "
+              },
+              {
+                "type": "text",
+                "text": "Project Summary",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://report.bugs.mojang.com/servicedesk/customer/portal/2"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \u270d\ufe0f "
+              },
+              {
+                "type": "text",
+                "text": "Feedback and Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MinecraftFeedbackDiscord"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " -- \ud83d\udcd6 "
+              },
+              {
+                "type": "text",
+                "text": "Game Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecraft.wiki/"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2077836",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Akayosshii",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-07-28T09:23:40.461-0700",
+      "updated": "2025-07-28T09:23:40.461-0700",
+      "body_text": "AhhhI confirmed interacted in another world.\\n\\nThat world actives a datapack that contains /execute as @e[type=interaction] run data remove entity @s interactionI\u2019m sorry\\n\\n",
+      "body_length": 175,
+      "rendered_body": "<p>Ahhh<br>\nI confirmed interacted in another world.</p>\n\n<p>That world actives a datapack that contains /execute as @e<span class=\"error\">[type=interaction]</span> run data remove entity @s interaction<br>\nI\u2019m sorry</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Ahhh"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "I confirmed interacted in another world."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "That world actives a datapack that contains /execute as @e[type=interaction] run data remove entity @s interaction"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "I\u2019m sorry"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300025"
+  }
+}

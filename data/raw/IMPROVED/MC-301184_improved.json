@@ -1,0 +1,180 @@
+{
+  "key": "MC-301184",
+  "created_date": "2025-08-18T00:23:21.524-0700",
+  "updated_date": "2025-08-18T01:42:17.829-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-18T01:42:17.721-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Carpet disappears when placed above transparent wall piston door upon activation",
+  "environment_raw": null,
+  "description": "When using a transparent wall piston door with Redstone, carpets placed above the moving blocks disappear upon activation.The carpet does not drop as an item, but simply gets deleted. n nThis issue does not affect every identical build some piston doors work fine with carpets, others consistently delete them when triggered. n n n nSteps to reproduce n nBuild a transparent wall piston door (hidden door using sticky pistons and Redstone). n nPlace carpets on top of the blocks that are part of the piston mechanism. n nActivate the Redstone circuit (lever, button, or any power source). n nObserve: When the pistons extend or retract, the carpet vanishes. n n n nExpected result n nThe carpet should remain placed on top of the block even when the piston door is activated. n n n nActual result n nThe carpet disappears completely. n nIt does not drop as an item. n nHappens only on certain piston door builds, making it inconsistent. n n n nAdditional Notes n nIssue only occurs with carpets, not with full blocks. n nSeems related to block updates when pistons move blocks beneath carpets. n nTested on Minecraft Java 1.21.8 may affect other 1.21.x versions as well. n n",
+  "Steps to Reproduce": "1. Create a new Creative world with default settings.\n2. Build a transparent wall piston door using sticky pistons and Redstone. Ensure the pistons are configured to move blocks that will create the door effect.\n3. Place carpets on top of the blocks that are part of the piston mechanism, ensuring they are directly above the moving blocks.\n4. Set up a Redstone circuit to activate the piston door using a lever, button, or any other Redstone power source.\n5. Activate the Redstone circuit by toggling the lever or pressing the button.\n6. Observe the behavior of the pistons as they extend or retract. Take note of whether the carpets placed above the moving blocks disappear immediately without dropping as items. \n7. Repeat the process with multiple designs of transparent wall piston doors to confirm that the issue does not occur consistently across all builds.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "When the transparent wall piston door is activated, carpets that are placed directly above the moving blocks of the piston mechanism disappear entirely. The following details outline the specific behavior observed:\n\n1. **Disappearance**: The carpets placed on top of the blocks are not dropped as items; instead, they are deleted from the game entirely upon the pistons extending or retracting.\n\n2. **Inconsistency**: This issue does not occur uniformly across all builds of transparent wall piston doors. In some configurations, carpets remain intact when the piston door is activated, while in others, they vanish consistently. This inconsistency suggests that the problem may be related to specific interactions within the Redstone circuitry or block placements.\n\n3. **Carpet vs. Full Blocks**: The bug specifically affects carpets and does not impact full blocks placed above the piston mechanism. Full blocks remain in place regardless of the piston movements, highlighting a distinct difference in behavior between these two types of blocks.\n\n4. **Possible Cause**: The issue appears to be linked to block updates that occur when the pistons move the blocks beneath the carpets. It is possible that the movement of the pistons is causing a state change that leads to the carpets being removed rather than maintained.\n\n5. **Version Specificity**: This behavior has been tested on Minecraft Java version 1.21.8, and it may also affect other versions within the 1.21.x series. Further testing across different versions may be required to ascertain the full extent of the issue.\n\nOverall, the disappearance of carpets during the activation of certain transparent wall piston doors presents a significant inconsistency in gameplay, warranting investigation and resolution.",
+  "Expected Behavior": "When a carpet is placed on top of a block that is part of a transparent wall piston door mechanism and the piston is activated, the carpet should remain in its position regardless of the piston\u2019s movement. The expected behavior is that the carpet will not disappear or be deleted when the pistons extend or retract, but will instead stay on top of the block. If the block underneath the carpet is moved by the piston, the carpet should either remain in place or be dropped as an item, similar to how other blocks interact with pistons. This behavior aligns with the mechanics of block updates in Minecraft, where non-solid blocks like carpets should not be deleted when the underlying blocks are moved by pistons.",
+  "comments": [
+    {
+      "id": "2084340",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "24x24": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "16x16": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "32x32": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png"
+        },
+        "displayName": "[MCQA] jKakub",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-18T01:42:10.578-0700",
+      "updated": "2025-08-18T01:42:10.578-0700",
+      "body_text": "Hi!Can you record and upload a video showcasing this issue?\u00a0\\n\\nThis ticket will automatically reopen when you reply.\u00a0Thanks!\\n\\n**Quick Links**:\u00a0\ud83d\udcd3\u202fIssue Guidelines\u202f\u2013 \ud83d\udcac\u202fMojang Support\u202f\u2013 \ud83d\udce7\u202fSuggestions\u202f\u2013 \ud83d\udcd6\u202fMinecraft Wiki\u00a0\\n\\n",
+      "body_length": 223,
+      "rendered_body": "<p>Hi!<br>\nCan you record and upload a video showcasing this issue?&nbsp;</p>\n\n<p>This ticket will automatically reopen when you reply.&nbsp;Thanks!</p>\n\n<p><b>Quick Links</b>:&nbsp;<br>\n\ud83d\udcd3\u202f<a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\">Issue Guidelines</a>\u202f\u2013 \ud83d\udcac\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fhelp.minecraft.net.mcas.ms%2Fhc%2Fen-us%2Frequests%2Fnew%3FMcasTsid%3D15600&amp;McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b\" class=\"external-link\" rel=\"nofollow noreferrer\">Mojang Support</a>\u202f\u2013 \ud83d\udce7\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Ffeedback.minecraft.net.mcas.ms%2F%3FMcasTsid%3D15600&amp;McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b\" class=\"external-link\" rel=\"nofollow noreferrer\">Suggestions</a>\u202f\u2013 \ud83d\udcd6\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fminecraft.wiki.mcas.ms%2F%3FMcasTsid%3D15600&amp;McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b\" class=\"external-link\" rel=\"nofollow noreferrer\">Minecraft Wiki</a>&nbsp;</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hi!"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Can you record and upload a video showcasing this issue?\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will automatically reopen when you reply.\u00a0Thanks!"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":\u00a0"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Issue Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udcac\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fhelp.minecraft.net.mcas.ms%2Fhc%2Fen-us%2Frequests%2Fnew%3FMcasTsid%3D15600&McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udce7\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Ffeedback.minecraft.net.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udcd6\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Minecraft Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fminecraft.wiki.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=99704726a9ba84a8338c9c29a581277601a7a421b90f06c7b4cfd5b1ef39280b"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-301184"
+  }
+}

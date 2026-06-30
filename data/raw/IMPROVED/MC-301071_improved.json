@@ -1,0 +1,82 @@
+{
+  "key": "MC-301071",
+  "created_date": "2025-08-14T03:01:23.535-0700",
+  "updated_date": "2025-08-14T04:10:21.145-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-14T04:10:11.372-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Fence Gates make Stone sounds on placement",
+  "environment_raw": null,
+  "description": "When any Fence Gate is placed broken it makes a Stone based sound instead of Wood sounds n n",
+  "Steps to Reproduce": "1. Create a new Creative world with default settings.\n2. Obtain a Fence Gate from the inventory (any type: oak, spruce, birch, jungle, acacia, or dark oak).\n3. Select the Fence Gate in your hotbar.\n4. Place the Fence Gate on the ground by pointing at a block and using the Place Block control.\n5. Observe the sound that plays upon placement of the Fence Gate.\n6. Repeat steps 2-5 multiple times to confirm that the sound consistently plays as a Stone sound rather than a Wood sound.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "When a player places any type of Fence Gate (such as Oak, Spruce, Birch, Jungle, Acacia, Dark Oak, or Nether Brick) in the game, the expected sound effect should be a wooden sound, consistent with the material of the fence gate. However, the bug causes the placement of the fence gate to produce a sound effect typically associated with stone blocks instead. This sound discrepancy occurs regardless of the type of fence gate being placed, leading to an inconsistency in audio feedback during gameplay.\n\n**Reproduction Steps:**\n1. Select any Fence Gate from the inventory.\n2. Position the cursor to place the Fence Gate on a solid block surface.\n3. Observe the sound produced upon placement.\n\n**Expected Behavior:**\nThe placement of any Fence Gate should generate a sound effect that corresponds to wood, as it is a wooden item. The sound should reflect the material properties of the fence gate being placed.\n\n**Additional Notes:**\n- This issue affects all versions of Minecraft where Fence Gates are present.\n- The sound effect inconsistency may lead to confusion for players regarding the material being interacted with.\n- The bug does not affect the functionality or appearance of the Fence Gates; it is purely an audio-related issue. \n\nBy addressing this issue, the game's audio feedback can align with the expected behavior, enhancing the player's immersive experience in Minecraft.",
+  "Expected Behavior": "When a player places a Fence Gate, it should produce the appropriate wood-based sound effect, consistent with its material type, such as oak, spruce, birch, jungle, acacia, or dark oak. This sound should align with the established audio feedback for wooden blocks in Minecraft, reflecting the game's design that differentiates between material types. The expected behavior is that all wooden Fence Gates, regardless of their variant, emit a sound indicative of wood when placed, thereby enhancing the immersive experience and maintaining consistency with other wooden blocks and items in the game.",
+  "comments": [
+    {
+      "id": "2083512",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:61b2fcea-47fc-43b8-8be9-6bf815674529/f19dc39f-884d-49bf-8930-066f3adecb02/32"
+        },
+        "displayName": "[MCQA] Blawik",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-14T04:10:11.436-0700",
+      "updated": "2025-08-14T04:10:11.436-0700",
+      "body_text": "Hi Could you upload a video showing this issue?\\n\\n",
+      "body_length": 51,
+      "rendered_body": "<p>Hi <br>\nCould you upload a video showing this issue?</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hi "
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Could you upload a video showing this issue?"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-301071"
+  }
+}

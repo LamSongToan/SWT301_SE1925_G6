@@ -1,0 +1,153 @@
+{
+  "key": "MC-301221",
+  "created_date": "2025-08-19T05:13:33.841-0700",
+  "updated_date": "2025-08-19T05:55:51.851-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-19T05:55:43.890-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Incorrect Item light rendering 1.21.8",
+  "environment_raw": null,
+  "description": "Some items when on the ground or held in hand arent correctly rendered at night. Commonly affects food and tools from testing. Also affects items held by mobs. So far only tested on 1.21.8 Vanilla ClientExpected result should be that items in main offhand, held by mobs and items on ground should not glow at night. n n n n",
+  "Steps to Reproduce": "1. Create a new Survival world with default settings in Minecraft version 1.21.8.\n2. Set the time to night using the command '/time set night'.\n3. Drop various items on the ground, including at least one food item (e.g., Cooked Porkchop) and one tool (e.g., Iron Pickaxe).\n4. Observe the items on the ground to check if they emit a glow.\n5. Equip a food item in your main hand and a tool in your offhand.\n6. Observe the items in your hands to check if they emit a glow while standing in darkness.\n7. Summon a hostile mob, such as a Zombie, using the command '/summon minecraft:zombie'.\n8. Ensure the Zombie is holding an item (e.g., a wooden sword).\n9. Observe the Zombie to check if the item it is holding emits a glow at night.\n10. Repeat steps 4-9 in different locations (e.g., plains, forests) to confirm the issue is consistent across various environments.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "In Minecraft version 1.21.8, certain items\u2014including food and tools\u2014exhibit incorrect light rendering when placed on the ground or held by players and mobs during nighttime. Specifically, these items emit a glow, which is inconsistent with the expected behavior. \n\n- **Items Affected:** The issue primarily impacts food items (such as apples, bread, and cooked meats) and various tools (including pickaxes, axes, and swords). \n- **Mobs Affected:** Items held by mobs, such as villagers or hostile entities, also display this incorrect glowing effect.\n- **Conditions:** The problem has been observed under standard gameplay conditions in the vanilla client without any modifications or resource packs applied.\n- **Visual Impact:** The glow effect creates confusion for players, as it leads to the false impression that these items possess special properties or enchantments, which is not the case.\n\n**Expected Behavior:**\n\nItems in the main hand, offhand, and those lying on the ground should not emit any glow at night. Instead, they should render consistently with their appearance in daylight, maintaining a standard visual representation without any unintended illumination effects. This behavior aligns with the established graphical standards of item rendering in previous versions of Minecraft.",
+  "Expected Behavior": "When items such as food and tools are on the ground or held in the player's hand or by mobs, they should not emit any light or glow at night. The expected behavior is that these items remain visually consistent with their appearance during the day, ensuring they do not exhibit any unintended illumination effects when the surrounding environment is dark. This includes items in the main hand, the offhand, and those held by entities, which should all render without any glow, aligning with the standard rendering mechanics of Minecraft.",
+  "comments": [
+    {
+      "id": "2084669",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Stephen Armsworth",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-19T05:13:34.581-0700",
+      "updated": "2025-08-19T05:13:34.581-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.",
+      "body_length": 80,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "b43a5715-b001-48c6-8007-58fc7273a940",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2084683",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:55fbbc50-a3ed-42ca-88af-ac87fa100c9a/49c9ac2e-63b3-4fb9-b73d-8075dd93b0bd/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:55fbbc50-a3ed-42ca-88af-ac87fa100c9a/49c9ac2e-63b3-4fb9-b73d-8075dd93b0bd/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:55fbbc50-a3ed-42ca-88af-ac87fa100c9a/49c9ac2e-63b3-4fb9-b73d-8075dd93b0bd/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:55fbbc50-a3ed-42ca-88af-ac87fa100c9a/49c9ac2e-63b3-4fb9-b73d-8075dd93b0bd/32"
+        },
+        "displayName": "[MCQA] Zgajak",
+        "active": true,
+        "timeZone": "Poland",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-19T05:55:25.516-0700",
+      "updated": "2025-08-19T05:55:25.516-0700",
+      "body_text": "<no repro>Hi!\\n\\nDo you use any ad-ons/mods?Can you please record a video of this issue?Does this issue occur on specific world or on specific conditions?\\n\\nThis ticket will automatically reopen when you reply.\\n\\n",
+      "body_length": 215,
+      "rendered_body": "<p>&lt;no repro&gt;<br>\nHi!</p>\n\n<p>Do you use any ad-ons/mods?<br>\nCan you please record a video of this issue?<br>\nDoes this issue occur on specific world or on specific conditions?</p>\n\n<p>This ticket will automatically reopen when you reply.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "<no repro>"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Hi!"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Do you use any ad-ons/mods?"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Can you please record a video of this issue?"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Does this issue occur on specific world or on specific conditions?"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will automatically reopen when you reply."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-301221"
+  }
+}

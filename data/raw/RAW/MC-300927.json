@@ -1,0 +1,218 @@
+{
+  "key": "MC-300927",
+  "summary": "After opening to the local area network, unable to interact with items, unable to switch modes, getting stuck on the save screen when exiting the game.",
+  "description": "After opening to the local area network, unable to interact with items, unable to switch modes, getting stuck on the save screen when exiting the game.\\n\\n",
+  "created_date": "2025-08-10T18:46:15.188-0700",
+  "updated_date": "2025-08-11T02:22:38.855-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "resolution_date": "2025-08-11T02:22:34.075-0700",
+  "affected_versions": [
+    "25w32a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 0,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 26,
+  "summary_length": 26,
+  "fetch_timestamp": "2025-08-20T03:10:21.349122",
+  "comments": [
+    {
+      "id": "2082529",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:d1be6aee-f21d-4cd4-a053-b3ea48f80790/9c7bf845-7adc-4850-866e-dd33a8c45fb9/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:d1be6aee-f21d-4cd4-a053-b3ea48f80790/9c7bf845-7adc-4850-866e-dd33a8c45fb9/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:d1be6aee-f21d-4cd4-a053-b3ea48f80790/9c7bf845-7adc-4850-866e-dd33a8c45fb9/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:d1be6aee-f21d-4cd4-a053-b3ea48f80790/9c7bf845-7adc-4850-866e-dd33a8c45fb9/32"
+        },
+        "displayName": "[Mojang] Mega_Spud (Jay)",
+        "active": true,
+        "timeZone": "Europe/London",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-11T02:22:26.338-0700",
+      "updated": "2025-08-11T02:22:26.338-0700",
+      "body_text": "This ticket has been temporarily resolved as **Awaiting Response**.\\n\\nTo make your bug report as effective as possible, please try and include the following steps to reproduce the problem:\\n\\n> **Steps to Reproduce:**\\n> \\n> 1. \\n> \\n> \\n> 2. \\n> \\n> \\n> 3. \\n> \\n> \\n> \\n> **Observed Results:***(Briefly describe what happens)*\\n> \\n> **Expected Results:***(Briefly describe what should happen)* \\n> \\n> \\n\\nOtherwise we may need to resolve the ticket as Cannot Reproduce.\\n\\nThis ticket will reopen when you reply. \\n\\n",
+      "body_length": 522,
+      "rendered_body": "<p>This ticket has been temporarily resolved as <b>Awaiting Response</b>.</p>\n\n<p>To make your bug report as effective as possible, please try and include the following steps to reproduce the problem:</p>\n\n<blockquote><p><b>Steps to Reproduce:</b></p>\n\n<ol>\n\t<li></li>\n\t<li></li>\n\t<li></li>\n</ol>\n\n\n<p><b>Observed Results:</b><br>\n<em>(Briefly describe what happens)</em></p>\n\n<p><b>Expected Results:</b><br>\n<em>(Briefly describe what should happen)</em> </p></blockquote>\n\n<p>Otherwise we may need to resolve the ticket as Cannot Reproduce.</p>\n\n<p>This ticket will reopen when you reply. </p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket has been temporarily resolved as "
+              },
+              {
+                "type": "text",
+                "text": "Awaiting Response",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "To make your bug report as effective as possible, please try and include the following steps to reproduce the problem:"
+              }
+            ]
+          },
+          {
+            "type": "blockquote",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Steps to Reproduce:",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "orderedList",
+                "attrs": {
+                  "order": 1
+                },
+                "content": [
+                  {
+                    "type": "listItem",
+                    "content": [
+                      {
+                        "type": "paragraph"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "listItem",
+                    "content": [
+                      {
+                        "type": "paragraph"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "listItem",
+                    "content": [
+                      {
+                        "type": "paragraph"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Observed Results:",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "(Briefly describe what happens)",
+                    "marks": [
+                      {
+                        "type": "em"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Expected Results:",
+                    "marks": [
+                      {
+                        "type": "strong"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hardBreak"
+                  },
+                  {
+                    "type": "text",
+                    "text": "(Briefly describe what should happen)",
+                    "marks": [
+                      {
+                        "type": "em"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": " "
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Otherwise we may need to resolve the ticket as Cannot Reproduce."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will reopen when you reply. "
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 1
+}

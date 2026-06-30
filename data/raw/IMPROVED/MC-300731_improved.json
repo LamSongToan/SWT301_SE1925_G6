@@ -1,0 +1,231 @@
+{
+  "key": "MC-300731",
+  "created_date": "2025-08-05T15:08:39.070-0700",
+  "updated_date": "2025-08-06T03:58:56.086-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "25w32a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-06T03:58:55.935-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "The Minecraft: Java Edition program flashes when I am inactive just in the main menu",
+  "environment_raw": null,
+  "description": "The main menu should remain stable and not flash or flicker. n nThe program begins flashing intermittently when inactive on the main menu. This behavior is distracting and may indicate a rendering or UI issue. n nPlease investigate and fix this issue. It affects the user experience even before gameplay begins and could be related to how the menu screen handles idle states or graphics rendering. A stable main menu is important for accessibility and usability. n n",
+  "Steps to Reproduce": "1. Launch Minecraft: Java Edition.\n2. Wait for the main menu to load completely, ensuring that the background panorama is visible and the buttons are fully displayed.\n3. Remain inactive on the main menu without clicking any buttons or moving the mouse for a duration of at least 30 seconds.\n4. Observe the main menu for any flickering or flashing behavior during the period of inactivity. \n5. Note if the flashing occurs consistently or intermittently during the idle state.",
+  "Environment": "Minecraft Java Edition Version 25w32a (snapshot)",
+  "Observed Behavior": "When the Minecraft: Java Edition program is idle on the main menu, the interface begins to flash intermittently. This issue manifests as a flickering effect that occurs after a short period of inactivity, disrupting the visual stability of the menu. The flashing appears to be random and does not correlate with any specific user action or menu element. \n\nThis behavior may be linked to the rendering process or how the main menu handles idle states, potentially indicating a problem with the graphical user interface (GUI) rendering pipeline. The flickering can be distracting to users, affecting their overall experience even before they enter gameplay. \n\nIt is important to note that this issue is specific to the main menu and does not occur in other menu screens, such as the pause menu or world selection screens. A stable main menu is essential for a seamless user experience, particularly for players who may have visual sensitivities or require a consistent interface for accessibility reasons. \n\nDevelopers should investigate the rendering logic and idle state management of the main menu to identify the root cause of this flashing behavior and implement a fix to ensure a stable and visually consistent interface.",
+  "Expected Behavior": "The main menu should remain visually stable and free from any flashing or flickering effects, regardless of user activity. When the player is inactive, the menu should maintain a consistent display, allowing users to comfortably navigate options such as Singleplayer, Multiplayer, and Settings. This stability is essential for an optimal user experience, ensuring that the main menu is accessible and does not cause distractions or discomfort. The intended behavior is for the menu to seamlessly handle idle states without introducing rendering issues that could detract from the overall usability of the game interface.",
+  "comments": [
+    {
+      "id": "2081058",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "24x24": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "16x16": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+          "32x32": "https://secure.gravatar.com/avatar/4285bf20463cb96123ee1d93764d3c23?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png"
+        },
+        "displayName": "[MCQA] jKakub",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-06T03:58:50.669-0700",
+      "updated": "2025-08-06T03:58:50.669-0700",
+      "body_text": "Hi!**Thank you for your report**, however, this issue has been temporarily closed as\u202f**Awaiting Response**.\\n\\nCould you please record and upload a video or screenshot of this issue?\u00a0As it is difficult to fully understand your issue.\\n\\nThis ticket will automatically reopen when you reply.\u00a0Thanks!\\n\\n**Quick Links**:\u00a0\\n\\n\ud83d\udcd3\u202fIssue Guidelines\u202f\u2013 \ud83d\udcac\u202fMojang Support\u202f\u2013 \ud83d\udce7\u202fSuggestions\u202f\u2013 \ud83d\udcd6\u202fMinecraft Wiki\u00a0\\n\\n",
+      "body_length": 400,
+      "rendered_body": "<p>Hi!<br>\n<b>Thank you for your report</b>, however, this issue has been temporarily closed as\u202f<font color=\"#ff991f\"><b>Awaiting Response</b></font>.</p>\n\n<p>Could you please record and upload a video or screenshot of this issue?&nbsp;As it is difficult to fully understand your issue.</p>\n\n<p>This ticket will automatically reopen when you reply.&nbsp;Thanks!</p>\n\n<p><b>Quick Links</b>:&nbsp;</p>\n\n<p>\ud83d\udcd3\u202f<a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Issue Guidelines</ins></a>\u202f\u2013 \ud83d\udcac\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fhelp.minecraft.net.mcas.ms%2Fhc%2Fen-us%2Frequests%2Fnew%3FMcasTsid%3D15600&amp;McasCSRF=a58e5b5b17679e90fe6d17520df785862ba4758040425c77bfc01a9e0344e6f9\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Mojang Support</ins></a>\u202f\u2013 \ud83d\udce7\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Ffeedback.minecraft.net.mcas.ms%2F%3FMcasTsid%3D15600&amp;McasCSRF=a58e5b5b17679e90fe6d17520df785862ba4758040425c77bfc01a9e0344e6f9\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Suggestions</ins></a>\u202f\u2013 \ud83d\udcd6\u202f<a href=\"https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&amp;originalUrl=https%3A%2F%2Fminecraft.wiki.mcas.ms%2F%3FMcasTsid%3D15600&amp;McasCSRF=a58e5b5b17679e90fe6d17520df785862ba4758040425c77bfc01a9e0344e6f9\" class=\"external-link\" rel=\"nofollow noreferrer\"><ins>Minecraft Wiki</ins></a>&nbsp;</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hi!"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Thank you for your report",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ", however, this issue has been temporarily closed as\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Awaiting Response",
+                "marks": [
+                  {
+                    "type": "strong"
+                  },
+                  {
+                    "type": "textColor",
+                    "attrs": {
+                      "color": "#ff991f"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Could you please record and upload a video or screenshot of this issue?\u00a0As it is difficult to fully understand your issue."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket will automatically reopen when you reply.\u00a0Thanks!"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Issue Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udcac\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fhelp.minecraft.net.mcas.ms%2Fhc%2Fen-us%2Frequests%2Fnew%3FMcasTsid%3D15600&McasCSRF=a58e5b5b17679e90fe6d17520df785862ba4758040425c77bfc01a9e0344e6f9"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udce7\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Ffeedback.minecraft.net.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=a58e5b5b17679e90fe6d17520df785862ba4758040425c77bfc01a9e0344e6f9"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udcd6\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Minecraft Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fminecraft.wiki.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=a58e5b5b17679e90fe6d17520df785862ba4758040425c77bfc01a9e0344e6f9"
+                    }
+                  },
+                  {
+                    "type": "underline"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300731"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "key": "MC-300409",
+  "created_date": "2025-07-30T20:38:22.618-0700",
+  "updated_date": "2025-08-01T20:51:42.148-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "25w31a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-01T20:51:41.831-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Piglin can rarely drop command block",
+  "environment_raw": null,
+  "description": "When I working of Zombified Piglin farm with auto Piglin and Copper Golem sort system, tp e[type piglin] to magma block and wait it to die, then it dropped command block (this don t contain any code) n nI don t have any picture now, cuz this happend when piglin don t have anything to trade with (maybe?) n n",
+  "Steps to Reproduce": "1. Create a new Survival world in Minecraft Java Edition.\n2. Locate or build a Zombified Piglin farm using magma blocks as the spawning platform.\n3. Ensure that the farm is designed to teleport Piglins to a magma block where they will take damage and eventually die.\n4. Set up a system that automatically teleports Piglins to the designated magma block using the command `/tp @e[type=piglin] <coordinates of magma block>`.\n5. Wait for the Piglins to die from the magma block damage.\n6. Observe the drops that are produced when the Piglins die, specifically looking for any instances where a command block is dropped.\n7. Ensure that no Piglins have any items to trade with prior to their death to see if this affects the drop rate.",
+  "Environment": "Minecraft Java Edition Version 25w31a (snapshot)",
+  "Observed Behavior": "While constructing a Zombified Piglin farm utilizing an automatic Piglin and Copper Golem sorting system, I encountered an unusual behavior where a Zombified Piglin dropped a command block upon death. The process involved teleporting entities of type Piglin to a magma block, where they would take damage and subsequently die. In this instance, the Zombified Piglin dropped a command block instead of the expected loot, which typically includes rotten flesh, gold nuggets, or golden swords. \n\nThis occurrence seems to happen sporadically, potentially linked to the condition that the Piglin had no items to trade with at the time of its demise. It should be noted that this behavior does not appear to be consistent, as command blocks are not standard drops for Zombified Piglins. Currently, I do not have any visual evidence of this incident, as it occurred unexpectedly during the farming process. Further investigation is needed to determine the exact conditions under which this command block drop occurs.",
+  "Expected Behavior": "When a zombified piglin is killed, it should drop items consistent with its intended loot table, which typically includes rotten flesh, gold nuggets, and occasionally gold ingots or its golden sword. Command blocks are not part of the loot table for zombified piglins, and therefore should not be dropped under any circumstances. The expected behavior is that when a zombified piglin dies, it will drop only the items specified in the official game documentation, without any occurrence of command blocks or any other unintended items appearing in the drop loot.",
+  "comments": [
+    {
+      "id": "2079709",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:eba13223-1cec-4815-9909-e4bb32f91869/a987d956-c6cc-4ac8-bd08-a58448906405/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:eba13223-1cec-4815-9909-e4bb32f91869/a987d956-c6cc-4ac8-bd08-a58448906405/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:eba13223-1cec-4815-9909-e4bb32f91869/a987d956-c6cc-4ac8-bd08-a58448906405/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:eba13223-1cec-4815-9909-e4bb32f91869/a987d956-c6cc-4ac8-bd08-a58448906405/32"
+        },
+        "displayName": "[Mod] Asteraoth",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-01T20:51:41.879-0700",
+      "updated": "2025-08-01T20:51:41.879-0700",
+      "body_text": "Do you have any data packs enabled?\\n\\n",
+      "body_length": 39,
+      "rendered_body": "<p>Do you have any data packs enabled?</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Do you have any data packs enabled?"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300409"
+  }
+}

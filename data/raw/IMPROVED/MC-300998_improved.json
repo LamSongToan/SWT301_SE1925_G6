@@ -1,0 +1,364 @@
+{
+  "key": "MC-300998",
+  "created_date": "2025-08-12T12:50:29.459-0700",
+  "updated_date": "2025-08-13T00:44:24.879-0700",
+  "status": "Resolved",
+  "resolution": "Incomplete",
+  "affected_versions": [
+    "25w33a"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-13T00:44:24.796-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": ".",
+  "environment_raw": null,
+  "description": ". n n",
+  "Steps to Reproduce": "",
+  "Environment": "Versions: 25w33a",
+  "Observed Behavior": "",
+  "Expected Behavior": "",
+  "comments": [
+    {
+      "id": "2083091",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Ardentine",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-12T12:50:30.016-0700",
+      "updated": "2025-08-12T12:50:30.016-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.",
+      "body_length": 80,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "b2515555-575d-4d80-93d1-e50e4f85101f",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2083098",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "TRNSKI",
+        "active": true,
+        "timeZone": "Europe/Warsaw",
+        "accountType": "customer"
+      },
+      "created": "2025-08-12T13:20:16.056-0700",
+      "updated": "2025-08-12T13:20:16.056-0700",
+      "body_text": "Hey, your bug report is incomplete. Please describe what's going on bad with Minecraft.\\n\\n",
+      "body_length": 91,
+      "rendered_body": "<p>Hey, your bug report is incomplete. Please describe what's going on bad with Minecraft.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hey, your bug report is incomplete. Please describe what's going on bad with Minecraft."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2083212",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:55fbbc50-a3ed-42ca-88af-ac87fa100c9a/49c9ac2e-63b3-4fb9-b73d-8075dd93b0bd/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:55fbbc50-a3ed-42ca-88af-ac87fa100c9a/49c9ac2e-63b3-4fb9-b73d-8075dd93b0bd/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:55fbbc50-a3ed-42ca-88af-ac87fa100c9a/49c9ac2e-63b3-4fb9-b73d-8075dd93b0bd/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:55fbbc50-a3ed-42ca-88af-ac87fa100c9a/49c9ac2e-63b3-4fb9-b73d-8075dd93b0bd/32"
+        },
+        "displayName": "[MCQA] Zgajak",
+        "active": true,
+        "timeZone": "Poland",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-13T00:44:05.902-0700",
+      "updated": "2025-08-13T00:44:05.902-0700",
+      "body_text": "**Thank you for your report!**\u00a0\\n\\nHowever, this issue is **Incomplete**.\u00a0Your report does not contain enough information. As such, we're unable to understand or reproduce the problem.\u00a0\\n\\nYou are welcome to create a new ticket about your issue with more detailed information.\u00a0However, please review the **Bug Tracker Guidelines** and be sure to search for existing issues before writing a new bug report.\u00a0Please note, that mechanics of the game may change between updates.\u00a0Things such as graphics, sounds, world creation, biomes, redstone, villagers, and animals may not work the same in current versions.\u00a0\\n\\nFull Version History \u2013 Feature Requests and Suggestions\u00a0\\n\\n**Quick Links**:\u00a0\\n\\n\ud83d\udcd3\u202fIssue Guidelines\u202f\u2013 \ud83d\udcac\u202fMojang Support\u202f\u2013 \ud83d\udce7\u202fSuggestions\u202f\u2013 \ud83d\udcd6\u202fMinecraft Wiki\u00a0\\n\\n",
+      "body_length": 769,
+      "rendered_body": "<p><b>Thank you for your report!</b>&nbsp;</p>\n\n<p>However, this issue is <b>Incomplete</b>.&nbsp;<br>\nYour report does not contain enough information. As such, we're unable to understand or reproduce the problem.&nbsp;</p>\n\n<p>You are welcome to create a new ticket about your issue with more detailed information.&nbsp;<br>\nHowever, please review the <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\"><b>Bug Tracker Guidelines</b></a> and be sure to search for existing issues before writing a new bug report.&nbsp;<br>\nPlease note, that mechanics of the game may change between updates.&nbsp;<br>\nThings such as graphics, sounds, world creation, biomes, redstone, villagers, and animals may not work the same in current versions.&nbsp;</p>\n\n<p><a href=\"https://minecraft.fandom.com/wiki/Launcher_version_history\" class=\"external-link\" rel=\"nofollow noreferrer\">Full Version History</a> \u2013 <a href=\"https://www.reddit.com/r/minecraftsuggestions\" class=\"external-link\" rel=\"nofollow noreferrer\">Feature Requests and Suggestions</a>&nbsp;</p>\n\n<p><b>Quick Links</b>:&nbsp;</p>\n\n<p>\ud83d\udcd3\u202f<a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\">Issue Guidelines</a>\u202f\u2013 \ud83d\udcac\u202f<a href=\"https://help.minecraft.net/hc/en-us/requests/new\" class=\"external-link\" rel=\"nofollow noreferrer\">Mojang Support</a>\u202f\u2013 \ud83d\udce7\u202f<a href=\"https://feedback.minecraft.net/\" class=\"external-link\" rel=\"nofollow noreferrer\">Suggestions</a>\u202f\u2013 \ud83d\udcd6\u202f<a href=\"https://minecraft.wiki/\" class=\"external-link\" rel=\"nofollow noreferrer\">Minecraft Wiki</a>&nbsp;</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Thank you for your report!",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "However, this issue is "
+              },
+              {
+                "type": "text",
+                "text": "Incomplete",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ".\u00a0"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Your report does not contain enough information. As such, we're unable to understand or reproduce the problem.\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are welcome to create a new ticket about your issue with more detailed information.\u00a0"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "However, please review the "
+              },
+              {
+                "type": "text",
+                "text": "Bug Tracker Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  },
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " and be sure to search for existing issues before writing a new bug report.\u00a0"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Please note, that mechanics of the game may change between updates.\u00a0"
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "Things such as graphics, sounds, world creation, biomes, redstone, villagers, and animals may not work the same in current versions.\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Full Version History",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecraft.fandom.com/wiki/Launcher_version_history"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 "
+              },
+              {
+                "type": "text",
+                "text": "Feature Requests and Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://www.reddit.com/r/minecraftsuggestions"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ":\u00a0"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Issue Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udcac\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://help.minecraft.net/hc/en-us/requests/new"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udce7\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://feedback.minecraft.net/"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u202f\u2013 \ud83d\udcd6\u202f"
+              },
+              {
+                "type": "text",
+                "text": "Minecraft Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecraft.wiki/"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "\u00a0"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300998"
+  }
+}

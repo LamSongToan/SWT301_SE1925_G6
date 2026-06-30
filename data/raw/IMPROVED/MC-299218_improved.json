@@ -1,0 +1,290 @@
+{
+  "key": "MC-299218",
+  "created_date": "2025-06-28T05:38:12.582-0700",
+  "updated_date": "2025-07-03T00:23:50.715-0700",
+  "status": "Resolved",
+  "resolution": "Cannot Reproduce",
+  "affected_versions": [
+    "1.21.6",
+    "1.21.7 Release Candidate 2"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-06-30T10:16:32.346-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "full screen bug",
+  "environment_raw": null,
+  "description": "When turning the full screen on or off, the game freezes for a while, about five seconds, and then the jukebox goes silent, and I don t notice anything else. n n",
+  "Steps to Reproduce": "1. Launch Minecraft and enter the main menu.\n2. Select \"Options\" from the menu.\n3. Click on \"Video Settings.\"\n4. Toggle the \"Fullscreen\" option to turn it on or off.\n5. Observe the game for approximately five seconds as it freezes.\n6. After the freeze, check the jukebox to see if it has gone silent.",
+  "Environment": "Minecraft Java Edition Versions: 1.21.6, 1.21.7 Release Candidate 2",
+  "Observed Behavior": "When toggling fullscreen mode on or off in Minecraft, the game experiences a noticeable freeze lasting approximately five seconds. During this period, the graphical interface becomes unresponsive, and player input is ignored. After the freeze, the audio from the jukebox ceases, resulting in a silent environment. The game does not display any additional errors or visual anomalies following the transition. This behavior occurs consistently, regardless of the system specifications or settings, indicating a potential issue with how the game handles fullscreen transitions. No other gameplay elements appear to be affected during or after this process.",
+  "Expected Behavior": "When toggling fullscreen mode on or off, the game should smoothly transition without freezing or causing significant delays. The audio from the jukebox should continue playing without interruption, allowing for a seamless user experience. The game should maintain its normal performance levels, ensuring that there are no freezes or stutters during the transition. Players should be able to interact with the game immediately after the transition, with all visual and audio elements functioning as intended, in accordance with Minecraft's designed behavior for fullscreen mode.",
+  "comments": [
+    {
+      "id": "2069770",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "ljm_233",
+        "active": true,
+        "timeZone": "Asia/Shanghai",
+        "accountType": "customer"
+      },
+      "created": "2025-06-28T05:38:13.561-0700",
+      "updated": "2025-06-28T05:38:13.561-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.",
+      "body_length": 80,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "4bbae57e-e309-4ec2-be6a-257f31a1799e",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2069829",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/22a91be81343762eb6e59cc9cb9a42e6?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FC-6.png",
+          "24x24": "https://secure.gravatar.com/avatar/22a91be81343762eb6e59cc9cb9a42e6?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FC-6.png",
+          "16x16": "https://secure.gravatar.com/avatar/22a91be81343762eb6e59cc9cb9a42e6?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FC-6.png",
+          "32x32": "https://secure.gravatar.com/avatar/22a91be81343762eb6e59cc9cb9a42e6?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FC-6.png"
+        },
+        "displayName": "clamlol",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-06-28T10:40:18.290-0700",
+      "updated": "2025-06-28T10:40:18.290-0700",
+      "body_text": "Please upload a video recording of the issue with the debug screen (F3) enabled. You can record your screen using:\\n\\n* On Windows, the built-in Snipping Tool app (shift+win+S)\\n\\n\\n* On macOS, the the built-in Screenshot app (shift+cmd+5)\\n\\n\\n* Third-party software such as OBS\\n\\n\\n\\nConsider placing a large, blank window (eg. Notepad or TextEdit) behind Minecraft while recording your desktop to protect your personal information.\\n\\nIt is recommended that you trim and/or reduce the quality of your recording so it is under 10MB, as this will make the upload much quicker.\\n\\n",
+      "body_length": 582,
+      "rendered_body": "<p>Please upload a video recording of the issue with the debug screen (F3) enabled. You can record your screen using:</p>\n\n<ul>\n\t<li>On Windows, the built-in Snipping Tool app (shift+win+S)</li>\n\t<li>On macOS, the the built-in Screenshot app (shift+cmd+5)</li>\n\t<li>Third-party software such as OBS</li>\n</ul>\n\n\n<p>Consider placing a large, blank window (eg. Notepad or TextEdit) behind Minecraft while recording your desktop to protect your personal information.</p>\n\n<p>It is recommended that you trim and/or reduce the quality of your recording so it is under 10MB, as this will make the upload much quicker.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please upload a video recording of the issue with the debug screen (F3) enabled. You can record your screen using:"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "On Windows, the built-in Snipping Tool app (shift+win+S)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "On macOS, the the built-in Screenshot app (shift+cmd+5)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Third-party software such as OBS"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Consider placing a large, blank window (eg. Notepad or TextEdit) behind Minecraft while recording your desktop to protect your personal information."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "It is recommended that you trim and/or reduce the quality of your recording so it is under 10MB, as this will make the upload much quicker."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2069941",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "ljm_233",
+        "active": true,
+        "timeZone": "Asia/Shanghai",
+        "accountType": "customer"
+      },
+      "created": "2025-06-28T22:37:56.398-0700",
+      "updated": "2025-06-28T22:37:56.398-0700",
+      "body_text": "It's weird, after I tried to do this again today, everything was fine.\\n\\nIs it a problem with my computer or a compatibility issue?\\n\\n\\n\\n",
+      "body_length": 140,
+      "rendered_body": "<p>It's weird, after I tried to do this again today, everything was fine.</p>\n\n<p>Is it a problem with my computer or a compatibility issue?</p>\n\n<p></p><div><p>This comment contained multiple media attachments (2), please login to view the attachments.</p></div><p></p>\n",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "It's weird, after I tried to do this again today, everything was fine."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Is it a problem with my computer or a compatibility issue?"
+              }
+            ]
+          },
+          {
+            "type": "mediaSingle",
+            "attrs": {
+              "layout": "center"
+            },
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "1110457d-4946-476c-8d2f-03bffaeb21a9",
+                  "alt": "\u5c4f\u5e55\u5f55\u5236 2025-06-29 133351.mp4",
+                  "collection": "",
+                  "height": 1030,
+                  "width": 1920
+                }
+              }
+            ]
+          },
+          {
+            "type": "paragraph"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2070113",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/22a91be81343762eb6e59cc9cb9a42e6?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FC-6.png",
+          "24x24": "https://secure.gravatar.com/avatar/22a91be81343762eb6e59cc9cb9a42e6?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FC-6.png",
+          "16x16": "https://secure.gravatar.com/avatar/22a91be81343762eb6e59cc9cb9a42e6?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FC-6.png",
+          "32x32": "https://secure.gravatar.com/avatar/22a91be81343762eb6e59cc9cb9a42e6?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FC-6.png"
+        },
+        "displayName": "clamlol",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-06-29T19:18:18.747-0700",
+      "updated": "2025-06-29T19:18:18.747-0700",
+      "body_text": "I\u2019m pretty sure the game momentarily freezing when fullscreen is toggled via F11 won\u2019t be fixed since it\u2019s a relatively minor issue and would involve some low-level tweaking in order to fix. (It\u2019s also very system dependent- I noticed it more on my older gaming rig, but with my new laptop the hang time is essentially zero.) 5 seconds is a bit long, but that may have been a fluke do your computer using lots of resources at that moment or something. Music stopping after a fullscreen toggle is a more serious issue, but given that it isn\u2019t happening consistently for you (anymore) I\u2019m not sure it can be chalked up to problem with Minecraft\u2019s code at this point.\\n\\nDue to this, and because I cannot reproduce either issue myself, I will request this ticket to be closed as Cannot Reproduce. If the issue occurs for you again, my advice is to free up resources on your system by closing other apps, restarting, etc. Hopefully some of the rendering changes Mojang is making for Vibrant Visuals will improve the game\u2019s performance for you, potentially mitigating this issue or eliminating it altogether. If the issue does persist, consider seeking out technical support, as this kind of issue isn\u2019t really within Mojang\u2019s purview.\\n\\n",
+      "body_length": 1234,
+      "rendered_body": "<p>I\u2019m pretty sure the game momentarily freezing when fullscreen is toggled via F11 won\u2019t be fixed since it\u2019s a relatively minor issue and would involve some low-level tweaking in order to fix. (It\u2019s also very system dependent- I noticed it more on my older gaming rig, but with my new laptop the hang time is essentially zero.) 5 seconds is a bit long, but that may have been a fluke do your computer using lots of resources at that moment or something. Music stopping after a fullscreen toggle is a more serious issue, but given that it isn\u2019t happening consistently for you (anymore) I\u2019m not sure it can be chalked up to problem with Minecraft\u2019s code at this point.</p>\n\n<p>Due to this, and because I cannot reproduce either issue myself, I will request this ticket to be closed as Cannot Reproduce. If the issue occurs for you again, my advice is to free up resources on your system by closing other apps, restarting, etc. Hopefully some of the rendering changes Mojang is making for Vibrant Visuals will improve the game\u2019s performance for you, potentially mitigating this issue or eliminating it altogether. If the issue does persist, consider seeking out technical support, as this kind of issue isn\u2019t really within Mojang\u2019s purview.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "I\u2019m pretty sure the game momentarily freezing when fullscreen is toggled via F11 won\u2019t be fixed since it\u2019s a relatively minor issue and would involve some low-level tweaking in order to fix. (It\u2019s also very system dependent- I noticed it more on my older gaming rig, but with my new laptop the hang time is essentially zero.) 5 seconds is a bit long, but that may have been a fluke do your computer using lots of resources at that moment or something. Music stopping after a fullscreen toggle is a more serious issue, but given that it isn\u2019t happening consistently for you (anymore) I\u2019m not sure it can be chalked up to problem with Minecraft\u2019s code at this point."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Due to this, and because I cannot reproduce either issue myself, I will request this ticket to be closed as Cannot Reproduce. If the issue occurs for you again, my advice is to free up resources on your system by closing other apps, restarting, etc. Hopefully some of the rendering changes Mojang is making for Vibrant Visuals will improve the game\u2019s performance for you, potentially mitigating this issue or eliminating it altogether. If the issue does persist, consider seeking out technical support, as this kind of issue isn\u2019t really within Mojang\u2019s purview."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-299218"
+  }
+}

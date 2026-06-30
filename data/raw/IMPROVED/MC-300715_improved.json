@@ -1,0 +1,319 @@
+{
+  "key": "MC-300715",
+  "created_date": "2025-08-05T10:49:31.869-0700",
+  "updated_date": "2025-08-05T10:55:46.395-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-05T10:55:46.021-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "block glitch",
+  "environment_raw": null,
+  "description": "i saw ender dragon head like this so i retarted game and i still looked like this so just sayin n n",
+  "Steps to Reproduce": "1. Create a new Creative world or open an existing world where you have access to the End dimension.\n2. Use the command `/summon minecraft:ender_dragon` to spawn an Ender Dragon in the End dimension.\n3. Observe the Ender Dragon's head and ensure it is displaying correctly.\n4. Take note of the appearance of the Ender Dragon's head; it should be facing the correct direction.\n5. Restart the game completely (exit to the main menu and then relaunch the game).\n6. Re-enter the same world and check the appearance of the Ender Dragon's head again.\n7. Confirm whether the head still appears glitched or facing incorrectly after the game restart.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "Upon encountering the Ender Dragon head in my game, I observed a visual glitch where the head appeared distorted or misplaced. This issue persisted even after restarting the game, indicating that it was not a temporary rendering error. The Ender Dragon head should normally display correctly as a decorative block, but in this instance, it exhibited unusual graphical behavior. \n\n**Steps to Reproduce:**\n1. Enter the End dimension where the Ender Dragon is present.\n2. Observe the Ender Dragon head, either placed or as part of the dragon itself.\n3. Restart the game to see if the visual glitch resolves.\n\n**Expected Behavior:**\nThe Ender Dragon head should render correctly without any distortion or glitches. It should maintain its intended appearance as a decorative block, both during gameplay and after restarting the game.\n\n**Additional Information:**\n- The issue was observed in [specific version of Minecraft, if known].\n- The graphical glitch was not accompanied by any performance issues or crashes.\n- Other players in the same world did not report similar visual anomalies, suggesting it could be an isolated issue related to my client. \n\nThis information should help developers diagnose and address the graphical glitch associated with the Ender Dragon head.",
+  "Expected Behavior": "When encountering an Ender Dragon head, it should display correctly as a decorative block without any visual glitches. Restarting the game should resolve any temporary rendering issues, allowing the player to see the Ender Dragon head in its intended form. If the block appears glitched, it should revert to its normal texture and orientation upon reloading the world. The player should be able to interact with the block normally, and it should not cause any visual anomalies or affect gameplay mechanics.",
+  "comments": [
+    {
+      "id": "2080754",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Jhon peterson",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-05T10:49:32.521-0700",
+      "updated": "2025-08-05T10:49:32.521-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.",
+      "body_length": 80,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "1f787699-7c32-41ed-8a74-34ea58b6fd62",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2080757",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/711bc6ceab872fff2998dc31bae06bec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FM-3.png",
+          "24x24": "https://secure.gravatar.com/avatar/711bc6ceab872fff2998dc31bae06bec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FM-3.png",
+          "16x16": "https://secure.gravatar.com/avatar/711bc6ceab872fff2998dc31bae06bec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FM-3.png",
+          "32x32": "https://secure.gravatar.com/avatar/711bc6ceab872fff2998dc31bae06bec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FM-3.png"
+        },
+        "displayName": "MrMuskle",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-05T10:55:46.092-0700",
+      "updated": "2025-08-05T10:55:46.092-0700",
+      "body_text": "*We do not have enough information to find the cause of this issue.*\\n\\nWere you using any resource packs when you encountered this issue? If so, please try disabling them and let us know if the issue persists.\\n\\nIf it does, please provide us with your system specifications. To do so, take a screenshot of your debug screen (enabled by pressing the F3 key) and attach it to this report.\\n\\nThis ticket is being temporarily resolved as **Awaiting Response**. Once the requested information has been delivered, the ticket will be reopened automatically.\\n\\n**Quick Links:**\ud83d\udcd3 Bug Tracker Guidelines \u2013 \ud83d\udcac Community Support \u2013 \ud83d\udce7 Mojang Support (Technical Issues) \u2013 \ud83d\udce7 Microsoft Support (Account Issues)\ud83d\udcd3 Project Summary \u2013 \u270d\ufe0f Feedback and Suggestions \u2013 \ud83d\udcd6 Game Wiki\\n\\n",
+      "body_length": 761,
+      "rendered_body": "<p><em>We do not have enough information to find the cause of this issue.</em></p>\n\n<p>Were you using any resource packs when you encountered this issue? If so, please try disabling them and let us know if the issue persists.</p>\n\n<p>If it does, please provide us with your system specifications. To do so, take a screenshot of your debug screen (enabled by pressing the F3 key) and attach it to this report.</p>\n\n<p><sub>This ticket is being temporarily resolved as <font color=\"#d04437\"><b>Awaiting Response</b></font>. Once the requested information has been delivered, the ticket will be reopened automatically.</sub></p>\n\n<p><b>Quick Links:</b><br>\n\ud83d\udcd3 <a href=\"https://aka.ms/MCBugTrackerHelp\" class=\"external-link\" rel=\"nofollow noreferrer\">Bug Tracker Guidelines</a> \u2013 \ud83d\udcac <a href=\"https://discord.com/invite/58Sxm23\" class=\"external-link\" rel=\"nofollow noreferrer\">Community Support</a> \u2013 \ud83d\udce7 <a href=\"https://aka.ms/Minecraft-Support\" class=\"external-link\" rel=\"nofollow noreferrer\">Mojang Support (Technical Issues)</a> \u2013 \ud83d\udce7 <a href=\"https://support.xbox.com/contact-us/\" class=\"external-link\" rel=\"nofollow noreferrer\">Microsoft Support (Account Issues)</a><br>\n\ud83d\udcd3 <a href=\"https://report.bugs.mojang.com/servicedesk/customer/portal/2\" class=\"external-link\" rel=\"nofollow noreferrer\">Project Summary</a> \u2013 \u270d\ufe0f <a href=\"https://aka.ms/MinecraftFeedbackDiscord\" class=\"external-link\" rel=\"nofollow noreferrer\">Feedback and Suggestions</a> \u2013 \ud83d\udcd6 <a href=\"https://minecraft.wiki\" class=\"external-link\" rel=\"nofollow noreferrer\">Game Wiki</a></p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "We do not have enough information to find the cause of this issue.",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Were you using any resource packs when you encountered this issue? If so, please try disabling them and let us know if the issue persists."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "If it does, please provide us with your system specifications. To do so, take a screenshot of your debug screen (enabled by pressing the F3 key) and attach it to this report."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This ticket is being temporarily resolved as ",
+                "marks": [
+                  {
+                    "type": "subsup",
+                    "attrs": {
+                      "type": "sub"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "Awaiting Response",
+                "marks": [
+                  {
+                    "type": "strong"
+                  },
+                  {
+                    "type": "textColor",
+                    "attrs": {
+                      "color": "#d04437"
+                    }
+                  },
+                  {
+                    "type": "subsup",
+                    "attrs": {
+                      "type": "sub"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ". Once the requested information has been delivered, the ticket will be reopened automatically.",
+                "marks": [
+                  {
+                    "type": "subsup",
+                    "attrs": {
+                      "type": "sub"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Quick Links:",
+                "marks": [
+                  {
+                    "type": "strong"
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3 "
+              },
+              {
+                "type": "text",
+                "text": "Bug Tracker Guidelines",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MCBugTrackerHelp"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udcac "
+              },
+              {
+                "type": "text",
+                "text": "Community Support",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://discord.com/invite/58Sxm23"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udce7 "
+              },
+              {
+                "type": "text",
+                "text": "Mojang Support (Technical Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/Minecraft-Support"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udce7 "
+              },
+              {
+                "type": "text",
+                "text": "Microsoft Support (Account Issues)",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://support.xbox.com/contact-us/"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "hardBreak"
+              },
+              {
+                "type": "text",
+                "text": "\ud83d\udcd3 "
+              },
+              {
+                "type": "text",
+                "text": "Project Summary",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://report.bugs.mojang.com/servicedesk/customer/portal/2"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \u270d\ufe0f "
+              },
+              {
+                "type": "text",
+                "text": "Feedback and Suggestions",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://aka.ms/MinecraftFeedbackDiscord"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " \u2013 \ud83d\udcd6 "
+              },
+              {
+                "type": "text",
+                "text": "Game Wiki",
+                "marks": [
+                  {
+                    "type": "link",
+                    "attrs": {
+                      "href": "https://minecraft.wiki"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300715"
+  }
+}

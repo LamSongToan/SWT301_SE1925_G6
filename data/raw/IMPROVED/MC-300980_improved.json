@@ -1,0 +1,39 @@
+{
+  "key": "MC-300980",
+  "created_date": "2025-08-12T08:11:59.932-0700",
+  "updated_date": "2025-08-12T09:26:57.049-0700",
+  "status": "Resolved",
+  "resolution": "Incomplete",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 0,
+  "labels": [],
+  "resolution_date": "2025-08-12T09:26:56.964-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Its a bug in the settings",
+  "environment_raw": null,
+  "description": "I set my game on hold sneak but it toggles n nalso in the versions 1.21.4 and 1.21.5 n n",
+  "Steps to Reproduce": "1. Launch Minecraft and navigate to the main menu.\n2. Select \"Singleplayer\" and create a new world or open an existing world.\n3. Once in the game, press the \"Esc\" key to open the menu and click on \"Options.\"\n4. Go to \"Accessibility Settings.\"\n5. Locate the \"Sneak\" option and change it from \"Hold\" to \"Toggle.\"\n6. Return to the game and test the sneaking functionality by pressing the sneak key (default is \u21e7 Shift).\n7. Observe that the sneaking status toggles on and off as expected.\n8. Repeat steps 5 to 7 in both versions 1.21.4 and 1.21.5 to confirm the bug occurs in both versions.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "When the player sets the \"Sneak\" control option to \"Hold\" in the Accessibility Settings, the expected behavior is that the player must press and hold the designated key (default is \u21e7 Shift) to enter sneaking mode. However, in versions 1.21.4 and 1.21.5, the sneaking mode is incorrectly toggling on and off instead of requiring the key to be held down. This means that the player can unintentionally enter and exit sneaking mode without pressing the key, which disrupts gameplay and can lead to unwanted falls or exposure to mobs. \n\nAdditionally, this issue persists regardless of the input method being used (keyboard, gamepad, or touch), and it affects all players in both single-player and multiplayer modes. The bug does not appear to be related to any specific game mode (Survival, Creative, etc.) or world type, indicating a broader issue with the sneaking control mechanism in these versions.",
+  "Expected Behavior": "When the game is set to \"Hold Sneak\" in the Accessibility Options, the player should be able to sneak only while the designated key (default is Shift) is pressed down. Releasing the key should cause the player to exit sneak mode immediately. This behavior should remain consistent across all game interactions, including when opening GUIs or performing actions that do not require sneaking. The \"Toggle Sneak\" feature should not activate when the \"Hold Sneak\" setting is selected, ensuring that the player cannot unintentionally toggle sneak mode on or off. This expected behavior aligns with the standard functionality outlined in the game's controls and accessibility documentation.",
+  "comments": [],
+  "improvement_metadata": {
+    "original_key": "MC-300980"
+  }
+}

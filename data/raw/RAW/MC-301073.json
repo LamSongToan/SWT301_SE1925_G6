@@ -1,0 +1,71 @@
+{
+  "key": "MC-301073",
+  "summary": "Iron Golem Rage when using a lead on a bot with villager leaded to an happy ghast",
+  "description": "If you have a boat with 1/2 villagers and you use the lead on the boat, the boat will fall on the ground and even if the villagers won’t get any damage, if there is an iron golem nearby he will be triggered and will charge you\\n\\n",
+  "created_date": "2025-08-14T05:33:28.717-0700",
+  "updated_date": "2025-08-17T13:12:21.461-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "resolution_date": "2025-08-17T13:12:19.952-0700",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "description_length": 47,
+  "summary_length": 17,
+  "fetch_timestamp": "2025-08-20T03:10:06.024489",
+  "comments": [
+    {
+      "id": "2084273",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/32"
+        },
+        "displayName": "[Mod] Jingy",
+        "active": true,
+        "timeZone": "America/Chicago",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-17T13:12:21.135-0700",
+      "updated": "2025-08-17T13:12:21.135-0700",
+      "body_text": "Can you reliably reproduce this in any world consistently? Iron golems have a mechanic to track anger towards a player, which could be interfering. Please provide a video of the issue occurring in a totally new world.\\n\\n",
+      "body_length": 221,
+      "rendered_body": "<p>Can you reliably reproduce this in any world consistently? Iron golems have a mechanic to track anger towards a player, which could be interfering. Please provide a video of the issue occurring in a totally new world.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Can you reliably reproduce this in any world consistently? Iron golems have a mechanic to track anger towards a player, which could be interfering. Please provide a video of the issue occurring in a totally new world."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "comment_count": 1
+}

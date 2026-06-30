@@ -1,0 +1,114 @@
+{
+  "key": "MC-301045",
+  "created_date": "2025-08-13T07:52:49.903-0700",
+  "updated_date": "2025-08-13T10:31:32.322-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-13T10:31:31.950-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Intel core related bugs still occur on servers with resource texture packs enabled.",
+  "environment_raw": null,
+  "description": "Bugs - and probably MC-296908 still occur on 1.21.8 if server has resource packs enabled. n nSometimes textures flicker with black lines or their animations are interrupted. This is easily noticed on magma blocks, lava, and water. n nGame screen freezing and crashes also occur as before. n n How to get n nJoin java multiplayer server with resource texture pack enabled on device with intel core graphic, wait a while and you should notice glitches. Sometimes, spotting them can be less frequent and seems to depend on the server. n n Note: n nThese bugs didn t seem to exist on version 1.21.8 for a while, but they ve been around for a few days or weeks (I can t quite pinpoint it). They don t seem to occur on servers without resource texture packs enabled or in singleplayer worlds.Also the bugs seem to be much weaker than on versions before intel core graphic fixes n n",
+  "Steps to Reproduce": "1. Ensure you have a device with Intel integrated graphics.\n2. Launch Minecraft Java Edition and update to version 1.21.8.\n3. Join a multiplayer server that has a resource texture pack enabled.\n4. Wait for a minimum of 10 minutes while exploring the server.\n5. Observe the textures of blocks such as magma blocks, lava, and water for flickering or black lines.\n6. Pay attention to any animations of the aforementioned blocks to see if they are interrupted.\n7. Note if the game screen freezes or crashes during your gameplay session.\n8. Repeat the process on different multiplayer servers with resource packs enabled to compare the frequency and severity of the glitches.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "Intel Core-related graphical bugs manifest when joining Java multiplayer servers with resource texture packs enabled on devices utilizing Intel integrated graphics. The following issues have been observed:\n\n1. **Texture Flickering:** Certain blocks, particularly magma blocks, lava, and water, exhibit noticeable flickering. This flickering is characterized by the appearance of black lines or artifacts that disrupt the smooth rendering of textures. The frequency and severity of this flickering can vary based on server conditions and the specific resource pack in use.\n\n2. **Animation Interruptions:** Animations for fluid blocks (such as water and lava) may become choppy or freeze momentarily, resulting in an inconsistent visual experience. This interruption can detract from the intended fluid dynamics of these blocks.\n\n3. **Game Freezing and Crashes:** Players may experience freezing of the game screen, which can last from a few seconds to longer durations. In some instances, these freezes can lead to complete crashes of the game client, requiring a restart to regain functionality.\n\n4. **Dependency on Server Settings:** The manifestation of these bugs appears to be influenced by the server's configuration and the specific resource packs employed. Players have reported that these issues do not occur on servers that do not utilize resource texture packs or in singleplayer modes, indicating a potential conflict between the resource packs and Intel graphics drivers.\n\n5. **Temporal Nature of Bugs:** While these graphical glitches were notably absent in earlier gameplay sessions on version 1.21.8, they have reemerged over the past few days or weeks. It is unclear what changes may have triggered the reappearance of these issues, but they seem to be less severe compared to prior versions prior to the Intel Core graphics fixes.\n\nThese issues collectively hinder the overall gameplay experience for users with Intel integrated graphics and necessitate investigation to determine their root cause and potential solutions.",
+  "Expected Behavior": "When joining a Java multiplayer server with a resource texture pack enabled on a device using Intel integrated graphics, the game should run smoothly without any visual glitches or interruptions. Textures should display correctly without flickering or black lines, and animations for blocks such as magma, lava, and water should function seamlessly. Additionally, the game should not experience any freezing or crashing during gameplay. The intended behavior is that resource packs enhance the visual experience without negatively impacting performance or causing graphical errors, adhering to the standards set by Minecraft's design and functionality.",
+  "comments": [
+    {
+      "id": "2083319",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Eric Sobierajski",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-13T07:52:50.987-0700",
+      "updated": "2025-08-13T07:52:50.987-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.",
+      "body_length": 80,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "51717cc8-2712-4c17-bbaa-517c11be7182",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2083369",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:2834898f-c1c6-4657-9933-27010d659112/c42ec03b-57fc-4c09-990a-a47494036239/32"
+        },
+        "displayName": "[MOD] Greymagic27",
+        "active": true,
+        "timeZone": "Europe/London",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-13T10:31:32.000-0700",
+      "updated": "2025-08-13T10:31:32.000-0700",
+      "body_text": "Can this be reproduced on a vanilla server? Please attach a video showcasing these graphical glitches\\n\\n",
+      "body_length": 105,
+      "rendered_body": "<p>Can this be reproduced on a vanilla server? Please attach a video showcasing these graphical glitches</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Can this be reproduced on a vanilla server? Please attach a video showcasing these graphical glitches"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-301045"
+  }
+}

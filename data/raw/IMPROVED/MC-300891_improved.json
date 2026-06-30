@@ -1,0 +1,75 @@
+{
+  "key": "MC-300891",
+  "created_date": "2025-08-09T18:23:05.258-0700",
+  "updated_date": "2025-08-18T07:47:46.273-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 0,
+  "labels": [],
+  "resolution_date": "2025-08-18T07:47:46.186-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "Music disc \"tears\" does not show the juke box s playing state",
+  "environment_raw": null,
+  "description": "the tears music disk does not set the jukeboxes playing blockstate n n",
+  "Steps to Reproduce": "1. Create a new Creative world with default settings.\n2. Obtain the music disc \"Tears\" by either summoning a ghast and defeating it or by using the /give command to give yourself the disc.\n3. Place a Jukebox on the ground.\n4. Right-click on the Jukebox while holding the \"Tears\" music disc to insert it.\n5. Observe the Jukebox as it plays the music disc.\n6. Check the blockstate of the Jukebox to confirm that it does not change to the \"playing\" state, despite the music playing.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "When the \"Tears\" music disc is inserted into a jukebox, the jukebox does not change its block state to indicate that it is playing music. Specifically, the expected behavior of the jukebox is to emit note particles and change its block state to \"playing\" when a music disc is active. However, with the \"Tears\" disc, the jukebox remains in its default state, and no note particles are emitted, which visually indicates that music is playing. This behavior differs from other music discs, which correctly trigger the jukebox to show that it is in a playing state. Additionally, the jukebox does not emit a redstone signal, which is typically expected when a music disc is being played. This issue persists regardless of the environment or conditions under which the jukebox is placed or used.",
+  "Expected Behavior": "When the music disc \"Tears\" is inserted into a jukebox, the jukebox should properly reflect its playing state by changing its blockstate to indicate that it is actively playing music. This includes emitting note particles from the top of the jukebox, and if a redstone comparator is placed adjacent to the jukebox, it should output a redstone signal corresponding to the disc being played. Additionally, the jukebox should disable any adjacent hoppers while the disc is playing, as is the intended behavior for all music discs in the game. The visual and mechanical feedback should align with the functionality described in the Minecraft wiki, ensuring that players can clearly see and utilize the jukebox's features when the \"Tears\" disc is in use.",
+  "comments": [
+    {
+      "id": "2082522",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "ampau (bolshi)",
+        "active": true,
+        "timeZone": "Europe/Andorra",
+        "accountType": "customer"
+      },
+      "created": "2025-08-11T00:54:44.447-0700",
+      "updated": "2025-08-11T00:54:44.447-0700",
+      "body_text": "Can not reproduce. Could you attach a video of the issue happening with the F3 debug screen enabled?\\n\\n",
+      "body_length": 104,
+      "rendered_body": "<p>Can not reproduce. Could you attach a video of the issue happening with the F3 debug screen enabled?</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Can not reproduce. Could you attach a video of the issue happening with the F3 debug screen enabled?"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-300891"
+  }
+}

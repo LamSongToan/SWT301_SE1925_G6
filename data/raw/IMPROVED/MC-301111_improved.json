@@ -1,0 +1,166 @@
+{
+  "key": "MC-301111",
+  "created_date": "2025-08-15T11:22:32.376-0700",
+  "updated_date": "2025-08-17T12:58:04.518-0700",
+  "status": "Resolved",
+  "resolution": "Awaiting Response",
+  "affected_versions": [
+    "1.21.8"
+  ],
+  "fix_versions": [],
+  "confirmation_status": "Unconfirmed",
+  "category": "(Unassigned)",
+  "os_version": null,
+  "watch_count": 1,
+  "labels": [],
+  "resolution_date": "2025-08-17T12:58:04.473-0700",
+  "reporter": {
+    "displayName": "",
+    "name": ""
+  },
+  "assignee": {
+    "displayName": "",
+    "name": ""
+  },
+  "votes": 0,
+  "priority": "",
+  "components": [],
+  "summary": "End Portal Frame not being broken",
+  "environment_raw": null,
+  "description": "when you break an end portal the portal doesnt get destroyed, how it normally would be like. This too effects the trick where you break the frames using a red mushroom n n",
+  "Steps to Reproduce": "1. Create a new Creative world with default settings.\n2. Locate a stronghold using an Eye of Ender or by using the /locate stronghold command.\n3. Enter the stronghold and find the portal room, which contains the End Portal Frame.\n4. Ensure that the End Portal Frame is complete with all 12 frames and that they are oriented correctly.\n5. Activate the End Portal by placing an Eye of Ender into each of the 12 End Portal Frame blocks.\n6. Once the End Portal is active, switch to Survival mode.\n7. Attempt to break any of the End Portal blocks using a pickaxe or your hands.\n8. Observe that the End Portal blocks do not break and remain intact, contrary to expected behavior. \n9. Additionally, try breaking the End Portal Frame blocks using a red mushroom by placing it next to the frames and observe that the frames do not break as intended.",
+  "Environment": "Minecraft Java Edition Version 1.21.8",
+  "Observed Behavior": "When a player attempts to break an End Portal Frame block in either Survival or Adventure mode, the block does not get destroyed as expected. Instead, the End Portal remains intact, and the portal blocks do not disappear. This behavior deviates from the expected mechanics where breaking an End Portal Frame should result in the destruction of the entire portal structure. \n\nAdditionally, this bug affects the commonly used method of breaking End Portal Frames using a red mushroom. Typically, players can use a red mushroom placed on the frame to break it and subsequently destroy the portal. However, due to this bug, the red mushroom does not function as intended, preventing players from executing this trick effectively.\n\n:\n1. Locate an End Portal in a stronghold.\n2. Attempt to break one of the End Portal Frame blocks using any tool or by hand.\n3. Observe that the End Portal Frame remains unbroken and the portal is not destroyed.\n\n:\nBreaking an End Portal Frame block should result in the removal of that block and the subsequent destruction of the entire End Portal structure, allowing players to manipulate the portal as needed. The red mushroom trick should also function correctly, enabling players to break the frames and destroy the portal. \n\nThis issue impacts gameplay mechanics related to the End Portal and limits player interaction with the portal structure.",
+  "Expected Behavior": "When an end portal frame block is broken in Survival mode, it should be destroyed, and the end portal block within the 3x3 area should also be removed, resulting in the complete deactivation of the portal. This behavior aligns with the intended functionality as described in the game's mechanics, where breaking an end portal frame should lead to the destruction of the associated end portal blocks, allowing players to manipulate the structure effectively. Additionally, if a red mushroom is used to break the frames, it should successfully remove the frames and the portal blocks, enabling the intended trick to function as designed.",
+  "comments": [
+    {
+      "id": "2083870",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+        },
+        "displayName": "Kjell G\u00f6dde",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "customer"
+      },
+      "created": "2025-08-15T11:22:33.605-0700",
+      "updated": "2025-08-15T11:22:33.605-0700",
+      "body_text": "This comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.\n\nThis comment contained an image attachment, please login to view the attachment.",
+      "body_length": 326,
+      "rendered_body": "<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>\n\n<div><p>This comment contained an image attachment, please login to view the attachment.</p></div>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "f781a7f7-8bd5-42a4-a04f-2ba7ad65b42b",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "b4a7a8b7-aa7e-4759-8516-d1757a02ee84",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "423fc6fa-23ac-4fee-9211-263169bd6a9b",
+                  "collection": ""
+                }
+              }
+            ]
+          },
+          {
+            "type": "mediaGroup",
+            "content": [
+              {
+                "type": "media",
+                "attrs": {
+                  "type": "file",
+                  "id": "f3a7f859-45d0-4547-bfd1-ea1f352862a7",
+                  "collection": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2084265",
+      "author": {
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/62daf5e45eeecd39350a78a4/375b1309-50df-4bee-9c64-92412e684e27/32"
+        },
+        "displayName": "[Mod] Jingy",
+        "active": true,
+        "timeZone": "America/Chicago",
+        "accountType": "atlassian"
+      },
+      "created": "2025-08-17T12:57:58.197-0700",
+      "updated": "2025-08-17T12:57:58.197-0700",
+      "body_text": "Please provide clear and exact steps to reproduce this issue. Additionally, I would appreciate you better distinguishing between end portal *frames* and end portals in the first part of your report.\\n\\n",
+      "body_length": 202,
+      "rendered_body": "<p>Please provide clear and exact steps to reproduce this issue. Additionally, I would appreciate you better distinguishing between end portal <em>frames</em> and end portals in the first part of your report.</p>",
+      "body": {
+        "type": "doc",
+        "version": 1,
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please provide clear and exact steps to reproduce this issue. Additionally, I would appreciate you better distinguishing between end portal "
+              },
+              {
+                "type": "text",
+                "text": "frames",
+                "marks": [
+                  {
+                    "type": "em"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " and end portals in the first part of your report."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "improvement_metadata": {
+    "original_key": "MC-301111"
+  }
+}
