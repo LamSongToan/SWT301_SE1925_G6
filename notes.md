@@ -1,4 +1,0 @@
-
-DG:
-RANDOM_SEED = 15
-N_SAMPLE    = 26
