@@ -20,9 +20,9 @@ REQUIRED_DATA_FILES = [
 
 EXPECTED_RESULT_FILES = [
     "pilot_llm_output_raw.csv",
-    "pilot_api_log_raw.txt",
+    "pilot_api_log_raw.csv",
     "full_llm_output_raw.csv",
-    "full_api_log_raw.txt",
+    "full_api_log_raw.csv",
     "summary_raw.csv",
     "mismatch_analysis_raw.csv",
 ]

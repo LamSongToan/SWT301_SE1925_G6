@@ -1,0 +1,696 @@
+﻿issue_key,s2r_label,reason,status,model,prompt_version,input_tokens,cached_input_tokens,output_tokens,total_tokens,cost_usd,timestamp,raw_response
+MC-298921,Executable,"The report provides clear and detailed steps to reproduce the issue, including specific actions to take in the game settings and the expected behavior when pressing the G key with the Ctrl key held down.",valid_json,gpt-4o-mini-2024-07-18,v2,1414,1280,65,1479,0.00015510,2026-07-02T21:44:50,"{
+  ""issue_key"": ""MC-298921"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the issue, including specific actions to take in the game settings and the expected behavior when pressing the G key with the Ctrl key held down.""
+}"
+MC-299218,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions to take and the expected observations during the process.",valid_json,gpt-4o-mini-2024-07-18,v2,1229,1152,53,1282,0.00012975,2026-07-02T21:44:58,"{
+  ""issue_key"": ""MC-299218"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions to take and the expected observations during the process.""
+}"
+MC-299342,Executable,"The report provides clear and detailed steps to reproduce the bug, including the necessary setup, actions, and expected behavior.",valid_json,gpt-4o-mini-2024-07-18,v2,1596,1536,51,1647,0.00015480,2026-07-02T21:45:01,"{
+  ""issue_key"": ""MC-299342"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including the necessary setup, actions, and expected behavior.""
+}"
+MC-299897,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions to take and the expected outcomes, allowing another person to reasonably attempt to replicate the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,2311,2176,61,2372,0.00022005,2026-07-02T21:45:03,"{
+  ""issue_key"": ""MC-299897"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions to take and the expected outcomes, allowing another person to reasonably attempt to replicate the issue.""
+}"
+MC-299632,Executable,"The report provides detailed steps to reproduce the issue, including specific commands and actions to take within the game, allowing another person to reasonably attempt to reproduce the bug.",valid_json,gpt-4o-mini-2024-07-18,v2,2357,2304,60,2417,0.00021675,2026-07-02T21:45:05,"{
+  ""issue_key"": ""MC-299632"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides detailed steps to reproduce the issue, including specific commands and actions to take within the game, allowing another person to reasonably attempt to reproduce the bug.""
+}"
+MC-299909,Executable,"The report provides clear and detailed steps to reproduce the issue, including specific actions to take in the Minecraft Launcher and the expected outcomes, allowing another person to reasonably attempt to reproduce the bug.",valid_json,gpt-4o-mini-2024-07-18,v2,1845,1792,65,1910,0.00018135,2026-07-02T21:45:10,"{
+  ""issue_key"": ""MC-299909"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the issue, including specific actions to take in the Minecraft Launcher and the expected outcomes, allowing another person to reasonably attempt to reproduce the bug.""
+}"
+MC-299966,Executable,"The report provides clear and detailed steps to reproduce the bug, including the necessary setup, actions, and expected outcomes.",valid_json,gpt-4o-mini-2024-07-18,v2,1387,1280,51,1438,0.00014265,2026-07-02T21:45:12,"{
+  ""issue_key"": ""MC-299966"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including the necessary setup, actions, and expected outcomes.""
+}"
+MC-300025,Executable,"The report provides clear and concrete steps to reproduce the bug, including specific commands and actions to take within the game.",valid_json,gpt-4o-mini-2024-07-18,v2,1671,1536,51,1722,0.00016605,2026-07-02T21:45:14,"{
+  ""issue_key"": ""MC-300025"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and concrete steps to reproduce the bug, including specific commands and actions to take within the game.""
+}"
+MC-300031,Executable,"The report provides clear and detailed steps to reproduce the issue, including the necessary context, actions, and expected outcomes.",valid_json,gpt-4o-mini-2024-07-18,v2,1697,1664,51,1748,0.00016035,2026-07-02T21:45:16,"{
+  ""issue_key"": ""MC-300031"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the issue, including the necessary context, actions, and expected outcomes.""
+}"
+MC-300033,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific commands, actions, and expected versus actual behavior.",valid_json,gpt-4o-mini-2024-07-18,v2,1836,1792,52,1888,0.00017220,2026-07-02T21:45:18,"{
+  ""issue_key"": ""MC-300033"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific commands, actions, and expected versus actual behavior.""
+}"
+MC-300107,Executable,"The report provides clear steps to create Copper Golems and observe their behavior, allowing another person to reasonably attempt to reproduce the bug.",valid_json,gpt-4o-mini-2024-07-18,v2,1731,1664,55,1786,0.00016785,2026-07-02T21:45:20,"{
+  ""issue_key"": ""MC-300107"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear steps to create Copper Golems and observe their behavior, allowing another person to reasonably attempt to reproduce the bug.""
+}"
+MC-300143,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific commands and actions to take within the game.",valid_json,gpt-4o-mini-2024-07-18,v2,1816,1792,51,1867,0.00016860,2026-07-02T21:45:23,"{
+  ""issue_key"": ""MC-300143"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific commands and actions to take within the game.""
+}"
+MC-300388,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions, setup, and expected outcomes, allowing another person to reasonably attempt to reproduce the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,2054,1920,61,2115,0.00020070,2026-07-02T21:45:25,"{
+  ""issue_key"": ""MC-300388"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions, setup, and expected outcomes, allowing another person to reasonably attempt to reproduce the issue.""
+}"
+MC-300395,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions to take within the game and observations to make regarding the corrupted blocks.",valid_json,gpt-4o-mini-2024-07-18,v2,1709,1664,57,1766,0.00016575,2026-07-02T21:45:27,"{
+  ""issue_key"": ""MC-300395"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions to take within the game and observations to make regarding the corrupted blocks.""
+}"
+MC-300396,Executable,"The report provides clear and detailed steps to reproduce the bug, including the necessary actions and expected outcomes.",valid_json,gpt-4o-mini-2024-07-18,v2,1741,1664,48,1789,0.00016515,2026-07-02T21:45:30,"{
+  ""issue_key"": ""MC-300396"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including the necessary actions and expected outcomes.""
+}"
+MC-300408,Executable,"The report provides detailed steps to reproduce the bug, including specific actions, commands, and expected outcomes, allowing another person to reasonably attempt to reproduce the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,2176,2048,59,2235,0.00020820,2026-07-02T21:45:32,"{
+  ""issue_key"": ""MC-300408"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides detailed steps to reproduce the bug, including specific actions, commands, and expected outcomes, allowing another person to reasonably attempt to reproduce the issue.""
+}"
+MC-300409,Executable,"The report provides clear and detailed steps to reproduce the bug, including the setup of a Zombified Piglin farm, the command to teleport Piglins, and the conditions under which the command block drop occurs.",valid_json,gpt-4o-mini-2024-07-18,v2,1600,1536,70,1670,0.00016680,2026-07-02T21:45:34,"{
+  ""issue_key"": ""MC-300409"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including the setup of a Zombified Piglin farm, the command to teleport Piglins, and the conditions under which the command block drop occurs.""
+}"
+MC-300420,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions to take in the game settings and the expected outcomes based on those actions.",valid_json,gpt-4o-mini-2024-07-18,v2,1773,1664,58,1831,0.00017595,2026-07-02T21:45:37,"{
+  ""issue_key"": ""MC-300420"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions to take in the game settings and the expected outcomes based on those actions.""
+}"
+MC-300473,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific commands and actions that lead to the observed crash.",valid_json,gpt-4o-mini-2024-07-18,v2,1922,1792,52,1974,0.00018510,2026-07-02T21:45:40,"{
+  ""issue_key"": ""MC-300473"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific commands and actions that lead to the observed crash.""
+}"
+MC-300497,Executable,"The report provides clear and detailed steps to reproduce the issue, including specific actions to take and the expected outcomes, allowing another person to reasonably attempt to reproduce the bug.",valid_json,gpt-4o-mini-2024-07-18,v2,1612,1536,61,1673,0.00016320,2026-07-02T21:45:42,"{
+  ""issue_key"": ""MC-300497"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the issue, including specific actions to take and the expected outcomes, allowing another person to reasonably attempt to reproduce the bug.""
+}"
+MC-300515,Executable,"The report provides clear and detailed steps to reproduce the bug, including the necessary setup, actions to take, and the expected and observed behaviors.",valid_json,gpt-4o-mini-2024-07-18,v2,1640,1536,56,1696,0.00016440,2026-07-02T21:45:44,"{
+  ""issue_key"": ""MC-300515"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including the necessary setup, actions to take, and the expected and observed behaviors.""
+}"
+MC-300516,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions, conditions, and observations needed to trigger the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,1761,1664,54,1815,0.00017175,2026-07-02T21:45:48,"{
+  ""issue_key"": ""MC-300516"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions, conditions, and observations needed to trigger the issue.""
+}"
+MC-300519,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions to take and conditions to meet, allowing another person to reasonably attempt to replicate the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,1759,1664,61,1820,0.00017565,2026-07-02T21:45:50,"{
+  ""issue_key"": ""MC-300519"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions to take and conditions to meet, allowing another person to reasonably attempt to replicate the issue.""
+}"
+MC-300524,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions, conditions, and observations that can be followed by another person.",valid_json,gpt-4o-mini-2024-07-18,v2,2211,2176,56,2267,0.00020205,2026-07-02T21:45:53,"{
+  ""issue_key"": ""MC-300524"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions, conditions, and observations that can be followed by another person.""
+}"
+MC-300526,Executable,"The report provides clear and detailed steps to reproduce the issue, including specific actions and conditions that lead to the observed behavior.",valid_json,gpt-4o-mini-2024-07-18,v2,1755,1664,52,1807,0.00016965,2026-07-02T21:45:55,"{
+  ""issue_key"": ""MC-300526"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the issue, including specific actions and conditions that lead to the observed behavior.""
+}"
+MC-300527,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific commands and observations that can be followed by another person.",valid_json,gpt-4o-mini-2024-07-18,v2,1762,0,53,1815,0.00029610,2026-07-02T21:45:57,"{
+  ""issue_key"": ""MC-300527"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific commands and observations that can be followed by another person.""
+}"
+MC-300529,Executable,"The report provides clear and detailed steps to reproduce the bug, including the necessary context, actions, and observed behavior.",valid_json,gpt-4o-mini-2024-07-18,v2,1295,1152,51,1346,0.00013845,2026-07-02T21:45:59,"{
+  ""issue_key"": ""MC-300529"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including the necessary context, actions, and observed behavior.""
+}"
+MC-300530,Non-Executable,"The report describes a symptom of the bug without providing clear actions or conditions to reproduce it, making it too vague for another person to attempt reproduction.",valid_json,gpt-4o-mini-2024-07-18,v2,619,0,59,678,0.00012825,2026-07-02T21:46:02,"{
+  ""issue_key"": ""MC-300530"",
+  ""s2r_label"": ""Non-Executable"",
+  ""reason"": ""The report describes a symptom of the bug without providing clear actions or conditions to reproduce it, making it too vague for another person to attempt reproduction.""
+}"
+MC-300535,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions, conditions, and expected outcomes, allowing another person to reasonably attempt to replicate the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,2772,2688,61,2833,0.00025080,2026-07-02T21:46:04,"{
+  ""issue_key"": ""MC-300535"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions, conditions, and expected outcomes, allowing another person to reasonably attempt to replicate the issue.""
+}"
+MC-300539,Executable,"The report provides clear steps to reproduce the bug, including creating a new world, not sleeping, and observing the behavior of phantoms during the first night.",valid_json,gpt-4o-mini-2024-07-18,v2,1555,1408,60,1615,0.00016365,2026-07-02T21:46:06,"{
+  ""issue_key"": ""MC-300539"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear steps to reproduce the bug, including creating a new world, not sleeping, and observing the behavior of phantoms during the first night.""
+}"
+MC-300546,Executable,"The report provides clear and detailed steps to reproduce the bug, including the necessary setup, actions to take, and the expected and observed behaviors.",valid_json,gpt-4o-mini-2024-07-18,v2,1485,1408,56,1541,0.00015075,2026-07-02T21:46:08,"{
+  ""issue_key"": ""MC-300546"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including the necessary setup, actions to take, and the expected and observed behaviors.""
+}"
+MC-300562,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions, conditions, and observations that can be followed by another player.",valid_json,gpt-4o-mini-2024-07-18,v2,2300,2176,56,2356,0.00021540,2026-07-02T21:46:11,"{
+  ""issue_key"": ""MC-300562"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions, conditions, and observations that can be followed by another player.""
+}"
+MC-300572,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions that lead to the observed behavior.",valid_json,gpt-4o-mini-2024-07-18,v2,1434,1408,52,1486,0.00014070,2026-07-02T21:46:13,"{
+  ""issue_key"": ""MC-300572"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions that lead to the observed behavior.""
+}"
+MC-300574,Executable,"The report provides clear and detailed steps to reproduce the bug, including the necessary setup, actions to take, and the expected and observed behaviors.",valid_json,gpt-4o-mini-2024-07-18,v2,1628,1536,56,1684,0.00016260,2026-07-02T21:46:15,"{
+  ""issue_key"": ""MC-300574"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including the necessary setup, actions to take, and the expected and observed behaviors.""
+}"
+MC-300598,Executable,"The report provides clear and concrete steps to reproduce the bug, including the setup, actions to take, and the expected outcome, allowing another person to reasonably attempt to reproduce the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,1474,1408,64,1538,0.00015390,2026-07-02T21:46:18,"{
+  ""issue_key"": ""MC-300598"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and concrete steps to reproduce the bug, including the setup, actions to take, and the expected outcome, allowing another person to reasonably attempt to reproduce the issue.""
+}"
+MC-300599,Executable,"The report provides clear and detailed steps to reproduce the bug, including the setup, actions to take, and the expected and observed behaviors.",valid_json,gpt-4o-mini-2024-07-18,v2,1505,1408,55,1560,0.00015315,2026-07-02T21:46:21,"{
+  ""issue_key"": ""MC-300599"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including the setup, actions to take, and the expected and observed behaviors.""
+}"
+MC-300602,Executable,"The report provides clear steps to create a new Survival world, explore cave systems, and observe the trees growing underwater, allowing another person to reasonably attempt to reproduce the bug.",valid_json,gpt-4o-mini-2024-07-18,v2,1218,1152,62,1280,0.00013350,2026-07-02T21:46:23,"{
+  ""issue_key"": ""MC-300602"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear steps to create a new Survival world, explore cave systems, and observe the trees growing underwater, allowing another person to reasonably attempt to reproduce the bug.""
+}"
+MC-300607,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions to take in the game and the expected observations, allowing another person to reasonably attempt to reproduce the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,2271,2176,64,2335,0.00021585,2026-07-02T21:46:26,"{
+  ""issue_key"": ""MC-300607"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions to take in the game and the expected observations, allowing another person to reasonably attempt to reproduce the issue.""
+}"
+MC-300611,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions to take and the expected observations, allowing another person to reasonably attempt to reproduce the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,1966,1920,61,2027,0.00018750,2026-07-02T21:46:28,"{
+  ""issue_key"": ""MC-300611"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions to take and the expected observations, allowing another person to reasonably attempt to reproduce the issue.""
+}"
+MC-300612,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions to take and the expected outcomes, allowing another person to reasonably attempt to reproduce the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,1763,1664,61,1824,0.00017625,2026-07-02T21:46:30,"{
+  ""issue_key"": ""MC-300612"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions to take and the expected outcomes, allowing another person to reasonably attempt to reproduce the issue.""
+}"
+MC-300614,Executable,"The report provides clear and detailed steps to reproduce the bug, including the necessary context, user actions, and the observed incorrect behavior.",valid_json,gpt-4o-mini-2024-07-18,v2,1865,0,54,1919,0.00031215,2026-07-02T21:46:32,"{
+  ""issue_key"": ""MC-300614"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including the necessary context, user actions, and the observed incorrect behavior.""
+}"
+MC-300618,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions to take and conditions to check, allowing another person to reasonably attempt to reproduce the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,1701,1664,61,1762,0.00016695,2026-07-02T21:46:34,"{
+  ""issue_key"": ""MC-300618"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions to take and conditions to check, allowing another person to reasonably attempt to reproduce the issue.""
+}"
+MC-300620,Executable,"The report provides clear and detailed steps to reproduce the bug, including the necessary setup, actions to take, and the expected and observed behaviors.",valid_json,gpt-4o-mini-2024-07-18,v2,1724,1664,56,1780,0.00016740,2026-07-02T21:46:37,"{
+  ""issue_key"": ""MC-300620"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including the necessary setup, actions to take, and the expected and observed behaviors.""
+}"
+MC-300634,Executable,"The report provides clear and detailed steps to reproduce the issue, including specific actions and conditions that trigger the lag, making it possible for others to replicate the problem.",valid_json,gpt-4o-mini-2024-07-18,v2,1415,0,60,1475,0.00024825,2026-07-02T21:46:39,"{
+  ""issue_key"": ""MC-300634"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the issue, including specific actions and conditions that trigger the lag, making it possible for others to replicate the problem.""
+}"
+MC-300643,Executable,"The report provides clear and detailed steps to reproduce the issue, including specific hardware requirements, actions to take, and expected outcomes, allowing another person to reasonably attempt to reproduce the bug.",valid_json,gpt-4o-mini-2024-07-18,v2,2399,2304,64,2463,0.00022545,2026-07-02T21:46:41,"{
+  ""issue_key"": ""MC-300643"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the issue, including specific hardware requirements, actions to take, and expected outcomes, allowing another person to reasonably attempt to reproduce the bug.""
+}"
+MC-300647,Executable,"The report provides clear and detailed steps to reproduce the bug, including the necessary actions, context, and observed behavior.",valid_json,gpt-4o-mini-2024-07-18,v2,1700,1664,51,1751,0.00016080,2026-07-02T21:46:45,"{
+  ""issue_key"": ""MC-300647"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including the necessary actions, context, and observed behavior.""
+}"
+MC-300649,Executable,"The report provides detailed steps to create a resource pack with overlays, activate it, and observe the expected behavior, allowing another person to reasonably reproduce the bug.",valid_json,gpt-4o-mini-2024-07-18,v2,2276,2176,59,2335,0.00021360,2026-07-02T21:46:47,"{
+  ""issue_key"": ""MC-300649"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides detailed steps to create a resource pack with overlays, activate it, and observe the expected behavior, allowing another person to reasonably reproduce the bug.""
+}"
+MC-300659,Executable,"The report provides clear and detailed steps to reproduce the issue, including necessary context, user actions, and expected outcomes.",valid_json,gpt-4o-mini-2024-07-18,v2,1797,1664,51,1848,0.00017535,2026-07-02T21:46:49,"{
+  ""issue_key"": ""MC-300659"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the issue, including necessary context, user actions, and expected outcomes.""
+}"
+MC-300683,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions that lead to the game crash.",valid_json,gpt-4o-mini-2024-07-18,v2,1477,1408,52,1529,0.00014715,2026-07-02T21:46:51,"{
+  ""issue_key"": ""MC-300683"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions that lead to the game crash.""
+}"
+MC-300715,Executable,"The report provides clear steps to reproduce the bug, including specific actions to take in the game and the expected outcomes, allowing another person to reasonably attempt to reproduce the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,1569,0,62,1631,0.00027255,2026-07-02T21:46:53,"{
+  ""issue_key"": ""MC-300715"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear steps to reproduce the bug, including specific actions to take in the game and the expected outcomes, allowing another person to reasonably attempt to reproduce the issue.""
+}"
+MC-300731,Executable,"The report provides clear and concrete steps to reproduce the issue, including launching the game, waiting for the main menu, remaining inactive, and observing the flashing behavior.",valid_json,gpt-4o-mini-2024-07-18,v2,1539,1408,60,1599,0.00016125,2026-07-02T21:46:55,"{
+  ""issue_key"": ""MC-300731"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and concrete steps to reproduce the issue, including launching the game, waiting for the main menu, remaining inactive, and observing the flashing behavior.""
+}"
+MC-300736,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions to take and conditions to meet, allowing another person to reasonably attempt to reproduce the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,1460,0,61,1521,0.00025560,2026-07-02T21:46:58,"{
+  ""issue_key"": ""MC-300736"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions to take and conditions to meet, allowing another person to reasonably attempt to reproduce the issue.""
+}"
+MC-300737,Executable,"The report provides detailed steps to reproduce the bug, including specific actions to take in the game, the setup required, and the expected outcome, allowing another person to reasonably attempt to reproduce the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,2141,0,67,2208,0.00036135,2026-07-02T21:47:00,"{
+  ""issue_key"": ""MC-300737"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides detailed steps to reproduce the bug, including specific actions to take in the game, the setup required, and the expected outcome, allowing another person to reasonably attempt to reproduce the issue.""
+}"
+MC-300745,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions to take in the game environment, which allows another person to reasonably attempt to replicate the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,1657,1536,62,1719,0.00017055,2026-07-02T21:47:03,"{
+  ""issue_key"": ""MC-300745"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions to take in the game environment, which allows another person to reasonably attempt to replicate the issue.""
+}"
+MC-300760,Executable,"The report provides clear and detailed steps to reproduce the issue, including specific actions to take and the expected outcomes.",valid_json,gpt-4o-mini-2024-07-18,v2,1580,1536,50,1630,0.00015180,2026-07-02T21:47:12,"{
+  ""issue_key"": ""MC-300760"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the issue, including specific actions to take and the expected outcomes.""
+}"
+MC-300761,Executable,"The report provides clear and concrete steps to reproduce the issue, including the necessary setup (HDR enabled in Windows), user actions (launching Minecraft), and the observed behavior (HDR being disabled).",valid_json,gpt-4o-mini-2024-07-18,v2,1439,1408,67,1506,0.00015045,2026-07-02T21:47:14,"{
+  ""issue_key"": ""MC-300761"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and concrete steps to reproduce the issue, including the necessary setup (HDR enabled in Windows), user actions (launching Minecraft), and the observed behavior (HDR being disabled).""
+}"
+MC-300768,Executable,"The report provides detailed steps to reproduce the issue, including specific actions and conditions needed to trigger the bug.",valid_json,gpt-4o-mini-2024-07-18,v2,1194,1152,49,1243,0.00012210,2026-07-02T21:47:17,"{
+  ""issue_key"": ""MC-300768"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides detailed steps to reproduce the issue, including specific actions and conditions needed to trigger the bug.""
+}"
+MC-300774,Executable,"The report provides clear and detailed steps to reproduce the issue, including specific actions to take in both Minecraft and Discord, along with the expected and observed behaviors.",valid_json,gpt-4o-mini-2024-07-18,v2,1607,1536,59,1666,0.00016125,2026-07-02T21:47:18,"{
+  ""issue_key"": ""MC-300774"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the issue, including specific actions to take in both Minecraft and Discord, along with the expected and observed behaviors.""
+}"
+MC-300776,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions that lead to the observed incorrect behavior.",valid_json,gpt-4o-mini-2024-07-18,v2,1761,1664,53,1814,0.00017115,2026-07-02T21:47:21,"{
+  ""issue_key"": ""MC-300776"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions that lead to the observed incorrect behavior.""
+}"
+MC-300778,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific commands and configurations needed to trigger the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,1727,1664,51,1778,0.00016485,2026-07-02T21:47:23,"{
+  ""issue_key"": ""MC-300778"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific commands and configurations needed to trigger the issue.""
+}"
+MC-300786,Executable,"The report provides clear and detailed steps to reproduce the issue with Arabic language support in Minecraft, including specific actions and observations that can be followed by another person.",valid_json,gpt-4o-mini-2024-07-18,v2,1757,1664,59,1816,0.00017415,2026-07-02T21:47:24,"{
+  ""issue_key"": ""MC-300786"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the issue with Arabic language support in Minecraft, including specific actions and observations that can be followed by another person.""
+}"
+MC-300789,Executable,"The report provides clear and concrete steps to reproduce the bug, including specific actions to take in the game environment.",valid_json,gpt-4o-mini-2024-07-18,v2,1275,1152,50,1325,0.00013485,2026-07-02T21:47:27,"{
+  ""issue_key"": ""MC-300789"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and concrete steps to reproduce the bug, including specific actions to take in the game environment.""
+}"
+MC-300792,Executable,"The report provides clear and concrete steps to reproduce the bug, detailing the necessary actions and the expected and observed behaviors.",valid_json,gpt-4o-mini-2024-07-18,v2,1243,1152,51,1294,0.00013065,2026-07-02T21:47:29,"{
+  ""issue_key"": ""MC-300792"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and concrete steps to reproduce the bug, detailing the necessary actions and the expected and observed behaviors.""
+}"
+MC-300793,Executable,"The report provides clear and detailed steps to reproduce the issue, including specific actions and conditions that lead to the observed behavior.",valid_json,gpt-4o-mini-2024-07-18,v2,1639,1536,52,1691,0.00016185,2026-07-02T21:47:31,"{
+  ""issue_key"": ""MC-300793"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the issue, including specific actions and conditions that lead to the observed behavior.""
+}"
+MC-300806,Executable,"The report provides clear and detailed steps to reproduce the issue, including specific actions and commands that can be followed to trigger the bug.",valid_json,gpt-4o-mini-2024-07-18,v2,1771,1664,54,1825,0.00017325,2026-07-02T21:47:33,"{
+  ""issue_key"": ""MC-300806"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the issue, including specific actions and commands that can be followed to trigger the bug.""
+}"
+MC-300807,Executable,"The report provides detailed steps to reproduce the issue, including downloading the server JAR, running the server, and using the data generator to observe the block type IDs, which allows another person to reasonably attempt to reproduce the bug.",valid_json,gpt-4o-mini-2024-07-18,v2,2171,2048,73,2244,0.00021585,2026-07-02T21:47:35,"{
+  ""issue_key"": ""MC-300807"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides detailed steps to reproduce the issue, including downloading the server JAR, running the server, and using the data generator to observe the block type IDs, which allows another person to reasonably attempt to reproduce the bug.""
+}"
+MC-300809,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions to take in the game and the expected outcomes.",valid_json,gpt-4o-mini-2024-07-18,v2,1734,1664,53,1787,0.00016710,2026-07-02T21:47:38,"{
+  ""issue_key"": ""MC-300809"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions to take in the game and the expected outcomes.""
+}"
+MC-300815,Executable,"The report provides clear steps to reproduce the issue, detailing the necessary actions and conditions to trigger the bug related to crafting a Soul Lantern.",valid_json,gpt-4o-mini-2024-07-18,v2,1557,1536,55,1612,0.00015135,2026-07-02T21:47:40,"{
+  ""issue_key"": ""MC-300815"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear steps to reproduce the issue, detailing the necessary actions and conditions to trigger the bug related to crafting a Soul Lantern.""
+}"
+MC-300836,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions, conditions, and expected outcomes, allowing another person to reasonably attempt to replicate the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,1646,1536,61,1707,0.00016830,2026-07-02T21:47:42,"{
+  ""issue_key"": ""MC-300836"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions, conditions, and expected outcomes, allowing another person to reasonably attempt to replicate the issue.""
+}"
+MC-300843,Executable,"The report provides clear and detailed steps to reproduce the bug, including the necessary setup, actions, and expected outcomes.",valid_json,gpt-4o-mini-2024-07-18,v2,1751,1664,51,1802,0.00016845,2026-07-02T21:47:51,"{
+  ""issue_key"": ""MC-300843"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including the necessary setup, actions, and expected outcomes.""
+}"
+MC-300844,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific commands and actions to take in the game.",valid_json,gpt-4o-mini-2024-07-18,v2,1507,1408,51,1558,0.00015105,2026-07-02T21:47:53,"{
+  ""issue_key"": ""MC-300844"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific commands and actions to take in the game.""
+}"
+MC-300845,Executable,"The report provides clear steps to reproduce the issue, detailing the actions to take and the expected outcomes, allowing another person to reasonably attempt to reproduce the bug.",valid_json,gpt-4o-mini-2024-07-18,v2,1316,1280,59,1375,0.00013680,2026-07-02T21:47:55,"{
+  ""issue_key"": ""MC-300845"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear steps to reproduce the issue, detailing the actions to take and the expected outcomes, allowing another person to reasonably attempt to reproduce the bug.""
+}"
+MC-300851,Executable,"The report provides clear and detailed steps to reproduce the bug, including the necessary context, actions, and expected outcomes.",valid_json,gpt-4o-mini-2024-07-18,v2,1811,1664,51,1862,0.00017745,2026-07-02T21:47:57,"{
+  ""issue_key"": ""MC-300851"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including the necessary context, actions, and expected outcomes.""
+}"
+MC-300860,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions to take in the game, the context of using a test server, and the expected outcomes of those actions.",valid_json,gpt-4o-mini-2024-07-18,v2,1962,1920,65,2027,0.00018930,2026-07-02T21:48:00,"{
+  ""issue_key"": ""MC-300860"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions to take in the game, the context of using a test server, and the expected outcomes of those actions.""
+}"
+MC-300861,Executable,"The report provides clear and detailed steps to reproduce the bug, including the necessary setup, actions to take, and the expected and observed behaviors.",valid_json,gpt-4o-mini-2024-07-18,v2,1629,1536,56,1685,0.00016275,2026-07-02T21:48:02,"{
+  ""issue_key"": ""MC-300861"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including the necessary setup, actions to take, and the expected and observed behaviors.""
+}"
+MC-300872,Executable,"The report provides clear steps to reproduce the bug, including specific actions to take while sprinting and attacking another player, along with the expected and observed behaviors.",valid_json,gpt-4o-mini-2024-07-18,v2,1677,1536,59,1736,0.00017175,2026-07-02T21:48:04,"{
+  ""issue_key"": ""MC-300872"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear steps to reproduce the bug, including specific actions to take while sprinting and attacking another player, along with the expected and observed behaviors.""
+}"
+MC-300874,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions that lead to the observed behavior.",valid_json,gpt-4o-mini-2024-07-18,v2,1809,1664,52,1861,0.00017775,2026-07-02T21:48:06,"{
+  ""issue_key"": ""MC-300874"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions that lead to the observed behavior.""
+}"
+MC-300875,Executable,"The report provides clear and detailed steps to reproduce the bug, including the necessary context, actions, and expected outcomes.",valid_json,gpt-4o-mini-2024-07-18,v2,1815,1792,51,1866,0.00016845,2026-07-02T21:48:09,"{
+  ""issue_key"": ""MC-300875"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including the necessary context, actions, and expected outcomes.""
+}"
+MC-300876,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions to take in the game and the expected comparisons to make after generating worlds with the same seed.",valid_json,gpt-4o-mini-2024-07-18,v2,1961,1920,62,2023,0.00018735,2026-07-02T21:48:11,"{
+  ""issue_key"": ""MC-300876"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions to take in the game and the expected comparisons to make after generating worlds with the same seed.""
+}"
+MC-300877,Executable,"The report provides clear and detailed steps to reproduce the bug, including the necessary context, actions, and expected versus observed behavior.",valid_json,gpt-4o-mini-2024-07-18,v2,1733,1664,53,1786,0.00016695,2026-07-02T21:48:13,"{
+  ""issue_key"": ""MC-300877"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including the necessary context, actions, and expected versus observed behavior.""
+}"
+MC-300881,Executable,"The report provides clear and detailed steps to reproduce the issue, including the necessary context, user actions, and the observed incorrect behavior.",valid_json,gpt-4o-mini-2024-07-18,v2,1614,1536,54,1668,0.00015930,2026-07-02T21:48:15,"{
+  ""issue_key"": ""MC-300881"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the issue, including the necessary context, user actions, and the observed incorrect behavior.""
+}"
+MC-300886,Executable,"The report provides clear and detailed steps to reproduce the issue, including specific actions and conditions that lead to the observed incorrect behavior.",valid_json,gpt-4o-mini-2024-07-18,v2,1549,1408,53,1602,0.00015855,2026-07-02T21:48:17,"{
+  ""issue_key"": ""MC-300886"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the issue, including specific actions and conditions that lead to the observed incorrect behavior.""
+}"
+MC-300889,Executable,"The report provides clear and detailed steps to reproduce the bug, including the necessary context, actions, and observed behavior.",valid_json,gpt-4o-mini-2024-07-18,v2,1583,1536,51,1634,0.00015285,2026-07-02T21:48:19,"{
+  ""issue_key"": ""MC-300889"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including the necessary context, actions, and observed behavior.""
+}"
+MC-300891,Executable,"The report provides clear and detailed steps to reproduce the bug, including the necessary setup, actions to take, and the expected and observed behaviors.",valid_json,gpt-4o-mini-2024-07-18,v2,1487,1408,56,1543,0.00015105,2026-07-02T21:48:21,"{
+  ""issue_key"": ""MC-300891"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including the necessary setup, actions to take, and the expected and observed behaviors.""
+}"
+MC-300894,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific commands and actions to take within the game.",valid_json,gpt-4o-mini-2024-07-18,v2,1855,1792,51,1906,0.00017445,2026-07-02T21:48:23,"{
+  ""issue_key"": ""MC-300894"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific commands and actions to take within the game.""
+}"
+MC-300898,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions to take within the game and the expected observations.",valid_json,gpt-4o-mini-2024-07-18,v2,1639,1536,53,1692,0.00016245,2026-07-02T21:48:25,"{
+  ""issue_key"": ""MC-300898"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions to take within the game and the expected observations.""
+}"
+MC-300902,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions needed to trigger the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,1565,1536,51,1616,0.00015015,2026-07-02T21:48:27,"{
+  ""issue_key"": ""MC-300902"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions needed to trigger the issue.""
+}"
+MC-300903,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions, setup, and expected outcomes, allowing another person to reasonably attempt to reproduce the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,2307,2176,61,2368,0.00021945,2026-07-02T21:48:29,"{
+  ""issue_key"": ""MC-300903"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions, setup, and expected outcomes, allowing another person to reasonably attempt to reproduce the issue.""
+}"
+MC-300905,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions needed to trigger the issue with hoppers.",valid_json,gpt-4o-mini-2024-07-18,v2,1791,1664,54,1845,0.00017625,2026-07-02T21:48:31,"{
+  ""issue_key"": ""MC-300905"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions needed to trigger the issue with hoppers.""
+}"
+MC-300915,Executable,"The report provides detailed steps to reproduce the issue, including specific actions and conditions that lead to the observed incorrect behavior.",valid_json,gpt-4o-mini-2024-07-18,v2,2103,2048,51,2154,0.00019245,2026-07-02T21:48:33,"{
+  ""issue_key"": ""MC-300915"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides detailed steps to reproduce the issue, including specific actions and conditions that lead to the observed incorrect behavior.""
+}"
+MC-300925,Executable,"The report provides clear and detailed steps to reproduce the bug, including the necessary setup, user actions, and the expected and observed behaviors.",valid_json,gpt-4o-mini-2024-07-18,v2,1765,1664,55,1820,0.00017295,2026-07-02T21:48:35,"{
+  ""issue_key"": ""MC-300925"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including the necessary setup, user actions, and the expected and observed behaviors.""
+}"
+MC-300927,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions to take within the game and the expected outcomes, allowing another person to reasonably attempt to reproduce the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,1800,1664,64,1864,0.00018360,2026-07-02T21:48:37,"{
+  ""issue_key"": ""MC-300927"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions to take within the game and the expected outcomes, allowing another person to reasonably attempt to reproduce the issue.""
+}"
+MC-300934,Executable,"The report provides clear and detailed steps to reproduce the issue, including specific actions to take within the game and the expected outcomes.",valid_json,gpt-4o-mini-2024-07-18,v2,1544,1408,53,1597,0.00015780,2026-07-02T21:48:40,"{
+  ""issue_key"": ""MC-300934"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the issue, including specific actions to take within the game and the expected outcomes.""
+}"
+MC-300935,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions and expected outcomes related to the redstone mechanics.",valid_json,gpt-4o-mini-2024-07-18,v2,1853,1792,53,1906,0.00017535,2026-07-02T21:48:42,"{
+  ""issue_key"": ""MC-300935"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions and expected outcomes related to the redstone mechanics.""
+}"
+MC-300937,Executable,"The report provides clear and detailed steps to reproduce the issue, including specific actions required to unlock the achievement and the context in which the issue occurs.",valid_json,gpt-4o-mini-2024-07-18,v2,1748,1664,57,1805,0.00017160,2026-07-02T21:48:44,"{
+  ""issue_key"": ""MC-300937"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the issue, including specific actions required to unlock the achievement and the context in which the issue occurs.""
+}"
+MC-300943,Executable,"The report provides clear and detailed steps to reproduce the issue, including specific actions to take within the game and the expected outcomes.",valid_json,gpt-4o-mini-2024-07-18,v2,1491,1408,53,1544,0.00014985,2026-07-02T21:48:46,"{
+  ""issue_key"": ""MC-300943"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the issue, including specific actions to take within the game and the expected outcomes.""
+}"
+MC-300953,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions, expected outcomes, and the context needed to replicate the performance issues.",valid_json,gpt-4o-mini-2024-07-18,v2,2016,0,57,2073,0.00033660,2026-07-02T21:48:48,"{
+  ""issue_key"": ""MC-300953"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions, expected outcomes, and the context needed to replicate the performance issues.""
+}"
+MC-300957,Executable,"The report provides clear and detailed steps to reproduce the issue, including specific actions to take within the game and the expected outcomes, allowing another person to reasonably attempt to reproduce the bug.",valid_json,gpt-4o-mini-2024-07-18,v2,1809,1664,64,1873,0.00018495,2026-07-02T21:48:51,"{
+  ""issue_key"": ""MC-300957"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the issue, including specific actions to take within the game and the expected outcomes, allowing another person to reasonably attempt to reproduce the bug.""
+}"
+MC-300962,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions that trigger the issue, making it possible for another person to replicate the problem.",valid_json,gpt-4o-mini-2024-07-18,v2,1811,1664,61,1872,0.00018345,2026-07-02T21:48:53,"{
+  ""issue_key"": ""MC-300962"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions that trigger the issue, making it possible for another person to replicate the problem.""
+}"
+MC-300973,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific commands and conditions necessary to observe the issue with the copper golem's oxidation.",valid_json,gpt-4o-mini-2024-07-18,v2,1828,1792,58,1886,0.00017460,2026-07-02T21:48:56,"{
+  ""issue_key"": ""MC-300973"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific commands and conditions necessary to observe the issue with the copper golem's oxidation.""
+}"
+MC-300980,Executable,"The report provides clear steps to reproduce the bug, detailing the actions to take in the game and the expected versus observed behavior.",valid_json,gpt-4o-mini-2024-07-18,v2,1577,1536,53,1630,0.00015315,2026-07-02T21:48:58,"{
+  ""issue_key"": ""MC-300980"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear steps to reproduce the bug, detailing the actions to take in the game and the expected versus observed behavior.""
+}"
+MC-300998,Non-Executable,"The report does not provide any concrete information about actions, setup, or observed behavior, making it impossible to reproduce the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,557,0,55,612,0.00011655,2026-07-02T21:49:00,"{
+  ""issue_key"": ""MC-300998"",
+  ""s2r_label"": ""Non-Executable"",
+  ""reason"": ""The report does not provide any concrete information about actions, setup, or observed behavior, making it impossible to reproduce the issue.""
+}"
+MC-301008,Executable,"The report provides clear and concrete steps to reproduce the issue, including specific code snippets and expected outcomes, allowing another person to reasonably attempt to reproduce the bug.",valid_json,gpt-4o-mini-2024-07-18,v2,2045,0,59,2104,0.00034215,2026-07-02T21:49:03,"{
+  ""issue_key"": ""MC-301008"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and concrete steps to reproduce the issue, including specific code snippets and expected outcomes, allowing another person to reasonably attempt to reproduce the bug.""
+}"
+MC-301018,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions to take and the expected outcomes, allowing another person to reasonably attempt to reproduce the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,1541,1408,61,1602,0.00016215,2026-07-02T21:49:05,"{
+  ""issue_key"": ""MC-301018"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions to take and the expected outcomes, allowing another person to reasonably attempt to reproduce the issue.""
+}"
+MC-301045,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions to take, conditions to meet, and the expected observations during gameplay.",valid_json,gpt-4o-mini-2024-07-18,v2,2013,1920,57,2070,0.00019215,2026-07-02T21:49:08,"{
+  ""issue_key"": ""MC-301045"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions to take, conditions to meet, and the expected observations during gameplay.""
+}"
+MC-301046,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions that lead to the observed warning message during server startup.",valid_json,gpt-4o-mini-2024-07-18,v2,1829,1792,56,1885,0.00017355,2026-07-02T21:49:11,"{
+  ""issue_key"": ""MC-301046"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions that lead to the observed warning message during server startup.""
+}"
+MC-301052,Executable,"The report provides clear steps to reproduce the issue, including specific actions to take within the game and the conditions to observe, allowing another person to reasonably attempt to replicate the bug.",valid_json,gpt-4o-mini-2024-07-18,v2,1213,1152,63,1276,0.00013335,2026-07-02T21:49:13,"{
+  ""issue_key"": ""MC-301052"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear steps to reproduce the issue, including specific actions to take within the game and the conditions to observe, allowing another person to reasonably attempt to replicate the bug.""
+}"
+MC-301059,Executable,"The report provides clear and detailed steps to reproduce the issue, including specific actions to take in the game environment, which allows another person to reasonably attempt to reproduce the bug.",valid_json,gpt-4o-mini-2024-07-18,v2,1532,1408,62,1594,0.00016140,2026-07-02T21:49:15,"{
+  ""issue_key"": ""MC-301059"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the issue, including specific actions to take in the game environment, which allows another person to reasonably attempt to reproduce the bug.""
+}"
+MC-301071,Executable,"The report provides clear and detailed steps to reproduce the bug, including the context of creating a new world, obtaining a Fence Gate, and the specific actions to take to observe the incorrect sound behavior.",valid_json,gpt-4o-mini-2024-07-18,v2,1601,1536,67,1668,0.00016515,2026-07-02T21:49:18,"{
+  ""issue_key"": ""MC-301071"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including the context of creating a new world, obtaining a Fence Gate, and the specific actions to take to observe the incorrect sound behavior.""
+}"
+MC-301073,Executable,"The report provides clear and detailed steps to reproduce the bug, including the necessary context, actions, and expected outcomes.",valid_json,gpt-4o-mini-2024-07-18,v2,1570,1536,51,1621,0.00015090,2026-07-02T21:49:20,"{
+  ""issue_key"": ""MC-301073"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including the necessary context, actions, and expected outcomes.""
+}"
+MC-301076,Executable,"The report provides clear and detailed steps to reproduce the issue, including specific actions to take and the expected outcomes, allowing another person to reasonably attempt to reproduce the bug.",valid_json,gpt-4o-mini-2024-07-18,v2,1584,1536,61,1645,0.00015900,2026-07-02T21:49:22,"{
+  ""issue_key"": ""MC-301076"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the issue, including specific actions to take and the expected outcomes, allowing another person to reasonably attempt to reproduce the bug.""
+}"
+MC-301106,Executable,"The report provides clear and concrete steps to reproduce the bug, including the necessary setup, actions, and expected outcomes.",valid_json,gpt-4o-mini-2024-07-18,v2,1521,1408,51,1572,0.00015315,2026-07-02T21:49:24,"{
+  ""issue_key"": ""MC-301106"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and concrete steps to reproduce the bug, including the necessary setup, actions, and expected outcomes.""
+}"
+MC-301108,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions that lead to the observed incorrect behavior.",valid_json,gpt-4o-mini-2024-07-18,v2,1878,1792,53,1931,0.00017910,2026-07-02T21:49:26,"{
+  ""issue_key"": ""MC-301108"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions that lead to the observed incorrect behavior.""
+}"
+MC-301109,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions that lead to the observed duplication issue.",valid_json,gpt-4o-mini-2024-07-18,v2,1750,1664,53,1803,0.00016950,2026-07-02T21:49:28,"{
+  ""issue_key"": ""MC-301109"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions that lead to the observed duplication issue.""
+}"
+MC-301111,Executable,"The report provides clear and detailed steps to reproduce the bug, including the necessary context, actions, and expected outcomes.",valid_json,gpt-4o-mini-2024-07-18,v2,1748,1664,51,1799,0.00016800,2026-07-02T21:49:30,"{
+  ""issue_key"": ""MC-301111"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including the necessary context, actions, and expected outcomes.""
+}"
+MC-301117,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions to take and the expected observations, allowing another person to reasonably attempt to reproduce the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,1860,1792,61,1921,0.00018120,2026-07-02T21:49:32,"{
+  ""issue_key"": ""MC-301117"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions to take and the expected observations, allowing another person to reasonably attempt to reproduce the issue.""
+}"
+MC-301122,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions and observations that can be followed by another person.",valid_json,gpt-4o-mini-2024-07-18,v2,1675,1536,53,1728,0.00016785,2026-07-02T21:49:34,"{
+  ""issue_key"": ""MC-301122"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions and observations that can be followed by another person.""
+}"
+MC-301125,Executable,"The report provides clear and detailed steps to reproduce the issue, including specific actions to take in the game and the expected outcomes.",valid_json,gpt-4o-mini-2024-07-18,v2,1503,1408,53,1556,0.00015165,2026-07-02T21:49:37,"{
+  ""issue_key"": ""MC-301125"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the issue, including specific actions to take in the game and the expected outcomes.""
+}"
+MC-301128,Executable,"The report provides clear and detailed steps to reproduce the issue, including specific actions to take in the game and the expected outcomes, allowing another person to reasonably attempt to reproduce the bug.",valid_json,gpt-4o-mini-2024-07-18,v2,1751,1664,64,1815,0.00017625,2026-07-02T21:49:39,"{
+  ""issue_key"": ""MC-301128"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the issue, including specific actions to take in the game and the expected outcomes, allowing another person to reasonably attempt to reproduce the bug.""
+}"
+MC-301131,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific commands and conditions necessary to observe the floating behavior of spiders in the specified biomes.",valid_json,gpt-4o-mini-2024-07-18,v2,1661,1536,59,1720,0.00016935,2026-07-02T21:49:41,"{
+  ""issue_key"": ""MC-301131"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific commands and conditions necessary to observe the floating behavior of spiders in the specified biomes.""
+}"
+MC-301132,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions that lead to the observed issue.",valid_json,gpt-4o-mini-2024-07-18,v2,1723,1664,52,1775,0.00016485,2026-07-02T21:49:43,"{
+  ""issue_key"": ""MC-301132"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions that lead to the observed issue.""
+}"
+MC-301135,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions necessary to observe the unintended behavior of iron golems planting flowers.",valid_json,gpt-4o-mini-2024-07-18,v2,1691,1664,58,1749,0.00016365,2026-07-02T21:49:46,"{
+  ""issue_key"": ""MC-301135"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions necessary to observe the unintended behavior of iron golems planting flowers.""
+}"
+MC-301141,Executable,"The report provides clear and detailed steps to reproduce the bug, including the necessary setup, actions, and expected outcomes.",valid_json,gpt-4o-mini-2024-07-18,v2,1819,1792,51,1870,0.00016905,2026-07-02T21:49:48,"{
+  ""issue_key"": ""MC-301141"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including the necessary setup, actions, and expected outcomes.""
+}"
+MC-301151,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions to take and the expected outcome, allowing another person to reasonably attempt to reproduce the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,1713,1664,61,1774,0.00016875,2026-07-02T21:49:50,"{
+  ""issue_key"": ""MC-301151"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions to take and the expected outcome, allowing another person to reasonably attempt to reproduce the issue.""
+}"
+MC-301157,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions, commands, and conditions necessary to observe the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,1467,1408,54,1521,0.00014685,2026-07-02T21:49:54,"{
+  ""issue_key"": ""MC-301157"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions, commands, and conditions necessary to observe the issue.""
+}"
+MC-301159,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions that lead to the observed incorrect behavior.",valid_json,gpt-4o-mini-2024-07-18,v2,1457,1408,53,1510,0.00014475,2026-07-02T21:49:57,"{
+  ""issue_key"": ""MC-301159"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions that lead to the observed incorrect behavior.""
+}"
+MC-301170,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions to take and conditions to meet, allowing another person to reasonably attempt to reproduce the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,1588,1536,61,1649,0.00015960,2026-07-02T21:49:59,"{
+  ""issue_key"": ""MC-301170"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions to take and conditions to meet, allowing another person to reasonably attempt to reproduce the issue.""
+}"
+MC-301171,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions that lead to the observed behavior.",valid_json,gpt-4o-mini-2024-07-18,v2,1742,1664,52,1794,0.00016770,2026-07-02T21:50:01,"{
+  ""issue_key"": ""MC-301171"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions that lead to the observed behavior.""
+}"
+MC-301173,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions that lead to the observed duplication behavior.",valid_json,gpt-4o-mini-2024-07-18,v2,1936,1792,53,1989,0.00018780,2026-07-02T21:50:04,"{
+  ""issue_key"": ""MC-301173"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions that lead to the observed duplication behavior.""
+}"
+MC-301176,Executable,"The report provides clear and detailed steps to reproduce the issue, including specific actions to take within the game and the expected outcomes.",valid_json,gpt-4o-mini-2024-07-18,v2,1589,1536,53,1642,0.00015495,2026-07-02T21:50:06,"{
+  ""issue_key"": ""MC-301176"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the issue, including specific actions to take within the game and the expected outcomes.""
+}"
+MC-301183,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions that lead to the observed incorrect behavior.",valid_json,gpt-4o-mini-2024-07-18,v2,1868,1792,53,1921,0.00017760,2026-07-02T21:50:08,"{
+  ""issue_key"": ""MC-301183"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions that lead to the observed incorrect behavior.""
+}"
+MC-301184,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions to take and the expected outcomes, allowing another person to reasonably attempt to reproduce the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,2150,2048,61,2211,0.00020550,2026-07-02T21:50:10,"{
+  ""issue_key"": ""MC-301184"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions to take and the expected outcomes, allowing another person to reasonably attempt to reproduce the issue.""
+}"
+MC-301202,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions that lead to the observed issue with the copper golem and villagers.",valid_json,gpt-4o-mini-2024-07-18,v2,1908,0,59,1967,0.00032160,2026-07-02T21:50:13,"{
+  ""issue_key"": ""MC-301202"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions that lead to the observed issue with the copper golem and villagers.""
+}"
+MC-301203,Executable,"The report provides clear and detailed steps to reproduce the issue, including specific actions to take in the Minecraft Launcher and in-game, along with the expected and observed behaviors.",valid_json,gpt-4o-mini-2024-07-18,v2,1600,1536,61,1661,0.00016140,2026-07-02T21:50:15,"{
+  ""issue_key"": ""MC-301203"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the issue, including specific actions to take in the Minecraft Launcher and in-game, along with the expected and observed behaviors.""
+}"
+MC-301205,Executable,"The report provides clear and detailed steps to reproduce the issue, including the necessary setup and actions to trigger the error message 'Failed To Load World Summary'.",valid_json,gpt-4o-mini-2024-07-18,v2,1905,1792,59,1964,0.00018675,2026-07-02T21:50:18,"{
+  ""issue_key"": ""MC-301205"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the issue, including the necessary setup and actions to trigger the error message 'Failed To Load World Summary'.""
+}"
+MC-301221,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions, commands, and conditions necessary to observe the incorrect item light rendering.",valid_json,gpt-4o-mini-2024-07-18,v2,1786,1664,57,1843,0.00017730,2026-07-02T21:50:20,"{
+  ""issue_key"": ""MC-301221"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions, commands, and conditions necessary to observe the incorrect item light rendering.""
+}"
+MC-301222,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions that lead to the observed issue with the GUI.",valid_json,gpt-4o-mini-2024-07-18,v2,1466,1408,55,1521,0.00014730,2026-07-02T21:50:23,"{
+  ""issue_key"": ""MC-301222"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific actions and conditions that lead to the observed issue with the GUI.""
+}"
+MC-301234,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific commands and actions that can be followed to observe the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,1792,1664,54,1846,0.00017640,2026-07-02T21:50:25,"{
+  ""issue_key"": ""MC-301234"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific commands and actions that can be followed to observe the issue.""
+}"
+MC-301252,Executable,"The report provides clear and detailed steps to reproduce the bug, including specific commands and actions to take in the game.",valid_json,gpt-4o-mini-2024-07-18,v2,1471,1408,51,1522,0.00014565,2026-07-02T21:50:27,"{
+  ""issue_key"": ""MC-301252"",
+  ""s2r_label"": ""Executable"",
+  ""reason"": ""The report provides clear and detailed steps to reproduce the bug, including specific commands and actions to take in the game.""
+}"

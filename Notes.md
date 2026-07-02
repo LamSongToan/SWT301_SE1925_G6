@@ -4,44 +4,54 @@
 
 English:
 
-This project has completed the data preparation structure for both Raw and Improved datasets. The current work focuses on organizing the dataset into two parallel versions so that later experiments can compare LLM performance on the original bug reports and the improved bug reports.
+The project structure has been completed for both Raw and Improved datasets. The project can now prepare data, run LLM experiments, compute metrics, compare Raw and Improved results, and recreate clean analysis notebooks.
 
 Tiếng Việt:
 
-Dự án đã hoàn thành bước chuẩn bị cấu trúc dữ liệu cho cả hai bộ dữ liệu Raw và Improved. Công việc hiện tại tập trung vào việc tổ chức dữ liệu thành hai phiên bản song song để các thí nghiệm sau này có thể so sánh hiệu quả của LLM trên bug report gốc và bug report đã được cải thiện.
+Cấu trúc project đã được hoàn thiện cho cả hai bộ dữ liệu Raw và Improved. Project hiện có thể chuẩn bị dữ liệu, chạy thí nghiệm LLM, tính metric, so sánh Raw và Improved, và tạo lại notebook phân tích sạch.
 
 Main comparison / So sánh chính:
 
-    Raw bug reports vs Improved bug reports
-    Bug report Raw so với bug report Improved
+Raw bug reports vs Improved bug reports
+Bug report gốc so với bug report đã được cải thiện
 
-Purpose / Mục đích:
+Current status / Trạng thái hiện tại:
 
-    Evaluate whether improving bug report quality can improve reproducibility assessment and agreement between LLM prediction and human ground truth.
-    Đánh giá xem việc cải thiện chất lượng bug report có giúp cải thiện khả năng đánh giá reproducibility và mức độ đồng thuận giữa dự đoán của LLM với ground truth do con người xác định hay không.
+Data preparation              : DONE
+Raw pilot experiment           : DONE
+Improved pilot experiment      : DONE
+Raw full experiment            : DONE
+Improved full experiment       : DONE
+Raw vs Improved comparison     : DONE
+Analysis notebook preparation  : DONE
+
+---
 
 ## 2. Research Context / Bối cảnh nghiên cứu
 
 English:
 
-The research topic focuses on automatic bug report quality assessment using large language models. The main quality criterion in the current project is reproducibility, especially whether the Steps to Reproduce are executable.
+The research topic focuses on automatic bug report quality assessment using large language models. The main quality criterion in this project is reproducibility, especially whether a bug report contains enough information for the Steps to Reproduce to be executable.
 
 Tiếng Việt:
 
-Chủ đề nghiên cứu tập trung vào việc đánh giá chất lượng bug report tự động bằng mô hình ngôn ngữ lớn. Tiêu chí chất lượng chính trong dự án hiện tại là reproducibility, đặc biệt là việc Steps to Reproduce có thể thực hiện được hay không.
+Chủ đề nghiên cứu tập trung vào việc đánh giá chất lượng bug report tự động bằng mô hình ngôn ngữ lớn. Tiêu chí chất lượng chính trong project là reproducibility, đặc biệt là việc bug report có đủ thông tin để Steps to Reproduce có thể thực hiện được hay không.
 
 Research question / Câu hỏi nghiên cứu:
 
-    For bug reports on Mojira / Minecraft Issue Tracker, can an LLM automatically assess bug report quality based on reproducibility criteria, compared with human manual review, and achieve Cohen's Kappa >= 0.70?
-    Đối với các báo cáo lỗi trên Mojira / Minecraft Issue Tracker, LLM có thể tự động đánh giá chất lượng bug report theo tiêu chí reproducibility, so với đánh giá thủ công của con người, và đạt Cohen's Kappa >= 0.70 hay không?
+For bug reports on Mojira / Minecraft Issue Tracker, can an LLM automatically assess bug report quality based on reproducibility criteria, compared with human manual review, and achieve Cohen's Kappa >= 0.70?
+
+Đối với các báo cáo lỗi trên Mojira / Minecraft Issue Tracker, LLM có thể tự động đánh giá chất lượng bug report theo tiêu chí reproducibility, so với đánh giá thủ công của con người, và đạt Cohen's Kappa >= 0.70 hay không?
 
 Main metric / Chỉ số đánh giá chính:
 
-    Cohen's Kappa
+Cohen's Kappa
 
 Research threshold / Ngưỡng nghiên cứu:
 
-    Cohen's Kappa >= 0.70
+Cohen's Kappa >= 0.70
+
+---
 
 ## 3. Dataset Source / Nguồn dữ liệu
 
@@ -53,551 +63,672 @@ Tiếng Việt:
 
 Bộ dữ liệu được lấy dựa trên ImproBR Replication Package. Miền dữ liệu là các bug report từ Mojira / Minecraft Issue Tracker.
 
-Original source / Nguồn gốc:
+Dataset information / Thông tin bộ dữ liệu:
 
-    ImproBR Replication Package
+Original source : ImproBR Replication Package
+Platform        : Figshare
+Domain          : Mojira / Minecraft Issue Tracker bug reports
+Source page     : [Figshare source page](https://figshare.com/articles/software/ImproBR_Replication_Package/30086083)
 
-Platform / Nền tảng:
+License note / Ghi chú giấy phép:
 
-    Figshare
+The dataset license should be verified from the original Figshare package or the original README file.
+Giấy phép của bộ dữ liệu cần được kiểm tra lại từ package gốc trên Figshare hoặc README gốc của package.
 
-Dataset domain / Miền dữ liệu:
+---
 
-    Mojira / Minecraft Issue Tracker bug reports
-    Bug report từ Mojira / Minecraft Issue Tracker
-
-Source page / Trang nguồn:
-
-    https://figshare.com/articles/software/ImproBR_Replication_Package/30086083
-
-License note / Ghi chú về giấy phép:
-
-    The dataset license should be verified from the original Figshare package or the original README file.
-    Giấy phép của bộ dữ liệu cần được kiểm tra lại từ package gốc trên Figshare hoặc từ README gốc của package.
-
-## 4. Data Folder Structure / Cấu trúc thư mục Data
+## 4. Root Files / Các file ở thư mục gốc
 
 English:
 
-The Data folder is organized into three main parts: Annotations, Raw, and Improved.
+The project root contains basic repository files for Git tracking, licensing, and project notes.
 
 Tiếng Việt:
 
-Thư mục Data được tổ chức thành ba phần chính: Annotations, Raw, và Improved.
+Thư mục gốc của project chứa các file cơ bản phục vụ Git, giấy phép, và ghi chú dự án.
+
+Current root files / Các file hiện tại:
+
+.gitignore
+LICENSE
+Notes.md
+
+### 4.1 .gitignore
+
+English:
+
+The `.gitignore` file prevents sensitive or generated local files from being committed to Git.
+
+Tiếng Việt:
+
+File `.gitignore` giúp tránh commit các file nhạy cảm hoặc file cục bộ được sinh ra trong quá trình chạy project.
+
+Current ignored items / Các mục đang được ignore:
+
+.env
+.vscode/
+.venv/
+__pycache__/
+*.pyc
+
+### 4.2 LICENSE
+
+English:
+
+The `LICENSE` file stores the project license information.
+
+Tiếng Việt:
+
+File `LICENSE` lưu thông tin giấy phép của project.
+
+### 4.3 Notes.md
+
+English:
+
+The `Notes.md` file records the current project status, folder structure, experiment results, and next steps.
+
+Tiếng Việt:
+
+File `Notes.md` ghi lại trạng thái hiện tại của project, cấu trúc thư mục, kết quả thí nghiệm, và các bước tiếp theo.
+
+---
+
+## 5. Data Folder Structure / Cấu trúc thư mục Data
+
+English:
+
+The `Data/` folder is organized into three main parts: Annotations, Raw, and Improved.
+
+Tiếng Việt:
+
+Thư mục `Data/` được tổ chức thành ba phần chính: Annotations, Raw, và Improved.
 
 Current structure / Cấu trúc hiện tại:
 
-    Data/
-    ├── Annotations/
-    ├── Raw/
-    └── Improved/
+Data/
+├── Annotations/
+├── Raw/
+└── Improved/
 
-## 5. Data/Annotations
+---
+
+## 6. Data/Annotations
 
 English:
 
-This folder stores the original annotation source files. These files are the main annotation sources used to derive ground truth files for both Raw and Improved datasets.
+This folder stores the original annotation source files. These files are used to derive ground truth files for both Raw and Improved datasets.
 
 Tiếng Việt:
 
-Thư mục này lưu các file annotation gốc. Các file này là nguồn annotation chính được dùng để tạo ra ground truth cho cả hai bộ dữ liệu Raw và Improved.
+Thư mục này lưu các file annotation gốc. Các file này được dùng để tạo ground truth cho cả hai bộ dữ liệu Raw và Improved.
 
 Current files / Các file hiện tại:
 
-    Data/Annotations/
-    ├── Author 1 Responses.csv
-    ├── Author 2 Responses.csv
-    └── Final Results.csv
+Data/Annotations/
+├── Author 1 Responses.csv
+├── Author 2 Responses.csv
+└── Final Results.csv
 
 Main purpose / Mục đích chính:
 
-    Data/Annotations/Final Results.csv is used to generate full ground truth files for both Raw and Improved datasets.
-    Data/Annotations/Final Results.csv được dùng để tạo các file full ground truth cho cả bộ dữ liệu Raw và Improved.
+Data/Annotations/Final Results.csv is used to generate full ground truth files for both Raw and Improved datasets.
+
+Data/Annotations/Final Results.csv được dùng để tạo các file full ground truth cho cả bộ dữ liệu Raw và Improved.
 
 Important rule / Quy tắc quan trọng:
 
-    Do not manually edit annotation labels unless there is a documented correction.
-    Không tự ý chỉnh sửa nhãn annotation nếu không có ghi chú chỉnh sửa rõ ràng.
+Do not manually edit annotation labels unless there is a documented correction.
+Không tự ý chỉnh sửa nhãn annotation nếu không có ghi chú chỉnh sửa rõ ràng.
 
-## 6. Data/Raw
+---
+
+## 7. Data/Raw
 
 English:
 
-This folder stores the Raw version of the dataset. The Raw dataset represents the original bug reports before quality improvement. It is used as the baseline for comparison with the Improved dataset.
+This folder stores the Raw version of the dataset. The Raw dataset represents the original bug reports before improvement. It is used as the baseline for comparison with the Improved dataset.
 
 Tiếng Việt:
 
-Thư mục này lưu phiên bản Raw của bộ dữ liệu. Dữ liệu Raw là các bug report gốc trước khi được cải thiện chất lượng. Bộ dữ liệu này được dùng làm baseline để so sánh với bộ dữ liệu Improved.
+Thư mục này lưu phiên bản Raw của bộ dữ liệu. Dữ liệu Raw là các bug report gốc trước khi được cải thiện. Bộ dữ liệu này được dùng làm baseline để so sánh với bộ dữ liệu Improved.
 
 Current files / Các file hiện tại:
 
-    Data/Raw/
-    ├── full_ground_truth_raw.csv
-    ├── kappa_scores_raw.csv
-    ├── pilot_annotation_raw_author1.csv
-    ├── pilot_annotation_raw_author2.csv
-    ├── pilot_ground_truth_raw.csv
-    ├── pilot_sample_raw.csv
-    └── README.md
+Data/Raw/
+├── RAW/
+├── README.md
+├── full_ground_truth_raw.csv
+├── full_sample_raw.csv
+├── kappa_scores_raw.csv
+├── pilot_annotation_raw_author1.csv
+├── pilot_annotation_raw_author2.csv
+├── pilot_ground_truth_raw.csv
+└── pilot_sample_raw.csv
 
-## 7. Data/Improved
+Raw dataset statistics / Thống kê bộ Raw:
+
+Pilot cases                  : 26
+Full cases                   : 139
+Pilot ground truth Executable     : 10
+Pilot ground truth Non-Executable : 16
+Full ground truth Executable      : 40
+Full ground truth Non-Executable  : 99
+Pilot Cohen Kappa between authors : 0.7647
+Pilot agreement                  : 22/26
+
+Conclusion / Kết luận:
+
+Data/Raw is valid and ready for Raw-side LLM experiments.
+Data/Raw hợp lệ và đã sẵn sàng cho thí nghiệm LLM phía Raw.
+
+---
+
+## 8. Data/Improved
 
 English:
 
-This folder stores the Improved version of the dataset. The Improved dataset represents bug reports after quality improvement, especially for Steps to Reproduce, Observed Behavior, and Expected Behavior.
+This folder stores the Improved version of the dataset. The Improved dataset represents bug reports after quality improvement, especially for Steps to Reproduce, Observed Behavior, Expected Behavior, and Environment.
 
 Tiếng Việt:
 
-Thư mục này lưu phiên bản Improved của bộ dữ liệu. Dữ liệu Improved là các bug report sau khi đã được cải thiện chất lượng, đặc biệt ở phần Steps to Reproduce, Observed Behavior, và Expected Behavior.
+Thư mục này lưu phiên bản Improved của bộ dữ liệu. Dữ liệu Improved là các bug report sau khi đã được cải thiện chất lượng, đặc biệt ở phần Steps to Reproduce, Observed Behavior, Expected Behavior, và Environment.
 
 Current files / Các file hiện tại:
 
-    Data/Improved/
-    ├── full_ground_truth_improved.csv
-    ├── kappa_scores_improved.csv
-    ├── pilot_annotation_improved_author1.csv
-    ├── pilot_annotation_improved_author2.csv
-    ├── pilot_ground_truth_improved.csv
-    ├── pilot_sample_improved.csv
-    └── README.md
+Data/Improved/
+├── IMPROVED/
+├── README.md
+├── full_ground_truth_improved.csv
+├── full_sample_improved.csv
+├── kappa_scores_improved.csv
+├── pilot_annotation_improved_author1.csv
+├── pilot_annotation_improved_author2.csv
+├── pilot_ground_truth_improved.csv
+└── pilot_sample_improved.csv
 
-## 8. Raw Dataset Validation Result / Kết quả kiểm tra dữ liệu Raw
+Improved dataset statistics / Thống kê bộ Improved:
 
-English:
-
-The Raw dataset was validated using the Raw checking script. All required data files were found, and all pilot issue keys are consistent across sample, annotation, ground truth, and kappa files.
-
-Tiếng Việt:
-
-Bộ dữ liệu Raw đã được kiểm tra bằng script kiểm tra Raw. Tất cả các file dữ liệu cần thiết đều được tìm thấy, và các issue key của tập pilot đều khớp giữa sample, annotation, ground truth, và file kappa.
-
-Validation command / Lệnh kiểm tra:
-
-    .\.venv\Scripts\python.exe Scripts\Raw\check_raw_data.py
-
-Required files status / Trạng thái các file bắt buộc:
-
-    FOUND: full_ground_truth_raw.csv
-    FOUND: kappa_scores_raw.csv
-    FOUND: pilot_annotation_raw_author1.csv
-    FOUND: pilot_annotation_raw_author2.csv
-    FOUND: pilot_ground_truth_raw.csv
-    FOUND: pilot_sample_raw.csv
-
-Row count / Số lượng dòng dữ liệu:
-
-    pilot_sample_raw.csv              : 26 cases
-    pilot_ground_truth_raw.csv        : 26 cases
-    full_ground_truth_raw.csv         : 139 cases
-    pilot_annotation_raw_author1.csv  : 26 cases
-    pilot_annotation_raw_author2.csv  : 26 cases
-    kappa_scores_raw.csv              : 26 case rows
-
-Pilot issue key consistency / Độ khớp issue key của tập pilot:
-
-    pilot_sample_raw.csv vs pilot_ground_truth_raw.csv       : OK
-    pilot_sample_raw.csv vs pilot_annotation_raw_author1.csv : OK
-    pilot_sample_raw.csv vs pilot_annotation_raw_author2.csv : OK
-    pilot_sample_raw.csv vs kappa_scores_raw.csv             : OK
-
-S2R label distribution / Phân bố nhãn S2R:
-
-    Pilot Ground Truth:
-    Executable     : 10
-    Non-Executable : 16
-
-    Full Ground Truth:
-    Executable     : 40
-    Non-Executable : 99
-
-    Author 1:
-    Executable     : 10
-    Non-Executable : 16
-
-    Author 2:
-    Executable     : 9
-    Non-Executable : 17
-
-Raw pilot inter-annotator agreement / Độ đồng thuận giữa hai người chấm cho Raw pilot:
-
-    N             : 26
-    Cohen Kappa   : 0.7647
-    Agreement     : 22/26
-    Threshold     : >= 0.70
-    Status        : Passed
+Pilot cases                  : 26
+Full cases                   : 139
+Pilot ground truth Executable     : 19
+Pilot ground truth Non-Executable : 7
+Full ground truth Executable      : 94
+Full ground truth Non-Executable  : 45
+Pilot Cohen Kappa between authors : 0.7524
+Pilot agreement                  : 22/26
 
 Conclusion / Kết luận:
 
-    Data/Raw is valid and ready for Raw-side LLM experiments.
-    Data/Raw hợp lệ và đã sẵn sàng cho thí nghiệm LLM phía Raw.
+Data/Improved is valid and ready for Improved-side LLM experiments.
+Data/Improved hợp lệ và đã sẵn sàng cho thí nghiệm LLM phía Improved.
 
-## 9. Improved Dataset Validation Result / Kết quả kiểm tra dữ liệu Improved
+---
 
-English:
-
-The Improved dataset was validated using the Improved checking script. All required data files were found, and all pilot issue keys are consistent across sample, annotation, ground truth, and kappa files.
-
-Tiếng Việt:
-
-Bộ dữ liệu Improved đã được kiểm tra bằng script kiểm tra Improved. Tất cả các file dữ liệu cần thiết đều được tìm thấy, và các issue key của tập pilot đều khớp giữa sample, annotation, ground truth, và file kappa.
-
-Validation command / Lệnh kiểm tra:
-
-    .\.venv\Scripts\python.exe Scripts\Improved\check_improved_data.py
-
-Required files status / Trạng thái các file bắt buộc:
-
-    FOUND: full_ground_truth_improved.csv
-    FOUND: kappa_scores_improved.csv
-    FOUND: pilot_annotation_improved_author1.csv
-    FOUND: pilot_annotation_improved_author2.csv
-    FOUND: pilot_ground_truth_improved.csv
-    FOUND: pilot_sample_improved.csv
-
-Row count / Số lượng dòng dữ liệu:
-
-    pilot_sample_improved.csv              : 26 cases
-    pilot_ground_truth_improved.csv        : 26 cases
-    full_ground_truth_improved.csv         : 139 cases
-    pilot_annotation_improved_author1.csv  : 26 cases
-    pilot_annotation_improved_author2.csv  : 26 cases
-    kappa_scores_improved.csv              : 26 case rows
-
-Pilot issue key consistency / Độ khớp issue key của tập pilot:
-
-    pilot_sample_improved.csv vs pilot_ground_truth_improved.csv       : OK
-    pilot_sample_improved.csv vs pilot_annotation_improved_author1.csv : OK
-    pilot_sample_improved.csv vs pilot_annotation_improved_author2.csv : OK
-    pilot_sample_improved.csv vs kappa_scores_improved.csv             : OK
-
-S2R label distribution / Phân bố nhãn S2R:
-
-    Pilot Ground Truth:
-    Executable     : 19
-    Non-Executable : 7
-
-    Full Ground Truth:
-    Executable     : 94
-    Non-Executable : 45
-
-    Author 1:
-    Executable     : 19
-    Non-Executable : 7
-
-    Author 2:
-    Executable     : 18
-    Non-Executable : 8
-
-Improved pilot inter-annotator agreement / Độ đồng thuận giữa hai người chấm cho Improved pilot:
-
-    N             : 26
-    Cohen Kappa   : 0.7524
-    Agreement     : 22/26
-    Threshold     : >= 0.70
-    Status        : Passed
-
-Conclusion / Kết luận:
-
-    Data/Improved is valid and ready for Improved-side LLM experiments.
-    Data/Improved hợp lệ và đã sẵn sàng cho thí nghiệm LLM phía Improved.
-
-## 10. Ground Truth Generation / Cách tạo Ground Truth
+## 9. Scripts Folder Structure / Cấu trúc thư mục Scripts
 
 English:
 
-The full ground truth files for Raw and Improved were generated from the same source file, Data/Annotations/Final Results.csv. The Raw file selects rows whose BUG-ID ends with Raw, while the Improved file selects rows whose BUG-ID ends with Improved.
+The `Scripts/` folder contains the execution scripts for data checking, data preparation, LLM experiments, metric computation, result comparison, and notebook recreation.
 
 Tiếng Việt:
 
-Các file full ground truth cho Raw và Improved được tạo từ cùng một file nguồn, Data/Annotations/Final Results.csv. File Raw lấy các dòng có BUG-ID kết thúc bằng Raw, còn file Improved lấy các dòng có BUG-ID kết thúc bằng Improved.
-
-### 10.1 Raw Full Ground Truth / Full Ground Truth của Raw
-
-Generated file / File được tạo:
-
-    Data/Raw/full_ground_truth_raw.csv
-
-Source file / File nguồn:
-
-    Data/Annotations/Final Results.csv
-
-Generation rule / Quy tắc tạo file:
-
-    Only rows whose BUG-ID ends with Raw are selected.
-    Chỉ lấy các dòng có BUG-ID kết thúc bằng Raw.
-
-Command / Lệnh chạy:
-
-    .\.venv\Scripts\python.exe Scripts\Raw\create_full_ground_truth_raw.py
-
-Expected result / Kết quả mong đợi:
-
-    Raw cases: 139
-
-### 10.2 Improved Full Ground Truth / Full Ground Truth của Improved
-
-Generated file / File được tạo:
-
-    Data/Improved/full_ground_truth_improved.csv
-
-Source file / File nguồn:
-
-    Data/Annotations/Final Results.csv
-
-Generation rule / Quy tắc tạo file:
-
-    Only rows whose BUG-ID ends with Improved are selected.
-    Chỉ lấy các dòng có BUG-ID kết thúc bằng Improved.
-
-Command / Lệnh chạy:
-
-    .\.venv\Scripts\python.exe Scripts\Improved\create_full_ground_truth_improved.py
-
-Expected result / Kết quả mong đợi:
-
-    Improved cases: 139
-
-## 11. Results Folder Structure / Cấu trúc thư mục Results
-
-English:
-
-The Results folder is prepared for future LLM outputs. At this stage, only README.md and .gitkeep files are kept in each result subfolder. Empty CSV or TXT output files should not be created manually.
-
-Tiếng Việt:
-
-Thư mục Results được chuẩn bị để chứa output của LLM trong tương lai. Ở giai đoạn này, mỗi thư mục kết quả chỉ giữ README.md và .gitkeep. Không nên tự tạo các file CSV hoặc TXT rỗng.
+Thư mục `Scripts/` chứa các script thực thi để kiểm tra dữ liệu, chuẩn bị dữ liệu, chạy thí nghiệm LLM, tính metric, so sánh kết quả, và tạo lại notebook.
 
 Current structure / Cấu trúc hiện tại:
 
-    Results/
-    ├── Raw/
-    │   ├── README.md
-    │   └── .gitkeep
-    └── Improved/
-        ├── README.md
-        └── .gitkeep
+Scripts/
+├── Improved/
+│   ├── check_improved_data.py
+│   └── create_full_ground_truth_improved.py
+│
+├── Raw/
+│   ├── check_raw_data.py
+│   └── create_full_ground_truth_raw.py
+│
+├── compare_raw_improved.py
+├── compute_metric.py
+├── create_full_samples.py
+├── generate_pilot.py
+├── kappa_pilot.py
+├── README.md
+├── recreate_clean_analysis_notebooks.py
+├── run_experiment.py
+└── test_api.py
+
+Main workflow / Quy trình chính:
+
+Generate pilot data
+-> Compute pilot kappa
+-> Create full ground truth
+-> Create full sample files
+-> Test API
+-> Run LLM experiment
+-> Compute metrics
+-> Compare Raw vs Improved
+-> Recreate clean notebooks if needed
+
+---
+
+## 10. Results Folder Structure / Cấu trúc thư mục Results
+
+English:
+
+The `Results/` folder stores LLM outputs, API logs, summary metrics, mismatch analysis files, comparison files, and analysis notebooks.
+
+Tiếng Việt:
+
+Thư mục `Results/` lưu output của LLM, log API, summary metric, file phân tích mismatch, file so sánh, và notebook phân tích.
+
+Current structure / Cấu trúc hiện tại:
+
+Results/
+├── Raw/
+│   ├── README.md
+│   ├── .gitkeep
+│   ├── pilot_llm_output_raw.csv
+│   ├── pilot_api_log_raw.csv
+│   ├── summary_raw.csv
+│   ├── mismatch_analysis_raw.csv
+│   ├── full_llm_output_raw.csv
+│   ├── full_api_log_raw.csv
+│   ├── summary_full_raw.csv
+│   └── mismatch_analysis_full_raw.csv
+│
+├── Improved/
+│   ├── README.md
+│   ├── .gitkeep
+│   ├── pilot_llm_output_improved.csv
+│   ├── pilot_api_log_improved.csv
+│   ├── summary_improved.csv
+│   ├── mismatch_analysis_improved.csv
+│   ├── full_llm_output_improved.csv
+│   ├── full_api_log_improved.csv
+│   ├── summary_full_improved.csv
+│   └── mismatch_analysis_full_improved.csv
+│
+├── comparison_raw_vs_improved_pilot.csv
+├── comparison_raw_vs_improved_full.csv
+├── pilot_analysis.ipynb
+├── full_analysis.ipynb
+└── summary.csv
+
+Important update / Cập nhật quan trọng:
+
+The result files are no longer pending.
+Các file kết quả không còn ở trạng thái pending.
+
+---
+
+## 11. Pilot Experiment Results / Kết quả thí nghiệm Pilot
+
+### 11.1 Raw Pilot
+
+English:
+
+The Raw pilot experiment was completed and evaluated.
+
+Tiếng Việt:
+
+Thí nghiệm pilot của Raw đã được chạy và đánh giá.
+
+Result / Kết quả:
+
+Total cases      : 26
+Accuracy         : 0.6923
+Cohen Kappa      : 0.3247
+Threshold        : 0.70
+Threshold passed : False
+Mismatch cases   : 8
+
+### 11.2 Improved Pilot
+
+English:
+
+The Improved pilot experiment was completed and evaluated.
+
+Tiếng Việt:
+
+Thí nghiệm pilot của Improved đã được chạy và đánh giá.
+
+Result / Kết quả:
+Total cases      : 26
+Accuracy         : 0.7308
+Cohen Kappa      : 0.0000
+Threshold        : 0.70
+Threshold passed : False
+Mismatch cases   : 7
+
+Pilot conclusion / Kết luận pilot:
+
+Both Raw and Improved pilot results did not reach the target Cohen Kappa threshold of 0.70.
+
+Cả Raw và Improved ở pilot đều chưa đạt ngưỡng Cohen Kappa mục tiêu là 0.70.
+
+---
+
+## 12. Full Experiment Results / Kết quả thí nghiệm Full
+
+### 12.1 Raw Full
+
+English:
+
+The Raw full experiment was completed and evaluated.
+
+Tiếng Việt:
+
+Thí nghiệm full của Raw đã được chạy và đánh giá.
+
+Result / Kết quả:
+
+Total cases       : 139
+Correct           : 102
+Incorrect         : 37
+Accuracy          : 0.7338
+Cohen Kappa       : 0.3358
+Threshold         : 0.70
+Threshold passed  : False
+Total cost USD    : 0.01809390
+
+Confusion matrix / Ma trận nhầm lẫn:
+
+Ground Truth Executable     -> LLM Executable     : 20
+Ground Truth Executable     -> LLM Non-Executable : 20
+Ground Truth Non-Executable -> LLM Executable     : 17
+Ground Truth Non-Executable -> LLM Non-Executable : 82
+
+### 12.2 Improved Full
+
+English:
+
+The Improved full experiment was completed and evaluated.
+
+Tiếng Việt:
+
+Thí nghiệm full của Improved đã được chạy và đánh giá.
+
+Result / Kết quả:
+
+Total cases       : 139
+Correct           : 96
+Incorrect         : 43
+Accuracy          : 0.6906
+Cohen Kappa       : 0.0592
+Threshold         : 0.70
+Threshold passed  : False
+Total cost USD    : 0.02465280
+
+Confusion matrix / Ma trận nhầm lẫn:
+
+Ground Truth Executable     -> LLM Executable     : 94
+Ground Truth Executable     -> LLM Non-Executable : 0
+Ground Truth Non-Executable -> LLM Executable     : 43
+Ground Truth Non-Executable -> LLM Non-Executable : 2
+
+Full conclusion / Kết luận full:
+
+Both Raw and Improved full results did not reach the target Cohen Kappa threshold of 0.70.
+
+Cả Raw và Improved ở full đều chưa đạt ngưỡng Cohen Kappa mục tiêu là 0.70.
+
+---
+
+## 13. Raw vs Improved Comparison / So sánh Raw và Improved
+
+English:
+
+The Raw full experiment outperformed the Improved full experiment in both Accuracy and Cohen's Kappa.
+
+Tiếng Việt:
+
+Thí nghiệm full của Raw có kết quả tốt hơn Improved ở cả Accuracy và Cohen's Kappa.
+
+Full comparison / So sánh full:
+
+Raw Accuracy       : 0.7338
+Improved Accuracy  : 0.6906
+Raw Cohen Kappa    : 0.3358
+Improved Kappa     : 0.0592
+Raw cost USD       : 0.01809390
+Improved cost USD  : 0.02465280
+
+Interpretation / Diễn giải:
+
+Although the Improved reports contain more structured information, the LLM showed a strong bias toward classifying Improved reports as Executable. This reduced Cohen's Kappa.
+
+Mặc dù báo cáo Improved có nhiều thông tin được cấu trúc hơn, LLM có xu hướng mạnh khi phân loại Improved thành Executable. Điều này làm Cohen's Kappa giảm mạnh.
+
+---
+
+## 14. Statistical Analysis Notebook / Notebook phân tích thống kê
+
+English:
+
+The `full_analysis.ipynb` notebook follows the required statistical analysis workflow.
+
+Tiếng Việt:
+
+Notebook `full_analysis.ipynb` làm theo workflow phân tích thống kê được yêu cầu.
+
+Required workflow / Quy trình yêu cầu:
+
+1. Compute metrics on the complete output.
+2. Run the selected statistical test from the proposal with alpha = 0.05.
+3. Compute effect size.
+4. Write results to Results/summary.csv with metric value, p-value, effect size, and N.
+5. Conclude each research question using reject H0 or fail to reject H0.
+
+Selected statistical test / Kiểm định thống kê được chọn:
+
+McNemar exact test
+
+Reason / Lý do:
+
+Raw and Improved predictions are paired by the same issue keys.
+Dự đoán Raw và Improved là dữ liệu cặp theo cùng issue key.
+
+Effect size / Kích thước ảnh hưởng:
+
+Cliff's delta
+
+Effect size interpretation / Diễn giải effect size:
+
+small / nhỏ       : absolute delta < 0.2
+medium / trung bình : 0.2 <= absolute delta <= 0.5
+large / lớn       : absolute delta > 0.5
 
 Important rule / Quy tắc quan trọng:
 
-    Do not create empty CSV or TXT result files manually.
-    Không tự tạo các file kết quả CSV hoặc TXT rỗng.
+Do not change the statistical test after looking at the data to get a better result.
+Không đổi statistical test sau khi xem data để tạo kết quả đẹp hơn.
 
-Reason / Lý do:
+---
 
-    Empty result files may be mistaken for completed experiment outputs. All result files should be generated by experiment scripts.
-    Các file kết quả rỗng có thể bị hiểu nhầm là output thí nghiệm đã hoàn thành. Tất cả file kết quả nên được sinh ra bởi script thí nghiệm.
-
-## 12. Raw Results Status / Trạng thái Results của Raw
+## 15. Analysis Notebooks / Notebook phân tích
 
 English:
 
-The Raw results folder is prepared, but LLM output files are still pending.
+The analysis notebooks are stored in `Results/` and are generated by `Scripts/recreate_clean_analysis_notebooks.py`.
 
 Tiếng Việt:
 
-Thư mục kết quả Raw đã được chuẩn bị, nhưng các file output của LLM vẫn đang ở trạng thái pending.
+Các notebook phân tích được lưu trong `Results/` và được tạo bởi `Scripts/recreate_clean_analysis_notebooks.py`.
 
-Validation result / Kết quả kiểm tra:
+Notebook files / Các file notebook:
 
-    Results/Raw/README.md : FOUND
-    Results/Raw/.gitkeep  : FOUND
+Results/pilot_analysis.ipynb
+Results/full_analysis.ipynb
 
-Pending output files / Các file output đang pending:
+Notebook design / Thiết kế notebook:
 
-    pilot_llm_output_raw.csv
-    pilot_api_log_raw.txt
-    full_llm_output_raw.csv
-    full_api_log_raw.txt
-    summary_raw.csv
-    mismatch_analysis_raw.csv
+Bilingual English and Vietnamese markdown
+No pandas
+No matplotlib
+No statsmodels
+Uses only Python built-in libraries
+Writes Results/summary.csv from full_analysis.ipynb
 
-Status / Trạng thái:
+Verification command / Lệnh kiểm tra:
 
-    Results/Raw is ready, but Raw LLM output files are still pending.
-    Results/Raw đã sẵn sàng, nhưng các file output LLM của Raw vẫn đang pending.
+Select-String -Path ".\Results\pilot_analysis.ipynb",".\Results\full_analysis.ipynb" -Pattern "statsmodels|matplotlib|pandas"
 
-## 13. Improved Results Status / Trạng thái Results của Improved
+Expected result / Kết quả mong đợi:
+
+No output
+
+---
+
+## 16. Results Summary CSV / File Results/summary.csv
 
 English:
 
-The Improved results folder is prepared, but LLM output files are still pending.
+The file `Results/summary.csv` is generated by `full_analysis.ipynb`.
 
 Tiếng Việt:
 
-Thư mục kết quả Improved đã được chuẩn bị, nhưng các file output của LLM vẫn đang ở trạng thái pending.
+File `Results/summary.csv` được tạo bởi `full_analysis.ipynb`.
 
-Validation result / Kết quả kiểm tra:
+Expected columns / Các cột mong đợi:
 
-    Results/Improved/README.md : FOUND
-    Results/Improved/.gitkeep  : FOUND
-
-Pending output files / Các file output đang pending:
-
-    pilot_llm_output_improved.csv
-    pilot_api_log_improved.txt
-    full_llm_output_improved.csv
-    full_api_log_improved.txt
-    summary_improved.csv
-    mismatch_analysis_improved.csv
-
-Status / Trạng thái:
-
-    Results/Improved is ready, but Improved LLM output files are still pending.
-    Results/Improved đã sẵn sàng, nhưng các file output LLM của Improved vẫn đang pending.
-
-## 14. Scripts Added or Updated / Các script đã thêm hoặc cập nhật
-
-English:
-
-Helper scripts were added or updated for checking Raw and Improved data folders and generating full ground truth files.
-
-Tiếng Việt:
-
-Các script hỗ trợ đã được thêm hoặc cập nhật để kiểm tra thư mục dữ liệu Raw và Improved, đồng thời tạo các file full ground truth.
-
-### 14.1 Raw Scripts / Script cho Raw
-
-Current Raw helper scripts / Các script hỗ trợ Raw hiện tại:
-
-    Scripts/Raw/
-    ├── check_raw_data.py
-    └── create_full_ground_truth_raw.py
+metric
+value
+p_value
+effect_size
+N
+alpha
+decision
+interpretation
 
 Purpose / Mục đích:
 
-    check_raw_data.py validates Data/Raw and checks Results/Raw status.
-    check_raw_data.py kiểm tra Data/Raw và trạng thái Results/Raw.
+This file records metric value, p-value, effect size, sample size, alpha, decision, and interpretation for the full analysis.
 
-    create_full_ground_truth_raw.py generates full_ground_truth_raw.csv from Data/Annotations/Final Results.csv.
-    create_full_ground_truth_raw.py tạo full_ground_truth_raw.csv từ Data/Annotations/Final Results.csv.
+File này ghi lại metric value, p-value, effect size, cỡ mẫu, alpha, quyết định kiểm định, và diễn giải cho phân tích full.
 
-### 14.2 Improved Scripts / Script cho Improved
+---
 
-Current Improved helper scripts / Các script hỗ trợ Improved hiện tại:
+## 17. Commands / Các lệnh chạy chính
 
-    Scripts/Improved/
-    ├── check_improved_data.py
-    └── create_full_ground_truth_improved.py
+### 17.1 Generate pilot files / Tạo file pilot
 
-Purpose / Mục đích:
+.\.venv\Scripts\python.exe Scripts\generate_pilot.py
 
-    check_improved_data.py validates Data/Improved and checks Results/Improved status.
-    check_improved_data.py kiểm tra Data/Improved và trạng thái Results/Improved.
+### 17.2 Compute pilot kappa / Tính kappa pilot
 
-    create_full_ground_truth_improved.py generates full_ground_truth_improved.csv from Data/Annotations/Final Results.csv.
-    create_full_ground_truth_improved.py tạo full_ground_truth_improved.csv từ Data/Annotations/Final Results.csv.
+.\.venv\Scripts\python.exe Scripts\kappa_pilot.py
 
-Path rule / Quy tắc đường dẫn:
+### 17.3 Create full ground truth / Tạo full ground truth
 
-    Scripts inside Scripts/Raw/ or Scripts/Improved/ should use:
-    Các script nằm trong Scripts/Raw/ hoặc Scripts/Improved/ nên dùng:
+.\.venv\Scripts\python.exe Scripts\Raw\create_full_ground_truth_raw.py
+.\.venv\Scripts\python.exe Scripts\Improved\create_full_ground_truth_improved.py
 
-    BASE_DIR = Path(__file__).resolve().parents[2]
+### 17.4 Create full samples / Tạo full sample
 
-Reason / Lý do:
+.\.venv\Scripts\python.exe Scripts\create_full_samples.py
 
-    parents[2] points back to the project root folder SWT301_SE1925_G6.
-    parents[2] trỏ ngược về thư mục gốc của project SWT301_SE1925_G6.
+### 17.5 Test API / Kiểm tra API
 
-## 15. Current Overall Status / Trạng thái tổng thể hiện tại
+.\.venv\Scripts\python.exe Scripts\test_api.py --version raw
+.\.venv\Scripts\python.exe Scripts\test_api.py --version improved
 
-English:
+### 17.6 Run pilot experiments / Chạy thí nghiệm pilot
 
-The data preparation work for both Raw and Improved datasets has been completed. Both datasets passed validation checks. The Results folders are prepared but do not yet contain real LLM output files.
+.\.venv\Scripts\python.exe Scripts\run_experiment.py --version raw --phase pilot
+.\.venv\Scripts\python.exe Scripts\compute_metric.py --version raw --phase pilot
 
-Tiếng Việt:
+.\.venv\Scripts\python.exe Scripts\run_experiment.py --version improved --phase pilot
+.\.venv\Scripts\python.exe Scripts\compute_metric.py --version improved --phase pilot
 
-Phần chuẩn bị dữ liệu cho cả hai bộ Raw và Improved đã hoàn tất. Cả hai bộ dữ liệu đều đã vượt qua bước kiểm tra. Các thư mục Results đã được chuẩn bị nhưng chưa có file output thật từ LLM.
+.\.venv\Scripts\python.exe Scripts\compare_raw_improved.py --phase pilot
 
-Data preparation status / Trạng thái chuẩn bị dữ liệu:
+### 17.7 Run full experiments / Chạy thí nghiệm full
 
-    Data/Annotations  : DONE
-    Data/Raw          : DONE
-    Data/Improved     : DONE
-    Results/Raw       : READY - pending LLM output
-    Results/Improved  : READY - pending LLM output
+.\.venv\Scripts\python.exe Scripts\run_experiment.py --version raw --phase full
+.\.venv\Scripts\python.exe Scripts\compute_metric.py --version raw --phase full
 
-Validation status / Trạng thái kiểm tra:
+.\.venv\Scripts\python.exe Scripts\run_experiment.py --version improved --phase full
+.\.venv\Scripts\python.exe Scripts\compute_metric.py --version improved --phase full
 
-    Raw data check      : PASSED
-    Improved data check : PASSED
+.\.venv\Scripts\python.exe Scripts\compare_raw_improved.py --phase full
 
-Role status / Trạng thái vai trò:
+### 17.8 Recreate analysis notebooks / Tạo lại notebook phân tích
 
-    LR / data preparation work is completed for the Raw and Improved dataset structure.
-    Phần việc LR / chuẩn bị dữ liệu đã hoàn thành cho cấu trúc dữ liệu Raw và Improved.
+.\.venv\Scripts\python.exe Scripts\recreate_clean_analysis_notebooks.py
 
-## 16. Next Step / Bước tiếp theo
+---
+
+## 18. Important Notes / Ghi chú quan trọng
 
 English:
 
-The next stage is to update experiment and metric scripts so that LLM experiments can run separately on Raw and Improved datasets.
+Do not use ground truth files as LLM input.
 
 Tiếng Việt:
 
-Giai đoạn tiếp theo là cập nhật các script chạy thí nghiệm và script tính metric để LLM có thể chạy riêng trên bộ dữ liệu Raw và Improved.
-
-Target commands for future implementation / Các lệnh mục tiêu cho phần triển khai sau này:
-
-    .\.venv\Scripts\python.exe Scripts\run_experiment.py --version raw --phase pilot
-    .\.venv\Scripts\python.exe Scripts\run_experiment.py --version improved --phase pilot
-    .\.venv\Scripts\python.exe Scripts\run_experiment.py --version raw --phase full
-    .\.venv\Scripts\python.exe Scripts\run_experiment.py --version improved --phase full
-
-Expected future output files for Raw / Các file output dự kiến cho Raw:
-
-    Results/Raw/pilot_llm_output_raw.csv
-    Results/Raw/pilot_api_log_raw.txt
-    Results/Raw/full_llm_output_raw.csv
-    Results/Raw/full_api_log_raw.txt
-    Results/Raw/summary_raw.csv
-    Results/Raw/mismatch_analysis_raw.csv
-
-Expected future output files for Improved / Các file output dự kiến cho Improved:
-
-    Results/Improved/pilot_llm_output_improved.csv
-    Results/Improved/pilot_api_log_improved.txt
-    Results/Improved/full_llm_output_improved.csv
-    Results/Improved/full_api_log_improved.txt
-    Results/Improved/summary_improved.csv
-    Results/Improved/mismatch_analysis_improved.csv
-
-## 17. Raw vs Improved Comparison Plan / Kế hoạch so sánh Raw và Improved
+Không dùng file ground truth làm input cho LLM.
 
 English:
 
-After LLM output and metric files are generated, Raw and Improved results should be compared using their summary files. The final comparison will show whether the Improved bug reports help the LLM produce predictions closer to human ground truth.
+Use sample files as LLM input.
 
 Tiếng Việt:
 
-Sau khi output của LLM và các file metric được tạo, kết quả Raw và Improved sẽ được so sánh bằng các file summary. Kết quả so sánh cuối cùng sẽ cho thấy liệu bug report Improved có giúp LLM đưa ra dự đoán gần với human ground truth hơn so với bug report Raw hay không.
+Dùng các file sample làm input cho LLM.
 
-Comparison input files / Các file đầu vào để so sánh:
+English:
 
-    Results/Raw/summary_raw.csv
-    Results/Improved/summary_improved.csv
+Run `compute_metric.py` only after `run_experiment.py`.
 
-Main comparison metrics / Các metric so sánh chính:
+Tiếng Việt:
 
-    Accuracy
-    Cohen's Kappa
-    Correct predictions
-    Incorrect predictions
-    Threshold passed
-    Total cost USD
+Chỉ chạy `compute_metric.py` sau khi đã chạy `run_experiment.py`.
 
-    Accuracy
-    Cohen's Kappa
-    Số dự đoán đúng
-    Số dự đoán sai
-    Trạng thái đạt ngưỡng
-    Tổng chi phí USD
+English:
 
-Expected final comparison file / File so sánh cuối cùng dự kiến:
+Run `compare_raw_improved.py` only after both Raw and Improved summary files exist.
 
-    Results/comparison_raw_vs_improved.csv
+Tiếng Việt:
 
-Purpose / Mục đích:
+Chỉ chạy `compare_raw_improved.py` sau khi summary của cả Raw và Improved đã tồn tại.
 
-    This comparison will show whether the Improved bug reports help the LLM produce predictions that are closer to the human ground truth compared with the Raw bug reports.
-    Phần so sánh này sẽ cho biết liệu bug report Improved có giúp LLM đưa ra dự đoán gần với human ground truth hơn so với bug report Raw hay không.
+English:
+
+Do not change the statistical test after looking at the result.
+
+Tiếng Việt:
+
+Không đổi kiểm định thống kê sau khi xem kết quả.
+
+English:
+
+Keep `Figures/` unchanged unless your role explicitly requires editing it.
+
+Tiếng Việt:
+
+Không chỉnh sửa `Figures/` trừ khi vai trò của bạn yêu cầu rõ ràng.
+
+---
+
+## 19. Final Project Conclusion / Kết luận cuối của project
+
+English:
+
+The full experiment shows that the current LLM-based reproducibility classification setup did not reach the required agreement level with manual/developer review. Raw performed better than Improved in both Accuracy and Cohen's Kappa.
+
+Tiếng Việt:
+
+Kết quả full experiment cho thấy thiết lập phân loại khả năng tái hiện lỗi bằng LLM hiện tại chưa đạt mức đồng thuận yêu cầu với manual/developer review. Raw có kết quả tốt hơn Improved ở cả Accuracy và Cohen's Kappa.
+
+Final conclusion / Kết luận cuối:
+
+Raw Cohen Kappa      : 0.3358
+Improved Cohen Kappa : 0.0592
+Target threshold     : 0.70
+Result               : Not achieved
+
+English:
+
+Therefore, the answer to the research question is that the current LLM setup does not achieve Cohen's Kappa >= 0.70.
+
+Tiếng Việt:
+
+Vì vậy, câu trả lời cho research question là thiết lập LLM hiện tại chưa đạt Cohen's Kappa >= 0.70.

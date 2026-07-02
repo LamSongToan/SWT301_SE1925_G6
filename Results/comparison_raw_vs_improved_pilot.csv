@@ -1,0 +1,34 @@
+﻿Metric,Raw,Improved,Difference Improved - Raw
+Version,raw,improved,
+Phase,pilot,pilot,
+Model,gpt-4o-mini-2024-07-18,gpt-4o-mini-2024-07-18,
+Prompt version,v2,v2,
+Total prediction rows,26,26,0
+Valid JSON outputs,26,26,0
+Valid label predictions,26,26,0
+Ground truth cases,26,26,0
+Matched cases,26,26,0
+Evaluated cases,26,26,0
+Missing predictions,0,0,0
+Extra predictions,0,0,0
+Correct,18,19,1
+Incorrect,8,7,-1
+Accuracy,0.6923,0.7308,0.0385
+Cohen Kappa,0.3247,0.0000,-0.3247
+Kappa threshold,0.70,0.70,0.0000
+Threshold passed,False,False,
+GT Executable -> LLM Executable,5,19,14
+GT Executable -> LLM Non-Executable,5,0,-5
+GT Non-Executable -> LLM Executable,3,7,4
+GT Non-Executable -> LLM Non-Executable,13,0,-13
+Total input tokens,16348,43688,27340
+Total cached input tokens,0,0,0
+Total output tokens,1620,1492,-128
+Total tokens,17968,45180,27212
+Total cost USD,0.00342420,0.00744840,0.00402420
+
+Interpretation,Value,Note
+Accuracy change,0.0385,Improved accuracy minus Raw accuracy
+Cohen Kappa change,-0.3247,Improved Cohen Kappa minus Raw Cohen Kappa
+Cost change USD,0.00402420,Improved cost minus Raw cost
+Conclusion,Improved did not reach the target Cohen Kappa threshold.,Threshold: Cohen Kappa >= 0.70
