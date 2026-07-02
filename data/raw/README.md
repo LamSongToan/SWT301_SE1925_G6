@@ -1,287 +1,389 @@
-﻿# Raw Dataset README / Tài liệu bộ dữ liệu Raw
+# Data/Raw README
 
-## 1. Overview / Tổng quan
+> **EN:** This folder contains the Raw version of the Mojira bug report dataset
+> used for LLM-based reproducibility classification.
+>
+> **VI:** Thư mục này chứa phiên bản Raw của bộ dữ liệu báo cáo lỗi Mojira,
+> dùng để phân loại khả năng tái hiện lỗi bằng LLM.
 
-English:
+---
 
-This folder stores the Raw version of the Mojira / Minecraft bug report
-dataset. The Raw dataset contains the original bug reports before quality
-improvement.
+## 1. Purpose
 
-Tiếng Việt:
+**EN:** `Data/Raw/` stores the original/raw Mojira bug reports, pilot samples,
+full samples, manual ground truth labels, author annotations, and
+inter-annotator agreement results for the Raw dataset.
 
-Thư mục này lưu phiên bản Raw của bộ dữ liệu bug report từ Mojira / Minecraft.
-Bộ dữ liệu Raw chứa các bug report gốc trước khi được cải thiện chất lượng.
+This dataset is used to evaluate whether an LLM can classify bug reports as:
 
-Main purpose:
+- `Executable`
+- `Non-Executable`
 
-    Use Raw bug reports as the baseline dataset for LLM-based reproducibility
-    assessment.
+The LLM predictions are compared against developer/manual review labels using
+Accuracy and Cohen's Kappa.
 
-Mục đích chính:
+**VI:** `Data/Raw/` lưu trữ các báo cáo lỗi Mojira gốc/chưa cải thiện,
+mẫu pilot, mẫu full, nhãn ground truth thủ công, annotation của từng author,
+và kết quả đo độ đồng thuận giữa annotators cho bộ dữ liệu Raw.
 
-    Sử dụng bug report Raw làm bộ dữ liệu baseline cho việc đánh giá
-    reproducibility bằng LLM.
+Bộ dữ liệu này dùng để đánh giá liệu LLM có thể phân loại báo cáo lỗi thành:
 
-## 2. Folder Contents / Nội dung thư mục
+- `Executable`
+- `Non-Executable`
 
-English:
+Kết quả dự đoán của LLM được so sánh với nhãn manual review/developer review
+bằng Accuracy và Cohen's Kappa.
 
-Current files in this folder:
+---
 
-    full_ground_truth_raw.csv
-    kappa_scores_raw.csv
-    pilot_annotation_raw_author1.csv
-    pilot_annotation_raw_author2.csv
-    pilot_ground_truth_raw.csv
-    pilot_sample_raw.csv
-    README.md
+## 2. Folder Structure
 
-Tiếng Việt:
+Data/Raw/
+├── RAW/
+│   └── *.json
+│
+├── README.md
+├── full_sample_raw.csv
+├── full_ground_truth_raw.csv
+├── pilot_sample_raw.csv
+├── pilot_ground_truth_raw.csv
+├── pilot_annotation_raw_author1.csv
+├── pilot_annotation_raw_author2.csv
+└── kappa_scores_raw.csv
 
-Các file hiện tại trong thư mục này:
+**VI:** Cấu trúc trên cho thấy thư mục `Data/Raw/` gồm dữ liệu JSON Raw,
+các file sample cho LLM, các file ground truth, annotation của hai author,
+và file tính Cohen's Kappa giữa annotators.
 
-    full_ground_truth_raw.csv
-    kappa_scores_raw.csv
-    pilot_annotation_raw_author1.csv
-    pilot_annotation_raw_author2.csv
-    pilot_ground_truth_raw.csv
-    pilot_sample_raw.csv
-    README.md
+---
 
-## 3. File Descriptions / Mô tả các file
+## 3. File Description
 
-### 3.1 pilot_sample_raw.csv
+### 3.1 RAW folder
 
-English:
+**EN:** Contains 139 original Mojira bug report JSON files. Each file is expected
+to follow the pattern `MC-xxxxx.json`.
 
-This file contains the Raw pilot sample used for initial LLM testing and
-evaluation.
+**VI:** Chứa 139 file JSON báo cáo lỗi Mojira gốc. Tên file thường có dạng
+`MC-xxxxx.json`.
 
-Tiếng Việt:
+### 3.2 full_sample_raw.csv
 
-File này chứa tập mẫu Raw pilot dùng để chạy thử và đánh giá ban đầu với LLM.
+**EN:** Contains 139 full Raw bug reports used as LLM input for the full
+experiment.
 
-Number of cases:
-
-    26 cases
-
-Số lượng case:
-
-    26 case
-
-### 3.2 pilot_ground_truth_raw.csv
-
-English:
-
-This file contains the final ground truth labels for the Raw pilot sample.
-
-Tiếng Việt:
-
-File này chứa nhãn ground truth cuối cùng cho tập Raw pilot.
-
-Number of cases:
-
-    26 cases
-
-Số lượng case:
-
-    26 case
-
-Label distribution:
-
-    Executable     : 10
-    Non-Executable : 16
-
-Phân bố nhãn:
-
-    Executable     : 10
-    Non-Executable : 16
+**VI:** Chứa 139 báo cáo Raw dùng làm input cho LLM trong full experiment.
 
 ### 3.3 full_ground_truth_raw.csv
 
-English:
+**EN:** Contains 139 manual ground truth labels for the full Raw dataset.
+This file is used by `compute_metric.py` for evaluation only. It must not be
+used as LLM input.
 
-This file contains the full Raw ground truth dataset. It was generated from
-Data/Annotations/Final Results.csv by selecting rows whose BUG-ID ends with Raw.
+**VI:** Chứa 139 nhãn ground truth thủ công cho bộ Raw full. File này chỉ dùng
+để đánh giá bằng `compute_metric.py`, không được dùng làm input cho LLM.
 
-Tiếng Việt:
+### 3.4 pilot_sample_raw.csv
 
-File này chứa toàn bộ ground truth của bộ dữ liệu Raw. File được tạo từ
-Data/Annotations/Final Results.csv bằng cách chọn các dòng có BUG-ID kết thúc
-bằng Raw.
+**EN:** Contains 26 Raw pilot reports used as LLM input for the pilot experiment.
 
-Number of cases:
+**VI:** Chứa 26 báo cáo Raw dùng làm input cho LLM trong pilot experiment.
 
-    139 cases
+### 3.5 pilot_ground_truth_raw.csv
 
-Số lượng case:
+**EN:** Contains 26 manual ground truth labels for the Raw pilot set.
+This file is used by `compute_metric.py` for pilot evaluation.
 
-    139 case
+**VI:** Chứa 26 nhãn ground truth thủ công cho pilot Raw. File này dùng để tính
+metric ở giai đoạn pilot.
 
-Label distribution:
+### 3.6 pilot_annotation_raw_author1.csv
 
-    Executable     : 40
-    Non-Executable : 99
+**EN:** Contains the pilot annotations provided by Author 1 for the Raw dataset.
 
-Phân bố nhãn:
+**VI:** Chứa annotation pilot của Author 1 cho bộ dữ liệu Raw.
 
-    Executable     : 40
-    Non-Executable : 99
+### 3.7 pilot_annotation_raw_author2.csv
 
-### 3.4 pilot_annotation_raw_author1.csv
+**EN:** Contains the pilot annotations provided by Author 2 for the Raw dataset.
 
-English:
+**VI:** Chứa annotation pilot của Author 2 cho bộ dữ liệu Raw.
 
-This file contains Author 1's annotation labels for the Raw pilot sample.
+### 3.8 kappa_scores_raw.csv
 
-Tiếng Việt:
+**EN:** Contains the inter-annotator agreement results for the Raw pilot set.
 
-File này chứa nhãn annotation của Author 1 cho tập Raw pilot.
+**VI:** Chứa kết quả đo độ đồng thuận giữa annotators cho pilot Raw.
 
-Number of cases:
+---
 
-    26 cases
+## 4. Main Columns in LLM Input Files
 
-Số lượng case:
+This section applies to:
 
-    26 case
+- `pilot_sample_raw.csv`
+- `full_sample_raw.csv`
 
-Label distribution:
+### 4.1 Issue Key
 
-    Executable     : 10
-    Non-Executable : 16
+**EN:** Mojira issue key, such as `MC-300962`.
 
-Phân bố nhãn:
+**VI:** Mã issue trên Mojira, ví dụ `MC-300962`.
 
-    Executable     : 10
-    Non-Executable : 16
+### 4.2 Summary
 
-### 3.5 pilot_annotation_raw_author2.csv
+**EN:** Short bug report title.
 
-English:
+**VI:** Tiêu đề ngắn của bug report.
 
-This file contains Author 2's annotation labels for the Raw pilot sample.
+### 4.3 Type
 
-Tiếng Việt:
+**EN:** Issue type, usually `Bug`.
 
-File này chứa nhãn annotation của Author 2 cho tập Raw pilot.
+**VI:** Loại issue, thường là `Bug`.
 
-Number of cases:
+### 4.4 Affects Version/s
 
-    26 cases
+**EN:** Minecraft version or versions affected by the bug.
 
-Số lượng case:
+**VI:** Phiên bản Minecraft bị ảnh hưởng bởi lỗi.
 
-    26 case
+### 4.5 Labels
 
-Label distribution:
+**EN:** Issue labels if available.
 
-    Executable     : 9
-    Non-Executable : 17
+**VI:** Nhãn của issue nếu có.
 
-Phân bố nhãn:
+### 4.6 Confirmation Status
 
-    Executable     : 9
-    Non-Executable : 17
+**EN:** Confirmation status from the issue tracker.
 
-### 3.6 kappa_scores_raw.csv
+**VI:** Trạng thái xác nhận từ issue tracker.
 
-English:
+### 4.7 Category
 
-This file stores the inter-annotator agreement result between Author 1 and
-Author 2 for the Raw pilot sample.
+**EN:** Bug category if available.
 
-Tiếng Việt:
+**VI:** Danh mục lỗi nếu có.
 
-File này lưu kết quả độ đồng thuận giữa Author 1 và Author 2 cho tập Raw pilot.
+### 4.8 Resolution
 
-Agreement result:
+**EN:** Resolution status from the issue tracker.
 
-    N             : 26
-    Cohen Kappa   : 0.7647
-    Agreement     : 22/26
-    Threshold     : >= 0.70
-    Status        : Passed
+**VI:** Trạng thái xử lý hoặc kết luận của issue.
 
-Kết quả đồng thuận:
+### 4.9 Fix Version/s
 
-    N             : 26
-    Cohen Kappa   : 0.7647
-    Agreement     : 22/26
-    Threshold     : >= 0.70
-    Status        : Passed
+**EN:** Version or versions where the bug is fixed, if available.
 
-## 4. Validation Status / Trạng thái kiểm tra
+**VI:** Phiên bản sửa lỗi nếu có.
 
-English:
+### 4.10 Description
 
-The Raw dataset has passed the validation check. All required files exist, and
-the pilot issue keys are consistent across sample, ground truth, annotation,
-and kappa files.
+**EN:** Original/raw description of the bug report.
 
-Tiếng Việt:
+**VI:** Mô tả gốc/chưa cải thiện của bug report.
 
-Bộ dữ liệu Raw đã vượt qua bước kiểm tra. Tất cả các file cần thiết đều tồn tại,
-và các issue key của tập pilot khớp giữa sample, ground truth, annotation, và
-file kappa.
+---
 
-Validation command:
+## 5. Main Columns in Ground Truth and Annotation Files
 
-    .\.venv\Scripts\python.exe Scripts\Raw\check_raw_data.py
+This section applies to:
 
-Lệnh kiểm tra:
+- `pilot_ground_truth_raw.csv`
+- `full_ground_truth_raw.csv`
+- `pilot_annotation_raw_author1.csv`
+- `pilot_annotation_raw_author2.csv`
 
-    .\.venv\Scripts\python.exe Scripts\Raw\check_raw_data.py
+### 5.1 BUG-ID
 
-Validation result:
+**EN:** Bug report identifier with the Raw suffix.
 
-    Raw data check: PASSED
+**VI:** Mã bug report, thường có hậu tố Raw.
 
-Kết quả kiểm tra:
+### 5.2 S2R Label
 
-    Raw data check: PASSED
+**EN:** Final reproducibility label. The expected values are `Executable`
+and `Non-Executable`.
 
-## 5. Usage / Cách sử dụng
+**VI:** Nhãn khả năng tái hiện. Giá trị mong đợi là `Executable`
+và `Non-Executable`.
 
-English:
+### 5.3 S2R Irrep Category
 
-Use this dataset when running LLM experiments on the original bug reports.
+**EN:** Irreproducibility category if the report is not executable.
 
-Tiếng Việt:
+**VI:** Nhóm nguyên nhân không tái hiện được nếu report không executable.
 
-Sử dụng bộ dữ liệu này khi chạy thí nghiệm LLM trên các bug report gốc.
+### 5.4 Reason
 
-Expected future input files:
+**EN:** Explanation for the S2R label or category.
 
-    pilot_sample_raw.csv
-    pilot_ground_truth_raw.csv
-    full_ground_truth_raw.csv
+**VI:** Lý do cho nhãn hoặc category.
 
-Các file đầu vào dự kiến:
+### 5.5 OB Category
 
-    pilot_sample_raw.csv
-    pilot_ground_truth_raw.csv
-    full_ground_truth_raw.csv
+**EN:** Observed Behavior category.
 
-Expected future output folder:
+**VI:** Nhóm đánh giá Observed Behavior.
 
-    Results/Raw/
+### 5.6 OB Label
 
-Thư mục output dự kiến:
+**EN:** Observed Behavior quality label.
 
-    Results/Raw/
+**VI:** Nhãn chất lượng của Observed Behavior.
 
-## 6. Important Notes / Ghi chú quan trọng
+### 5.7 EB Category
 
-English:
+**EN:** Expected Behavior category.
 
-Do not manually modify labels in this folder unless there is a documented
-correction. LLM result files should not be stored in Data/Raw. They should be
-stored in Results/Raw.
+**VI:** Nhóm đánh giá Expected Behavior.
 
-Tiếng Việt:
+### 5.8 EB Label
 
-Không tự ý chỉnh sửa nhãn trong thư mục này nếu không có ghi chú chỉnh sửa rõ
-ràng. Các file kết quả của LLM không nên lưu trong Data/Raw mà nên lưu trong
-Results/Raw.
+**EN:** Expected Behavior quality label.
+
+**VI:** Nhãn chất lượng của Expected Behavior.
+
+---
+
+## 6. Dataset Statistics
+
+### 6.1 Pilot ground truth
+
+- **File:** `pilot_ground_truth_raw.csv`
+- **Total cases:** 26
+- **Executable:** 10
+- **Non-Executable:** 16
+
+### 6.2 Full ground truth
+
+- **File:** `full_ground_truth_raw.csv`
+- **Total cases:** 139
+- **Executable:** 40
+- **Non-Executable:** 99
+
+### 6.3 Author 1 pilot annotation
+
+- **File:** `pilot_annotation_raw_author1.csv`
+- **Total cases:** 26
+- **Executable:** 10
+- **Non-Executable:** 16
+
+### 6.4 Author 2 pilot annotation
+
+- **File:** `pilot_annotation_raw_author2.csv`
+- **Total cases:** 26
+- **Executable:** 9
+- **Non-Executable:** 17
+
+### 6.5 Pilot inter-annotator agreement
+
+N            : 26
+Cohen Kappa  : 0.7647
+Agreement    : 22/26
+
+**VI:** Kết quả trên cho thấy hai annotators có mức độ đồng thuận tốt ở pilot
+Raw, với Cohen's Kappa là `0.7647`.
+
+---
+
+## 7. Usage in Experiment
+
+### 7.1 Use sample files as LLM input
+
+Use these files as input for `run_experiment.py`:
+
+Data/Raw/pilot_sample_raw.csv
+Data/Raw/full_sample_raw.csv
+
+**VI:** Dùng các file sample ở trên làm input cho LLM.
+
+### 7.2 Use ground truth files only for evaluation
+
+Use these files only for `compute_metric.py`:
+
+Data/Raw/pilot_ground_truth_raw.csv
+Data/Raw/full_ground_truth_raw.csv
+
+**VI:** Chỉ dùng các file ground truth ở trên để đánh giá kết quả,
+không dùng làm input cho LLM.
+
+### 7.3 Recommended commands
+
+Run the Raw pilot experiment:
+
+.\.venv\Scripts\python.exe Scripts\run_experiment.py --version raw --phase pilot
+.\.venv\Scripts\python.exe Scripts\compute_metric.py --version raw --phase pilot
+
+Run the Raw full experiment:
+
+.\.venv\Scripts\python.exe Scripts\run_experiment.py --version raw --phase full
+.\.venv\Scripts\python.exe Scripts\compute_metric.py --version raw --phase full
+
+---
+
+## 8. Important Notes
+
+- **EN:** Do not use `pilot_ground_truth_raw.csv` or
+  `full_ground_truth_raw.csv` as LLM input because they contain manual labels
+  and annotation information.
+- **VI:** Không dùng `pilot_ground_truth_raw.csv` hoặc
+  `full_ground_truth_raw.csv` làm input cho LLM vì các file này chứa nhãn
+  thủ công và thông tin annotation.
+
+- **EN:** Use `pilot_sample_raw.csv` and `full_sample_raw.csv` as the LLM
+  input files.
+- **VI:** Dùng `pilot_sample_raw.csv` và `full_sample_raw.csv` làm input
+  cho LLM.
+
+- **EN:** Raw reports contain the original bug report text before improvement.
+- **VI:** Báo cáo Raw chứa nội dung bug report gốc trước khi được cải thiện.
+
+- **EN:** The file `kappa_scores_raw.csv` is used to report inter-annotator
+  agreement for the pilot annotation process.
+- **VI:** File `kappa_scores_raw.csv` dùng để báo cáo độ đồng thuận giữa
+  annotators trong giai đoạn pilot.
+
+- **EN:** Result files generated by LLM experiments should be stored in
+  `Results/Raw/`, not in `Data/Raw/`.
+- **VI:** Các file kết quả do LLM tạo ra nên được lưu trong `Results/Raw/`,
+  không lưu trong `Data/Raw/`.
+
+---
+
+## 9. Related Output Folder
+
+The output files for Raw experiments are expected to be stored in:
+
+Results/Raw/
+
+Typical output files include:
+
+pilot_llm_output_raw.csv
+pilot_api_log_raw.csv
+summary_raw.csv
+mismatch_analysis_raw.csv
+
+full_llm_output_raw.csv
+full_api_log_raw.csv
+summary_full_raw.csv
+mismatch_analysis_full_raw.csv
+
+**VI:** Các file kết quả của thí nghiệm Raw nên được lưu tại `Results/Raw/`.
+
+---
+
+## 10. Scope
+
+This README only describes the `Data/Raw/` folder.
+
+It does not cover:
+
+- `Data/Improved/`
+- `Results/`
+- `Figures/`
+- analysis notebooks such as `pilot_analysis.ipynb` or `full_analysis.ipynb`
+
+**VI:** README này chỉ mô tả thư mục `Data/Raw/`. README này không mô tả
+`Data/Improved/`, `Results/`, `Figures/`, hoặc các notebook phân tích.

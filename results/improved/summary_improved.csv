@@ -1,0 +1,30 @@
+﻿Metric,Value
+Version,improved
+Phase,pilot
+Model,gpt-4o-mini-2024-07-18
+Prompt version,v2
+Prediction file,C:\Users\mayum\Desktop\SWT301\SWT301_SE1925_G6\Results\Improved\pilot_llm_output_improved.csv
+Ground truth file,C:\Users\mayum\Desktop\SWT301\SWT301_SE1925_G6\Data\Improved\pilot_ground_truth_improved.csv
+Total prediction rows,26
+Valid JSON outputs,26
+Valid label predictions,26
+Ground truth cases,26
+Matched cases,26
+Evaluated cases,26
+Missing predictions,0
+Extra predictions,0
+Correct,19
+Incorrect,7
+Accuracy,0.7308
+Cohen Kappa,0.0000
+Kappa threshold,0.70
+Threshold passed,False
+GT Executable -> LLM Executable,19
+GT Executable -> LLM Non-Executable,0
+GT Non-Executable -> LLM Executable,7
+GT Non-Executable -> LLM Non-Executable,0
+Total input tokens,43688
+Total cached input tokens,0
+Total output tokens,1492
+Total tokens,45180
+Total cost USD,0.00744840
