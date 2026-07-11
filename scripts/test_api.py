@@ -33,7 +33,8 @@ def run_test(version: str, row_index: int, phase: str) -> None:
     load_env_file()
 
     config = CONFIG[version]
-    input_file = config["data_dir"] / config["input_files"][phase]
+    data_dir = config["data_dirs"][phase]
+    input_file = data_dir / config["input_files"][phase]
 
     if not input_file.exists():
         raise FileNotFoundError(f"Cannot find input file: {input_file}")
@@ -83,11 +84,18 @@ def run_test(version: str, row_index: int, phase: str) -> None:
     result = call_openai(system_prompt, user_prompt)
     parsed_output = result["parsed_response"]
 
+    raw_context_row = (
+        raw_context_rows.get(issue_key)
+        if version == "improved"
+        else None
+    )
+
     parsed_output = apply_phase_consistency_rules(
         phase=phase,
         version=version,
         row=row,
         parsed_response=parsed_output,
+        raw_context_row=raw_context_row,
     )
     result["parsed_response"] = parsed_output
 
@@ -128,9 +136,16 @@ def main() -> None:
 
     parser.add_argument(
         "--phase",
-        choices=["pilot", "full"],
+        choices=[
+            "pilot",
+            "development",
+            "pilot_validation",
+        ],
         default="pilot",
-        help="Dataset phase to test.",
+        help=(
+            "Dataset phase to test. Holdout is intentionally excluded "
+            "to prevent case-level probing."
+        ),
     )
 
     parser.add_argument(

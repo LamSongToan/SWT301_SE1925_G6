@@ -8,6 +8,95 @@ from typing import Dict, List
 
 BASE_DIR = Path(__file__).resolve().parents[1]
 
+PHASE_PATHS = {
+    "pilot": {
+        "raw_summary": BASE_DIR / "Results" / "Raw" / "summary_raw.csv",
+        "improved_summary": (
+            BASE_DIR / "Results" / "Improved" / "summary_improved.csv"
+        ),
+        "output": (
+            BASE_DIR
+            / "Results"
+            / "comparison_raw_vs_improved_pilot.csv"
+        ),
+    },
+    "development": {
+        "raw_summary": (
+            BASE_DIR
+            / "Results"
+            / "Full"
+            / "Development"
+            / "Raw"
+            / "summary_development_raw.csv"
+        ),
+        "improved_summary": (
+            BASE_DIR
+            / "Results"
+            / "Full"
+            / "Development"
+            / "Improved"
+            / "summary_development_improved.csv"
+        ),
+        "output": (
+            BASE_DIR
+            / "Results"
+            / "Full"
+            / "Development"
+            / "comparison_raw_vs_improved_development.csv"
+        ),
+    },
+    "pilot_validation": {
+        "raw_summary": (
+            BASE_DIR
+            / "Results"
+            / "Full"
+            / "Pilot_Validation"
+            / "Raw"
+            / "summary_pilot_validation_raw.csv"
+        ),
+        "improved_summary": (
+            BASE_DIR
+            / "Results"
+            / "Full"
+            / "Pilot_Validation"
+            / "Improved"
+            / "summary_pilot_validation_improved.csv"
+        ),
+        "output": (
+            BASE_DIR
+            / "Results"
+            / "Full"
+            / "Pilot_Validation"
+            / "comparison_raw_vs_improved_pilot_validation.csv"
+        ),
+    },
+    "holdout": {
+        "raw_summary": (
+            BASE_DIR
+            / "Results"
+            / "Full"
+            / "Holdout"
+            / "Raw"
+            / "summary_holdout_raw.csv"
+        ),
+        "improved_summary": (
+            BASE_DIR
+            / "Results"
+            / "Full"
+            / "Holdout"
+            / "Improved"
+            / "summary_holdout_improved.csv"
+        ),
+        "output": (
+            BASE_DIR
+            / "Results"
+            / "Full"
+            / "Holdout"
+            / "comparison_raw_vs_improved_holdout.csv"
+        ),
+    },
+}
+
 NUMERIC_METRICS = {
     "Total prediction rows",
     "Valid JSON outputs",
@@ -211,40 +300,14 @@ def validate_required_metrics(summary: Dict[str, str], summary_name: str) -> Non
 
 
 def compare(phase: str) -> None:
-    if phase == "pilot":
-        raw_summary = (
-            BASE_DIR
-            / "Results"
-            / "Raw"
-            / "summary_raw.csv"
-        )
-        improved_summary = (
-            BASE_DIR
-            / "Results"
-            / "Improved"
-            / "summary_improved.csv"
-        )
-    else:
-        raw_summary = (
-            BASE_DIR
-            / "Results"
-            / "Full"
-            / "Raw"
-            / "summary_full_raw.csv"
-        )
-        improved_summary = (
-            BASE_DIR
-            / "Results"
-            / "Full"
-            / "Improved"
-            / "summary_full_improved.csv"
-        )
+    phase_paths = PHASE_PATHS.get(phase)
 
-    output_file = (
-        BASE_DIR
-        / "Results"
-        / f"comparison_raw_vs_improved_{phase}.csv"
-    )
+    if phase_paths is None:
+        raise ValueError(f"Unsupported comparison phase: {phase}")
+
+    raw_summary = phase_paths["raw_summary"]
+    improved_summary = phase_paths["improved_summary"]
+    output_file = phase_paths["output"]
 
     raw = read_summary(raw_summary)
     improved = read_summary(improved_summary)
@@ -299,7 +362,12 @@ def main() -> None:
     parser.add_argument(
         "--phase",
         required=True,
-        choices=["pilot", "full"],
+        choices=[
+            "pilot",
+            "development",
+            "pilot_validation",
+            "holdout",
+        ],
         help="Experiment phase to compare.",
     )
 

@@ -12,57 +12,142 @@ BASE_DIR = Path(__file__).resolve().parents[1]
 VALID_LABELS = {"Executable", "Non-Executable"}
 KAPPA_THRESHOLD = 0.70
 
+METRIC_PHASES = {
+    "pilot",
+    "development",
+    "pilot_validation",
+    "holdout",
+}
+
 CONFIG = {
     "raw": {
         "ground_truth_dirs": {
             "pilot": BASE_DIR / "Data" / "Raw",
-            "full": BASE_DIR / "Data" / "Full" / "Raw",
+            "development": (
+                BASE_DIR / "Data" / "Full" / "Development" / "Raw"
+            ),
+            "pilot_validation": BASE_DIR / "Data" / "Raw",
+            "holdout": (
+                BASE_DIR / "Data" / "Full" / "Holdout" / "Raw"
+            ),
         },
         "results_dirs": {
             "pilot": BASE_DIR / "Results" / "Raw",
-            "full": BASE_DIR / "Results" / "Full" / "Raw",
+            "development": (
+                BASE_DIR / "Results" / "Full" / "Development" / "Raw"
+            ),
+            "pilot_validation": (
+                BASE_DIR
+                / "Results"
+                / "Full"
+                / "Pilot_Validation"
+                / "Raw"
+            ),
+            "holdout": (
+                BASE_DIR / "Results" / "Full" / "Holdout" / "Raw"
+            ),
         },
         "ground_truth": {
             "pilot": "pilot_ground_truth_raw.csv",
-            "full": "full_ground_truth_raw.csv",
+            "development": "development_ground_truth_raw.csv",
+            "pilot_validation": "pilot_ground_truth_raw.csv",
+            "holdout": "holdout_ground_truth_raw.csv",
         },
         "prediction": {
             "pilot": "pilot_llm_output_raw.csv",
-            "full": "full_llm_output_raw.csv",
+            "development": "development_llm_output_raw.csv",
+            "pilot_validation": "pilot_validation_llm_output_raw.csv",
+            "holdout": "holdout_llm_output_raw.csv",
         },
         "summary": {
             "pilot": "summary_raw.csv",
-            "full": "summary_full_raw.csv",
+            "development": "summary_development_raw.csv",
+            "pilot_validation": "summary_pilot_validation_raw.csv",
+            "holdout": "summary_holdout_raw.csv",
         },
         "mismatch": {
             "pilot": "mismatch_analysis_raw.csv",
-            "full": "mismatch_analysis_full_raw.csv",
+            "development": "mismatch_analysis_development_raw.csv",
+            "pilot_validation": (
+                "mismatch_analysis_pilot_validation_raw.csv"
+            ),
+            "holdout": "mismatch_analysis_holdout_raw.csv",
         },
     },
     "improved": {
         "ground_truth_dirs": {
             "pilot": BASE_DIR / "Data" / "Improved",
-            "full": BASE_DIR / "Data" / "Full" / "Improved",
+            "development": (
+                BASE_DIR
+                / "Data"
+                / "Full"
+                / "Development"
+                / "Improved"
+            ),
+            "pilot_validation": BASE_DIR / "Data" / "Improved",
+            "holdout": (
+                BASE_DIR
+                / "Data"
+                / "Full"
+                / "Holdout"
+                / "Improved"
+            ),
         },
         "results_dirs": {
             "pilot": BASE_DIR / "Results" / "Improved",
-            "full": BASE_DIR / "Results" / "Full" / "Improved",
+            "development": (
+                BASE_DIR
+                / "Results"
+                / "Full"
+                / "Development"
+                / "Improved"
+            ),
+            "pilot_validation": (
+                BASE_DIR
+                / "Results"
+                / "Full"
+                / "Pilot_Validation"
+                / "Improved"
+            ),
+            "holdout": (
+                BASE_DIR
+                / "Results"
+                / "Full"
+                / "Holdout"
+                / "Improved"
+            ),
         },
         "ground_truth": {
             "pilot": "pilot_ground_truth_improved.csv",
-            "full": "full_ground_truth_improved.csv",
+            "development": "development_ground_truth_improved.csv",
+            "pilot_validation": "pilot_ground_truth_improved.csv",
+            "holdout": "holdout_ground_truth_improved.csv",
         },
         "prediction": {
             "pilot": "pilot_llm_output_improved.csv",
-            "full": "full_llm_output_improved.csv",
+            "development": "development_llm_output_improved.csv",
+            "pilot_validation": (
+                "pilot_validation_llm_output_improved.csv"
+            ),
+            "holdout": "holdout_llm_output_improved.csv",
         },
         "summary": {
             "pilot": "summary_improved.csv",
-            "full": "summary_full_improved.csv",
+            "development": "summary_development_improved.csv",
+            "pilot_validation": (
+                "summary_pilot_validation_improved.csv"
+            ),
+            "holdout": "summary_holdout_improved.csv",
         },
         "mismatch": {
             "pilot": "mismatch_analysis_improved.csv",
-            "full": "mismatch_analysis_full_improved.csv",
+            "development": (
+                "mismatch_analysis_development_improved.csv"
+            ),
+            "pilot_validation": (
+                "mismatch_analysis_pilot_validation_improved.csv"
+            ),
+            "holdout": "mismatch_analysis_holdout_improved.csv",
         },
     },
 }
@@ -271,32 +356,48 @@ def classify_kappa_band(kappa: float) -> str:
     return "Perfect agreement (Kappa = 1.00)"
 
 
-def interpret_kappa(kappa: float) -> str:
-    if kappa < 0.70:
+def interpret_kappa(kappa: float, phase: str) -> str:
+    if kappa < KAPPA_THRESHOLD:
+        if phase == "development":
+            return (
+                "Below the predefined threshold. Continue improving the "
+                "candidate configuration using Development cases only."
+            )
+
+        if phase == "pilot_validation":
+            return (
+                "Below the predefined threshold. The candidate Full "
+                "configuration does not preserve acceptable agreement on "
+                "the Pilot cases and must not proceed to Holdout."
+            )
+
+        if phase == "holdout":
+            return (
+                "Final protected Holdout agreement is below the threshold. "
+                "Report the result as not meeting the research criterion; "
+                "do not tune on Holdout cases."
+            )
+
         return (
-            "Below the predefined acceptable threshold. Review the annotation "
-            "guideline, disagreement cases, and pilot labels before running the "
-            "full evaluation."
+            "Pilot agreement is below the predefined threshold. "
+            "Revise the calibration guidance before proceeding."
         )
 
     if kappa < 0.80:
         return (
-            "Acceptable agreement. This is the preferred pilot range before full "
-            "evaluation because it indicates sufficient agreement without looking "
-            "overly perfect."
+            "Acceptable agreement. The predefined Cohen Kappa threshold "
+            "has been met."
         )
 
     if kappa < 1.00:
         return (
-            "Good agreement. Full evaluation may proceed, but review representative "
-            "sample cases to ensure the guideline and prompt are not overfitted to "
-            "the pilot set."
+            "Good agreement. The predefined Cohen Kappa threshold "
+            "has been exceeded."
         )
 
     return (
-        "Perfect agreement. This passes the minimum threshold, but it should be "
-        "reviewed carefully for possible overfitting, data leakage, or overly "
-        "specific rules before running the full evaluation."
+        "Perfect agreement. The predefined threshold has been met; "
+        "interpret together with the dataset size and validation design."
     )
 
 
@@ -496,7 +597,21 @@ def validate_metric_inputs(ground_truth_file: Path, prediction_file: Path) -> No
         raise ValueError(f"Prediction file is empty: {prediction_file}")
 
 
-def compute_metrics(version: str, phase: str) -> None:
+def compute_metrics(
+    version: str,
+    phase: str,
+    confirm_holdout_final: bool = False,
+) -> None:
+    if phase not in METRIC_PHASES:
+        raise ValueError(f"Unsupported metric phase: {phase}")
+
+    if phase == "holdout" and not confirm_holdout_final:
+        raise ValueError(
+            "Holdout metrics are protected. Use "
+            "--confirm-holdout-final only after the final Holdout "
+            "predictions have been generated."
+        )
+
     config = CONFIG[version]
 
     ground_truth_dir = config["ground_truth_dirs"][phase]
@@ -606,7 +721,7 @@ def compute_metrics(version: str, phase: str) -> None:
     kappa = cohen_kappa(y_true, y_pred) if evaluated_cases else 0.0
     threshold_passed = kappa >= KAPPA_THRESHOLD
     kappa_band = classify_kappa_band(kappa)
-    kappa_interpretation = interpret_kappa(kappa)
+    kappa_interpretation = interpret_kappa(kappa, phase)
 
     confusion = Counter(zip(y_true, y_pred))
 
@@ -716,8 +831,22 @@ def main() -> None:
     parser.add_argument(
         "--phase",
         required=True,
-        choices=["pilot", "full"],
+        choices=[
+            "pilot",
+            "development",
+            "pilot_validation",
+            "holdout",
+        ],
         help="Experiment phase to evaluate.",
+    )
+
+    parser.add_argument(
+        "--confirm-holdout-final",
+        action="store_true",
+        help=(
+            "Explicitly confirm final protected Holdout metric "
+            "calculation. Required only for --phase holdout."
+        ),
     )
 
     args = parser.parse_args()
@@ -725,6 +854,7 @@ def main() -> None:
     compute_metrics(
         version=args.version,
         phase=args.phase,
+        confirm_holdout_final=args.confirm_holdout_final,
     )
 
 
