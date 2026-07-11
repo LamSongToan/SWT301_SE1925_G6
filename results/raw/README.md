@@ -1,266 +1,103 @@
-# Results/Raw README
+# Official Raw Pilot Results / Kết quả Pilot Raw chính thức
 
-> **EN:** This folder stores LLM outputs and evaluation results for the Raw
-> Mojira bug report dataset.
->
-> **VI:** Thư mục này lưu trữ output của LLM và kết quả đánh giá cho bộ dữ liệu
-> Mojira phiên bản Raw.
+## English
 
----
+### Purpose — English
 
-## 1. Purpose
+This directory stores the official Raw Pilot experiment results for 26 cases.
 
-**EN:** `Results/Raw/` contains the generated prediction files, API logs,
-summary metrics, and mismatch analysis files for the Raw experiment.
+These results were produced with the frozen Raw Pilot configuration and are independent from Full Development, Pilot Validation, and Holdout results.
 
-The results are produced after running the LLM-based reproducibility classifier
-on the Raw dataset and evaluating the predictions against manual ground truth
-labels.
+### Experiment configuration — English
 
-**VI:** `Results/Raw/` chứa các file dự đoán do LLM tạo ra, log API, file tổng
-hợp metric, và file phân tích mismatch cho thí nghiệm Raw.
+| Item | Value |
+| --- | --- |
+| Phase | Official Pilot |
+| Dataset version | Raw |
+| Model | `gpt-4o-mini-2024-07-18` |
+| Seed | `210` |
+| Cases | `26` |
+| Prompt version | `Prompts_Raw_Final_V10_PilotCandidate` |
+| Cohen's Kappa threshold | `0.70` |
 
-Các kết quả này được tạo sau khi chạy bộ phân loại khả năng tái hiện lỗi bằng
-LLM trên bộ dữ liệu Raw và so sánh dự đoán với nhãn ground truth thủ công.
+### Directory contents — English
 
----
+| File | Description |
+| --- | --- |
+| `pilot_api_log_raw.csv` | API execution log for the official Raw Pilot run. |
+| `pilot_llm_output_raw.csv` | LLM predictions and structured output for 26 Raw Pilot cases. |
+| `mismatch_analysis_raw.csv` | Raw Pilot disagreements with Pilot Ground Truth. |
+| `summary_raw.csv` | Official Raw Pilot metrics, confusion matrix, token usage, and cost. |
+| `README.md` | Documentation for this result directory. |
 
-## 2. Folder Structure
+The cross-version Pilot comparison is stored at:
 
-Results/Raw/
-├── README.md
-├── .gitkeep
-├── pilot_llm_output_raw.csv
-├── pilot_api_log_raw.csv
-├── summary_raw.csv
-├── mismatch_analysis_raw.csv
-├── full_llm_output_raw.csv
-├── full_api_log_raw.csv
-├── summary_full_raw.csv
-└── mismatch_analysis_full_raw.csv
+`Results/comparison_raw_vs_improved_pilot.csv`
 
-**VI:** Cấu trúc trên gồm file README, file `.gitkeep`, output pilot, output
-full, API log, summary metric, và mismatch analysis của phiên bản Raw.
+### Official Raw Pilot metrics — English
 
----
+| Metric | Value |
+| --- | ---: |
+| Accuracy | `0.9615` |
+| Cohen's Kappa | `0.9202` |
+| Correct | `25` |
+| Mismatches | `1` |
+| Total cost | `$0.01290600` |
 
-## 3. File Description
+### Usage rules — English
 
-### 3.1 pilot_llm_output_raw.csv
+- This directory belongs to the official Raw Pilot phase.
+- These files must not be overwritten by Pilot Validation or Full runs.
+- The official Pilot result is retained as calibration evidence.
+- The final research conclusion must still be based on the protected Holdout results.
 
-**EN:** Contains LLM predictions for the Raw pilot experiment.
+## Tiếng Việt
 
-**VI:** Chứa dự đoán của LLM cho thí nghiệm pilot của bộ Raw.
+### Mục đích — Tiếng Việt
 
-Typical content includes:
+Thư mục này lưu kết quả thí nghiệm Pilot Raw chính thức cho 26 case.
 
-- `issue_key`
-- `s2r_label`
-- `reason`
-- `status`
-- `model`
-- `prompt_version`
-- token usage
-- cost
-- raw response
+Kết quả được tạo bằng cấu hình Pilot Raw đã đóng băng và độc lập với Full Development, Pilot Validation và Holdout.
 
-### 3.2 pilot_api_log_raw.csv
+### Cấu hình thí nghiệm — Tiếng Việt
 
-**EN:** Contains detailed API execution logs for the Raw pilot experiment.
+| Hạng mục | Giá trị |
+| --- | --- |
+| Giai đoạn | Pilot chính thức |
+| Phiên bản dữ liệu | Raw |
+| Mô hình | `gpt-4o-mini-2024-07-18` |
+| Seed | `210` |
+| Số case | `26` |
+| Phiên bản prompt | `Prompts_Raw_Final_V10_PilotCandidate` |
+| Ngưỡng Cohen's Kappa | `0.70` |
 
-**VI:** Chứa log chi tiết quá trình gọi API cho thí nghiệm pilot Raw.
+### Nội dung thư mục — Tiếng Việt
 
-This file is useful for checking:
+| File | Mô tả |
+| --- | --- |
+| `pilot_api_log_raw.csv` | Nhật ký gọi API của lần chạy Pilot Raw chính thức. |
+| `pilot_llm_output_raw.csv` | Dự đoán LLM và output có cấu trúc cho 26 case Pilot Raw. |
+| `mismatch_analysis_raw.csv` | Các bất đồng giữa Pilot Raw và Pilot Ground Truth. |
+| `summary_raw.csv` | Chỉ số Pilot Raw chính thức, confusion matrix, token và chi phí. |
+| `README.md` | Tài liệu mô tả thư mục kết quả này. |
 
-- processing order
-- status of each API call
-- prediction result
-- error message, if any
-- token usage
-- cost per call
+File so sánh Pilot giữa Raw và Improved được lưu tại:
 
-### 3.3 summary_raw.csv
+`Results/comparison_raw_vs_improved_pilot.csv`
 
-**EN:** Contains pilot-level evaluation metrics for the Raw dataset.
+### Chỉ số Pilot Raw chính thức — Tiếng Việt
 
-**VI:** Chứa các metric đánh giá ở giai đoạn pilot cho bộ Raw.
+| Chỉ số | Giá trị |
+| --- | ---: |
+| Accuracy | `0.9615` |
+| Cohen's Kappa | `0.9202` |
+| Số case đúng | `25` |
+| Mismatch | `1` |
+| Tổng chi phí | `$0.01290600` |
 
-Current pilot result:
+### Quy tắc sử dụng — Tiếng Việt
 
-Total cases       : 26
-Accuracy          : 0.6923
-Cohen's Kappa     : 0.3247
-Threshold         : 0.70
-Threshold passed  : False
-Mismatch cases    : 8
-
-### 3.4 mismatch_analysis_raw.csv
-
-**EN:** Contains pilot cases where the LLM prediction does not match the manual
-ground truth label.
-
-**VI:** Chứa các case pilot mà dự đoán của LLM không khớp với nhãn ground truth
-thủ công.
-
-This file is used to inspect why the LLM classified a report incorrectly.
-
-### 3.5 full_llm_output_raw.csv
-
-**EN:** Contains LLM predictions for the full Raw experiment.
-
-**VI:** Chứa dự đoán của LLM cho full experiment của bộ Raw.
-
-Typical content includes the same type of columns as `pilot_llm_output_raw.csv`.
-
-### 3.6 full_api_log_raw.csv
-
-**EN:** Contains detailed API execution logs for the full Raw experiment.
-
-**VI:** Chứa log chi tiết quá trình gọi API cho full experiment Raw.
-
-This file is useful for checking whether all full cases were processed
-successfully.
-
-### 3.7 summary_full_raw.csv
-
-**EN:** Contains full-level evaluation metrics for the Raw dataset.
-
-**VI:** Chứa các metric đánh giá ở giai đoạn full cho bộ Raw.
-
-Current full result:
-
-Total cases       : 139
-Accuracy          : 0.7338
-Cohen's Kappa     : 0.3358
-Threshold         : 0.70
-Threshold passed  : False
-Mismatch cases    : 37
-
-### 3.8 mismatch_analysis_full_raw.csv
-
-**EN:** Contains full experiment cases where the LLM prediction does not match
-the manual ground truth label.
-
-**VI:** Chứa các case full mà dự đoán của LLM không khớp với nhãn ground truth
-thủ công.
-
-This file is important for error analysis and discussion in the report.
-
-### 3.9 .gitkeep
-
-**EN:** Keeps the `Results/Raw/` folder visible in Git even when generated CSV
-files are ignored or removed.
-
-**VI:** Giữ thư mục `Results/Raw/` xuất hiện trong Git kể cả khi các file CSV
-kết quả bị ignore hoặc bị xóa.
-
----
-
-## 4. Experiment Result Summary
-
-### 4.1 Pilot Raw result
-
-Model             : gpt-4o-mini-2024-07-18
-Prompt version    : v2
-Total cases       : 26
-Accuracy          : 0.6923
-Cohen's Kappa     : 0.3247
-Threshold         : 0.70
-Threshold passed  : False
-Mismatch cases    : 8
-
-**VI:** Ở pilot Raw, Accuracy đạt `0.6923`, Cohen's Kappa đạt `0.3247`, nên
-chưa đạt ngưỡng `0.70`.
-
-### 4.2 Full Raw result
-
-Model             : gpt-4o-mini-2024-07-18
-Prompt version    : v2
-Total cases       : 139
-Accuracy          : 0.7338
-Cohen's Kappa     : 0.3358
-Threshold         : 0.70
-Threshold passed  : False
-Mismatch cases    : 37
-
-**VI:** Ở full Raw, Accuracy đạt `0.7338`, Cohen's Kappa đạt `0.3358`, nên
-cũng chưa đạt ngưỡng `0.70`.
-
----
-
-## 5. Interpretation Notes
-
-**EN:** The Raw reports are original bug reports before improvement. Compared
-with the Improved result, the Raw full experiment achieved higher Accuracy and
-higher Cohen's Kappa.
-
-However, the Raw result still did not reach the target threshold of Cohen's
-Kappa `0.70`. This means the current LLM classification setup did not achieve
-sufficient agreement with manual/developer review.
-
-**VI:** Báo cáo Raw là báo cáo lỗi gốc trước khi được cải thiện. So với kết quả
-Improved, full experiment của Raw đạt Accuracy và Cohen's Kappa cao hơn.
-
-Tuy nhiên, kết quả Raw vẫn chưa đạt ngưỡng mục tiêu Cohen's Kappa `0.70`. Điều
-này nghĩa là thiết lập phân loại bằng LLM hiện tại chưa đạt mức đồng thuận đủ
-cao với manual/developer review.
-
----
-
-## 6. Usage
-
-### 6.1 Run Raw pilot experiment
-
-.\.venv\Scripts\python.exe Scripts\run_experiment.py --version raw --phase pilot
-.\.venv\Scripts\python.exe Scripts\compute_metric.py --version raw --phase pilot
-
-### 6.2 Run Raw full experiment
-
-.\.venv\Scripts\python.exe Scripts\run_experiment.py --version raw --phase full
-.\.venv\Scripts\python.exe Scripts\compute_metric.py --version raw --phase full
-
-### 6.3 Compare Raw and Improved results
-
-.\.venv\Scripts\python.exe Scripts\compare_raw_improved.py --phase pilot
-.\.venv\Scripts\python.exe Scripts\compare_raw_improved.py --phase full
-
----
-
-## 7. Important Notes
-
-- **EN:** These files are generated outputs, not source dataset files.
-- **VI:** Các file trong thư mục này là output được tạo ra, không phải dữ liệu
-  nguồn ban đầu.
-
-- **EN:** Do not manually edit result CSV files unless documenting a correction.
-- **VI:** Không chỉnh sửa thủ công các file CSV kết quả, trừ khi đang ghi nhận
-  một chỉnh sửa có kiểm soát.
-
-- **EN:** Source data for Raw reports is stored in `Data/Raw/`.
-- **VI:** Dữ liệu nguồn của báo cáo Raw nằm trong `Data/Raw/`.
-
-- **EN:** The final comparison file is stored in the parent `Results/` folder.
-- **VI:** File so sánh cuối cùng được lưu ở thư mục cha `Results/`.
-
-Examples:
-
-Results/comparison_raw_vs_improved_pilot.csv
-Results/comparison_raw_vs_improved_full.csv
-
----
-
-## 8. Scope
-
-This README only describes the `Results/Raw/` folder.
-
-It does not cover:
-
-- `Results/Improved/`
-- `Data/Raw/`
-- `Data/Improved/`
-- `Figures/`
-- analysis notebooks such as `pilot_analysis.ipynb` or `full_analysis.ipynb`
-
-**VI:** README này chỉ mô tả thư mục `Results/Raw/`. README này không mô tả
-`Results/Improved/`, `Data/Raw/`, `Data/Improved/`, `Figures/`, hoặc các
-notebook phân tích.
+- Thư mục này thuộc giai đoạn Pilot Raw chính thức.
+- Không được để Pilot Validation hoặc Full run ghi đè các file này.
+- Kết quả Pilot chính thức được giữ làm bằng chứng hiệu chỉnh ban đầu.
+- Kết luận nghiên cứu cuối vẫn phải dựa trên kết quả Holdout được bảo vệ.
