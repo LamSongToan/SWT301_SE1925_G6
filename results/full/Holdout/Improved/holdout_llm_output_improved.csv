@@ -1,0 +1,799 @@
+﻿"issue_key","s2r_label","reason","s2r_reproducibility","s2r_validity","s2r_failure_type","s2r_reason","expected_behavior_presence","expected_behavior_quality","expected_behavior_reason","observed_behavior_presence","observed_behavior_quality","observed_behavior_reason","overall_reason","status","model","prompt_version","seed","system_fingerprint","input_tokens","cached_input_tokens","output_tokens","total_tokens","cost_usd","timestamp","raw_response"
+"MC-300143","Executable","The steps provide a clear and actionable sequence to reproduce the bug, aligning with the original report's intent.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable sequence to reproduce the bug, aligning with the original report's intent.","Present","Accurate","The expected behavior is clearly defined and aligns with the intended functionality of the `reducedDebugInfo` gamerule.","Present","Sufficient","The observed behavior is detailed enough to understand the specific outcome of the bug without requiring assumptions.","The report effectively captures the issue with clear steps, expected outcomes, and observed results, making it actionable for reproduction.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5620","0","213","5833","0.00097080","2026-07-11T20:12:24","{
+  ""issue_key"": ""MC-300143"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable sequence to reproduce the bug, aligning with the original report's intent.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined and aligns with the intended functionality of the `reducedDebugInfo` gamerule.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is detailed enough to understand the specific outcome of the bug without requiring assumptions.""
+  },
+  ""overall_reason"": ""The report effectively captures the issue with clear steps, expected outcomes, and observed results, making it actionable for reproduction.""
+}"
+"MC-300396","Executable","The steps provide a clear and actionable path to reproduce the bug, detailing the necessary actions and expected outcomes without requiring additional assumptions.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable path to reproduce the bug, detailing the necessary actions and expected outcomes without requiring additional assumptions.","Present","Accurate","The expected behavior is clearly defined, stating that the duration of status effects should not decrease while the game is paused, which aligns with Minecraft's mechanics.","Present","Sufficient","The observed behavior is well described, detailing how the status effect duration continues to decrease while the game is paused, allowing readers to understand the specific outcome of the bug.","The report effectively captures the intended bug with clear steps, expected behavior, and observed behavior, making it actionable for reproduction.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5652","0","240","5892","0.00099180","2026-07-11T20:12:32","{
+  ""issue_key"": ""MC-300396"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable path to reproduce the bug, detailing the necessary actions and expected outcomes without requiring additional assumptions.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined, stating that the duration of status effects should not decrease while the game is paused, which aligns with Minecraft's mechanics.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is well described, detailing how the status effect duration continues to decrease while the game is paused, allowing readers to understand the specific outcome of the bug.""
+  },
+  ""overall_reason"": ""The report effectively captures the intended bug with clear steps, expected behavior, and observed behavior, making it actionable for reproduction.""
+}"
+"MC-300515","Executable","The steps provide a clear and actionable sequence to reproduce the bug, requiring only general Minecraft knowledge.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable sequence to reproduce the bug, requiring only general Minecraft knowledge.","Present","Accurate","The expected behavior is clearly defined and aligns with the game's mechanics regarding Endermen and boats.","Present","Sufficient","The observed behavior is detailed enough to understand the specific outcome of the bug without ambiguity.","The report effectively captures the intended bug with clear steps, expected behavior, and observed behavior, making it actionable for reproduction.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5463","0","206","5669","0.00094305","2026-07-11T20:12:43","{
+  ""issue_key"": ""MC-300515"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable sequence to reproduce the bug, requiring only general Minecraft knowledge.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined and aligns with the game's mechanics regarding Endermen and boats.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is detailed enough to understand the specific outcome of the bug without ambiguity.""
+  },
+  ""overall_reason"": ""The report effectively captures the intended bug with clear steps, expected behavior, and observed behavior, making it actionable for reproduction.""
+}"
+"MC-300516","Executable","The steps provide a clear and actionable path to reproduce the bug, requiring only general game knowledge.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable path to reproduce the bug, requiring only general game knowledge.","Present","Accurate","The expected behavior is clearly defined and aligns with the game's mechanics regarding pillager patrols.","Present","Sufficient","The observed behavior is detailed enough to understand the specific outcome of the bug without ambiguity.","The report effectively outlines the steps to reproduce the bug, expected behavior, and observed behavior, all of which align with the original intent of the bug report.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5515","0","213","5728","0.00095505","2026-07-11T20:12:54","{
+  ""issue_key"": ""MC-300516"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable path to reproduce the bug, requiring only general game knowledge.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined and aligns with the game's mechanics regarding pillager patrols.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is detailed enough to understand the specific outcome of the bug without ambiguity.""
+  },
+  ""overall_reason"": ""The report effectively outlines the steps to reproduce the bug, expected behavior, and observed behavior, all of which align with the original intent of the bug report.""
+}"
+"MC-300527","Executable","The steps provide a clear and actionable sequence to reproduce the bug, requiring only general Minecraft knowledge.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable sequence to reproduce the bug, requiring only general Minecraft knowledge.","Present","Accurate","The expected behavior is clearly defined and aligns with the game's mechanics regarding the positioning of the moon and sun.","Present","Sufficient","The observed behavior is detailed enough to understand the specific visual anomaly occurring with the moon phases.","The report effectively outlines the steps to reproduce the bug, expected behavior, and observed behavior, all of which align with the original intent of the bug report.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5563","0","217","5780","0.00096465","2026-07-11T20:13:04","{
+  ""issue_key"": ""MC-300527"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable sequence to reproduce the bug, requiring only general Minecraft knowledge.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined and aligns with the game's mechanics regarding the positioning of the moon and sun.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is detailed enough to understand the specific visual anomaly occurring with the moon phases.""
+  },
+  ""overall_reason"": ""The report effectively outlines the steps to reproduce the bug, expected behavior, and observed behavior, all of which align with the original intent of the bug report.""
+}"
+"MC-300530","Non-Executable","The report does not provide any steps to reproduce the bug, making it impossible to attempt to replicate the issue.","Irreproducible","Not Applicable","Missing Information","The report does not provide any steps to reproduce the bug, making it impossible to attempt to replicate the issue.","Not Present","Not Applicable","There is no explicit statement about the expected outcome in the report.","Not Present","Not Applicable","No description of the observed behavior is provided in the report.","The report lacks necessary details for reproduction, including steps, expected behavior, and observed behavior.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5031","0","199","5230","0.00087405","2026-07-11T20:13:07","{
+  ""issue_key"": ""MC-300530"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Non-Executable"",
+    ""reproducibility"": ""Irreproducible"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Missing Information"",
+    ""reason"": ""The report does not provide any steps to reproduce the bug, making it impossible to attempt to replicate the issue.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Not Present"",
+    ""quality"": ""Not Applicable"",
+    ""reason"": ""There is no explicit statement about the expected outcome in the report.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Not Present"",
+    ""quality"": ""Not Applicable"",
+    ""reason"": ""No description of the observed behavior is provided in the report.""
+  },
+  ""overall_reason"": ""The report lacks necessary details for reproduction, including steps, expected behavior, and observed behavior.""
+}"
+"MC-300572","Executable","The steps provide a clear and actionable path to reproduce the bug, detailing the necessary setup and actions to observe the intended behavior.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable path to reproduce the bug, detailing the necessary setup and actions to observe the intended behavior.","Present","Accurate","The expected behavior is clearly defined and aligns with the mechanics of Minecraft, stating that the Copper Golem should prioritize opening the chest before moving upwards.","Present","Sufficient","The observed behavior is detailed enough to understand that the Copper Golem prioritizes climbing over interacting with the chest, which is the core of the reported issue.","The report effectively captures the intended bug with clear steps, expected behavior, and observed behavior, making it actionable for reproduction.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5453","0","237","5690","0.00096015","2026-07-11T20:13:13","{
+  ""issue_key"": ""MC-300572"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable path to reproduce the bug, detailing the necessary setup and actions to observe the intended behavior.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined and aligns with the mechanics of Minecraft, stating that the Copper Golem should prioritize opening the chest before moving upwards.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is detailed enough to understand that the Copper Golem prioritizes climbing over interacting with the chest, which is the core of the reported issue.""
+  },
+  ""overall_reason"": ""The report effectively captures the intended bug with clear steps, expected behavior, and observed behavior, making it actionable for reproduction.""
+}"
+"MC-300607","Executable","The steps provide a clear and actionable sequence to reproduce the bug, requiring only general Minecraft knowledge.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable sequence to reproduce the bug, requiring only general Minecraft knowledge.","Present","Accurate","The expected behavior is clearly defined and aligns with Minecraft mechanics regarding mob spawning and light levels.","Present","Sufficient","The observed behavior is detailed enough to understand the specific outcomes of the bug without requiring assumptions.","The report effectively captures the bug's reproduction steps, expected outcomes, and observed behavior, making it a comprehensive and actionable report.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","6154","0","208","6362","0.00104790","2026-07-11T20:13:17","{
+  ""issue_key"": ""MC-300607"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable sequence to reproduce the bug, requiring only general Minecraft knowledge.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined and aligns with Minecraft mechanics regarding mob spawning and light levels.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is detailed enough to understand the specific outcomes of the bug without requiring assumptions.""
+  },
+  ""overall_reason"": ""The report effectively captures the bug's reproduction steps, expected outcomes, and observed behavior, making it a comprehensive and actionable report.""
+}"
+"MC-300620","Executable","The steps provide a clear and actionable path to reproduce the bug, requiring only general Minecraft knowledge.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable path to reproduce the bug, requiring only general Minecraft knowledge.","Present","Accurate","The expected behavior is clearly defined and aligns with Minecraft mechanics, stating that the OnGround flag should remain consistently set to 1b when the bobber is on the ground.","Present","Sufficient","The observed behavior is detailed enough to understand the specific outcome of the bug, describing the alternating OnGround flag clearly.","The report effectively outlines the steps to reproduce the bug, expected behavior, and observed behavior, all of which align with the original issue intent.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5546","0","233","5779","0.00097170","2026-07-11T20:13:21","{
+  ""issue_key"": ""MC-300620"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable path to reproduce the bug, requiring only general Minecraft knowledge.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined and aligns with Minecraft mechanics, stating that the OnGround flag should remain consistently set to 1b when the bobber is on the ground.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is detailed enough to understand the specific outcome of the bug, describing the alternating OnGround flag clearly.""
+  },
+  ""overall_reason"": ""The report effectively outlines the steps to reproduce the bug, expected behavior, and observed behavior, all of which align with the original issue intent.""
+}"
+"MC-300643","Executable","The steps provide a clear and actionable path to reproduce the issue with the AMD RX 7600 XT graphics card, aligning with the original report's intent.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable path to reproduce the issue with the AMD RX 7600 XT graphics card, aligning with the original report's intent.","Present","Accurate","The expected behavior is clearly defined, stating that the game should launch and display the main menu, which aligns with Minecraft's intended functionality.","Present","Sufficient","The observed behavior is detailed enough to understand that the game does not display a window despite being active in the background, which is the core issue reported.","The report effectively captures the issue with sufficient detail in the steps, expected behavior, and observed behavior, making it actionable for developers.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","6247","0","242","6489","0.00108225","2026-07-11T20:13:26","{
+  ""issue_key"": ""MC-300643"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable path to reproduce the issue with the AMD RX 7600 XT graphics card, aligning with the original report's intent.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined, stating that the game should launch and display the main menu, which aligns with Minecraft's intended functionality.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is detailed enough to understand that the game does not display a window despite being active in the background, which is the core issue reported.""
+  },
+  ""overall_reason"": ""The report effectively captures the issue with sufficient detail in the steps, expected behavior, and observed behavior, making it actionable for developers.""
+}"
+"MC-300745","Executable","The steps provide a clear and actionable path to reproduce the bug, detailing the setup, actions, and expected observations without requiring additional assumptions.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable path to reproduce the bug, detailing the setup, actions, and expected observations without requiring additional assumptions.","Present","Accurate","The expected behavior is clearly defined, stating that the copper golem should navigate intelligently and avoid jumping off the platform, which aligns with Minecraft's pathfinding mechanics.","Present","Sufficient","The observed behavior is well described, detailing the unintended jumping off the platform and the implications of this behavior, allowing readers to understand the specific outcome.","The report effectively captures the intended bug with clear steps, expected and observed behaviors, making it actionable for reproduction.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5513","0","238","5751","0.00096975","2026-07-11T20:13:33","{
+  ""issue_key"": ""MC-300745"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable path to reproduce the bug, detailing the setup, actions, and expected observations without requiring additional assumptions.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined, stating that the copper golem should navigate intelligently and avoid jumping off the platform, which aligns with Minecraft's pathfinding mechanics.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is well described, detailing the unintended jumping off the platform and the implications of this behavior, allowing readers to understand the specific outcome.""
+  },
+  ""overall_reason"": ""The report effectively captures the intended bug with clear steps, expected and observed behaviors, making it actionable for reproduction.""
+}"
+"MC-300768","Executable","The steps provide a clear and actionable path to reproduce the bug, detailing the necessary setup and actions to observe the intended behavior.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable path to reproduce the bug, detailing the necessary setup and actions to observe the intended behavior.","Not Present","Not Applicable","The expected behavior is not explicitly stated in the report.","Present","Sufficient","The observed behavior is clearly described, indicating the player was sent 300 blocks away in an underground cave.","The report effectively outlines the steps to reproduce the bug, although it lacks a clear expected behavior statement.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5290","0","206","5496","0.00091710","2026-07-11T20:13:40","{
+  ""issue_key"": ""MC-300768"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable path to reproduce the bug, detailing the necessary setup and actions to observe the intended behavior.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Not Present"",
+    ""quality"": ""Not Applicable"",
+    ""reason"": ""The expected behavior is not explicitly stated in the report.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is clearly described, indicating the player was sent 300 blocks away in an underground cave.""
+  },
+  ""overall_reason"": ""The report effectively outlines the steps to reproduce the bug, although it lacks a clear expected behavior statement.""
+}"
+"MC-300778","Executable","The steps provide a clear and actionable sequence to reproduce the bug, requiring only general Minecraft knowledge.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable sequence to reproduce the bug, requiring only general Minecraft knowledge.","Present","Accurate","The expected behavior is clearly defined and aligns with the mechanics of calibrated sculk sensors in Minecraft.","Present","Sufficient","The observed behavior is detailed enough to understand that the calibrated sculk sensor did not trigger as expected.","The report effectively outlines the steps to reproduce the bug, the expected behavior, and the observed behavior, all of which are consistent with the original intent.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5552","0","216","5768","0.00096240","2026-07-11T20:13:49","{
+  ""issue_key"": ""MC-300778"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable sequence to reproduce the bug, requiring only general Minecraft knowledge.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined and aligns with the mechanics of calibrated sculk sensors in Minecraft.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is detailed enough to understand that the calibrated sculk sensor did not trigger as expected.""
+  },
+  ""overall_reason"": ""The report effectively outlines the steps to reproduce the bug, the expected behavior, and the observed behavior, all of which are consistent with the original intent.""
+}"
+"MC-300786","Executable","The steps provide a clear and actionable path to reproduce the issue with Arabic language support in Minecraft, requiring only general game knowledge.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable path to reproduce the issue with Arabic language support in Minecraft, requiring only general game knowledge.","Present","Accurate","The expected behavior is clearly defined, aligning with the mechanics of how Arabic text should be displayed in the game.","Present","Sufficient","The observed behavior is detailed and clearly describes the specific issues with Arabic text rendering, allowing readers to understand the problem.","The report effectively outlines the steps to reproduce the bug, expected behavior, and observed behavior, making it a comprehensive and actionable bug report.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5641","0","225","5866","0.00098115","2026-07-11T20:13:58","{
+  ""issue_key"": ""MC-300786"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable path to reproduce the issue with Arabic language support in Minecraft, requiring only general game knowledge.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined, aligning with the mechanics of how Arabic text should be displayed in the game.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is detailed and clearly describes the specific issues with Arabic text rendering, allowing readers to understand the problem.""
+  },
+  ""overall_reason"": ""The report effectively outlines the steps to reproduce the bug, expected behavior, and observed behavior, making it a comprehensive and actionable bug report.""
+}"
+"MC-300806","Executable","The steps provide a clear and actionable sequence to reproduce the issue regarding the structure block, aligning with the original intent.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable sequence to reproduce the issue regarding the structure block, aligning with the original intent.","Present","Accurate","The expected behavior is clearly defined and aligns with Minecraft mechanics, stating how the structure block should function after being broken.","Present","Sufficient","The observed behavior is detailed enough to understand the specific outcome of losing access to the saved structure after breaking the structure blocks.","The report effectively captures the intended bug, providing clear steps, expected outcomes, and observed results that align with the original issue.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5575","0","223","5798","0.00097005","2026-07-11T20:14:02","{
+  ""issue_key"": ""MC-300806"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable sequence to reproduce the issue regarding the structure block, aligning with the original intent.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined and aligns with Minecraft mechanics, stating how the structure block should function after being broken.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is detailed enough to understand the specific outcome of losing access to the saved structure after breaking the structure blocks.""
+  },
+  ""overall_reason"": ""The report effectively captures the intended bug, providing clear steps, expected outcomes, and observed results that align with the original issue.""
+}"
+"MC-300809","Executable","The steps provide a clear and actionable sequence to reproduce the bug, aligning with the original report's intent.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable sequence to reproduce the bug, aligning with the original report's intent.","Present","Accurate","The expected behavior is clearly defined and aligns with Minecraft mechanics regarding inventory management.","Present","Sufficient","The observed behavior is detailed enough to understand the specific issue encountered when trying to remove blocks from the inventory.","The report effectively captures the bug's intent, providing clear steps, expected outcomes, and observed behaviors that align with the original issue.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5583","0","211","5794","0.00096405","2026-07-11T20:14:06","{
+  ""issue_key"": ""MC-300809"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable sequence to reproduce the bug, aligning with the original report's intent.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined and aligns with Minecraft mechanics regarding inventory management.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is detailed enough to understand the specific issue encountered when trying to remove blocks from the inventory.""
+  },
+  ""overall_reason"": ""The report effectively captures the bug's intent, providing clear steps, expected outcomes, and observed behaviors that align with the original issue.""
+}"
+"MC-300851","Executable","The steps provide a clear and actionable sequence to reproduce the intended bug regarding the duplication of angry wolves.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable sequence to reproduce the intended bug regarding the duplication of angry wolves.","Present","Accurate","The expected behavior is clearly defined and aligns with the mechanics of the game, stating that the angry wolf should remain hostile and not duplicate.","Present","Sufficient","The observed behavior is detailed enough to understand the specific outcomes related to the duplication of the angry wolf and its interactions with the sheep.","The report effectively captures the intended bug with clear steps, expected outcomes, and observed behaviors, making it actionable for reproduction.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5552","0","226","5778","0.00096840","2026-07-11T20:14:10","{
+  ""issue_key"": ""MC-300851"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable sequence to reproduce the intended bug regarding the duplication of angry wolves.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined and aligns with the mechanics of the game, stating that the angry wolf should remain hostile and not duplicate.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is detailed enough to understand the specific outcomes related to the duplication of the angry wolf and its interactions with the sheep.""
+  },
+  ""overall_reason"": ""The report effectively captures the intended bug with clear steps, expected outcomes, and observed behaviors, making it actionable for reproduction."" 
+}"
+"MC-300860","Executable","The steps provide a clear and actionable sequence to reproduce the bug, allowing for the intended behavior to be tested.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable sequence to reproduce the bug, allowing for the intended behavior to be tested.","Present","Accurate","The expected behavior is clearly defined, stating that armor should not receive weapon-specific enchantments, aligning with Minecraft mechanics.","Present","Sufficient","The observed behavior is detailed enough to understand the specific outcome of the bug, describing how incompatible enchantments were applied.","The report effectively outlines the steps to reproduce the bug, the expected behavior, and the observed behavior, all of which align with the original intent of the bug report.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5770","0","229","5999","0.00100290","2026-07-11T20:14:15","{
+  ""issue_key"": ""MC-300860"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable sequence to reproduce the bug, allowing for the intended behavior to be tested.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined, stating that armor should not receive weapon-specific enchantments, aligning with Minecraft mechanics.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is detailed enough to understand the specific outcome of the bug, describing how incompatible enchantments were applied.""
+  },
+  ""overall_reason"": ""The report effectively outlines the steps to reproduce the bug, the expected behavior, and the observed behavior, all of which align with the original intent of the bug report.""
+}"
+"MC-300872","Executable","The steps provide a clear and actionable sequence to reproduce the bug, requiring only general game knowledge.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable sequence to reproduce the bug, requiring only general game knowledge.","Present","Accurate","The expected behavior is clearly defined and aligns with Minecraft mechanics regarding sprinting speed.","Present","Sufficient","The observed behavior is detailed enough to understand the specific outcome of the bug without ambiguity.","The report effectively captures the bug's intent with clear steps, expected, and observed behaviors, making it actionable for reproduction.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5592","0","204","5796","0.00096120","2026-07-11T20:14:19","{
+  ""issue_key"": ""MC-300872"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable sequence to reproduce the bug, requiring only general game knowledge.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined and aligns with Minecraft mechanics regarding sprinting speed.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is detailed enough to understand the specific outcome of the bug without ambiguity.""
+  },
+  ""overall_reason"": ""The report effectively captures the bug's intent with clear steps, expected, and observed behaviors, making it actionable for reproduction.""
+}"
+"MC-300877","Executable","The steps provide a clear and actionable path to reproduce the bug, detailing the necessary actions and expected observations without requiring additional assumptions.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable path to reproduce the bug, detailing the necessary actions and expected observations without requiring additional assumptions.","Present","Accurate","The expected behavior is clearly defined, aligning with Minecraft mechanics regarding experience gain from mining Nether Quartz Ore.","Present","Sufficient","The observed behavior is well described, detailing the discrepancy between the visual experience orbs and the lack of increase in the player's experience level.","The report effectively captures the intended bug, providing clear steps to reproduce, accurate expected behavior, and sufficient observed behavior, making it a high-quality bug report.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5511","0","231","5742","0.00096525","2026-07-11T20:14:24","{
+  ""issue_key"": ""MC-300877"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable path to reproduce the bug, detailing the necessary actions and expected observations without requiring additional assumptions.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined, aligning with Minecraft mechanics regarding experience gain from mining Nether Quartz Ore.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is well described, detailing the discrepancy between the visual experience orbs and the lack of increase in the player's experience level.""
+  },
+  ""overall_reason"": ""The report effectively captures the intended bug, providing clear steps to reproduce, accurate expected behavior, and sufficient observed behavior, making it a high-quality bug report.""
+}"
+"MC-300881","Executable","The steps provide a clear and actionable path to reproduce the bug, detailing the necessary actions and expected interactions with the skin preview widget.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable path to reproduce the bug, detailing the necessary actions and expected interactions with the skin preview widget.","Present","Accurate","The expected behavior is clearly defined, aligning with the intended functionality of the skin preview widget as described in the original report.","Present","Sufficient","The observed behavior is detailed enough to understand the specific outcome of the bug, clearly stating the non-functionality of the skin preview widget.","The report effectively captures the intended bug, providing clear steps to reproduce, a well-defined expected behavior, and a sufficient description of the observed behavior.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5495","0","234","5729","0.00096465","2026-07-11T20:14:33","{
+  ""issue_key"": ""MC-300881"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable path to reproduce the bug, detailing the necessary actions and expected interactions with the skin preview widget.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined, aligning with the intended functionality of the skin preview widget as described in the original report.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is detailed enough to understand the specific outcome of the bug, clearly stating the non-functionality of the skin preview widget.""
+  },
+  ""overall_reason"": ""The report effectively captures the intended bug, providing clear steps to reproduce, a well-defined expected behavior, and a sufficient description of the observed behavior.""
+}"
+"MC-300886","Executable","The steps provide a clear and actionable sequence to reproduce the issue of not being able to fly in Creative mode, aligning with the original report's intent.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable sequence to reproduce the issue of not being able to fly in Creative mode, aligning with the original report's intent.","Present","Accurate","The expected behavior is clearly defined, stating that the player should be able to initiate flight and move freely in Creative mode, which aligns with Minecraft mechanics.","Present","Sufficient","The observed behavior is detailed enough to understand that the player can only jump instead of flying, which matches the issue described in the original report.","The Improved report effectively captures the original issue with clear steps, expected outcomes, and observed behavior, making it a well-structured bug report.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5470","0","244","5714","0.00096690","2026-07-11T20:14:39","{
+  ""issue_key"": ""MC-300886"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable sequence to reproduce the issue of not being able to fly in Creative mode, aligning with the original report's intent.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined, stating that the player should be able to initiate flight and move freely in Creative mode, which aligns with Minecraft mechanics.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is detailed enough to understand that the player can only jump instead of flying, which matches the issue described in the original report.""
+  },
+  ""overall_reason"": ""The Improved report effectively captures the original issue with clear steps, expected outcomes, and observed behavior, making it a well-structured bug report.""
+}"
+"MC-300889","Executable","The steps provide a clear and actionable path to reproduce the bug, detailing the setup, actions, and expected outcome without requiring additional assumptions.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable path to reproduce the bug, detailing the setup, actions, and expected outcome without requiring additional assumptions.","Present","Accurate","The expected behavior is clearly defined, stating that only shears should be able to carve pumpkins, which aligns with the established mechanics of the game.","Present","Sufficient","The observed behavior is well described, indicating that pumpkins can be carved with any item, which clearly illustrates the deviation from expected mechanics.","The report effectively captures the bug's intent, providing clear steps to reproduce, a well-defined expected behavior, and a sufficient description of the observed behavior.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5468","0","240","5708","0.00096420","2026-07-11T20:14:50","{
+  ""issue_key"": ""MC-300889"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable path to reproduce the bug, detailing the setup, actions, and expected outcome without requiring additional assumptions.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined, stating that only shears should be able to carve pumpkins, which aligns with the established mechanics of the game.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is well described, indicating that pumpkins can be carved with any item, which clearly illustrates the deviation from expected mechanics.""
+  },
+  ""overall_reason"": ""The report effectively captures the bug's intent, providing clear steps to reproduce, a well-defined expected behavior, and a sufficient description of the observed behavior.""
+}"
+"MC-300894","Executable","The steps provide a clear and actionable sequence to reproduce the bug, including necessary commands and actions that align with the original report's intent.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable sequence to reproduce the bug, including necessary commands and actions that align with the original report's intent.","Present","Accurate","The expected behavior is clearly defined, stating that the harness should remain visible and properly scaled, which aligns with Minecraft's mechanics.","Present","Sufficient","The observed behavior is detailed enough to understand the specific outcomes of the bug, including the disappearance of the harness layer and the incorrect scaling when viewed from inside the Baby Happy Ghast.","The report effectively captures the bug's reproduction steps, expected outcomes, and observed behaviors, making it a well-structured and clear report.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5715","0","243","5958","0.00100305","2026-07-11T20:14:54","{
+  ""issue_key"": ""MC-300894"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable sequence to reproduce the bug, including necessary commands and actions that align with the original report's intent.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined, stating that the harness should remain visible and properly scaled, which aligns with Minecraft's mechanics.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is detailed enough to understand the specific outcomes of the bug, including the disappearance of the harness layer and the incorrect scaling when viewed from inside the Baby Happy Ghast.""
+  },
+  ""overall_reason"": ""The report effectively captures the bug's reproduction steps, expected outcomes, and observed behaviors, making it a well-structured and clear report.""
+}"
+"MC-300898","Executable","The steps provide a clear and actionable path to reproduce the bug, detailing the necessary setup and actions to observe the intended behavior.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable path to reproduce the bug, detailing the necessary setup and actions to observe the intended behavior.","Present","Accurate","The expected behavior is clearly defined, aligning with Minecraft mechanics regarding the visual representation of armor.","Present","Sufficient","The observed behavior is detailed enough to understand the specific outcome of the bug, describing how the armor appears incorrectly.","The report effectively outlines the steps to reproduce the bug, expected behavior, and observed behavior, all of which are clear and aligned with the original issue intent.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5497","0","224","5721","0.00095895","2026-07-11T20:15:02","{
+  ""issue_key"": ""MC-300898"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable path to reproduce the bug, detailing the necessary setup and actions to observe the intended behavior.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined, aligning with Minecraft mechanics regarding the visual representation of armor.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is detailed enough to understand the specific outcome of the bug, describing how the armor appears incorrectly.""
+  },
+  ""overall_reason"": ""The report effectively outlines the steps to reproduce the bug, expected behavior, and observed behavior, all of which are clear and aligned with the original issue intent.""
+}"
+"MC-300915","Executable","The steps provide a clear and actionable sequence that aligns with the original bug intent, allowing for reproducibility of the issue.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable sequence that aligns with the original bug intent, allowing for reproducibility of the issue.","Present","Accurate","The expected behavior is clearly defined and aligns with Minecraft mechanics regarding portal linking.","Present","Sufficient","The observed behavior is detailed enough to understand the specific outcomes of the bug without ambiguity.","The report effectively captures the bug's intent, providing clear steps, expected outcomes, and observed results, making it a well-structured report.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5932","0","212","6144","0.00101700","2026-07-11T20:15:08","{
+  ""issue_key"": ""MC-300915"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable sequence that aligns with the original bug intent, allowing for reproducibility of the issue.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined and aligns with Minecraft mechanics regarding portal linking.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is detailed enough to understand the specific outcomes of the bug without ambiguity.""
+  },
+  ""overall_reason"": ""The report effectively captures the bug's intent, providing clear steps, expected outcomes, and observed results, making it a well-structured report.""
+}"
+"MC-300953","Executable","The steps provide a clear and actionable sequence to reproduce the FPS drop issue, requiring only general Minecraft knowledge.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable sequence to reproduce the FPS drop issue, requiring only general Minecraft knowledge.","Present","Accurate","The expected behavior is clearly defined, aligning with the game's mechanics and the performance players should experience.","Present","Sufficient","The observed behavior is detailed enough to understand the specific FPS issues encountered after the updates.","The report effectively outlines the steps to reproduce the bug, expected behavior, and observed behavior, making it a comprehensive and actionable bug report.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5794","0","212","6006","0.00099630","2026-07-11T20:15:12","{
+  ""issue_key"": ""MC-300953"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable sequence to reproduce the FPS drop issue, requiring only general Minecraft knowledge.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined, aligning with the game's mechanics and the performance players should experience.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is detailed enough to understand the specific FPS issues encountered after the updates.""
+  },
+  ""overall_reason"": ""The report effectively outlines the steps to reproduce the bug, expected behavior, and observed behavior, making it a comprehensive and actionable bug report.""
+}"
+"MC-300980","Executable","The steps provide a clear and actionable sequence to reproduce the bug regarding the sneaking control option, aligning with the original intent.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable sequence to reproduce the bug regarding the sneaking control option, aligning with the original intent.","Present","Accurate","The expected behavior is clearly defined and aligns with the game's mechanics regarding the 'Hold Sneak' functionality.","Present","Sufficient","The observed behavior is detailed enough to understand the specific outcome of the bug, describing how the sneaking mode incorrectly toggles.","The report effectively captures the intended bug with clear steps, expected behavior, and observed behavior, making it actionable for reproduction.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5453","0","223","5676","0.00095175","2026-07-11T20:15:16","{
+  ""issue_key"": ""MC-300980"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable sequence to reproduce the bug regarding the sneaking control option, aligning with the original intent.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined and aligns with the game's mechanics regarding the 'Hold Sneak' functionality.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is detailed enough to understand the specific outcome of the bug, describing how the sneaking mode incorrectly toggles.""
+  },
+  ""overall_reason"": ""The report effectively captures the intended bug with clear steps, expected behavior, and observed behavior, making it actionable for reproduction.""
+}"
+"MC-301008","Executable","The steps provide a clear and actionable path to reproduce the bug, detailing the necessary setup and actions to observe the intended behavior.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable path to reproduce the bug, detailing the necessary setup and actions to observe the intended behavior.","Present","Accurate","The expected behavior is clearly defined, stating that the outline should render at the transformed coordinates, which aligns with Minecraft's rendering mechanics.","Present","Sufficient","The observed behavior is well described, detailing how the outline renders incorrectly at (0, 0) instead of the expected (10, 10), providing a clear understanding of the issue.","The report effectively captures the bug's intent, providing executable steps, a clear expected outcome, and a sufficient description of the observed behavior.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","6019","0","244","6263","0.00104925","2026-07-11T20:15:21","{
+  ""issue_key"": ""MC-301008"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable path to reproduce the bug, detailing the necessary setup and actions to observe the intended behavior.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined, stating that the outline should render at the transformed coordinates, which aligns with Minecraft's rendering mechanics.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is well described, detailing how the outline renders incorrectly at (0, 0) instead of the expected (10, 10), providing a clear understanding of the issue.""
+  },
+  ""overall_reason"": ""The report effectively captures the bug's intent, providing executable steps, a clear expected outcome, and a sufficient description of the observed behavior.""
+}"
+"MC-301071","Executable","The steps provide a clear and actionable path to reproduce the bug, requiring only general Minecraft knowledge.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable path to reproduce the bug, requiring only general Minecraft knowledge.","Present","Accurate","The expected behavior is clearly defined and aligns with the mechanics of the game, stating that wooden Fence Gates should produce a wood-based sound.","Present","Sufficient","The observed behavior is detailed enough to understand the specific outcome of the bug, indicating the sound produced does not match the expected wood sound.","The report effectively outlines the steps to reproduce the bug, the expected behavior, and the observed behavior, all of which align with the original issue intent.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5448","0","231","5679","0.00095580","2026-07-11T20:15:27","{
+  ""issue_key"": ""MC-301071"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable path to reproduce the bug, requiring only general Minecraft knowledge.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined and aligns with the mechanics of the game, stating that wooden Fence Gates should produce a wood-based sound.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is detailed enough to understand the specific outcome of the bug, indicating the sound produced does not match the expected wood sound.""
+  },
+  ""overall_reason"": ""The report effectively outlines the steps to reproduce the bug, the expected behavior, and the observed behavior, all of which align with the original issue intent.""
+}"
+"MC-301108","Executable","The steps provide a clear and actionable sequence that can be followed to reproduce the intended bug regarding item loss in the enchanting table.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable sequence that can be followed to reproduce the intended bug regarding item loss in the enchanting table.","Present","Accurate","The expected behavior is clearly defined and aligns with Minecraft mechanics, stating that items should not be lost when the enchanting process is not completed.","Present","Sufficient","The observed behavior is detailed enough to understand the specific outcome of the bug, describing the loss of items and lapis lazuli when disconnecting.","The report effectively outlines the steps to reproduce the bug, the expected behavior, and the observed behavior, all of which align with the original intent of the bug report.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5644","0","242","5886","0.00099180","2026-07-11T20:15:32","{
+  ""issue_key"": ""MC-301108"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable sequence that can be followed to reproduce the intended bug regarding item loss in the enchanting table.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined and aligns with Minecraft mechanics, stating that items should not be lost when the enchanting process is not completed.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is detailed enough to understand the specific outcome of the bug, describing the loss of items and lapis lazuli when disconnecting.""
+  },
+  ""overall_reason"": ""The report effectively outlines the steps to reproduce the bug, the expected behavior, and the observed behavior, all of which align with the original intent of the bug report.""
+}"
+"MC-301122","Executable","The steps provide a clear and actionable sequence to reproduce the bug, requiring only general Minecraft knowledge.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable sequence to reproduce the bug, requiring only general Minecraft knowledge.","Present","Accurate","The expected behavior is clearly defined and aligns with the intended mechanics of how maps should function in item frames.","Present","Sufficient","The observed behavior is detailed enough to understand the specific outcome of the bug without requiring assumptions.","The report effectively outlines the steps to reproduce the bug, expected behavior, and observed behavior, all of which are coherent and aligned with the original issue intent.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5518","0","217","5735","0.00095790","2026-07-11T20:15:36","{
+  ""issue_key"": ""MC-301122"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable sequence to reproduce the bug, requiring only general Minecraft knowledge.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined and aligns with the intended mechanics of how maps should function in item frames.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is detailed enough to understand the specific outcome of the bug without requiring assumptions.""
+  },
+  ""overall_reason"": ""The report effectively outlines the steps to reproduce the bug, expected behavior, and observed behavior, all of which are coherent and aligned with the original issue intent.""
+}"
+"MC-301128","Executable","The steps provide a clear and actionable path to reproduce the issue of the mouse becoming unresponsive after dying in-game, aligning with the original report's intent.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable path to reproduce the issue of the mouse becoming unresponsive after dying in-game, aligning with the original report's intent.","Present","Accurate","The expected behavior is clearly defined, stating that the mouse should function normally after death, which aligns with Minecraft mechanics.","Present","Sufficient","The observed behavior is detailed enough to understand that the mouse becomes unresponsive after dying, preventing interaction with menus.","The report effectively captures the issue of mouse unresponsiveness after player death, providing clear steps to reproduce, expected outcomes, and observed behavior.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5568","0","233","5801","0.00097500","2026-07-11T20:15:40","{
+  ""issue_key"": ""MC-301128"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable path to reproduce the issue of the mouse becoming unresponsive after dying in-game, aligning with the original report's intent.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined, stating that the mouse should function normally after death, which aligns with Minecraft mechanics.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is detailed enough to understand that the mouse becomes unresponsive after dying, preventing interaction with menus.""
+  },
+  ""overall_reason"": ""The report effectively captures the issue of mouse unresponsiveness after player death, providing clear steps to reproduce, expected outcomes, and observed behavior."" 
+}"
+"MC-301135","Executable","The steps provide a clear and actionable path to reproduce the bug, detailing the necessary setup and actions to observe the unintended behavior of Iron Golems.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable path to reproduce the bug, detailing the necessary setup and actions to observe the unintended behavior of Iron Golems.","Present","Accurate","The expected behavior is clearly defined, aligning with the intended mechanics of Iron Golems in the game.","Present","Sufficient","The observed behavior is described in detail, allowing readers to understand the specific unintended actions of Iron Golems.","The report effectively captures the intended bug, providing clear steps to reproduce, a well-defined expected behavior, and a sufficient description of the observed behavior.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5479","0","230","5709","0.00095985","2026-07-11T20:15:45","{
+  ""issue_key"": ""MC-301135"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable path to reproduce the bug, detailing the necessary setup and actions to observe the unintended behavior of Iron Golems.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined, aligning with the intended mechanics of Iron Golems in the game.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is described in detail, allowing readers to understand the specific unintended actions of Iron Golems.""
+  },
+  ""overall_reason"": ""The report effectively captures the intended bug, providing clear steps to reproduce, a well-defined expected behavior, and a sufficient description of the observed behavior.""
+}"
+"MC-301157","Executable","The steps provide a clear and actionable path to reproduce the bug, detailing the necessary setup and actions to observe the intended behavior.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable path to reproduce the bug, detailing the necessary setup and actions to observe the intended behavior.","Present","Accurate","The expected behavior is clearly defined, stating that Happy Ghasts should avoid fire blocks, which aligns with Minecraft mechanics.","Present","Sufficient","The observed behavior is detailed enough to understand that Happy Ghasts are entering fire blocks, which is the core issue being reported.","The report effectively outlines the steps to reproduce the bug, expected behavior, and observed behavior, all of which align with the original intent of the bug report.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5390","0","232","5622","0.00094770","2026-07-11T20:15:50","{
+  ""issue_key"": ""MC-301157"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable path to reproduce the bug, detailing the necessary setup and actions to observe the intended behavior.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined, stating that Happy Ghasts should avoid fire blocks, which aligns with Minecraft mechanics.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is detailed enough to understand that Happy Ghasts are entering fire blocks, which is the core issue being reported.""
+  },
+  ""overall_reason"": ""The report effectively outlines the steps to reproduce the bug, expected behavior, and observed behavior, all of which align with the original intent of the bug report.""
+}"
+"MC-301184","Executable","The steps provide a clear and actionable sequence to reproduce the bug, detailing the setup, actions, and expected observations without requiring additional assumptions.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable sequence to reproduce the bug, detailing the setup, actions, and expected observations without requiring additional assumptions.","Present","Accurate","The expected behavior is clearly defined, stating that the carpet should remain in place when the piston is activated, which aligns with Minecraft mechanics.","Present","Sufficient","The observed behavior is detailed, explaining that carpets disappear entirely without dropping as items, which clearly conveys the specific outcome of the bug.","The report effectively captures the bug's intent, providing clear steps to reproduce, accurate expected behavior, and sufficient observed behavior, making it a well-structured report.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","6094","0","240","6334","0.00105810","2026-07-11T20:15:56","{
+  ""issue_key"": ""MC-301184"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable sequence to reproduce the bug, detailing the setup, actions, and expected observations without requiring additional assumptions.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined, stating that the carpet should remain in place when the piston is activated, which aligns with Minecraft mechanics.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is detailed, explaining that carpets disappear entirely without dropping as items, which clearly conveys the specific outcome of the bug.""
+  },
+  ""overall_reason"": ""The report effectively captures the bug's intent, providing clear steps to reproduce, accurate expected behavior, and sufficient observed behavior, making it a well-structured report.""
+}"
+"MC-301234","Executable","The steps provide a clear and actionable sequence to reproduce the bug, requiring only general Minecraft knowledge.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable sequence to reproduce the bug, requiring only general Minecraft knowledge.","Present","Accurate","The expected behavior is clearly defined and aligns with the game's intended mechanics regarding player movement and momentum.","Present","Sufficient","The observed behavior is detailed enough to understand the specific outcome of the bug without requiring assumptions.","The report effectively captures the bug's intent, providing clear steps to reproduce, a well-defined expected behavior, and a sufficient description of the observed behavior.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5627","0","214","5841","0.00097245","2026-07-11T20:16:10","{
+  ""issue_key"": ""MC-301234"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable sequence to reproduce the bug, requiring only general Minecraft knowledge.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined and aligns with the game's intended mechanics regarding player movement and momentum.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is detailed enough to understand the specific outcome of the bug without requiring assumptions.""
+  },
+  ""overall_reason"": ""The report effectively captures the bug's intent, providing clear steps to reproduce, a well-defined expected behavior, and a sufficient description of the observed behavior.""
+}"
+"MC-301252","Executable","The steps provide a clear and actionable sequence to reproduce the issue of enchanted items not displaying the purple outline.","Not Assessed","Not Applicable","Not Applicable","The steps provide a clear and actionable sequence to reproduce the issue of enchanted items not displaying the purple outline.","Present","Accurate","The expected behavior is clearly defined, stating that enchanted items should show a distinct purple outline when held or displayed.","Present","Sufficient","The observed behavior is detailed enough to understand that some enchanted items do not exhibit the expected visual effect, making it clear what the issue is.","The report effectively outlines the steps to reproduce the bug, the expected behavior, and the observed behavior, all of which align with the original intent of the bug report.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20","210","fp_3be5422b9d","5386","0","232","5618","0.00094710","2026-07-11T20:16:15","{
+  ""issue_key"": ""MC-301252"",
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The steps provide a clear and actionable sequence to reproduce the issue of enchanted items not displaying the purple outline.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly defined, stating that enchanted items should show a distinct purple outline when held or displayed.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is detailed enough to understand that some enchanted items do not exhibit the expected visual effect, making it clear what the issue is.""
+  },
+  ""overall_reason"": ""The report effectively outlines the steps to reproduce the bug, the expected behavior, and the observed behavior, all of which align with the original intent of the bug report.""
+}"
