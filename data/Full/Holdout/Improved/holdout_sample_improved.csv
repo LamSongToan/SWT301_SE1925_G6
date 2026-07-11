@@ -1,0 +1,610 @@
+﻿"Issue Key","Summary","Type","Affects Version/s","Labels","Confirmation Status","Category","Resolution","Fix Version/s","Description","Steps to Reproduce","Observed Behavior","Expected Behavior","Environment"
+"MC-300143","game behaves as if the reducedDebugInfo gamerule was set to true even when it s false","Bug","25w31a","None","Unconfirmed","(Unassigned)","Cannot Reproduce","None","Most options in the F3 F5 screen are greyed out and say Not visible when debug info is reduced when I hover over the text. n nF3 B and F3 G also don t work regardless of the gamerule. n n","1. Launch Minecraft and create a new world in Creative mode with default settings.
+2. Open the chat window and enter the command `/gamerule reducedDebugInfo false` to ensure the gamerule is set to false.
+3. Press the F3 key to open the debug screen.
+4. Observe that most options in the debug screen (F3 + F5) are still greyed out and display ""Not visible"" when hovered over.
+5. Press F3 + B to check if entity hitboxes are displayed; note that they do not appear.
+6. Press F3 + G to check if chunk boundaries are displayed; confirm that they do not appear.
+7. Attempt to use the F3 + C command to copy coordinates and verify that it does not function as expected.
+8. Repeat the previous steps to confirm that the issue persists throughout multiple attempts.","When the `reducedDebugInfo` gamerule is set to false, the debug screen (activated by pressing F3) still displays limited information as if the gamerule were true. Specifically, most options in the F3 and F5 debug screens are greyed out and indicate ""Not visible"" when hovered over. This includes critical toggles such as F3 + B (to show entity hitboxes) and F3 + G (to display chunk boundaries), which do not function as expected regardless of the gamerule setting. Additionally, the F3 + C command, typically used to copy coordinates, is also inoperative. This behavior is inconsistent with the intended functionality of the `reducedDebugInfo` gamerule, which should allow full access to debug information when set to false. 
+
+Steps to reproduce this issue:
+1. Set the `reducedDebugInfo` gamerule to false using the command `/gamerule reducedDebugInfo false`.
+2. Press F3 to open the debug screen.
+3. Observe that many options are still greyed out and non-functional, contrary to the expected behavior when the gamerule is false. 
+4. Attempt to use F3 + B and F3 + G, noting that they do not activate. 
+
+This bug disrupts the expected functionality of the debug information display, impacting players who rely on these features for gameplay analysis and troubleshooting.","When the reducedDebugInfo gamerule is set to false, the debug screen should display all relevant information without any options greyed out. Specifically, pressing F3 should allow access to the full range of debug options, including F3 + B (to show entity hitboxes) and F3 + G (to show chunk boundaries), without any restrictions. Additionally, the F3 + C and F3 + I commands should function normally, allowing players to copy coordinates and block/entity data, respectively. The game should not exhibit any limitations on the debug information displayed, ensuring that all features are accessible as intended by Minecraft's design.","Minecraft Java Edition Version 25w31a (snapshot)"
+"MC-300396","status effects duration continues to decrement while on pause screen in single player","Bug","25w31a","None","Unconfirmed","(Unassigned)","Cannot Reproduce","None","To reproduce, create a world, give yourself a status effect of a set duration, and pause the game for that duration. Once the duration has elapsed, unpause the game and check if the status effect is still applied. n nIt would be expected that the timer is paused when the game is paused. For example, drinking a potion and pausing the game should not consume the duration of that potion. n nCurrently, status effects duration continue to decrement while on the pause screen in single player. n n","1. Create a new Single Player world in Creative mode with default settings.
+2. Open the inventory and locate a potion that grants a status effect, such as a Potion of Swiftness.
+3. Drink the potion to apply the status effect, noting the duration displayed in seconds.
+4. Immediately pause the game by pressing the 'Esc' key.
+5. Wait for the duration of the status effect to elapse while the game is paused.
+6. After the duration has elapsed, unpause the game by pressing the 'Esc' key again.
+7. Check the status effect icon in the effects menu to see if the effect is still active and for how long it remains.","When a player applies a status effect with a defined duration (e.g., by consuming a potion or being affected by a mob), the countdown for that effect continues to decrease even when the game is paused. The expected behavior is that the timer for the status effect should halt while the game is in the pause state, meaning that the duration should not elapse during this time.
+
+To demonstrate this issue, a player can create a single-player world, apply a status effect (such as Speed or Strength) with a specific duration, and then pause the game immediately after. Upon resuming the game after the duration of the effect has passed, the player will find that the status effect is no longer active, despite having been paused for the entire duration. 
+
+For example, if a player drinks a Potion of Swiftness, which grants Speed for 3 minutes (360 seconds), and then pauses the game for the entire duration of that effect, they should still have the Speed effect upon unpausing. However, the current behavior results in the effect being lost because the timer continues to decrement while the game is paused.
+
+This issue can lead to confusion among players, as it contradicts the intuitive understanding that pausing the game should also pause all ongoing effects and timers.","When a player is on the pause screen in single player mode, the duration of any active status effects should not decrease. Specifically, if a player consumes a potion that grants a status effect with a defined duration, the timer for that effect should pause while the game is paused. Upon resuming gameplay, the remaining duration of the status effect should reflect the time that was left when the game was paused, ensuring that the player experiences the full intended effect duration. This behavior aligns with the expected mechanics of status effects in Minecraft, where effects are designed to be active only during gameplay and should not diminish while the game is not actively running.","Minecraft Java Edition Version 25w31a (snapshot)"
+"MC-300515","endermans try teleporting when in boats","Bug","25w31a","None","Unconfirmed","(Unassigned)","Incomplete","None","endermans try to and make sounds of teleporting when in boats n n","1. Create a new Creative world with default settings.
+2. Obtain a boat from your inventory.
+3. Spawn an Enderman using the command '/summon minecraft:enderman' in the chat.
+4. Place the boat on the ground near the Enderman.
+5. Wait for the Enderman to enter the boat.
+6. Observe the Enderman while it is in the boat and listen for teleportation sounds.
+7. Note any attempts the Enderman makes to teleport while still inside the boat.","When an Enderman is placed in a boat in Minecraft, it exhibits an unusual behavior where it attempts to teleport while still confined within the boat. This behavior is characterized by the Enderman making the distinct teleportation sound effect, even though it does not successfully teleport out of the boat. 
+
+1. **Sound Emission**: The Enderman produces the teleportation sound effect repeatedly, indicating that it is attempting to teleport despite being unable to do so due to the constraints of the boat.
+   
+2. **Teleportation Attempts**: While in the boat, the Enderman seems to make multiple attempts to teleport, as evidenced by the sound cues. However, it does not change its position or escape the confines of the boat.
+
+3. **Behavior Consistency**: This teleportation sound occurs consistently whenever the Enderman is in a boat, regardless of external factors such as player proximity or environmental conditions.
+
+4. **Game Versions**: This behavior has been observed in Java Edition, where Endermen are known to have specific teleportation mechanics. It is unclear if this behavior occurs in Bedrock Edition, as the mechanics may differ.
+
+5. **Impact on Gameplay**: This bug can lead to confusion for players who may expect an Enderman to teleport away when attacked or damaged while in a boat, as it does not follow the typical teleportation behavior seen when not confined.
+
+This issue highlights a discrepancy in the expected behavior of Endermen when they are placed in boats, as they should not be able to teleport while in that state according to the game's mechanics.","When an enderman is placed in a boat, it should not attempt to teleport or make teleportation sounds. The intended behavior is that endermen remain contained within the boat without trying to escape, as they cannot teleport while in a minecart or boat according to the game's mechanics. Instead, they should remain passive and unable to take any teleportation actions until they are removed from the boat. This aligns with the established behavior of endermen in Java Edition, where they cannot teleport while in vehicles.","Minecraft Java Edition Version 25w31a (snapshot)"
+"MC-300516","pillager patrols spawn without a capitain","Bug","25w31a","None","Unconfirmed","(Unassigned)","Incomplete","None","no banner pillager is present in patrols n n","1. Create a new Survival world with default settings.
+2. Set the game difficulty to Hard.
+3. Wait for at least 5 in-game days (approximately 100 minutes of world time) to allow for patrol spawning.
+4. Move around the world and ensure you are at least 24 blocks away from any village to prevent patrols from being blocked from spawning.
+5. Stand in an open area with a block light level of 7 or lower, such as a plains biome during the night or in a shaded area during the day.
+6. Observe the surroundings for any pillager patrols that spawn within 24 to 48 blocks from your location.
+7. Check if any of the spawned pillagers are missing the patrol captain, meaning no pillager with an ominous banner is present in the group.","Pillager patrols are spawning without the presence of a patrol captain, which is characterized by the absence of a pillager wearing an ominous banner on its head. In Java Edition, patrols typically consist of 1 to 5 pillagers, with one of them designated as the patrol captain. However, in this reported bug, patrols are generated with no captain at all, resulting in a group of pillagers that lack the leadership typically indicated by the captain's banner. 
+
+This behavior contradicts the expected mechanics where every patrol should include a captain, as established in the game’s spawning rules. Patrols are supposed to spawn after 5.5 in-game days, at a distance of 24 to 48 blocks from the player, and under specific light level conditions (less than 9 for Java Edition). The absence of a captain may affect gameplay elements that rely on the captain's presence, such as the ability to trigger the Bad Omen effect when the captain is killed.
+
+This issue has been observed across various biomes where patrols are expected to spawn, and it occurs independently of player actions or nearby structures. The lack of a patrol captain in these instances needs to be addressed to restore proper patrol functionality and ensure the intended gameplay experience.","Pillager patrols should spawn with a patrol captain, which is a pillager wearing an ominous banner on its head. In Java Edition, each patrol consists of 1 to 5 pillagers, with one guaranteed to be the captain. In Bedrock Edition, patrols should spawn with 2 to 5 pillagers, including one designated as the captain. Patrols are expected to spawn naturally after 5.5 in-game days, appearing 24 to 48 blocks away from a player at a block light level of 7 or lower on Easy difficulty, or any light level on Normal and Hard difficulty. The absence of a captain in these patrols is inconsistent with the intended game mechanics, which dictate that a patrol captain is an integral part of any pillager patrol.","Minecraft Java Edition Version 25w31a (snapshot)"
+"MC-300527","There is a bug where 4 moon phases are over the sun and 4 moons below the sun","Bug","1.21.8; 25w31a","None","Unconfirmed","(Unassigned)","Awaiting Response","None","This has happened since some 1.21.6 snapshots and the official 1.21.6 update n n","1. Create a new Creative world with default settings.
+2. Set the game time to night by entering the command '/time set night'.
+3. Use the command '/time set 14000' to set the moon to the full moon phase.
+4. Observe the sky and note the position of the moon relative to the sun.
+5. Use the command '/time add 24000' to advance the time by one full day.
+6. Observe the sky again to confirm that there are now 4 moon phases appearing above the sun and 4 moons appearing below the sun.
+7. Repeat steps 5 and 6 multiple times to verify that the issue persists across multiple day cycles.","In the current version of Minecraft, specifically since some of the 1.21.6 snapshots and the official 1.21.6 update, an unusual rendering bug occurs where multiple moon phases are visible simultaneously. This results in a visual anomaly where four distinct moon phases are displayed above the sun and four additional phases are rendered below it. 
+
+1. **Moon Phases Displayed**: Each of the eight lunar phases—New Moon, Waxing Crescent, First Quarter, Waxing Gibbous, Full Moon, Waning Gibbous, Last Quarter, and Waning Crescent—appears incorrectly in the sky. This creates a cluttered visual effect that does not align with the expected behavior of the moon being opposite the sun.
+
+2. **Visibility Conditions**: The bug manifests regardless of the time of day or weather conditions, consistently showing all eight phases at once in the sky.
+
+3. **Game Mechanics Impact**: While this bug does not appear to affect gameplay mechanics directly, it disrupts the visual aesthetics of the game and could potentially confuse players regarding the current moon phase, which is relevant for certain gameplay elements such as mob spawning.
+
+4. **Reproducibility**: The issue has been reproducible across multiple worlds and does not seem to be tied to any specific world settings or configurations.
+
+This bug has persisted through various snapshots leading up to the official release of version 1.21.6, indicating a possible rendering or graphical issue introduced in this update.","The expected behavior is that the moon should consistently be positioned opposite the sun in the sky, following the established mechanics of the game's celestial bodies. This means that at any given time, if the sun is visible in the sky, the moon should not be present, and vice versa. The moon should also progress through its eight distinct phases in a predictable manner, transitioning smoothly at the end of each in-game day. Therefore, it is not possible for multiple moon phases to appear simultaneously above and below the sun, as this contradicts the fundamental design of the game's celestial mechanics.","Minecraft Java Edition Versions: 1.21.8, 25w31a (includes snapshots)"
+"MC-300530","Inventory glitch","Bug","25w32a","None","Unconfirmed","(Unassigned)","Awaiting Response","None","Hi im Mug_of_pug there s a bug when I open my Inv in 1.21.8 then exit it it goes away but sometimes I drag my mouse it pops up around the screen in the corner it happens to my friend also so im reporting this bug, it s in bedrock also n n","None","None","None","Versions: 25w32a"
+"MC-300572","Copper Golem prioritizes going up blocks instead of copper wooden chests","Bug","25w31a","None","Unconfirmed","(Unassigned)","Awaiting Response","None","Expected Result: Copper Golems open copper chests before moving (up). n nActual Result: Most continue up to the top and then start opening chests. n n(Other issue bug reports were not loading for me at this time, so I apologize if there is a similar problem I didn t merge this one with.) n n","1. Create a new Creative world with default settings.
+2. Enable cheats to allow for item spawning.
+3. Obtain a Copper Golem spawn egg from the inventory.
+4. Place a Copper Golem on the ground.
+5. Build a vertical structure that is at least 3 blocks high adjacent to the Copper Golem.
+6. Place a Copper Chest on the ground next to the Copper Golem, ensuring it is within a 3-block radius.
+7. Observe the behavior of the Copper Golem as it attempts to move towards the Copper Chest and the vertical structure.
+8. Note whether the Copper Golem prioritizes climbing the vertical structure over opening the Copper Chest.","When a Copper Golem encounters both a copper wooden chest and a vertical block, it often prioritizes moving upwards instead of interacting with the chest. This results in the Golem climbing to the top of the block before it starts to open the copper chest. While the expected behavior is for the Copper Golem to open the chest immediately upon detection, the majority of them exhibit this upward movement tendency first. This behavior seems to disregard the proximity of the chest, which should be a higher priority for interaction. In testing, it has been observed that this prioritization occurs consistently across multiple instances, indicating a potential flaw in the Golem's pathfinding and decision-making algorithms regarding chest interactions.","When a Copper Golem encounters a copper wooden chest, it should prioritize opening the chest before attempting to move upwards. The expected behavior is that the Copper Golem recognizes the copper chest as a target for interaction and will initiate the chest-opening animation immediately upon reaching its vicinity. Only after successfully opening the chest and completing its interaction should the Copper Golem then proceed to move up any adjacent blocks. This behavior aligns with the intended functionality of utility mobs in Minecraft, which are designed to engage with interactable objects in their environment before pursuing other movement paths.","Minecraft Java Edition Version 25w31a (snapshot)"
+"MC-300607","Hostile mobs spawning during day and not burning Worlds seem to be dark as if it is inside a cave","Bug","1.21.8","None","Unconfirmed","(Unassigned)","Awaiting Response","None","Mobs are actively spawning in as if it is night, and the world seems to be very dark as if there is a giant cover of blocks over it. This is occurring inside of any world I open. Additionally, when placing blocks light seems to be created out of nowhere. Sleeping is not possible during day and sleeping during night does not change the state of the bug. Interestingly enough, whilst fooling around on a superflat testing world, no slimes were spawning in. The only hostile mobs spawning in were zombies, skeletons, creepers, spiders, and enderman. No slimes as per usual on a superflat. Also this is happening ONLY to my existing worlds no newly created worlds have this bug, even when leaving the world and rejoining. ALSO it only seems to be happening within certain chunks. Overall this is just an extremely strange bug which I have not seen anyone talk about. I presume this is an issue with past mods I installed and uninstalled BUT I want to make sure this isn t an actual bug which I can fix. (I know this probably isn t important, but I want to be as thorough as possible, so I will say that there are no visible bugs on multiplayer worlds servers). n n n n","1. Open an existing Minecraft world where the bug has been observed.
+2. Ensure the game is set to Survival mode.
+3. Wait until daytime in the game, verifying that the sun is visible in the sky.
+4. Observe the environment for unusual darkness, as if it is nighttime or inside a cave.
+5. Monitor the spawning of hostile mobs, specifically zombies, skeletons, creepers, spiders, and endermen, while noting the absence of slimes.
+6. Place various blocks (e.g., dirt, wood) in different locations and observe if light appears unexpectedly around the placed blocks.
+7. Attempt to sleep in a bed during the day and note whether the option is available or not.
+8. Sleep during the night and check if the state of the world changes, particularly regarding mob spawning and light levels.
+9. Move to different chunks within the world to confirm that the bug only occurs in certain areas.
+10. Repeat steps 1-9 in newly created worlds to verify that the bug does not occur there.","Hostile mobs are spawning in daylight conditions, specifically in my existing worlds, where they should not normally spawn. The world appears unnaturally dark, resembling the interior of a cave, despite being outside during the day. This darkness suggests that the sky light level is insufficient for hostile mobs to be affected by sunlight, allowing them to spawn as if it were nighttime. 
+
+In addition, when I place blocks, there is an unusual increase in light levels that seems to appear instantaneously, which does not align with typical block placement behavior. The ability to sleep is also disrupted; I am unable to sleep during the daytime, and attempts to sleep at night do not revert the world to normal lighting or mob spawning behavior.
+
+While testing in a superflat world, I noticed that slimes, which typically spawn in designated slime chunks, are absent. The only hostile mobs present in this environment are zombies, skeletons, creepers, spiders, and endermen, with no slimes spawning, which is consistent with their expected behavior in superflat worlds.
+
+This issue is isolated to my existing worlds, as newly created worlds do not exhibit these symptoms, even after reloading. Furthermore, the problem seems to be localized to specific chunks within these worlds, indicating that certain areas are more affected than others. I suspect this may be related to previous modifications made to the game through mods that I have since uninstalled. However, I want to confirm whether this is a bug within the game itself or if it can be resolved through other means. Notably, this issue does not occur on multiplayer servers, suggesting it may be limited to single-player environments.","When in a standard Minecraft world, hostile mobs should not spawn during the day if the light level is above 8, as they are designed to only spawn in low light conditions or at night. Additionally, hostile mobs such as skeletons and zombies should burn upon exposure to direct sunlight after entering an illuminated area. The world should appear bright during the day, with proper lighting mechanics functioning as intended, meaning that placing blocks should not create light unexpectedly. Players should be able to sleep at night, and doing so should reset the day/night cycle without any issues. In superflat worlds, slimes should spawn in their designated chunks if they meet the biome and light level requirements. The expected behavior is that all existing worlds should exhibit normal light levels and mob spawning mechanics consistent with the game's design, without any unusual darkness or spawning of hostile mobs during daylight hours.","Minecraft Java Edition Version 1.21.8"
+"MC-300620","Fishing bobber s OnGround flag alternates every tick when on the ground","Bug","1.21.8","None","Unconfirmed","(Unassigned)","Awaiting Response","None","When a fishing bobber entity (minecraft:fishing_bobber) touches the ground, its OnGround flag alternates between 0b and 1b every tick.","1. Create a new Creative world with default settings.
+2. Obtain a fishing rod (minecraft:fishing_rod) from the inventory.
+3. Find a flat area with solid ground, such as grass or dirt blocks.
+4. Cast the fishing rod into the air to create a fishing bobber (minecraft:fishing_bobber).
+5. Allow the fishing bobber to land on the ground.
+6. Observe the OnGround flag of the fishing bobber entity using a command block or mod that can display entity data.
+7. Monitor the OnGround flag every tick for at least 10 seconds to confirm that it alternates between 0b and 1b consistently.","When a fishing bobber entity (minecraft:fishing_bobber) comes into contact with the ground, it exhibits a malfunction where its OnGround flag alternates between 0b (not on ground) and 1b (on ground) every tick. This behavior occurs continuously as long as the fishing bobber remains on the ground. 
+
+#### Details:
+- **Entity Type**: minecraft:fishing_bobber
+- **Flag Behavior**: OnGround flag toggles between 0b and 1b
+- **Frequency**: Changes every tick (20 times per second in standard game speed)
+- **Expected Behavior**: The OnGround flag should remain consistently set to 1b when the bobber is on the ground and revert to 0b only when it is not touching the ground.
+
+#### Reproduction Steps:
+1. Use a fishing rod to cast a fishing bobber.
+2. Allow the bobber to hit the ground (e.g., by casting it onto land).
+3. Observe the OnGround flag in the entity data of the fishing bobber.
+4. Note that the flag alternates between 0b and 1b every tick while the bobber is stationary on the ground.
+
+This issue may affect gameplay mechanics that rely on the stable state of the OnGround flag, potentially leading to unexpected behaviors in interactions involving the fishing bobber.","When a fishing bobber entity (minecraft:fishing_bobber) touches the ground, it should maintain a consistent OnGround flag value of 1b, indicating that it is on the ground. This flag should not fluctuate or alternate between 0b and 1b every tick. The intended behavior reflects the design where the fishing bobber is treated as a static entity when resting on a solid block, similar to how other entities, such as dropped items or projectiles, behave upon landing. The OnGround flag should only change if the bobber is removed from the ground or interacts with other mechanics that would cause it to become airborne.","Minecraft Java Edition Version 1.21.8"
+"MC-300643","1.21.8 not launching on some AMD graphics cards","Bug","1.21.8; 25w31a","None","Unconfirmed","(Unassigned)","Awaiting Response","None","Hello, I have been unable to launch the latest version of Minecraft (1.21.8) and the latest snapshot using my AMD rx 7600 xt 16gb. The game will run in the background according to task manager and Minecraft launcher says it is running as well, but no game window appears. With my old nvidia GTX 1050 pc the game WILL open. The AMD card CAN play 1.21.0 and 1.20. Other users on the server i play report similar issues with their AMD graphics cards. I reinstalled the game 3 times with the same result each time. AMD driver version: 32.0.21013.1000, date 5 26 2025. Reproduce the issue: Use an amd rx 7600 xt 16gb or other graphics cards the community cannot launch the game on. Specifications of the AMD pc: 7600 xt 16gb, 32gb ddr5, r7 9800x3d, b650 mobo, 2tb m.2 pcie gen 4. Nvidia pc that COULD run the game: gtx 1050 2GB, r5 4500, 16gb ddr4, 256gb 1tb sata SSDS (2), b450 n n n n","1. Ensure that your PC is equipped with an AMD RX 7600 XT graphics card and has the latest driver version (32.0.21013.1000, dated 5/26/2025) installed.
+2. Open the Minecraft Launcher and log in with your Minecraft account.
+3. Select the latest version of Minecraft (1.21.8) or the latest snapshot from the version selection dropdown.
+4. Click the ""Play"" button to start the game.
+5. Monitor the Task Manager to confirm that the Minecraft process is running in the background.
+6. Check for any error messages or logs in the launcher or in the game's installation directory that may indicate a failure to launch.
+7. Repeat the process after uninstalling and reinstalling the game three times to ensure that the issue persists.
+8. If possible, test launching the game on a different PC with an NVIDIA GTX 1050 graphics card to compare the behavior.","When attempting to launch Minecraft version 1.21.8 using an AMD RX 7600 XT 16GB graphics card, the game does not display a window, despite the Minecraft Launcher indicating that it is running. The Task Manager shows the Minecraft process as active, but no graphical interface appears. This issue does not occur with older versions of the game, such as 1.21.0 and 1.20, which run without problems on the same hardware. 
+
+Additionally, other players using various AMD graphics cards have reported similar launch failures, suggesting a potential compatibility issue with the latest update. The game has been reinstalled three times, and the problem persists across all installations. 
+
+**Steps to Reproduce:**
+1. Install Minecraft version 1.21.8 on a system equipped with an AMD RX 7600 XT 16GB graphics card.
+2. Launch the game via the Minecraft Launcher.
+3. Observe that the game process appears in Task Manager, but no game window is displayed.
+
+**System Specifications:**
+- **AMD PC:**
+  - GPU: AMD RX 7600 XT 16GB
+  - CPU: AMD Ryzen 7 9800X3D
+  - RAM: 32GB DDR5
+  - Motherboard: B650
+  - Storage: 2TB M.2 PCIe Gen 4 SSD
+  - AMD Driver Version: 32.0.21013.1000 (Date: 05/26/2025)
+
+- **Nvidia PC (for comparison):**
+  - GPU: Nvidia GTX 1050 2GB
+  - CPU: AMD Ryzen 5 4500
+  - RAM: 16GB DDR4
+  - Storage: 256GB SATA SSD and 1TB SATA SSD (2)
+  - Motherboard: B450
+
+This detailed account should aid developers in diagnosing the issue affecting AMD graphics cards with the latest version of Minecraft.","When launching Minecraft version 1.21.8 with an AMD RX 7600 XT 16GB graphics card, the game should open a game window displaying the main menu after the launcher indicates that the game is running. The game should utilize the graphics capabilities of the AMD card without any issues, allowing the player to access all features and functionalities as intended. If the game fails to launch, the player should not see the game running in the background without a visible window. Proper functionality would include smooth loading of the game interface, the ability to join servers, and access to single-player modes without crashes or freezes. Additionally, the game should maintain compatibility with the current AMD drivers, ensuring that users with AMD graphics cards can enjoy the latest updates and features introduced in version 1.21.8.","Minecraft Java Edition Versions: 1.21.8, 25w31a (includes snapshots)"
+"MC-300745","copper golem path finding error","Bug","25w32a","None","Confirmed","Mob behaviour","Awaiting Response","None","In vanilla minecraft, when the copper golem is at the edge of a long tube besides a platform, the copper golem will jump off the platform on their own, this can be replicated in a vanilla client using the official launcher n n","1. Launch the official Minecraft client and create a new Creative world with default settings.
+2. In the world, build a long tube structure using solid blocks, ensuring it is at least 5 blocks high and 1 block wide.
+3. At one end of the tube, create a platform that is 2 blocks wide and positioned adjacent to the tube.
+4. Summon a copper golem by using the command '/summon minecraft:copper_golem' and place it at the edge of the tube, facing the platform.
+5. Observe the copper golem's behavior as it moves to the edge of the tube.
+6. Wait for the copper golem to reach the edge of the tube and observe if it jumps off the platform on its own.","In Minecraft, when a copper golem is positioned at the edge of a long vertical tube (such as a drop shaft) adjacent to a platform, it exhibits unintended behavior by jumping off the platform without any external influence. This occurs regardless of the player's actions or commands. The copper golem appears to miscalculate its pathfinding logic, leading it to leap off the edge of the platform into the void below. 
+
+This behavior can be consistently replicated in a vanilla Minecraft client using the official launcher. To reproduce the issue, follow these steps:
+
+1. Create a long vertical tube (at least 2 blocks high) adjacent to a solid platform.
+2. Spawn a copper golem at the top edge of the tube.
+3. Observe the copper golem's movements as it approaches the edge of the platform.
+
+Expected behavior would be for the copper golem to navigate along the edge of the platform without jumping off. Instead, it jumps off the platform, which can lead to its demise if the tube is deep enough. This issue raises concerns regarding the copper golem's pathfinding algorithms, particularly in scenarios involving vertical drop-offs.","When a copper golem is positioned at the edge of a long tube next to a platform, it should navigate the environment intelligently and avoid jumping off the platform unless there is a valid path or target below it. The expected behavior is that the copper golem will assess its surroundings and remain on the platform, utilizing its pathfinding abilities to find a safe route to the ground or to any nearby blocks. It should only jump off if there is a clear path leading downwards or if it is prompted by player interaction. This behavior aligns with the general pathfinding mechanics seen in other golem entities, which prioritize safe movement and avoid unnecessary falls.","Minecraft Java Edition Version 25w32a (snapshot)"
+"MC-300768","two overworld portals are connected to the same nether portal","Bug","25w32a","None","Unconfirmed","(Unassigned)","Incomplete","None","i linked a nether portal in the overworld near my house to the nether but when tried to go back it sent me 300 blocks away from my house in an underground cave in the deepslate level n n","1. Create a new Survival world with default settings.
+2. Gather at least 10 Obsidian blocks and a Flint and Steel to construct a Nether portal.
+3. Build the first Nether portal in the Nether at coordinates X, Y, Z.
+4. Note the coordinates of the first Nether portal.
+5. In the Overworld, build two separate Overworld portals at approximately the same X and Z coordinates, but at different Y levels (for example, one at Y=64 and another at Y=160).
+6. Light both Overworld portals using Flint and Steel.
+7. Enter the first Overworld portal to travel to the Nether.
+8. From the Nether, travel to the coordinates of the first Nether portal and enter it to return to the Overworld.
+9. After returning, enter the second Overworld portal to test its linkage to the same Nether portal.
+10. Observe the location where you re-enter the Overworld and note if you are sent to a location significantly distant (e.g., 300 blocks away) from the second Overworld portal, such as in an underground cave at the deepslate level.","it sent me 300 blocks away from my house in an underground cave in the deepslate level.","I linked a nether portal in the overworld near my house to the nether but when tried to go back.","Minecraft Java Edition Version 25w32a (snapshot)"
+"MC-300778","killing an item by using command could not trigger a 7 level signal input calibrated sculk sensor","Bug","1.21.8; 25w32a","None","Unconfirmed","(Unassigned)","Cannot Reproduce","None","i used kill to kill an item but it did not trigger the calibrated sculk sensor n ntested in 25w32a n n","1. Create a new Creative world in Minecraft version 25w32a.
+2. Place a Calibrated Sculk Sensor on the ground.
+3. Set the input side of the Calibrated Sculk Sensor to receive a Redstone signal with a strength of 7 by placing a Redstone Block adjacent to it.
+4. Open the chat window and enter the command '/summon minecraft:item ~ ~ ~ {Item:{id:""minecraft:stone"",Count:1b}}' to summon a stone item at your current location.
+5. Use the command '/kill @e[type=minecraft:item]' to kill the summoned item.
+6. Observe the Calibrated Sculk Sensor to see if it triggers a Redstone signal.","When executing the `/kill` command to eliminate an item in the vicinity of a calibrated sculk sensor, the expected behavior of the sensor to emit a redstone signal corresponding to the configured frequency does not occur. Specifically, the calibrated sculk sensor, which is set to respond to a 7-level signal input, fails to activate despite the item being killed, which should typically generate a vibration detectable by the sensor. 
+
+This issue was tested in the Minecraft version 25w32a, and it was observed that no signal was emitted from the calibrated sculk sensor when the item was killed using the command, indicating that the sensor did not register the action as a vibration. This behavior is inconsistent with the expected functionality of calibrated sculk sensors, which are designed to detect various vibrations, including those caused by entities being damaged or killed. 
+
+To summarize:
+- **Command Used:** `/kill` to eliminate an item.
+- **Sensor Configuration:** Calibrated to respond to a 7-level signal input.
+- **Expected Result:** The calibrated sculk sensor should emit a redstone signal upon the item’s death.
+- **Actual Result:** No signal emitted, indicating the sensor did not detect the event. 
+
+This discrepancy suggests a potential bug in the interaction between the `/kill` command and the vibration detection capabilities of calibrated sculk sensors.","When an item is killed using the command, the calibrated sculk sensor should detect the associated vibration and trigger a redstone signal output according to its calibration settings. Specifically, if the calibrated sculk sensor is set to respond to the vibration frequency caused by an item being killed, it should emit a 7-level redstone signal, reflecting the intended behavior of detecting player actions that cause vibrations. This interaction is consistent with the mechanics outlined in the official documentation, where vibrations from actions such as item usage or destruction are expected to activate the sensor within its detection range.","Minecraft Java Edition Versions: 1.21.8, 25w32a (includes snapshots)"
+"MC-300786","Issue with Arabic Language in Minecraft","Bug","25w33a","None","Unconfirmed","(Unassigned)","Awaiting Response","None","n nDear Mojang Support, n nI would like to report an issue with the Arabic language support in Minecraft. The current implementation has several problems, including incorrect text alignment, broken word formatting, reversed letters, and an unsuitable font that is hard to read. These issues make the game difficult to enjoy for Arabic-speaking players. n nPlease consider improving Arabic localization and using a proper Arabic font to ensure a better experience for all users. n nThank you for your attention. n n","1. Launch Minecraft and navigate to the main menu.
+2. Click on ""Options"" and then select ""Language.""
+3. From the language list, choose ""Arabic"" to switch the game language.
+4. Start a new game in either Creative or Survival mode.
+5. Open the chat window by pressing the ""T"" key.
+6. Type a message in Arabic and send it.
+7. Observe the text alignment, formatting, and letter orientation in the chat window.
+8. Check the readability of the Arabic font used in the game by examining various UI elements such as menus, item names, and tooltips.
+9. Take note of any instances of reversed letters or broken word formatting while interacting with different game features.","The Arabic language support in Minecraft currently exhibits several critical issues that hinder readability and overall user experience. The main problems include:
+
+1. **Text Alignment**: Arabic text is typically written from right to left, but in Minecraft, the alignment appears incorrect, causing confusion when reading in-game menus, chat, and other text elements.
+
+2. **Broken Word Formatting**: Many Arabic words are not displayed correctly due to improper handling of letter connections. Arabic script requires letters to connect in specific ways depending on their position within a word (initial, medial, final, or isolated forms). Currently, this connection is often missing or incorrectly rendered.
+
+3. **Reversed Letters**: Some letters appear reversed or inappropriately positioned, making it challenging for players to recognize words and phrases. This issue is particularly pronounced in contexts where multiple words are displayed together, leading to further confusion.
+
+4. **Unsuitable Font**: The default font used for Arabic text lacks the necessary diacritics and stylistic features that are essential for proper readability. The font's design does not accommodate the unique characteristics of Arabic script, resulting in a visually unappealing and hard-to-read experience.
+
+These issues collectively create a significant barrier for Arabic-speaking players, making gameplay less enjoyable and accessible. Addressing these problems through improved localization practices and the implementation of a proper Arabic font would greatly enhance the gaming experience for this demographic.","When the Arabic language is selected in Minecraft, the text should be displayed with correct alignment, ensuring that it flows from right to left as is standard for Arabic script. Words should be properly formatted, with letters connected appropriately to reflect their correct forms in the context of the surrounding letters. The font used should be a clear and readable Arabic typeface that enhances the overall readability of the text. This would allow Arabic-speaking players to navigate menus, read in-game text, and enjoy the game without encountering visual distortions or difficulties in understanding the content.","Minecraft Java Edition Version 25w33a (snapshot)"
+"MC-300806","Non-existent structure block","Bug","1.21.8","None","Unconfirmed","(Unassigned)","Incomplete","None","help please I was just building in my minecraft world with the structure block, when I broke all the structure blocks I was left with the surrounding area of my build with no structure block and I don t know what to do anymore. n n n n","1. Create a new Creative world with default settings or open an existing Creative world where you have previously used structure blocks.
+2. Obtain a structure block by using the command ""/give @s structure_block"" in the chat.
+3. Place the structure block at a convenient location near your build.
+4. Right-click on the structure block to open its GUI.
+5. Switch to ""Save"" mode by clicking the ""DATA"" button until it displays ""SAVE.""
+6. Define the structure's dimensions by entering the X, Y, and Z sizes in the respective fields.
+7. Ensure the bounding box appears correctly around your build.
+8. Click the ""Save"" button to save the structure to memory.
+9. After saving, break all the structure blocks you placed.
+10. Observe the surrounding area of your build; note that the structure block is no longer present, and you have no means to retrieve the saved structure.","When all structure blocks are broken in a Minecraft world, the surrounding area of the build remains intact, but the structure block itself is no longer present. This results in the player losing the ability to load or save the structure associated with those blocks. The structure data is stored in memory by default, and if there are no structure blocks available to access that data, the player cannot retrieve or manipulate the saved structure. 
+
+The absence of a structure block means that the player cannot use the structure block interface to load the structure back into the world, as the structure block is essential for both saving and loading operations. Additionally, any structures that were previously saved to the structure block are now inaccessible, leading to potential loss of builds if they were not saved to disk prior to breaking the blocks. 
+
+To resolve this issue, the player would need to obtain a new structure block using commands (e.g., `/give @p structure_block`) in order to regain access to their previously saved structures. However, if the structure was not saved to disk before the blocks were removed, it may be permanently lost. This behavior highlights the importance of managing structure blocks carefully during construction processes in Minecraft.","When a player uses a structure block to save a build, the expected behavior is that the structure block will retain the saved structure in memory or on disk, depending on the mode selected. If all structure blocks are broken, the saved structure should still be accessible through the structure block interface by placing a new structure block and setting it to Load mode. The player should be able to enter the name of the saved structure, and upon confirming the load action, the structure should be recreated at the specified location, without any loss of data or corruption. In the event of breaking all structure blocks, players should be able to retrieve their saved structures through the game's file system or by using commands, ensuring that their builds are not permanently lost.","Minecraft Java Edition Version 1.21.8"
+"MC-300809","I can t remove blocks from my inventory! in 1.21.8","Bug","1.21.8","None","Unconfirmed","(Unassigned)","Awaiting Response","None","If I put a block in my inventory, I can t remove it. Only if I take more than one block can I remove all but one! Since today, it doesn t work unless I drag it back into my inventory, but it still works with the destruction field. n n","1. Launch Minecraft and create a new world in Creative mode.
+2. Open your inventory by pressing the 'E' key.
+3. Select a block, such as a Dirt Block, and place it in your inventory.
+4. Attempt to remove the Dirt Block from your inventory by clicking on it and dragging it to the hotbar or using the 'Q' key to drop it.
+5. Observe that you cannot remove the block unless you drag it back into your inventory.
+6. Now, place a stack of Dirt Blocks (more than one) in your inventory.
+7. Attempt to remove the stack by clicking on it and dragging it to the hotbar or using the 'Q' key to drop it.
+8. Observe that all but one block can be removed from the stack.
+9. Use the destruction field (e.g., by breaking blocks in the game world) and confirm that removing blocks via destruction still works as expected.","In version 1.21.8, when a player attempts to remove a block from their inventory, they encounter an issue where they cannot remove a single block from a stack. Specifically, if the player has one block in their inventory, dragging it out or attempting to place it does not remove it from the inventory. The only workaround is to take more than one block from the stack, allowing the player to remove all but one block from the stack. 
+
+Additionally, the problem persists even when the player tries to drag the block back into their inventory; it does not register the removal unless the block is moved back into the inventory. However, it is important to note that the block can still be placed in the world using the destruction field mechanic, which allows players to remove blocks from their inventory by placing them directly. 
+
+This bug affects the user experience by limiting inventory management and block placement strategies, particularly for players who rely on precise inventory control in creative and survival gameplay modes.","When a player attempts to remove a block from their inventory in version 1.21.8, they should be able to click on the block and drag it out of the inventory interface, resulting in the block being dropped into the world or into their hand if the inventory space allows. If the player holds down the shift key while clicking on a block, it should remove that block from the inventory entirely. Additionally, if the player has multiple blocks of the same type, they should be able to remove any number of those blocks by clicking and dragging them out, without needing to drag them back into the inventory first. The expected behavior is that the inventory management system should function seamlessly, allowing players to easily manipulate their inventory as per the established mechanics of the game.","Minecraft Java Edition Version 1.21.8"
+"MC-300851","Duplication of angry wolves","Bug","1.21.8","None","Unconfirmed","(Unassigned)","Incomplete","None","Lead a angry wolf and have a sheep nearby and tried to lead the wolf to a fence post n n","1. Create a new Survival world with default settings.
+2. Locate or spawn a wild wolf and ensure it becomes angry by attacking it or having it see a sheep nearby.
+3. Equip a Lead item in your hand.
+4. Attempt to leash the angry wolf by right-clicking on it while holding the Lead.
+5. While the wolf is still leashed, ensure a sheep is within a 10-block radius of the wolf.
+6. Move towards a fence post while leading the angry wolf.
+7. Attempt to attach the Lead to the fence post by right-clicking on the fence post.
+8. Observe if the angry wolf duplicates or if the Lead breaks unexpectedly.","When attempting to lead an angry wolf using a lead while a sheep is nearby, the following behavior is observed:
+
+1. **Leashing Mechanic**: The player can successfully attach the lead to the angry wolf despite its hostile state. This is consistent with the mechanics of leads, as they do not break when a mob becomes angry while already leashed.
+
+2. **Wolf's Aggression**: The angry wolf remains in a hostile state and will actively pursue and attack the nearby sheep. This behavior is expected, as angry wolves are programmed to attack sheep upon sight.
+
+3. **Movement and Pathfinding**: While the player leads the angry wolf towards a fence post, the wolf exhibits normal pathfinding behavior. It attempts to move towards the player, following the lead, but may also become distracted by the presence of the sheep, which can result in erratic movement patterns.
+
+4. **Potential Duplication**: Upon reaching the fence post, if the player releases the lead, the angry wolf may duplicate itself under certain conditions. This duplication appears to happen when the wolf is still in close proximity to the sheep at the moment the lead is removed. The original angry wolf and a duplicate may both become aggressive towards the sheep, leading to confusion in the game's entity management.
+
+5. **Visual and Audio Cues**: The angry wolf exhibits visual cues such as a raised snarl and red eyes, and it will continue to growl while being led. Additionally, the sheep will display panic behavior, attempting to flee from the wolf.
+
+This behavior indicates a potential bug in the game's entity management system regarding the interaction between leashed angry wolves and nearby sheep, leading to unintended duplication of the wolf entity.","When leading an angry wolf while a sheep is nearby, the expected behavior is that the angry wolf should remain hostile and unable to be leashed. The wolf should not duplicate or create any additional instances of itself. If the player attempts to lead the angry wolf towards a fence post, the lead should not attach to the wolf, reflecting the game’s mechanics that prevent angry wolves from being leashed. The wolf should continue to exhibit its hostile behavior towards the sheep, without any unintended duplication occurring. The game should maintain its normal functionality without any glitches or errors, allowing the player to interact with other entities without interference.","Minecraft Java Edition Version 1.21.8"
+"MC-300860","Enchantments for everything","Bug","1.21.8","None","Unconfirmed","(Unassigned)","Awaiting Response","None","Me and my friends were just playing around on a test server and i just started holding scroll wheel and i sent up stuff like sharpness on a chestplate and scroled and it was lowerd and i got a sharpness netherite chestplate so me and my friends just started and looking over it whit diffrent items and we made a cheastplate thats nearly impossible to get and my friends was like its just lag but the lag machine on off them made was made after that and then we started lloking at the wiki and twitter and we found nothing n n","1. Create a new Creative world or join an existing test server.
+2. Ensure you have access to a Netherite Chestplate in your inventory.
+3. Open your inventory and select the Netherite Chestplate.
+4. Hold down the scroll wheel on your mouse to scroll through the enchantments available for the chestplate.
+5. Observe the enchantments being applied as you scroll, including the addition of Sharpness.
+6. Continue scrolling to see if you can apply other enchantments that are normally not applicable to armor.
+7. Check the enchantments on the chestplate after scrolling to confirm the presence of unusual enchantments.
+8. Repeat the process with different types of armor and weapons to see if the same behavior occurs.","While playing on a test server, players discovered that rapidly scrolling through their inventory while holding an item can lead to unintended enchantment applications on armor pieces. Specifically, one player reported that they were able to apply the Sharpness enchantment to a Netherite chestplate by continuously scrolling the mouse wheel. This resulted in the creation of a chestplate that should not normally be enchantable with Sharpness, as it is typically reserved for weapons. 
+
+The players experimented further with different items and were able to replicate this behavior, resulting in multiple instances of armor receiving incompatible enchantments. Initially, some players attributed the phenomenon to server lag, but it was later confirmed that the enchantments were indeed being applied through the scrolling action, rather than being a mere visual glitch or a result of lag.
+
+This behavior raises concerns about the integrity of the enchanting system, as it allows for the creation of items with enchantments that should not be possible under normal gameplay conditions. The players did not find any documentation or reference to this behavior in the official Minecraft wiki or on social media platforms, indicating that this may be an undocumented bug that requires further investigation. 
+
+**Steps to Reproduce:**
+1. Enter a test server in Minecraft.
+2. Open your inventory and select an item (preferably armor).
+3. Continuously scroll the mouse wheel while holding the item.
+4. Observe as incompatible enchantments, such as Sharpness, are applied to the armor piece.
+
+**Expected Behavior:**
+Armor pieces should not be able to receive weapon-specific enchantments like Sharpness through normal gameplay mechanics, ensuring that the enchanting system functions as intended.","When using the scroll wheel while holding an item in Minecraft, it should not allow players to apply enchantments that are not intended for that specific item. For example, a chestplate should not be able to receive the Sharpness enchantment, as this enchantment is exclusive to weapons. The enchanting system is designed to restrict enchantments based on the type of item being enchanted, ensuring that players can only apply valid enchantments as outlined in the game’s mechanics. If a player attempts to enchant an item that cannot normally receive the enchantment, the game should either prevent the enchantment from being applied or revert the item to its unenchanted state without any experience cost. Additionally, the game should maintain stability and performance, avoiding any unintended lag or crashes that could arise from exploiting this behavior.","Minecraft Java Edition Version 1.21.8"
+"MC-300872","Dealing damage sometimes makes your sprint be at a walking pace","Bug","1.21.8","None","Unconfirmed","(Unassigned)","Awaiting Response","None","Sometimes if you deal damage while sprinting your sprint speed will be reduced to that of normal walking speed.You can still sprint jump, and you still still see sprinting particles, but you are as slow as walking. n nI m not sure on the exact reproductions steps, as it seems to be a little random.Just try attacking another player while sprinting with different combinations of being midair and side stepping. n n","1. Create a new Survival world with default settings.
+2. Ensure your hunger bar is above 6 to allow sprinting.
+3. Locate another player in the world.
+4. Begin sprinting towards the other player.
+5. While sprinting, perform an attack on the other player. 
+6. Experiment with different scenarios by jumping while attacking, attacking while midair, and side-stepping during the attack.
+7. Observe the sprint speed after dealing damage to see if it has reverted to walking speed despite the sprinting particles still being visible. 
+8. Repeat the attack under various combinations of jumping and side-stepping to determine if the issue consistently occurs.","When a player deals damage while sprinting, there is a chance that their sprint speed will be inexplicably reduced to the equivalent of normal walking speed. This behavior occurs despite the player still exhibiting visual indicators of sprinting, such as sprint particles and the ability to sprint jump. The player will still see the sprinting animation, but their movement speed will match that of walking, approximately 4.317 blocks per second, instead of the expected sprinting speed of around 5.612 blocks per second. 
+
+This issue appears to manifest randomly and is not consistently reproducible under specific conditions. However, it has been observed that the bug may occur when the player attacks another player while sprinting, particularly when executing various movements such as midair attacks or sidestepping. The exact conditions that trigger this bug remain unclear, but it is recommended to experiment with different combinations of actions while sprinting to potentially replicate the issue. 
+
+This bug can significantly impact gameplay, especially in PvP scenarios, where maintaining sprint speed is crucial for both offense and evasion.","When a player is sprinting and successfully deals damage to another player, their sprint speed should remain at the expected rate of approximately 5.612 blocks per second, which is 30 percent faster than normal walking speed. The player should be able to continue sprinting without any reduction in speed, regardless of whether they are midair or sidestepping during the attack. The visual effects, such as sprinting particles, should also be consistently displayed, indicating that the player is indeed sprinting. If the player is not experiencing any negative effects, they should be able to maintain their sprinting speed while engaging in combat. This behavior aligns with the intended mechanics of sprinting in Minecraft, where speed should not be compromised by dealing damage to another entity.","Minecraft Java Edition Version 1.21.8"
+"MC-300877","Experience does not drop out of quartz","Bug","25w32a","None","Unconfirmed","(Unassigned)","Awaiting Response","None","When mining quartz, experience is dropped, but it is not counted towards your level. n n","1. Create a new Survival world with default settings.
+2. Switch to the Nether dimension by using a Nether Portal.
+3. Locate a Nether Quartz Ore block in the Nether.
+4. Equip a pickaxe (any type, including one with or without the Silk Touch enchantment).
+5. Mine the Nether Quartz Ore block.
+6. Observe the experience orbs that drop upon mining the block.
+7. Check your experience level displayed on the screen to confirm that the experience from mining the quartz is not being counted towards your level.","When a player mines Nether Quartz Ore, the expected behavior is that experience orbs are generated and counted towards the player's experience level. However, in this bug, while the player does receive experience orbs visually when breaking the quartz ore, these orbs do not contribute to the player's experience level progression. 
+
+Specifically:
+
+- **Experience Generation**: Mining one block of Nether Quartz Ore should yield approximately 3.5 experience points. This is consistent with the mechanics of other ore types in Minecraft, where breaking the block produces both the item and experience.
+  
+- **Level Impact**: Despite the visual appearance of experience orbs, the player's experience bar does not increase, and no points are added to the player's experience level. This discrepancy can lead to confusion, as players may believe they are gaining experience when they are not.
+
+- **Reproducibility**: This issue has been observed consistently across different game versions (Java and Bedrock) and does not appear to be influenced by the player's actions or the use of specific tools (e.g., pickaxes with or without Silk Touch).
+
+- **Expected vs. Actual**: The expected behavior would be that upon mining Nether Quartz Ore, the player would see an increase in their experience level corresponding to the amount of experience orbs received. Instead, players experience no increase in their level, effectively rendering the mining of quartz ore a futile activity for gaining experience.
+
+This bug affects gameplay mechanics related to experience accumulation, particularly for players who rely on mining quartz as a primary source of experience in the early to mid-game stages.","When mining Nether quartz ore, the player should receive experience orbs that contribute to their experience level. Specifically, breaking one block of Nether quartz ore should yield an average of 3.5 experience points, which should be added to the player's total experience count. This experience should be visible in the player's experience bar, allowing them to see their progress towards the next level. If the player uses a pickaxe enchanted with Silk Touch, the experience should not drop immediately but should still be obtainable when the block is later mined normally. The experience gained from mining quartz should function consistently with the mechanics outlined in the official Minecraft documentation, ensuring that players can effectively level up through quartz mining as intended.","Minecraft Java Edition Version 25w32a (snapshot)"
+"MC-300881","Report Player Skin: Skin Preview no longer interactive","Bug","25w32a","None","Unconfirmed","(Unassigned)","Awaiting Response","None","When trying to report a player skin the widget on the left side is no longer interactive. n nPreviously (in 1.21.8) it was possible to drag the mouse which moved the player entity accordingly. n n","1. Launch Minecraft and log into your account.
+2. Enter a game mode that allows you to access the player reporting feature, such as a multiplayer server or a Realms world.
+3. Once in the game, locate a player whose skin you wish to report.
+4. Open the reporting interface by selecting the player and clicking on the appropriate option to report them.
+5. Observe the left side of the reporting interface where the skin preview widget is located.
+6. Attempt to interact with the skin preview widget by dragging the mouse cursor across it.
+7. Note that the player entity does not move as it did in version 1.21.8, indicating that the widget is no longer interactive.","In the current version, when attempting to report a player skin using the skin reporting feature, the skin preview widget located on the left side of the screen is non-functional. Users are unable to interact with this widget, which means they cannot drag their mouse to rotate or adjust the view of the player entity displaying the skin. 
+
+This issue contrasts with the functionality present in version 1.21.8, where players could click and drag the mouse over the skin preview to manipulate the orientation of the player model. This interaction allowed for a more comprehensive view of the skin from different angles, aiding players in making informed decisions when reporting inappropriate skins.
+
+**Steps to Reproduce:**
+1. Enter the game and navigate to the player reporting interface.
+2. Select a player whose skin you wish to report.
+3. Observe the skin preview widget on the left side of the screen.
+4. Attempt to click and drag the mouse over the widget.
+
+**Expected Behavior:**
+The skin preview widget should allow players to click and drag the mouse, enabling them to rotate the player model and view the skin from various angles, similar to the functionality in version 1.21.8.","When attempting to report a player skin, the skin preview widget on the left side should be fully interactive, allowing the player to click and drag the mouse to rotate and view the player entity from different angles. This interaction should provide a smooth and responsive experience, similar to the functionality present in version 1.21.8, where users could easily manipulate the view of the player model to assess the skin being reported. The expected behavior includes the player entity smoothly following the mouse movement, allowing for a clear and accurate inspection of the skin in question.","Minecraft Java Edition Version 25w32a (snapshot)"
+"MC-300886","Can t fly in creative","Bug","1.21.8; 25w32a","None","Unconfirmed","(Unassigned)","Incomplete","None","Every time I try to fly in creative all I do is jump, I checked settings and restarted the game and still can t fly in creative, even making a new world didn t work, sorry I don t have a picture to prove. n n","1. Launch Minecraft and select ""Singleplayer"" from the main menu.
+2. Create a new world and set the game mode to ""Creative"".
+3. Enter the world once it has loaded.
+4. Ensure you are on the ground and not in a vehicle or riding an entity.
+5. Double-tap the jump key (default is Space) to attempt to activate flying.
+6. Observe the behavior; instead of flying, the character only jumps.
+7. Check the game settings to confirm that ""Allow Flying"" is enabled.
+8. Restart the game and repeat steps 2-6 to see if the issue persists.
+9. Create a new world again with the same settings and repeat steps 4-6 to confirm the bug occurs in multiple worlds.","When attempting to fly in Creative mode, the player is unable to initiate flight and instead only performs a jump. The expected behavior of flying, which is activated by double-tapping the jump key (default: Space), does not occur. Despite verifying that the game is set to Creative mode, restarting the game, and creating a new world, the issue persists. The player is unable to gain altitude or move while flying, and the controls for ascending (jump) and descending (sneak) do not function as intended. This issue occurs across all worlds tested, indicating a potential game-wide bug affecting the flying mechanics in Creative mode. No visual evidence is available to support the report, but the behavior is consistently reproducible under the described conditions.","When in Creative mode, the player should be able to initiate flight by double-tapping the jump key (default is Space). Once flying, the player can ascend by holding the jump key and descend by holding the sneak key (default is Shift). The player should be able to move freely in any direction while flying, and this ability should not be impeded by any game settings or world conditions. If the player touches the ground while flying, flying should automatically disable, but the player should be able to reactivate it by double-tapping the jump key again. If the player is unable to fly despite following these controls, it indicates a malfunction in the game's flying mechanics in Creative mode.","Minecraft Java Edition Versions: 1.21.8, 25w32a (includes snapshots)"
+"MC-300889","A pumpkin can be carved with any object.","Bug","1.21.8","None","Unconfirmed","(Unassigned)","Awaiting Response","None","My friend and I noticed that a pumpkin can be carved by hand or with any other object, but this was not the case on older versions. I counted it as a bug. n n","1. Create a new Survival world with default settings.
+2. Locate or gather an uncarved pumpkin.
+3. Equip any item, such as your hand, a wooden sword, or a pickaxe.
+4. Approach the uncarved pumpkin and aim at it.
+5. Use the equipped item on the pumpkin to attempt to carve it.
+6. Observe that the pumpkin can be carved regardless of the item used. 
+7. Repeat steps 3 to 6 using different items to confirm the behavior.","In the current version of Minecraft, players can carve pumpkins using any item, including their bare hands. This behavior deviates from previous versions where only shears could be used to carve pumpkins. The expected behavior is that pumpkins should only be carved when interacted with shears, which is consistent with the mechanics of the game prior to this change.
+
+To reproduce this issue:
+1. Obtain a pumpkin block in the game.
+2. Attempt to carve the pumpkin by right-clicking or tapping on it with various items, including shears, axes, swords, or even by hand.
+3. Observe that the pumpkin can be carved regardless of the item used.
+
+This change affects gameplay as it simplifies the process of obtaining carved pumpkins, which can be used for crafting jack o'lanterns or worn as helmets to prevent endermen aggression. The inconsistency with earlier versions raises concerns about the intended mechanics for pumpkin carving within the game. 
+
+**Version Information:**
+- This bug was first noted in the transition between versions, specifically after the introduction of the update that modified pumpkin interactions. 
+
+**Recommendation:**
+It is recommended to restore the original mechanics where only shears can be used to carve pumpkins, aligning with the established gameplay logic and enhancing the challenge of obtaining carved pumpkins.","When attempting to carve a pumpkin, only shears should be able to be used to successfully transform an uncarved pumpkin into a carved pumpkin. The expected behavior is that using any other item or method, including the player's hand, should not result in a carved pumpkin. This behavior aligns with the mechanics established in previous versions of the game, where shears were the designated tool for carving pumpkins. The outcome should be that the uncarved pumpkin remains unchanged if any object other than shears is used, maintaining consistency with the crafting and harvesting mechanics that govern other blocks and items in Minecraft.","Minecraft Java Edition Version 1.21.8"
+"MC-300894","Baby Happy Ghast does not scale harness layer correctly","Bug","1.21.8; 25w32a","None","Unconfirmed","(Unassigned)","Awaiting Response","None","When equipping harness for adult Happy Ghast, then using command to set their age to -24000. n nAfter that the harness layer disappeared and cannot be seen from the outside. But when looking inside the Baby Happy Ghast there is a harness layer rendered but incorrect scale. n nI have attached fix code to make it render properly. Just simply remove baby argument and remove apply part with the BABY_TRANSFORMER in the HappyGhastHarnessModel class. n n n n","1. Create a new Creative world with default settings.
+2. Obtain a Happy Ghast Harness from the Creative inventory.
+3. Summon an adult Happy Ghast using the command `/summon happy_ghast ~ ~ ~`.
+4. Equip the Happy Ghast with the harness by right-clicking on it while holding the harness.
+5. Use the command `/data merge entity @e[type=happy_ghast,limit=1] {Age:-24000}` to set the Happy Ghast's age to -24000.
+6. Observe that the harness layer disappears from the outside view of the Happy Ghast.
+7. Enter the interior of the Baby Happy Ghast by right-clicking on it to see the harness layer rendered incorrectly inside.","When equipping an adult Happy Ghast with a harness and subsequently using the command to set its age to -24000, the following issues occur:
+
+1. **Harness Layer Disappearance**: The harness layer that is visible on the adult Happy Ghast disappears entirely from the external view, making it appear as if the harness is not equipped.
+
+2. **Internal Rendering**: Upon inspecting the Baby Happy Ghast from the inside, it becomes evident that the harness layer is still rendered; however, it is not scaled correctly. The harness appears disproportionately sized relative to the Baby Happy Ghast's model.
+
+3. **Incorrect Scaling**: The harness layer, when viewed from within the Baby Happy Ghast, does not conform to the expected dimensions for a baby entity, which indicates a scaling issue in the rendering logic for the harness when applied to an entity that has been transformed from adult to baby.
+
+4. **Fix Implementation**: To resolve this issue, it is recommended to modify the `HappyGhastHarnessModel` class. Specifically, the following changes should be made:
+   - Remove the 'baby' argument from the rendering method.
+   - Eliminate the application of the `BABY_TRANSFORMER` to ensure that the harness renders correctly for all age states of the Happy Ghast.
+
+These points highlight the critical aspects of the bug, emphasizing the visual discrepancies and the necessary adjustments to the code to achieve the desired rendering behavior.","When an adult Happy Ghast is equipped with a harness and its age is set to -24000, the expected behavior is that the harness layer should remain visible and properly scaled when viewed from outside the Baby Happy Ghast. The harness should adapt to the size of the Baby Happy Ghast, maintaining its intended appearance and functionality. Specifically, the harness should not disappear and should be rendered correctly, allowing players to see the harness layer as they would expect based on the model's design. Additionally, the Baby Happy Ghast should exhibit the same visual characteristics as the adult version, ensuring consistency in appearance regardless of age transformation.","Minecraft Java Edition Versions: 1.21.8, 25w32a (includes snapshots)"
+"MC-300898","In version 24W36A, when wearing Netherite armor, it will incorrectly appear as Diamond armor","Bug","25w33a","None","Unconfirmed","(Unassigned)","Awaiting Response","None","in version 24W36A, when wearing Netherite armor, it will incorrectly appear as Diamond armor n n n n","1. Launch Minecraft and select version 24W36A from the game version menu.
+2. Create a new Creative world with default settings.
+3. Open your inventory and locate the Netherite armor set (Helmet, Chestplate, Leggings, and Boots).
+4. Equip the full set of Netherite armor by dragging each piece to the respective armor slots.
+5. Observe the appearance of the armor in your character's model.
+6. Check the armor's tooltip in your inventory to confirm it is Netherite armor.
+7. Compare the visual appearance of the equipped armor to that of Diamond armor by equipping a full set of Diamond armor in the same manner.
+8. Note that the Netherite armor appears visually identical to Diamond armor despite being equipped.","In version 24W36A, when a player equips a full set of Netherite armor, the visual appearance of the armor incorrectly displays as Diamond armor instead of the intended Netherite design. This issue affects all pieces of Netherite armor, including the Netherite Helmet, Chestplate, Leggings, and Boots. 
+
+Despite the incorrect visual representation, the armor retains its original properties and mechanics, such as durability and protection values, which are superior to Diamond armor. The player can still benefit from the attributes of Netherite armor, including the higher toughness and knockback resistance, but the aesthetic discrepancy can lead to confusion regarding the player's actual armor tier. 
+
+This bug is visually evident when the player is wearing the armor in both first-person and third-person views, as well as when viewed by other players in multiplayer mode. The issue persists regardless of any additional armor trims or enchantments applied to the Netherite armor, further confirming that the visual glitch is isolated to the armor's appearance. 
+
+Developers should investigate the rendering and texture assignment for Netherite armor in this version to address the incorrect display issue.","When a player wears Netherite armor in version 24W36A, the armor should visually represent its intended appearance as distinct from Diamond armor. This means that the armor should display the unique texture and color characteristics of Netherite armor, which is darker and more metallic than Diamond armor. The player should be able to clearly identify that they are wearing Netherite armor, which provides superior durability and protection compared to Diamond armor, as outlined in the game's mechanics. Additionally, the armor's attributes, such as its higher durability and knockback resistance, should be accurately reflected in the player's experience, ensuring that the visual representation matches the intended gameplay functionality.","Minecraft Java Edition Version 25w33a (snapshot)"
+"MC-300915","Nether Portal Unlinking","Bug","1.21.8","None","Unconfirmed","(Unassigned)","Awaiting Response","None","I ve just started a hardcore world singleplayer in the latest version, opened a Nether Portal that I created with buckets, just to see where I d spawn.When I came back through the portal (the one in the Nether), instead of finding myself back where I had built mine, the game spawned a portal in a place where I had never been. I re-entered, re-exited, and still found myself in this new place. So I broke the new portal in the Overworld and walked back home, I entered the portal again and it worked fine, so I closed the game.Today I went back in my world, entered the Nether, and when I left it a new portal spawned next to that one I had broken yesterday, and the one in my base unlinked again. n nAlso, after the unlinking happens, the game starts lagging a lot n n","1. Create a new Hardcore singleplayer world in the latest version of Minecraft.
+2. Gather at least 10 Obsidian blocks using a Diamond Pickaxe and a bucket of water to create a Nether Portal.
+3. Build a Nether Portal by placing the Obsidian blocks in a rectangular frame (4 blocks tall and 5 blocks wide).
+4. Light the portal using Flint and Steel.
+5. Enter the Nether Portal and travel to the Nether.
+6. Observe the location where you spawn in the Nether.
+7. Exit the Nether by re-entering the same Nether Portal.
+8. Note the location where you spawn in the Overworld; it should be at the original portal location.
+9. Re-enter the Nether Portal in the Overworld and exit again to confirm that you return to the same location in the Nether.
+10. Break the newly spawned portal in the Overworld that appears next to the original portal.
+11. Walk back to your original Nether Portal and enter it again.
+12. Exit the Nether and verify that you return to the original Overworld portal location.
+13. Close the game and reopen the world.
+14. Enter the Nether Portal again and exit to see if a new portal spawns next to the broken one, causing the original portal to unlink again.
+15. Observe if there is any noticeable lag after the unlinking occurs.","When entering the Nether through a portal created in the Overworld, the player is unexpectedly spawned at a new location in the Nether that is not the original portal's coordinates. Upon returning to the Overworld, a new portal is generated near the location of the newly spawned Nether portal, causing the original Overworld portal to become unlinked. Attempts to re-enter the Nether from the original portal result in continued spawning at the newly generated location, rather than the intended original portal. 
+
+After breaking the newly generated portal in the Overworld and returning to the original portal, the linking works correctly for that session. However, upon closing and reopening the game, the issue reoccurs: entering the Nether again leads to the generation of yet another new portal next to the previously broken one, and the original Overworld portal becomes unlinked once more. 
+
+Additionally, following the unlinking of the portals, the game experiences significant lag, which persists until the player exits the Nether. This behavior suggests a potential issue with the portal linking algorithm, particularly in relation to how the game handles portal generation and unlinking in singleplayer hardcore mode. The problem occurs consistently when the player re-enters the Nether after the initial unlinking event.","When a player creates a Nether portal and successfully travels through it, they should re-emerge from the corresponding Overworld portal at the location where they originally entered the Nether. If the player breaks a portal in the Overworld and then re-enters the Nether, the game should maintain the link between the two portals, ensuring that the player returns to the correct location in the Overworld. Additionally, if a new portal is created in the Overworld due to the absence of a corresponding portal, it should only spawn in a nearby location if no active portal exists within the designated linking range of 128 blocks. The game should not experience any lag or performance issues during this process, allowing for a seamless transition between dimensions without unexpected portal unlinking or spawning.","Minecraft Java Edition Version 1.21.8"
+"MC-300953","Poor optimization in versions 1.21.5","Bug","1.21.8","None","Unconfirmed","(Unassigned)","Awaiting Response","None","Since version 1.21.5 there has been an optimization error. In version 1.21.4 I could easily reach 200 fps, but when I switched to 1.21.5 my fps was only 50-120 fps Even dropped to 0 fps for about 1 second continuously , 1.21.8 was a huge disappointment, I dropped to 2 chunks and got 45fps, do you guys really want me to play minecraft and occasionally look up at the sky to increase fps? n n","1. Launch Minecraft and ensure you are using version 1.21.4.
+2. Create a new world in Creative mode with default settings.
+3. Press F3 to bring up the debug screen and note the initial FPS, which should be around 200.
+4. Save and exit the game.
+5. Update Minecraft to version 1.21.5.
+6. Launch Minecraft and load the same world created in step 2.
+7. Press F3 to bring up the debug screen and observe the FPS, which should now be between 50 and 120.
+8. Wait for at least 10 seconds and observe if the FPS drops to 0 for about 1 second.
+9. Save and exit the game.
+10. Update Minecraft to version 1.21.8.
+11. Launch Minecraft and load the same world created in step 2.
+12. Set the render distance to 2 chunks in the Video Settings.
+13. Press F3 to bring up the debug screen and note the FPS, which should be around 45.","Since the release of version 1.21.5, players have reported a significant decrease in game performance, particularly in frames per second (FPS). Prior to this update, users were able to achieve FPS rates of around 200 in version 1.21.4. However, upon upgrading to version 1.21.5, FPS dropped to a range of 50-120, with instances where the frame rate plummeted to 0 FPS for approximately one second, causing noticeable gameplay interruptions. 
+
+In version 1.21.8, despite reducing the render distance to 2 chunks, the FPS further declined to approximately 45. This indicates a severe optimization issue that has persisted across these updates. The performance degradation is particularly concerning as it hampers the overall gameplay experience, forcing players to adopt unconventional methods, such as looking at the sky, to temporarily alleviate the FPS drop. 
+
+To summarize:
+- **Version 1.21.4:** Achieved stable FPS around 200.
+- **Version 1.21.5:** FPS reduced to 50-120, with occasional drops to 0 FPS for 1 second.
+- **Version 1.21.8:** FPS dropped to 45 even at 2 chunks render distance.
+
+This issue requires urgent attention to optimize performance and restore the gameplay experience to prior levels.","When playing Minecraft in versions 1.21.5 and later, the expected behavior is for the game to maintain a stable and high frame rate consistent with previous versions, such as 1.21.4, where players could achieve around 200 fps. Players should experience smooth gameplay without significant drops in frame rate, even when adjusting settings like render distance. The game should efficiently utilize system resources to ensure that frame rates remain within an acceptable range (generally above 60 fps) under normal conditions. Additionally, the optimization features introduced in recent updates, such as the Advanced Cave Culling Algorithm and improved chunk loading, should function effectively to enhance performance rather than hinder it. Any performance issues, such as sudden drops to 0 fps or consistently low frame rates at reduced render distances, are not expected and indicate a need for further optimization.","Minecraft Java Edition Version 1.21.8"
+"MC-300980","Its a bug in the settings","Bug","1.21.8","None","Unconfirmed","(Unassigned)","Incomplete","None","I set my game on hold sneak but it toggles n nalso in the versions 1.21.4 and 1.21.5 n n","1. Launch Minecraft and navigate to the main menu.
+2. Select ""Singleplayer"" and create a new world or open an existing world.
+3. Once in the game, press the ""Esc"" key to open the menu and click on ""Options.""
+4. Go to ""Accessibility Settings.""
+5. Locate the ""Sneak"" option and change it from ""Hold"" to ""Toggle.""
+6. Return to the game and test the sneaking functionality by pressing the sneak key (default is ⇧ Shift).
+7. Observe that the sneaking status toggles on and off as expected.
+8. Repeat steps 5 to 7 in both versions 1.21.4 and 1.21.5 to confirm the bug occurs in both versions.","When the player sets the ""Sneak"" control option to ""Hold"" in the Accessibility Settings, the expected behavior is that the player must press and hold the designated key (default is ⇧ Shift) to enter sneaking mode. However, in versions 1.21.4 and 1.21.5, the sneaking mode is incorrectly toggling on and off instead of requiring the key to be held down. This means that the player can unintentionally enter and exit sneaking mode without pressing the key, which disrupts gameplay and can lead to unwanted falls or exposure to mobs. 
+
+Additionally, this issue persists regardless of the input method being used (keyboard, gamepad, or touch), and it affects all players in both single-player and multiplayer modes. The bug does not appear to be related to any specific game mode (Survival, Creative, etc.) or world type, indicating a broader issue with the sneaking control mechanism in these versions.","When the game is set to ""Hold Sneak"" in the Accessibility Options, the player should be able to sneak only while the designated key (default is Shift) is pressed down. Releasing the key should cause the player to exit sneak mode immediately. This behavior should remain consistent across all game interactions, including when opening GUIs or performing actions that do not require sneaking. The ""Toggle Sneak"" feature should not activate when the ""Hold Sneak"" setting is selected, ensuring that the player cannot unintentionally toggle sneak mode on or off. This expected behavior aligns with the standard functionality outlined in the game's controls and accessibility documentation.","Minecraft Java Edition Version 1.21.8"
+"MC-301008","Possible regression: GuiGraphics submitOutline doesn t respect matrix transformations","Bug","25w33a","None","Unconfirmed","(Unassigned)","Awaiting Response","None","GuiGraphics renderOutline has been removed in 25w33a in favor of GuiGraphics submitOutline. n nAny transformations which have been applied to the Matrix3x2fStack (such as translations) are not respected anymore. n n n nPrevious example which used to work: n n java nguiGraphics.pose().translate(10, 10); guiGraphics.renderOutline(0, 0, 5, 5, 0xFFFFFFFF); n n nThe above would render a white outline at 10, 10 with width and height each being 5 in white color. n n n nCurrent state which doesn t work: n n java nguiGraphics.pose().translate(10, 10); guiGraphics.submitOutline(0, 0, 5, 5, 0xFFFFFFFF); n n nThis outline now doesn t render at 10, 10 but at 0, 0 . n n n nExpected behavior would probably be for it to render at 10, 10 as was previously the case. The fill command also respects applied transformations, so it would be weird for submitOutline not to. n n","1. Create a new Creative world in Minecraft version 25w33a.
+2. Open the code editor or modding environment where you can access the GuiGraphics class.
+3. In the appropriate rendering method, initialize a GuiGraphics object.
+4. Call the method `guiGraphics.pose().translate(10, 10);` to apply a translation transformation to the rendering context.
+5. Replace any instance of `guiGraphics.renderOutline(0, 0, 5, 5, 0xFFFFFFFF);` with `guiGraphics.submitOutline(0, 0, 5, 5, 0xFFFFFFFF);`.
+6. Render the outline using the submitOutline method.
+7. Observe the position of the rendered outline on the screen.
+8. Note that the outline appears at the coordinates (0, 0) instead of the expected (10, 10).","In the current implementation of the `GuiGraphics.submitOutline` method, any transformations applied to the `Matrix3x2fStack`, such as translations, are not taken into account when rendering outlines. Specifically, when the following code is executed:
+
+```java
+guiGraphics.pose().translate(10, 10);
+guiGraphics.submitOutline(0, 0, 5, 5, 0xFFFFFFFF);
+```
+
+The expected behavior would be for the outline to render at the coordinates (10, 10) with a width and height of 5 pixels, resulting in a white outline positioned correctly relative to the applied translation. However, the actual outcome is that the outline is rendered at the original coordinates (0, 0), completely ignoring the translation that was intended.
+
+This regression contrasts with the previous behavior of the `GuiGraphics.renderOutline` method, which correctly respected the matrix transformations. It is notable that other rendering methods, such as the fill command, still adhere to the transformations applied to the `Matrix3x2fStack`, leading to inconsistencies in rendering behavior. Consequently, this inconsistency raises concerns about the expected functionality of `submitOutline`, as it does not align with the behavior of other rendering commands within the `GuiGraphics` class.","When using the GuiGraphics class to submit an outline after applying transformations with the Matrix3x2fStack, the expected behavior is for the outline to render at the transformed coordinates. Specifically, when the code includes a translation, such as `guiGraphics.pose().translate(10, 10);` followed by `guiGraphics.submitOutline(0, 0, 5, 5, 0xFFFFFFFF);`, the outline should appear at the position (10, 10) with the specified width and height of 5, and in white color (0xFFFFFFFF). This behavior aligns with the functionality of other rendering commands, such as fill, which correctly respects the transformations applied to the matrix. Therefore, it is expected that submitOutline will also adhere to the current matrix state, ensuring consistent rendering behavior across different drawing commands.","Minecraft Java Edition Version 25w33a (snapshot)"
+"MC-301071","Fence Gates make Stone sounds on placement","Bug","1.21.8","None","Unconfirmed","(Unassigned)","Awaiting Response","None","When any Fence Gate is placed broken it makes a Stone based sound instead of Wood sounds n n","1. Create a new Creative world with default settings.
+2. Obtain a Fence Gate from the inventory (any type: oak, spruce, birch, jungle, acacia, or dark oak).
+3. Select the Fence Gate in your hotbar.
+4. Place the Fence Gate on the ground by pointing at a block and using the Place Block control.
+5. Observe the sound that plays upon placement of the Fence Gate.
+6. Repeat steps 2-5 multiple times to confirm that the sound consistently plays as a Stone sound rather than a Wood sound.","When a player places any type of Fence Gate (such as Oak, Spruce, Birch, Jungle, Acacia, Dark Oak, or Nether Brick) in the game, the expected sound effect should be a wooden sound, consistent with the material of the fence gate. However, the bug causes the placement of the fence gate to produce a sound effect typically associated with stone blocks instead. This sound discrepancy occurs regardless of the type of fence gate being placed, leading to an inconsistency in audio feedback during gameplay.
+
+**Reproduction Steps:**
+1. Select any Fence Gate from the inventory.
+2. Position the cursor to place the Fence Gate on a solid block surface.
+3. Observe the sound produced upon placement.
+
+**Expected Behavior:**
+The placement of any Fence Gate should generate a sound effect that corresponds to wood, as it is a wooden item. The sound should reflect the material properties of the fence gate being placed.
+
+**Additional Notes:**
+- This issue affects all versions of Minecraft where Fence Gates are present.
+- The sound effect inconsistency may lead to confusion for players regarding the material being interacted with.
+- The bug does not affect the functionality or appearance of the Fence Gates; it is purely an audio-related issue. 
+
+By addressing this issue, the game's audio feedback can align with the expected behavior, enhancing the player's immersive experience in Minecraft.","When a player places a Fence Gate, it should produce the appropriate wood-based sound effect, consistent with its material type, such as oak, spruce, birch, jungle, acacia, or dark oak. This sound should align with the established audio feedback for wooden blocks in Minecraft, reflecting the game's design that differentiates between material types. The expected behavior is that all wooden Fence Gates, regardless of their variant, emit a sound indicative of wood when placed, thereby enhancing the immersive experience and maintaining consistency with other wooden blocks and items in the game.","Minecraft Java Edition Version 1.21.8"
+"MC-301108","Deletion of enchanting table items","Bug","1.21.8","None","Unconfirmed","(Unassigned)","Awaiting Response","None","When you start enchanting something in an enchanting table, but don t select the enchant and just put the lapis and items in, and you disconnect, or get kicked from a server, the items and lapis gets deleted. n n(on a 1.21.8 server) n n","1. Start Minecraft and connect to a server running version 1.21.8.
+2. Ensure you have at least one item (such as a tool or piece of armor) and 1 to 3 Lapis Lazuli in your inventory.
+3. Locate an Enchanting Table in the world or craft one if necessary.
+4. Right-click on the Enchanting Table to open the enchanting interface.
+5. Place the item you want to enchant in the left input slot of the Enchanting Table.
+6. Place 1 to 3 Lapis Lazuli in the designated slot on the right side of the interface.
+7. Do not select any enchantment option that appears on the right side of the GUI.
+8. Disconnect from the server by either using the disconnect option or by being kicked from the server.
+9. Reconnect to the server and check your inventory for the item and Lapis Lazuli you placed in the Enchanting Table.","When a player initiates the enchanting process at an enchanting table by placing an item and 1 to 3 lapis lazuli into the respective slots but does not select any enchantment option, the game enters a state where the enchanting table is ready to apply an enchantment. If the player disconnects from the server or is kicked while in this state, the items placed in the enchanting table, along with the lapis lazuli, are lost permanently. This behavior occurs specifically on servers running version 1.21.8 of Minecraft. 
+
+This issue results in the unintended loss of valuable resources, as players expect their items and lapis lazuli to remain in their inventory or be returned after reconnecting. The bug does not occur if the player selects an enchantment before disconnecting; in such cases, the enchantment process completes as intended, and the items are consumed accordingly. 
+
+To reproduce this bug:
+1. Approach an enchanting table.
+2. Place an item (e.g., a pickaxe) in the left slot.
+3. Insert 1-3 lapis lazuli into the designated slot.
+4. Do not select any enchantment option.
+5. Disconnect from the server or get kicked.
+6. Upon reconnecting, check the inventory to find that the item and lapis lazuli are missing.
+
+This inconsistency in the enchanting mechanics could lead to frustration among players and disrupt gameplay, emphasizing the need for a fix to ensure that items and resources are preserved during unexpected disconnections.","When a player uses an enchanting table and places items along with lapis lazuli into the slots without selecting an enchantment, the game should retain those items and lapis lazuli even if the player disconnects or is kicked from the server. Upon reconnecting, the player should find the items and lapis lazuli in their inventory, as the enchanting process should not consume resources until an enchantment is actually selected and confirmed. This behavior aligns with Minecraft's intended functionality, where items and resources should only be removed from the player's inventory once the enchanting action is completed.","Minecraft Java Edition Version 1.21.8"
+"MC-301122","Green player dot still shows up on maps put in a item frame","Bug","25w33a","None","Unconfirmed","(Unassigned)","Awaiting Response","None","It works with both item frames and glow item frames, it even stacks if put on multiple item frames and looks very ugly on maps both hold by the player or the item frames n n","1. Create a new Creative world with default settings.
+2. Obtain a map item from the inventory.
+3. Place the map in an item frame by right-clicking on the frame while holding the map.
+4. Observe the green player dot that appears on the map, indicating the location of the item frame.
+5. Remove the map from the item frame and hold it in your hand.
+6. Notice that the green player dot still appears on the map while you are holding it.
+7. Place the map back into the item frame and observe the green dot again.
+8. Repeat steps 3 to 7 with a glow item frame instead of a regular item frame.
+9. Place multiple item frames with the same map in close proximity to each other.
+10. Observe the stacking of green player dots on the maps displayed in the item frames, noting the visual clutter created.","When a map is placed in either a regular item frame or a glow item frame, a green player marker appears on the map, indicating the location of the item frame itself. This green marker is intended to help players identify their position relative to the map's contents. However, the marker persists even when the map is viewed by a player holding a clone of the original map, leading to multiple overlapping green markers if the map is placed in several item frames. This stacking of markers can create visual clutter, making it difficult for players to discern the actual map information. 
+
+Additionally, the green marker remains fixed in the direction the item frame is facing, regardless of the player's position or orientation. This can result in confusion, as the marker does not accurately represent the player's location when they are viewing the map from a distance or when the player is not directly in line with the item frame. The issue is present in both Java and Bedrock editions, affecting the visual clarity and usability of the maps when displayed in item frames.","When a map is placed in an item frame, it should display the map correctly without showing a green player dot unless the player is actively holding the map. The item frame should indicate the location of the map with a green pointer only when the player is viewing the map in that specific item frame, and this pointer should not persist or stack when multiple item frames are used. The expected behavior is that the green pointer should accurately reflect the player’s position only when they are holding the map, ensuring that the visual representation remains clear and uncluttered. Each map should maintain its own distinct display without overlapping indicators from other item frames, allowing for a clean and organized presentation of maps in item frames.","Minecraft Java Edition Version 25w33a (snapshot)"
+"MC-301128","The mouse cannot click the menu","Bug","1.21.8","None","Unconfirmed","(Unassigned)","Awaiting Response","None","I died mid-game, and my mouse stopped responding to menu clicks. Even after restarting my computer, changing my mouse, and restarting the world, the mouse still doesn t work. How can I fix this? I can t play the game anymore. n n","1. Launch Minecraft and enter an existing Survival world where you have previously died.
+2. Upon entering the world, observe that the game loads normally with the current state.
+3. Attempt to open the menu by pressing the Esc key or clicking on the menu button if applicable.
+4. Attempt to click on various menu options using the mouse to confirm that it is unresponsive.
+5. Restart the Minecraft application without closing the game.
+6. Once the game restarts, repeat steps 3 and 4 to check if the mouse is still unresponsive.
+7. Change the physical mouse to a different one, ensuring it is properly connected.
+8. Launch Minecraft again and enter the same Survival world.
+9. Repeat steps 3 and 4 to verify if the mouse now responds to menu clicks.
+10. If the issue persists, restart your computer completely and relaunch Minecraft.
+11. Enter the same world again and attempt to access the menu using the mouse to see if the problem remains.","After dying in-game, the mouse cursor becomes unresponsive when attempting to interact with the menu screens, including the pause menu and the main menu. Despite multiple attempts to click menu options, no actions are registered, rendering the player unable to navigate the game interface. 
+
+Steps taken to troubleshoot the issue include:
+1. Restarting the computer, which did not resolve the problem.
+2. Replacing the mouse with a different one, ensuring that the issue is not related to hardware failure.
+3. Restarting the Minecraft world, hoping to reset any temporary glitches affecting the input system.
+
+The issue persists across all menu screens, including the options and inventory menus, indicating a potential bug related to mouse input following player death. This malfunction prevents any further gameplay, as the player cannot access essential game functions. 
+
+**Additional Notes:**
+- The issue occurs specifically after the player dies, suggesting a possible correlation with the death screen or respawn mechanics.
+- This bug affects both single-player and multiplayer modes, as it has been tested in both scenarios without success.
+- The player is currently unable to progress or play the game until a fix is implemented.","When a player dies mid-game, the mouse should continue to function normally, allowing the player to interact with the game menus without any issues. Specifically, the player should be able to click on menu options such as ""Respawn,"" ""Quit to Title,"" or any other available options in the pause menu. If the mouse becomes unresponsive, the game should not freeze or prevent interaction, and the player should be able to use their mouse to navigate through the menus seamlessly, as outlined in the official Minecraft controls documentation. Additionally, restarting the game or the computer should restore normal mouse functionality, enabling the player to resume gameplay without interruption.","Minecraft Java Edition Version 1.21.8"
+"MC-301135","Iron Golems sometimes plant flowers","Bug","1.21.8; 25w33a","None","Unconfirmed","(Unassigned)","Incomplete","None","Blank description n n","1. Create a new Survival world with default settings.
+2. Locate or create a village with at least 10 villagers and 20 beds.
+3. Ensure the villagers are linked to their respective beds.
+4. Wait for at least 30 seconds to allow for iron golem spawning.
+5. Observe the iron golems as they patrol the village.
+6. Stand within the village vicinity to keep the simulation active.
+7. Watch for an iron golem to approach a villager.
+8. Note if the iron golem holds a poppy in its hand and attempts to offer it to the villager.
+9. Repeat the observation multiple times to confirm the occurrence of iron golems planting flowers in the village.","Iron Golems exhibit unintended behavior by occasionally planting flowers, specifically poppies, in the world. This occurs when an Iron Golem, which typically holds a poppy in its hand to offer to villagers, inadvertently places the flower on the ground instead of retaining it. This behavior can happen during their normal patrolling routines within villages or when they are interacting with villagers. 
+
+When an Iron Golem is near a villager, it may attempt to offer the poppy. However, in some cases, instead of holding the poppy out for the villager to take, the Golem will drop the flower on the ground. This results in the flower being placed in the world, which is not the intended mechanic, as Iron Golems are designed to hold poppies and present them to baby villagers. 
+
+This behavior is inconsistent and does not occur every time an Iron Golem is near a villager but can lead to confusion regarding the Golem's function as a protective entity and its relationship with villagers. The occurrence of this bug may impact gameplay, especially in scenarios involving player interactions with villagers and Iron Golems in a village setting. Developers may want to investigate the conditions under which the Golem drops the poppy rather than offering it, as this could be linked to specific pathfinding or interaction algorithms within the game.","When an iron golem is present in a village, it should exhibit its intended behavior of holding a poppy in its hand and offering it to nearby villagers, particularly baby villagers, who will approach and take the flower. This interaction symbolizes the friendly relationship between iron golems and villagers. Iron golems should not randomly plant flowers in the environment, as they are designed to only spawn poppies in their hands when in proximity to villagers. The expected behavior is for the iron golem to wander around the village, engaging with villagers by offering poppies, without any unintended actions such as planting them in the ground.","Minecraft Java Edition Versions: 1.21.8, 25w33a (includes snapshots)"
+"MC-301157","Happy Ghasts path find into fire","Bug","1.21.8","None","Unconfirmed","(Unassigned)","Awaiting Response","None","Happy ghasts can path find into fire. This was observed with soul fire. Unknown if applies to regular fire. n n","1. Create a new Creative world in the Nether.
+2. Locate a Soul Sand Valley biome.
+3. Ensure that the game mode is set to Creative to avoid taking damage from fire.
+4. Place a block of Soul Sand on the ground.
+5. Surround the Soul Sand with at least two blocks of Soul Fire, ensuring the fire is lit.
+6. Use the command '/summon happy_ghast ~ ~ ~' to spawn a Happy Ghast nearby.
+7. Observe the Happy Ghast's movement and pathfinding behavior as it approaches the Soul Fire.
+8. Confirm whether the Happy Ghast enters the Soul Fire without taking damage. 
+9. Repeat the steps with regular fire by replacing the Soul Fire with a block of regular Fire to check for similar behavior.","Happy Ghasts exhibit unintended pathfinding behavior that allows them to navigate into fire blocks, specifically observed with soul fire. When a Happy Ghast comes within proximity of soul fire, it will move towards and enter the fire block, potentially resulting in the mob being set on fire. This behavior raises concerns about the AI's handling of fire hazards, as it is expected that mobs would avoid fire sources due to the damaging effects. 
+
+Currently, it is unclear whether this pathfinding behavior extends to regular fire or if it is exclusive to soul fire. Further investigation is required to determine if Happy Ghasts can also pathfind into standard fire blocks or if their AI treats these two fire types differently. 
+
+This issue may affect gameplay by allowing Happy Ghasts to unintentionally take damage from fire, which could influence player interactions and strategies when dealing with these mobs in the Nether environment.","Happy Ghasts should not be able to pathfind into fire, including soul fire. Instead, they should exhibit behavior that avoids fire blocks, as they are flying entities. Ideally, when a Happy Ghast approaches a fire source, it should redirect its path to maintain a safe distance, preventing it from entering or colliding with the fire. This behavior aligns with the general mechanics of flying mobs in Minecraft, which typically avoid hazards that can cause damage or impede their movement.","Minecraft Java Edition Version 1.21.8"
+"MC-301184","Carpet disappears when placed above transparent wall piston door upon activation","Bug","1.21.8","None","Unconfirmed","(Unassigned)","Awaiting Response","None","When using a transparent wall piston door with Redstone, carpets placed above the moving blocks disappear upon activation.The carpet does not drop as an item, but simply gets deleted. n nThis issue does not affect every identical build some piston doors work fine with carpets, others consistently delete them when triggered. n n n nSteps to reproduce n nBuild a transparent wall piston door (hidden door using sticky pistons and Redstone). n nPlace carpets on top of the blocks that are part of the piston mechanism. n nActivate the Redstone circuit (lever, button, or any power source). n nObserve: When the pistons extend or retract, the carpet vanishes. n n n nExpected result n nThe carpet should remain placed on top of the block even when the piston door is activated. n n n nActual result n nThe carpet disappears completely. n nIt does not drop as an item. n nHappens only on certain piston door builds, making it inconsistent. n n n nAdditional Notes n nIssue only occurs with carpets, not with full blocks. n nSeems related to block updates when pistons move blocks beneath carpets. n nTested on Minecraft Java 1.21.8 may affect other 1.21.x versions as well. n n","1. Create a new Creative world with default settings.
+2. Build a transparent wall piston door using sticky pistons and Redstone. Ensure the pistons are configured to move blocks that will create the door effect.
+3. Place carpets on top of the blocks that are part of the piston mechanism, ensuring they are directly above the moving blocks.
+4. Set up a Redstone circuit to activate the piston door using a lever, button, or any other Redstone power source.
+5. Activate the Redstone circuit by toggling the lever or pressing the button.
+6. Observe the behavior of the pistons as they extend or retract. Take note of whether the carpets placed above the moving blocks disappear immediately without dropping as items. 
+7. Repeat the process with multiple designs of transparent wall piston doors to confirm that the issue does not occur consistently across all builds.","When the transparent wall piston door is activated, carpets that are placed directly above the moving blocks of the piston mechanism disappear entirely. The following details outline the specific behavior observed:
+
+1. **Disappearance**: The carpets placed on top of the blocks are not dropped as items; instead, they are deleted from the game entirely upon the pistons extending or retracting.
+
+2. **Inconsistency**: This issue does not occur uniformly across all builds of transparent wall piston doors. In some configurations, carpets remain intact when the piston door is activated, while in others, they vanish consistently. This inconsistency suggests that the problem may be related to specific interactions within the Redstone circuitry or block placements.
+
+3. **Carpet vs. Full Blocks**: The bug specifically affects carpets and does not impact full blocks placed above the piston mechanism. Full blocks remain in place regardless of the piston movements, highlighting a distinct difference in behavior between these two types of blocks.
+
+4. **Possible Cause**: The issue appears to be linked to block updates that occur when the pistons move the blocks beneath the carpets. It is possible that the movement of the pistons is causing a state change that leads to the carpets being removed rather than maintained.
+
+5. **Version Specificity**: This behavior has been tested on Minecraft Java version 1.21.8, and it may also affect other versions within the 1.21.x series. Further testing across different versions may be required to ascertain the full extent of the issue.
+
+Overall, the disappearance of carpets during the activation of certain transparent wall piston doors presents a significant inconsistency in gameplay, warranting investigation and resolution.","When a carpet is placed on top of a block that is part of a transparent wall piston door mechanism and the piston is activated, the carpet should remain in its position regardless of the piston’s movement. The expected behavior is that the carpet will not disappear or be deleted when the pistons extend or retract, but will instead stay on top of the block. If the block underneath the carpet is moved by the piston, the carpet should either remain in place or be dropped as an item, similar to how other blocks interact with pistons. This behavior aligns with the mechanics of block updates in Minecraft, where non-solid blocks like carpets should not be deleted when the underlying blocks are moved by pistons.","Minecraft Java Edition Version 1.21.8"
+"MC-301234","rotate multiplies momentum motion, for example making a player glide 6000 blocks in one second just by tapping ""w""","Bug","25w34a","None","Unconfirmed","(Unassigned)","Awaiting Response","None","25w32a , not fixed yet . when an entity executes the rotate its momentum motion is multiplied by absurd amounts, more noticable with a ticking command where it doesn t stop, making you move insanely fast for ever while not applying any movement input. n n","1. Create a new Creative world with default settings.
+2. Place a Command Block on the ground.
+3. Enter the command '/execute as @p run tp @p ^ ^ ^1' in the Command Block.
+4. Set the Command Block to ""Repeat"" and ""Always Active.""
+5. Move away from the Command Block to ensure it continues executing without interruption.
+6. Tap the ""W"" key to move forward.
+7. Observe the player's movement speed and note the excessive gliding distance achieved.","When an entity, particularly a player, executes a rotation command (such as through the `/execute` command with rotation parameters), the player's momentum is unintentionally amplified to extreme levels. This issue becomes especially pronounced when the rotation is executed continuously via a command block or a similar mechanism that ticks every game tick. 
+
+As a result, the player can achieve speeds of up to 6000 blocks per second simply by pressing the forward movement key (default ""W"") briefly. This excessive velocity persists indefinitely, even when no further movement input is given. The player continues to glide at this hyper-accelerated speed without any additional commands or inputs required, leading to an unrealistic and game-breaking experience.
+
+The problem arises from the way the game's physics engine calculates movement and momentum. Upon executing a rotation, the player's velocity appears to be multiplied by an exaggerated factor, which does not align with expected gameplay mechanics. This behavior can be replicated consistently in version 25w32a and has not yet been addressed in subsequent updates. 
+
+To summarize, the core of the issue is:
+- **Rotation Execution**: Any rotation command executed causes the player's momentum to increase dramatically.
+- **Continuous Speed**: The player can glide at speeds that far exceed normal gameplay limits without any further input.
+- **Unintended Consequences**: This creates a situation where players can traverse large distances instantly, undermining the intended mechanics of movement within the game. 
+
+This bug needs to be resolved to restore normal movement physics and ensure a balanced gameplay experience.","When an entity rotates, its momentum should not be excessively amplified to the point of achieving unrealistic speeds. Instead, the player's movement should remain consistent with the game's intended mechanics, where the player's velocity is influenced by the friction of the blocks they are on and their input commands. Specifically, when executing a rotation command, the player's speed should be regulated by the standard acceleration and friction values defined in the game, ensuring that they do not exceed the maximum movement speeds established for walking, sprinting, or flying, which are approximately 4.317 meters per second for walking and 5.612 meters per second for sprinting. The expected behavior is that the player would maintain controlled movement without experiencing infinite speed or unintended momentum accumulation, allowing for a balanced and fair gameplay experience.","Minecraft Java Edition Version 25w34a (snapshot)"
+"MC-301252","Enchanted items doesnt show the purple outline","Bug","1.21.8; 25w34b","None","Unconfirmed","(Unassigned)","Cannot Reproduce","None","Some enchanted items doesnt show the purple outling they used to n n","1. Create a new Creative world with default settings.
+2. Give yourself an enchanted item using the command '/give @p minecraft:diamond_sword{Enchantments:[{id:""minecraft:sharpness"",lvl:5}]}'
+3. Hold the enchanted diamond sword in your hand.
+4. Observe the item in your hand to confirm the enchanted glint is visible.
+5. Place a Block of Diamond in the world.
+6. Right-click the Block of Diamond to display the enchanted diamond sword on it.
+7. Observe the displayed enchanted diamond sword to check if the purple outline (enchanted glint) is visible.
+8. Repeat steps 2-7 with other enchanted items, such as an Enchanted Golden Apple or Enchanted Book, to verify the issue consistently occurs.","Some enchanted items, when held by the player or displayed in item frames, do not exhibit the expected purple enchanted glint effect. This issue leads to certain enchanted items appearing visually identical to their unenchanted counterparts. For example, an enchanted golden apple does not show the characteristic purple outline, making it look like a regular golden apple. This behavior is inconsistent across different enchanted items and can affect player perception and gameplay, particularly in situations where distinguishing between enchanted and non-enchanted items is crucial. The absence of the enchanted glint may also impact the aesthetic experience for players who rely on visual cues to identify enchanted items. The bug occurs in various versions of the game, including both Java and Bedrock editions, and has been reported across multiple platforms.","When an enchanted item is held or displayed in the game, it should consistently show a distinct purple outline, commonly referred to as the enchanted glint. This visual effect is intended to signify that the item has been enchanted, providing a clear indication of its enhanced properties. The glint should be visible regardless of the item's location in the player's inventory, hotbar, or when displayed on blocks. This behavior is part of Minecraft's design to help players easily identify enchanted items, ensuring that they stand out from non-enchanted items.","Minecraft Java Edition Versions: 1.21.8, 25w34b (includes snapshots)"
