@@ -15,6 +15,7 @@ Input:
         Author 1 Responses.csv
         Author 2 Responses.csv
         Final Results.csv
+        evaluation_metrics.yaml
 
 Output:
     Data/Raw/
@@ -36,6 +37,11 @@ Important:
     This script overwrites existing pilot files.
     Do not run it again after LLM Results have already been generated,
     unless you intentionally want to regenerate the pilot sample.
+
+Note:
+    evaluation_metrics.yaml is validated only to ensure the research rubric file
+    exists. This script does not parse it because this file only generates pilot
+    CSV datasets, not LLM evaluation prompts or metric calculations.
 """
 
 from __future__ import annotations
@@ -57,6 +63,7 @@ ANNOTATION_DIR = BASE_DIR / "Data" / "Annotations"
 FINAL_CSV = ANNOTATION_DIR / "Final Results.csv"
 AUTHOR1_CSV = ANNOTATION_DIR / "Author 1 Responses.csv"
 AUTHOR2_CSV = ANNOTATION_DIR / "Author 2 Responses.csv"
+EVALUATION_METRICS_YAML = ANNOTATION_DIR / "evaluation_metrics.yaml"
 
 RAW_OUT_DIR = BASE_DIR / "Data" / "Raw"
 IMPROVED_OUT_DIR = BASE_DIR / "Data" / "Improved"
@@ -103,11 +110,15 @@ def validate_paths() -> None:
         FINAL_CSV,
         AUTHOR1_CSV,
         AUTHOR2_CSV,
+        EVALUATION_METRICS_YAML,
     ]
 
     for path in required_paths:
         if not path.exists():
             raise FileNotFoundError(f"Required path not found: {path}")
+
+    if EVALUATION_METRICS_YAML.is_file() and EVALUATION_METRICS_YAML.stat().st_size == 0:
+        raise ValueError(f"evaluation_metrics.yaml is empty: {EVALUATION_METRICS_YAML}")
 
 
 def to_str(value: Any) -> str:
@@ -115,19 +126,65 @@ def to_str(value: Any) -> str:
         return "None"
 
     if isinstance(value, list):
-        return "; ".join(str(item) for item in value) if value else "None"
+        return "; ".join(str(item).strip() for item in value if str(item).strip()) or "None"
 
     if isinstance(value, dict):
         return json.dumps(value, ensure_ascii=False)
 
     text = str(value).strip()
-
     return text if text else "None"
 
 
+def get_first(data: Dict[str, Any], keys: List[str], default: Any = "") -> Any:
+    for key in keys:
+        if key not in data:
+            continue
+
+        value = data[key]
+
+        if value is None:
+            continue
+
+        if isinstance(value, str) and not value.strip():
+            continue
+
+        if isinstance(value, list) and not value:
+            continue
+
+        return value
+
+    return default
+
+
 def read_json(path: Path) -> Dict[str, Any]:
+    if not path.exists():
+        raise FileNotFoundError(f"JSON file not found: {path}")
+
     with path.open("r", encoding="utf-8") as file:
-        return json.load(file)
+        data = json.load(file)
+
+    if not isinstance(data, dict):
+        raise ValueError(f"JSON root must be an object: {path}")
+
+    return data
+
+
+def raw_issue_keys() -> set[str]:
+    return {path.stem for path in RAW_JSON_DIR.glob("*.json")}
+
+
+def improved_issue_keys() -> set[str]:
+    keys = set()
+
+    for path in IMPROVED_JSON_DIR.glob("*_improved.json"):
+        key = path.stem
+
+        if key.endswith("_improved"):
+            key = key[: -len("_improved")]
+
+        keys.add(key)
+
+    return keys
 
 
 def load_annotation_rows(
@@ -165,9 +222,58 @@ def load_annotation_rows(
                 continue
 
             issue_key = first_cell[: -len(suffix)].strip()
-            rows[issue_key] = row
+
+            if issue_key:
+                rows[issue_key] = row
 
     return header, rows
+
+
+def annotation_issue_keys(path: Path, tag: str) -> set[str]:
+    _, rows = load_annotation_rows(path, tag)
+    return set(rows.keys())
+
+
+def eligible_issue_keys() -> List[str]:
+    raw_keys = raw_issue_keys()
+    improved_keys = improved_issue_keys()
+
+    final_raw_keys = annotation_issue_keys(FINAL_CSV, "Raw")
+    final_improved_keys = annotation_issue_keys(FINAL_CSV, "Improved")
+
+    author1_raw_keys = annotation_issue_keys(AUTHOR1_CSV, "Raw")
+    author1_improved_keys = annotation_issue_keys(AUTHOR1_CSV, "Improved")
+
+    author2_raw_keys = annotation_issue_keys(AUTHOR2_CSV, "Raw")
+    author2_improved_keys = annotation_issue_keys(AUTHOR2_CSV, "Improved")
+
+    eligible = (
+        raw_keys
+        & improved_keys
+        & final_raw_keys
+        & final_improved_keys
+        & author1_raw_keys
+        & author1_improved_keys
+        & author2_raw_keys
+        & author2_improved_keys
+    )
+
+    if len(eligible) < N_SAMPLE:
+        raise ValueError(
+            "Not enough eligible issue keys to sample.\n"
+            f"Need: {N_SAMPLE}\n"
+            f"Eligible: {len(eligible)}\n"
+            f"Raw JSON files: {len(raw_keys)}\n"
+            f"Improved JSON files: {len(improved_keys)}\n"
+            f"Final Raw annotations: {len(final_raw_keys)}\n"
+            f"Final Improved annotations: {len(final_improved_keys)}\n"
+            f"Author 1 Raw annotations: {len(author1_raw_keys)}\n"
+            f"Author 1 Improved annotations: {len(author1_improved_keys)}\n"
+            f"Author 2 Raw annotations: {len(author2_raw_keys)}\n"
+            f"Author 2 Improved annotations: {len(author2_improved_keys)}"
+        )
+
+    return sorted(eligible)
 
 
 def write_dict_csv(
@@ -195,22 +301,27 @@ def write_annotation_subset(
 ) -> None:
     header, data = load_annotation_rows(source_csv, tag)
 
+    if not header:
+        raise ValueError(f"Annotation CSV has no header: {source_csv}")
+
+    missing_keys = [key for key in sampled_keys if key not in data]
+
+    if missing_keys:
+        preview = ", ".join(missing_keys[:10])
+        raise ValueError(
+            f"Missing {tag} annotation rows in {source_csv}. "
+            f"Missing count: {len(missing_keys)}. "
+            f"Examples: {preview}"
+        )
+
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     with output_path.open("w", encoding="utf-8-sig", newline="") as file:
         writer = csv.writer(file, quoting=csv.QUOTE_ALL)
-
-        if header:
-            writer.writerow(header)
+        writer.writerow(header)
 
         for key in sampled_keys:
-            row = data.get(key)
-
-            if row:
-                writer.writerow(row)
-            else:
-                blank_count = (len(header) - 1) if header else 9
-                writer.writerow([f"{key} {tag}"] + [""] * blank_count)
+            writer.writerow(data[key])
 
 
 def build_raw_records(sampled_keys: List[str]) -> List[Dict[str, Any]]:
@@ -223,16 +334,33 @@ def build_raw_records(sampled_keys: List[str]) -> List[Dict[str, Any]]:
         records.append(
             {
                 "Issue Key": key,
-                "Summary": data.get("summary", "") or "",
-                "Type": "Bug",
-                "Affects Version/s": to_str(data.get("affected_versions", [])),
-                "Labels": to_str(data.get("labels", [])),
-                "Confirmation Status": data.get("confirmation_status", "")
-                or "Unconfirmed",
-                "Category": data.get("category", "") or "(Unassigned)",
-                "Resolution": data.get("resolution", "") or "None",
-                "Fix Version/s": to_str(data.get("fix_versions", [])),
-                "Description": data.get("description", "") or "",
+                "Summary": get_first(data, ["summary", "Summary"], ""),
+                "Type": get_first(data, ["type", "Type", "issue_type"], "Bug"),
+                "Affects Version/s": to_str(
+                    get_first(
+                        data,
+                        ["affected_versions", "Affects Version/s", "affects_versions"],
+                        [],
+                    )
+                ),
+                "Labels": to_str(get_first(data, ["labels", "Labels"], [])),
+                "Confirmation Status": to_str(
+                    get_first(
+                        data,
+                        ["confirmation_status", "Confirmation Status"],
+                        "Unconfirmed",
+                    )
+                ),
+                "Category": to_str(
+                    get_first(data, ["category", "Category"], "(Unassigned)")
+                ),
+                "Resolution": to_str(
+                    get_first(data, ["resolution", "Resolution"], "None")
+                ),
+                "Fix Version/s": to_str(
+                    get_first(data, ["fix_versions", "Fix Version/s", "fixVersions"], [])
+                ),
+                "Description": get_first(data, ["description", "Description"], ""),
             }
         )
 
@@ -240,52 +368,70 @@ def build_raw_records(sampled_keys: List[str]) -> List[Dict[str, Any]]:
 
 
 def build_improved_records(sampled_keys: List[str]) -> List[Dict[str, Any]]:
+    """
+    Build Improved records without duplicating structured sections inside Description.
+
+    The Improved CSV keeps these fields separate:
+        - Description
+        - Steps to Reproduce
+        - Observed Behavior
+        - Expected Behavior
+        - Environment
+
+    This avoids sending repeated content to the LLM if later code reads all columns.
+    """
     records = []
 
     for key in sampled_keys:
         json_path = IMPROVED_JSON_DIR / f"{key}_improved.json"
         data = read_json(json_path)
 
-        affected_versions = data.get("affected_versions", [])
-
-        if isinstance(affected_versions, str):
-            affected_versions = [affected_versions]
-
-        description_parts = [data.get("description", "") or ""]
-
-        for section in [
-            "Steps to Reproduce",
-            "Observed Behavior",
-            "Expected Behavior",
-            "Environment",
-        ]:
-            content = (data.get(section, "") or "").strip()
-
-            if content:
-                description_parts.append(f"\n[{section}]\n{content}")
-
         records.append(
             {
                 "Issue Key": key,
-                "Summary": data.get("summary", "") or "",
-                "Type": "Bug",
-                "Affects Version/s": to_str(affected_versions),
-                "Labels": to_str(data.get("labels", [])),
-                "Confirmation Status": "Unconfirmed",
-                "Category": "(Unassigned)",
-                "Resolution": data.get("resolution", "") or "None",
-                "Fix Version/s": "None",
-                "Description": "\n".join(description_parts).strip(),
-                "Steps to Reproduce": (
-                    data.get("Steps to Reproduce", "") or ""
-                ).strip(),
-                "Observed Behavior": (
-                    data.get("Observed Behavior", "") or ""
-                ).strip(),
-                "Expected Behavior": (
-                    data.get("Expected Behavior", "") or ""
-                ).strip(),
-                "Environment": (data.get("Environment", "") or "").strip(),
+                "Summary": get_first(data, ["summary", "Summary"], ""),
+                "Type": get_first(data, ["type", "Type", "issue_type"], "Bug"),
+                "Affects Version/s": to_str(
+                    get_first(
+                        data,
+                        ["affected_versions", "Affects Version/s", "affects_versions"],
+                        [],
+                    )
+                ),
+                "Labels": to_str(get_first(data, ["labels", "Labels"], [])),
+                "Confirmation Status": to_str(
+                    get_first(
+                        data,
+                        ["confirmation_status", "Confirmation Status"],
+                        "Unconfirmed",
+                    )
+                ),
+                "Category": to_str(
+                    get_first(data, ["category", "Category"], "(Unassigned)")
+                ),
+                "Resolution": to_str(
+                    get_first(data, ["resolution", "Resolution"], "None")
+                ),
+                "Fix Version/s": to_str(
+                    get_first(data, ["fix_versions", "Fix Version/s", "fixVersions"], [])
+                ),
+                "Description": get_first(data, ["description", "Description"], ""),
+                "Steps to Reproduce": get_first(
+                    data,
+                    ["Steps to Reproduce", "steps_to_reproduce", "stepsToReproduce"],
+                    "",
+                ),
+                "Observed Behavior": get_first(
+                    data,
+                    ["Observed Behavior", "observed_behavior", "observedBehavior"],
+                    "",
+                ),
+                "Expected Behavior": get_first(
+                    data,
+                    ["Expected Behavior", "expected_behavior", "expectedBehavior"],
+                    "",
+                ),
+                "Environment": get_first(data, ["Environment", "environment"], ""),
             }
         )
 
@@ -293,17 +439,11 @@ def build_improved_records(sampled_keys: List[str]) -> List[Dict[str, Any]]:
 
 
 def sample_issue_keys() -> List[str]:
-    all_keys = sorted(path.stem for path in RAW_JSON_DIR.glob("*.json"))
-
-    if len(all_keys) < N_SAMPLE:
-        raise ValueError(
-            f"Not enough raw JSON files to sample. "
-            f"Found {len(all_keys)}, need {N_SAMPLE}."
-        )
+    keys = eligible_issue_keys()
 
     random.seed(RANDOM_SEED)
 
-    return random.sample(all_keys, N_SAMPLE)
+    return random.sample(keys, N_SAMPLE)
 
 
 def main() -> None:
@@ -314,6 +454,7 @@ def main() -> None:
 
     sampled_keys = sample_issue_keys()
 
+    print(f"Validated evaluation metrics file: {EVALUATION_METRICS_YAML}")
     print(f"Sampled {len(sampled_keys)} issues with seed={RANDOM_SEED}")
     print("-" * 60)
 

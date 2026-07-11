@@ -1,34 +1,38 @@
-﻿Metric,Raw,Improved,Difference Improved - Raw
-Version,raw,improved,
-Phase,full,full,
-Model,gpt-4o-mini-2024-07-18,gpt-4o-mini-2024-07-18,
-Prompt version,v2,v2,
-Total prediction rows,139,139,0
-Valid JSON outputs,139,139,0
-Valid label predictions,139,139,0
-Ground truth cases,139,139,0
-Matched cases,139,139,0
-Evaluated cases,139,139,0
-Missing predictions,0,0,0
-Extra predictions,0,0,0
-Correct,102,96,-6
-Incorrect,37,43,6
-Accuracy,0.7338,0.6906,-0.0432
-Cohen Kappa,0.3358,0.0592,-0.2766
-Kappa threshold,0.70,0.70,0.0000
-Threshold passed,False,False,
-GT Executable -> LLM Executable,20,94,74
-GT Executable -> LLM Non-Executable,20,0,-20
-GT Non-Executable -> LLM Executable,17,43,26
-GT Non-Executable -> LLM Non-Executable,82,2,-80
-Total input tokens,85750,237680,151930
-Total cached input tokens,0,209536,209536
-Total output tokens,8719,7860,-859
-Total tokens,94469,245540,151071
-Total cost USD,0.01809390,0.02465280,0.00655890
+﻿"Metric","Raw","Improved","Difference Improved - Raw"
+"Version","raw","improved",""
+"Phase","full","full",""
+"Model","gpt-4o-mini-2024-07-18","gpt-4o-mini-2024-07-18",""
+"Prompt version","Prompts_Raw_Final_Rules","Prompts_Improved_Final_Rules",""
+"Total prediction rows","139","139","0"
+"Valid JSON outputs","139","139","0"
+"Valid label predictions","139","139","0"
+"Ground truth cases","139","139","0"
+"Matched cases","139","139","0"
+"Evaluated cases","139","139","0"
+"Missing predictions","0","0","0"
+"Extra predictions","0","0","0"
+"Invalid labels","0","0","0"
+"Mismatches","58","92","34"
+"Correct","81","47","-34"
+"Incorrect","58","92","34"
+"Accuracy","0.5827","0.3381","-0.2446"
+"Cohen Kappa","0.2067","0.0139","-0.1928"
+"Kappa threshold","0.70","0.70","0.0000"
+"Threshold passed","False","False",""
+"GT Executable -> LLM Executable","30","2","-28"
+"GT Executable -> LLM Non-Executable","10","92","82"
+"GT Non-Executable -> LLM Executable","48","0","-48"
+"GT Non-Executable -> LLM Non-Executable","51","45","-6"
+"Total input tokens","478564","703033","224469"
+"Total cached input tokens","0","0","0"
+"Total output tokens","30177","31700","1523"
+"Total tokens","508741","734733","225992"
+"Total cost USD","0.08989080","0.12447495","0.03458415"
 
-Interpretation,Value,Note
-Accuracy change,-0.0432,Improved accuracy minus Raw accuracy
-Cohen Kappa change,-0.2766,Improved Cohen Kappa minus Raw Cohen Kappa
-Cost change USD,0.00655890,Improved cost minus Raw cost
-Conclusion,Improved did not reach the target Cohen Kappa threshold.,Threshold: Cohen Kappa >= 0.70
+"Interpretation","Value","Note"
+"Accuracy change","-0.2446","Improved accuracy minus Raw accuracy"
+"Cohen Kappa change","-0.1928","Improved Cohen Kappa minus Raw Cohen Kappa"
+"Mismatch change","34","Improved mismatches minus Raw mismatches"
+"Invalid label change","0","Improved invalid labels minus Raw invalid labels"
+"Cost change USD","0.03458415","Improved cost minus Raw cost"
+"Conclusion","Improved did not reach the target Cohen Kappa threshold.","Threshold: Cohen Kappa >= 0.70"

@@ -17,8 +17,8 @@ Input:
     Data/Improved/IMPROVED/
         139 improved bug report JSON files, e.g. MC-300962_improved.json
 
-    Data/Raw/full_ground_truth_raw.csv
-    Data/Improved/full_ground_truth_improved.csv
+    Results/Full/Raw/full_ground_truth_raw.csv
+    Results/Full/Improved/full_ground_truth_improved.csv
 
 Output:
     Data/Raw/full_sample_raw.csv
@@ -46,14 +46,19 @@ BASE_DIR = SCRIPT_DIR.parent
 RAW_JSON_DIR = BASE_DIR / "Data" / "Raw" / "RAW"
 IMPROVED_JSON_DIR = BASE_DIR / "Data" / "Improved" / "IMPROVED"
 
-RAW_DATA_DIR = BASE_DIR / "Data" / "Raw"
-IMPROVED_DATA_DIR = BASE_DIR / "Data" / "Improved"
+FULL_RAW_DATA_DIR = BASE_DIR / "Data" / "Full" / "Raw"
+FULL_IMPROVED_DATA_DIR = BASE_DIR / "Data" / "Full" / "Improved"
 
-RAW_GROUND_TRUTH = RAW_DATA_DIR / "full_ground_truth_raw.csv"
-IMPROVED_GROUND_TRUTH = IMPROVED_DATA_DIR / "full_ground_truth_improved.csv"
+RAW_GROUND_TRUTH = (
+    FULL_RAW_DATA_DIR / "full_ground_truth_raw.csv"
+)
 
-RAW_OUTPUT = RAW_DATA_DIR / "full_sample_raw.csv"
-IMPROVED_OUTPUT = IMPROVED_DATA_DIR / "full_sample_improved.csv"
+IMPROVED_GROUND_TRUTH = (
+    FULL_IMPROVED_DATA_DIR / "full_ground_truth_improved.csv"
+)
+
+RAW_OUTPUT = FULL_RAW_DATA_DIR / "full_sample_raw.csv"
+IMPROVED_OUTPUT = FULL_IMPROVED_DATA_DIR / "full_sample_improved.csv"
 
 RAW_FIELDS = [
     "Issue Key",
@@ -98,6 +103,22 @@ def validate_paths() -> None:
         if not path.exists():
             raise FileNotFoundError(f"Required path not found: {path}")
 
+    if not RAW_JSON_DIR.is_dir():
+        raise NotADirectoryError(f"Raw JSON path is not a directory: {RAW_JSON_DIR}")
+
+    if not IMPROVED_JSON_DIR.is_dir():
+        raise NotADirectoryError(
+            f"Improved JSON path is not a directory: {IMPROVED_JSON_DIR}"
+        )
+
+    if RAW_GROUND_TRUTH.stat().st_size == 0:
+        raise ValueError(f"Raw ground truth file is empty: {RAW_GROUND_TRUTH}")
+
+    if IMPROVED_GROUND_TRUTH.stat().st_size == 0:
+        raise ValueError(
+            f"Improved ground truth file is empty: {IMPROVED_GROUND_TRUTH}"
+        )
+
 
 def normalize_issue_key(value: str) -> str:
     if value is None:
@@ -118,7 +139,7 @@ def to_str(value: Any) -> str:
         return "None"
 
     if isinstance(value, list):
-        return "; ".join(str(item) for item in value) if value else "None"
+        return "; ".join(str(item).strip() for item in value if str(item).strip()) or "None"
 
     if isinstance(value, dict):
         return json.dumps(value, ensure_ascii=False)
@@ -128,13 +149,44 @@ def to_str(value: Any) -> str:
     return text if text else "None"
 
 
+def get_first(data: Dict[str, Any], keys: List[str], default: Any = "") -> Any:
+    for key in keys:
+        if key not in data:
+            continue
+
+        value = data[key]
+
+        if value is None:
+            continue
+
+        if isinstance(value, str) and not value.strip():
+            continue
+
+        if isinstance(value, list) and not value:
+            continue
+
+        return value
+
+    return default
+
+
 def read_json(path: Path) -> Dict[str, Any]:
+    if not path.exists():
+        raise FileNotFoundError(f"JSON file not found: {path}")
+
     with path.open("r", encoding="utf-8") as file:
-        return json.load(file)
+        data = json.load(file)
+
+    if not isinstance(data, dict):
+        raise ValueError(f"JSON root must be an object: {path}")
+
+    return data
 
 
 def read_ground_truth_keys(path: Path) -> List[str]:
     keys: List[str] = []
+    seen_keys = set()
+    duplicate_keys = []
 
     with path.open("r", encoding="utf-8-sig", newline="") as file:
         reader = csv.reader(file)
@@ -149,8 +201,22 @@ def read_ground_truth_keys(path: Path) -> List[str]:
 
             issue_key = normalize_issue_key(row[0])
 
-            if issue_key.startswith("MC-"):
-                keys.append(issue_key)
+            if not issue_key.startswith("MC-"):
+                continue
+
+            if issue_key in seen_keys:
+                duplicate_keys.append(issue_key)
+                continue
+
+            seen_keys.add(issue_key)
+            keys.append(issue_key)
+
+    if duplicate_keys:
+        preview = ", ".join(sorted(set(duplicate_keys))[:10])
+        raise ValueError(
+            f"Duplicate issue keys found in ground truth file: {path}. "
+            f"Examples: {preview}"
+        )
 
     if not keys:
         raise ValueError(f"No issue keys found in ground truth file: {path}")
@@ -191,16 +257,33 @@ def build_raw_records(issue_keys: List[str]) -> List[Dict[str, Any]]:
         records.append(
             {
                 "Issue Key": key,
-                "Summary": data.get("summary", "") or "",
-                "Type": "Bug",
-                "Affects Version/s": to_str(data.get("affected_versions", [])),
-                "Labels": to_str(data.get("labels", [])),
-                "Confirmation Status": data.get("confirmation_status", "")
-                or "Unconfirmed",
-                "Category": data.get("category", "") or "(Unassigned)",
-                "Resolution": data.get("resolution", "") or "None",
-                "Fix Version/s": to_str(data.get("fix_versions", [])),
-                "Description": data.get("description", "") or "",
+                "Summary": get_first(data, ["summary", "Summary"], ""),
+                "Type": get_first(data, ["type", "Type", "issue_type"], "Bug"),
+                "Affects Version/s": to_str(
+                    get_first(
+                        data,
+                        ["affected_versions", "Affects Version/s", "affects_versions"],
+                        [],
+                    )
+                ),
+                "Labels": to_str(get_first(data, ["labels", "Labels"], [])),
+                "Confirmation Status": to_str(
+                    get_first(
+                        data,
+                        ["confirmation_status", "Confirmation Status"],
+                        "Unconfirmed",
+                    )
+                ),
+                "Category": to_str(
+                    get_first(data, ["category", "Category"], "(Unassigned)")
+                ),
+                "Resolution": to_str(
+                    get_first(data, ["resolution", "Resolution"], "None")
+                ),
+                "Fix Version/s": to_str(
+                    get_first(data, ["fix_versions", "Fix Version/s", "fixVersions"], [])
+                ),
+                "Description": get_first(data, ["description", "Description"], ""),
             }
         )
 
@@ -213,6 +296,18 @@ def build_raw_records(issue_keys: List[str]) -> List[Dict[str, Any]]:
 
 
 def build_improved_records(issue_keys: List[str]) -> List[Dict[str, Any]]:
+    """
+    Build Improved records without duplicating structured sections inside Description.
+
+    The Improved CSV keeps these fields separate:
+        - Description
+        - Steps to Reproduce
+        - Observed Behavior
+        - Expected Behavior
+        - Environment
+
+    This avoids sending repeated content to the LLM if later code reads all columns.
+    """
     records = []
     missing_json_files = []
 
@@ -225,46 +320,52 @@ def build_improved_records(issue_keys: List[str]) -> List[Dict[str, Any]]:
 
         data = read_json(json_path)
 
-        affected_versions = data.get("affected_versions", [])
-
-        if isinstance(affected_versions, str):
-            affected_versions = [affected_versions]
-
-        description_parts = [data.get("description", "") or ""]
-
-        for section in [
-            "Steps to Reproduce",
-            "Observed Behavior",
-            "Expected Behavior",
-            "Environment",
-        ]:
-            content = (data.get(section, "") or "").strip()
-
-            if content:
-                description_parts.append(f"\n[{section}]\n{content}")
-
         records.append(
             {
                 "Issue Key": key,
-                "Summary": data.get("summary", "") or "",
-                "Type": "Bug",
-                "Affects Version/s": to_str(affected_versions),
-                "Labels": to_str(data.get("labels", [])),
-                "Confirmation Status": "Unconfirmed",
-                "Category": "(Unassigned)",
-                "Resolution": data.get("resolution", "") or "None",
-                "Fix Version/s": "None",
-                "Description": "\n".join(description_parts).strip(),
-                "Steps to Reproduce": (
-                    data.get("Steps to Reproduce", "") or ""
-                ).strip(),
-                "Observed Behavior": (
-                    data.get("Observed Behavior", "") or ""
-                ).strip(),
-                "Expected Behavior": (
-                    data.get("Expected Behavior", "") or ""
-                ).strip(),
-                "Environment": (data.get("Environment", "") or "").strip(),
+                "Summary": get_first(data, ["summary", "Summary"], ""),
+                "Type": get_first(data, ["type", "Type", "issue_type"], "Bug"),
+                "Affects Version/s": to_str(
+                    get_first(
+                        data,
+                        ["affected_versions", "Affects Version/s", "affects_versions"],
+                        [],
+                    )
+                ),
+                "Labels": to_str(get_first(data, ["labels", "Labels"], [])),
+                "Confirmation Status": to_str(
+                    get_first(
+                        data,
+                        ["confirmation_status", "Confirmation Status"],
+                        "Unconfirmed",
+                    )
+                ),
+                "Category": to_str(
+                    get_first(data, ["category", "Category"], "(Unassigned)")
+                ),
+                "Resolution": to_str(
+                    get_first(data, ["resolution", "Resolution"], "None")
+                ),
+                "Fix Version/s": to_str(
+                    get_first(data, ["fix_versions", "Fix Version/s", "fixVersions"], [])
+                ),
+                "Description": get_first(data, ["description", "Description"], ""),
+                "Steps to Reproduce": get_first(
+                    data,
+                    ["Steps to Reproduce", "steps_to_reproduce", "stepsToReproduce"],
+                    "",
+                ),
+                "Observed Behavior": get_first(
+                    data,
+                    ["Observed Behavior", "observed_behavior", "observedBehavior"],
+                    "",
+                ),
+                "Expected Behavior": get_first(
+                    data,
+                    ["Expected Behavior", "expected_behavior", "expectedBehavior"],
+                    "",
+                ),
+                "Environment": get_first(data, ["Environment", "environment"], ""),
             }
         )
 
@@ -276,7 +377,7 @@ def build_improved_records(issue_keys: List[str]) -> List[Dict[str, Any]]:
     return records
 
 
-def print_key_check(raw_keys: List[str], improved_keys: List[str]) -> None:
+def validate_key_consistency(raw_keys: List[str], improved_keys: List[str]) -> None:
     raw_set = set(raw_keys)
     improved_set = set(improved_keys)
 
@@ -288,12 +389,18 @@ def print_key_check(raw_keys: List[str], improved_keys: List[str]) -> None:
 
     if not missing_in_improved and not missing_in_raw:
         print("Raw full keys vs Improved full keys: OK")
-    else:
-        print("Raw full keys vs Improved full keys: NOT OK")
-        print(f"Missing in Improved: {missing_in_improved}")
-        print(f"Missing in Raw     : {missing_in_raw}")
+        print()
+        return
 
+    print("Raw full keys vs Improved full keys: NOT OK")
+    print(f"Missing in Improved: {missing_in_improved}")
+    print(f"Missing in Raw     : {missing_in_raw}")
     print()
+
+    raise ValueError(
+        "Raw and Improved full ground truth files do not contain the same issue keys. "
+        "Fix the ground truth files before creating full LLM input samples."
+    )
 
 
 def main() -> None:
@@ -309,10 +416,21 @@ def main() -> None:
     print(f"Improved ground truth cases : {len(improved_keys)}")
     print()
 
-    print_key_check(raw_keys, improved_keys)
+    validate_key_consistency(raw_keys, improved_keys)
 
     raw_records = build_raw_records(raw_keys)
     improved_records = build_improved_records(improved_keys)
+
+    if len(raw_records) != len(raw_keys):
+        raise ValueError(
+            f"Raw record count mismatch. Keys: {len(raw_keys)}, records: {len(raw_records)}"
+        )
+
+    if len(improved_records) != len(improved_keys):
+        raise ValueError(
+            "Improved record count mismatch. "
+            f"Keys: {len(improved_keys)}, records: {len(improved_records)}"
+        )
 
     write_dict_csv(RAW_OUTPUT, RAW_FIELDS, raw_records)
     write_dict_csv(IMPROVED_OUTPUT, IMPROVED_FIELDS, improved_records)
@@ -322,7 +440,7 @@ def main() -> None:
     print(f"{RAW_OUTPUT} -> {len(raw_records)} rows")
     print(f"{IMPROVED_OUTPUT} -> {len(improved_records)} rows")
     print("=" * 60)
-    print("Done.")
+    print("create_full_samples.py completed successfully.")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,92 @@
+# ImproBR Manual Evaluation Metrics
+# Used for RQ1 and RQ3 manual assessment of bug report quality
+
+steps_to_reproduce:
+  executable:
+    description: >
+      The step cluster, or the cluster understood from the full description 
+      (typically for raw reports), deterministically leads to the specified 
+      behavior without requiring additional steps.
+    
+    reproducible:
+      description: >
+        The potential bug can be triggered by following the step cluster, 
+        requiring only general game knowledge, and it produces the behavior 
+        intended by the user in the original bug report.
+      outcomes:
+        valid:
+          description: >
+            A reproduced behavior that violates Minecraft's intended mechanics 
+            for the stated setup and matches the reporter's intended problem.
+        invalid:
+          description: >
+            A reproduced behavior that conforms to design and mechanics.
+    
+    irreproducible:
+      description: >
+        This is considered a misreport because the bug cannot be triggered, 
+        even though the report may include executable steps.
+
+  non_executable:
+    description: >
+      Following the step cluster deterministically does not lead to a specific 
+      behavior. At least one blocking issue is present, such as a wrong command, 
+      missing steps, or ambiguous steps. Non-executable reports are also 
+      considered irreproducible.
+    
+    failure_types:
+      missing_information:
+        description: >
+          A critical action, parameter, or precondition is absent, forcing 
+          assumptions or extra investigation to reproduce the bug. Omissions 
+          of minor steps of common knowledge are acceptable.
+      
+      wrong_information:
+        description: >
+          Commands/items/actions contradict game mechanics or are invalid, 
+          making execution impossible.
+      
+      ambiguous_information:
+        description: >
+          The information provided is too vague, allowing multiple possible 
+          outcomes. The steps lack critical details and require additional 
+          assumptions or actions from the user in order to reproduce the bug.
+
+expected_behavior:
+  not_present:
+    description: >
+      No explicit statement is provided about the expected outcome. 
+      Information inferred from the OB is not considered here.
+  
+  present:
+    description: >
+      An explicit statement is provided about the desired outcome.
+    quality:
+      accurate:
+        description: >
+          The EB is clearly defined and aligns with the game environment, 
+          mechanics, and character features.
+      inaccurate:
+        description: >
+          The EB is unclearly defined or does not align with the game 
+          environment, mechanics, or character features.
+
+observed_behavior:
+  not_present:
+    description: >
+      No statement is given about the observed behavior or environment response.
+  
+  present:
+    description: >
+      A statement about the observed behavior is provided.
+    quality:
+      sufficient:
+        description: >
+          The description of the OB is detailed enough for readers to clearly 
+          understand the specific outcome of the bug without requiring 
+          assumptions or encountering ambiguity.
+      insufficient:
+        description: >
+          The description of the OB is incomplete or unclear, preventing 
+          readers from fully grasping the specific behavior. It may require 
+          extra assumptions or contain misleading information.

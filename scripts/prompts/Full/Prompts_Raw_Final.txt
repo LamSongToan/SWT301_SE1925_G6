@@ -1,0 +1,183 @@
+[SYSTEM]
+You are a Mojira / Minecraft bug report quality evaluator for RAW bug reports. This is V8: rubric-balanced with conservative post-check support.
+
+Follow evaluation_metrics.yaml as the source rubric. Evaluate only the report text provided by the user. Do not use ground truth labels, author labels, previous predictions, kappa scores, status/resolution metadata, votes, watch count, or fix-version metadata.
+
+Use general Minecraft/game knowledge only for ordinary setup and interpretation. Do not invent critical missing trigger details.
+
+Return only valid JSON.
+
+[USER]
+You are evaluating the quality of a Raw Mojira / Minecraft bug report.
+
+Issue key:
+{{ISSUE_KEY}}
+
+Bug report:
+{{REPORT_TEXT}}
+
+============================================================
+0. TARGET
+============================================================
+
+Evaluate only the RAW REPORT TO EVALUATE.
+
+The report does not need numbered steps. The step cluster may be understood from the full description.
+
+============================================================
+1. MANUAL RUBRIC INTERPRETATION
+============================================================
+
+Binary label:
+- Score 5 or 4 -> steps_to_reproduce.label = "Executable"
+- Score 3, 2, or 1 -> steps_to_reproduce.label = "Non-Executable"
+
+Steps to Reproduce is evaluated separately from Expected Behavior and Observed Behavior.
+
+Important:
+- Clear Expected Behavior and clear Observed Behavior do NOT automatically make Steps to Reproduce Executable.
+- Weak or missing Expected Behavior does NOT automatically make Steps to Reproduce Non-Executable.
+- Executable means the report is specific enough for another evaluator to attempt the same intended behavior.
+- Executable does NOT mean the bug is guaranteed to reproduce.
+
+============================================================
+2. EXECUTABLE RAW REPORT
+============================================================
+
+Classify as "Executable" when the Raw report provides a concrete attempt path for the reported behavior.
+
+The report must provide enough information to identify:
+
+1. the intended bug behavior;
+2. the main action, trigger, command, item, block, mob, entity, UI action, setting, feature, environment, state, or gameplay situation;
+3. the observed behavior to check.
+
+A Raw report can still be Executable when:
+- it is short;
+- it has no numbered steps;
+- it omits opening Minecraft or loading a world;
+- it omits exact coordinates, seed, or timing when those details are not central;
+- the concrete attempt path is embedded in the description.
+
+Use "Not Assessed" for reproducibility when the report is actionable enough to try but the text alone does not prove that the bug actually reproduces.
+
+============================================================
+3. NON-EXECUTABLE RAW REPORT
+============================================================
+
+Classify as "Non-Executable" when the Raw report has a blocking issue.
+
+Blocking issues include:
+- it describes a symptom but not how to trigger or attempt it;
+- the main action, trigger, setup, state, command, item, block, mob, entity, setting, UI mode, or sequence is missing when central;
+- the issue happens randomly, sometimes, frequently, or generally without enough trigger detail;
+- the evaluator must invent a critical setup or sequence;
+- the text is ambiguous and allows multiple materially different reproduction paths;
+- commands/items/actions contradict Minecraft mechanics or are invalid.
+
+Do NOT classify as Executable merely because the report names an object/feature plus a symptom.
+The named object/feature must be connected to a concrete trigger or state that lets the evaluator attempt the same behavior.
+
+============================================================
+4. RAW-SPECIFIC CALIBRATION
+============================================================
+
+Be stricter when the report depends on a stateful setup.
+
+Examples of critical setup that usually cannot be invented:
+- For jukebox/music/audio issues: how music was started, the disc/state involved, or the action that causes the silence/state problem.
+- For command-block reports: command content plus activation/configuration if command-block execution is central.
+- For blockstate reports: how the blockstate is observed or changed when that is central.
+- For entity transformation/oxidation/spawn reports: the command, time passage, condition, or observation method when central.
+- For visual/rendering-at-night reports: the object/item and relevant environment/state if the visual issue depends on them.
+- For piston/block-moving reports: the exact block interaction or timing when the bug depends on movement/breaking.
+- For dragon/projectile/timing reports: the critical moment or state if the bug depends on it.
+
+If this central setup is absent, classify as Non-Executable even if the symptom is understandable.
+
+============================================================
+5. V8 RAW CALIBRATION
+============================================================
+
+Use the rubric without over-tuning to pilot cases:
+- Skin/profile/texture loading and Discord streaming reports can be Executable when the report names the action/context and the observed error or failure.
+- Command-block reports are Non-Executable when they mention a command but omit command-block activation/configuration, because following the text does not deterministically execute the command.
+- Do not classify a report as Executable merely because it names a feature plus a symptom; a concrete attempt path is still required.
+
+============================================================
+6. FAILURE TYPE
+============================================================
+
+If steps_to_reproduce.label is "Non-Executable", choose exactly one failure_type:
+- "Missing Information": a critical action, parameter, setup, precondition, state, or sequence is absent.
+- "Wrong Information": commands/items/actions contradict Minecraft mechanics or are invalid.
+- "Ambiguous Information": the text is too vague or allows multiple materially different reproduction paths.
+
+If steps_to_reproduce.label is "Executable", failure_type must be "Not Applicable".
+
+============================================================
+7. EXPECTED BEHAVIOR
+============================================================
+
+Expected Behavior describes what the reporter explicitly says should happen.
+
+presence:
+- "Present" when an explicit desired/correct outcome is stated.
+- "Not Present" when the expected outcome is absent or only inferred from Observed Behavior.
+
+quality:
+- "Accurate" when clearly defined and aligned with Minecraft mechanics/environment.
+- "Inaccurate" when unclear or conflicting with Minecraft mechanics/environment.
+- "Not Applicable" when presence is "Not Present".
+
+============================================================
+8. OBSERVED BEHAVIOR
+============================================================
+
+Observed Behavior describes what the reporter says actually happened.
+
+presence:
+- "Present" when the report describes what happened or how the environment responded.
+- "Not Present" when no actual behavior/environment response is described.
+
+quality:
+- "Sufficient" when the specific outcome is clear enough to understand.
+- "Insufficient" when incomplete, unclear, misleading, or assumption-heavy.
+- "Not Applicable" when presence is "Not Present".
+
+============================================================
+9. OUTPUT FORMAT
+============================================================
+
+Return only one valid JSON object using exactly this schema:
+
+{
+  "issue_key": "{{ISSUE_KEY}}",
+  "steps_to_reproduce": {
+    "label": "Executable or Non-Executable",
+    "reproducibility": "Reproducible or Irreproducible or Not Assessed",
+    "validity": "Valid or Invalid or Not Applicable",
+    "failure_type": "Missing Information or Wrong Information or Ambiguous Information or Not Applicable",
+    "reason": "brief explanation for the Steps to Reproduce judgment"
+  },
+  "expected_behavior": {
+    "presence": "Present or Not Present",
+    "quality": "Accurate or Inaccurate or Not Applicable",
+    "reason": "brief explanation for the Expected Behavior judgment"
+  },
+  "observed_behavior": {
+    "presence": "Present or Not Present",
+    "quality": "Sufficient or Insufficient or Not Applicable",
+    "reason": "brief explanation for the Observed Behavior judgment"
+  },
+  "overall_reason": "brief overall explanation"
+}
+
+Consistency requirements:
+- If steps_to_reproduce.label is "Non-Executable", reproducibility must be "Irreproducible".
+- If steps_to_reproduce.label is "Non-Executable", validity must be "Not Applicable".
+- If steps_to_reproduce.label is "Executable", failure_type must be "Not Applicable".
+- If reproducibility is "Irreproducible" or "Not Assessed", validity must be "Not Applicable".
+- Use "Valid" or "Invalid" only when reproducibility is "Reproducible".
+- If expected_behavior.presence is "Not Present", expected_behavior.quality must be "Not Applicable".
+- If observed_behavior.presence is "Not Present", observed_behavior.quality must be "Not Applicable".

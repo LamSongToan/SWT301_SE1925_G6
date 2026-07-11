@@ -1,380 +1,231 @@
-# Data/Improved README
+# Data/Improved README / Tài liệu thư mục Data/Improved
 
-> **EN:** This folder contains the Improved version of the Mojira bug report dataset used for LLM-based reproducibility classification.
->
-> **VI:** Thư mục này chứa phiên bản Improved của bộ dữ liệu báo cáo lỗi Mojira, dùng để phân loại khả năng tái hiện lỗi bằng LLM.
+## 1. Overview / Tổng quan
 
----
+**English:**  
+This folder stores the **Improved** version of the Mojira bug report dataset used in the research project **Bug Report Quality Assessment with LLM**. The Improved dataset contains bug reports after improvement/refinement and is used to evaluate whether an LLM can assess bug report quality, especially **reproducibility**, consistently with human/manual review.
 
-## 1. Purpose
-
-**EN:** `Data/Improved/` stores the improved bug reports, pilot samples, full samples, manual ground truth labels, author annotations, and inter-annotator agreement results for the Improved dataset.
-
-This dataset is used to evaluate whether an LLM can classify bug reports as:
-
-- `Executable`
-- `Non-Executable`
-
-The LLM predictions are compared against developer/manual review labels using Accuracy and Cohen's Kappa.
-
-**VI:** `Data/Improved/` lưu trữ các báo cáo lỗi đã được cải thiện, mẫu pilot, mẫu full, nhãn ground truth thủ công, annotation của từng author, và kết quả đo độ đồng thuận giữa annotators cho bộ dữ liệu Improved.
-
-Bộ dữ liệu này dùng để đánh giá liệu LLM có thể phân loại báo cáo lỗi thành:
-
-- `Executable`
-- `Non-Executable`
-
-Kết quả dự đoán của LLM được so sánh với nhãn manual review/developer review bằng Accuracy và Cohen's Kappa.
+**Tiếng Việt:**  
+Thư mục này lưu phiên bản dữ liệu **Improved** của các bug report trên Mojira, được sử dụng trong đề tài **Bug Report Quality Assessment with LLM**. Bộ dữ liệu Improved là phiên bản báo cáo lỗi đã được cải thiện/chỉnh sửa, dùng để đánh giá xem LLM có thể tự động đánh giá chất lượng bug report, đặc biệt là tiêu chí **reproducibility / khả năng tái hiện lỗi**, nhất quán với đánh giá thủ công của con người hay không.
 
 ---
 
-## 2. Folder Structure
+## 2. Research Question / Câu hỏi nghiên cứu
 
-Data/Improved/
-├── IMPROVED/
-│   └── *_improved.json
-│
-├── README.md
-├── full_sample_improved.csv
-├── full_ground_truth_improved.csv
-├── pilot_sample_improved.csv
-├── pilot_ground_truth_improved.csv
-├── pilot_annotation_improved_author1.csv
-├── pilot_annotation_improved_author2.csv
-└── kappa_scores_improved.csv
+**English:**  
+For bug reports on Mojira / Minecraft Issue Tracker, can an LLM automatically assess bug report quality based on reproducibility compared with manual review, achieving **Cohen's Kappa ≥ 0.70**?
 
-**VI:** Cấu trúc trên cho thấy thư mục `Data/Improved/` gồm dữ liệu JSON Improved, các file sample cho LLM, các file ground truth, annotation của hai author, và file tính Cohen's Kappa giữa annotators.
+**Tiếng Việt:**  
+Đối với các báo cáo lỗi trên Mojira / Minecraft Issue Tracker, LLM đánh giá chất lượng báo cáo lỗi tự động theo tiêu chí reproducibility so với đánh giá thủ công có đạt **Cohen's Kappa ≥ 0.70** hay không?
 
 ---
 
-## 3. File Description
+## 3. Folder Structure / Cấu trúc thư mục
 
-### 3.1 IMPROVED folder
+Data/Improved/  
+├── IMPROVED/  
+│   └── Original or extracted improved dataset files  
+├── full_ground_truth_improved.csv  
+├── full_sample_improved.csv  
+├── kappa_scores_improved.csv  
+├── pilot_annotation_improved_author1.csv  
+├── pilot_annotation_improved_author2.csv  
+├── pilot_ground_truth_improved.csv  
+├── pilot_sample_improved.csv  
+└── README.md  
 
-**EN:** Contains 139 improved Mojira bug report JSON files. Each file is expected to follow the pattern `MC-xxxxx_improved.json`.
+**English:**  
+The `Data/Improved` folder is for storing improved input data, annotation files, and ground-truth files only. Generated LLM outputs, API logs, metric summaries, and mismatch analyses should be stored in `Results/Improved`, not in this folder.
 
-**VI:** Chứa 139 file JSON báo cáo lỗi Mojira đã được cải thiện. Tên file thường có dạng `MC-xxxxx_improved.json`.
-
-### 3.2 full_sample_improved.csv
-
-**EN:** Contains 139 full Improved bug reports used as LLM input for the full experiment.
-
-**VI:** Chứa 139 báo cáo Improved dùng làm input cho LLM trong full experiment.
-
-### 3.3 full_ground_truth_improved.csv
-
-**EN:** Contains 139 manual ground truth labels for the full Improved dataset. This file is used by `compute_metric.py` for evaluation only. It must not be used as LLM input.
-
-**VI:** Chứa 139 nhãn ground truth thủ công cho bộ Improved full. File này chỉ dùng để đánh giá bằng `compute_metric.py`, không được dùng làm input cho LLM.
-
-### 3.4 pilot_sample_improved.csv
-
-**EN:** Contains 26 Improved pilot reports used as LLM input for the pilot experiment.
-
-**VI:** Chứa 26 báo cáo Improved dùng làm input cho LLM trong pilot experiment.
-
-### 3.5 pilot_ground_truth_improved.csv
-
-**EN:** Contains 26 manual ground truth labels for the Improved pilot set. This file is used by `compute_metric.py` for pilot evaluation.
-
-**VI:** Chứa 26 nhãn ground truth thủ công cho pilot Improved. File này dùng để tính metric ở giai đoạn pilot.
-
-### 3.6 pilot_annotation_improved_author1.csv
-
-**EN:** Contains the pilot annotations provided by Author 1 for the Improved dataset.
-
-**VI:** Chứa annotation pilot của Author 1 cho bộ dữ liệu Improved.
-
-### 3.7 pilot_annotation_improved_author2.csv
-
-**EN:** Contains the pilot annotations provided by Author 2 for the Improved dataset.
-
-**VI:** Chứa annotation pilot của Author 2 cho bộ dữ liệu Improved.
-
-### 3.8 kappa_scores_improved.csv
-
-**EN:** Contains the inter-annotator agreement results for the Improved pilot set.
-
-**VI:** Chứa kết quả đo độ đồng thuận giữa annotators cho pilot Improved.
+**Tiếng Việt:**  
+Thư mục `Data/Improved` chỉ dùng để lưu dữ liệu đầu vào đã cải thiện, file annotation và file ground truth. Các kết quả sinh ra từ LLM, API log, file summary metric và mismatch analysis nên được lưu trong `Results/Improved`, không lưu trực tiếp trong thư mục này.
 
 ---
 
-## 4. Main Columns in LLM Input Files
+## 4. File Inventory / Danh sách file dữ liệu
 
-This section applies to:
+| File | Rows / Số dòng | English Description | Mô tả tiếng Việt |
+| --- | ---: | --- | --- |
+| `full_sample_improved.csv` | 139 | Full improved bug report sample used as the main LLM input for the full evaluation phase. | Bộ sample Improved đầy đủ, dùng làm dữ liệu đầu vào chính cho LLM ở giai đoạn full evaluation. |
+| `full_ground_truth_improved.csv` | 139 | Ground-truth labels for the full improved dataset. Used to compare against LLM predictions. | Nhãn ground truth cho toàn bộ dữ liệu Improved, dùng để so sánh với kết quả dự đoán của LLM. |
+| `pilot_sample_improved.csv` | 26 | Pilot subset of improved bug reports used for testing the workflow before the full run. | Tập pilot của dữ liệu Improved, dùng để kiểm thử quy trình trước khi chạy toàn bộ. |
+| `pilot_annotation_improved_author1.csv` | 26 | Manual annotation results from Author 1 for the improved pilot sample. | Kết quả annotation thủ công của Author 1 cho tập pilot Improved. |
+| `pilot_annotation_improved_author2.csv` | 26 | Manual annotation results from Author 2 for the improved pilot sample. | Kết quả annotation thủ công của Author 2 cho tập pilot Improved. |
+| `pilot_ground_truth_improved.csv` | 26 | Final/reconciled ground truth for the improved pilot sample after comparing annotations. | Ground truth cuối cùng của tập pilot Improved sau khi đối chiếu annotation giữa các tác giả. |
+| `kappa_scores_improved.csv` | 29 | Inter-annotator agreement file. It contains 26 issue-level score rows and 3 summary rows: `N`, `Cohen Kappa`, and `Agreement`. | File tính độ đồng thuận giữa annotator. File gồm 26 dòng điểm theo từng issue và 3 dòng tổng hợp: `N`, `Cohen Kappa`, `Agreement`. |
+
+**Current pilot agreement / Độ đồng thuận pilot hiện tại:**
+
+| Metric | Value |
+| --- | ---: |
+| `N` | 26 |
+| `Cohen Kappa` | 0.7524 |
+| `Agreement` | 22/26 |
+
+---
+
+## 5. Sample File Columns / Các cột trong file sample
+
+The following columns appear in:
 
 - `pilot_sample_improved.csv`
 - `full_sample_improved.csv`
 
-### 4.1 Issue Key
-
-**EN:** Mojira issue key, such as `MC-300962`.
-
-**VI:** Mã issue trên Mojira, ví dụ `MC-300962`.
-
-### 4.2 Summary
-
-**EN:** Short bug report title.
-
-**VI:** Tiêu đề ngắn của bug report.
-
-### 4.3 Type
-
-**EN:** Issue type, usually `Bug`.
-
-**VI:** Loại issue, thường là `Bug`.
-
-### 4.4 Affects Version/s
-
-**EN:** Minecraft version or versions affected by the bug.
-
-**VI:** Phiên bản Minecraft bị ảnh hưởng bởi lỗi.
-
-### 4.5 Labels
-
-**EN:** Issue labels if available.
-
-**VI:** Nhãn của issue nếu có.
-
-### 4.6 Confirmation Status
-
-**EN:** Confirmation status from the issue tracker.
-
-**VI:** Trạng thái xác nhận từ issue tracker.
-
-### 4.7 Category
-
-**EN:** Bug category if available.
-
-**VI:** Danh mục lỗi nếu có.
-
-### 4.8 Resolution
-
-**EN:** Resolution status from the issue tracker.
-
-**VI:** Trạng thái xử lý hoặc kết luận của issue.
-
-### 4.9 Fix Version/s
-
-**EN:** Version or versions where the bug is fixed, if available.
-
-**VI:** Phiên bản sửa lỗi nếu có.
-
-### 4.10 Description
-
-**EN:** Improved description of the bug report.
-
-**VI:** Mô tả đã được cải thiện của bug report.
-
-### 4.11 Steps to Reproduce
-
-**EN:** Improved reproduction steps.
-
-**VI:** Các bước tái hiện lỗi đã được cải thiện.
-
-### 4.12 Observed Behavior
-
-**EN:** Actual observed incorrect behavior.
-
-**VI:** Hành vi lỗi thực tế quan sát được.
-
-### 4.13 Expected Behavior
-
-**EN:** Expected correct behavior.
-
-**VI:** Hành vi đúng mong đợi.
-
-### 4.14 Environment
-
-**EN:** Environment information, such as Minecraft version.
-
-**VI:** Thông tin môi trường, ví dụ phiên bản Minecraft.
+| Column | English Meaning | Ý nghĩa tiếng Việt |
+| --- | --- | --- |
+| `Issue Key` | Mojira issue identifier, for example `MC-299218`. | Mã issue trên Mojira, ví dụ `MC-299218`. |
+| `Summary` | Short title or summary of the bug report. | Tiêu đề hoặc tóm tắt ngắn của bug report. |
+| `Type` | Issue type, usually `Bug`. | Loại issue, thường là `Bug`. |
+| `Affects Version/s` | Minecraft version(s) affected by the issue. | Phiên bản Minecraft bị ảnh hưởng bởi lỗi. |
+| `Labels` | Labels/tags attached to the issue. | Nhãn/tag được gắn cho issue. |
+| `Confirmation Status` | Confirmation state of the issue on Mojira. | Trạng thái xác nhận của issue trên Mojira. |
+| `Category` | Category/component of the issue. | Nhóm hoặc thành phần liên quan đến issue. |
+| `Resolution` | Final or current resolution status. | Trạng thái xử lý/kết luận của issue. |
+| `Fix Version/s` | Version(s) where the issue is fixed, if available. | Phiên bản đã sửa lỗi, nếu có. |
+| `Description` | Improved textual description of the bug. | Mô tả lỗi sau khi được cải thiện. |
+| `Steps to Reproduce` | Improved steps for reproducing the bug. This is the key input for S2R evaluation. | Các bước tái hiện lỗi sau khi được cải thiện. Đây là phần quan trọng nhất để đánh giá S2R. |
+| `Observed Behavior` | Actual behavior observed when the bug occurs. | Hành vi thực tế quan sát được khi lỗi xảy ra. |
+| `Expected Behavior` | Expected/correct behavior of the system. | Hành vi mong đợi hoặc hành vi đúng của hệ thống. |
+| `Environment` | Environment information such as Minecraft edition/version. | Thông tin môi trường như phiên bản hoặc edition của Minecraft. |
 
 ---
 
-## 5. Main Columns in Ground Truth and Annotation Files
+## 6. Annotation and Ground Truth Columns / Các cột annotation và ground truth
 
-This section applies to:
+The following columns appear in:
 
-- `pilot_ground_truth_improved.csv`
-- `full_ground_truth_improved.csv`
 - `pilot_annotation_improved_author1.csv`
 - `pilot_annotation_improved_author2.csv`
+- `pilot_ground_truth_improved.csv`
+- `full_ground_truth_improved.csv`
 
-### 5.1 BUG-ID
+| Column | English Meaning | Ý nghĩa tiếng Việt |
+| --- | --- | --- |
+| `BUG-ID` | Bug report identifier. In improved files, the value may include the suffix `Improved`. | Mã bug report. Trong file Improved, giá trị có thể có hậu tố `Improved`. |
+| `S2R Label` | Label for Steps to Reproduce, such as `Executable` or `Non-Executable`. | Nhãn đánh giá phần Steps to Reproduce, ví dụ `Executable` hoặc `Non-Executable`. |
+| `S2R Irrep Category` | Category explaining why the S2R is irreproducible/non-executable, if applicable. | Nhóm nguyên nhân khiến S2R không thể tái hiện/không thể thực thi, nếu có. |
+| `Reason` | Explanation for the S2R label/category. | Lý do giải thích cho nhãn hoặc nhóm của S2R. |
+| `OB Category` | Presence category for Observed Behavior. | Nhóm đánh giá sự hiện diện của Observed Behavior. |
+| `OB Label` | Quality label for Observed Behavior, such as `Sufficient` or `Insufficient`. | Nhãn chất lượng của Observed Behavior, ví dụ `Sufficient` hoặc `Insufficient`. |
+| `Reason.1` | Explanation for the OB label/category. | Lý do giải thích cho nhãn hoặc nhóm của Observed Behavior. |
+| `EB Category` | Presence category for Expected Behavior. | Nhóm đánh giá sự hiện diện của Expected Behavior. |
+| `EB Label` | Quality label for Expected Behavior, such as `Accurate` or another applicable label. | Nhãn chất lượng của Expected Behavior, ví dụ `Accurate` hoặc nhãn phù hợp khác. |
+| `Reason.2` | Explanation for the EB label/category. | Lý do giải thích cho nhãn hoặc nhóm của Expected Behavior. |
 
-**EN:** Bug report identifier with the Improved suffix.
-
-**VI:** Mã bug report, thường có hậu tố Improved.
-
-### 5.2 S2R Label
-
-**EN:** Final reproducibility label. The expected values are `Executable` and `Non-Executable`.
-
-**VI:** Nhãn khả năng tái hiện. Giá trị mong đợi là `Executable` và `Non-Executable`.
-
-### 5.3 S2R Irrep Category
-
-**EN:** Irreproducibility category if the report is not executable.
-
-**VI:** Nhóm nguyên nhân không tái hiện được nếu report không executable.
-
-### 5.4 Reason
-
-**EN:** Explanation for the S2R label or category.
-
-**VI:** Lý do cho nhãn hoặc category.
-
-### 5.5 OB Category
-
-**EN:** Observed Behavior category.
-
-**VI:** Nhóm đánh giá Observed Behavior.
-
-### 5.6 OB Label
-
-**EN:** Observed Behavior quality label.
-
-**VI:** Nhãn chất lượng của Observed Behavior.
-
-### 5.7 EB Category
-
-**EN:** Expected Behavior category.
-
-**VI:** Nhóm đánh giá Expected Behavior.
-
-### 5.8 EB Label
-
-**EN:** Expected Behavior quality label.
-
-**VI:** Nhãn chất lượng của Expected Behavior.
+**Note / Ghi chú:**  
+If `pilot_ground_truth_improved.csv` contains empty columns such as `Unnamed: 10` or `Unnamed: 11`, they are likely export artifacts and should be ignored or removed before strict schema validation.
 
 ---
 
-## 6. Dataset Statistics
+## 7. Kappa Score File / File kappa_scores_improved.csv
 
-### 6.1 Pilot ground truth
+`kappa_scores_improved.csv` is used to summarize the agreement between two annotators during the pilot phase.
 
-- **File:** `pilot_ground_truth_improved.csv`
-- **Total cases:** 26
-- **Executable:** 19
-- **Non-Executable:** 7
+| Column | English Meaning | Ý nghĩa tiếng Việt |
+| --- | --- | --- |
+| `issue_key` | Issue key or summary row name. | Mã issue hoặc tên dòng tổng hợp. |
+| `author1_score` | Numeric score assigned by Author 1. | Điểm số do Author 1 gán. |
+| `author2_score` | Numeric score assigned by Author 2. | Điểm số do Author 2 gán. |
+| `agree` | Agreement flag: `1` means both authors agree, `0` means disagreement. | Cờ đồng thuận: `1` nghĩa là hai tác giả đồng ý, `0` nghĩa là không đồng ý. |
 
-### 6.2 Full ground truth
+The final rows summarize the pilot agreement:
 
-- **File:** `full_ground_truth_improved.csv`
-- **Total cases:** 139
-- **Executable:** 94
-- **Non-Executable:** 45
-
-### 6.3 Author 1 pilot annotation
-
-- **File:** `pilot_annotation_improved_author1.csv`
-- **Total cases:** 26
-- **Executable:** 19
-- **Non-Executable:** 7
-
-### 6.4 Author 2 pilot annotation
-
-- **File:** `pilot_annotation_improved_author2.csv`
-- **Total cases:** 26
-- **Executable:** 18
-- **Non-Executable:** 8
-
-### 6.5 Pilot inter-annotator agreement
-
-N            : 26
-Cohen Kappa  : 0.7524
-Agreement    : 22/26
-
-**VI:** Kết quả trên cho thấy hai annotators có mức độ đồng thuận tốt ở pilot Improved, với Cohen's Kappa là `0.7524`.
+N = 26  
+Cohen Kappa = 0.7524  
+Agreement = 22/26  
 
 ---
 
-## 7. Usage in Experiment
+## 8. Recommended Workflow / Quy trình đề xuất
 
-### 7.1 Use sample files as LLM input
+### 8.1 English Workflow
 
-Use these files as input for `run_experiment.py`:
+1. Use `pilot_sample_improved.csv` as the pilot input dataset.
+2. Compare `pilot_annotation_improved_author1.csv` and `pilot_annotation_improved_author2.csv`.
+3. Use `kappa_scores_improved.csv` to check inter-annotator agreement.
+4. Create or verify `pilot_ground_truth_improved.csv`.
+5. Run the LLM on `pilot_sample_improved.csv`.
+6. Compare the LLM output with `pilot_ground_truth_improved.csv`.
+7. After the pilot workflow is correct, run the LLM on `full_sample_improved.csv`.
+8. Compare the full LLM output with `full_ground_truth_improved.csv`.
+9. Compare Raw and Improved results to evaluate whether improved bug reports increase assessment quality.
 
-Data/Improved/pilot_sample_improved.csv
-Data/Improved/full_sample_improved.csv
+### 8.2 Quy trình tiếng Việt
 
-**VI:** Dùng các file sample ở trên làm input cho LLM.
-
-### 7.2 Use ground truth files only for evaluation
-
-Use these files only for `compute_metric.py`:
-
-Data/Improved/pilot_ground_truth_improved.csv
-Data/Improved/full_ground_truth_improved.csv
-
-**VI:** Chỉ dùng các file ground truth ở trên để đánh giá kết quả, không dùng làm input cho LLM.
-
-### 7.3 Recommended commands
-
-Run the Improved pilot experiment:
-
-.\.venv\Scripts\python.exe Scripts\run_experiment.py --version improved --phase pilot
-.\.venv\Scripts\python.exe Scripts\compute_metric.py --version improved --phase pilot
-
-Run the Improved full experiment:
-
-.\.venv\Scripts\python.exe Scripts\run_experiment.py --version improved --phase full
-.\.venv\Scripts\python.exe Scripts\compute_metric.py --version improved --phase full
+1. Dùng `pilot_sample_improved.csv` làm dữ liệu đầu vào cho giai đoạn pilot.
+2. So sánh `pilot_annotation_improved_author1.csv` và `pilot_annotation_improved_author2.csv`.
+3. Dùng `kappa_scores_improved.csv` để kiểm tra độ đồng thuận giữa hai annotator.
+4. Tạo hoặc kiểm tra `pilot_ground_truth_improved.csv`.
+5. Chạy LLM với `pilot_sample_improved.csv`.
+6. So sánh kết quả LLM với `pilot_ground_truth_improved.csv`.
+7. Khi quy trình pilot đã đúng, chạy LLM với `full_sample_improved.csv`.
+8. So sánh kết quả LLM full với `full_ground_truth_improved.csv`.
+9. So sánh kết quả Raw và Improved để đánh giá xem bug report đã cải thiện có giúp tăng chất lượng đánh giá hay không.
 
 ---
 
-## 8. Important Notes
+## 9. Data Usage Rules / Quy tắc sử dụng dữ liệu
 
-- **EN:** Do not use `pilot_ground_truth_improved.csv` or `full_ground_truth_improved.csv` as LLM input because they contain manual labels and annotation information.
-- **VI:** Không dùng `pilot_ground_truth_improved.csv` hoặc `full_ground_truth_improved.csv` làm input cho LLM vì các file này chứa nhãn thủ công và thông tin annotation.
+### 9.1 English Data Usage Rules
 
-- **EN:** Use `pilot_sample_improved.csv` and `full_sample_improved.csv` as the LLM input files.
-- **VI:** Dùng `pilot_sample_improved.csv` và `full_sample_improved.csv` làm input cho LLM.
+- Keep the file names unchanged because scripts may depend on exact paths.
+- Do not manually edit ground-truth files unless the team has agreed on the correction.
+- Do not use ground-truth labels as input in LLM prompts.
+- Store generated outputs in `Results/Improved`, not in `Data/Improved`.
+- Treat `full_ground_truth_improved.csv` and `pilot_ground_truth_improved.csv` as reference labels.
+- Treat `full_sample_improved.csv` and `pilot_sample_improved.csv` as LLM input data.
+- The nested `IMPROVED/` folder should be kept as the original/extracted source folder unless the scripts explicitly require it.
 
-- **EN:** The Improved reports contain structured fields such as `Steps to Reproduce`, `Observed Behavior`, `Expected Behavior`, and `Environment`.
-- **VI:** Báo cáo Improved có các trường đã được cấu trúc như `Steps to Reproduce`, `Observed Behavior`, `Expected Behavior`, và `Environment`.
+### 9.2 Quy tắc sử dụng dữ liệu tiếng Việt
 
-- **EN:** The file `kappa_scores_improved.csv` is used to report inter-annotator agreement for the pilot annotation process.
-- **VI:** File `kappa_scores_improved.csv` dùng để báo cáo độ đồng thuận giữa annotators trong giai đoạn pilot.
-
-- **EN:** Result files generated by LLM experiments should be stored in `Results/Improved/`, not in `Data/Improved/`.
-- **VI:** Các file kết quả do LLM tạo ra nên được lưu trong `Results/Improved/`, không lưu trong `Data/Improved/`.
-
----
-
-## 9. Related Output Folder
-
-The output files for Improved experiments are expected to be stored in:
-
-Results/Improved/
-
-Typical output files include:
-
-pilot_llm_output_improved.csv
-pilot_api_log_improved.csv
-summary_improved.csv
-mismatch_analysis_improved.csv
-
-full_llm_output_improved.csv
-full_api_log_improved.csv
-summary_full_improved.csv
-mismatch_analysis_full_improved.csv
-
-**VI:** Các file kết quả của thí nghiệm Improved nên được lưu tại `Results/Improved/`.
+- Giữ nguyên tên file vì script có thể phụ thuộc vào đúng đường dẫn và đúng tên file.
+- Không chỉnh sửa thủ công các file ground truth nếu nhóm chưa thống nhất.
+- Không đưa nhãn ground truth vào prompt cho LLM.
+- Lưu kết quả sinh ra vào `Results/Improved`, không lưu vào `Data/Improved`.
+- Xem `full_ground_truth_improved.csv` và `pilot_ground_truth_improved.csv` là nhãn tham chiếu.
+- Xem `full_sample_improved.csv` và `pilot_sample_improved.csv` là dữ liệu đầu vào cho LLM.
+- Thư mục con `IMPROVED/` nên được giữ như thư mục nguồn/extracted ban đầu, trừ khi script yêu cầu dùng trực tiếp.
 
 ---
 
-## 10. Scope
+## 10. Relationship with Raw Dataset / Quan hệ với dữ liệu Raw
 
-This README only describes the `Data/Improved/` folder.
+**English:**  
+The Improved dataset should be evaluated in parallel with the Raw dataset. The Raw dataset represents the original bug reports, while the Improved dataset represents the refined bug reports. Comparing both versions helps determine whether improving bug report content makes LLM-based quality assessment more accurate or more consistent.
 
-It does not cover:
+**Tiếng Việt:**  
+Dữ liệu Improved nên được đánh giá song song với dữ liệu Raw. Dữ liệu Raw là bug report gốc, còn dữ liệu Improved là bug report đã được cải thiện. Việc so sánh hai phiên bản giúp xác định liệu việc cải thiện nội dung bug report có giúp LLM đánh giá chất lượng chính xác hoặc nhất quán hơn hay không.
 
-- `Data/Raw/`
-- `Results/`
-- `Figures/`
-- analysis notebooks such as `pilot_analysis.ipynb` or `full_analysis.ipynb`
+---
 
-**VI:** README này chỉ mô tả thư mục `Data/Improved/`. README này không mô tả `Data/Raw/`, `Results/`, `Figures/`, hoặc các notebook phân tích.
+## 11. Expected Result Files / Các file kết quả dự kiến
+
+The following files should be generated outside this folder, under `Results/Improved`:
+
+Results/Improved/  
+├── pilot_llm_output_improved.csv  
+├── pilot_api_log_improved.csv  
+├── summary_improved.csv  
+├── mismatch_analysis_improved.csv  
+├── full_llm_output_improved.csv  
+├── full_api_log_improved.csv  
+├── summary_full_improved.csv  
+└── mismatch_analysis_full_improved.csv  
+
+**English:**  
+These result files are not part of the source dataset. They are produced after running the LLM and evaluation scripts.
+
+**Tiếng Việt:**  
+Các file kết quả này không thuộc dữ liệu nguồn. Chúng được tạo ra sau khi chạy LLM và các script đánh giá.
+
+---
+
+## 12. Notes / Ghi chú
+
+**English:**  
+This README documents the data structure and meaning of files in `Data/Improved`. It should be updated whenever files are renamed, new columns are added, or the evaluation workflow changes.
+
+**Tiếng Việt:**  
+README này mô tả cấu trúc dữ liệu và ý nghĩa các file trong `Data/Improved`. Nên cập nhật file này khi đổi tên file, thêm cột mới hoặc thay đổi quy trình đánh giá.
+
+---

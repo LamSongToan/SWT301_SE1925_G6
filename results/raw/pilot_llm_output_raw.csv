@@ -1,131 +1,547 @@
-﻿issue_key,s2r_label,reason,status,model,prompt_version,input_tokens,cached_input_tokens,output_tokens,total_tokens,cost_usd,timestamp,raw_response
-MC-300962,Executable,"The report provides a clear action (swapping items in the inventory) and describes the specific conditions under which the bug occurs, allowing others to reproduce the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,652,0,60,712,0.00013380,2026-07-02T21:11:48,"{
+﻿"issue_key","s2r_label","reason","s2r_reproducibility","s2r_validity","s2r_failure_type","s2r_reason","expected_behavior_presence","expected_behavior_quality","expected_behavior_reason","observed_behavior_presence","observed_behavior_quality","observed_behavior_reason","overall_reason","status","model","prompt_version","seed","system_fingerprint","input_tokens","cached_input_tokens","output_tokens","total_tokens","cost_usd","timestamp","raw_response"
+"MC-300962","Executable","The report provides a clear description of the actions taken to reproduce the bug, specifically regarding the swapping of fireworks in the inventory.","Not Assessed","Not Applicable","Not Applicable","The report provides a clear description of the actions taken to reproduce the bug, specifically regarding the swapping of fireworks in the inventory.","Present","Accurate","The expected behavior of being able to swap items in the inventory is clearly stated.","Present","Sufficient","The observed behavior is clearly described, detailing the conditions under which the item swap fails.","The report is actionable and provides enough detail for another evaluator to attempt to reproduce the bug.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Raw_Final_V10_PilotCandidate","210","fp_844ddd95ff","2432","0","204","2636","0.00048720","2026-07-11T10:06:45","{
   ""issue_key"": ""MC-300962"",
-  ""s2r_label"": ""Executable"",
-  ""reason"": ""The report provides a clear action (swapping items in the inventory) and describes the specific conditions under which the bug occurs, allowing others to reproduce the issue.""
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The report provides a clear description of the actions taken to reproduce the bug, specifically regarding the swapping of fireworks in the inventory.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior of being able to swap items in the inventory is clearly stated.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is clearly described, detailing the conditions under which the item swap fails.""
+  },
+  ""overall_reason"": ""The report is actionable and provides enough detail for another evaluator to attempt to reproduce the bug.""
 }"
-MC-299218,Non-Executable,"The report describes a symptom of the game freezing and the jukebox going silent but does not provide specific actions or conditions that trigger this issue, making it unclear how to reproduce the bug.",valid_json,gpt-4o-mini-2024-07-18,v2,585,0,67,652,0.00012795,2026-07-02T21:11:56,"{
+"MC-299218","Non-Executable","The report does not specify how to trigger the full screen toggle or the state of the game when the issue occurs, making it unclear how to reproduce the bug.","Irreproducible","Not Applicable","Missing Information","The report does not specify how to trigger the full screen toggle or the state of the game when the issue occurs, making it unclear how to reproduce the bug.","Not Present","Not Applicable","The report does not explicitly state what the expected behavior should be when toggling full screen.","Present","Sufficient","The report describes the game freezing and the jukebox going silent, which provides a clear outcome of the issue.","The report lacks critical details on how to reproduce the bug, specifically the actions leading to the full screen toggle and the game's state during the issue.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Raw_Final_V10_PilotCandidate","210","fp_844ddd95ff","2365","0","234","2599","0.00049515","2026-07-11T10:06:55","{
   ""issue_key"": ""MC-299218"",
-  ""s2r_label"": ""Non-Executable"",
-  ""reason"": ""The report describes a symptom of the game freezing and the jukebox going silent but does not provide specific actions or conditions that trigger this issue, making it unclear how to reproduce the bug.""
+  ""steps_to_reproduce"": {
+    ""label"": ""Non-Executable"",
+    ""reproducibility"": ""Irreproducible"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Missing Information"",
+    ""reason"": ""The report does not specify how to trigger the full screen toggle or the state of the game when the issue occurs, making it unclear how to reproduce the bug.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Not Present"",
+    ""quality"": ""Not Applicable"",
+    ""reason"": ""The report does not explicitly state what the expected behavior should be when toggling full screen.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The report describes the game freezing and the jukebox going silent, which provides a clear outcome of the issue.""
+  },
+  ""overall_reason"": ""The report lacks critical details on how to reproduce the bug, specifically the actions leading to the full screen toggle and the game's state during the issue.""
 }"
-MC-301018,Non-Executable,The report states a symptom without providing any concrete actions or conditions to trigger the issue.,valid_json,gpt-4o-mini-2024-07-18,v2,557,0,47,604,0.00011175,2026-07-02T21:11:59,"{
+"MC-301018","Non-Executable","The report does not specify how to trigger the pause action or the context in which the game is paused, making it unclear how to reproduce the issue.","Irreproducible","Not Applicable","Missing Information","The report does not specify how to trigger the pause action or the context in which the game is paused, making it unclear how to reproduce the issue.","Not Present","Not Applicable","There is no explicit expected behavior stated in the report.","Present","Sufficient","The report indicates that the game does not pause as expected, but lacks detail on what the expected behavior should be.","The report lacks critical information on how to reproduce the bug, making it non-executable despite describing an observed behavior.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Raw_Final_V10_PilotCandidate","210","fp_844ddd95ff","2337","0","220","2557","0.00048255","2026-07-11T10:06:59","{
   ""issue_key"": ""MC-301018"",
-  ""s2r_label"": ""Non-Executable"",
-  ""reason"": ""The report states a symptom without providing any concrete actions or conditions to trigger the issue.""
+  ""steps_to_reproduce"": {
+    ""label"": ""Non-Executable"",
+    ""reproducibility"": ""Irreproducible"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Missing Information"",
+    ""reason"": ""The report does not specify how to trigger the pause action or the context in which the game is paused, making it unclear how to reproduce the issue.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Not Present"",
+    ""quality"": ""Not Applicable"",
+    ""reason"": ""There is no explicit expected behavior stated in the report.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The report indicates that the game does not pause as expected, but lacks detail on what the expected behavior should be.""
+  },
+  ""overall_reason"": ""The report lacks critical information on how to reproduce the bug, making it non-executable despite describing an observed behavior.""
 }"
-MC-300634,Non-Executable,"The report describes a lag issue but does not provide specific actions or conditions to reproduce the problem, making it unclear how to trigger the lag.",valid_json,gpt-4o-mini-2024-07-18,v2,593,0,58,651,0.00012375,2026-07-02T21:12:01,"{
+"MC-300634","Non-Executable","The report describes lag or hang but lacks specific details on how to consistently reproduce the issue, such as the exact conditions or actions leading to the lag.","Irreproducible","Not Applicable","Missing Information","The report describes lag or hang but lacks specific details on how to consistently reproduce the issue, such as the exact conditions or actions leading to the lag.","Not Present","Not Applicable","The report does not specify what the expected behavior should be when interacting with trapdoors or stairs.","Present","Sufficient","The report indicates that there is lag or hang when near trapdoors or while climbing stairs, which is clear enough to understand the issue.","The report identifies a performance issue but lacks the necessary details to reproduce it effectively, making it non-executable.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Raw_Final_V10_PilotCandidate","210","fp_844ddd95ff","2373","0","231","2604","0.00049455","2026-07-11T10:07:03","{
   ""issue_key"": ""MC-300634"",
-  ""s2r_label"": ""Non-Executable"",
-  ""reason"": ""The report describes a lag issue but does not provide specific actions or conditions to reproduce the problem, making it unclear how to trigger the lag.""
+  ""steps_to_reproduce"": {
+    ""label"": ""Non-Executable"",
+    ""reproducibility"": ""Irreproducible"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Missing Information"",
+    ""reason"": ""The report describes lag or hang but lacks specific details on how to consistently reproduce the issue, such as the exact conditions or actions leading to the lag.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Not Present"",
+    ""quality"": ""Not Applicable"",
+    ""reason"": ""The report does not specify what the expected behavior should be when interacting with trapdoors or stairs.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The report indicates that there is lag or hang when near trapdoors or while climbing stairs, which is clear enough to understand the issue.""
+  },
+  ""overall_reason"": ""The report identifies a performance issue but lacks the necessary details to reproduce it effectively, making it non-executable.""
 }"
-MC-299909,Non-Executable,"The report describes a symptom of a failed texture load and an error message but does not provide clear steps or actions to reproduce the issue, making it vague and non-executable.",valid_json,gpt-4o-mini-2024-07-18,v2,670,0,65,735,0.00013950,2026-07-02T21:12:03,"{
+"MC-299909","Executable","The report provides a clear action of loading a skin and describes the observed error related to texture loading, which allows for an attempt to reproduce the issue.","Not Assessed","Not Applicable","Not Applicable","The report provides a clear action of loading a skin and describes the observed error related to texture loading, which allows for an attempt to reproduce the issue.","Not Present","Not Applicable","The report does not explicitly state what the expected behavior should be when loading a skin.","Present","Sufficient","The report describes a specific error message encountered when attempting to load a skin texture, indicating a failure in the process.","The report is actionable as it describes the steps leading to a specific error, but it lacks a clear expected outcome.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Raw_Final_V10_PilotCandidate","210","fp_844ddd95ff","2450","0","222","2672","0.00050070","2026-07-11T10:07:07","{
   ""issue_key"": ""MC-299909"",
-  ""s2r_label"": ""Non-Executable"",
-  ""reason"": ""The report describes a symptom of a failed texture load and an error message but does not provide clear steps or actions to reproduce the issue, making it vague and non-executable.""
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The report provides a clear action of loading a skin and describes the observed error related to texture loading, which allows for an attempt to reproduce the issue.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Not Present"",
+    ""quality"": ""Not Applicable"",
+    ""reason"": ""The report does not explicitly state what the expected behavior should be when loading a skin.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The report describes a specific error message encountered when attempting to load a skin texture, indicating a failure in the process.""
+  },
+  ""overall_reason"": ""The report is actionable as it describes the steps leading to a specific error, but it lacks a clear expected outcome.""
 }"
-MC-300861,Non-Executable,"The report describes a symptom of the issue (infinite blocks) but does not provide specific actions or conditions to reproduce the bug, making it unclear how to trigger the behavior.",valid_json,gpt-4o-mini-2024-07-18,v2,561,0,65,626,0.00012315,2026-07-02T21:12:06,"{
+"MC-300861","Non-Executable","The report does not specify how to trigger the infinite block behavior, such as the exact conditions or actions needed to reproduce the issue.","Irreproducible","Not Applicable","Missing Information","The report does not specify how to trigger the infinite block behavior, such as the exact conditions or actions needed to reproduce the issue.","Not Present","Not Applicable","There is no explicit expected outcome stated in the report.","Present","Sufficient","The report describes that blocks respawn after destruction and do not fall, which is clear enough to understand the issue.","The report lacks critical details on how to reproduce the bug, making it non-executable despite a clear description of the observed behavior.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Raw_Final_V10_PilotCandidate","210","fp_844ddd95ff","2341","0","219","2560","0.00048255","2026-07-11T10:07:10","{
   ""issue_key"": ""MC-300861"",
-  ""s2r_label"": ""Non-Executable"",
-  ""reason"": ""The report describes a symptom of the issue (infinite blocks) but does not provide specific actions or conditions to reproduce the bug, making it unclear how to trigger the behavior.""
+  ""steps_to_reproduce"": {
+    ""label"": ""Non-Executable"",
+    ""reproducibility"": ""Irreproducible"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Missing Information"",
+    ""reason"": ""The report does not specify how to trigger the infinite block behavior, such as the exact conditions or actions needed to reproduce the issue.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Not Present"",
+    ""quality"": ""Not Applicable"",
+    ""reason"": ""There is no explicit expected outcome stated in the report.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The report describes that blocks respawn after destruction and do not fall, which is clear enough to understand the issue.""
+  },
+  ""overall_reason"": ""The report lacks critical details on how to reproduce the bug, making it non-executable despite a clear description of the observed behavior.""
 }"
-MC-300776,Non-Executable,"The report describes a symptom of the issue without providing specific actions or conditions that trigger the bug, making it unclear how to reproduce the problem.",valid_json,gpt-4o-mini-2024-07-18,v2,678,0,58,736,0.00013650,2026-07-02T21:12:08,"{
+"MC-300776","Executable","The report provides a clear description of the intended bug behavior and the main action (flying downward with fireworks using an elytra), allowing for an attempt to reproduce the issue.","Not Assessed","Not Applicable","Not Applicable","The report provides a clear description of the intended bug behavior and the main action (flying downward with fireworks using an elytra), allowing for an attempt to reproduce the issue.","Present","Accurate","The report explicitly states that immediate acceleration should occur when using fireworks while flying downward, which aligns with the mechanics of similar items like Riptide tridents.","Present","Sufficient","The report describes that players do not gain immediate acceleration and must wait for the firework boost to expire, providing a clear understanding of the observed behavior.","The report effectively outlines the bug with sufficient detail to allow for reproduction attempts, while also clearly stating the expected and observed behaviors.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Raw_Final_V10_PilotCandidate","210","fp_844ddd95ff","2458","0","250","2708","0.00051870","2026-07-11T10:07:14","{
   ""issue_key"": ""MC-300776"",
-  ""s2r_label"": ""Non-Executable"",
-  ""reason"": ""The report describes a symptom of the issue without providing specific actions or conditions that trigger the bug, making it unclear how to reproduce the problem.""
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The report provides a clear description of the intended bug behavior and the main action (flying downward with fireworks using an elytra), allowing for an attempt to reproduce the issue.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The report explicitly states that immediate acceleration should occur when using fireworks while flying downward, which aligns with the mechanics of similar items like Riptide tridents.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The report describes that players do not gain immediate acceleration and must wait for the firework boost to expire, providing a clear understanding of the observed behavior.""
+  },
+  ""overall_reason"": ""The report effectively outlines the bug with sufficient detail to allow for reproduction attempts, while also clearly stating the expected and observed behaviors.""
 }"
-MC-300107,Executable,"The report provides clear steps to create the Copper Golems and mentions specific items and commands, allowing another person to reasonably attempt to reproduce the bug.",valid_json,gpt-4o-mini-2024-07-18,v2,681,0,58,739,0.00013695,2026-07-02T21:12:11,"{
+"MC-300107","Executable","The report provides a clear method to create Copper Golems and describes the expected and observed behaviors, making it actionable for testing.","Not Assessed","Not Applicable","Not Applicable","The report provides a clear method to create Copper Golems and describes the expected and observed behaviors, making it actionable for testing.","Present","Accurate","The expected behavior of Copper Golems turning into statues is clearly stated and aligns with the intended game mechanics.","Present","Sufficient","The observed behavior is clearly described, indicating that the Golems do not transform as expected.","The report is well-structured with clear reproduction steps, expected outcomes, and observed results, making it actionable for further investigation.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Raw_Final_V10_PilotCandidate","210","fp_844ddd95ff","2461","0","220","2681","0.00050115","2026-07-11T10:07:19","{
   ""issue_key"": ""MC-300107"",
-  ""s2r_label"": ""Executable"",
-  ""reason"": ""The report provides clear steps to create the Copper Golems and mentions specific items and commands, allowing another person to reasonably attempt to reproduce the bug.""
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The report provides a clear method to create Copper Golems and describes the expected and observed behaviors, making it actionable for testing.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior of Copper Golems turning into statues is clearly stated and aligns with the intended game mechanics.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is clearly described, indicating that the Golems do not transform as expected.""
+  },
+  ""overall_reason"": ""The report is well-structured with clear reproduction steps, expected outcomes, and observed results, making it actionable for further investigation.""
 }"
-MC-300598,Non-Executable,"The report describes a symptom (fire animation on mobs) without providing specific actions or conditions to reproduce the issue, making it unclear how to trigger the bug.",valid_json,gpt-4o-mini-2024-07-18,v2,559,0,61,620,0.00012045,2026-07-02T21:12:13,"{
+"MC-300598","Non-Executable","The report describes a symptom (fire animation on mobs) but does not provide sufficient details on how to trigger or reproduce the issue.","Irreproducible","Not Applicable","Missing Information","The report describes a symptom (fire animation on mobs) but does not provide sufficient details on how to trigger or reproduce the issue.","Not Present","Not Applicable","The report does not explicitly state what the expected behavior should be.","Present","Sufficient","The report describes the observed behavior of the fire animation appearing only as a damage animation when a mob is burning in lava.","The report lacks critical details on how to reproduce the bug, making it non-executable despite providing some information about the observed behavior.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Raw_Final_V10_PilotCandidate","210","fp_844ddd95ff","2339","0","222","2561","0.00048405","2026-07-11T10:07:23","{
   ""issue_key"": ""MC-300598"",
-  ""s2r_label"": ""Non-Executable"",
-  ""reason"": ""The report describes a symptom (fire animation on mobs) without providing specific actions or conditions to reproduce the issue, making it unclear how to trigger the bug.""
+  ""steps_to_reproduce"": {
+    ""label"": ""Non-Executable"",
+    ""reproducibility"": ""Irreproducible"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Missing Information"",
+    ""reason"": ""The report describes a symptom (fire animation on mobs) but does not provide sufficient details on how to trigger or reproduce the issue.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Not Present"",
+    ""quality"": ""Not Applicable"",
+    ""reason"": ""The report does not explicitly state what the expected behavior should be.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The report describes the observed behavior of the fire animation appearing only as a damage animation when a mob is burning in lava.""
+  },
+  ""overall_reason"": ""The report lacks critical details on how to reproduce the bug, making it non-executable despite providing some information about the observed behavior.""
 }"
-MC-300539,Executable,"The report provides clear steps to create a world and wait for night, along with a specific condition regarding sleeping, allowing another person to reproduce the bug.",valid_json,gpt-4o-mini-2024-07-18,v2,644,0,58,702,0.00013140,2026-07-02T21:12:15,"{
+"MC-300539","Executable","The report provides a clear description of how to reproduce the bug by creating a world and waiting for night, which allows for an attempt to replicate the behavior.","Not Assessed","Not Applicable","Not Applicable","The report provides a clear description of how to reproduce the bug by creating a world and waiting for night, which allows for an attempt to replicate the behavior.","Present","Accurate","The expected behavior is clearly stated, aligning with Minecraft mechanics regarding phantom spawning.","Present","Sufficient","The observed behavior is clearly described, indicating that phantoms spawn on the first night, which is a deviation from the expected behavior.","The report is well-structured, providing clear steps to reproduce the issue, along with accurate expected and observed behaviors.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Raw_Final_V10_PilotCandidate","210","fp_844ddd95ff","2424","0","224","2648","0.00049800","2026-07-11T10:07:27","{
   ""issue_key"": ""MC-300539"",
-  ""s2r_label"": ""Executable"",
-  ""reason"": ""The report provides clear steps to create a world and wait for night, along with a specific condition regarding sleeping, allowing another person to reproduce the bug.""
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The report provides a clear description of how to reproduce the bug by creating a world and waiting for night, which allows for an attempt to replicate the behavior.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly stated, aligning with Minecraft mechanics regarding phantom spawning.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is clearly described, indicating that phantoms spawn on the first night, which is a deviation from the expected behavior.""
+  },
+  ""overall_reason"": ""The report is well-structured, providing clear steps to reproduce the issue, along with accurate expected and observed behaviors.""
 }"
-MC-301151,Non-Executable,"The report describes a symptom of the game freezing but does not provide specific actions or conditions that trigger the issue, making it unclear how to reproduce the bug.",valid_json,gpt-4o-mini-2024-07-18,v2,670,0,61,731,0.00013710,2026-07-02T21:12:18,"{
+"MC-301151","Executable","The report provides a clear description of the bug behavior, including the graphical freeze occurring after 20-30 seconds of gameplay, which allows for an attempt to reproduce the issue.","Not Assessed","Not Applicable","Not Applicable","The report provides a clear description of the bug behavior, including the graphical freeze occurring after 20-30 seconds of gameplay, which allows for an attempt to reproduce the issue.","Not Present","Not Applicable","The report does not explicitly state what the expected behavior should be when the game is functioning correctly.","Present","Sufficient","The report describes the observed behavior of the game freezing graphically while still allowing for some interaction, which is clear enough to understand.","The report effectively describes the bug and its symptoms, making it actionable for reproduction, but lacks a clear expected behavior.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Raw_Final_V10_PilotCandidate","210","fp_844ddd95ff","2450","0","232","2682","0.00050670","2026-07-11T10:07:30","{
   ""issue_key"": ""MC-301151"",
-  ""s2r_label"": ""Non-Executable"",
-  ""reason"": ""The report describes a symptom of the game freezing but does not provide specific actions or conditions that trigger the issue, making it unclear how to reproduce the bug.""
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The report provides a clear description of the bug behavior, including the graphical freeze occurring after 20-30 seconds of gameplay, which allows for an attempt to reproduce the issue.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Not Present"",
+    ""quality"": ""Not Applicable"",
+    ""reason"": ""The report does not explicitly state what the expected behavior should be when the game is functioning correctly.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The report describes the observed behavior of the game freezing graphically while still allowing for some interaction, which is clear enough to understand.""
+  },
+  ""overall_reason"": ""The report effectively describes the bug and its symptoms, making it actionable for reproduction, but lacks a clear expected behavior.""
 }"
-MC-300562,Non-Executable,"The report describes the behavior of the Ender Dragon and the resulting arrow velocity but does not provide clear, concrete steps or actions that a tester can follow to reproduce the issue. Key information about the setup and specific actions needed to trigger the bug is vague or missing.",valid_json,gpt-4o-mini-2024-07-18,v2,856,0,83,939,0.00017820,2026-07-02T21:12:20,"{
+"MC-300562","Executable","The report provides a clear description of the bug behavior involving the Ender Dragon and arrow velocity, allowing for an attempt to reproduce the issue.","Not Assessed","Not Applicable","Not Applicable","The report provides a clear description of the bug behavior involving the Ender Dragon and arrow velocity, allowing for an attempt to reproduce the issue.","Present","Accurate","The expected behavior is clearly stated, indicating that arrow velocity should correspond to the actual knockback experienced.","Present","Sufficient","The observed behavior is described in detail, explaining the unusual acceleration of the arrow when the Ender Dragon takes off.","The report effectively outlines the bug with sufficient detail to allow for reproduction attempts, while also clearly stating the expected and observed behaviors.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Raw_Final_V10_PilotCandidate","210","fp_844ddd95ff","2636","0","224","2860","0.00052980","2026-07-11T10:07:34","{
   ""issue_key"": ""MC-300562"",
-  ""s2r_label"": ""Non-Executable"",
-  ""reason"": ""The report describes the behavior of the Ender Dragon and the resulting arrow velocity but does not provide clear, concrete steps or actions that a tester can follow to reproduce the issue. Key information about the setup and specific actions needed to trigger the bug is vague or missing.""
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The report provides a clear description of the bug behavior involving the Ender Dragon and arrow velocity, allowing for an attempt to reproduce the issue.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly stated, indicating that arrow velocity should correspond to the actual knockback experienced.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is described in detail, explaining the unusual acceleration of the arrow when the Ender Dragon takes off.""
+  },
+  ""overall_reason"": ""The report effectively outlines the bug with sufficient detail to allow for reproduction attempts, while also clearly stating the expected and observed behaviors.""
 }"
-MC-300836,Executable,"The report provides a clear action (going to sleep in the bed) and describes the observed incorrect behavior (bed being occupied) after a specific event (power outage and re-logging), allowing others to reasonably attempt to reproduce the bug.",valid_json,gpt-4o-mini-2024-07-18,v2,617,0,75,692,0.00013755,2026-07-02T21:12:23,"{
+"MC-300836","Executable","The report provides a clear description of the actions taken and the resulting bug behavior, allowing for an attempt to reproduce the issue.","Not Assessed","Not Applicable","Not Applicable","The report provides a clear description of the actions taken and the resulting bug behavior, allowing for an attempt to reproduce the issue.","Present","Accurate","The expected behavior of being able to sleep in the bed after regaining power is clearly implied.","Present","Sufficient","The report describes the specific issue encountered, stating that the bed was marked as occupied despite being in a single-player world.","The report effectively outlines the steps leading to the bug and the resulting behavior, making it actionable for reproduction attempts.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Raw_Final_V10_PilotCandidate","210","fp_844ddd95ff","2397","0","218","2615","0.00049035","2026-07-11T10:07:37","{
   ""issue_key"": ""MC-300836"",
-  ""s2r_label"": ""Executable"",
-  ""reason"": ""The report provides a clear action (going to sleep in the bed) and describes the observed incorrect behavior (bed being occupied) after a specific event (power outage and re-logging), allowing others to reasonably attempt to reproduce the bug.""
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The report provides a clear description of the actions taken and the resulting bug behavior, allowing for an attempt to reproduce the issue.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior of being able to sleep in the bed after regaining power is clearly implied.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The report describes the specific issue encountered, stating that the bed was marked as occupied despite being in a single-player world.""
+  },
+  ""overall_reason"": ""The report effectively outlines the steps leading to the bug and the resulting behavior, making it actionable for reproduction attempts.""
 }"
-MC-300033,Executable,"The report provides clear steps to reproduce the bug, including specific commands and actions that lead to the observed behavior.",valid_json,gpt-4o-mini-2024-07-18,v2,677,0,50,727,0.00013155,2026-07-02T21:12:25,"{
+"MC-300033","Non-Executable","The report does not specify how the repeating command block is activated or configured, which is critical for reproducing the command's effect.","Irreproducible","Not Applicable","Missing Information","The report does not specify how the repeating command block is activated or configured, which is critical for reproducing the command's effect.","Present","Accurate","The expected behavior of the item not duplicating is clearly stated and aligns with Minecraft mechanics.","Present","Sufficient","The observed behavior of the item eventually duplicating is clearly described.","The report provides a clear expected and observed behavior but lacks critical information on how to activate the command block, making it non-executable.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Raw_Final_V10_PilotCandidate","210","fp_844ddd95ff","2457","0","216","2673","0.00049815","2026-07-11T10:07:40","{
   ""issue_key"": ""MC-300033"",
-  ""s2r_label"": ""Executable"",
-  ""reason"": ""The report provides clear steps to reproduce the bug, including specific commands and actions that lead to the observed behavior.""
+  ""steps_to_reproduce"": {
+    ""label"": ""Non-Executable"",
+    ""reproducibility"": ""Irreproducible"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Missing Information"",
+    ""reason"": ""The report does not specify how the repeating command block is activated or configured, which is critical for reproducing the command's effect.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior of the item not duplicating is clearly stated and aligns with Minecraft mechanics.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior of the item eventually duplicating is clearly described.""
+  },
+  ""overall_reason"": ""The report provides a clear expected and observed behavior but lacks critical information on how to activate the command block, making it non-executable.""
 }"
-MC-300774,Non-Executable,"The report describes a symptom of the issue (streaming in Discord) but does not provide specific actions or conditions that trigger the problem, making it unclear how to reproduce the bug.",valid_json,gpt-4o-mini-2024-07-18,v2,582,0,66,648,0.00012690,2026-07-02T21:12:28,"{
+"MC-300774","Executable","The report provides enough context about the action of streaming Minecraft through Discord and the observed issue of only the menu bar showing, making it actionable.","Not Assessed","Not Applicable","Not Applicable","The report provides enough context about the action of streaming Minecraft through Discord and the observed issue of only the menu bar showing, making it actionable.","Not Present","Not Applicable","The report does not explicitly state what the expected behavior should be when streaming the game.","Present","Sufficient","The report describes the observed behavior of the game only showing the menu bar and being laggy during streaming.","The report is actionable as it describes the context and the issue encountered while streaming, but it lacks a clear expected outcome.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Raw_Final_V10_PilotCandidate","210","fp_844ddd95ff","2362","0","219","2581","0.00048570","2026-07-11T10:07:44","{
   ""issue_key"": ""MC-300774"",
-  ""s2r_label"": ""Non-Executable"",
-  ""reason"": ""The report describes a symptom of the issue (streaming in Discord) but does not provide specific actions or conditions that trigger the problem, making it unclear how to reproduce the bug.""
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The report provides enough context about the action of streaming Minecraft through Discord and the observed issue of only the menu bar showing, making it actionable.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Not Present"",
+    ""quality"": ""Not Applicable"",
+    ""reason"": ""The report does not explicitly state what the expected behavior should be when streaming the game.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The report describes the observed behavior of the game only showing the menu bar and being laggy during streaming.""
+  },
+  ""overall_reason"": ""The report is actionable as it describes the context and the issue encountered while streaming, but it lacks a clear expected outcome.""
 }"
-MC-300409,Executable,"The report provides a concrete action of teleporting piglins to a magma block and waiting for them to die, which can be reasonably followed to reproduce the bug.",valid_json,gpt-4o-mini-2024-07-18,v2,625,0,60,685,0.00012975,2026-07-02T21:12:33,"{
+"MC-300409","Non-Executable","The report lacks critical details on how to consistently trigger the bug, such as the specific conditions under which the Piglin drops a command block.","Irreproducible","Not Applicable","Missing Information","The report lacks critical details on how to consistently trigger the bug, such as the specific conditions under which the Piglin drops a command block.","Not Present","Not Applicable","The report does not explicitly state what the expected behavior should be when a Piglin is killed.","Present","Sufficient","The report describes the observed behavior of a Piglin dropping a command block after being killed, but lacks clarity on the conditions leading to this.","The report describes an unusual behavior but does not provide enough information to reproduce the issue reliably.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Raw_Final_V10_PilotCandidate","210","fp_844ddd95ff","2405","0","226","2631","0.00049635","2026-07-11T10:07:48","{
   ""issue_key"": ""MC-300409"",
-  ""s2r_label"": ""Executable"",
-  ""reason"": ""The report provides a concrete action of teleporting piglins to a magma block and waiting for them to die, which can be reasonably followed to reproduce the bug.""
+  ""steps_to_reproduce"": {
+    ""label"": ""Non-Executable"",
+    ""reproducibility"": ""Irreproducible"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Missing Information"",
+    ""reason"": ""The report lacks critical details on how to consistently trigger the bug, such as the specific conditions under which the Piglin drops a command block.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Not Present"",
+    ""quality"": ""Not Applicable"",
+    ""reason"": ""The report does not explicitly state what the expected behavior should be when a Piglin is killed.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The report describes the observed behavior of a Piglin dropping a command block after being killed, but lacks clarity on the conditions leading to this.""
+  },
+  ""overall_reason"": ""The report describes an unusual behavior but does not provide enough information to reproduce the issue reliably.""
 }"
-MC-300891,Non-Executable,The report states a symptom without providing concrete actions or conditions to trigger the issue.,valid_json,gpt-4o-mini-2024-07-18,v2,567,0,46,613,0.00011265,2026-07-02T21:12:35,"{
+"MC-300891","Non-Executable","The report does not specify how the music disc 'tears' is used with the jukebox, which is critical to reproduce the issue.","Irreproducible","Not Applicable","Missing Information","The report does not specify how the music disc 'tears' is used with the jukebox, which is critical to reproduce the issue.","Present","Accurate","The expected behavior of the jukebox showing its playing state when a music disc is used is clearly implied.","Present","Sufficient","The report clearly states that the jukebox does not reflect the playing state when the disc is used.","While the expected and observed behaviors are clear, the lack of specific details on how to trigger the bug makes the report non-executable.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Raw_Final_V10_PilotCandidate","210","fp_844ddd95ff","2347","0","228","2575","0.00048885","2026-07-11T10:07:52","{
   ""issue_key"": ""MC-300891"",
-  ""s2r_label"": ""Non-Executable"",
-  ""reason"": ""The report states a symptom without providing concrete actions or conditions to trigger the issue.""
+  ""steps_to_reproduce"": {
+    ""label"": ""Non-Executable"",
+    ""reproducibility"": ""Irreproducible"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Missing Information"",
+    ""reason"": ""The report does not specify how the music disc 'tears' is used with the jukebox, which is critical to reproduce the issue.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior of the jukebox showing its playing state when a music disc is used is clearly implied.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The report clearly states that the jukebox does not reflect the playing state when the disc is used.""
+  },
+  ""overall_reason"": ""While the expected and observed behaviors are clear, the lack of specific details on how to trigger the bug makes the report non-executable.""
 }"
-MC-300737,Executable,"The report provides a concrete action to recreate the crash by creating a random string array and using it as keys in a HashMap, along with details about the conditions under which the issue occurs.",valid_json,gpt-4o-mini-2024-07-18,v2,817,0,66,883,0.00016215,2026-07-02T21:12:37,"{
+"MC-300737","Executable","The report provides a concrete method to recreate the crash by using a HashMap in a specific way, detailing the conditions under which the ConcurrentModificationException occurs.","Not Assessed","Not Applicable","Not Applicable","The report provides a concrete method to recreate the crash by using a HashMap in a specific way, detailing the conditions under which the ConcurrentModificationException occurs.","Not Present","Not Applicable","The report does not explicitly state what the expected behavior should be when the game does not crash.","Present","Sufficient","The report clearly describes the game crashing due to a ConcurrentModificationException when using HashMap methods in a singleplayer context.","The report effectively outlines the conditions leading to the crash, making it actionable for reproduction, but lacks a clear expected outcome.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Raw_Final_V10_PilotCandidate","210","fp_844ddd95ff","2597","0","228","2825","0.00052635","2026-07-11T10:07:56","{
   ""issue_key"": ""MC-300737"",
-  ""s2r_label"": ""Executable"",
-  ""reason"": ""The report provides a concrete action to recreate the crash by creating a random string array and using it as keys in a HashMap, along with details about the conditions under which the issue occurs.""
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The report provides a concrete method to recreate the crash by using a HashMap in a specific way, detailing the conditions under which the ConcurrentModificationException occurs.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Not Present"",
+    ""quality"": ""Not Applicable"",
+    ""reason"": ""The report does not explicitly state what the expected behavior should be when the game does not crash.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The report clearly describes the game crashing due to a ConcurrentModificationException when using HashMap methods in a singleplayer context.""
+  },
+  ""overall_reason"": ""The report effectively outlines the conditions leading to the crash, making it actionable for reproduction, but lacks a clear expected outcome."" 
 }"
-MC-301132,Non-Executable,"The report describes a symptom of not receiving items but does not provide clear steps or actions to reproduce the issue, making it vague and non-executable.",valid_json,gpt-4o-mini-2024-07-18,v2,609,0,60,669,0.00012735,2026-07-02T21:12:39,"{
+"MC-301132","Non-Executable","The report describes a symptom of not being able to collect an item but lacks specific details on how to reproduce the issue, such as the exact conditions or actions leading to the problem.","Irreproducible","Not Applicable","Missing Information","The report describes a symptom of not being able to collect an item but lacks specific details on how to reproduce the issue, such as the exact conditions or actions leading to the problem.","Not Present","Not Applicable","The report does not explicitly state what the expected behavior should be.","Present","Sufficient","The report describes the observed behavior of not being able to collect an item, which is clear enough to understand.","The report lacks critical details needed to reproduce the bug, making it non-executable despite providing a clear observed behavior.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Raw_Final_V10_PilotCandidate","210","fp_844ddd95ff","2389","0","227","2616","0.00049455","2026-07-11T10:08:00","{
   ""issue_key"": ""MC-301132"",
-  ""s2r_label"": ""Non-Executable"",
-  ""reason"": ""The report describes a symptom of not receiving items but does not provide clear steps or actions to reproduce the issue, making it vague and non-executable.""
+  ""steps_to_reproduce"": {
+    ""label"": ""Non-Executable"",
+    ""reproducibility"": ""Irreproducible"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Missing Information"",
+    ""reason"": ""The report describes a symptom of not being able to collect an item but lacks specific details on how to reproduce the issue, such as the exact conditions or actions leading to the problem.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Not Present"",
+    ""quality"": ""Not Applicable"",
+    ""reason"": ""The report does not explicitly state what the expected behavior should be.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The report describes the observed behavior of not being able to collect an item, which is clear enough to understand.""
+  },
+  ""overall_reason"": ""The report lacks critical details needed to reproduce the bug, making it non-executable despite providing a clear observed behavior.""
 }"
-MC-300420,Non-Executable,The report describes the issue but does not provide clear steps or actions that a user can take to reproduce the bug. It lacks specific instructions on how to trigger the problem.,valid_json,gpt-4o-mini-2024-07-18,v2,629,0,64,693,0.00013275,2026-07-02T21:12:42,"{
+"MC-300420","Executable","The report provides a clear description of the intended bug behavior and the actions required to reproduce it, specifically regarding the sprint window settings and their effect on sprinting mechanics.","Not Assessed","Not Applicable","Not Applicable","The report provides a clear description of the intended bug behavior and the actions required to reproduce it, specifically regarding the sprint window settings and their effect on sprinting mechanics.","Present","Accurate","The expected behavior is clearly stated as being able to sprint by double-tapping W after setting the sprint window option, which aligns with Minecraft's mechanics.","Present","Sufficient","The observed behavior is clearly described, indicating that the player cannot sprint as intended when the sprint window is set to 1 or 2.","The report is actionable and provides sufficient detail for another evaluator to attempt to reproduce the bug, with clear expected and observed behaviors.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Raw_Final_V10_PilotCandidate","210","fp_844ddd95ff","2409","0","244","2653","0.00050775","2026-07-11T10:08:03","{
   ""issue_key"": ""MC-300420"",
-  ""s2r_label"": ""Non-Executable"",
-  ""reason"": ""The report describes the issue but does not provide clear steps or actions that a user can take to reproduce the bug. It lacks specific instructions on how to trigger the problem.""
+  ""steps_to_reproduce"": {
+    ""label"": ""Executable"",
+    ""reproducibility"": ""Not Assessed"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Not Applicable"",
+    ""reason"": ""The report provides a clear description of the intended bug behavior and the actions required to reproduce it, specifically regarding the sprint window settings and their effect on sprinting mechanics.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior is clearly stated as being able to sprint by double-tapping W after setting the sprint window option, which aligns with Minecraft's mechanics.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The observed behavior is clearly described, indicating that the player cannot sprint as intended when the sprint window is set to 1 or 2.""
+  },
+  ""overall_reason"": ""The report is actionable and provides sufficient detail for another evaluator to attempt to reproduce the bug, with clear expected and observed behaviors.""
 }"
-MC-301221,Non-Executable,"The report describes the issue but does not provide specific actions or conditions to trigger the incorrect item light rendering, making it unclear how to reproduce the bug.",valid_json,gpt-4o-mini-2024-07-18,v2,621,0,60,681,0.00012915,2026-07-02T21:12:44,"{
+"MC-301221","Non-Executable","The report does not specify how to trigger the rendering issue, such as specific conditions or actions that lead to the incorrect item light rendering.","Irreproducible","Not Applicable","Missing Information","The report does not specify how to trigger the rendering issue, such as specific conditions or actions that lead to the incorrect item light rendering.","Present","Accurate","The expected behavior of items not glowing at night is clearly stated and aligns with Minecraft mechanics.","Present","Sufficient","The report describes the observed behavior of items incorrectly glowing at night, providing enough detail to understand the issue.","While the expected and observed behaviors are clear, the lack of specific triggering conditions makes the report non-executable.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Raw_Final_V10_PilotCandidate","210","fp_844ddd95ff","2401","0","220","2621","0.00049215","2026-07-11T10:08:07","{
   ""issue_key"": ""MC-301221"",
-  ""s2r_label"": ""Non-Executable"",
-  ""reason"": ""The report describes the issue but does not provide specific actions or conditions to trigger the incorrect item light rendering, making it unclear how to reproduce the bug.""
+  ""steps_to_reproduce"": {
+    ""label"": ""Non-Executable"",
+    ""reproducibility"": ""Irreproducible"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Missing Information"",
+    ""reason"": ""The report does not specify how to trigger the rendering issue, such as specific conditions or actions that lead to the incorrect item light rendering.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior of items not glowing at night is clearly stated and aligns with Minecraft mechanics.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The report describes the observed behavior of items incorrectly glowing at night, providing enough detail to understand the issue.""
+  },
+  ""overall_reason"": ""While the expected and observed behaviors are clear, the lack of specific triggering conditions makes the report non-executable.""
 }"
-MC-300973,Executable,"The report provides a concrete action (using the command 'tick sprint 3d') and describes the observed incorrect behavior (the copper golem is not oxidizing), allowing others to attempt to reproduce the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,581,0,70,651,0.00012915,2026-07-02T21:12:46,"{
+"MC-300973","Non-Executable","The report does not specify how to properly observe the oxidation of the copper golem, such as the necessary conditions or time required for oxidation to occur.","Irreproducible","Not Applicable","Missing Information","The report does not specify how to properly observe the oxidation of the copper golem, such as the necessary conditions or time required for oxidation to occur.","Present","Accurate","The expected behavior of the copper golem oxidizing is clearly stated.","Present","Sufficient","The report describes that the oxidation is not happening as intended.","While the expected and observed behaviors are clear, the lack of critical setup details makes the steps to reproduce non-executable.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Raw_Final_V10_PilotCandidate","210","fp_844ddd95ff","2361","0","212","2573","0.00048135","2026-07-11T10:08:10","{
   ""issue_key"": ""MC-300973"",
-  ""s2r_label"": ""Executable"",
-  ""reason"": ""The report provides a concrete action (using the command 'tick sprint 3d') and describes the observed incorrect behavior (the copper golem is not oxidizing), allowing others to attempt to reproduce the issue.""
+  ""steps_to_reproduce"": {
+    ""label"": ""Non-Executable"",
+    ""reproducibility"": ""Irreproducible"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Missing Information"",
+    ""reason"": ""The report does not specify how to properly observe the oxidation of the copper golem, such as the necessary conditions or time required for oxidation to occur.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Accurate"",
+    ""reason"": ""The expected behavior of the copper golem oxidizing is clearly stated.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The report describes that the oxidation is not happening as intended.""
+  },
+  ""overall_reason"": ""While the expected and observed behaviors are clear, the lack of critical setup details makes the steps to reproduce non-executable.""
 }"
-MC-301125,Non-Executable,The report states symptoms of being unable to mine or place blocks but does not provide any concrete actions or conditions that trigger this issue.,valid_json,gpt-4o-mini-2024-07-18,v2,567,0,56,623,0.00011865,2026-07-02T21:12:48,"{
+"MC-301125","Non-Executable","The report does not specify how the user is unable to mine or place blocks, lacking critical details on the actions taken or the game state.","Irreproducible","Not Applicable","Missing Information","The report does not specify how the user is unable to mine or place blocks, lacking critical details on the actions taken or the game state.","Not Present","Not Applicable","No explicit expected outcome is stated in the report.","Present","Insufficient","The report mentions the inability to mine or place blocks, but does not provide enough detail to understand the context or specific circumstances.","The report lacks critical information needed to reproduce the issue, making it non-executable despite describing a symptom.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Raw_Final_V10_PilotCandidate","210","fp_844ddd95ff","2347","0","217","2564","0.00048225","2026-07-11T10:08:14","{
   ""issue_key"": ""MC-301125"",
-  ""s2r_label"": ""Non-Executable"",
-  ""reason"": ""The report states symptoms of being unable to mine or place blocks but does not provide any concrete actions or conditions that trigger this issue.""
+  ""steps_to_reproduce"": {
+    ""label"": ""Non-Executable"",
+    ""reproducibility"": ""Irreproducible"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Missing Information"",
+    ""reason"": ""The report does not specify how the user is unable to mine or place blocks, lacking critical details on the actions taken or the game state.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Not Present"",
+    ""quality"": ""Not Applicable"",
+    ""reason"": ""No explicit expected outcome is stated in the report.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Insufficient"",
+    ""reason"": ""The report mentions the inability to mine or place blocks, but does not provide enough detail to understand the context or specific circumstances.""
+  },
+  ""overall_reason"": ""The report lacks critical information needed to reproduce the issue, making it non-executable despite describing a symptom.""
 }"
-MC-301203,Non-Executable,"The report describes a symptom of the issue (not seeing capes and skin) but does not provide concrete steps or actions to reproduce the problem, making it unclear how to trigger the issue.",valid_json,gpt-4o-mini-2024-07-18,v2,597,0,68,665,0.00013035,2026-07-02T21:12:51,"{
+"MC-301203","Non-Executable","The report lacks critical details on how to trigger the skin and cape loading issue, such as specific actions taken after changing the skin or any relevant settings.","Irreproducible","Not Applicable","Missing Information","The report lacks critical details on how to trigger the skin and cape loading issue, such as specific actions taken after changing the skin or any relevant settings.","Not Present","Not Applicable","The report does not explicitly state what the expected behavior should be regarding skin and cape visibility.","Present","Sufficient","The report describes that the skin appears as Steve and capes are missing, which is clear enough to understand the issue.","The report identifies a clear symptom but does not provide enough information on how to reproduce the issue, making it non-executable.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Raw_Final_V10_PilotCandidate","210","fp_844ddd95ff","2377","0","230","2607","0.00049455","2026-07-11T10:08:18","{
   ""issue_key"": ""MC-301203"",
-  ""s2r_label"": ""Non-Executable"",
-  ""reason"": ""The report describes a symptom of the issue (not seeing capes and skin) but does not provide concrete steps or actions to reproduce the problem, making it unclear how to trigger the issue.""
+  ""steps_to_reproduce"": {
+    ""label"": ""Non-Executable"",
+    ""reproducibility"": ""Irreproducible"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Missing Information"",
+    ""reason"": ""The report lacks critical details on how to trigger the skin and cape loading issue, such as specific actions taken after changing the skin or any relevant settings.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Not Present"",
+    ""quality"": ""Not Applicable"",
+    ""reason"": ""The report does not explicitly state what the expected behavior should be regarding skin and cape visibility.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The report describes that the skin appears as Steve and capes are missing, which is clear enough to understand the issue.""
+  },
+  ""overall_reason"": ""The report identifies a clear symptom but does not provide enough information on how to reproduce the issue, making it non-executable.""
 }"
-MC-300031,Non-Executable,"The report states a symptom (vindicators not spawning) without providing any concrete actions or conditions to reproduce the issue. Additionally, the edit indicates that the bug may not exist, further complicating reproducibility.",valid_json,gpt-4o-mini-2024-07-18,v2,570,0,71,641,0.00012810,2026-07-02T21:12:54,"{
+"MC-300031","Non-Executable","The report does not provide sufficient details on how to trigger the bug, such as the specific conditions or settings for the raid.","Irreproducible","Not Applicable","Missing Information","The report does not provide sufficient details on how to trigger the bug, such as the specific conditions or settings for the raid.","Not Present","Not Applicable","The report does not clearly state what the expected behavior is regarding vindicators spawning.","Present","Sufficient","The report indicates that vindicators are not spawning during raids, which is a clear observation.","The report lacks critical information needed to reproduce the bug, making it non-executable despite the clear observation of the issue.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Raw_Final_V10_PilotCandidate","210","fp_844ddd95ff","2350","0","216","2566","0.00048210","2026-07-11T10:08:21","{
   ""issue_key"": ""MC-300031"",
-  ""s2r_label"": ""Non-Executable"",
-  ""reason"": ""The report states a symptom (vindicators not spawning) without providing any concrete actions or conditions to reproduce the issue. Additionally, the edit indicates that the bug may not exist, further complicating reproducibility.""
+  ""steps_to_reproduce"": {
+    ""label"": ""Non-Executable"",
+    ""reproducibility"": ""Irreproducible"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Missing Information"",
+    ""reason"": ""The report does not provide sufficient details on how to trigger the bug, such as the specific conditions or settings for the raid.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Not Present"",
+    ""quality"": ""Not Applicable"",
+    ""reason"": ""The report does not clearly state what the expected behavior is regarding vindicators spawning.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Sufficient"",
+    ""reason"": ""The report indicates that vindicators are not spawning during raids, which is a clear observation.""
+  },
+  ""overall_reason"": ""The report lacks critical information needed to reproduce the bug, making it non-executable despite the clear observation of the issue.""
 }"
-MC-301159,Non-Executable,"The report does not provide specific steps or actions to reproduce the issue, only stating that a rail junction fails on a redstone block without detailing how to set up or trigger the problem.",valid_json,gpt-4o-mini-2024-07-18,v2,583,0,67,650,0.00012765,2026-07-02T21:12:57,"{
+"MC-301159","Non-Executable","The report does not provide sufficient details on how to trigger the bug, such as the specific setup or actions required to reproduce the issue with the rail junction on a redstone block.","Irreproducible","Not Applicable","Missing Information","The report does not provide sufficient details on how to trigger the bug, such as the specific setup or actions required to reproduce the issue with the rail junction on a redstone block.","Not Present","Not Applicable","The report does not explicitly state what the expected behavior should be when the rail junction is placed on a redstone block.","Present","Insufficient","The report mentions that the rail junction failed, but does not provide enough detail on what that failure entails or how it manifests.","The report lacks critical information needed to reproduce the bug, including the specific actions or conditions that lead to the failure of the rail junction on a redstone block.","valid_json","gpt-4o-mini-2024-07-18","Prompts_Raw_Final_V10_PilotCandidate","210","fp_844ddd95ff","2363","0","250","2613","0.00050445","2026-07-11T10:08:25","{
   ""issue_key"": ""MC-301159"",
-  ""s2r_label"": ""Non-Executable"",
-  ""reason"": ""The report does not provide specific steps or actions to reproduce the issue, only stating that a rail junction fails on a redstone block without detailing how to set up or trigger the problem.""
+  ""steps_to_reproduce"": {
+    ""label"": ""Non-Executable"",
+    ""reproducibility"": ""Irreproducible"",
+    ""validity"": ""Not Applicable"",
+    ""failure_type"": ""Missing Information"",
+    ""reason"": ""The report does not provide sufficient details on how to trigger the bug, such as the specific setup or actions required to reproduce the issue with the rail junction on a redstone block.""
+  },
+  ""expected_behavior"": {
+    ""presence"": ""Not Present"",
+    ""quality"": ""Not Applicable"",
+    ""reason"": ""The report does not explicitly state what the expected behavior should be when the rail junction is placed on a redstone block.""
+  },
+  ""observed_behavior"": {
+    ""presence"": ""Present"",
+    ""quality"": ""Insufficient"",
+    ""reason"": ""The report mentions that the rail junction failed, but does not provide enough detail on what that failure entails or how it manifests.""
+  },
+  ""overall_reason"": ""The report lacks critical information needed to reproduce the bug, including the specific actions or conditions that lead to the failure of the rail junction on a redstone block.""
 }"

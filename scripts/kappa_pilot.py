@@ -80,7 +80,7 @@ def clean_text(value: str) -> str:
     if value is None:
         return ""
 
-    return value.strip()
+    return str(value).strip()
 
 
 def normalize_text(value: str) -> str:
@@ -136,6 +136,13 @@ def score_annotation(row: Dict[str, str]) -> Optional[int]:
     return 1
 
 
+def preview_items(items: List[str], limit: int = 10) -> str:
+    shown = items[:limit]
+    suffix = "" if len(items) <= limit else f", ... (+{len(items) - limit} more)"
+
+    return ", ".join(shown) + suffix
+
+
 def load_annotation_rows(path: Path, tag: str) -> Dict[str, Dict[str, str]]:
     """
     Load annotation rows by issue key.
@@ -146,7 +153,7 @@ def load_annotation_rows(path: Path, tag: str) -> Dict[str, Dict[str, str]]:
 
     Used columns by index:
         1 = S2R label
-        2 = IRR
+        2 = IRR / failure type
         4 = Observed Behavior presence
         5 = Observed Behavior level
         7 = Expected Behavior presence
@@ -156,7 +163,11 @@ def load_annotation_rows(path: Path, tag: str) -> Dict[str, Dict[str, str]]:
     if not path.exists():
         raise FileNotFoundError(f"Cannot find annotation file: {path}")
 
+    if path.stat().st_size == 0:
+        raise ValueError(f"Annotation file is empty: {path}")
+
     rows: Dict[str, Dict[str, str]] = {}
+    duplicate_keys: List[str] = []
     suffix = " " + tag
 
     with path.open("r", encoding="utf-8-sig", newline="") as file:
@@ -182,6 +193,10 @@ def load_annotation_rows(path: Path, tag: str) -> Dict[str, Dict[str, str]]:
             if not issue_key.startswith("MC-"):
                 continue
 
+            if issue_key in rows:
+                duplicate_keys.append(issue_key)
+                continue
+
             def get_cell(index: int) -> str:
                 return clean_text(row[index]) if index < len(row) else ""
 
@@ -194,6 +209,15 @@ def load_annotation_rows(path: Path, tag: str) -> Dict[str, Dict[str, str]]:
                 "ebl": get_cell(8),
             }
 
+    if duplicate_keys:
+        raise ValueError(
+            f"Duplicate issue keys found in {path}: "
+            f"{preview_items(sorted(set(duplicate_keys)))}"
+        )
+
+    if not rows:
+        raise ValueError(f"No annotation rows found in file: {path}")
+
     return rows
 
 
@@ -205,7 +229,12 @@ def read_pilot_keys(path: Path, tag: str) -> List[str]:
     if not path.exists():
         raise FileNotFoundError(f"Cannot find ground truth file: {path}")
 
+    if path.stat().st_size == 0:
+        raise ValueError(f"Ground truth file is empty: {path}")
+
     keys: List[str] = []
+    seen_keys = set()
+    duplicate_keys: List[str] = []
     suffix = " " + tag
 
     with path.open("r", encoding="utf-8-sig", newline="") as file:
@@ -228,10 +257,42 @@ def read_pilot_keys(path: Path, tag: str) -> List[str]:
             else:
                 issue_key = normalize_issue_key(first_cell)
 
-            if issue_key.startswith("MC-"):
-                keys.append(issue_key)
+            if not issue_key.startswith("MC-"):
+                continue
+
+            if issue_key in seen_keys:
+                duplicate_keys.append(issue_key)
+                continue
+
+            seen_keys.add(issue_key)
+            keys.append(issue_key)
+
+    if duplicate_keys:
+        raise ValueError(
+            f"Duplicate issue keys found in {path}: "
+            f"{preview_items(sorted(set(duplicate_keys)))}"
+        )
+
+    if not keys:
+        raise ValueError(f"No pilot issue keys found in ground truth file: {path}")
 
     return keys
+
+
+def validate_annotation_coverage(
+    pilot_keys: List[str],
+    author_rows: Dict[str, Dict[str, str]],
+    author_name: str,
+    source_file: Path,
+) -> None:
+    missing_keys = [key for key in pilot_keys if key not in author_rows]
+
+    if missing_keys:
+        raise ValueError(
+            f"{author_name} is missing annotation rows in {source_file}. "
+            f"Missing count: {len(missing_keys)}. "
+            f"Examples: {preview_items(missing_keys)}"
+        )
 
 
 def cohen_kappa(
@@ -293,7 +354,7 @@ def write_kappa_scores(
             "agree",
         ]
 
-        writer = csv.DictWriter(file, fieldnames=fieldnames)
+        writer = csv.DictWriter(file, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
         writer.writeheader()
         writer.writerows(rows)
 
@@ -325,32 +386,76 @@ def process_version(version: str) -> None:
     author1_rows = load_annotation_rows(author1_file, tag)
     author2_rows = load_annotation_rows(author2_file, tag)
 
+    validate_annotation_coverage(
+        pilot_keys=pilot_keys,
+        author_rows=author1_rows,
+        author_name="Author 1",
+        source_file=author1_file,
+    )
+    validate_annotation_coverage(
+        pilot_keys=pilot_keys,
+        author_rows=author2_rows,
+        author_name="Author 2",
+        source_file=author2_file,
+    )
+
     output_rows: List[Dict[str, str]] = []
 
     valid_keys: List[str] = []
     author1_scores: Dict[str, int] = {}
     author2_scores: Dict[str, int] = {}
+    unscored_author1: List[str] = []
+    unscored_author2: List[str] = []
 
     for key in pilot_keys:
-        author1_score = score_annotation(author1_rows.get(key, {}))
-        author2_score = score_annotation(author2_rows.get(key, {}))
+        author1_score = score_annotation(author1_rows[key])
+        author2_score = score_annotation(author2_rows[key])
 
-        if author1_score is not None and author2_score is not None:
-            agree = int(author1_score == author2_score)
+        if author1_score is None:
+            unscored_author1.append(key)
 
-            valid_keys.append(key)
-            author1_scores[key] = author1_score
-            author2_scores[key] = author2_score
-        else:
-            agree = ""
+        if author2_score is None:
+            unscored_author2.append(key)
+
+        if author1_score is None or author2_score is None:
+            continue
+
+        agree = int(author1_score == author2_score)
+
+        valid_keys.append(key)
+        author1_scores[key] = author1_score
+        author2_scores[key] = author2_score
 
         output_rows.append(
             {
                 "issue_key": key,
-                "author1_score": "" if author1_score is None else str(author1_score),
-                "author2_score": "" if author2_score is None else str(author2_score),
+                "author1_score": str(author1_score),
+                "author2_score": str(author2_score),
                 "agree": str(agree),
             }
+        )
+
+    if unscored_author1 or unscored_author2:
+        messages = []
+
+        if unscored_author1:
+            messages.append(
+                "Author 1 has empty/unscorable annotation rows: "
+                f"{preview_items(unscored_author1)}"
+            )
+
+        if unscored_author2:
+            messages.append(
+                "Author 2 has empty/unscorable annotation rows: "
+                f"{preview_items(unscored_author2)}"
+            )
+
+        raise ValueError("\n".join(messages))
+
+    if len(valid_keys) != len(pilot_keys):
+        raise ValueError(
+            f"Valid IAA case count mismatch. Pilot cases: {len(pilot_keys)}, "
+            f"valid cases: {len(valid_keys)}"
         )
 
     kappa = cohen_kappa(author1_scores, author2_scores, valid_keys)
@@ -385,7 +490,7 @@ def main() -> None:
     process_version("improved")
 
     print("=" * 60)
-    print("Done.")
+    print("kappa_pilot.py completed successfully.")
 
 
 if __name__ == "__main__":

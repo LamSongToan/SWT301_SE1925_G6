@@ -5,7 +5,13 @@ import csv
 BASE_DIR = Path(__file__).resolve().parents[2]
 
 FINAL_RESULTS_FILE = BASE_DIR / "Data" / "Annotations" / "Final Results.csv"
-OUTPUT_FILE = BASE_DIR / "Data" / "Raw" / "full_ground_truth_raw.csv"
+OUTPUT_FILE = (
+    BASE_DIR
+    / "Data"
+    / "Full"
+    / "Raw"
+    / "full_ground_truth_raw.csv"
+)
 
 
 def is_empty_row(row):

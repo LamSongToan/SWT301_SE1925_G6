@@ -14,8 +14,14 @@ KAPPA_THRESHOLD = 0.70
 
 CONFIG = {
     "raw": {
-        "data_dir": BASE_DIR / "Data" / "Raw",
-        "results_dir": BASE_DIR / "Results" / "Raw",
+        "ground_truth_dirs": {
+            "pilot": BASE_DIR / "Data" / "Raw",
+            "full": BASE_DIR / "Data" / "Full" / "Raw",
+        },
+        "results_dirs": {
+            "pilot": BASE_DIR / "Results" / "Raw",
+            "full": BASE_DIR / "Results" / "Full" / "Raw",
+        },
         "ground_truth": {
             "pilot": "pilot_ground_truth_raw.csv",
             "full": "full_ground_truth_raw.csv",
@@ -34,8 +40,14 @@ CONFIG = {
         },
     },
     "improved": {
-        "data_dir": BASE_DIR / "Data" / "Improved",
-        "results_dir": BASE_DIR / "Results" / "Improved",
+        "ground_truth_dirs": {
+            "pilot": BASE_DIR / "Data" / "Improved",
+            "full": BASE_DIR / "Data" / "Full" / "Improved",
+        },
+        "results_dirs": {
+            "pilot": BASE_DIR / "Results" / "Improved",
+            "full": BASE_DIR / "Results" / "Full" / "Improved",
+        },
         "ground_truth": {
             "pilot": "pilot_ground_truth_improved.csv",
             "full": "full_ground_truth_improved.csv",
@@ -57,8 +69,19 @@ CONFIG = {
 
 
 def read_csv_dicts(path: Path) -> List[Dict[str, str]]:
+    if not path.exists():
+        raise FileNotFoundError(f"Cannot find CSV file: {path}")
+
+    if path.stat().st_size == 0:
+        raise ValueError(f"CSV file is empty: {path}")
+
     with path.open("r", encoding="utf-8-sig", newline="") as file:
-        return list(csv.DictReader(file))
+        rows = list(csv.DictReader(file))
+
+    if not rows:
+        raise ValueError(f"CSV file has no data rows: {path}")
+
+    return rows
 
 
 def normalize_issue_key(value: str) -> str:
@@ -84,7 +107,14 @@ def normalize_label(value: str) -> str:
     if clean in {"executable", "exec"}:
         return "Executable"
 
-    if clean in {"non-executable", "non executable", "nonexec", "non-exec"}:
+    if clean in {
+        "non-executable",
+        "non executable",
+        "nonexec",
+        "non-exec",
+        "not executable",
+        "not-executable",
+    }:
         return "Non-Executable"
 
     return value.strip()
@@ -100,6 +130,10 @@ def find_column(row: Dict[str, str], candidates: List[str]) -> str:
             return row.get(actual_key, "")
 
     return ""
+
+
+def get_value(row: Dict[str, str], key: str) -> str:
+    return str(row.get(key, "") or "").strip()
 
 
 def find_issue_key(row: Dict[str, str]) -> str:
@@ -132,8 +166,11 @@ def find_label(row: Dict[str, str]) -> str:
     value = find_column(
         row,
         [
+            # LLM output from run_experiment.py
             "s2r_label",
             "S2R Label",
+
+            # Ground truth / annotation aliases
             "label",
             "Label",
             "ground_truth",
@@ -144,20 +181,54 @@ def find_label(row: Dict[str, str]) -> str:
             "Prediction",
             "llm_prediction",
             "LLM Prediction",
+
+            # Extra safety for structured output files
+            "steps_to_reproduce.label",
+            "steps_to_reproduce_label",
         ],
     )
 
     return normalize_label(value)
 
 
-def build_row_map(rows: List[Dict[str, str]]) -> Dict[str, Dict[str, str]]:
-    row_map = {}
+def preview_items(items: List[str], limit: int = 10) -> str:
+    shown = items[:limit]
+    suffix = "" if len(items) <= limit else f", ... (+{len(items) - limit} more)"
+
+    return ", ".join(shown) + suffix
+
+
+def build_row_map(rows: List[Dict[str, str]], source_name: str) -> Dict[str, Dict[str, str]]:
+    row_map: Dict[str, Dict[str, str]] = {}
+    duplicate_keys: List[str] = []
+    missing_issue_key_rows = 0
 
     for row in rows:
         issue_key = find_issue_key(row)
 
-        if issue_key:
-            row_map[issue_key] = row
+        if not issue_key:
+            missing_issue_key_rows += 1
+            continue
+
+        if issue_key in row_map:
+            duplicate_keys.append(issue_key)
+            continue
+
+        row_map[issue_key] = row
+
+    if duplicate_keys:
+        raise ValueError(
+            f"Duplicate issue keys found in {source_name}: "
+            f"{preview_items(sorted(set(duplicate_keys)))}"
+        )
+
+    if missing_issue_key_rows:
+        raise ValueError(
+            f"{source_name} contains {missing_issue_key_rows} row(s) without a valid issue key."
+        )
+
+    if not row_map:
+        raise ValueError(f"No valid issue-key rows found in {source_name}.")
 
     return row_map
 
@@ -185,6 +256,48 @@ def cohen_kappa(y_true: List[str], y_pred: List[str]) -> float:
         return 1.0 if observed_agreement == 1 else 0.0
 
     return (observed_agreement - expected_agreement) / (1 - expected_agreement)
+
+
+def classify_kappa_band(kappa: float) -> str:
+    if kappa < 0.70:
+        return "Below acceptable threshold (< 0.70)"
+
+    if kappa < 0.80:
+        return "Acceptable agreement (0.70 <= Kappa < 0.80)"
+
+    if kappa < 1.00:
+        return "Good agreement (0.80 <= Kappa < 1.00)"
+
+    return "Perfect agreement (Kappa = 1.00)"
+
+
+def interpret_kappa(kappa: float) -> str:
+    if kappa < 0.70:
+        return (
+            "Below the predefined acceptable threshold. Review the annotation "
+            "guideline, disagreement cases, and pilot labels before running the "
+            "full evaluation."
+        )
+
+    if kappa < 0.80:
+        return (
+            "Acceptable agreement. This is the preferred pilot range before full "
+            "evaluation because it indicates sufficient agreement without looking "
+            "overly perfect."
+        )
+
+    if kappa < 1.00:
+        return (
+            "Good agreement. Full evaluation may proceed, but review representative "
+            "sample cases to ensure the guideline and prompt are not overfitted to "
+            "the pilot set."
+        )
+
+    return (
+        "Perfect agreement. This passes the minimum threshold, but it should be "
+        "reviewed carefully for possible overfitting, data leakage, or overly "
+        "specific rules before running the full evaluation."
+    )
 
 
 def safe_int(value: str) -> int:
@@ -266,9 +379,51 @@ def write_summary(path: Path, rows: List[Tuple[str, str]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
 
     with path.open("w", encoding="utf-8-sig", newline="") as file:
-        writer = csv.writer(file)
+        writer = csv.writer(file, quoting=csv.QUOTE_ALL)
         writer.writerow(["Metric", "Value"])
         writer.writerows(rows)
+
+
+def prediction_details(row: Dict[str, str]) -> Dict[str, str]:
+    return {
+        "prediction_status": get_value(row, "status"),
+        "reason": get_value(row, "reason"),
+        "s2r_reproducibility": get_value(row, "s2r_reproducibility"),
+        "s2r_validity": get_value(row, "s2r_validity"),
+        "s2r_failure_type": get_value(row, "s2r_failure_type"),
+        "s2r_reason": get_value(row, "s2r_reason"),
+        "expected_behavior_presence": get_value(row, "expected_behavior_presence"),
+        "expected_behavior_quality": get_value(row, "expected_behavior_quality"),
+        "expected_behavior_reason": get_value(row, "expected_behavior_reason"),
+        "observed_behavior_presence": get_value(row, "observed_behavior_presence"),
+        "observed_behavior_quality": get_value(row, "observed_behavior_quality"),
+        "observed_behavior_reason": get_value(row, "observed_behavior_reason"),
+        "overall_reason": get_value(row, "overall_reason"),
+        "model": get_value(row, "model"),
+        "prompt_version": get_value(row, "prompt_version"),
+        "cost_usd": get_value(row, "cost_usd"),
+    }
+
+
+def empty_prediction_details() -> Dict[str, str]:
+    return {
+        "prediction_status": "",
+        "reason": "",
+        "s2r_reproducibility": "",
+        "s2r_validity": "",
+        "s2r_failure_type": "",
+        "s2r_reason": "",
+        "expected_behavior_presence": "",
+        "expected_behavior_quality": "",
+        "expected_behavior_reason": "",
+        "observed_behavior_presence": "",
+        "observed_behavior_quality": "",
+        "observed_behavior_reason": "",
+        "overall_reason": "",
+        "model": "",
+        "prompt_version": "",
+        "cost_usd": "",
+    }
 
 
 def write_mismatches(path: Path, rows: List[Dict[str, str]]) -> None:
@@ -279,6 +434,22 @@ def write_mismatches(path: Path, rows: List[Dict[str, str]]) -> None:
         "status",
         "prediction_status",
         "reason",
+
+        "s2r_reproducibility",
+        "s2r_validity",
+        "s2r_failure_type",
+        "s2r_reason",
+
+        "expected_behavior_presence",
+        "expected_behavior_quality",
+        "expected_behavior_reason",
+
+        "observed_behavior_presence",
+        "observed_behavior_quality",
+        "observed_behavior_reason",
+
+        "overall_reason",
+
         "model",
         "prompt_version",
         "cost_usd",
@@ -287,21 +458,33 @@ def write_mismatches(path: Path, rows: List[Dict[str, str]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
 
     with path.open("w", encoding="utf-8-sig", newline="") as file:
-        writer = csv.DictWriter(file, fieldnames=fieldnames)
+        writer = csv.DictWriter(file, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
         writer.writeheader()
         writer.writerows(rows)
 
 
-def compute_metrics(version: str, phase: str) -> None:
-    config = CONFIG[version]
+def make_mismatch_row(
+    issue_key: str,
+    ground_truth: str,
+    prediction: str,
+    status: str,
+    details: Dict[str, str],
+) -> Dict[str, str]:
+    return {
+        "issue_key": issue_key,
+        "ground_truth": ground_truth,
+        "prediction": prediction,
+        "status": status,
+        **details,
+    }
 
-    ground_truth_file = config["data_dir"] / config["ground_truth"][phase]
-    prediction_file = config["results_dir"] / config["prediction"][phase]
-    summary_file = config["results_dir"] / config["summary"][phase]
-    mismatch_file = config["results_dir"] / config["mismatch"][phase]
 
+def validate_metric_inputs(ground_truth_file: Path, prediction_file: Path) -> None:
     if not ground_truth_file.exists():
         raise FileNotFoundError(f"Cannot find ground truth file: {ground_truth_file}")
+
+    if ground_truth_file.stat().st_size == 0:
+        raise ValueError(f"Ground truth file is empty: {ground_truth_file}")
 
     if not prediction_file.exists():
         raise FileNotFoundError(
@@ -309,11 +492,34 @@ def compute_metrics(version: str, phase: str) -> None:
             "Run run_experiment.py first."
         )
 
+    if prediction_file.stat().st_size == 0:
+        raise ValueError(f"Prediction file is empty: {prediction_file}")
+
+
+def compute_metrics(version: str, phase: str) -> None:
+    config = CONFIG[version]
+
+    ground_truth_dir = config["ground_truth_dirs"][phase]
+    results_dir = config["results_dirs"][phase]
+
+    ground_truth_file = ground_truth_dir / config["ground_truth"][phase]
+    prediction_file = results_dir / config["prediction"][phase]
+    summary_file = results_dir / config["summary"][phase]
+    mismatch_file = results_dir / config["mismatch"][phase]
+
+    validate_metric_inputs(ground_truth_file, prediction_file)
+
     ground_truth_rows = read_csv_dicts(ground_truth_file)
     prediction_rows = read_csv_dicts(prediction_file)
 
-    ground_truth_map = build_row_map(ground_truth_rows)
-    prediction_map = build_row_map(prediction_rows)
+    ground_truth_map = build_row_map(
+        rows=ground_truth_rows,
+        source_name=str(ground_truth_file),
+    )
+    prediction_map = build_row_map(
+        rows=prediction_rows,
+        source_name=str(prediction_file),
+    )
 
     ground_truth_keys = set(ground_truth_map.keys())
     prediction_keys = set(prediction_map.keys())
@@ -333,25 +539,17 @@ def compute_metrics(version: str, phase: str) -> None:
         truth = find_label(truth_row)
         pred = find_label(prediction_row)
 
-        prediction_status = prediction_row.get("status", "").strip()
-        reason = prediction_row.get("reason", "").strip()
-        model = prediction_row.get("model", "").strip()
-        prompt_version = prediction_row.get("prompt_version", "").strip()
-        cost_usd = prediction_row.get("cost_usd", "").strip()
+        details = prediction_details(prediction_row)
 
         if truth not in VALID_LABELS or pred not in VALID_LABELS:
             mismatches.append(
-                {
-                    "issue_key": key,
-                    "ground_truth": truth,
-                    "prediction": pred,
-                    "status": "invalid_label",
-                    "prediction_status": prediction_status,
-                    "reason": reason,
-                    "model": model,
-                    "prompt_version": prompt_version,
-                    "cost_usd": cost_usd,
-                }
+                make_mismatch_row(
+                    issue_key=key,
+                    ground_truth=truth,
+                    prediction=pred,
+                    status="invalid_label",
+                    details=details,
+                )
             )
             continue
 
@@ -360,34 +558,26 @@ def compute_metrics(version: str, phase: str) -> None:
 
         if truth != pred:
             mismatches.append(
-                {
-                    "issue_key": key,
-                    "ground_truth": truth,
-                    "prediction": pred,
-                    "status": "mismatch",
-                    "prediction_status": prediction_status,
-                    "reason": reason,
-                    "model": model,
-                    "prompt_version": prompt_version,
-                    "cost_usd": cost_usd,
-                }
+                make_mismatch_row(
+                    issue_key=key,
+                    ground_truth=truth,
+                    prediction=pred,
+                    status="mismatch",
+                    details=details,
+                )
             )
 
     for key in missing_prediction_keys:
         truth = find_label(ground_truth_map[key])
 
         mismatches.append(
-            {
-                "issue_key": key,
-                "ground_truth": truth,
-                "prediction": "",
-                "status": "missing_prediction",
-                "prediction_status": "",
-                "reason": "",
-                "model": "",
-                "prompt_version": "",
-                "cost_usd": "",
-            }
+            make_mismatch_row(
+                issue_key=key,
+                ground_truth=truth,
+                prediction="",
+                status="missing_prediction",
+                details=empty_prediction_details(),
+            )
         )
 
     for key in extra_prediction_keys:
@@ -395,21 +585,17 @@ def compute_metrics(version: str, phase: str) -> None:
         pred = find_label(prediction_row)
 
         mismatches.append(
-            {
-                "issue_key": key,
-                "ground_truth": "",
-                "prediction": pred,
-                "status": "extra_prediction",
-                "prediction_status": prediction_row.get("status", "").strip(),
-                "reason": prediction_row.get("reason", "").strip(),
-                "model": prediction_row.get("model", "").strip(),
-                "prompt_version": prediction_row.get("prompt_version", "").strip(),
-                "cost_usd": prediction_row.get("cost_usd", "").strip(),
-            }
+            make_mismatch_row(
+                issue_key=key,
+                ground_truth="",
+                prediction=pred,
+                status="extra_prediction",
+                details=prediction_details(prediction_row),
+            )
         )
 
     total_predictions = len(prediction_rows)
-    ground_truth_cases = len(ground_truth_rows)
+    ground_truth_cases = len(ground_truth_map)
     matched_cases = len(matched_keys)
     evaluated_cases = len(y_true)
 
@@ -419,6 +605,8 @@ def compute_metrics(version: str, phase: str) -> None:
     accuracy = correct / evaluated_cases if evaluated_cases else 0.0
     kappa = cohen_kappa(y_true, y_pred) if evaluated_cases else 0.0
     threshold_passed = kappa >= KAPPA_THRESHOLD
+    kappa_band = classify_kappa_band(kappa)
+    kappa_interpretation = interpret_kappa(kappa)
 
     confusion = Counter(zip(y_true, y_pred))
 
@@ -428,6 +616,9 @@ def compute_metrics(version: str, phase: str) -> None:
     gt_non_llm_non = confusion[("Non-Executable", "Non-Executable")]
 
     usage_summary = summarize_usage(prediction_rows)
+
+    invalid_label_count = sum(1 for row in mismatches if row["status"] == "invalid_label")
+    mismatch_count = sum(1 for row in mismatches if row["status"] == "mismatch")
 
     summary_rows = [
         ("Version", version),
@@ -444,12 +635,16 @@ def compute_metrics(version: str, phase: str) -> None:
         ("Evaluated cases", str(evaluated_cases)),
         ("Missing predictions", str(len(missing_prediction_keys))),
         ("Extra predictions", str(len(extra_prediction_keys))),
+        ("Invalid labels", str(invalid_label_count)),
+        ("Mismatches", str(mismatch_count)),
         ("Correct", str(correct)),
         ("Incorrect", str(incorrect)),
         ("Accuracy", f"{accuracy:.4f}"),
         ("Cohen Kappa", f"{kappa:.4f}"),
         ("Kappa threshold", f"{KAPPA_THRESHOLD:.2f}"),
         ("Threshold passed", str(threshold_passed)),
+        ("Kappa band", kappa_band),
+        ("Kappa interpretation", kappa_interpretation),
         ("GT Executable -> LLM Executable", str(gt_exec_llm_exec)),
         ("GT Executable -> LLM Non-Executable", str(gt_exec_llm_non)),
         ("GT Non-Executable -> LLM Executable", str(gt_non_llm_exec)),
@@ -480,12 +675,16 @@ def compute_metrics(version: str, phase: str) -> None:
     print(f"Evaluated cases        : {evaluated_cases}")
     print(f"Missing predictions    : {len(missing_prediction_keys)}")
     print(f"Extra predictions      : {len(extra_prediction_keys)}")
+    print(f"Invalid labels         : {invalid_label_count}")
+    print(f"Mismatches             : {mismatch_count}")
     print(f"Correct                : {correct}")
     print(f"Incorrect              : {incorrect}")
     print(f"Accuracy               : {accuracy:.4f}")
     print(f"Cohen's Kappa          : {kappa:.4f}")
     print(f"Kappa threshold        : {KAPPA_THRESHOLD:.2f}")
     print(f"Threshold passed       : {threshold_passed}")
+    print(f"Kappa band             : {kappa_band}")
+    print(f"Kappa interpretation   : {kappa_interpretation}")
     print("-" * 60)
     print("Confusion matrix:")
     print(f"Ground Truth Executable     -> LLM Executable    : {gt_exec_llm_exec}")
@@ -499,6 +698,7 @@ def compute_metrics(version: str, phase: str) -> None:
     print(f"Total tokens              : {usage_summary['total_tokens']}")
     print(f"Total cost USD            : ${usage_summary['total_cost_usd']}")
     print("-" * 60)
+    print("compute_metric.py completed successfully.")
 
 
 def main() -> None:

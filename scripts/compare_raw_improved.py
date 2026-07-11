@@ -17,6 +17,8 @@ NUMERIC_METRICS = {
     "Evaluated cases",
     "Missing predictions",
     "Extra predictions",
+    "Invalid labels",
+    "Mismatches",
     "Correct",
     "Incorrect",
     "Accuracy",
@@ -46,6 +48,8 @@ COMPARISON_METRICS = [
     "Evaluated cases",
     "Missing predictions",
     "Extra predictions",
+    "Invalid labels",
+    "Mismatches",
     "Correct",
     "Incorrect",
     "Accuracy",
@@ -68,7 +72,10 @@ def read_summary(path: Path) -> Dict[str, str]:
     if not path.exists():
         raise FileNotFoundError(f"Cannot find summary file: {path}")
 
-    summary = {}
+    if path.stat().st_size == 0:
+        raise ValueError(f"Summary file is empty: {path}")
+
+    summary: Dict[str, str] = {}
 
     with path.open("r", encoding="utf-8-sig", newline="") as file:
         reader = csv.DictReader(file)
@@ -87,6 +94,9 @@ def read_summary(path: Path) -> Dict[str, str]:
 
             if metric:
                 summary[metric] = value
+
+    if not summary:
+        raise ValueError(f"No metrics found in summary file: {path}")
 
     return summary
 
@@ -108,9 +118,11 @@ def format_difference(metric: str, raw_value: str, improved_value: str) -> str:
         "Accuracy",
         "Cohen Kappa",
         "Kappa threshold",
-        "Total cost USD",
     }:
-        return f"{difference:.8f}" if metric == "Total cost USD" else f"{difference:.4f}"
+        return f"{difference:.4f}"
+
+    if metric == "Total cost USD":
+        return f"{difference:.8f}"
 
     return str(int(difference)) if difference.is_integer() else f"{difference:.4f}"
 
@@ -124,6 +136,12 @@ def build_interpretation(raw: Dict[str, str], improved: Dict[str, str]) -> List[
 
     raw_cost = to_float(raw.get("Total cost USD", "0"))
     improved_cost = to_float(improved.get("Total cost USD", "0"))
+
+    raw_invalid_labels = to_float(raw.get("Invalid labels", "0"))
+    improved_invalid_labels = to_float(improved.get("Invalid labels", "0"))
+
+    raw_mismatches = to_float(raw.get("Mismatches", "0"))
+    improved_mismatches = to_float(improved.get("Mismatches", "0"))
 
     rows = []
 
@@ -145,6 +163,22 @@ def build_interpretation(raw: Dict[str, str], improved: Dict[str, str]) -> List[
 
     rows.append(
         [
+            "Mismatch change",
+            f"{improved_mismatches - raw_mismatches:.0f}",
+            "Improved mismatches minus Raw mismatches",
+        ]
+    )
+
+    rows.append(
+        [
+            "Invalid label change",
+            f"{improved_invalid_labels - raw_invalid_labels:.0f}",
+            "Improved invalid labels minus Raw invalid labels",
+        ]
+    )
+
+    rows.append(
+        [
             "Cost change USD",
             f"{improved_cost - raw_cost:.8f}",
             "Improved cost minus Raw cost",
@@ -161,24 +195,67 @@ def build_interpretation(raw: Dict[str, str], improved: Dict[str, str]) -> List[
     return rows
 
 
+def validate_required_metrics(summary: Dict[str, str], summary_name: str) -> None:
+    required_metrics = [
+        "Accuracy",
+        "Cohen Kappa",
+        "Total cost USD",
+    ]
+
+    missing = [metric for metric in required_metrics if metric not in summary]
+
+    if missing:
+        raise ValueError(
+            f"{summary_name} is missing required metric(s): {', '.join(missing)}"
+        )
+
+
 def compare(phase: str) -> None:
-    raw_summary = BASE_DIR / "Results" / "Raw" / (
-        "summary_raw.csv" if phase == "pilot" else "summary_full_raw.csv"
-    )
+    if phase == "pilot":
+        raw_summary = (
+            BASE_DIR
+            / "Results"
+            / "Raw"
+            / "summary_raw.csv"
+        )
+        improved_summary = (
+            BASE_DIR
+            / "Results"
+            / "Improved"
+            / "summary_improved.csv"
+        )
+    else:
+        raw_summary = (
+            BASE_DIR
+            / "Results"
+            / "Full"
+            / "Raw"
+            / "summary_full_raw.csv"
+        )
+        improved_summary = (
+            BASE_DIR
+            / "Results"
+            / "Full"
+            / "Improved"
+            / "summary_full_improved.csv"
+        )
 
-    improved_summary = BASE_DIR / "Results" / "Improved" / (
-        "summary_improved.csv" if phase == "pilot" else "summary_full_improved.csv"
+    output_file = (
+        BASE_DIR
+        / "Results"
+        / f"comparison_raw_vs_improved_{phase}.csv"
     )
-
-    output_file = BASE_DIR / "Results" / f"comparison_raw_vs_improved_{phase}.csv"
 
     raw = read_summary(raw_summary)
     improved = read_summary(improved_summary)
 
+    validate_required_metrics(raw, str(raw_summary))
+    validate_required_metrics(improved, str(improved_summary))
+
     output_file.parent.mkdir(parents=True, exist_ok=True)
 
     with output_file.open("w", encoding="utf-8-sig", newline="") as file:
-        writer = csv.writer(file)
+        writer = csv.writer(file, quoting=csv.QUOTE_ALL)
 
         writer.writerow(["Metric", "Raw", "Improved", "Difference Improved - Raw"])
 
@@ -204,9 +281,14 @@ def compare(phase: str) -> None:
     print(f"Improved Accuracy  : {improved.get('Accuracy', '')}")
     print(f"Raw Cohen Kappa    : {raw.get('Cohen Kappa', '')}")
     print(f"Improved Kappa     : {improved.get('Cohen Kappa', '')}")
+    print(f"Raw mismatches     : {raw.get('Mismatches', '')}")
+    print(f"Improved mismatches: {improved.get('Mismatches', '')}")
+    print(f"Raw invalid labels : {raw.get('Invalid labels', '')}")
+    print(f"Improved invalid   : {improved.get('Invalid labels', '')}")
     print(f"Raw cost USD       : ${raw.get('Total cost USD', '')}")
     print(f"Improved cost USD  : ${improved.get('Total cost USD', '')}")
     print("-" * 60)
+    print("compare_raw_improved.py completed successfully.")
 
 
 def main() -> None:

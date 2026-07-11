@@ -1,389 +1,233 @@
-# Data/Raw README
+# Data/Raw README / Tài liệu thư mục Data/Raw
 
-> **EN:** This folder contains the Raw version of the Mojira bug report dataset
-> used for LLM-based reproducibility classification.
->
-> **VI:** Thư mục này chứa phiên bản Raw của bộ dữ liệu báo cáo lỗi Mojira,
-> dùng để phân loại khả năng tái hiện lỗi bằng LLM.
+## 1. Overview / Tổng quan
 
----
+**English:**  
+This folder stores the **Raw** version of the Mojira bug report dataset used in the research project **Bug Report Quality Assessment with LLM**. The Raw dataset contains the original bug reports before improvement/refinement. It is used as the baseline dataset for evaluating whether an LLM can assess bug report quality, especially **reproducibility**, consistently with human/manual review.
 
-## 1. Purpose
-
-**EN:** `Data/Raw/` stores the original/raw Mojira bug reports, pilot samples,
-full samples, manual ground truth labels, author annotations, and
-inter-annotator agreement results for the Raw dataset.
-
-This dataset is used to evaluate whether an LLM can classify bug reports as:
-
-- `Executable`
-- `Non-Executable`
-
-The LLM predictions are compared against developer/manual review labels using
-Accuracy and Cohen's Kappa.
-
-**VI:** `Data/Raw/` lưu trữ các báo cáo lỗi Mojira gốc/chưa cải thiện,
-mẫu pilot, mẫu full, nhãn ground truth thủ công, annotation của từng author,
-và kết quả đo độ đồng thuận giữa annotators cho bộ dữ liệu Raw.
-
-Bộ dữ liệu này dùng để đánh giá liệu LLM có thể phân loại báo cáo lỗi thành:
-
-- `Executable`
-- `Non-Executable`
-
-Kết quả dự đoán của LLM được so sánh với nhãn manual review/developer review
-bằng Accuracy và Cohen's Kappa.
+**Tiếng Việt:**  
+Thư mục này lưu phiên bản dữ liệu **Raw** của các bug report trên Mojira, được sử dụng trong đề tài **Bug Report Quality Assessment with LLM**. Bộ dữ liệu Raw là phiên bản báo cáo lỗi gốc trước khi được cải thiện/chỉnh sửa. Đây là bộ dữ liệu nền để đánh giá xem LLM có thể tự động đánh giá chất lượng bug report, đặc biệt là tiêu chí **reproducibility / khả năng tái hiện lỗi**, nhất quán với đánh giá thủ công của con người hay không.
 
 ---
 
-## 2. Folder Structure
+## 2. Research Question / Câu hỏi nghiên cứu
 
-Data/Raw/
-├── RAW/
-│   └── *.json
-│
-├── README.md
-├── full_sample_raw.csv
-├── full_ground_truth_raw.csv
-├── pilot_sample_raw.csv
-├── pilot_ground_truth_raw.csv
-├── pilot_annotation_raw_author1.csv
-├── pilot_annotation_raw_author2.csv
-└── kappa_scores_raw.csv
+**English:**  
+For bug reports on Mojira / Minecraft Issue Tracker, can an LLM automatically assess bug report quality based on reproducibility compared with manual review, achieving **Cohen's Kappa ≥ 0.70**?
 
-**VI:** Cấu trúc trên cho thấy thư mục `Data/Raw/` gồm dữ liệu JSON Raw,
-các file sample cho LLM, các file ground truth, annotation của hai author,
-và file tính Cohen's Kappa giữa annotators.
+**Tiếng Việt:**  
+Đối với các báo cáo lỗi trên Mojira / Minecraft Issue Tracker, LLM đánh giá chất lượng báo cáo lỗi tự động theo tiêu chí reproducibility so với đánh giá thủ công có đạt **Cohen's Kappa ≥ 0.70** hay không?
 
 ---
 
-## 3. File Description
+## 3. Folder Structure / Cấu trúc thư mục
 
-### 3.1 RAW folder
+Data/Raw/  
+├── RAW/  
+│   └── Original or extracted raw dataset files  
+├── full_ground_truth_raw.csv  
+├── full_sample_raw.csv  
+├── kappa_scores_raw.csv  
+├── pilot_annotation_raw_author1.csv  
+├── pilot_annotation_raw_author2.csv  
+├── pilot_ground_truth_raw.csv  
+├── pilot_sample_raw.csv  
+└── README.md  
 
-**EN:** Contains 139 original Mojira bug report JSON files. Each file is expected
-to follow the pattern `MC-xxxxx.json`.
+**English:**  
+The `Data/Raw` folder is for storing original input data, annotation files, and ground-truth files only. Generated LLM outputs, API logs, metric summaries, and mismatch analyses should be stored in `Results/Raw`, not in this folder.
 
-**VI:** Chứa 139 file JSON báo cáo lỗi Mojira gốc. Tên file thường có dạng
-`MC-xxxxx.json`.
-
-### 3.2 full_sample_raw.csv
-
-**EN:** Contains 139 full Raw bug reports used as LLM input for the full
-experiment.
-
-**VI:** Chứa 139 báo cáo Raw dùng làm input cho LLM trong full experiment.
-
-### 3.3 full_ground_truth_raw.csv
-
-**EN:** Contains 139 manual ground truth labels for the full Raw dataset.
-This file is used by `compute_metric.py` for evaluation only. It must not be
-used as LLM input.
-
-**VI:** Chứa 139 nhãn ground truth thủ công cho bộ Raw full. File này chỉ dùng
-để đánh giá bằng `compute_metric.py`, không được dùng làm input cho LLM.
-
-### 3.4 pilot_sample_raw.csv
-
-**EN:** Contains 26 Raw pilot reports used as LLM input for the pilot experiment.
-
-**VI:** Chứa 26 báo cáo Raw dùng làm input cho LLM trong pilot experiment.
-
-### 3.5 pilot_ground_truth_raw.csv
-
-**EN:** Contains 26 manual ground truth labels for the Raw pilot set.
-This file is used by `compute_metric.py` for pilot evaluation.
-
-**VI:** Chứa 26 nhãn ground truth thủ công cho pilot Raw. File này dùng để tính
-metric ở giai đoạn pilot.
-
-### 3.6 pilot_annotation_raw_author1.csv
-
-**EN:** Contains the pilot annotations provided by Author 1 for the Raw dataset.
-
-**VI:** Chứa annotation pilot của Author 1 cho bộ dữ liệu Raw.
-
-### 3.7 pilot_annotation_raw_author2.csv
-
-**EN:** Contains the pilot annotations provided by Author 2 for the Raw dataset.
-
-**VI:** Chứa annotation pilot của Author 2 cho bộ dữ liệu Raw.
-
-### 3.8 kappa_scores_raw.csv
-
-**EN:** Contains the inter-annotator agreement results for the Raw pilot set.
-
-**VI:** Chứa kết quả đo độ đồng thuận giữa annotators cho pilot Raw.
+**Tiếng Việt:**  
+Thư mục `Data/Raw` chỉ dùng để lưu dữ liệu đầu vào gốc, file annotation và file ground truth. Các kết quả sinh ra từ LLM, API log, file summary metric và mismatch analysis nên được lưu trong `Results/Raw`, không lưu trực tiếp trong thư mục này.
 
 ---
 
-## 4. Main Columns in LLM Input Files
+## 4. File Inventory / Danh sách file dữ liệu
 
-This section applies to:
+| File | Rows / Số dòng | English Description | Mô tả tiếng Việt |
+| --- | ---: | --- | --- |
+| `full_sample_raw.csv` | 139 | Full raw bug report sample used as the main LLM input for the full evaluation phase. | Bộ sample Raw đầy đủ, dùng làm dữ liệu đầu vào chính cho LLM ở giai đoạn full evaluation. |
+| `full_ground_truth_raw.csv` | 139 | Ground-truth labels for the full raw dataset. Used to compare against LLM predictions. | Nhãn ground truth cho toàn bộ dữ liệu Raw, dùng để so sánh với kết quả dự đoán của LLM. |
+| `pilot_sample_raw.csv` | 26 | Pilot subset of raw bug reports used for testing the workflow before the full run. | Tập pilot của dữ liệu Raw, dùng để kiểm thử quy trình trước khi chạy toàn bộ. |
+| `pilot_annotation_raw_author1.csv` | 26 | Manual annotation results from Author 1 for the raw pilot sample. | Kết quả annotation thủ công của Author 1 cho tập pilot Raw. |
+| `pilot_annotation_raw_author2.csv` | 26 | Manual annotation results from Author 2 for the raw pilot sample. | Kết quả annotation thủ công của Author 2 cho tập pilot Raw. |
+| `pilot_ground_truth_raw.csv` | 26 | Final/reconciled ground truth for the raw pilot sample after comparing annotations. | Ground truth cuối cùng của tập pilot Raw sau khi đối chiếu annotation giữa các tác giả. |
+| `kappa_scores_raw.csv` | 29 | Inter-annotator agreement file. It contains 26 issue-level score rows and 3 summary rows: `N`, `Cohen Kappa`, and `Agreement`. | File tính độ đồng thuận giữa annotator. File gồm 26 dòng điểm theo từng issue và 3 dòng tổng hợp: `N`, `Cohen Kappa`, `Agreement`. |
+
+**Current pilot agreement / Độ đồng thuận pilot hiện tại:**
+
+| Metric | Value |
+| --- | ---: |
+| `N` | 26 |
+| `Cohen Kappa` | 0.7647 |
+| `Agreement` | 22/26 |
+
+---
+
+## 5. Sample File Columns / Các cột trong file sample
+
+The following columns appear in:
 
 - `pilot_sample_raw.csv`
 - `full_sample_raw.csv`
 
-### 4.1 Issue Key
+| Column | English Meaning | Ý nghĩa tiếng Việt |
+| --- | --- | --- |
+| `Issue Key` | Mojira issue identifier, for example `MC-300962`. | Mã issue trên Mojira, ví dụ `MC-300962`. |
+| `Summary` | Short title or summary of the bug report. | Tiêu đề hoặc tóm tắt ngắn của bug report. |
+| `Type` | Issue type, usually `Bug`. | Loại issue, thường là `Bug`. |
+| `Affects Version/s` | Minecraft version(s) affected by the issue. | Phiên bản Minecraft bị ảnh hưởng bởi lỗi. |
+| `Labels` | Labels/tags attached to the issue. | Nhãn/tag được gắn cho issue. |
+| `Confirmation Status` | Confirmation state of the issue on Mojira. | Trạng thái xác nhận của issue trên Mojira. |
+| `Category` | Category/component of the issue. | Nhóm hoặc thành phần liên quan đến issue. |
+| `Resolution` | Final or current resolution status. | Trạng thái xử lý/kết luận của issue. |
+| `Fix Version/s` | Version(s) where the issue is fixed, if available. | Phiên bản đã sửa lỗi, nếu có. |
+| `Description` | Original textual description of the raw bug report. This is the main input text for Raw S2R evaluation. | Mô tả gốc của bug report Raw. Đây là phần văn bản đầu vào chính để đánh giá S2R của dữ liệu Raw. |
 
-**EN:** Mojira issue key, such as `MC-300962`.
+**Important note / Ghi chú quan trọng:**  
+Unlike the Improved dataset, the Raw sample files do not separate the bug report into `Steps to Reproduce`, `Observed Behavior`, `Expected Behavior`, and `Environment`. These details, if present, are usually embedded inside the original `Description` field.
 
-**VI:** Mã issue trên Mojira, ví dụ `MC-300962`.
-
-### 4.2 Summary
-
-**EN:** Short bug report title.
-
-**VI:** Tiêu đề ngắn của bug report.
-
-### 4.3 Type
-
-**EN:** Issue type, usually `Bug`.
-
-**VI:** Loại issue, thường là `Bug`.
-
-### 4.4 Affects Version/s
-
-**EN:** Minecraft version or versions affected by the bug.
-
-**VI:** Phiên bản Minecraft bị ảnh hưởng bởi lỗi.
-
-### 4.5 Labels
-
-**EN:** Issue labels if available.
-
-**VI:** Nhãn của issue nếu có.
-
-### 4.6 Confirmation Status
-
-**EN:** Confirmation status from the issue tracker.
-
-**VI:** Trạng thái xác nhận từ issue tracker.
-
-### 4.7 Category
-
-**EN:** Bug category if available.
-
-**VI:** Danh mục lỗi nếu có.
-
-### 4.8 Resolution
-
-**EN:** Resolution status from the issue tracker.
-
-**VI:** Trạng thái xử lý hoặc kết luận của issue.
-
-### 4.9 Fix Version/s
-
-**EN:** Version or versions where the bug is fixed, if available.
-
-**VI:** Phiên bản sửa lỗi nếu có.
-
-### 4.10 Description
-
-**EN:** Original/raw description of the bug report.
-
-**VI:** Mô tả gốc/chưa cải thiện của bug report.
+**Khác với dữ liệu Improved:**  
+File sample Raw không tách riêng bug report thành các cột `Steps to Reproduce`, `Observed Behavior`, `Expected Behavior` và `Environment`. Nếu các thông tin này có tồn tại, chúng thường nằm chung trong cột `Description` gốc.
 
 ---
 
-## 5. Main Columns in Ground Truth and Annotation Files
+## 6. Annotation and Ground Truth Columns / Các cột annotation và ground truth
 
-This section applies to:
+The following columns appear in:
 
-- `pilot_ground_truth_raw.csv`
-- `full_ground_truth_raw.csv`
 - `pilot_annotation_raw_author1.csv`
 - `pilot_annotation_raw_author2.csv`
+- `pilot_ground_truth_raw.csv`
+- `full_ground_truth_raw.csv`
 
-### 5.1 BUG-ID
+| Column | English Meaning | Ý nghĩa tiếng Việt |
+| --- | --- | --- |
+| `BUG-ID` | Bug report identifier. In raw files, the value may include the suffix `Raw`. | Mã bug report. Trong file Raw, giá trị có thể có hậu tố `Raw`. |
+| `S2R Label` | Label for Steps to Reproduce, such as `Executable` or `Non-Executable`. | Nhãn đánh giá phần Steps to Reproduce, ví dụ `Executable` hoặc `Non-Executable`. |
+| `S2R Irrep Category` | Category explaining why the S2R is irreproducible/non-executable, if applicable. | Nhóm nguyên nhân khiến S2R không thể tái hiện/không thể thực thi, nếu có. |
+| `Reason` | Explanation for the S2R label/category. | Lý do giải thích cho nhãn hoặc nhóm của S2R. |
+| `OB Category` | Presence category for Observed Behavior. | Nhóm đánh giá sự hiện diện của Observed Behavior. |
+| `OB Label` | Quality label for Observed Behavior, such as `Sufficient` or `Insufficient`. | Nhãn chất lượng của Observed Behavior, ví dụ `Sufficient` hoặc `Insufficient`. |
+| `Reason.1` | Explanation for the OB label/category. | Lý do giải thích cho nhãn hoặc nhóm của Observed Behavior. |
+| `EB Category` | Presence category for Expected Behavior. | Nhóm đánh giá sự hiện diện của Expected Behavior. |
+| `EB Label` | Quality label for Expected Behavior, such as `Accurate` or another applicable label. | Nhãn chất lượng của Expected Behavior, ví dụ `Accurate` hoặc nhãn phù hợp khác. |
+| `Reason.2` | Explanation for the EB label/category. | Lý do giải thích cho nhãn hoặc nhóm của Expected Behavior. |
 
-**EN:** Bug report identifier with the Raw suffix.
-
-**VI:** Mã bug report, thường có hậu tố Raw.
-
-### 5.2 S2R Label
-
-**EN:** Final reproducibility label. The expected values are `Executable`
-and `Non-Executable`.
-
-**VI:** Nhãn khả năng tái hiện. Giá trị mong đợi là `Executable`
-và `Non-Executable`.
-
-### 5.3 S2R Irrep Category
-
-**EN:** Irreproducibility category if the report is not executable.
-
-**VI:** Nhóm nguyên nhân không tái hiện được nếu report không executable.
-
-### 5.4 Reason
-
-**EN:** Explanation for the S2R label or category.
-
-**VI:** Lý do cho nhãn hoặc category.
-
-### 5.5 OB Category
-
-**EN:** Observed Behavior category.
-
-**VI:** Nhóm đánh giá Observed Behavior.
-
-### 5.6 OB Label
-
-**EN:** Observed Behavior quality label.
-
-**VI:** Nhãn chất lượng của Observed Behavior.
-
-### 5.7 EB Category
-
-**EN:** Expected Behavior category.
-
-**VI:** Nhóm đánh giá Expected Behavior.
-
-### 5.8 EB Label
-
-**EN:** Expected Behavior quality label.
-
-**VI:** Nhãn chất lượng của Expected Behavior.
+**Note / Ghi chú:**  
+If `pilot_ground_truth_raw.csv` contains empty columns such as `Unnamed: 10` or `Unnamed: 11`, they are likely export artifacts and should be ignored or removed before strict schema validation.
 
 ---
 
-## 6. Dataset Statistics
+## 7. Kappa Score File / File kappa_scores_raw.csv
 
-### 6.1 Pilot ground truth
+`kappa_scores_raw.csv` is used to summarize the agreement between two annotators during the pilot phase.
 
-- **File:** `pilot_ground_truth_raw.csv`
-- **Total cases:** 26
-- **Executable:** 10
-- **Non-Executable:** 16
+| Column | English Meaning | Ý nghĩa tiếng Việt |
+| --- | --- | --- |
+| `issue_key` | Issue key or summary row name. | Mã issue hoặc tên dòng tổng hợp. |
+| `author1_score` | Numeric score assigned by Author 1. | Điểm số do Author 1 gán. |
+| `author2_score` | Numeric score assigned by Author 2. | Điểm số do Author 2 gán. |
+| `agree` | Agreement flag: `1` means both authors agree, `0` means disagreement. | Cờ đồng thuận: `1` nghĩa là hai tác giả đồng ý, `0` nghĩa là không đồng ý. |
 
-### 6.2 Full ground truth
+The final rows summarize the pilot agreement:
 
-- **File:** `full_ground_truth_raw.csv`
-- **Total cases:** 139
-- **Executable:** 40
-- **Non-Executable:** 99
-
-### 6.3 Author 1 pilot annotation
-
-- **File:** `pilot_annotation_raw_author1.csv`
-- **Total cases:** 26
-- **Executable:** 10
-- **Non-Executable:** 16
-
-### 6.4 Author 2 pilot annotation
-
-- **File:** `pilot_annotation_raw_author2.csv`
-- **Total cases:** 26
-- **Executable:** 9
-- **Non-Executable:** 17
-
-### 6.5 Pilot inter-annotator agreement
-
-N            : 26
-Cohen Kappa  : 0.7647
-Agreement    : 22/26
-
-**VI:** Kết quả trên cho thấy hai annotators có mức độ đồng thuận tốt ở pilot
-Raw, với Cohen's Kappa là `0.7647`.
+N = 26  
+Cohen Kappa = 0.7647  
+Agreement = 22/26  
 
 ---
 
-## 7. Usage in Experiment
+## 8. Recommended Workflow / Quy trình đề xuất
 
-### 7.1 Use sample files as LLM input
+### 8.1 English Workflow
 
-Use these files as input for `run_experiment.py`:
+1. Use `pilot_sample_raw.csv` as the pilot input dataset.
+2. Compare `pilot_annotation_raw_author1.csv` and `pilot_annotation_raw_author2.csv`.
+3. Use `kappa_scores_raw.csv` to check inter-annotator agreement.
+4. Create or verify `pilot_ground_truth_raw.csv`.
+5. Run the LLM on `pilot_sample_raw.csv`.
+6. Compare the LLM output with `pilot_ground_truth_raw.csv`.
+7. After the pilot workflow is correct, run the LLM on `full_sample_raw.csv`.
+8. Compare the full LLM output with `full_ground_truth_raw.csv`.
+9. Use the Raw result as the baseline for comparison with the Improved result.
 
-Data/Raw/pilot_sample_raw.csv
-Data/Raw/full_sample_raw.csv
+### 8.2 Quy trình tiếng Việt
 
-**VI:** Dùng các file sample ở trên làm input cho LLM.
-
-### 7.2 Use ground truth files only for evaluation
-
-Use these files only for `compute_metric.py`:
-
-Data/Raw/pilot_ground_truth_raw.csv
-Data/Raw/full_ground_truth_raw.csv
-
-**VI:** Chỉ dùng các file ground truth ở trên để đánh giá kết quả,
-không dùng làm input cho LLM.
-
-### 7.3 Recommended commands
-
-Run the Raw pilot experiment:
-
-.\.venv\Scripts\python.exe Scripts\run_experiment.py --version raw --phase pilot
-.\.venv\Scripts\python.exe Scripts\compute_metric.py --version raw --phase pilot
-
-Run the Raw full experiment:
-
-.\.venv\Scripts\python.exe Scripts\run_experiment.py --version raw --phase full
-.\.venv\Scripts\python.exe Scripts\compute_metric.py --version raw --phase full
+1. Dùng `pilot_sample_raw.csv` làm dữ liệu đầu vào cho giai đoạn pilot.
+2. So sánh `pilot_annotation_raw_author1.csv` và `pilot_annotation_raw_author2.csv`.
+3. Dùng `kappa_scores_raw.csv` để kiểm tra độ đồng thuận giữa hai annotator.
+4. Tạo hoặc kiểm tra `pilot_ground_truth_raw.csv`.
+5. Chạy LLM với `pilot_sample_raw.csv`.
+6. So sánh kết quả LLM với `pilot_ground_truth_raw.csv`.
+7. Khi quy trình pilot đã đúng, chạy LLM với `full_sample_raw.csv`.
+8. So sánh kết quả LLM full với `full_ground_truth_raw.csv`.
+9. Dùng kết quả Raw làm baseline để so sánh với kết quả Improved.
 
 ---
 
-## 8. Important Notes
+## 9. Data Usage Rules / Quy tắc sử dụng dữ liệu
 
-- **EN:** Do not use `pilot_ground_truth_raw.csv` or
-  `full_ground_truth_raw.csv` as LLM input because they contain manual labels
-  and annotation information.
-- **VI:** Không dùng `pilot_ground_truth_raw.csv` hoặc
-  `full_ground_truth_raw.csv` làm input cho LLM vì các file này chứa nhãn
-  thủ công và thông tin annotation.
+### 9.1 English Data Usage Rules
 
-- **EN:** Use `pilot_sample_raw.csv` and `full_sample_raw.csv` as the LLM
-  input files.
-- **VI:** Dùng `pilot_sample_raw.csv` và `full_sample_raw.csv` làm input
-  cho LLM.
+- Keep the file names unchanged because scripts may depend on exact paths.
+- Do not manually edit ground-truth files unless the team has agreed on the correction.
+- Do not use ground-truth labels as input in LLM prompts.
+- Store generated outputs in `Results/Raw`, not in `Data/Raw`.
+- Treat `full_ground_truth_raw.csv` and `pilot_ground_truth_raw.csv` as reference labels.
+- Treat `full_sample_raw.csv` and `pilot_sample_raw.csv` as LLM input data.
+- The nested `RAW/` folder should be kept as the original/extracted source folder unless the scripts explicitly require it.
 
-- **EN:** Raw reports contain the original bug report text before improvement.
-- **VI:** Báo cáo Raw chứa nội dung bug report gốc trước khi được cải thiện.
+### 9.2 Quy tắc sử dụng dữ liệu tiếng Việt
 
-- **EN:** The file `kappa_scores_raw.csv` is used to report inter-annotator
-  agreement for the pilot annotation process.
-- **VI:** File `kappa_scores_raw.csv` dùng để báo cáo độ đồng thuận giữa
-  annotators trong giai đoạn pilot.
-
-- **EN:** Result files generated by LLM experiments should be stored in
-  `Results/Raw/`, not in `Data/Raw/`.
-- **VI:** Các file kết quả do LLM tạo ra nên được lưu trong `Results/Raw/`,
-  không lưu trong `Data/Raw/`.
+- Giữ nguyên tên file vì script có thể phụ thuộc vào đúng đường dẫn và đúng tên file.
+- Không chỉnh sửa thủ công các file ground truth nếu nhóm chưa thống nhất.
+- Không đưa nhãn ground truth vào prompt cho LLM.
+- Lưu kết quả sinh ra vào `Results/Raw`, không lưu vào `Data/Raw`.
+- Xem `full_ground_truth_raw.csv` và `pilot_ground_truth_raw.csv` là nhãn tham chiếu.
+- Xem `full_sample_raw.csv` và `pilot_sample_raw.csv` là dữ liệu đầu vào cho LLM.
+- Thư mục con `RAW/` nên được giữ như thư mục nguồn/extracted ban đầu, trừ khi script yêu cầu dùng trực tiếp.
 
 ---
 
-## 9. Related Output Folder
+## 10. Relationship with Improved Dataset / Quan hệ với dữ liệu Improved
 
-The output files for Raw experiments are expected to be stored in:
+**English:**  
+The Raw dataset should be evaluated in parallel with the Improved dataset. The Raw dataset represents the original bug reports, while the Improved dataset represents the refined bug reports. Comparing both versions helps determine whether improving bug report content makes LLM-based quality assessment more accurate or more consistent.
 
-Results/Raw/
-
-Typical output files include:
-
-pilot_llm_output_raw.csv
-pilot_api_log_raw.csv
-summary_raw.csv
-mismatch_analysis_raw.csv
-
-full_llm_output_raw.csv
-full_api_log_raw.csv
-summary_full_raw.csv
-mismatch_analysis_full_raw.csv
-
-**VI:** Các file kết quả của thí nghiệm Raw nên được lưu tại `Results/Raw/`.
+**Tiếng Việt:**  
+Dữ liệu Raw nên được đánh giá song song với dữ liệu Improved. Dữ liệu Raw là bug report gốc, còn dữ liệu Improved là bug report đã được cải thiện. Việc so sánh hai phiên bản giúp xác định liệu việc cải thiện nội dung bug report có giúp LLM đánh giá chất lượng chính xác hoặc nhất quán hơn hay không.
 
 ---
 
-## 10. Scope
+## 11. Expected Result Files / Các file kết quả dự kiến
 
-This README only describes the `Data/Raw/` folder.
+The following files should be generated outside this folder, under `Results/Raw`:
 
-It does not cover:
+Results/Raw/  
+├── pilot_llm_output_raw.csv  
+├── pilot_api_log_raw.csv  
+├── summary_raw.csv  
+├── mismatch_analysis_raw.csv  
+├── full_llm_output_raw.csv  
+├── full_api_log_raw.csv  
+├── summary_full_raw.csv  
+└── mismatch_analysis_full_raw.csv  
 
-- `Data/Improved/`
-- `Results/`
-- `Figures/`
-- analysis notebooks such as `pilot_analysis.ipynb` or `full_analysis.ipynb`
+**English:**  
+These result files are not part of the source dataset. They are produced after running the LLM and evaluation scripts.
 
-**VI:** README này chỉ mô tả thư mục `Data/Raw/`. README này không mô tả
-`Data/Improved/`, `Results/`, `Figures/`, hoặc các notebook phân tích.
+**Tiếng Việt:**  
+Các file kết quả này không thuộc dữ liệu nguồn. Chúng được tạo ra sau khi chạy LLM và các script đánh giá.
+
+---
+
+## 12. Notes / Ghi chú
+
+**English:**  
+This README documents the data structure and meaning of files in `Data/Raw`. It should be updated whenever files are renamed, new columns are added, or the evaluation workflow changes.
+
+**Tiếng Việt:**  
+README này mô tả cấu trúc dữ liệu và ý nghĩa các file trong `Data/Raw`. Nên cập nhật file này khi đổi tên file, thêm cột mới hoặc thay đổi quy trình đánh giá.
+
+---
