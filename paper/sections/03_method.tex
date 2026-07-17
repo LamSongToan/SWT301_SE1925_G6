@@ -8,10 +8,10 @@
 
 We used the \texttt{RQ1} subset of the
 \emph{ImproBR Replication Package}, which is publicly available on
-Figshare~\cite{improbr2026dataset}. This subset contains 139
-real-world bug reports collected from Mojira, the official issue
-tracker for Minecraft. We selected \texttt{RQ1} because it provides
-the report content and manual labels required to evaluate the
+Figshare~\cite{akyol2026improbr,improbr2026dataset}. This subset
+contains 139 real-world bug reports collected from Mojira, the official
+issue tracker for Minecraft. We selected \texttt{RQ1} because it
+provides the report content and manual labels required to evaluate the
 executability of \emph{Steps to Reproduce} (S2R).
 
 ImproBR provides two corresponding versions of each issue:
@@ -24,10 +24,11 @@ such as S2R. We paired the two versions using
 Improved reports for the same issue.
 
 We obtained the ground-truth labels from the manual evaluations
-included in the replication package~\cite{improbr2026dataset}. In the
-original study, two human annotators independently evaluated both
-versions of each report. We retained only the S2R label because our
-study focuses on the automated assessment of S2R executability.
+included in the replication package
+\cite{akyol2026improbr,improbr2026dataset}. In the original study, two
+human annotators independently evaluated both versions of each report.
+We retained only the S2R label because our study focuses on the
+automated assessment of S2R executability.
 
 The S2R label has two possible values: \emph{Executable} and
 \emph{Non-Executable}. An Executable label indicates that the
@@ -70,12 +71,10 @@ leakage.
 We implemented the experimental pipeline in Python and used the
 \texttt{openai} SDK to access the OpenAI Chat Completions API. We
 configured the API to use
-\texttt{gpt-4o-mini-2024-07-18} with
+\texttt{gpt-4o-mini-2024-07-18}~\cite{openai2024gpt4omini} with
 \texttt{temperature}=0 and \texttt{seed}=210. We enabled JSON mode
-using
-\path|response_format={"type":"json_object"}|.
-The experiment script did not explicitly set the
-\texttt{max\_tokens} parameter.
+using \path|response_format={"type":"json_object"}|. The experiment
+script did not explicitly set the \texttt{max\_tokens} parameter.
 
 Fixing the model version and generation parameters reduces avoidable
 variation between experimental runs and supports replication of the
