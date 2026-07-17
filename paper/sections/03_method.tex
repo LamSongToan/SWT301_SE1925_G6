@@ -1,0 +1,159 @@
+\section{Methodology}
+\label{sec:method}
+
+% ==================== LR START ====================
+
+\subsection{Dataset}
+\label{subsec:dataset}
+
+In this study, we used the \texttt{RQ1} subset of the
+\textit{ImproBR Replication Package}, which is publicly available on
+Figshare~\cite{improbr2026dataset}. It contains 139 real-world bug
+reports collected from Mojira, the official issue tracker for
+Minecraft. We selected \texttt{RQ1} because it provides the report
+content and manual labels required to evaluate the executability of
+\textit{Steps to Reproduce} (S2R).
+
+Each issue has two corresponding versions. The \textit{Raw} version
+contains the original report submitted to Mojira before being processed
+by ImproBR. The \textit{Improved} version is the corresponding output
+of the ImproBR pipeline. In the Improved report, components such as S2R
+may be added, clarified, or reorganized. The two versions were paired
+using \texttt{issue\_key}, enabling a paired comparison of the same
+issue under the Raw and Improved conditions.
+
+Ground-truth labels were obtained from the manual evaluations included
+in the replication package~\cite{improbr2026dataset}. Two independent
+human annotators evaluated both report versions. Because our study
+focuses on automatically assessing S2R executability, we used only the
+S2R label. This label has two possible values:
+\texttt{Executable} and \texttt{Non-Executable}. A report is labeled
+\texttt{Executable} when its reproduction steps are sufficiently clear
+for an evaluator to follow. A report is labeled
+\texttt{Non-Executable} when missing, incorrect, or ambiguous
+information prevents the evaluator from following the steps without
+making additional assumptions.
+
+The Raw condition contains 40 \emph{Executable} reports (28.8\%) and
+99 \emph{Non-Executable} reports (71.2\%). The Improved condition
+contains 94 \emph{Executable} reports (67.6\%) and 45
+\emph{Non-Executable} reports (32.4\%). These ground-truth labels serve
+as the reference for evaluating model predictions. Each prediction is
+matched to its corresponding label using \texttt{issue\_key} and the
+report condition (Raw or Improved).
+
+The 139 issues were divided into three subsets:
+\textit{Pilot}, \textit{Development}, and \textit{Holdout}. First,
+26 issues were assigned to Pilot for checking the execution pipeline,
+output schema, and prompt design. After excluding the Pilot issues, the
+remaining 113 issues were divided into 75 Development issues and 38
+Holdout issues. We used \texttt{seed}=210 to make this split
+reproducible.
+
+The Development set was used to refine the Full configuration and
+conduct error analysis; its results were treated as calibration
+evidence rather than a final independent performance estimate. The
+Holdout set was reserved for the final evaluation. Splitting was
+performed at the \texttt{issue\_key} level, so the Raw and Improved
+versions of each issue were always assigned to the same subset. This
+prevents pair-level leakage between the Development and Holdout sets.
+
+
+\subsection{Experimental Setup and Pipeline}
+\label{subsec:pipeline}
+
+The experimental pipeline was implemented in Python and accessed the
+OpenAI Chat Completions API through the \texttt{openai} SDK. We used
+\texttt{gpt-4o-mini-2024-07-18} with
+\texttt{temperature}=0 and \texttt{seed}=210. JSON mode was enabled
+using \path|response_format={"type":"json_object"}|. The
+\texttt{max\_tokens} parameter was not explicitly specified. Fixing
+the model version and generation parameters reduces unnecessary output
+variation and supports reproducibility, although it does not guarantee
+identical responses across repeated executions.
+
+We used separate prompt templates for the Raw and Improved conditions.
+Each template consists of System and User sections. The System section
+defines the model's role, evaluation rubric, allowed label values, and
+JSON output requirement. The User section supplies the
+\texttt{issue\_key}, report content, and required JSON schema. The Raw
+prompt instructs the model to evaluate only the Raw report. The
+Improved prompt specifies the Improved report as the evaluation target
+and includes its paired Raw report only as context for preserving the
+original issue intent. Owing to the page limit, the complete prompt
+texts are provided in the replication package.
+
+During the Pilot phase, we used the Raw V10 and Improved V18 prompts,
+both based on the rubric defined in
+\path{evaluation_metrics.yaml}. For the Full phase, Raw V11 and
+Improved V20 were refined on the Development set. Improved V20 combines
+the V19 prompt with Rules V20. The resulting Full configurations were
+then evaluated on the same 26 Pilot issues during Pilot Validation.
+
+Post-processing rules were defined according to the evaluation rubric.
+Pilot-specific rules were refined during the Pilot phase, whereas rules
+for the Full configuration were calibrated only on the Development
+set. During inference, these rules inspect the target report and, where
+applicable in the Improved condition, its paired Raw context.
+Ground Truth and prior predictions are not available to the rules.
+Holdout labels and mismatches were not used for prompt refinement or
+rule calibration.
+
+After Pilot Validation, we froze the model version, prompts,
+experimental script, post-processing rules, and metric logic. We
+recorded SHA-256 hashes of the frozen files to verify their integrity
+before the Holdout evaluation. The frozen configuration was then
+evaluated once on the 38 Holdout issues for each condition. Holdout
+results were not used for further tuning.
+
+For each issue, the pipeline reads the common fields
+\emph{Issue Key}, \emph{Summary}, \emph{Type},
+\emph{Affects Version/s}, \emph{Labels}, \emph{Category}, and
+\emph{Description}. Improved reports additionally include
+\emph{Steps to Reproduce}, \emph{Observed Behavior},
+\emph{Expected Behavior}, and \emph{Environment}. Ground Truth,
+annotator labels, prior predictions, and potentially biasing
+administrative fields---including \emph{Confirmation Status},
+\emph{Resolution}, \emph{Fix Version/s}, \emph{Votes}, and
+\emph{Watch Count}---are excluded from the prompt.
+
+For the Raw condition, the Raw report is inserted into the
+corresponding Raw prompt. For the Improved condition, the Improved
+report is the evaluation target, while its paired Raw report is
+included only as original-intent context. Each issue in each condition
+is processed through one application-level API request. Ground Truth
+is not included in the request and is introduced only during metric
+computation.
+
+The model is required to return a structured JSON object containing
+the \texttt{issue\_key}; the S2R label, reproducibility, validity,
+failure type, and rationale; auxiliary assessments of Expected and
+Observed Behavior; and an overall rationale. The
+\path{run_experiment.py} script reads the CSV input, identifies the
+\texttt{issue\_key}, constructs the prompt, calls the API, parses the
+response, applies the post-processing rules, and stores the result.
+
+After receiving a response, the pipeline checks whether it is valid
+JSON, verifies that all required fields are present, normalizes allowed
+label values, and checks logical consistency among the fields. If an
+API error, empty response, malformed JSON, or missing required field
+occurs, the script records the case with status \texttt{error} and
+continues with the next issue. The experiment script does not implement
+an additional retry loop.
+
+Structured predictions are stored in
+\path{*_llm_output_*.csv}, while API status, model and prompt versions,
+seed, \texttt{system\_fingerprint}, token usage, and cost are stored in
+\path{*_api_log_*.csv}. Predictions are then matched with Ground Truth
+using both \texttt{issue\_key} and the corresponding condition
+(Raw or Improved). The merged data are passed to
+\path{compute_metric.py}, which computes Accuracy, Cohen's Kappa, the
+confusion matrix, and the list of mismatched cases. The source code,
+prompts, data splits, and raw experimental outputs required for
+replication are available at
+\url{https://github.com/LamSongToan/SWT301_SE1925_G6}.
+
+% ===================== LR END =====================
+% ===================== MS START ===================
+
+% MS writes Metrics and Statistical Analysis Plan below.
