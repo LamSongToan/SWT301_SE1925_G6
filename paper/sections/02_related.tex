@@ -1,0 +1,80 @@
+\section{Related Work}
+\label{sec:related}
+
+Our study sits at the intersection of three lines of research: (i) empirical
+work characterizing what makes bug reports useful, (ii) techniques that assess
+and improve the \emph{steps to reproduce} (S2R) that determine whether a report
+is reproducible, and (iii) the emerging use of large language models (LLMs) for
+bug report analysis and as automated evaluators. We review each theme and then
+position our contribution.
+
+\subsection{Bug Report Quality and Information Completeness}
+\label{sec:related:quality}
+
+A long line of empirical research establishes that bug reports vary widely in
+quality and that this variation directly affects triage and resolution effort.
+Survey evidence from developers of large open-source projects shows a systematic
+mismatch between the information developers most need---steps to reproduce,
+stack traces, and test cases---and the information reporters typically
+provide~\cite{zimmermann2010good}. Complementary quantitative studies model
+report quality from surface and textual features and confirm that such features
+predict how quickly a report is acted upon, framing quality assessment as a
+largely automatable task~\cite{hooimeijer2007modeling}. Broader content analyses
+across multiple projects further quantify how often key fields are missing and
+trace the downstream consequences of incomplete reports for developers who must
+recover the missing context~\cite{davies2014whats}. Collectively, this theme
+motivates \emph{reproducibility} as the quality dimension of greatest practical
+value, yet it treats quality mostly through proxy features rather than by
+judging whether a report is actually reproducible.
+
+\subsection{Reproducibility and the Quality of Steps to Reproduce}
+\label{sec:related:s2r}
+
+A second theme targets the S2R directly, since incomplete or ambiguous steps are
+the dominant obstacle to reproducing a failure. Early tool support augmented the
+reporting process itself, guiding Android reporters to produce more complete,
+reproducible steps at submission time~\cite{moran2015autocompleting}. Later work
+shifted toward automatically \emph{assessing} S2R quality: Euler identifies the
+reported steps and flags missing or low-quality ones to give reporters
+actionable feedback~\cite{chaparro2019assessing}, and more recent approaches
+combine language understanding with app UI models so that natural-language steps
+are grounded in concrete interface interactions~\cite{mahmud2025combining}.
+Closest to our setting, ImproBR uses an LLM pipeline to detect and repair
+missing or ambiguous S2R, observed behavior, and expected behavior on the Mojira
+issue tracker, substantially raising the share of executable steps and fully
+reproducible reports~\cite{akyol2026improbr}. A common thread, however, is that
+these S2R techniques are built for GUI/mobile applications and rely on program
+or dynamic analysis of a runnable app to establish the language-to-program
+mapping---an assumption that does not transfer to a game issue tracker such as
+Minecraft/Mojira, and none of them frames reproducibility assessment as a
+measured agreement task against human judgment.
+
+\subsection{Large Language Models for Bug Report Analysis and Evaluation}
+\label{sec:related:llm}
+
+The third theme concerns LLMs applied to software engineering and, increasingly,
+as evaluators. Systematic reviews document the rapid adoption of LLMs across SE
+tasks and note that data quality and rigorous evaluation---not merely model or
+dataset scale---determine reliability~\cite{hou2024llm4se}. In parallel, the
+``LLM-as-judge'' paradigm studies when a model's assessments can substitute for
+human evaluation, together with the meta-evaluation methods and limitations that
+govern their trustworthiness~\cite{li2024judges}. This literature makes clear
+that an LLM used as an assessor must itself be validated against human
+annotators using an explicit reliability metric, rather than assumed correct.
+
+\subsection{Positioning of Our Work}
+\label{sec:related:positioning}
+
+Prior work either (i) characterizes bug report quality through proxy features
+without judging actual reproducibility, (ii) assesses S2R quality for GUI/mobile
+apps using program or dynamic analysis that is infeasible for the
+Minecraft/Mojira domain, or (iii) applies LLMs to \emph{generate}, \emph{improve},
+or \emph{classify} reports---including ImproBR on the same Mojira
+data~\cite{akyol2026improbr}---without validating the LLM as a reproducibility
+\emph{assessor}. Our study addresses this gap: we use an LLM to automatically
+assess bug report reproducibility on Mojira and evaluate it directly against
+human expert annotation, treating the LLM-as-judge concern
+seriously~\cite{li2024judges} by reporting Cohen's Kappa against a pre-registered
+threshold of $\kappa \geq 0.70$. To our knowledge, this is the first study to
+benchmark automated reproducibility assessment as a human-agreement task on this
+domain.
