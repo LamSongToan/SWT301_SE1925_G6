@@ -1,2 +1,69 @@
 \section{Discussion}
 \label{sec:discussion}
+
+\subsection{The Acceptance Criterion Is Not Met on Held-Out Data}
+\label{subsec:disc-finding}
+
+On the 38-report holdout, GPT-4o mini reached Cohen's $\kappa = 0.235$ on Raw
+reports and $\kappa = 0.099$ on Improved reports. Both values fall well below the
+$\kappa \geq 0.70$ criterion we fixed before the holdout run, and both sit in the
+lower half of the Landis and Koch scale~\cite{landis1977measurement}: fair
+agreement for Raw and only slight agreement for Improved. Read against the
+research question, the answer is negative. The model does not agree with human
+annotators on steps-to-reproduce executability strongly enough to be treated as a
+substitute for manual assessment on this dataset. We state this plainly rather
+than soften it, because the size of the gap, not its direction, is what carries
+the lesson.
+
+\subsection{Accuracy Conceals the Disagreement}
+\label{subsec:disc-accuracy}
+
+The two conditions produced identical accuracy, $0.684$ (26 of 38), yet their
+kappa values differ by more than a factor of two. This is exactly the situation
+that motivated our choice of a chance-corrected metric~\cite{cohen1960coefficient}.
+Because the holdout label distribution is skewed, a predictor can match roughly
+two thirds of the labels while contributing little beyond the majority class. The
+Improved condition makes the point concrete: the model predicted Executable for
+37 of 38 reports and Non-Executable for only one. It never mislabeled a genuinely
+executable report, but it also flagged almost none of the deficient ones, leaving
+a single true negative out of thirteen Non-Executable cases. In effect, the
+evaluator rubber-stamps improved reports as reproducible instead of judging them.
+On Raw reports the predictions are less lopsided (12 Executable, 26
+Non-Executable), which is why the Raw kappa, though still weak, stays above the
+Improved kappa.
+
+\subsection{Calibration Does Not Transfer to Unseen Reports}
+\label{subsec:disc-generalization}
+
+The contrast between calibration and holdout is the central result. On the
+development subset used to tune the prompt, agreement was substantial to almost
+perfect (Raw $\kappa \approx 0.87$, Improved $\kappa \approx 0.81$). None of that
+strength survived on the protected holdout. The drop is not a small erosion; it is
+a collapse from almost-perfect to slight agreement once the reports were no longer
+part of prompt design. Any evaluation that had measured agreement on the same data
+used to build the evaluator would have reported a misleadingly strong result. This
+is the concrete form of a caution raised in the LLM-as-judge
+literature~\cite{li2024judges}: an automated evaluator must be validated on data it
+was not shaped against before its agreement figures can be trusted.
+
+\subsection{Relation to Prior Work and Implications}
+\label{subsec:disc-implications}
+
+ImproBR reports that its pipeline raises the share of executable steps to
+reproduce on Mojira from $28.8\%$ to $67.6\%$~\cite{akyol2026improbr}. Our findings
+add a cautionary counterpart from the evaluation side. When the same model family
+is asked to judge those improved reports, it defaults to Executable and loses the
+ability to separate a genuinely reproducible improved report from one that is still
+deficient. An LLM evaluator can therefore echo the optimism of an LLM improver
+without adding independent discriminative value, which is precisely the failure
+mode that validation against human labels is meant to catch~\cite{li2024judges,hou2024llm4se}.
+
+The practical reading follows directly. On this domain, GPT-4o mini is not reliable
+enough to replace human reproducibility triage. On Raw reports it retains a weak but
+non-trivial signal and could, under human oversight, serve as a coarse pre-filter
+that surfaces likely non-reproducible reports for review. On Improved reports it is
+unsuitable as an independent judge, because it approves almost everything. One more
+bound is worth keeping in view: the two human annotators themselves agreed only at
+$\kappa \approx 0.76$, so executability is an inherently difficult judgment even for
+people. The model's holdout agreement, however, falls far short of that human
+ceiling rather than approaching it.
