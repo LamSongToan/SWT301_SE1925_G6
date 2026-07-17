@@ -6,154 +6,281 @@
 \subsection{Dataset}
 \label{subsec:dataset}
 
-In this study, we used the \texttt{RQ1} subset of the
-\textit{ImproBR Replication Package}, which is publicly available on
-Figshare~\cite{improbr2026dataset}. It contains 139 real-world bug
-reports collected from Mojira, the official issue tracker for
-Minecraft. We selected \texttt{RQ1} because it provides the report
-content and manual labels required to evaluate the executability of
-\textit{Steps to Reproduce} (S2R).
+We used the \texttt{RQ1} subset of the
+\emph{ImproBR Replication Package}, which is publicly available on
+Figshare~\cite{improbr2026dataset}. This subset contains 139
+real-world bug reports collected from Mojira, the official issue
+tracker for Minecraft. We selected \texttt{RQ1} because it provides
+the report content and manual labels required to evaluate the
+executability of \emph{Steps to Reproduce} (S2R).
 
-Each issue has two corresponding versions. The \textit{Raw} version
-contains the original report submitted to Mojira before being processed
-by ImproBR. The \textit{Improved} version is the corresponding output
-of the ImproBR pipeline. In the Improved report, components such as S2R
-may be added, clarified, or reorganized. The two versions were paired
-using \texttt{issue\_key}, enabling a paired comparison of the same
-issue under the Raw and Improved conditions.
+ImproBR provides two corresponding versions of each issue:
+\emph{Raw} and \emph{Improved}. The Raw version preserves the original
+report submitted to Mojira before ImproBR processing. The Improved
+version contains the output produced by the ImproBR pipeline. In this
+version, the pipeline may add, clarify, or reorganize report components
+such as S2R. We paired the two versions using
+\texttt{issue\_key}. This pairing allowed us to compare the Raw and
+Improved reports for the same issue.
 
-Ground-truth labels were obtained from the manual evaluations included
-in the replication package~\cite{improbr2026dataset}. Two independent
-human annotators evaluated both report versions. Because our study
-focuses on automatically assessing S2R executability, we used only the
-S2R label. This label has two possible values:
-\texttt{Executable} and \texttt{Non-Executable}. A report is labeled
-\texttt{Executable} when its reproduction steps are sufficiently clear
-for an evaluator to follow. A report is labeled
-\texttt{Non-Executable} when missing, incorrect, or ambiguous
-information prevents the evaluator from following the steps without
-making additional assumptions.
+We obtained the ground-truth labels from the manual evaluations
+included in the replication package~\cite{improbr2026dataset}. In the
+original study, two human annotators independently evaluated both
+versions of each report. We retained only the S2R label because our
+study focuses on the automated assessment of S2R executability.
 
-The Raw condition contains 40 \emph{Executable} reports (28.8\%) and
-99 \emph{Non-Executable} reports (71.2\%). The Improved condition
-contains 94 \emph{Executable} reports (67.6\%) and 45
-\emph{Non-Executable} reports (32.4\%). These ground-truth labels serve
-as the reference for evaluating model predictions. Each prediction is
-matched to its corresponding label using \texttt{issue\_key} and the
-report condition (Raw or Improved).
+The S2R label has two possible values: \emph{Executable} and
+\emph{Non-Executable}. An Executable label indicates that the
+reproduction steps contain sufficient information for an evaluator to
+follow them. A Non-Executable label indicates that missing, incorrect,
+or ambiguous information prevents the evaluator from completing the
+steps without making additional assumptions.
 
-The 139 issues were divided into three subsets:
-\textit{Pilot}, \textit{Development}, and \textit{Holdout}. First,
-26 issues were assigned to Pilot for checking the execution pipeline,
-output schema, and prompt design. After excluding the Pilot issues, the
-remaining 113 issues were divided into 75 Development issues and 38
-Holdout issues. We used \texttt{seed}=210 to make this split
+The Raw condition contains 40 Executable reports (28.8\%) and 99
+Non-Executable reports (71.2\%). The Improved condition contains 94
+Executable reports (67.6\%) and 45 Non-Executable reports (32.4\%).
+We used these manual annotations as reference labels when evaluating
+the model predictions. We matched each prediction to its ground-truth
+label using \texttt{issue\_key} and the corresponding report
+condition.
+
+We partitioned the 139 issues into three subsets:
+\emph{Pilot}, \emph{Development}, and \emph{Holdout}. We assigned 26
+issues to the Pilot subset to check the execution pipeline, output
+schema, and initial prompt design. After excluding these issues, we
+divided the remaining 113 issues into 75 Development issues and 38
+Holdout issues. We used a random seed of 210 to make this split
 reproducible.
 
-The Development set was used to refine the Full configuration and
-conduct error analysis; its results were treated as calibration
-evidence rather than a final independent performance estimate. The
-Holdout set was reserved for the final evaluation. Splitting was
-performed at the \texttt{issue\_key} level, so the Raw and Improved
-versions of each issue were always assigned to the same subset. This
-prevents pair-level leakage between the Development and Holdout sets.
+We used the Development subset to refine the Full configuration and
+analyze prediction errors during development. We therefore treated the
+Development results as calibration evidence rather than as an
+independent estimate of model performance. We reserved the Holdout
+subset for the final evaluation.
 
+We performed the split at the \texttt{issue\_key} level. The Raw and
+Improved versions of the same issue were therefore always assigned to
+the same subset. This procedure prevented paired reports from appearing
+in different experimental subsets and reduced the risk of data
+leakage.
 
 \subsection{Experimental Setup and Pipeline}
 \label{subsec:pipeline}
 
-The experimental pipeline was implemented in Python and accessed the
-OpenAI Chat Completions API through the \texttt{openai} SDK. We used
+We implemented the experimental pipeline in Python and used the
+\texttt{openai} SDK to access the OpenAI Chat Completions API. We
+configured the API to use
 \texttt{gpt-4o-mini-2024-07-18} with
-\texttt{temperature}=0 and \texttt{seed}=210. JSON mode was enabled
-using \path|response_format={"type":"json_object"}|. The
-\texttt{max\_tokens} parameter was not explicitly specified. Fixing
-the model version and generation parameters reduces unnecessary output
-variation and supports reproducibility, although it does not guarantee
-identical responses across repeated executions.
+\texttt{temperature}=0 and \texttt{seed}=210. We enabled JSON mode
+using
+\path|response_format={"type":"json_object"}|.
+The experiment script did not explicitly set the
+\texttt{max\_tokens} parameter.
 
-We used separate prompt templates for the Raw and Improved conditions.
-Each template consists of System and User sections. The System section
-defines the model's role, evaluation rubric, allowed label values, and
-JSON output requirement. The User section supplies the
-\texttt{issue\_key}, report content, and required JSON schema. The Raw
-prompt instructs the model to evaluate only the Raw report. The
-Improved prompt specifies the Improved report as the evaluation target
-and includes its paired Raw report only as context for preserving the
-original issue intent. Owing to the page limit, the complete prompt
-texts are provided in the replication package.
+Fixing the model version and generation parameters reduces avoidable
+variation between experimental runs and supports replication of the
+experimental configuration. However, these settings do not guarantee
+identical responses because the API may retain some server-side
+nondeterminism.
 
-During the Pilot phase, we used the Raw V10 and Improved V18 prompts,
-both based on the rubric defined in
-\path{evaluation_metrics.yaml}. For the Full phase, Raw V11 and
-Improved V20 were refined on the Development set. Improved V20 combines
-the V19 prompt with Rules V20. The resulting Full configurations were
-then evaluated on the same 26 Pilot issues during Pilot Validation.
+We created separate prompt templates for the Raw and Improved
+conditions. Each template contains a System message and a User
+message. The System message defines the model's role, evaluation
+rubric, permitted label values, and JSON output requirement. The User
+message provides the \texttt{issue\_key}, report content, and required
+output schema.
 
-Post-processing rules were defined according to the evaluation rubric.
-Pilot-specific rules were refined during the Pilot phase, whereas rules
-for the Full configuration were calibrated only on the Development
-set. During inference, these rules inspect the target report and, where
-applicable in the Improved condition, its paired Raw context.
-Ground Truth and prior predictions are not available to the rules.
-Holdout labels and mismatches were not used for prompt refinement or
-rule calibration.
+For the Raw condition, the prompt instructs the model to evaluate only
+the Raw report. For the Improved condition, the prompt identifies the
+Improved report as the evaluation target. It also provides the paired
+Raw report as context for interpreting the reporter's original intent.
+The complete prompt templates are available in the replication package
+because the paper does not have sufficient space to reproduce them in
+full.
 
-After Pilot Validation, we froze the model version, prompts,
-experimental script, post-processing rules, and metric logic. We
-recorded SHA-256 hashes of the frozen files to verify their integrity
-before the Holdout evaluation. The frozen configuration was then
-evaluated once on the 38 Holdout issues for each condition. Holdout
-results were not used for further tuning.
+During the Pilot phase, we used the Raw V10 and Improved V18 prompts.
+We developed both prompts according to the rubric defined in
+\path{evaluation_metrics.yaml}. For the Full phase, we developed and
+refined the Raw V11 and Improved V20 configurations on the Development
+subset. The Improved V20 configuration combines the V19 prompt with
+the deterministic post-processing rules designated as Rules V20.
 
-For each issue, the pipeline reads the common fields
+We subsequently ran the Full configurations on the same 26 Pilot
+issues during Pilot Validation. Because these issues had already
+contributed to the initial Pilot development, we used this stage only
+to check the operation of the Full configurations. We did not treat
+the Pilot Validation results as an independent performance estimate.
+
+We derived the post-processing rules from the evaluation rubric. We
+refined the Pilot-specific rules during the Pilot phase and calibrated
+the Full rules only on the Development subset. During inference, the
+rules inspect the report under evaluation. For the Improved condition,
+they may also inspect the paired Raw report supplied as context.
+
+The rules do not access ground-truth labels or predictions from other
+issues. We also did not use Holdout labels or Holdout prediction errors
+to refine the prompts, rules, or model configuration.
+
+After Pilot Validation, we froze the model version, prompt templates,
+experiment script, post-processing rules, and metric-computation
+logic. We recorded SHA-256 hashes of the relevant files to verify that
+the configuration remained unchanged before the Holdout evaluation.
+We then ran the frozen configuration once on each of the 38 Holdout
+issues under both the Raw and Improved conditions. We did not use the
+Holdout results for further tuning.
+
+For each issue, the pipeline reads seven common fields:
 \emph{Issue Key}, \emph{Summary}, \emph{Type},
 \emph{Affects Version/s}, \emph{Labels}, \emph{Category}, and
-\emph{Description}. Improved reports additionally include
+\emph{Description}. For the Improved condition, it also reads
 \emph{Steps to Reproduce}, \emph{Observed Behavior},
-\emph{Expected Behavior}, and \emph{Environment}. Ground Truth,
-annotator labels, prior predictions, and potentially biasing
-administrative fields---including \emph{Confirmation Status},
+\emph{Expected Behavior}, and \emph{Environment}.
+
+The pipeline excludes ground-truth labels, individual annotator
+labels, and previous predictions from the prompt. It also excludes
+the following administrative fields: \emph{Confirmation Status},
 \emph{Resolution}, \emph{Fix Version/s}, \emph{Votes}, and
-\emph{Watch Count}---are excluded from the prompt.
+\emph{Watch Count}. These exclusions prevent the model from using
+information that is not part of the target report content or that may
+bias its prediction.
 
-For the Raw condition, the Raw report is inserted into the
-corresponding Raw prompt. For the Improved condition, the Improved
-report is the evaluation target, while its paired Raw report is
-included only as original-intent context. Each issue in each condition
-is processed through one application-level API request. Ground Truth
-is not included in the request and is introduced only during metric
-computation.
+For each Raw issue, the pipeline inserts the Raw report into the Raw
+prompt. For each Improved issue, it inserts the Improved report as the
+evaluation target and the paired Raw report as original-intent
+context. The pipeline sends one application-level API request for each
+issue--condition pair. It does not include ground-truth information in
+any request. Ground truth is introduced only after prediction, during
+metric computation.
 
-The model is required to return a structured JSON object containing
-the \texttt{issue\_key}; the S2R label, reproducibility, validity,
-failure type, and rationale; auxiliary assessments of Expected and
-Observed Behavior; and an overall rationale. The
-\path{run_experiment.py} script reads the CSV input, identifies the
-\texttt{issue\_key}, constructs the prompt, calls the API, parses the
-response, applies the post-processing rules, and stores the result.
+We instructed the model to return a structured JSON object. The object
+contains \texttt{issue\_key} and the S2R assessment, including the
+predicted label, reproducibility, validity, failure type, and
+rationale. It also contains auxiliary assessments of Expected Behavior
+and Observed Behavior, together with an overall rationale.
 
-After receiving a response, the pipeline checks whether it is valid
-JSON, verifies that all required fields are present, normalizes allowed
-label values, and checks logical consistency among the fields. If an
-API error, empty response, malformed JSON, or missing required field
-occurs, the script records the case with status \texttt{error} and
-continues with the next issue. The experiment script does not implement
-an additional retry loop.
+The \path{run_experiment.py} script controls the prediction process.
+It reads the CSV input, identifies the \texttt{issue\_key}, selects
+the appropriate prompt, and constructs the API request. It then calls
+the API, parses the response, applies the post-processing rules, and
+stores the final prediction.
 
-Structured predictions are stored in
-\path{*_llm_output_*.csv}, while API status, model and prompt versions,
-seed, \texttt{system\_fingerprint}, token usage, and cost are stored in
-\path{*_api_log_*.csv}. Predictions are then matched with Ground Truth
-using both \texttt{issue\_key} and the corresponding condition
-(Raw or Improved). The merged data are passed to
-\path{compute_metric.py}, which computes Accuracy, Cohen's Kappa, the
-confusion matrix, and the list of mismatched cases. The source code,
-prompts, data splits, and raw experimental outputs required for
-replication are available at
+After receiving a response, the script checks whether the response is
+valid JSON. It then verifies the required fields, normalizes
+categorical values to the permitted label set, and checks logical
+consistency among the returned fields. If the script encounters an API
+error, empty response, malformed JSON object, or missing required
+field, it records the issue with an \texttt{error} status and proceeds
+to the next issue. The script does not implement an additional
+application-level retry loop.
+
+The pipeline stores structured predictions in files matching
+\path{*_llm_output_*.csv}. It records API metadata separately in files
+matching \path{*_api_log_*.csv}. The API logs include the request
+status, model version, prompt version, seed,
+\texttt{system\_fingerprint}, token usage, and estimated cost.
+
+The source code, prompt templates, dataset partitions, configuration
+hashes, and raw experimental outputs required to replicate the study
+are available at
 \url{https://github.com/LamSongToan/SWT301_SE1925_G6}.
 
 % ===================== LR END =====================
 % ===================== MS START ===================
 
-% MS writes Metrics and Statistical Analysis Plan below.
+\subsection{Evaluation Metrics}
+\label{subsec:metrics}
+
+We evaluated the model by comparing its predicted S2R label with the
+corresponding ground-truth label for each issue and report condition.
+We treated Executable as the positive class and Non-Executable as the
+negative class. A true positive (\(TP\)) represents an Executable
+report correctly predicted as Executable, whereas a true negative
+(\(TN\)) represents a Non-Executable report correctly predicted as
+Non-Executable. A false positive (\(FP\)) occurs when the model
+predicts Executable for a Non-Executable report, and a false negative
+(\(FN\)) occurs when the model predicts Non-Executable for an
+Executable report.
+
+We used accuracy to measure the proportion of reports for which the
+predicted label matches the ground-truth label:
+
+\begin{equation}
+\operatorname{Accuracy}
+=
+\frac{TP+TN}{TP+TN+FP+FN}.
+\label{eq:accuracy}
+\end{equation}
+
+Although accuracy provides an intuitive measure of correctness, it
+does not account for agreement that may occur by chance. It may also
+obscure prediction bias when the two classes are unevenly distributed.
+We therefore used Cohen's \(\kappa\) as the primary agreement
+measure~\cite{cohen1960coefficient}:
+
+\begin{equation}
+\kappa
+=
+\frac{p_o-p_e}{1-p_e},
+\label{eq:kappa}
+\end{equation}
+
+where \(p_o\) denotes the observed agreement between the model
+predictions and ground truth, and \(p_e\) denotes the agreement
+expected by chance from their marginal label distributions. A value
+of \(\kappa=1\) indicates perfect agreement, whereas
+\(\kappa=0\) indicates agreement equivalent to chance. A negative
+value indicates agreement below the chance level.
+
+The experimental protocol defined \(\kappa \geq 0.70\) as the
+acceptance threshold before the Holdout evaluation. We used this value
+as a project-specific decision criterion rather than as a universal
+boundary for model quality. We interpreted kappa together with
+accuracy, the confusion matrix, and the prediction distribution.
+
+For each condition, the confusion matrix reports \(TP\), \(TN\),
+\(FP\), and \(FN\). We also recorded the number and identities of
+mismatched cases to determine whether errors primarily resulted from
+overpredicting Executable or overpredicting Non-Executable. This
+mismatch analysis was descriptive and did not modify the frozen
+configuration.
+
+The \path{compute_metric.py} script calculates accuracy, Cohen's
+kappa, the confusion matrix, and the mismatch list separately for the
+Raw and Improved conditions. It produces \path{summary_*.csv} files
+containing aggregate metrics and \path{mismatch_analysis_*.csv} files
+containing issue-level errors. The
+\path{compare_raw_improved.py} script places the Raw and Improved
+results side by side for each experimental phase.
+
+Metrics from Pilot, Development, and Pilot Validation describe
+configuration development and calibration. We based the final
+assessment of model performance only on the protected Holdout subset.
+
+\subsection{Statistical Analysis}
+\label{subsec:statistics}
+
+We used \texttt{issue\_key} as the unit of analysis. Because each
+issue has paired Raw and Improved versions, all comparisons preserve
+the correspondence between the two report conditions.
+
+We restricted the final analysis to the 38 issues in the protected
+Holdout subset. For each condition, we reported the exact number of
+correct and incorrect predictions, accuracy, Cohen's kappa, the
+confusion matrix, and the prediction distribution. We used the Pilot,
+Development, and Pilot Validation results only for procedural checks,
+configuration refinement, and descriptive analysis.
+
+The current analysis compares the Raw and Improved conditions
+descriptively. Specifically, \path{compare_raw_improved.py} reports
+their metric values side by side but does not implement a hypothesis
+test, confidence interval, or inferential effect-size estimate.
+Accordingly, we do not report \(p\)-values or claim that an observed
+difference between the two conditions is statistically significant.
+We interpret the results using their exact counts, accuracy, kappa,
+confusion matrices, and observed error patterns.
+
+We did not use Holdout predictions or mismatches to revise the prompt,
+post-processing rules, model parameters, or evaluation code after the
+frozen Holdout run.
+
+% ===================== MS END =====================
