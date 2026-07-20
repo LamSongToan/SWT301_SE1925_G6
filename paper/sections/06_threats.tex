@@ -1,2 +1,31 @@
 \section{Threats to Validity}
 \label{sec:threats}
+
+\subsection{Internal Validity}
+ 
+The primary threat is \emph{model non-determinism between runs or versions}. We mitigate this by using a fixed model snapshot (\texttt{gpt-4o-mini-2024-07-18} rather than a model alias), setting temperature to 0 for deterministic generation, and locking the prompt template to a single version throughout all 139 reports.
+ 
+Another threat is \emph{prompt design bias}, where the wording could inadvertently shift the LLM's scoring behavior. We reduce this through a clearly defined ordinal rubric (scale 1--5), and we use a controlled fallback strategy (zero-shot $\to$ few-shot only under predefined pilot conditions) rather than iterative prompt refinement.
+ 
+\subsection{Construct Validity}
+ 
+A key concern is whether we are truly measuring ``reproducibility.'' Potential threats include misalignment between how humans and LLMs interpret reproducibility, and dependence on structured extraction (Steps to Reproduce, Expected/Observed Behavior) that may introduce abstraction bias.
+ 
+We address this by anchoring the LLM rubric to the existing human annotation guidelines in the dataset, using the same ordinal scale for both human and LLM evaluation, and analyzing agreement separately for each reproducibility dimension (Steps, Observed Behavior, Expected Behavior) to reduce over-abstraction from a single composite score.
+ 
+\subsection{External Validity}
+ 
+The study is limited to Mojira Minecraft bug reports, an open-source game development context. Results may not generalize to enterprise bug tracking systems or other domains with different reporting standards.
+ 
+However, the dataset spans diverse technical bug types and is directly comparable to prior OSS studies. The measurement protocol itself is domain-agnostic and can be replicated on other issue trackers.
+ 
+\subsection{Conclusion Validity}
+ 
+Cohen's Kappa can be sensitive to class imbalance in ordinal scores, and bootstrap confidence intervals may fluctuate depending on resampling variance. The Wilcoxon signed-rank test assumes symmetric pair-wise differences.
+ 
+We mitigate these by computing bootstrap confidence intervals for $\kappa$ rather than relying on asymptotic assumptions, using non-parametric Wilcoxon testing (appropriate for ordinal data), and reporting effect sizes (rank-biserial correlation) alongside $p$-values.
+ 
+\subsection{Reproducibility}
+ 
+To ensure our results are reproducible, we fix the dataset to 139 Mojira reports, pin the model version explicitly, lock the prompt template, remove randomness from sampling, and use standard statistical libraries (scikit-learn, scipy).
+ 

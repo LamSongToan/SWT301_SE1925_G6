@@ -1,2 +1,10 @@
 \section{Conclusion}
 \label{sec:conclusion}
+This study measures the degree to which an LLM-based reproducibility evaluator aligns with developer manual review on bug reports from Mojira Minecraft. Using GPT-4o mini and 139 pre-annotated reports, we assess agreement through Cohen's Kappa, targeting a threshold of $\kappa \geq 0.70$ as evidence of substantial agreement.
+ 
+Our findings have direct implications for software maintenance: if LLMs can achieve this level of alignment, they become a viable first-pass filter in bug triage workflows, reducing manual review burden.
+ 
+Beyond this dataset, the measurement protocol we establish---comparing LLM evaluation to human judgment using Cohen's Kappa---can be adapted to any OSS project seeking empirical validation before deploying LLM-based issue filtering. This creates a reusable benchmark for the broader community.
+ 
+Future work should extend this evaluation across multiple repositories and issue trackers (GitHub, GitLab) to assess generalization, explore human-in-the-loop workflows where LLM scores trigger developer review rather than replacing it, and investigate fine-tuning or few-shot prompting to improve alignment on report sections that cause systematic disagreement.
+ 

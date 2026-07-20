@@ -1,15 +1,17 @@
+\section{Abstract}
+\label{sec:abstract}
 Reproducing a reported bug is often the slowest part of triage, and judging
 whether a report's steps to reproduce are executable is a manual and inconsistent
 task. Whether a large language model can do this reliably enough to replace a
 human is untested: prior work uses language models to improve or classify bug
-reports but rarely validates them as reproducibility assessors against human
+reports, but rarely validates them as reproducibility assessors against human
 labels. We evaluate GPT-4o mini on 139 real Mojira (Minecraft) bug reports, in
 original and quality-improved forms, labeling each report's steps to reproduce as
 executable or non-executable and comparing against expert annotation with Cohen's
-kappa on a protected holdout. On the holdout it reached $\kappa = 0.24$ on original
-and $\kappa = 0.10$ on improved reports, far below our pre-registered $0.70$
-threshold; an identical $0.68$ accuracy hid a near-constant executable verdict on
-improved reports, and strong agreement seen during calibration did not transfer.
+kappa on a protected holdout. In the holdout it reached $\kappa = 0.24$ in the original
+and $\kappa = 0.10$ in the improved reports, far below our pre-registered $0.70$
+threshold; an identical accuracy $0.68$ hid a near-constant executable verdict in
+the improved reports, and strong agreement seen during calibration did not transfer.
 GPT-4o mini is therefore not yet dependable enough to replace human reproducibility
 assessment in this setting, and agreement measured on calibration data overstates
 real performance.

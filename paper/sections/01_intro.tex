@@ -1,2 +1,10 @@
 \section{Introduction}
 \label{sec:intro}
+
+Bug reports are critical input to the software development process. However, without the ability to reproduce a bug, developers cannot diagnose or fix it. Recent work shows that fewer than 8\% of bug reports on platforms like Jira meet the criteria for first-time reproducibility, creating a significant bottleneck in software maintenance. For large projects managing tens of thousands of reports monthly (such as TensorFlow or Django), automating the reproducibility evaluation step offers clear practical value.
+ 
+Large language models (LLMs) like GPT-4o have shown promise in various software engineering tasks, including bug report analysis and improvement. Yet a critical gap remains: no prior work has measured whether an LLM can evaluate bug report reproducibility with sufficient agreement to developer judgment. Existing studies either use LLMs to generate or improve bug reports, or measure agreement between human raters alone---not between LLM evaluators and developer assessment.
+ 
+This work addresses this gap by investigating whether an LLM-based reproducibility evaluator can achieve substantial agreement (Cohen's $\kappa \geq 0.70$) with manual developer review. We evaluate GPT-4o mini on 139 bug reports from the Mojira Minecraft Issue Tracker, each annotated by two independent human reviewers. Our metric is Cohen's Kappa, measuring agreement between LLM scores and human annotations.
+ 
+The contribution is two-fold: we establish a reusable measurement protocol for LLM-as-evaluator agreement on bug report quality, and we provide an empirical baseline for whether LLMs can reliably assist in bug triage workflows. If successful, this work creates a precedent for OSS projects seeking to integrate LLM-based evaluation into their issue management pipelines.
