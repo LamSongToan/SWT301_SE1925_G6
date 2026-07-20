@@ -1,0 +1,198 @@
+﻿id;title;authors;year;venue;search_strings
+1;Understanding Onboarding in Software Engineering: A Systematic Review and Analytical Synthesis;"Otemaier, Kelly Rafaela; Alberge, Mariane; Reinehr, Sheila; Malucelli, Andreia";;Available at SSRN 6642014;String A
+2;Optimising Helpdesk Efficiency: Separating Contextually Significant Emails from Low-Information Content Using an Entropy-Based Threshold;Fellows, Ryan;2026;;String A
+3;MCDM for selection of cybersecurity technologies used in cybersecurity education;Pal, Shapna Sultana;2022;;String A
+4;Incident Management in B2B Payments: Challenges, Frameworks, and Emerging Best Practices;Roul, Sonman;2025;Journal of Computer Science and Technology Studies;String A
+5;Converting Natural Language to Query Languages Using Large Language Models: A Systematic Literature Review;"Lima, Rayfran Rocha; Vasconcelos, Kamila Cardoso; Gadelha, Eloisa Mendonça";2025;Brazilian Symposium on Multimedia and the Web (WebMedia);String A
+6;Seeking to Define the Nurse Navigator Role Through Framework;Halstead, Xochitl;2025;;String A
+7;Collective Stress in the Digital Age;Oz, Talha;2020;;String A
+8;Vom Studienregister zum automatischen Rekrutierungsvorschlag: IT-Unterstützung für die Rekrutierung in Klinischen Studien;Gulden, Christian;2022;;String A
+9;Social Sciences & Humanities Open;"Orsi, Balázs; Korondi, Péter; Csukonyi, Csilla; Papp, Dávid; Márkus, Panna; Joó, Bence Tamás Selejó; Neamah, Husam A.; Kovács, Karolina Eszter";;;String A
+10;Empowering rationale-aware commit-based development;Dhaouadi, Mouna;2026;;String A
+11;The ACE Methodology: An Empirically Grounded Framework for AI Content Creation;Dutta, Biswajit;2025;;String A
+12;From expert judgment to human-in-the-loop automation A Systematic Literature Review on agile effort estimation;"Tortosa, Nicolás; Acuña, César Javier";;Available at SSRN 6510427;String A
+13;Quantifying, Characterizing, and Mitigating the Ghost Commit Problem When Identifying Fix-Inducing Changes;Rezk, Christophe;2021;;String A
+14;ACREF: Enhancing Code Refinement Tasks for Large Language Models Using LLM-as-a-Judge;"Mi, Le; Xu, Ling; Liu, Chao; Mu, Wenhan; Li, Zongyu; Huangfu, Luwen";;Available at SSRN 6642016;String A
+15;A Security Requirements Management Framework for Open-Source Software Projects;Wang, Wentao;2019;;String A
+16;Demystifying NoOps: operational model, challenges and insights from the trenches;Serban, Dragos Mihai;2021;;String A
+17;Model‐Based Systems Engineering in Space Applications: A Comprehensive Literature Review;"Buruso, Rehobot Bekele; Himmiche, Sara; Tejumola, Taiwo; Alemayehu, Yeshirun; Rose, Bertrand";2026;Systems Engineering;String A
+18;A first look at zoombombing;"Ling, Chen; Balcı, Utkucan; Blackburn, Jeremy; Stringhini, Gianluca";2021;2021 IEEE symposium on security and privacy (SP);String A
+19;C4AE: A Multi-Agent Engine for Automated C4 Modeling using Google ADK and Parallel Orchestration;Pagadala, Vamsi Krishna;;;String A
+20;A Survey on Failure Analysis and Fault Injection in AI Systems;"Yu, Guangba; Tan, Gou; Huang, Haojia; Zhang, Zhenyu; Chen, Pengfei; Natella, Roberto; Zheng, Zibin; Lyu, Michael R.";2026;ACM Transactions on Software Engineering and Methodology;String A
+21;LLM-Based Exploratory Testing Charter Generation: A Framework and Empirical Evaluation;Surti, Arbaz;2026;;String A
+22;PoCZoo: A Curated Zoo of Real-World Proofs-of-Concept;"Lu, Jiangtao; Hu, Jinchang; Huang, Yifan; Gu, Min; Hong, Binsheng; Bai, Tongtong; Huang, Song";;Available at SSRN 6257141;String A
+23;A Framework for Autonomous Orchestration of Multi-Agent System for Adaptive Log Review in Enterprise Web Applications;Tisina, Inna;2026;;String A
+24;A Multi-Agent Approach for a Security-Aware Translation of Software Business Requirements;Mantzouranidis, Savvas;2026;;String A
+25;Practical Research on Intelligent Requirements Analysis and Test Case Generation Driven by Large Language Models;"Wei, Zongshuai; Chen, Changmeng";2026;Al lnnovations and Applications;String A
+26;Management of Self-Admitted Technical Debt using Machine Learning;Li, Yikun;2024;;String A
+27;Foundation Models in Software Engineering: A Taxonomy, Systematic Review, and In-Depth Analysis of Testing Support;"Banitaan, Shadi; Daoud, Mohammad; Alquran, Hebah; Akour, Mohammad";2026;Information;String A
+28;“Do you have time for a quick call?”: Exploring Remote and Hybrid Requirements Engineering Practices and Challenges in Industry;"Li, Ze Shi; Ly, Delina; Nagel, Lukas; Arony, Nowshin Nawar; Damian, Daniela";2024;2024 IEEE 32nd International Requirements Engineering Conference (RE);String A
+29;Identifying Opinion Based Questions in Developer Chat Communication;Muthu Subash, Keerthana;2022;;String A
+30;An Empirical Study of Self-Admitted Technical Debt in Machine Learning Software;"Bhatia, Aaditya; Khomh, Foutse; Adams, Bram; Hassan, Ahmed E";2025;ACM Transactions on Software Engineering and Methodology;String A
+31;CONTEXT-BASED USER STORY ENHANCEMENT WITH LLM AND RAG;Nguyen, Khoa;2025;;String A
+32;The ghost commit problem when identifying fix-inducing changes: An empirical study of apache projects;"Rezk, Christophe; Kamei, Yasutaka; Mcintosh, Shane";2021;IEEE Transactions on Software Engineering;String A
+33;USeR: A Web-based User Story eReviewer for Assisted Quality Optimizations;"Hallmann, Daniel; Jacob, Kerstin; Lüttgen, Gerald; Schmid, Ute; Weth, Rüdiger von der";2025;;String A
+34;Detecting Emerging Quality-Related Concerns across Evolving Software Artifacts;Krasniqi, Rrezarta;2020;;String A
+35;Investigating the effects of design quality in oss projects;Mannan, Umme Ayda;2020;;String A
+36;TagDebt: A Bot to Support Technical Debt Management;"Biazotto, João Paulo; Feitosa, Daniel; Avgeriou, Paris; Nakagawa, Elisa Yumi";2026;;String A
+37;Decomposing Complexity: An LLM-Based Approac to Supporting Software Engineering Tasks;Xu, Zhijie;2025;;String A
+38;AI-assisted test scope recommendation for manual QA: a framework and evaluation;Surti, Arbaz;2026;;String A
+39;Building sustainable open-source communities: an investigation into contribution equity;Feng, Zixuan;2026;;String A
+40;A model for identifying project sprint tasks based on their description;"Grinchenko, Marina; Rohovyi, Mykyta";2023;Innovative technologies and scientific solutions for industries;String A
+41;A Practical Incident-Response Framework for Generative AI Systems;"Tuscano, Derrisa; Pagna Disso, Jules";2026;Journal of Cybersecurity and Privacy;String A
+42;Mining architectural information: A systematic mapping study;"Jean de Dieu, Musengamana; Liang, Peng; Shahin, Mojtaba; Yang, Chen; Li, Zengyang";2024;Empirical Software Engineering;String A
+43;Story points changes in agile iterative development: An empirical study and a prediction approach;"Pasuksmit, Jirat; Thongtanunam, Patanamon; Karunasekera, Shanika";2022;Empirical Software Engineering;String A
+44;Mining and Classifying Privacy and Data Protection Requirements in Issue Reports;"Sangaroonsilp, Pattaraporn; Dam, Hoa Khanh; Choetkiertikul, Morakot; Ragkhitwetsagul, Chaiyong; Ghose, Aditya";2022;;String A
+45;"The ""Shut the f**k up"" Phenomenon: Characterizing Incivility in Open Source Code Review Discussions";"Ferreira, Isabella; Cheng, Jinghui; Adams, Bram";2021;Proceedings of the ACM on Human-Computer Interaction;String A
+46;A Taxonomy of Inefficiencies in LLM-Generated Python Code;"Abbassi, Altaf Allah; Da Silva, Leuson; Nikanjam, Amin; Khomh, Foutse";2025;2025 IEEE International Conference on Software Maintenance and Evolution (ICSME);String A
+47;Collaborative Development Experience: A tool to promote workplace awareness through socio-technical visualization;Chou, Yi-Hung;;;String A
+48;Silent bugs in deep learning frameworks: an empirical study of Keras and TensorFlow;"Tambon, Florian; Nikanjam, Amin; An, Le; Khomh, Foutse; Antoniol, Giuliano";2024;Empirical Software Engineering;String A
+49;Agents in the Sandbox: End-to-End Crash Bug Reproduction for Minecraft;"Yapağcı, Eray; Öztürk, Yavuz Alp Sencer; Tüzün, Eray";2025;;String A
+50;Assessment of off-the-shelf SE-specific sentiment analysis tools: An extended replication study;"Novielli, Nicole; Calefato, Fabio; Lanubile, Filippo; Serebrenik, Alexander";2021;Empirical Software Engineering;String A
+51;On the synchronization between Hugging Face pre-trained language models and their upstream GitHub repository;"Ajibode, Adekunle; Bangash, Abdul Ali; Sghaier, Oussama Ben; Adams, Bram; Hassan, Ahmed E.";2026;;String A
+52;Bug Classification in quantum software: a rule-based framework and its evaluation;"Yousuf, Mir Mohammad; Sofi, Shabir Ahmad";2026;Automated Software Engineering;String A
+53;A comparative study and analysis of developer communications on Slack and Gitter;"Parra, Esteban; Alahmadi, Mohammad; Ellis, Ashley; Haiduc, Sonia";2022;Empirical Software Engineering;String A
+54;Data-Driven Requirements Elicitation: A Systematic Literature Review;"Lim, Sachiko; Henriksson, Aron; Zdravkovic, Jelena";2021;SN Computer Science;String A
+55;What Makes a Good TODO Comment?;"Wang, Haoye; Gao, Zhipeng; Bi, Tingting; Grundy, John; Wang, Xinyu; Wu, Minghui; Yang, Xiaohu";2024;ACM Transactions on Software Engineering and Methodology;String A
+56;A Methodological Framework for LLM-Based Mining of Software Repositories;"Martino, Vincenzo De; Castaño, Joel; Palomba, Fabio; Franch, Xavier; Martínez-Fernández, Silverio";2025;;String A
+57;Mining Information from Developer Chats towards Building Software Maintenance Tools - ProQuest;;;;String A
+58;Towards a Semi-Automated Pipeline for User Story Curation and Classification;"Souza, Carlos; Silva, Izabella; Sousa, Hiago; Albuquerque, Danyllo; Perkusich, Mirko; Gorgônio, Kyller; Perkusich, Angelo";2026;Proceedings of the 41st ACM/SIGAPP Symposium on Applied Computing;String A
+59;Is this build failure related to my patch? An empirical study of unrelated build failures in continuous integration;"Huang, Yonghui Andie; Da Costa, Daniel Alencar; Dick, Grant; El Mezouar, Mariam; Xiao, Liwen";2026;Empirical Software Engineering;String A
+60;Suboptimal Comments in Java Projects: From Independent Comment Changes to Commenting Practices;"Wang, Chao; He, Hao; Pal, Uma; Marinov, Darko; Zhou, Minghui";2023;ACM Transactions on Software Engineering and Methodology;String A
+61;Can We Use SE-specific Sentiment Analysis Tools in a Cross-Platform Setting?;"Novielli, Nicole; Calefato, Fabio; Dongiovanni, Davide; Girardi, Daniela; Lanubile, Filippo";2020;Proceedings of the 17th International Conference on Mining Software Repositories;String A
+62;Traceability in the wild: automatically augmenting incomplete trace links;"Rath, Michael; Rendall, Jacob; Guo, Jin L. C.; Cleland-Huang, Jane; Mäder, Patrick";2018;Proceedings of the 40th International Conference on Software Engineering;String A
+63;On Reliability of Patch Correctness Assessment;"Le, Xuan-Bach D.; Bao, Lingfeng; Lo, David; Xia, Xin; Li, Shanping; Pasareanu, Corina";2019;2019 IEEE/ACM 41st International Conference on Software Engineering (ICSE);String A
+64;Identification and Remediation of Self-Admitted Technical Debt in Issue Trackers;"Li, Yikun; Soliman, Mohamed; Avgeriou, Paris";2020;2020 46th Euromicro Conference on Software Engineering and Advanced Applications (SEAA);String A
+65;Sentiment analysis of episodic volunteers in open source software projects;Pham Tran Hien, Dung;2026;;String A
+66;Exploratory Study of Slack Q&A Chats as a Mining Source for Software Engineering Tools;"Chatterjee, Preetha; Damevski, Kostadin; Pollock, Lori; Augustine, Vinay; Kraft, Nicholas A.";2019;2019 IEEE/ACM 16th International Conference on Mining Software Repositories (MSR);String A
+67;A multi-model framework for semantically enhancing detection of quality-related bug report descriptions;"Krasniqi, Rrezarta; Do, Hyunsook";2023;Empirical Software Engineering;String A
+68;Learning Software Bug Reports: A Systematic Literature Review;"Long, Guoming; Gong, Jingzhi; Fang, Hui; Chen, Tao";2025;ACM Transactions on Software Engineering and Methodology;String A
+69;A comprehensive analysis of challenges and strategies for software release notes on GitHub;"Wu, Jianyu; He, Hao; Gao, Kai; Xiao, Wenxin; Li, Jingyue; Zhou, Minghui";2024;Empirical Software Engineering;String A
+70;ImproBR: Bug Report Improver Using LLMs;"Akyol, Emre Furkan; Dedeler, Mehmet; Tüzün, Eray";2026;;String A
+71;Towards reliable agile iterative planning via predicting documentation changes of work items;"Pasuksmit, Jirat; Thongtanunam, Patanamon; Karunasekera, Shanika";2022;Proceedings of the 19th International Conference on Mining Software Repositories;String A
+72;Item - Enhancing automated bug report analysis through advanced neural language models - Loughborough University - Figshare;;;;String A
+73;Studying Developers’ Engagement with ChatGPT for Issue Resolution;Das, Joy Krishan;2025;;String A
+74;Mining Work Items to Streamline Software Maintenance Tasks - ProQuest;;;;String A
+75;Human-In-The-Loop Software Development Agents;"Takerngsaksiri, Wannita; Pasuksmit, Jirat; Thongtanunam, Patanamon; Tantithamthavorn, Chakkrit; Zhang, Ruixiong; Jiang, Fan; Li, Jing; Cook, Evan; Chen, Kun; Wu, Ming";2025;2025 IEEE/ACM 47th International Conference on Software Engineering: Software Engineering in Practice (ICSE-SEIP);String A
+76;MULocBench: Beyond Code Benchmark for Multi-Type Software Issue Localization;"Zhang, Zejun; Wang, Jian Jornbowrl; Yang, Qingyun; Pan, Yifan; tangyi; Li, Yi; Xing, Zhenchang; Zhang, Tian; Li, Xuandong; Zhang, Guoan";2025;;String B
+77;What Users Ask, Policies Miss: Unveiling the Gap Between Community-Expressed Privacy Concerns and LLM Provider Policies;"Liu, Zhihuang; Huang, Zhen; Hu, Ling; Yang, Yifan; Cai, Zhiping";2026;;String B
+78;Cryptocurrency Curated News Event Database From GDELT;"Gadi, Manoel Fernando Alonso; Sicilia, Miguel Ángel";2022;;String B
+79;Analyzing Issue Discussions in Open Source Software Communities: Unveiling the Characteristics of Usability Issues - ProQuest;;;;String B
+80;SecureFalcon: Are We There Yet in Automated Software Vulnerability Detection With LLMs?;"Ferrag, Mohamed Amine; Battah, Ammar; Tihanyi, Norbert; Jain, Ridhi; Maimuţ, Diana; Alwahedi, Fatima; Lestable, Thierry; Thandi, Narinderjit Singh; Mechri, Abdechakour; Debbah, Merouane; Cordeiro, Lucas C.";2025;IEEE Transactions on Software Engineering;String B
+81;Leveraging Vulnerability Discovery Strategies for Secure Development of Supervised Learning Projects - ProQuest;;;;String B
+82;Machine Learning Driven Guidance for Software Maintenance: Enhancing Code Management and Features - ProQuest;;;;String B
+83;Foundation Models for Newcomers in Open-Source Software: A Multivocal Literature Review;"Xiao, Tao; Kondo, Masanari; Treude, Christoph; Kamei, Yasutaka";2026;;String B
+84;Automated Fine-grained Requirements-to-Code Traceability Link Recovery;"Fandino, Florez; Manuel, Juan";2022;;String B
+85;A decade of code comment quality assessment: A systematic literature review;"Rani, Pooja; Blasi, Arianna; Stulova, Nataliia; Panichella, Sebastiano; Gorla, Alessandra; Nierstrasz, Oscar";2023;Journal of Systems and Software;String B
+86;Identifying Emergent Leadership in OSS Projects Based on Communication Styles;"Huang, Yuekai; Yang, Ye; Wang, Junjie; Zheng, Wei; Wang, Qing";2022;;String B
+87;Identifying Emergent Leadership in Open Source Software Projects Based on Communication Styles;"Huang, Yuekai; Yang, Ye; Wang, Junjie; Zheng, Wei; Wang, Qing";2023;2023 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER);String B
+88;Software Maintenance At Commit-Time;Nayrolles, Mathieu;2018;;String B
+89;How to Communicate when Submitting Patches: An Empirical Study of the Linux Kernel;"Tan, Xin; Zhou, Minghui";2019;Proceedings of the ACM on Human-Computer Interaction;String B
+90;How programmers find online learning resources;"Arya, Deeksha M.; Guo, Jin L. C.; Robillard, Martin P.";2022;Empirical Software Engineering;String B
+91;Evaluating Language Model Applications for Identifying Solution-Related Content in Issue Report Discussions;"Saha, Antu; Sun, Mehedi; Chaparro, Oscar";2026;;String B
+92;Characterizing Logs in Vulnerability Reports: In-Depth Analysis and Security Implications;"Shu, Yao; Zheng, Lianyu; Chen, Jinfu; Xuan, Jifeng";2025;2025 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER);String B
+93;RPerf: Mining user reviews using topic modeling to assist performance testing: An industrial experience report;"Wang, Zehao; Liu, Wei; Chen, Jinfu; Chen, Tse-Hsun (Peter)";2025;Journal of Systems and Software;String B
+94;Triage in Software Engineering: A Systematic Review of Research and Practice;"Zhao, Yongxin; Zhang, Shenglin; Wu, Yujia; Sun, Yuxin; Sun, Yongqian; Pei, Dan; Bansal, Chetan; Ma, Minghua";2025;;String B
+95;DarkBench: Benchmarking Dark Patterns in Large Language Models;"Kran, Esben; Nguyen, Hieu Minh; Kundu, Akash; Jawhar, Sami; Park, Jinsuk; Jurewicz, Mateusz";2025;International Conference on Learning Representations;String B
+96;Automating Intention Mining;"Huang, Qiao; Xia, Xin; Lo, David; Murphy, Gail C.";2020;IEEE Transactions on Software Engineering;String B
+97;Evidence-driven testing and debugging of software systems;Soremekun, Ezekiel Olamide;2021;;String B
+98;Supporting a developer's discovery of task-relevant information;de Sousa Marques, Arthur;2022;;String B
+99;Crash Report Enhancement with Large Language Models: An Empirical Study;"Fahim, S. M. Farah Al; Rafi, Md Nakhla; Ma, Zeyang; Kim, Dong Jae; Tse-Hsun; Chen";2025;;String B
+100;ViBR: Automated Bug Replay from Video-based Reports using Vision-Language Models;"Feng, Sidong; Wang, Dingbang; Tomic, Nikola; Yu, Tingting; Aleti, Aldeida; Chen, Chunyang";2026;;String B
+101;Predicting the Change Impact of Resolving Defects by Leveraging the Topics of Issue Reports in Open Source Software Systems;"Assi, Maram; Hassan, Safwat; Georgiou, Stefanos; Zou, Ying";2023;ACM Transactions on Software Engineering and Methodology;String B
+102;Towards Better Requirements from the Crowd: Developer Engagement with Feature Requests in Open Source Software;"KC, Pragyan; Ghandiparsi, Rambod; Herron, Thomas; Heaps, John; Hosseini, Mitra Bokaei";2025;;String B
+103;Self-supervised retinal thickness prediction enables deep learning from unlabelled data to boost classification of diabetic retinopathy;"Holmberg, Olle G.; Köhler, Niklas D.; Martins, Thiago; Siedlecki, Jakob; Herold, Tina; Keidel, Leonie; Asani, Ben; Schiefelbein, Johannes; Priglinger, Siegfried; Kortuem, Karsten U.; Theis, Fabian J.";2020;Nature Machine Intelligence;String B
+104;Cross-lingual Unified Medical Language System entity linking in online health communities | Journal of the American Medical Informatics Association | Oxford Academic;;;;String B
+105;Exploiting Natural Language Structures in Software Informal Documentation;"Di Sorbo, Andrea; Panichella, Sebastiano; Visaggio, Corrado A.; Penta, Massimiliano Di; Canfora, Gerardo; Gall, Harald C.";2021;IEEE Transactions on Software Engineering;String B
+106;Advancing LLM-Based Issue Report Classification with Explained Few-Shot Learning, Intent Extraction, Ensemble, and Summarization;"De Vito, Gabriele; Starace, Luigi Libero Lucio; Palomba, Fabio; Di Martino, Sergio; Ferrucci, Filomena";2026;ACM Transactions on Software Engineering and Methodology;String B
+107;A Framework for Using LLMs for Repository Mining Studies in Empirical Software Engineering;"De Martino, Vincenzo; Castaño, Joel; Palomba, Fabio; Franch, Xavier; Martínez-Fernández, Silverio";2025;2025 IEEE/ACM International Workshop on Methodological Issues with Empirical Studies in Software Engineering (WSESE);String B
+108;Understanding Legal Professionals' Practices and Expectations in Data Breach Incident Reporting;"Gumusel, Ece; Xiao, Yue; Qin, Yue; Qin, Jiaxin; Liao, Xiaojing";2024;Proceedings of the 2024 on ACM SIGSAC Conference on Computer and Communications Security;String B
+109;RCEGen: A Generative Approach for Automated Root Cause Analysis Using Large Language Models (LLMs);"Mollik, Rubel Hassan; Datta, Arup; Mollah, Anamul Haque; Aljedaani, Wajdi";2025;Software;String B
+110;A Hybrid LTR-based System via Social Context Embedding for Recommending Solutions of Software Bugs in Developer Communities;"Harrag, Fouzi; Khemliche, Mokdad";2026;;String B
+111;How Safe Are AI-Generated Patches? A Large-scale Study on Security Risks in LLM and Agentic Automated Program Repair on SWE-bench;"Sajadi, Amirali; Damevski, Kostadin; Chatterjee, Preetha";2025;;String B
+112;SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?;"Yang, John; Jimenez, Carlos E.; Zhang, Alex L.; Lieret, Kilian; Yang, Joyce; Wu, Xindi; Press, Ori; Muennighoff, Niklas; Synnaeve, Gabriel; Narasimhan, Karthik R.; Yang, Diyi; Wang, Sida I.; Press, Ofir";2024;;String B
+113;FeedAIde: Guiding App Users to Submit Rich Feedback Reports by Asking Context-Aware Follow-Up Questions;"Pourasad, Ali Ebrahimi; Saghiri, Meyssam; Maalej, Walid";2026;;String B
+114;Investigating the bugs in reinforcement learning programs: Insights from Stack Overflow and GitHub;"Song, Jiayin; Li, Yike; Tian, Yunzhe; Ma, Haoxuan; Li, Honglei; Zuo, Jie; Liu, Jiqiang; Niu, Wenjia";2025;Automated Software Engineering;String B
+115;Delving into Commit-Issue Correlation to Enhance Commit Message Generation Models;"Wang, Liran; Tang, Xunzhu; He, Yichen; Ren, Changyu; Shi, Shuhua; Yan, Chaoran; Li, Zhoujun";2023;2023 38th IEEE/ACM International Conference on Automated Software Engineering (ASE);String B
+116;From Bugs to Benefits: Improving User Stories by Leveraging Crowd Knowledge with CrUISE-AC;"Schwedt, Stefan; Ströder, Thomas";2025;2025 IEEE/ACM 47th International Conference on Software Engineering (ICSE);String B
+117;Characterizing Usability Issue Discussions in Open Source Software Projects;"Sanei, Arghavan; Cheng, Jinghui";2024;Proceedings of the ACM on Human-Computer Interaction;String B
+118;Is Your Automated Software Engineer Trustworthy?;"Mathews, Noble Saji; Nagappan, Meiyappan";2025;;String B
+119;Automated Analysis of Bug Descriptions to Support Bug Reporting and Resolution - ProQuest;;;;String B
+120;Reformulating Queries for Duplicate Bug Report Detection;"Chaparro, Oscar; Florez, Juan Manuel; Singh, Unnati; Marcus, Andrian";2019;2019 IEEE 26th International Conference on Software Analysis, Evolution and Reengineering (SANER);String B
+121;Contemporary COBOL: Developers' Perspectives on Defects and Defect Location;"Ciborowska, Agnieszka; Chakarov, Aleksandar; Pandita, Rahul";2021;2021 IEEE International Conference on Software Maintenance and Evolution (ICSME);String B
+122;SeeAction: Towards Reverse Engineering How-What-Where of HCI Actions from Screencasts for UI Automation;"Zhao, Dehai; Xing, Zhenchang; Lu, Qinghua; Xu, Xiwei; Zhu, Liming";2025;;String B
+123;Why and what happened? Aiding bug comprehension with automated category and causal link identification;"Zhou, Cheng; Li, Bin; Sun, Xiaobing; Bo, Lili";2021;Empirical Software Engineering;String B
+124;KeyTitle: towards better bug report title generation by keywords planning;"Meng, Qianshuang; Zou, Weiqin; Cai, Biyu; Zhang, Jingxuan";2024;Software Quality Journal;String B
+125;Automated Root-Cause Subclassification and No-Code Fix Generation for Invalid Bug Reports;"Gon, Mahmut Furkan; Dinc, Emre; Sungur, Tevfik Emre; Tuzun, Eray";2026;;String B
+126;Empirical Analysis and Detection of Hallucinations in LLM-Generated Bug Report Summaries;"Nirujan, Hinduja; Patil, Shreyas; Ayoub, Abdallah; Latif, Ahmad Abdel; Ginde, Gouri";2026;;String B
+127;Toward the Automated Localization of Buggy Mobile App UIs from Bug Descriptions;"Saha, Antu; Song, Yang; Mahmud, Junayed; Zhou, Ying; Moran, Kevin; Chaparro, Oscar";2024;Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis;String B
+128;Identifying Concurrency Bug Reports via Linguistic Patterns;"Shao, Shuai; Xiao, Lu; Yu, Tingting";2026;;String B
+129;Data Quality Matters: A Case Study on Data Label Correctness for Security Bug Report Prediction;"Wu, Xiaoxue; Zheng, Wei; Xia, Xin; Lo, David";2022;IEEE Transactions on Software Engineering;String B
+130;Combining Language and App UI Analysis for the Automated Assessment of Bug Reproduction Steps;"Mahmud, Junayed; Saha, Antu; Chaparro, Oscar; Moran, Kevin; Marcus, Andrian";2025;;String B
+131;Automated Generation of High-Quality Bug Reports for Android Applications;"Saha, Antu; Dipongkor, Atish Kumar; Bennett, Sam; Moran, Kevin; Marcus, Andrian; Chaparro, Oscar";2026;;String B
+132;Inside Bug Report Templates: An Empirical Study on Bug Report Templates in Open-Source Software;"Zhang, Junwei; Liu, Zhongxin; Bao, Lingfeng; Xing, Zhenchang; Hu, Xing; Xia, Xin";2024;Proceedings of the 15th Asia-Pacific Symposium on Internetware;String B
+133;Automatically Selecting Follow-up Questions for Deficient Bug Reports;"Imran, Mia Mohammad; Ciborowska, Agnieszka; Damevski, Kostadin";2021;2021 IEEE/ACM 18th International Conference on Mining Software Repositories (MSR);String B
+134;BugListener: identifying and synthesizing bug reports from collaborative live chats;"Shi, Lin; Mu, Fangwen; Zhang, Yumin; Yang, Ye; Chen, Junjie; Chen, Xiao; Jiang, Hanzhi; Jiang, Ziyou; Wang, Qing";2022;Proceedings of the 44th International Conference on Software Engineering;String B
+135;Exploring Fine-Grained Bug Report Categorization with Large Language Models and Prompt Engineering: An Empirical Study;Koyuncu, Anil;2026;ACM Transactions on Software Engineering and Methodology;String B
+136;Tab: template-aware bug report title generation via two-phase fine-tuned models;"Liu, Xiao; Xu, Yinkang; Sun, Weifeng; Huang, Naiqi; Sun, Song; Li, Qiang; Yang, Dan; Yan, Meng";2025;Automated Software Engineering;String B
+137;Automated Analysis of Bug Descriptions to Support Bug Reporting and Resolution;"Arenas, Chaparro; Javier, Oscar";2019;;String B
+138;Can we use software bug reports to identify vulnerability discovery strategies?;"Bhuiyan, Farzana Ahamed; Shakya, Raunak; Rahman, Akond";2020;Proceedings of the 7th Symposium on Hot Topics in the Science of Security;String B
+139;Analyzing gameplay videos to support video game developers: from issue detection to game sessions reproduction;Guglielmi, Emanuela;2025;;String B
+140;From Bugs to Benchmarks: A Comprehensive Survey of Software Defect Datasets;"Zhu, Hao-Nan; Furth, Robert; Pradel, Michael; Rubio-González, Cindy";2026;ACM Computing Surveys;String C
+141;Predicting the objective and priority of issue reports in software repositories;"Izadi, Maliheh; Akbari, Kiana; Heydarnoori, Abbas";2022;Empirical Software Engineering;String C
+142;On Reporting Performance and Accuracy Bugs for Deep Learning Frameworks: An Exploratory Study from GitHub;"Long, Guoming; Chen, Tao";2022;Proceedings of the 26th International Conference on Evaluation and Assessment in Software Engineering;String C
+143;Analyzing and Detecting Emerging Quality-Related Concerns across OSS Defect Report Summaries;"Krasniqi, Rrezarta; Agrawal, Ankit";2021;2021 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER);String C
+144;On the identification of accessibility bug reports in open source systems;"Aljedaani, Wajdi; Mkaouer, Mohamed Wiem; Ludi, Stephanie; Ouni, Ali; Jenhani, Ilyes";2022;Proceedings of the 19th International Web for All Conference;String C
+145;Bug Analysis in Jupyter Notebook Projects: An Empirical Study;"De Santana, Taijara Loiola; Neto, Paulo Anselmo Da Mota Silveira; De Almeida, Eduardo Santana; Ahmed, Iftekhar";2024;ACM Transactions on Software Engineering and Methodology;String C
+146;Large Language Models in Software Engineering: A Critical Review of Evaluation Strategies;"Bektas, Ali; Haupt, Carina";2025;;String C
+147;A Systematic Mapping Study on Developer Profile Modeling in Software Engineering;"Sari, Asli; Alptekin, Gulfem Isiklar; Tosun, Ayse";2026;IEEE Access;String C
+148;Towards Effective Developer Communication in Open Source Software via Emotional Awareness;Imran, Mia Mohammad;2024;Theses and Dissertations;String C
+149;Mining Software Bug Repositories: A 15-Year Analysis of Trends, Techniques, and Limitations in Bug Localization, Classification, Triaging, and Resolution (2010–2024);"Sehar, Robina; Ali, Rashid";2024;Frontiers in Computational Spatial Intelligence;String C
+150;Detecting Rework in Software: A Machine Learning Technique;Nguyen, Minh Phuc;2015;;String C
+151;Understanding Test Code Quality from Perspective of Test Code Design and Maintenance;Kim, Dong Jae;2024;;String C
+152;Analysing app reviews for software engineering: a systematic literature review;"Dąbrowski, Jacek; Letier, Emmanuel; Perini, Anna; Susi, Angelo";2022;Empirical Software Engineering;String C
+153;CI/CD Configuration Practices in Open Source Android Apps: An Empirical Study;"Ghaleb, Taher A.; Abduljalil, Osamah; Hassan, Safwat";2026;ACM Transactions on Software Engineering and Methodology;String C
+154;Memory and resource leak defects and their repairs in Java projects;"Ghanavati, Mohammadreza; Costa, Diego; Seboek, Janos; Lo, David; Andrzejak, Artur";2020;Empirical Software Engineering;String C
+155;The whos, whats, and whys of issues related to personal data and data protection in open-source projects on GitHub;"Hennig, Anne; Schulte, Lukas; Herbold, Steffen; Kulyk, Oksana; Mayer, Peter";2025;Empirical Software Engineering;String C
+156;Bounties in Open Source Development on GitHub: A Case Study of Bountysource Bounties;"Zhou, Jiayuan; Wang, Shaowei; Bezemer, Cor-Paul; Zou, Ying; Hassan, Ahmed E.";2019;;String C
+157;How disabled tests manifest in test maintainability challenges?;"Kim, Dong Jae; Yang, Bo; Yang, Jinqiu; Chen, Tse-Hsun (Peter)";2021;Proceedings of the 29th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering;String C
+158;A mixed-methods analysis of micro-collaborative coding practices in OpenStack;"Foundjem, Armstrong; Constantinou, Eleni; Mens, Tom; Adams, Bram";2022;Empirical Software Engineering;String C
+159;A Study of Bug Management Using the Stack Exchange Question and Answering Platform;"Bhatia, Aaditya; Wang, Shaowei; Asaduzzaman, Muhammad; Hassan, Ahmed E.";2022;IEEE Transactions on Software Engineering;String C
+160;Mining app reviews to support software engineering;Dąbrowski, Jacek;2022;;String C
+161;Hierarchical Knowledge Injection for Improving LLM-based Program Repair;"Ehsani, Ramtin; Parra, Esteban; Haiduc, Sonia; Chatterjee, Preetha";2025;2025 40th IEEE/ACM International Conference on Automated Software Engineering (ASE);String C
+162;On the Use of Commit Messages for Corrective Software Maintenance: A Systematic Mapping Study;"Islam, Syful; Zacchiroli, Stefano";2026;;String C
+163;Detecting Emerging Quality-Related Concerns Across Evolving Software Artifacts - ProQuest;;;;String C
+164;Predicting Defective Lines Using a Model-Agnostic Technique;"Wattanakriengkrai, Supatsara; Thongtanunam, Patanamon; Tantithamthavorn, Chakkrit; Hata, Hideaki; Matsumoto, Kenichi";2022;IEEE Transactions on Software Engineering;String C
+165;A User-Centered Classification Approach to Prioritization of User Reviews for Software Maintenance;"Sakonwijitree, Luxsipang; Senivongse, Twittie";2026;Proceedings of the 2025 9th International Conference on Software and e-Business;String C
+166;Fine-grained Multi-Document Extraction and Generation of Code Change Rationale;"Sun, Mehedi; Saha, Antu; Silva, Nadeeshan De; Mastropaolo, Antonio; Chaparro, Oscar";2026;;String C
+167;dro.deakin.edu.au/articles/thesis/A_Protocol_for_Effective_Resolution_of_Machine_Learning_Issues/31697284/1/files/62745010.pdf;;;;String C
+168;An Empirical Study on the Characteristics of Database Access Bugs in Java Applications;"Liu, Wei; Mondal, Shouvick; Chen, Tse-Hsun (Peter)";2024;ACM Transactions on Software Engineering and Methodology;String C
+169;A Survey of LLM-based Automated Program Repair: Taxonomies, Design Paradigms, and Applications;"Yang, Boyang; Cai, Zijian; Liu, Fengling; Le, Bach; Zhang, Lingming; Bissyandé, Tegawendé F.; Liu, Yang; Tian, Haoye";2025;;String C
+170;On the usage and development of deep learning compilers: an empirical study on TVM;"Wu, Xiongfei; Yang, Jinqiu; Ma, Lei; Xue, Yinxing; Zhao, Jianjun";2022;Empirical Software Engineering;String C
+171;On the Answer Status and Usage of Requirements Traceability Questions - ProQuest;;;;String C
+172;Towards Pragmatic Incivility Management in Software Engineering - ProQuest;;;;String C
+173;SENET: A Semantic Web for Supporting Automation of Software Engineering Tasks;"Liu, Yalin; Lin, Jinfeng; Cleland-Huang, Jane; Vierhauser, Michael; Guo, Jin; Lohar, Sugandha";2020;2020 IEEE Seventh International Workshop on Artificial Intelligence for Requirements Engineering (AIRE);String C
+174;Broken External Links on Stack Overflow;"Liu, Jiakun; Xia, Xin; Lo, David; Zhang, Haoxiang; Zou, Ying; Hassan, Ahmed E.; Li, Shanping";2022;IEEE Transactions on Software Engineering;String C
+175;Building sustainable open-source communities : an investigation into contribution equity;Feng, Zixuan;;;String C
+176;Quantifying, Characterizing, and Mitigating the Ghost Commit Problem when Identifying Fix-Inducing Changes - ProQuest;;;;String C
+177;Understanding and Locating Quality Issues in the Database Access Code of Database-Backed Applications;Liu, Wei;2024;;String C
+178;การจัดลำดับความสำคัญของบทวิจารณ์ของผู้ใช้ซอฟต์แวร์โดยคำนึงถึงประสบการณ์ผู้ใช้โดยใช้การเรียนรู้ของเครื่อง;สาครวิจิตรี, ลักษณ์สิปาง;2024;Chulalongkorn University Theses and Dissertations (Chula ETD);String C
+179;Historical Spectrum Based Fault Localization;"Wen, Ming; Chen, Junjie; Tian, Yongqiang; Wu, Rongxin; Hao, Dan; Han, Shi; Cheung, Shing-Chi";2021;IEEE Transactions on Software Engineering;String C
+180;Security Bug Report Usage for Software Vulnerability Research: A Systematic Mapping Study;"Bhuiyan, Farzana Ahamed; Sharif, Md Bulbul; Rahman, Akond";2021;IEEE Access;String D
+181;Revisiting Defects4J for Fault Localization in Diverse Development Scenarios;"Rafi, Md Nakhla; Chen, An Ran; Chen, Tse-Hsun Peter; Wang, Shaohua";2025;2025 IEEE/ACM 22nd International Conference on Mining Software Repositories (MSR);String D
+182;Automatic Issue Relation Prediction;Kässmann, Tobias;;;String D
+183;Sentiment Analysis for Requirements Elicitation from App Reviews: A Systematic Mapping Study;"Wan, Hongyan; An, Zhiquan; Wang, Bangchao; Xiong, Teng";2023;2023 30th Asia-Pacific Software Engineering Conference (APSEC);String D
+184;CrowdTest: Gamification as Cognitive Support to Improve Bug Report Quality in Crowdsourced Software Testing;Gautam, Prabin;2026;Journal of Soft Computing Paradigm;String E
+185;Towards a Human-in-the-Loop Framework for Reliable Patch Evaluation Using an LLM-as-a-Judge;"Shi, Sherry; Wei, Renyao; Tufano, Michele; Cambronero, José; Cheng, Runxiang; Ivančić, Franjo; Rondon, Pat";2025;;String E
+186;Detecting Feature Requests of Third-Party Developers through Machine Learning: A Case Study of the SAP Community;"Kauschinger, Martin; Vieth, Niklas; Schreieck, Maximilian; Krcmar, Helmut";2023;;String E
+187;Cryptography Vulnerabilities on HackerOne;"Hazhirpasand, Mohammadreza; Ghafari, Mohammad";2021;2021 IEEE 21st International Conference on Software Quality, Reliability and Security (QRS);String E
+188;What Causes Bugs in Numerical Simulation Software? An Empirical Study;"Li, Xiaochen; Zhu, Youcheng; Guo, Shikai; Jiang, He";2025;IEEE Transactions on Reliability;String E
+189;Structured representations for inspectable AI : knowledge graphs and latent trees;Thoma, Ethan;2026;;String E
+190;A Comprehensive Study of OOP-Related Bugs in C++ Compilers;"Wang, Bo; Chen, Chong; Chen, Junjie; Xu, Bowen; Ye, Chen; Lin, Youfang; Dong, Guoliang; Sun, Jun";2025;IEEE Transactions on Software Engineering;String E
+191;A Systematic Literature Review of Empirical Methods and Risk Representation in Usable Privacy and Security Research;"Distler, Verena; Fassl, Matthias; Habib, Hana; Krombholz, Katharina; Lenzini, Gabriele; Lallemand, Carine; Cranor, Lorrie Faith; Koenig, Vincent";2021;ACM Transactions on Computer-Human Interaction (TOCHI);String E
+192;Data Readiness for AI: A 360-Degree Survey;"Hiniduma, Kaveen; Byna, Suren; Bez, Jean Luca";2025;ACM Computing Surveys;String E
+193;Expanding Fix Patterns to Enable Automatic Program Repair;"Nowack, Vesna; Bowes, David; Counsell, Steve; Hall, Tracy; Haraldsson, Saemundur; Winter, Emily; Woodward, John";2021;2021 IEEE 32nd International Symposium on Software Reliability Engineering (ISSRE);String E
+194;A survey on machine learning techniques applied to source code;"Sharma, Tushar; Kechagia, Maria; Georgiou, Stefanos; Tiwari, Rohit; Vats, Indira; Moazen, Hadi; Sarro, Federica";2024;Journal of Systems and Software;String E
+195;Assessing Urdu Language Processing Tools via Statistical and Outlier Detection Methods on Urdu Tweets;"Zoya; Latif, Seemab; Latif, Rabia; Majeed, Hammad; Jamail, Nor Shahida Mohd";2023;ACM Transactions on Asian and Low-Resource Language Information Processing;String E
+196;Bolstering the Persistence of Black Students in Undergraduate Computer Science Programs: A Systematic Mapping Study;"Belle, Alvine B.; Sutherland, Callum; Adesina, Opeyemi O.; Kpodjedo, Sègla; Ojong, Nathanael; Cole, Lisa";2023;ACM Transactions on Computing Education;String E
+197;Enhancing Dialectal Arabic Sentiment Analysis Using Deep Learning;"Ali, Abbas; Barışçı, Necaattin";2026;ACM Transactions on Asian and Low-Resource Language Information Processing;String E
