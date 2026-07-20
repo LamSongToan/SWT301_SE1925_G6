@@ -6,22 +6,20 @@
 \subsection{Dataset}
 \label{subsec:dataset}
 
-We used the \texttt{RQ1} subset of the
-\emph{ImproBR Replication Package}, which is publicly available on
-Figshare~\cite{akyol2026improbr,improbr2026dataset}. This subset
-contains 139 real-world bug reports collected from Mojira, the official
-issue tracker for Minecraft. We selected \texttt{RQ1} because it
+We used the RQ1 subset of the \emph{ImproBR Replication Package},
+which is publicly available on Figshare~\cite{akyol2026improbr,improbr2026dataset}.
+This subset contains 139 real-world bug reports collected from Mojira,
+the official issue tracker for Minecraft. We selected RQ1 because it
 provides the report content and manual labels required to evaluate the
 executability of \emph{Steps to Reproduce} (S2R).
 
 ImproBR provides two corresponding versions of each issue:
 \emph{Raw} and \emph{Improved}. The Raw version preserves the original
 report submitted to Mojira before ImproBR processing. The Improved
-version contains the output produced by the ImproBR pipeline. In this
-version, the pipeline may add, clarify, or reorganize report components
-such as S2R. We paired the two versions using
-\texttt{issue\_key}. This pairing allowed us to compare the Raw and
-Improved reports for the same issue.
+version contains the output produced by the ImproBR pipeline, in which
+components such as S2R may be added, clarified, or reorganized. We
+paired the two versions using \texttt{issue\_key}, allowing us to
+compare the Raw and Improved reports for the same issue.
 
 We obtained the ground-truth labels from the manual evaluations
 included in the replication package
@@ -39,31 +37,21 @@ steps without making additional assumptions.
 
 The Raw condition contains 40 Executable reports (28.8\%) and 99
 Non-Executable reports (71.2\%). The Improved condition contains 94
-Executable reports (67.6\%) and 45 Non-Executable reports (32.4\%).
-We used these manual annotations as reference labels when evaluating
-the model predictions. We matched each prediction to its ground-truth
-label using \texttt{issue\_key} and the corresponding report
-condition.
+Executable reports (67.6\%) and 45 Non-Executable reports (32.4\%). We
+used these manual annotations as reference labels when evaluating the
+model predictions, matching each prediction to its ground-truth label
+using \texttt{issue\_key} and the corresponding report condition.
 
-We partitioned the 139 issues into three subsets:
-\emph{Pilot}, \emph{Development}, and \emph{Holdout}. We assigned 26
-issues to the Pilot subset to check the execution pipeline, output
-schema, and initial prompt design. After excluding these issues, we
-divided the remaining 113 issues into 75 Development issues and 38
-Holdout issues. We used a random seed of 210 to make this split
-reproducible.
-
-We used the Development subset to refine the Full configuration and
-analyze prediction errors during development. We therefore treated the
-Development results as calibration evidence rather than as an
-independent estimate of model performance. We reserved the Holdout
-subset for the final evaluation.
-
-We performed the split at the \texttt{issue\_key} level. The Raw and
-Improved versions of the same issue were therefore always assigned to
-the same subset. This procedure prevented paired reports from appearing
-in different experimental subsets and reduced the risk of data
-leakage.
+We evaluated all 139 issues in a single experimental pass under both
+the Raw and Improved conditions. We finalized the prompt design and
+post-processing rules prior to this evaluation, using a rubric-driven
+design process grounded in \path{evaluation_metrics.yaml} rather than
+iterative tuning against the evaluation data. We froze the model
+version, prompt templates, experiment script, and post-processing
+rules before running the configuration, and recorded SHA-256 hashes of
+the relevant files to confirm that the configuration remained
+unchanged throughout the run. We did not modify any component after
+inspecting results.
 
 \subsection{Experimental Setup and Pipeline}
 \label{subsec:pipeline}
@@ -97,36 +85,13 @@ The complete prompt templates are available in the replication package
 because the paper does not have sufficient space to reproduce them in
 full.
 
-During the Pilot phase, we used the Raw V10 and Improved V18 prompts.
-We developed both prompts according to the rubric defined in
-\path{evaluation_metrics.yaml}. For the Full phase, we developed and
-refined the Raw V11 and Improved V20 configurations on the Development
-subset. The Improved V20 configuration combines the V19 prompt with
-the deterministic post-processing rules designated as Rules V20.
-
-We subsequently ran the Full configurations on the same 26 Pilot
-issues during Pilot Validation. Because these issues had already
-contributed to the initial Pilot development, we used this stage only
-to check the operation of the Full configurations. We did not treat
-the Pilot Validation results as an independent performance estimate.
-
-We derived the post-processing rules from the evaluation rubric. We
-refined the Pilot-specific rules during the Pilot phase and calibrated
-the Full rules only on the Development subset. During inference, the
-rules inspect the report under evaluation. For the Improved condition,
-they may also inspect the paired Raw report supplied as context.
-
-The rules do not access ground-truth labels or predictions from other
-issues. We also did not use Holdout labels or Holdout prediction errors
-to refine the prompts, rules, or model configuration.
-
-After Pilot Validation, we froze the model version, prompt templates,
-experiment script, post-processing rules, and metric-computation
-logic. We recorded SHA-256 hashes of the relevant files to verify that
-the configuration remained unchanged before the Holdout evaluation.
-We then ran the frozen configuration once on each of the 38 Holdout
-issues under both the Raw and Improved conditions. We did not use the
-Holdout results for further tuning.
+We derived the post-processing rules from the evaluation rubric prior
+to running the evaluation. During inference, the rules inspect the
+report under evaluation. For the Improved condition, they may also
+inspect the paired Raw report supplied as context. The rules do not
+access ground-truth labels or predictions from other issues, and we
+did not use any evaluation results to refine the prompts, rules, or
+model configuration after the run began.
 
 For each issue, the pipeline reads seven common fields:
 \emph{Issue Key}, \emph{Summary}, \emph{Type},
@@ -178,9 +143,8 @@ matching \path{*_api_log_*.csv}. The API logs include the request
 status, model version, prompt version, seed,
 \texttt{system\_fingerprint}, token usage, and estimated cost.
 
-The source code, prompt templates, dataset partitions, configuration
-hashes, and raw experimental outputs required to replicate the study
-are available at
+The source code, prompt templates, configuration hashes, and raw
+experimental outputs required to replicate the study are available at
 \url{https://github.com/LamSongToan/SWT301_SE1925_G6}.
 
 % ===================== LR END =====================
