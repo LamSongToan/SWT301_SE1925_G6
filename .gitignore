@@ -1,5 +1,22 @@
-﻿.env
-.vscode/
+﻿# API keys & secrets
+.env
+*. env
+secrets. json
+api_key.txt
+config.py
+
+# Python cache
+_pycache_/
+*. pyc
+*. pyo
 .venv/
-__pycache__/
-*.pyc
+venv/
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+desktop.ini
+Thumbs.db
+
+# Large files (data > 100MB)
+# data/raw/
