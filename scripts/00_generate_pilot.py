@@ -1,49 +1,3 @@
-"""
-generate_pilot.py
-
-Purpose:
-    Generate pilot dataset files for Raw and Improved Mojira bug reports.
-
-Input:
-    Data/Raw/RAW/
-        139 raw bug report JSON files
-
-    Data/Improved/IMPROVED/
-        139 improved bug report JSON files
-
-    Data/Annotations/
-        Author 1 Responses.csv
-        Author 2 Responses.csv
-        Final Results.csv
-        evaluation_metrics.yaml
-
-Output:
-    Data/Raw/
-        pilot_sample_raw.csv
-        pilot_ground_truth_raw.csv
-        pilot_annotation_raw_author1.csv
-        pilot_annotation_raw_author2.csv
-
-    Data/Improved/
-        pilot_sample_improved.csv
-        pilot_ground_truth_improved.csv
-        pilot_annotation_improved_author1.csv
-        pilot_annotation_improved_author2.csv
-
-Run from project root:
-    .\\.venv\\Scripts\\python.exe Scripts\\generate_pilot.py
-
-Important:
-    This script overwrites existing pilot files.
-    Do not run it again after LLM Results have already been generated,
-    unless you intentionally want to regenerate the pilot sample.
-
-Note:
-    evaluation_metrics.yaml is validated only to ensure the research rubric file
-    exists. This script does not parse it because this file only generates pilot
-    CSV datasets, not LLM evaluation prompts or metric calculations.
-"""
-
 from __future__ import annotations
 
 import csv
@@ -56,17 +10,17 @@ from typing import Any, Dict, List, Optional, Tuple
 SCRIPT_DIR = Path(__file__).resolve().parent
 BASE_DIR = SCRIPT_DIR.parent
 
-RAW_JSON_DIR = BASE_DIR / "Data" / "Raw" / "RAW"
-IMPROVED_JSON_DIR = BASE_DIR / "Data" / "Improved" / "IMPROVED"
+RAW_JSON_DIR = BASE_DIR / "data" / "raw" / "raw"
+IMPROVED_JSON_DIR = BASE_DIR / "data" / "improved" / "improved"
 
-ANNOTATION_DIR = BASE_DIR / "Data" / "Annotations"
+ANNOTATION_DIR = BASE_DIR / "data" / "annotations"
 FINAL_CSV = ANNOTATION_DIR / "Final Results.csv"
 AUTHOR1_CSV = ANNOTATION_DIR / "Author 1 Responses.csv"
 AUTHOR2_CSV = ANNOTATION_DIR / "Author 2 Responses.csv"
 EVALUATION_METRICS_YAML = ANNOTATION_DIR / "evaluation_metrics.yaml"
 
-RAW_OUT_DIR = BASE_DIR / "Data" / "Raw"
-IMPROVED_OUT_DIR = BASE_DIR / "Data" / "Improved"
+RAW_OUT_DIR = BASE_DIR / "data" / "raw"
+IMPROVED_OUT_DIR = BASE_DIR / "data" / "improved"
 
 RANDOM_SEED = 210
 N_SAMPLE = 26
@@ -467,6 +421,7 @@ def main() -> None:
     improved_sample_file = IMPROVED_OUT_DIR / "pilot_sample_improved.csv"
     write_dict_csv(improved_sample_file, IMPROVED_FIELDS, improved_records)
     print(f"{improved_sample_file} -> OK")
+
 
     write_annotation_subset(
         output_path=RAW_OUT_DIR / "pilot_ground_truth_raw.csv",

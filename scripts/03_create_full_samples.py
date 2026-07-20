@@ -2,14 +2,14 @@
 Create the final 139-case Raw and Improved Full sample CSV files.
 
 Inputs:
-    Data/Raw/RAW/*.json
-    Data/Improved/IMPROVED/*_improved.json
-    Data/Full/All/Raw/full_ground_truth_raw.csv
-    Data/Full/All/Improved/full_ground_truth_improved.csv
+    data/raw/raw dataset/*.json
+    data/improved/improved dataset/*_improved.json
+    data/raw/full_ground_truth_raw.csv
+    data/improved/full_ground_truth_improved.csv
 
 Outputs:
-    Data/Full/All/Raw/full_sample_raw.csv
-    Data/Full/All/Improved/full_sample_improved.csv
+    data/raw/full_sample_raw.csv
+    data/improved/full_sample_improved.csv
 
 The ground-truth issue-key order is preserved so Raw, Improved, and Ground
 Truth remain aligned deterministically.
@@ -27,21 +27,17 @@ BASE_DIR = Path(__file__).resolve().parents[1]
 
 EXPECTED_CASES = 139
 
-RAW_JSON_DIR = BASE_DIR / "Data" / "Raw" / "RAW"
-IMPROVED_JSON_DIR = BASE_DIR / "Data" / "Improved" / "IMPROVED"
+RAW_JSON_DIR = BASE_DIR / "data" / "raw" / "raw dataset"
+IMPROVED_JSON_DIR = BASE_DIR / "data" / "improved" / "improved dataset"
 
-FULL_RAW_DIR = BASE_DIR / "Data" / "Full" / "All" / "Raw"
-FULL_IMPROVED_DIR = (
-    BASE_DIR / "Data" / "Full" / "All" / "Improved"
-)
+RAW_DIR = BASE_DIR / "data" / "raw"
+IMPROVED_DIR = BASE_DIR / "data" / "improved"
 
-RAW_GROUND_TRUTH = FULL_RAW_DIR / "full_ground_truth_raw.csv"
-IMPROVED_GROUND_TRUTH = (
-    FULL_IMPROVED_DIR / "full_ground_truth_improved.csv"
-)
+RAW_GROUND_TRUTH = RAW_DIR / "full_ground_truth_raw.csv"
+IMPROVED_GROUND_TRUTH = IMPROVED_DIR / "full_ground_truth_improved.csv"
 
-RAW_OUTPUT = FULL_RAW_DIR / "full_sample_raw.csv"
-IMPROVED_OUTPUT = FULL_IMPROVED_DIR / "full_sample_improved.csv"
+RAW_OUTPUT = RAW_DIR / "full_sample_raw.csv"
+IMPROVED_OUTPUT = IMPROVED_DIR / "full_sample_improved.csv"
 
 RAW_FIELDS = [
     "Issue Key",

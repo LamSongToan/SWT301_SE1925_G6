@@ -1,14 +1,14 @@
 """
-Create the final Improved Full ground-truth CSV.
+Create the final Raw Full ground-truth CSV.
 
 Input:
-    Data/Annotations/Final Results.csv
+    data/annotations/Final Results.csv
 
 Output:
-    Data/Full/All/Improved/full_ground_truth_improved.csv
+    data/raw/full_ground_truth_raw.csv
 
 The generator:
-    - keeps only Improved rows;
+    - keeps only Raw rows;
     - removes blank/Unnamed source columns;
     - renames duplicate headers deterministically;
     - validates 139 unique Mojira issue keys;
@@ -26,18 +26,16 @@ from typing import List, Sequence
 
 BASE_DIR = Path(__file__).resolve().parents[2]
 
-SOURCE_FILE = BASE_DIR / "Data" / "Annotations" / "Final Results.csv"
+SOURCE_FILE = BASE_DIR / "data" / "annotations" / "Final Results.csv"
 OUTPUT_FILE = (
     BASE_DIR
-    / "Data"
-    / "Full"
-    / "All"
-    / "Improved"
-    / "full_ground_truth_improved.csv"
+    / "data"
+    / "raw"
+    / "full_ground_truth_raw.csv"
 )
 
-ROW_SUFFIX = ' Improved'
-DISPLAY_NAME = 'Improved'
+ROW_SUFFIX = ' Raw'
+DISPLAY_NAME = 'Raw'
 EXPECTED_CASES = 139
 VALID_LABELS = {"Executable", "Non-Executable"}
 

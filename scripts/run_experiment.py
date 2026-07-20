@@ -1,4 +1,3 @@
-
 from __future__ import annotations
 
 import argparse
@@ -20,22 +19,16 @@ EXPERIMENT_SEED = 210
 
 EXPERIMENT_PHASES = {
     "pilot",
-    "development",
-    "pilot_validation",
-    "holdout",
+    "full",
 }
 
 CANDIDATE_PHASES = {
-    "development",
-    "pilot_validation",
-    "holdout",
+    "full",
 }
 
 PROMPT_GROUP_BY_PHASE = {
     "pilot": "pilot",
-    "development": "full",
-    "pilot_validation": "full",
-    "holdout": "full",
+    "full": "full",
 }
 
 PROMPT_CONFIG = {
@@ -90,9 +83,7 @@ PROMPT_CONFIG = {
 # that still miss a central setup. Overly broad post-checks are disabled in V10.
 APPLY_CONSISTENCY_RULES_BY_PHASE = {
     "pilot": True,
-    "development": True,
-    "pilot_validation": True,
-    "holdout": True,
+    "full": True,
 }
 
 
@@ -104,109 +95,45 @@ CONFIG = {
     "raw": {
         "data_dirs": {
             "pilot": BASE_DIR / "Data" / "Raw",
-            "development": (
-                BASE_DIR / "Data" / "Full" / "Development" / "Raw"
-            ),
-            "pilot_validation": BASE_DIR / "Data" / "Raw",
-            "holdout": (
-                BASE_DIR / "Data" / "Full" / "Holdout" / "Raw"
-            ),
+            "full": BASE_DIR / "Data" / "Raw",
         },
         "results_dirs": {
             "pilot": BASE_DIR / "Results" / "Raw",
-            "development": (
-                BASE_DIR / "Results" / "Full" / "Development" / "Raw"
-            ),
-            "pilot_validation": (
-                BASE_DIR
-                / "Results"
-                / "Full"
-                / "Pilot_Validation"
-                / "Raw"
-            ),
-            "holdout": (
-                BASE_DIR / "Results" / "Full" / "Holdout" / "Raw"
-            ),
+            "full": BASE_DIR / "Results" / "Full",
         },
         "input_files": {
             "pilot": "pilot_sample_raw.csv",
-            "development": "development_sample_raw.csv",
-            "pilot_validation": "pilot_sample_raw.csv",
-            "holdout": "holdout_sample_raw.csv",
+            "full": "full_sample_raw.csv",
         },
         "output_files": {
             "pilot": "pilot_llm_output_raw.csv",
-            "development": "development_llm_output_raw.csv",
-            "pilot_validation": "pilot_validation_llm_output_raw.csv",
-            "holdout": "holdout_llm_output_raw.csv",
+            "full": "full_llm_output_raw.csv",
         },
         "log_files": {
             "pilot": "pilot_api_log_raw.csv",
-            "development": "development_api_log_raw.csv",
-            "pilot_validation": "pilot_validation_api_log_raw.csv",
-            "holdout": "holdout_api_log_raw.csv",
+            "full": "full_api_log_raw.csv",
         },
     },
     "improved": {
         "data_dirs": {
             "pilot": BASE_DIR / "Data" / "Improved",
-            "development": (
-                BASE_DIR
-                / "Data"
-                / "Full"
-                / "Development"
-                / "Improved"
-            ),
-            "pilot_validation": BASE_DIR / "Data" / "Improved",
-            "holdout": (
-                BASE_DIR / "Data" / "Full" / "Holdout" / "Improved"
-            ),
+            "full": BASE_DIR / "Data" / "Improved",
         },
         "results_dirs": {
             "pilot": BASE_DIR / "Results" / "Improved",
-            "development": (
-                BASE_DIR
-                / "Results"
-                / "Full"
-                / "Development"
-                / "Improved"
-            ),
-            "pilot_validation": (
-                BASE_DIR
-                / "Results"
-                / "Full"
-                / "Pilot_Validation"
-                / "Improved"
-            ),
-            "holdout": (
-                BASE_DIR
-                / "Results"
-                / "Full"
-                / "Holdout"
-                / "Improved"
-            ),
+            "full": BASE_DIR / "Results" / "Full",
         },
         "input_files": {
             "pilot": "pilot_sample_improved.csv",
-            "development": "development_sample_improved.csv",
-            "pilot_validation": "pilot_sample_improved.csv",
-            "holdout": "holdout_sample_improved.csv",
+            "full": "full_sample_improved.csv",
         },
         "output_files": {
             "pilot": "pilot_llm_output_improved.csv",
-            "development": "development_llm_output_improved.csv",
-            "pilot_validation": (
-                "pilot_validation_llm_output_improved.csv"
-            ),
-            "holdout": "holdout_llm_output_improved.csv",
+            "full": "full_llm_output_improved.csv",
         },
         "log_files": {
             "pilot": "pilot_api_log_improved.csv",
-            "development": "development_api_log_improved.csv",
-            "pilot_validation": (
-                "pilot_validation_api_log_improved.csv"
-            ),
-            "holdout": "holdout_api_log_improved.csv",
+            "full": "full_api_log_improved.csv",
         },
     },
 }
@@ -1948,20 +1875,7 @@ def run_experiment(
     version: str,
     phase: str,
     limit: Optional[int],
-    confirm_holdout_final: bool = False,
 ) -> None:
-    if phase == "holdout":
-        if not confirm_holdout_final:
-            raise ValueError(
-                "Holdout is protected. Run it only after the candidate "
-                "configuration is frozen, using --confirm-holdout-final."
-            )
-
-        if limit is not None:
-            raise ValueError(
-                "Partial Holdout runs are not allowed. "
-                "Remove --limit and run all 38 cases once."
-            )
 
     load_env_file()
 
@@ -2216,9 +2130,7 @@ def main() -> None:
         required=True,
         choices=[
             "pilot",
-            "development",
-            "pilot_validation",
-            "holdout",
+            "full",
         ],
         help="Experiment phase to run.",
     )
@@ -2228,17 +2140,8 @@ def main() -> None:
         type=int,
         default=None,
         help=(
-            "Optional row limit for Pilot, Development, or "
-            "Pilot Validation. Not allowed for Holdout."
-        ),
-    )
-
-    parser.add_argument(
-        "--confirm-holdout-final",
-        action="store_true",
-        help=(
-            "Explicitly confirm the one-time final Holdout run. "
-            "Required only for --phase holdout."
+            "Optional row limit for testing. "
+            "Remove for full run."
         ),
     )
 
@@ -2248,7 +2151,6 @@ def main() -> None:
         version=args.version,
         phase=args.phase,
         limit=args.limit,
-        confirm_holdout_final=args.confirm_holdout_final,
     )
 
 
