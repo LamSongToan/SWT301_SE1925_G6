@@ -1,3 +1,6 @@
+Note: nguồn từ paper impro, có 2 folder dataset gốc là raw và improved. Do nguồn paper dùng để lấy dataset nghiên cứu có 2 hướng là raw và improved
+
+
 # Data Directory Overview / Tổng quan thư mục Data
 
 ## English
