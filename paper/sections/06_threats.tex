@@ -11,13 +11,13 @@ Another threat is \emph{prompt design bias}, where the wording could inadvertent
  
 A key concern is whether we are truly measuring ``reproducibility.'' Potential threats include misalignment between how humans and LLMs interpret reproducibility, and dependence on structured extraction (Steps to Reproduce, Expected/Observed Behavior) that may introduce abstraction bias.
  
-We address this by anchoring the LLM rubric to the existing human annotation guidelines in the dataset, using the same ordinal scale for both human and LLM evaluation, and analyzing agreement separately for each reproducibility dimension (Steps, Observed Behavior, Expected Behavior) to reduce over-abstraction from a single composite score.
+We address this by anchoring the LLM rubric to the existing human annotation guidelines in the dataset, using the same ordinal scale for both human and LLM evaluation, and analyzing agreement separately for each reproducibility dimension (Steps, Observed Behavior, Expected Behavior) to reduce over-abstraction from a single composite score. Running the identical pipeline on both the Raw and Improved forms further guards against a construct threat specific to LLM evaluators: because the Improved form differs from Raw mainly in surface fluency rather than in the ground-truth construct, the sharp drop in agreement on Improved is evidence that the model partly responds to presentation rather than reproducibility itself---a threat we surface rather than hide.
  
 \subsection{External Validity}
  
-The study is limited to Mojira Minecraft bug reports, an open-source game development context. Results may not generalize to enterprise bug tracking systems or other domains with different reporting standards.
+The study is limited to Mojira Minecraft bug reports, an open-source game development context. Results may not generalize to enterprise bug tracking systems or other domains with different reporting standards. The Improved form is also specific to one improvement pipeline (ImproBR); a different rewriting system might induce a different bias, though the mechanism we identify---an evaluator over-crediting fluent, complete-looking text---is not specific to ImproBR.
  
-However, the dataset spans diverse technical bug types and is directly comparable to prior OSS studies. The measurement protocol itself is domain-agnostic and can be replicated on other issue trackers.
+However, the dataset spans diverse technical bug types and is directly comparable to prior OSS studies, and evaluating both the original and the AI-improved form strengthens external validity relative to a single-form study: it shows the protocol applies to machine-rewritten reports and quantifies how much agreement changes between the two. The measurement protocol itself is domain-agnostic and can be replicated on other issue trackers and other improvement pipelines.
  
 \subsection{Conclusion Validity}
  
@@ -27,5 +27,5 @@ We mitigate these by computing bootstrap confidence intervals for $\kappa$ rathe
  
 \subsection{Reproducibility}
  
-To ensure our results are reproducible, we fix the dataset to 139 Mojira reports, pin the model version explicitly, lock the prompt template, remove randomness from sampling, and use standard statistical libraries (scikit-learn, scipy).
+To ensure our results are reproducible, we fix the datasets to the 139 Raw and 139 Improved Mojira reports, pin the model version explicitly, lock one fixed prompt template per form (held identical between pilot and full run), remove randomness from sampling, and use standard statistical libraries (scikit-learn, scipy).
  

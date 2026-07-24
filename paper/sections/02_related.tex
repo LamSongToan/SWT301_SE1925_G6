@@ -75,6 +75,10 @@ data~\cite{akyol2026improbr}---without validating the LLM as a reproducibility
 assess bug report reproducibility on Mojira and evaluate it directly against
 human expert annotation, treating the LLM-as-judge concern
 seriously~\cite{li2024judges} by reporting Cohen's Kappa against a pre-registered
-threshold of $\kappa \geq 0.70$. To our knowledge, this is the first study to
-benchmark automated reproducibility assessment as a human-agreement task on this
-domain.
+threshold of $\kappa \geq 0.70$. Uniquely, we run this evaluation on \emph{both}
+the original reports and the LLM-improved versions that ImproBR produces from
+them~\cite{akyol2026improbr}, treating the two as co-equal conditions, which lets
+us measure whether an LLM evaluator's agreement with humans holds up on text that
+another LLM has rewritten. To our knowledge, this is the first study to benchmark
+automated reproducibility assessment as a human-agreement task on this domain,
+and the first to quantify how that agreement changes on AI-improved reports.

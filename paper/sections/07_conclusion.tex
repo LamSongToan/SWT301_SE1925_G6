@@ -1,10 +1,39 @@
 \section{Conclusion}
 \label{sec:conclusion}
-This study measures the degree to which an LLM-based reproducibility evaluator aligns with developer manual review on bug reports from Mojira Minecraft. Using GPT-4o mini and 139 pre-annotated reports, we assess agreement through Cohen's Kappa, targeting a threshold of $\kappa \geq 0.70$ as evidence of substantial agreement.
- 
-Our findings have direct implications for software maintenance: if LLMs can achieve this level of alignment, they become a viable first-pass filter in bug triage workflows, reducing manual review burden.
- 
-Beyond this dataset, the measurement protocol we establish---comparing LLM evaluation to human judgment using Cohen's Kappa---can be adapted to any OSS project seeking empirical validation before deploying LLM-based issue filtering. This creates a reusable benchmark for the broader community.
- 
-Future work should extend this evaluation across multiple repositories and issue trackers (GitHub, GitLab) to assess generalization, explore human-in-the-loop workflows where LLM scores trigger developer review rather than replacing it, and investigate fine-tuning or few-shot prompting to improve alignment on report sections that cause systematic disagreement.
- 
+
+This study measures how closely an LLM-based reproducibility evaluator
+(GPT-4o mini) agrees with human judgment on the ImproBR replication package,
+which provides two co-equal forms of the same 139 Mojira Minecraft bug reports:
+the original \emph{Raw} reports and their LLM-rewritten \emph{Improved} versions.
+Using a single deterministic scoring function applied to both human annotations
+and LLM output, and Cohen's kappa against a pre-registered threshold of
+$\kappa \geq 0.70$, we run the identical evaluation on each form and compare.
+
+On the Raw form the model reaches $\kappa = 0.578$---below the threshold but
+close to the $\kappa_{\text{control}} = 0.674$ between the two human annotators,
+with no systematic bias. On the Improved form agreement falls to
+$\kappa = 0.335$, far below the human ceiling on those reports ($0.556$), driven
+by a significant optimistic bias: the model scores higher than the human in 47
+of 52 disagreements and calls 111 of 139 reports reproducible. The degradation
+is concentrated in the free-text Observed and Expected Behavior dimensions and
+is small on the structural Steps to Reproduce dimension (Raw $\kappa = 0.693$,
+Improved $0.654$); a coarse reproducible/not check stays high on both forms
+($87.1\%$ and $86.3\%$). The headline of the study is the contrast: the same
+evaluator that nearly matches human agreement on original reports is
+systematically misled by reports another LLM has polished.
+
+Taken together, GPT-4o mini is not yet reliable enough to replace human
+reproducibility review on either form, and it is markedly less reliable on
+AI-improved reports than on original ones. It could realistically serve as a
+human-supervised coarse pre-filter today, but any deployment that scores
+LLM-generated or LLM-rewritten text must expect an optimistic bias and validate
+the evaluator on that kind of text specifically.
+
+Future work should (i) target prompt or rubric refinement at the Observed and
+Expected Behavior dimensions, which are both the weakest and the ones most
+affected by the model crediting fluent text; (ii) test whether stricter
+grounding instructions or few-shot examples reduce the optimistic bias on
+AI-improved reports without harming Raw agreement; and (iii) replicate the
+protocol on additional issue trackers and additional improvement pipelines, to
+test whether the Raw-vs-Improved agreement gap observed here generalizes beyond
+Mojira/Minecraft and beyond ImproBR.

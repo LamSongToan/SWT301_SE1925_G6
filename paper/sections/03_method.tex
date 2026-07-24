@@ -1,249 +1,128 @@
 \section{Methodology}
 \label{sec:method}
 
-% ==================== LR START ====================
-
 \subsection{Dataset}
 \label{subsec:dataset}
 
-We used the RQ1 subset of the \emph{ImproBR Replication Package},
-which is publicly available on Figshare~\cite{akyol2026improbr,improbr2026dataset}.
-This subset contains 139 real-world bug reports collected from Mojira,
-the official issue tracker for Minecraft. We selected RQ1 because it
-provides the report content and manual labels required to evaluate the
-executability of \emph{Steps to Reproduce} (S2R).
+We used the RQ1 subset of the \emph{ImproBR Replication Package}, publicly
+available on Figshare~\cite{akyol2026improbr,improbr2026dataset}. This subset
+contains 139 real-world bug reports collected from Mojira, the official issue
+tracker for Minecraft, in \emph{two forms}:
 
-ImproBR provides two corresponding versions of each issue:
-\emph{Raw} and \emph{Improved}. The Raw version preserves the original
-report submitted to Mojira before ImproBR processing. The Improved
-version contains the output produced by the ImproBR pipeline, in which
-components such as S2R may be added, clarified, or reorganized. We
-paired the two versions using \texttt{issue\_key}, allowing us to
-compare the Raw and Improved reports for the same issue.
+\begin{itemize}
+  \item \textbf{Raw}: the 139 reports in their original, as-submitted form;
+  \item \textbf{Improved}: the same 139 reports after the ImproBR LLM pipeline
+  rewrote each one to be more complete (clarifying or adding steps, observed
+  behavior, expected behavior, and environment).
+\end{itemize}
 
-We obtained the ground-truth labels from the manual evaluations
-included in the replication package
-\cite{akyol2026improbr,improbr2026dataset}. In the original study, two
-human annotators independently evaluated both versions of each report.
-We retained only the S2R label because our study focuses on the
-automated assessment of S2R executability.
+We treat the two forms as \emph{co-equal conditions} and run the identical
+pipeline on each, because our research question concerns the model's agreement
+with humans on both original and AI-improved reports. Each of the 278 report
+instances (139 issues $\times$ 2 forms) was independently evaluated by two human
+annotators (Author~1 and Author~2) along three structured dimensions defined in
+the replication package's rubric (\path{evaluation_metrics.yaml}):
 
-The S2R label has two possible values: \emph{Executable} and
-\emph{Non-Executable}. An Executable label indicates that the
-reproduction steps contain sufficient information for an evaluator to
-follow them. A Non-Executable label indicates that missing, incorrect,
-or ambiguous information prevents the evaluator from completing the
-steps without making additional assumptions.
+\begin{itemize}
+  \item \textbf{Steps to Reproduce (S2R)}: \emph{Executable} or
+  \emph{Non-Executable}, with an irreproducibility category when applicable;
+  \item \textbf{Observed Behavior (OB)}: presence (\emph{Present}/\emph{Not
+  Present}) and, when present, sufficiency (\emph{Sufficient}/\emph{Insufficient});
+  \item \textbf{Expected Behavior (EB)}: presence and, when present, accuracy
+  (\emph{Accurate}/\emph{Inaccurate}).
+\end{itemize}
 
-The Raw condition contains 40 Executable reports (28.8\%) and 99
-Non-Executable reports (71.2\%). The Improved condition contains 94
-Executable reports (67.6\%) and 45 Non-Executable reports (32.4\%). We
-used these manual annotations as reference labels when evaluating the
-model predictions, matching each prediction to its ground-truth label
-using \texttt{issue\_key} and the corresponding report condition.
+\subsection{Deterministic Scoring Function}
+\label{subsec:scoring}
 
-We evaluated all 139 issues in a single experimental pass under both
-the Raw and Improved conditions. We finalized the prompt design and
-post-processing rules prior to this evaluation, using a rubric-driven
-design process grounded in \path{evaluation_metrics.yaml} rather than
-iterative tuning against the evaluation data. We froze the model
-version, prompt templates, experiment script, and post-processing
-rules before running the configuration, and recorded SHA-256 hashes of
-the relevant files to confirm that the configuration remained
-unchanged throughout the run. We did not modify any component after
-inspecting results.
-
-\subsection{Experimental Setup and Pipeline}
-\label{subsec:pipeline}
-
-We implemented the experimental pipeline in Python and used the
-\texttt{openai} SDK to access the OpenAI Chat Completions API. We
-configured the API to use
-\texttt{gpt-4o-mini-2024-07-18}~\cite{openai2024gpt4omini} with
-\texttt{temperature}=0 and \texttt{seed}=210. We enabled JSON mode
-using \path|response_format={"type":"json_object"}|. The experiment
-script did not explicitly set the \texttt{max\_tokens} parameter.
-
-Fixing the model version and generation parameters reduces avoidable
-variation between experimental runs and supports replication of the
-experimental configuration. However, these settings do not guarantee
-identical responses because the API may retain some server-side
-nondeterminism.
-
-We created separate prompt templates for the Raw and Improved
-conditions. Each template contains a System message and a User
-message. The System message defines the model's role, evaluation
-rubric, permitted label values, and JSON output requirement. The User
-message provides the \texttt{issue\_key}, report content, and required
-output schema.
-
-For the Raw condition, the prompt instructs the model to evaluate only
-the Raw report. For the Improved condition, the prompt identifies the
-Improved report as the evaluation target. It also provides the paired
-Raw report as context for interpreting the reporter's original intent.
-The complete prompt templates are available in the replication package
-because the paper does not have sufficient space to reproduce them in
-full.
-
-We derived the post-processing rules from the evaluation rubric prior
-to running the evaluation. During inference, the rules inspect the
-report under evaluation. For the Improved condition, they may also
-inspect the paired Raw report supplied as context. The rules do not
-access ground-truth labels or predictions from other issues, and we
-did not use any evaluation results to refine the prompts, rules, or
-model configuration after the run began.
-
-For each issue, the pipeline reads seven common fields:
-\emph{Issue Key}, \emph{Summary}, \emph{Type},
-\emph{Affects Version/s}, \emph{Labels}, \emph{Category}, and
-\emph{Description}. For the Improved condition, it also reads
-\emph{Steps to Reproduce}, \emph{Observed Behavior},
-\emph{Expected Behavior}, and \emph{Environment}.
-
-The pipeline excludes ground-truth labels, individual annotator
-labels, and previous predictions from the prompt. It also excludes
-the following administrative fields: \emph{Confirmation Status},
-\emph{Resolution}, \emph{Fix Version/s}, \emph{Votes}, and
-\emph{Watch Count}. These exclusions prevent the model from using
-information that is not part of the target report content or that may
-bias its prediction.
-
-For each Raw issue, the pipeline inserts the Raw report into the Raw
-prompt. For each Improved issue, it inserts the Improved report as the
-evaluation target and the paired Raw report as original-intent
-context. The pipeline sends one application-level API request for each
-issue--condition pair. It does not include ground-truth information in
-any request. Ground truth is introduced only after prediction, during
-metric computation.
-
-We instructed the model to return a structured JSON object. The object
-contains \texttt{issue\_key} and the S2R assessment, including the
-predicted label, reproducibility, validity, failure type, and
-rationale. It also contains auxiliary assessments of Expected Behavior
-and Observed Behavior, together with an overall rationale.
-
-The \path{run_experiment.py} script controls the prediction process.
-It reads the CSV input, identifies the \texttt{issue\_key}, selects
-the appropriate prompt, and constructs the API request. It then calls
-the API, parses the response, applies the post-processing rules, and
-stores the final prediction.
-
-After receiving a response, the script checks whether the response is
-valid JSON. It then verifies the required fields, normalizes
-categorical values to the permitted label set, and checks logical
-consistency among the returned fields. If the script encounters an API
-error, empty response, malformed JSON object, or missing required
-field, it records the issue with an \texttt{error} status and proceeds
-to the next issue. The script does not implement an additional
-application-level retry loop.
-
-The pipeline stores structured predictions in files matching
-\path{*_llm_output_*.csv}. It records API metadata separately in files
-matching \path{*_api_log_*.csv}. The API logs include the request
-status, model version, prompt version, seed,
-\texttt{system\_fingerprint}, token usage, and estimated cost.
-
-The source code, prompt templates, configuration hashes, and raw
-experimental outputs required to replicate the study are available at
-\url{https://github.com/LamSongToan/SWT301_SE1925_G6}.
-
-% ===================== LR END =====================
-% ===================== MS START ===================
-
-\subsection{Evaluation Metrics}
-\label{subsec:metrics}
-
-We evaluated the model by comparing its predicted S2R label with the
-corresponding ground-truth label for each issue and report condition.
-We treated Executable as the positive class and Non-Executable as the
-negative class. A true positive (\(TP\)) represents an Executable
-report correctly predicted as Executable, whereas a true negative
-(\(TN\)) represents a Non-Executable report correctly predicted as
-Non-Executable. A false positive (\(FP\)) occurs when the model
-predicts Executable for a Non-Executable report, and a false negative
-(\(FN\)) occurs when the model predicts Non-Executable for an
-Executable report.
-
-We used accuracy to measure the proportion of reports for which the
-predicted label matches the ground-truth label:
+To obtain a single ordinal ground-truth score per report, we applied a fixed,
+deterministic scoring function to the structured labels of each annotator:
 
 \begin{equation}
-\operatorname{Accuracy}
-=
-\frac{TP+TN}{TP+TN+FP+FN}.
-\label{eq:accuracy}
+\text{score}(s2r, irr, ob, obl, eb, ebl) =
+\begin{cases}
+5 & \text{if } s2r=\text{Exec.}, ob=\text{Suff.}, eb=\text{Acc.}\\
+4 & \text{if } s2r=\text{Exec.}, \text{otherwise}\\
+1 & \text{if } irr=\text{``wrong information''}\\
+3 & \text{if } ob \text{ and } eb \text{ both present}\\
+2 & \text{if only one of } ob, eb \text{ present}\\
+1 & \text{otherwise}
+\end{cases}
+\label{eq:score}
 \end{equation}
 
-Although accuracy provides an intuitive measure of correctness, it
-does not account for agreement that may occur by chance. It may also
-obscure prediction bias when the two classes are unevenly distributed.
-We therefore used Cohen's \(\kappa\) as the primary agreement
-measure~\cite{cohen1960coefficient}:
+The same function was applied, separately for each form (Raw and Improved), to
+(i) the adjudicated consensus labels in \path{Final Results.csv}, which
+reconciles the two independent annotators (Author~1 and Author~2) and serves as
+the ground truth for RQ1/SQ1--SQ3, and (ii) the structured labels extracted
+from the LLM's JSON output, so that any difference between human and LLM scores
+reflects a difference in how the report was judged rather than a difference in
+scoring logic. For each form we also report the inter-annotator agreement
+between Author~1 and Author~2's composite scores (before adjudication) as a
+human baseline ($\kappa_{\text{control}}$, Section~\ref{subsec:stats}).
+Applying the scoring function to the human ground truth confirms that ImproBR
+substantially raises reproducibility: the share of reports scored as executable
+($\geq 4$) rises from $28.8\%$ (40/139) on the Raw form to $67.6\%$ (94/139) on
+the Improved form.
 
-\begin{equation}
-\kappa
-=
-\frac{p_o-p_e}{1-p_e},
-\label{eq:kappa}
-\end{equation}
+\subsection{LLM Configuration}
+\label{subsec:llm}
 
-where \(p_o\) denotes the observed agreement between the model
-predictions and ground truth, and \(p_e\) denotes the agreement
-expected by chance from their marginal label distributions. A value
-of \(\kappa=1\) indicates perfect agreement, whereas
-\(\kappa=0\) indicates agreement equivalent to chance. A negative
-value indicates agreement below the chance level.
-
-The experimental protocol defined \(\kappa \geq 0.70\) as the
-acceptance threshold before the Holdout evaluation. We used this value
-as a project-specific decision criterion rather than as a universal
-boundary for model quality. We interpreted kappa together with
-accuracy, the confusion matrix, and the prediction distribution.
-
-For each condition, the confusion matrix reports \(TP\), \(TN\),
-\(FP\), and \(FN\). We also recorded the number and identities of
-mismatched cases to determine whether errors primarily resulted from
-overpredicting Executable or overpredicting Non-Executable. This
-mismatch analysis was descriptive and did not modify the frozen
-configuration.
-
-The \path{compute_metric.py} script calculates accuracy, Cohen's
-kappa, the confusion matrix, and the mismatch list separately for the
-Raw and Improved conditions. It produces \path{summary_*.csv} files
-containing aggregate metrics and \path{mismatch_analysis_*.csv} files
-containing issue-level errors. The
-\path{compare_raw_improved.py} script places the Raw and Improved
-results side by side for each experimental phase.
-
-Metrics from Pilot, Development, and Pilot Validation describe
-configuration development and calibration. We based the final
-assessment of model performance only on the protected Holdout subset.
+We used \texttt{gpt-4o-mini-2024-07-18}~\cite{openai2024gpt4omini} with
+\texttt{temperature}=0, a fixed \texttt{seed}, and JSON-mode structured
+output, so that the model returns a label, quality assessment, and short
+rationale for each of the S2R, OB, and EB dimensions. Following the
+pre-registered protocol, we used a single fixed zero-shot prompt template,
+anchored to the rubric in \path{evaluation_metrics.yaml}, for all 139 reports
+of each form (one fixed template per form). The prompt supplies the report's
+summary, description, and available metadata, and instructs the model to judge
+only the report content, without access to ground-truth labels, annotator
+identities, or prior predictions. For each form, a 26-report pilot phase
+(Section~\ref{subsec:dataset}) confirmed the zero-shot template as sufficient
+($\kappa$ between the LLM and the pilot ground truth of $0.567$ on Raw and
+$0.576$ on Improved, both above the $0.50$ gate), so the pre-defined few-shot
+fallback was not triggered. All reports were scored in a single pass with the
+fixed prompt version, held identical between the pilot and the full run; we did
+not revise the prompt after inspecting evaluation results.
 
 \subsection{Statistical Analysis}
-\label{subsec:statistics}
+\label{subsec:stats}
 
-We used \texttt{issue\_key} as the unit of analysis. Because each
-issue has paired Raw and Improved versions, all comparisons preserve
-the correspondence between the two report conditions.
+All of the following analyses are run \emph{separately for each form} (Raw and
+Improved), and our main comparison is between the two resulting sets of
+numbers.
 
-We restricted the final analysis to the 38 issues in the protected
-Holdout subset. For each condition, we reported the exact number of
-correct and incorrect predictions, accuracy, Cohen's kappa, the
-confusion matrix, and the prediction distribution. We used the Pilot,
-Development, and Pilot Validation results only for procedural checks,
-configuration refinement, and descriptive analysis.
+\textbf{RQ1/SQ1 (overall agreement).} For each form, we computed Cohen's
+kappa~\cite{cohen1960coefficient} between the LLM's composite 1--5 score and
+the human ground-truth score across all 139 reports, together with a
+percentile bootstrap 95\% confidence interval (2{,}000 resamples with
+replacement over reports). As a human baseline, we computed
+$\kappa_{\text{control}}$ between Author~1 and Author~2's composite scores on
+the same reports of that form.
 
-The current analysis compares the Raw and Improved conditions
-descriptively. Specifically, \path{compare_raw_improved.py} reports
-their metric values side by side but does not implement a hypothesis
-test, confidence interval, or inferential effect-size estimate.
-Accordingly, we do not report \(p\)-values or claim that an observed
-difference between the two conditions is statistically significant.
-We interpret the results using their exact counts, accuracy, kappa,
-confusion matrices, and observed error patterns.
+\textbf{SQ2 (per-dimension agreement).} We re-scored each dimension
+separately on a 1--3 scale (S2R: executable vs.\ not; OB: present-and-sufficient,
+present-only, or absent; EB: present-and-accurate, present-only, or absent) and
+computed Cohen's kappa independently for S2R, OB, and EB, applying the same
+rescoring function to both human and LLM labels.
 
-We did not use Holdout predictions or mismatches to revise the prompt,
-post-processing rules, model parameters, or evaluation code after the
-frozen Holdout run.
+\textbf{SQ3 (disagreement analysis).} We identified reports where the LLM and
+human composite scores differed and inspected the model's per-dimension
+rationale text alongside the corresponding human labels to characterize
+recurring disagreement patterns, following the four categories anticipated in
+the pre-registered protocol (missing/ambiguous steps, implicit vs.\ explicit
+expectations, unclear environment/version information, unstructured
+description).
 
-% ===================== MS END =====================
+\textbf{Bias and sanity checks.} We ran a two-sided Wilcoxon signed-rank test
+($\alpha=0.05$) on the paired (human, LLM) composite scores to test for a
+systematic scoring shift, and, as a coarse sanity check, binarized both scores
+at the pre-registered cut (score $\geq 4 \Rightarrow$ ``Reproducible'') and
+report accuracy, precision, and recall for that binary task.
+
+All statistics were computed with \texttt{scikit-learn} and \texttt{scipy} on
+the released ground-truth and LLM-output files for each form
+(\path{full_ground_truth_raw.csv} / \path{full_llm_output_raw.csv} and
+\path{full_ground_truth_improved.csv} / \path{full_llm_output_improved.csv}).
+The source code, prompt templates, and raw experimental outputs are
+available at \url{https://github.com/LamSongToan/SWT301_SE1925_G6}.

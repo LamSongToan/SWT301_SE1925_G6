@@ -1,17 +1,40 @@
 
 \label{sec:abstract}
-Reproducing a reported bug is often the slowest part of triage, and judging
-whether a report's steps to reproduce are executable is a manual and inconsistent
-task. Whether a large language model can do this reliably enough to replace a
-human is untested: prior work uses language models to improve or classify bug
-reports, but rarely validates them as reproducibility assessors against human
-labels. We evaluate GPT-4o mini on 139 real Mojira (Minecraft) bug reports, in
-original and quality-improved forms, labeling each report's steps to reproduce as
-executable or non-executable and comparing against expert annotation with Cohen's
-kappa on a protected holdout. In the holdout it reached $\kappa = 0.24$ in the original
-and $\kappa = 0.10$ in the improved reports, far below our pre-registered $0.70$
-threshold; an identical accuracy $0.68$ hid a near-constant executable verdict in
-the improved reports, and strong agreement seen during calibration did not transfer.
-GPT-4o mini is therefore not yet dependable enough to replace human reproducibility
-assessment in this setting, and agreement measured on calibration data overstates
-real performance.
+Reproducing a reported bug is often the slowest step in triage, and judging
+whether a bug report contains enough information to be reproduced is a manual,
+time-consuming task performed by developers. Whether a large language model
+(LLM) can perform this judgment reliably enough to assist that process is
+untested: prior work uses LLMs to generate or improve bug reports, but rarely
+validates them as reproducibility \emph{assessors} against human judgment. We
+evaluate GPT-4o mini as an automated reproducibility evaluator on the ImproBR
+replication package, which provides two forms of the same 139 Mojira Minecraft
+bug reports: the original (\emph{Raw}) reports, and \emph{Improved} versions in
+which an LLM pipeline has rewritten each report to be more complete. Each form
+was independently annotated by two human reviewers along three structured
+dimensions (Steps to Reproduce, Observed Behavior, Expected Behavior). Treating
+the two forms as co-equal conditions, we convert both the human annotations and
+the LLM output into a common 1--5 ordinal reproducibility score with a single
+deterministic scoring function, and measure agreement with Cohen's kappa
+against a pre-registered threshold of $\kappa \geq 0.70$.
+
+On the Raw reports the model reaches $\kappa = 0.578$ (95\% bootstrap CI
+$[0.471,\,0.684]$; accuracy $71.9\%$), a moderate but sub-threshold level of
+agreement, close to the $\kappa_{\text{control}} = 0.674$ between the two human
+annotators on the same reports. On the Improved reports, agreement falls to
+$\kappa = 0.335$ (CI $[0.226,\,0.441]$; accuracy $62.6\%$), only fair and well
+below the human ceiling on those reports ($\kappa_{\text{control}} = 0.556$).
+The drop is driven by a significant optimistic bias that appears only on the
+Improved form: a Wilcoxon signed-rank test is non-significant on Raw
+($p = 0.452$) but strongly significant on Improved ($p < 10^{-6}$), where the
+model rates 111 of 139 reports as reproducible (score $\geq 4$) against the
+humans' 94, scoring higher than the annotator in 47 cases and lower in only 5.
+Across both forms, agreement is highest on the structurally checkable Steps to
+Reproduce dimension (Raw $\kappa = 0.693$, Improved $\kappa = 0.654$) and
+collapses on Observed Behavior (Raw $\kappa = 0.289$, Improved $\kappa =
+0.130$). A coarse binarized check (score $\geq 4$ as reproducible) remains high
+on both forms ($87.1\%$ and $86.3\%$ accuracy). GPT-4o mini does not meet the
+pre-registered bar on either form, and its reliability degrades precisely on
+the AI-polished reports whose fluent surface it appears to over-trust ---
+evidence that an LLM evaluator should be validated on the kind of text it will
+actually score, and is best used as a human-supervised coarse pre-filter rather
+than an autonomous evaluator.
