@@ -2,6 +2,8 @@
 
 **Course project — SWT301, Group SE1925_G6 (RT-SWT-004)**
 
+**Repository Link:** https://github.com/LamSongToan/SWT301_SE1925_G6
+
 This repository contains the full replication package for a study that asks a
 single question: **can a large language model, used as an automated evaluator,
 agree with human developers on whether a bug report is reproducible?** We
@@ -14,6 +16,16 @@ same 139 Minecraft/Mojira bug reports: the original **Raw** reports, and
 to look more complete. This lets us test not only whether the model tracks human
 judgment on ordinary reports, but whether that agreement survives once the text
 has been polished by AI.
+
+## Effort contribution:
+
+| StudentID | Name | Effort (%)
+|---------|------|----------|
+| SE160995 | Tống Gia Huy | 19% | 
+| SE193500 | Trần Thái Dương | 19% | 
+| SE203653 | Nguyễn Hồng Quân | 21% | 
+| SE203692 | Nguyễn Thành Lộc | 20% | 
+| SE200458 | Lâm Song Toàn | 21% | 
 
 ---
 
