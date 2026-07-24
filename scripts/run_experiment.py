@@ -56,7 +56,7 @@ PROMPT_CONFIG = {
     },
     "full": {
         "raw": {
-            "version": "Prompts_Raw_Final_V11_DevelopmentTuned",
+            "version": "Prompts_Raw_Final_V10_PilotCandidate",
             "file": (
                 BASE_DIR
                 / "Scripts"
@@ -66,7 +66,7 @@ PROMPT_CONFIG = {
             ),
         },
         "improved": {
-            "version": "Prompts_Improved_Final_V19_DevelopmentTuned_RulesV20",
+            "version": "Prompts_Improved_Final_V18_PilotCandidate",
             "file": (
                 BASE_DIR
                 / "Scripts"
@@ -78,9 +78,8 @@ PROMPT_CONFIG = {
     },
 }
 
-# Keep deterministic post-check rules disabled by default for the main experiment.
-# Selective rubric post-check rules remain enabled for a narrow set of polished Improved reports
-# that still miss a central setup. Overly broad post-checks are disabled in V10.
+# The full phase uses the same fixed prompt as the pilot phase
+# (Prompts_Raw_Final = V10 pilot prompt), per the proposal's fixed-prompt design.
 APPLY_CONSISTENCY_RULES_BY_PHASE = {
     "pilot": True,
     "full": True,
