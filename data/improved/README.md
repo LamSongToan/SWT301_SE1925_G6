@@ -1,7 +1,13 @@
 # Data — Improved
 
-Improved-form source reports and the datasets derived from them. One of the two
-conditions in the study; `data/raw/` mirrors this directory.
+This folder holds the **Improved** bug reports: the same 139 Mojira issues
+after the ImproBR pipeline used an LLM to rewrite them (clarifying or adding
+Steps to Reproduce, Observed Behavior, Expected Behavior, and Environment).
+
+Improved is one of the study's two co-equal datasets (the other is
+`data/raw/`). The identical evaluation pipeline is run on both, because the
+research question asks whether the LLM stays close to human judgment on the
+AI-improved reports as well as on the raw ones.
 
 | File | Cases | Description |
 | --- | --- | --- |
@@ -13,11 +19,14 @@ conditions in the study; `data/raw/` mirrors this directory.
 | `full_sample_improved.csv` | 139 | Full report text sent to the model |
 | `full_ground_truth_improved.csv` | 139 | Full consensus labels |
 
-The `*_sample_*` files hold the text given to the model. The
-`*_ground_truth_*` files hold the labels the model is scored against; they are
-never shown to the model.
+## Two phases, matching the proposal
+
+The Improved dataset follows the same Pilot → Full pipeline as Raw. See
+`results/improved/README.md` for the pilot numbers and `results/full/` for the
+full-phase results.
 
 Join on `issue_key`, which is `BUG-ID` with the trailing ` Improved` suffix
 removed.
 
-See `../README.md` for the label definitions and class balance.
+See `../README.md` for the label definitions and how labels become a 1-5
+reproducibility score.
